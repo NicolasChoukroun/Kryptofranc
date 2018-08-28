@@ -1,0 +1,3 @@
+/home/bitfranc/Desktop/tmp/src/bitcoin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/bitfranc/Desktop/tmp/src/bitcoin/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/bitfranc/Desktop/tmp/src/bitcoin/cmake-build-debug/CMakeFiles/bitcoin.dir
