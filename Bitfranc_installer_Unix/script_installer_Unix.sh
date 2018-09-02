@@ -2,7 +2,7 @@ sudo apt-get --assume-yes update
 sudo apt-get --assume-yes install git
 mkdir src
 #git clone https://github.com/bitcoin/bitcoin.git
-cp ../bitcoin src/
+cp -r ../bitcoin src/
 cd src
 rm -rf bitcoin/src/qt/locale
 cp -R ../locale bitcoin/src/qt/
