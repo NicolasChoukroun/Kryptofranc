@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -60,6 +60,16 @@ std::string itostr(int n);
 int64_t atoi64(const char* psz);
 int64_t atoi64(const std::string& str);
 int atoi(const std::string& str);
+
+/**
+ * Tests if the given character is a decimal digit.
+ * @param[in] c     character to test
+ * @return          true if the argument is a decimal digit; otherwise false.
+ */
+constexpr bool IsDigit(char c)
+{
+    return c >= '0' && c <= '9';
+}
 
 /**
  * Convert string to signed 32-bit integer with strict parse error feedback.
@@ -151,7 +161,7 @@ bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out);
 
 /** Convert from one power-of-2 number base to another. */
 template<int frombits, int tobits, bool pad, typename O, typename I>
-bool ConvertBits(O& out, I it, I end) {
+bool ConvertBits(const O& outfn, I it, I end) {
     size_t acc = 0;
     size_t bits = 0;
     constexpr size_t maxv = (1 << tobits) - 1;
@@ -161,16 +171,63 @@ bool ConvertBits(O& out, I it, I end) {
         bits += frombits;
         while (bits >= tobits) {
             bits -= tobits;
-            out.push_back((acc >> bits) & maxv);
+            outfn((acc >> bits) & maxv);
         }
         ++it;
     }
     if (pad) {
-        if (bits) out.push_back((acc << (tobits - bits)) & maxv);
+        if (bits) outfn((acc << (tobits - bits)) & maxv);
     } else if (bits >= frombits || ((acc << (tobits - bits)) & maxv)) {
         return false;
     }
     return true;
 }
+
+/** Parse an HD keypaths like "m/7/0'/2000". */
+bool ParseHDKeypath(const std::string& keypath_str, std::vector<uint32_t>& keypath);
+
+/**
+ * Converts the given character to its lowercase equivalent.
+ * This function is locale independent. It only converts uppercase
+ * characters in the standard 7-bit ASCII range.
+ * @param[in] c     the character to convert to lowercase.
+ * @return          the lowercase equivalent of c; or the argument
+ *                  if no conversion is possible.
+ */
+constexpr unsigned char ToLower(unsigned char c)
+{
+    return (c >= 'A' && c <= 'Z' ? (c - 'A') + 'a' : c);
+}
+
+/**
+ * Converts the given string to its lowercase equivalent.
+ * This function is locale independent. It only converts uppercase
+ * characters in the standard 7-bit ASCII range.
+ * @param[in,out] str   the string to convert to lowercase.
+ */
+void Downcase(std::string& str);
+
+/**
+ * Converts the given character to its uppercase equivalent.
+ * This function is locale independent. It only converts lowercase
+ * characters in the standard 7-bit ASCII range.
+ * @param[in] c     the character to convert to uppercase.
+ * @return          the uppercase equivalent of c; or the argument
+ *                  if no conversion is possible.
+ */
+constexpr unsigned char ToUpper(unsigned char c)
+{
+    return (c >= 'a' && c <= 'z' ? (c - 'a') + 'A' : c);
+}
+
+/**
+ * Capitalizes the first character of the given string.
+ * This function is locale independent. It only capitalizes the
+ * first character of the argument if it has an uppercase equivalent
+ * in the standard 7-bit ASCII range.
+ * @param[in] str   the string to capitalize.
+ * @return          string with the first letter capitalized.
+ */
+std::string Capitalize(std::string str);
 
 #endif // BITCOIN_UTILSTRENCODINGS_H
