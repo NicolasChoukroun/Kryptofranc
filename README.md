@@ -45,3 +45,6 @@ Le but de bit₣ranc est d'être accepté comme monnaie de réserve par le gouve
 Comme expliqué précédemment, la chaîne de blocs bit₣ranc ne sera pas la même que celle de bitCoin. Nous émettrons 6,55 milliards de bit₣ranc entre le 1er janvier 2019 et le 1er janvier 2022. Ainsi, nous allons égaler la capitalisation de la Banque centrale française. Ensuite, nous aurons une génération de pièces déflationnistes qui atteindra un total de 19 milliards sur 100 ans.
 
 2,5 milliards de bit₣rancs seront pré-programmés et partagés entre les divers auteurs du bit₣ranc, et utilisés pour financer la maintenance et le développement futur. Bit₣ranc doit être bien financé pour continuer sur sa lancée et être soutenu sur le long terme.
+
+## License
+BitFranc Core is released under the terms of the MIT license. See COPYING for more information or see https://opensource.org/licenses/MIT.
