@@ -20,8 +20,9 @@ cd ~/bitcoin/db4
 sudo wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
 sudo tar -xzvf db-4.8.30.NC.tar.gz
 rm -rf db-4.8.30.NC.tar.gz
+DB4_PATH=$PWD
 cd db-4.8.30.NC/build_unix
-sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$~/bitcoin/db4/
+sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$DB4_PATH
 sudo make install
 
 cd ~/bitcoin/depends
@@ -31,6 +32,6 @@ cd ~/bitcoin/
 
 sudo ./autogen.sh
 CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
-sudo ./configure LDFLAGS="-L$~/bitcoin/db4/lib/" CPPFLAGS="-I$~/bitcoin/db4/include/"
+sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
 sudo cp $INSTALL_PWD_TMP/bitcoin_config.h ~/bitcoin/build_msvc/bitcoin_config.h
 sudo make
