@@ -21,13 +21,13 @@ sudo wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
 sudo tar -xzvf db-4.8.30.NC.tar.gz
 sudo rm -rf db-4.8.30.NC.tar.gz
 cd db-4.8.30.NC/build_unix
-sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=~/bitcoin/db4/
+sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$~/bitcoin/db4/
 sudo make install
 
 cd ~/bitcoin
 sudo apt-get --assume-yes install autoconf libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module
 
 sudo ./autogen.sh
-sudo ./configure LDFLAGS="-L~/bitcoin/db4/lib/" CPPFLAGS="-I~/bitcoin/db4/include/"
+sudo ./configure LDFLAGS="-L$~/bitcoin/db4/lib/" CPPFLAGS="-I$~/bitcoin/db4/include/"
 sudo cp $INSTALL_PWD_TMP/bitcoin_config.h ~/bitcoin/build_msvc/bitcoin_config.h
 sudo make
