@@ -41,7 +41,10 @@ cd ~/bitcoin/
 sudo ./autogen.sh
 CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
 sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
-sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin_config.h
-sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/src/config/bitcoin_config.h
-sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/src/config/bitcoin_config.h
+sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
 sudo make
