@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/bitcoin-config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/bitcoin.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/bitcoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/bitcoin_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_af.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_af_ZA.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_am.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ar.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_be_BY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_bg.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_bg_BG.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_bn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_bs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ca.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ca@valencia.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ca_ES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_cs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_cs_CZ.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_da.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_de.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_de_DE.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_el.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_el_GR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_en.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_en_AU.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_en_GB.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_en_US.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_eo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_419.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_AR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_CL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_CO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_DO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_ES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_MX.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_UY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_es_VE.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_et.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_et_EE.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_eu_ES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_fa.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_fa_IR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_fi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_fr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_fr_CA.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_fr_FR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_gl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_he.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_he_IL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_hi_IN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_hr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_hu.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_hu_HU.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_id.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_id_ID.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_is.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_it.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_it_IT.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ja.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ja_JP.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ka.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_kk_KZ.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_km_KH.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ko.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ko_KR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ku_IQ.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ky.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_la.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_lt.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_lv_LV.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_mk_MK.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ml.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_mn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_mr_IN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ms.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ms_MY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_my.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_nb.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_nb_NO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ne.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_nl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_nl_NL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_pam.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_pl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_pl_PL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_pt.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_pt_BR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_pt_PT.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ro.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ro_RO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ru.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ru_RU.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_si.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sk.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sl_SI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sq.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sr@latin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_sv.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ta.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ta_IN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_te.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_th.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_th_TH.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_tr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_tr_TR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_uk.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_ur_PK.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_uz@Cyrl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_vi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_vi_VN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_zh-Hans.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_zh.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_zh_CN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_zh_HK.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/locale/bitcoin_zh_TW.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Unix/script_installer_Unix.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/bitcoin-config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/bitcoin.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/bitcoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/bitcoin_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_af.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_af_ZA.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_am.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ar.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_be_BY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_bg.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_bg_BG.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_bn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_bs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ca.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ca@valencia.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ca_ES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_cs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_cs_CZ.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_da.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_de.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_de_DE.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_el.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_el_GR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_en.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_en_AU.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_en_GB.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_en_US.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_eo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_419.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_AR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_CL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_CO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_DO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_ES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_MX.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_UY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_es_VE.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_et.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_et_EE.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_eu_ES.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_fa.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_fa_IR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_fi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_fr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_fr_CA.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_fr_FR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_gl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_he.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_he_IL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_hi_IN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_hr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_hu.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_hu_HU.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_id.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_id_ID.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_is.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_it.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_it_IT.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ja.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ja_JP.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ka.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_kk_KZ.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_km_KH.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ko.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ko_KR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ku_IQ.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ky.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_la.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_lt.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_lv_LV.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_mk_MK.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ml.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_mn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_mr_IN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ms.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ms_MY.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_my.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_nb.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_nb_NO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ne.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_nl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_nl_NL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_pam.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_pl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_pl_PL.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_pt.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_pt_BR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_pt_PT.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ro.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ro_RO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ru.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ru_RU.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_si.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sk.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sl_SI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sn.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sq.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sr@latin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_sv.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ta.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ta_IN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_te.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_th.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_th_TH.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_tr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_tr_TR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_uk.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_ur_PK.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_uz@Cyrl.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_vi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_vi_VN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_zh-Hans.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_zh.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_zh_CN.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_zh_HK.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/locale/bitcoin_zh_TW.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bitfranc_installer_Windows/script-Windows.sh" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1331747599">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="2" />
+          <entry key="h" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-714" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bitcoin/src/hash.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-334" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Bitcoin Core</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\projects 2\lefrancoin\bitcoin\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1189" />
+    <option name="y" value="580" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lefrancoin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lefrancoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lefrancoin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lefrancoin" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lefrancoin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lefrancoin" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="" />
+      <created>1536226156617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536226156617</updated>
+      <workItem from="1536226159673" duration="1417000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1417000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="3794" height="2176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08971612" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" visible="true" weight="0.13999021" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoin/src/hash.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
