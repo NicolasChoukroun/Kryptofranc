@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 echo "-----------------------------------------------------------"
-echo "bitFranc Installer: WINDOWS version 1.0"
+echo "bitFranc Installer: WINDOWS version 1.1"
 echo "Options:"
 echo "  - git=yes": will clone bitcoin and recompile all
 echo "-----------------------------------------------------------"
@@ -8,6 +8,8 @@ echo "-----------------------------------------------------------"
 sudo apt-get --assume-yes update
 sudo apt-get --assume-yes upgrade
 sudo apt-get --assume-yes install git
+sudo apt-get --assume-yes install build-essential
+sudo apt-get --assume-yes install qt5-default qttools5-dev-tools
 sudo apt-get --assume-yes install autoconf libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module
 if [ $opt -git yes ]; then
   git clone https://github.com/bitcoin/bitcoin.git
@@ -17,11 +19,9 @@ INSTALL_PWD_TMP=$PWD
 sudo cp -r ../bitcoin ~/
 sudo rm -rf ~/bitcoin/src/qt/locale
 sudo cp -R locale ~/bitcoin/src/qt/
-sudo cp bitcoin-config.h ~/bitcoin/src/config/
-sudo cp bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
-sudo cp bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
-sudo apt-get --assume-yes install build-essential
-sudo apt-get --assume-yes install qt5-default qttools5-dev-tools
+sudo cp assets_installer/bitcoin-config.h ~/bitcoin/src/config/
+sudo cp assets_installer/bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
+sudo cp assets_installer/bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
 
 sudo mkdir ~/bitcoin/db4/
 cd ~/bitcoin/db4
@@ -41,5 +41,10 @@ cd ~/bitcoin/
 sudo ./autogen.sh
 CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
 sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
-sudo cp $INSTALL_PWD_TMP/bitcoin_config.h ~/bitcoin/build_msvc/bitcoin_config.h
+sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
+sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
 sudo make
