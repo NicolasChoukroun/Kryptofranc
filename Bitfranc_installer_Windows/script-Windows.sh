@@ -20,7 +20,6 @@ INSTALL_PWD_TMP=$PWD
 sudo cp -r ../bitcoin ~/
 sudo rm -rf ~/bitcoin/src/qt/locale
 sudo cp -R locale ~/bitcoin/src/qt/
-#sudo cp Bitfranc_installer/bitcoin_config.h ~/bitcoin/src/config/
 sudo cp Bitfranc_installer/bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
 sudo cp Bitfranc_installer/bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
 
@@ -42,5 +41,7 @@ cd ~/bitcoin/
 sudo ./autogen.sh
 CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
 sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
-#sudo cp $INSTALL_PWD_TMP/bitcoin_config.h ~/bitcoin/build_msvc/bitcoin_config.h
+sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin_config.h
+sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/src/config/bitcoin_config.h
+sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/src/config/bitcoin_config.h
 sudo make
