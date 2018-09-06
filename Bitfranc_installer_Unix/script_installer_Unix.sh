@@ -1,10 +1,17 @@
 #!/bin/bash -xv
+echo "-----------------------------------------------------------"
+echo "bitFranc Installer: UNIX version 1.0"
+echo "Options:"
+echo "  - git=yes": will clone bitcoin and recompile all
+echo "-----------------------------------------------------------"
+
 sudo apt-get --assume-yes update
 sudo apt-get --assume-yes upgrade
 sudo apt-get --assume-yes install git
 sudo apt-get --assume-yes install autoconf libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module
-#git clone https://github.com/bitcoin/bitcoin.git
-
+if [ $opt -git yes ]; then
+  git clone https://github.com/bitcoin/bitcoin.git
+fi
 INSTALL_PWD_TMP=$PWD
 sudo cp -r ../bitcoin ~/
 sudo rm -rf ~/bitcoin/src/qt/locale
