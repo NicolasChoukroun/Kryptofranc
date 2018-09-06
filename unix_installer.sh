@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 echo "-----------------------------------------------------------"
-echo "bitFranc Installer: UNIX version 1.0"
+echo "bitFranc Installer: UNIX version 1.1"
 echo "Options:"
 echo "  - git=yes": will clone bitcoin and recompile all
 echo "-----------------------------------------------------------"
