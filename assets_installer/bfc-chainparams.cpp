@@ -74,6 +74,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
             strNetworkID = "main";
+
             consensus.nSubsidyHalvingInterval = 157500; // 3 years instead of 210000 = 4 years
             consensus.BIP16Exception = uint256S("0x00000000000002dc756eebf4f49723ed8d30cc28a5f108eb94b1ba88ac4f9c22");
             consensus.BIP34Height = 227931;
@@ -102,6 +103,7 @@ public:
             consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1510704000; // November 15th, 2017.
 
             // The best chain should have at least this much work.
+
             consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000100010001");
 
             // By default assume that the signatures in ancestors of this block are valid.
@@ -117,6 +119,7 @@ public:
             pchMessageStart[2] = 0xaa;
             pchMessageStart[3] = 0xaa;
             nDefaultPort = 1799;
+
             nPruneAfterHeight = 100000;
 
             genesis = CreateGenesisBlock(1546300800, 3, 0x207fffff, 1, 66 * COIN);
@@ -148,7 +151,6 @@ public:
             fMineBlocksOnDemand = false;
 
             checkpointData = {
-
             };
 
             chainTxData = ChainTxData{
