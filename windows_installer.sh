@@ -92,4 +92,10 @@ sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/src/config/bitcoin-config.h
 sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
 sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
 sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
+
 sudo make
+
+sudo mv ~/bitcoin/src/bitcoind ~/bitcoin/src/bitfrancd
+sudo mv ~/bitcoin/src/bitcoin-tx ~/bitcoin/src/bitfranc-tx
+sudo mv ~/bitcoin/src/bitcoin-cli ~/bitcoin/src/bitfranc-cli
+sudo mv ~/bitcoin/src/qt/bitcoin-qt ~/bitcoin/src/qt/bitfranc-qt
