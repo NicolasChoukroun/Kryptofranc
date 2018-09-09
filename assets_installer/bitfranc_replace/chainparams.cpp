@@ -20,7 +20,10 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
         txNew.nVersion = 1;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        // 486604799  = nBit in decimal 0x1e0ffff0=486604799
+        // 545259519 = nBit of biFranc 0x207fffff
+        // check https://github.com/litecoin-project/litecoin/issues/388
+        txNew.vin[0].scriptSig = CScript() << 545259519 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = genesisReward;
         txNew.vout[0].scriptPubKey = genesisOutputScript;
 
@@ -141,6 +144,7 @@ public:
             //CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
             genesis = CreateGenesisBlock(1536340861, 991619269, 0x1d00ffff, 1, 66 * COIN);
             consensus.hashGenesisBlock = genesis.GetHash();
+            // ---------------------------------------------
             assert(consensus.hashGenesisBlock == uint256S("0x7866e6893c5572b08ecdfd0a0c4910d896f2248356cbee2d33dcc995b84ecb46"));
             assert(genesis.hashMerkleRoot == uint256S("0x000000002e863c291e7501e94946e331898ec56e1e2226d059b1b25e17bb5655"));
 
