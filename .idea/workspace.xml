@@ -10,8 +10,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lefrancoin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lefrancoin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/addressbookpage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/addressbookpage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/amount.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/amount.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/askpassphrasedialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/askpassphrasedialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoind.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoind.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoingui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoingui.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/blockchain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/blockchain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparamsbase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparamsbase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/db.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/db.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/editaddressdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/editaddressdialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/guiutil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/guiutil.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/init.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,26 +92,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="1" />
+          <entry key="cpp" value="27" />
+          <entry key="h" value="2" />
+          <entry key="py" value="4" />
           <entry key="sh" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
-          <entry key="ObjectiveC" value="1" />
+          <entry key="ObjectiveC" value="29" />
           <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="177" />
+          <entry key="cpp" value="215" />
+          <entry key="h" value="2" />
+          <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="7" />
-          <entry key="ObjectiveC" value="170" />
+          <entry key="ObjectiveC" value="210" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -88,63 +125,93 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpc_fundrawtransaction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilities/GenesisH0/rungenesis.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unix_installer.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/windows_installer.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitcoin/src/hash.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitcoin/src/coins.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.h">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -180,7 +247,39 @@
         <option value="$PROJECT_DIR$/assets_installer/tmp/chainparams.cpp" />
         <option value="$PROJECT_DIR$/unix_installer.sh" />
         <option value="$PROJECT_DIR$/windows_installer.sh" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoin.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/askpassphrasedialog.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/amount.h" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/addressbookpage.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoind.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoingui.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/blockchain.cpp" />
         <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparamsbase.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/db.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/editaddressdialog.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/feature_help.py" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/guiutil.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/init.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/interface_bitcoin_cli.py" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp" />
       </list>
     </option>
   </component>
@@ -196,6 +295,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -217,13 +317,61 @@
             <path>
               <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="assets_installer" type="462c0819:PsiDirectoryNode" />
+              <item name="bitfranc_replace" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="GenesisH0" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="univalue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,6 +381,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -263,13 +412,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10025000" />
+    <option name="totallyTimeSpent" value="10731000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3988" y="15" width="1400" height="1000" extended-state="0" />
+    <frame x="261" y="183" width="1954" height="1747" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21940298" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15522704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -342,10 +491,258 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/mininode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="155" column="45" lean-forward="true" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
+          <folding>
+            <element signature="e#796#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoin.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/askpassphrasedialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/amount.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/addressbookpage.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <element signature="e#222#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoind.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoingui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <element signature="e#1487#1495#0" expanded="true" />
+            <element signature="e#1528#1537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/blockchain.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparamsbase.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/db.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/editaddressdialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/feature_help.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/guiutil.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/init.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/interface_bitcoin_cli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-935">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2006">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpc_fundrawtransaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
         </state>
       </provider>
     </entry>
