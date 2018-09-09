@@ -11,38 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/lefrancoin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lefrancoin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/addressbookpage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/addressbookpage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/amount.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/amount.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/askpassphrasedialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/askpassphrasedialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoin.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoind.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoind.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoingui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/bitcoingui.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/blockchain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/blockchain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparamsbase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparamsbase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/db.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/db.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/editaddressdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/editaddressdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/guiutil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/guiutil.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/init.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcwallet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/sendcoinsdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/utilitydialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +60,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="27" />
+          <entry key="c" value="1" />
+          <entry key="cpp" value="28" />
           <entry key="h" value="2" />
           <entry key="py" value="4" />
           <entry key="sh" value="3" />
@@ -101,7 +70,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
-          <entry key="ObjectiveC" value="29" />
+          <entry key="ObjectiveC" value="31" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="4" />
         </counts>
@@ -124,24 +93,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpc_fundrawtransaction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpcdump.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -205,12 +156,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/wallettests.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3024" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utilities/genesisgen/genesis.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4724" />
           </provider>
         </entry>
       </file>
@@ -236,7 +201,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/utilities/genesisgen" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -312,66 +277,13 @@
             <path>
               <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="assets_installer" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="assets_installer" type="462c0819:PsiDirectoryNode" />
-              <item name="bitfranc_replace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="qt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="univalue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wallet" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="genesisgen" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10731000" />
+    <option name="totallyTimeSpent" value="11492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="261" y="183" width="1954" height="1747" extended-state="0" />
@@ -686,7 +598,7 @@
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpc_fundrawtransaction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -744,6 +656,16 @@
         <state relative-caret-position="17">
           <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/wallettests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3024" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/genesisgen/genesis.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4724" />
       </provider>
     </entry>
   </component>
