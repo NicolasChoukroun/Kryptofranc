@@ -109,8 +109,8 @@ TEST(FileNameTest, Construction) {
   ASSERT_EQ(100, number);
   ASSERT_EQ(kDescriptorFile, type);
 
-  fname = TempFileName("tmp", 999);
-  ASSERT_EQ("tmp/", std::string(fname.data(), 4));
+  fname = TempFileName("bitfranc_replace", 999);
+  ASSERT_EQ("bitfranc_replace/", std::string(fname.data(), 4));
   ASSERT_TRUE(ParseFileName(fname.c_str() + 4, &number, &type));
   ASSERT_EQ(999, number);
   ASSERT_EQ(kTempFile, type);

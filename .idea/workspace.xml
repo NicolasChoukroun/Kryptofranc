@@ -10,7 +10,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets_installer/bfc-chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assets_installer/bfc-chainparams.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/addressbookpage.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/amount.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/askpassphrasedialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/bitcoin-cli.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/bitcoin.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/bitcoind.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/bitcoingui.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/blockchain.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/chainparams.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/chainparamsbase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/db.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/editaddressdialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/feature_help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/guiutil.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/init.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/interface_bitcoin_cli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/interface_rest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/intro.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/key.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/mempool_persist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/mining.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/mininode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/misc.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/modaloverlay.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/net.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/net2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/openuridialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/overviewpage.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/paymentserver.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/pow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/rawtransaction.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/rpc_fundrawtransaction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/rpc_rawtransaction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/rpcdump.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/rpcwallet.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/sendcoinsdialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/test_runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/update-translations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/utilitydialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/validation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/wallet_tests.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets_installer/tmp/wallettests.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/src/leveldb/db/c_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/src/leveldb/db/c_test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/src/leveldb/db/fault_injection_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/src/leveldb/db/fault_injection_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/src/leveldb/db/filename_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/src/leveldb/db/filename_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/src/leveldb/util/env_posix.cc" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/src/leveldb/util/env_posix.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/src/rpc/protocol.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/src/rpc/protocol.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin/test/functional/mempool_persist.py" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin/test/functional/mempool_persist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unix_installer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/unix_installer.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows_installer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/windows_installer.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,32 +104,69 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1166981087">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="1" />
+          <entry key="sh" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="46" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Doxygen file" value="7" />
+          <entry key="ObjectiveC" value="39" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="231">
+              <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
+        <entry file="file://$PROJECT_DIR$/unix_installer.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="121" column="78" lean-forward="true" selection-start-line="121" selection-start-column="78" selection-end-line="121" selection-end-column="78" />
+            <state relative-caret-position="1002">
+              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets_installer/bfc-chainparams.cpp">
+        <entry file="file://$PROJECT_DIR$/windows_installer.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1247">
-              <caret line="121" column="73" selection-start-line="121" selection-start-column="73" selection-end-line="121" selection-end-column="73" />
+            <state relative-caret-position="1022">
+              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -95,9 +187,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -109,7 +199,14 @@
       <find>CreateGenesisBloc</find>
       <find>1231006505</find>
       <find>000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f</find>
+      <find>0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f</find>
+      <find>nMasternodeMinimumConfirmations</find>
+      <find>max_block_size</find>
+      <find>tmp/</find>
     </findStrings>
+    <replaceStrings>
+      <replace>bitfranc_replace/</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>D:\projects 2\lefrancoin\bitcoin\src</dir>
     </dirStrings>
@@ -120,8 +217,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bitcoin/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/assets_installer/bfc-chainparams.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/bitcoin/src/chainparams.cpp" />
+        <option value="$PROJECT_DIR$/assets_installer/tmp/chainparams.cpp" />
+        <option value="$PROJECT_DIR$/unix_installer.sh" />
+        <option value="$PROJECT_DIR$/windows_installer.sh" />
       </list>
     </option>
   </component>
@@ -131,9 +232,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1189" />
-    <option name="y" value="580" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1205" />
+    <option name="y" value="174" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -147,18 +248,24 @@
         <subPane>
           <expand>
             <path>
-              <item name="lefrancoin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lefrancoin" type="462c0819:PsiDirectoryNode" />
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lefrancoin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lefrancoin" type="462c0819:PsiDirectoryNode" />
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
               <item name="assets_installer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lefrancoin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lefrancoin" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="GenesisH0" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,35 +299,35 @@
       <option name="presentableId" value="Default" />
       <updated>1536226156617</updated>
       <workItem from="1536226159673" duration="4414000" />
+      <workItem from="1536331444415" duration="4316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4414000" />
+    <option name="totallyTimeSpent" value="8730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3794" height="2176" extended-state="6" />
-    <editor active="true" />
+    <frame x="1205" y="174" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08971612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="CMake" visible="true" weight="0.13999021" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.13956171" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +337,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets_installer/bfc-chainparams.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -248,21 +356,29 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="121" column="78" lean-forward="true" selection-start-line="121" selection-start-column="78" selection-end-line="121" selection-end-column="78" />
+        <state relative-caret-position="231">
+          <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets_installer/bfc-chainparams.cpp">
+    <entry file="file://$PROJECT_DIR$/unix_installer.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1247">
-          <caret line="121" column="73" selection-start-line="121" selection-start-column="73" selection-end-line="121" selection-end-column="73" />
+        <state relative-caret-position="1002">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows_installer.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1022">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
         </state>
       </provider>
     </entry>

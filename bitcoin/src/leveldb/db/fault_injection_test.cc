@@ -62,7 +62,7 @@ Status Truncate(const std::string& filename, uint64_t length) {
   s = orig_file->Read(length, &result, scratch);
   delete orig_file;
   if (s.ok()) {
-    std::string tmp_name = GetDirName(filename) + "/truncate.tmp";
+    std::string tmp_name = GetDirName(filename) + "/truncate.bitfranc_replace";
     WritableFile* tmp_file;
     s = env->NewWritableFile(tmp_name, &tmp_file);
     if (s.ok()) {

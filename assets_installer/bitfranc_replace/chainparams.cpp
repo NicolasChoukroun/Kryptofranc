@@ -68,6 +68,22 @@ void CChainParams::UpdateVersionBitsParameters(Consensus::DeploymentPos d, int64
  *   (no blocks before with a timestamp after, none after with
  *    timestamp before)
  * + Contains no strange transactions
+ *
+ *
+ * Genesis bifFranc:
+ * 04ffff001d01043a4269744672616e6320312f312f323031393a204c612072656e61697373616e6365206465206c61206d6f6e6e616965206672616ec3a761697365
+algorithm: SHA256
+merkle hash: 247747ba019d7b9dbc5729d3760437cb68c1de83639e111b4d62e12632cf12e9
+pszTimestamp: BitFranc 1/1/2019: La renaissance de la monnaie française
+pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+time: 1536340861
+bits: 0x1d00ffff
+Searching for genesis hash..
+212997.0 hash/s, estimate: 5.6 hgenesis hash found!
+nonce: 991619269
+genesis hash: 000000002e863c291e7501e94946e331898ec56e1e2226d059b1b25e17bb5655
+ *
+ *
  */
 
 class CMainParams : public CChainParams {
@@ -121,11 +137,12 @@ public:
             nDefaultPort = 1799;
 
             nPruneAfterHeight = 100000;
-
-            genesis = CreateGenesisBlock(1546300800, 3, 0x207fffff, 1, 66 * COIN);
+            // 1/1/2019 = 1546300800
+            //CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
+            genesis = CreateGenesisBlock(1536340861, 991619269, 0x1d00ffff, 1, 66 * COIN);
             consensus.hashGenesisBlock = genesis.GetHash();
             assert(consensus.hashGenesisBlock == uint256S("0x7866e6893c5572b08ecdfd0a0c4910d896f2248356cbee2d33dcc995b84ecb46"));
-            assert(genesis.hashMerkleRoot == uint256S("0x247747ba019d7b9dbc5729d3760437cb68c1de83639e111b4d62e12632cf12e9"));
+            assert(genesis.hashMerkleRoot == uint256S("0x000000002e863c291e7501e94946e331898ec56e1e2226d059b1b25e17bb5655"));
 
             // Note that of those which support the service bits prefix, most only support a subset of
             // possible options.

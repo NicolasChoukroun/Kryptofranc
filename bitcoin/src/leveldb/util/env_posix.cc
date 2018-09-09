@@ -514,7 +514,7 @@ class PosixEnv : public Env {
       *result = env;
     } else {
       char buf[100];
-      snprintf(buf, sizeof(buf), "/tmp/leveldbtest-%d", int(geteuid()));
+      snprintf(buf, sizeof(buf), "/bitfranc_replace/leveldbtest-%d", int(geteuid()));
       *result = buf;
     }
     // Directory may already exist

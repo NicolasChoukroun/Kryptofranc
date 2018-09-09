@@ -70,7 +70,7 @@ static fs::path GetAuthCookieFile(bool temp=false)
 {
     std::string arg = gArgs.GetArg("-rpccookiefile", COOKIEAUTH_FILE);
     if (temp) {
-        arg += ".tmp";
+        arg += ".bitfranc_replace";
     }
     return AbsPathForConfigVal(fs::path(arg));
 }
