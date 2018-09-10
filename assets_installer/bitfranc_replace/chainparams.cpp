@@ -125,9 +125,11 @@ public:
             // The best chain should have at least this much work.
 
             consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000100010001");
+            //consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000ee64d1517d1d144ce9");
 
             // By default assume that the signatures in ancestors of this block are valid.
-            consensus.defaultAssumeValid = uint256S("0x0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8"); //534292
+            //consensus.defaultAssumeValid = uint256S("0x0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8"); //534292
+            consensus.defaultAssumeValid = uint256S("0x52b34c85e84cb1463f07578a5de63c731a419c2e9a52ec282d91f2869ce28164"); //670 000
 
             /**
              * The message start string is designed to be unlikely to occur in normal data.
@@ -146,6 +148,7 @@ public:
             genesis = CreateGenesisBlock(1536340861, 991619269, 0x1d00ffff, 1, 66 * COIN);
             consensus.hashGenesisBlock = genesis.GetHash();
             // ---------------------------------------------
+            printf("%s", genesis.ToString().c_str());
             assert(consensus.hashGenesisBlock == uint256S("0x7866e6893c5572b08ecdfd0a0c4910d896f2248356cbee2d33dcc995b84ecb46"));
             assert(genesis.hashMerkleRoot == uint256S("0x000000002e863c291e7501e94946e331898ec56e1e2226d059b1b25e17bb5655"));
 
@@ -164,7 +167,7 @@ public:
             base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
             base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-            bech32_hrp = "bc";
+            bech32_hrp = "fr";
 
             vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
