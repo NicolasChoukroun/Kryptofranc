@@ -73,7 +73,7 @@ if [ $INSTALL="yes" ]; then
     sudo cp -r bitcoin ~/
 fi
 
-if [ EXTRAS="yes" ]; then
+if [ $EXTRAS="yes" ]; then
     echo "--------------------------------------------------\n\n"
     echo "Extras Installation...\n\n"
     sudo apt update
