@@ -1,18 +1,69 @@
 #!/bin/bash
 echo "--------------------------------------------------------------"
 echo "bitFranc Installer: version 1.2"
-echo "Options:"
-echo "  -install:            will install all for (UNIX by default)"
-echo "  -install --win:      will install for Windows os "
-echo "  -update:             will compile changes"
+echo "installer [option1] [option2] [option3] [option3]"
+echo "  win:       compile for Windows os "
+echo "  unix:      compile for Unix (default)"
+echo "  install:   install and update the dependencies (default = no)"
+echo "  clone:     install and update the dependencies (default = no)"
+echo "  extras:    install extras (vsftpd for example) (default = no)"
+echo "  noexec:    do not execute the wallet at the end (default = no)"
+echo "  copy:      update the bitcoin directory with the assets_installer changes (default = no)
 echo "--------------------------------------------------------------"
 
-MOD="-u"
+#initialize the internal variables
+$OS="unix"
+$INSTALL="no"
+$COPY="no"
+$CLONE="no"
+$EXTRAS="no"
+$NOEXEC="no"
 
-if [ "$1" = "-copy" ]; then
-    MOD=" "
-elif [ "$1" = "-install" ]; then
-    MOD=" "
+# test the number max of options
+if [ "$#" -ge 1 ] || ; then
+
+    if [ "$#" -ge 5 ] || ; then
+        echo "Error: too many parameters (4 max)\n"
+        exit
+    fi
+
+    // loop through all the options and set the corresponding variables
+    while [ "$1" != "" ]; do
+        case $1 in
+            win)         
+            OS="windows"       
+             ;;  
+            copy)         
+            COPY="yes"       
+             ;;
+            install)         
+            INSTALL="yes"       
+             ;;
+        esac
+        shift
+    done
+fi
+
+echo "--------------------------------------------------\n"
+echo " EXECUTING SCRIPT IWHT OPTIONS\n\m"
+echo "OS="
+echo $OS
+echo "\n"
+echo "INSTALL="
+echo $INSTALL
+echo "\n"
+echo "COPY="
+echo $COPY
+echo "\n"
+echo "CLONE="
+echo $CLONE
+echo "\n"
+echo "EXTRAS="
+echo $EXTRAS
+echo "\n\n"
+echo "--------------------------------------------------\n\n"
+echo "Install option executing...\n\n"
+if [ INSTALL="yes" ]; then
     sudo apt-get --assume-yes update
     sudo apt-get --assume-yes upgrade
     sudo apt-get --assume-yes install git
@@ -21,6 +72,12 @@ elif [ "$1" = "-install" ]; then
     sudo apt-get --assume-yes install autoconf libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module
     sudo cp -r bitcoin ~/
 fi
+if [ COPY="yes" ]; then
+    $MOD="-u"
+fi
+
+echo "--------------------------------------------------\n\n"
+echo "Copy option executing with $MOD parameter...\n\n"
 
 sudo cp $MOD assets_installer/bitfranc_replace/modaloverlay.ui ~/bitcoin/src/qt/forms/
 sudo cp $MOD assets_installer/bitfranc_replace/overviewpage.ui ~/bitcoin/src/qt/forms/
@@ -68,11 +125,14 @@ sudo cp $MOD assets_installer/bitfranc_replace/chainparams.cpp ~/bitcoin/src/
 sudo cp $MOD assets_installer/bitfranc_replace/chainparamsbase.cpp ~/bitcoin/src/
 sudo cp $MOD assets_installer/bitfranc_replace/pow.cpp ~/bitcoin/src/
 
-if [ "$1" = "-install" ]; then
-    sudo rm -rf ~/bitcoin/src/qt/locale
-    sudo cp $MOD -R assets_installer/locale ~/bitcoin/src/qt/
-    sudo cp $MOD assets_installer/bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
-    sudo cp $MOD assets_installer/bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
+sudo rm -rf ~/bitcoin/src/qt/locale
+sudo cp $MOD -R assets_installer/locale ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
+sudo cp $MOD assets_installer/bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
+
+if [ $INSTALL="yes" ]; then
+    echo "--------------------------------------------------\n\n"
+    echo "Install and configure DB4...\n\n"
 
     sudo mkdir ~/bitcoin/db4/
     cd ~/bitcoin/db4
@@ -86,14 +146,14 @@ if [ "$1" = "-install" ]; then
 fi
 
 cd ~/bitcoin
-if [ "$2" = "--win" ]; then
+if [ $OS = "win"]; then
     cd ~/bitcoin/depends
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
     sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
     sudo make HOST=x86_64-w64-mingw32
 fi
 
-if [ "$1" = "-install" ]; then
+if [ $INSTALL = "yes" ]; then
     sudo ./autogen.sh
     sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
     sudo sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
@@ -111,7 +171,10 @@ sudo mv	~/bitcoin/src/bitcoin-tx ~/bitcoin/src/bitfranc-tx
 sudo mv	~/bitcoin/src/bitcoin-cli ~/bitcoin/src/bitfranc-cli
 sudo mv	~/bitcoin/src/qt/bitcoin-qt ~/bitcoin/src/qt/bitfranc-qt
 
-~/bitcoin/src/qt/./bitfranc-qt
+if [ $NOEXEC = "no" ]; then
+    ~/bitcoin/src/qt/./bitfranc-qt
+fi
+exit;
 
 
 
