@@ -24,13 +24,13 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan bitFranc Installer: version 1.24"
+echo -e "$BCyan bitFranc Installer: version 1.25"
 echo -e "$BBlue installer [option1] [option2] [option3] [option3]"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
 echo -e "  all       do all options at a time (default = no)"
 echo -e "  install   install and update the dependencies (default = no)"
-echo -e "  clone     clone bitcoin in its working directory (default = no)"
+echo -e "  clone     copy the clean bitcoin folder to the working one (default = no)"
 echo -e "  extras    install extras (vsftpd for example) (default = no)"
 echo -e "  noexec    do not execute the wallet at the end (default = no)"
 echo -e "  copy      update the bitcoin directory with the assets_installer changes (default = no)"
@@ -115,30 +115,30 @@ if [ $INSTALL="yes" ]; then
     sudo apt-get --assume-yes install build-essential
     sudo apt-get --assume-yes install qt5-default qttools5-dev-tools
     sudo apt-get --assume-yes install autoconf libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module
-    sudo cp -r bitcoin ~/
+    
 fi
 
-if [ $CLONE="yes" ]; then
+if [ $CLONE = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
-    echo -e "$BGreen Cloning bitcoin core locally (clone option is on)..."
+    echo -e "$BGreen Copy the clean bitcoin folder the the working one (clone option is on)..."
     echo -e $Color_Off
-    cd $HOME
-    rm -r -f bitcoin
-    sudo git clone https://github.com/bitcoin/bitcoin 
+    sudo rm -r -f bitcoin
+    sudo cp -r bitcoin ~/ 
+    #sudo git clone https://github.com/bitcoin/bitcoin 
 fi
 
-if [ $EXTRAS="yes" ]; then
+if [ $EXTRAS = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Extras Installation..."
     echo -e $Color_Off
-     
+    
     sudo apt update
     sudo apt-get --assume-yes install hardinfo
     sudo apt --assume-yes install software-center*
     sudo apt-get --assume-yes install git-core
     git.config --global.username "bitFranc"
     echo "I need you GIT user email so that later on you push with your name:"
-    read GITUSER
+    sudo read GITUSER
     git.config --global user.email $GITUSER
     snap install ubuntu-mate-welcome --classic
     snap install software-boutique --classic
@@ -152,7 +152,7 @@ if [ $EXTRAS="yes" ]; then
     sudo ufw allow 80:tcp
     sudo yfw allow 443:tcp
     echo "Please enter a login/user for the FTP:"
-    read FTPLOGIN
+    sudo read FTPLOGIN
     sudo adduser $FTPLOGIN
     sudo mkdir /home/$FTPLOGIN/ftp
     sudo mkdir /home/$FTPLOGIN/http
@@ -161,15 +161,15 @@ if [ $EXTRAS="yes" ]; then
     sudo chmod +rw /home/$FTPLOGIN/ftp
     sudo chmod +rw /home/$FTPLOGIN/http
     sudo openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
-    cp assets_installer/vsftpd.conf /etc/vsftpd.conf
-    cp assets_installer/vsftpd.pem /etc/ssl/private/vsftpd.pem
-    systemctl restart vsftpd
+    sudo cp assets_installer/vsftpd.conf /etc/vsftpd.conf
+    sudo cp assets_installer/vsftpd.pem /etc/ssl/private/vsftpd.pem
+    sudo systemctl restart vsftpd
 
 fi
 
-cd $HOME
 
-if [ ! -d "bitcoin" ]; then
+
+if [ ! -d "~/bitcoin" ]; then
     # check if bitcoin directory is here or not
     echo -e "$BRed bitcoin directory not found. Please use the <<clone>> option first"
     echo -e $Color_Off
@@ -210,9 +210,9 @@ sudo cp $MOD assets_installer/bitfranc_replace/intro.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/mempool_persist.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/mining.cpp ~/bitcoin/src/rpc/
 sudo cp $MOD assets_installer/bitfranc_replace/mininode.py ~/bitcoin/test/functional/test_framework/
-sudo cp $MOD assets_installer/bitfranc_replace/misc.cpp ~/bitcoin/src/rpc/
+sudo cp $MOD assets_installer/bitfranc_replace/misc.cpp ~/bitcoin/src/rpc
 sudo cp $MOD assets_installer/bitfranc_replace/net2.cpp ~/bitcoin/src/rpc/
-sudo mv ~/bitcoin/test/functional/net2.cpp ~/bitcoin/src/rpc/net.cpp
+sudo mv ~/bitcoin/src/rpc/net2.cpp ~/bitcoin/src/rpc/net.cpp
 sudo cp $MOD assets_installer/bitfranc_replace/openuridialog.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/paymentserver.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/rawtransaction.cpp ~/bitcoin/src/rpc/
@@ -269,6 +269,14 @@ if [ $INSTALL = "yes" ]; then
     sudo sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
     sudo sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
     sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
+
+    sudo sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/build_msvc/bitcoin_config.h
+
 fi
 
 cd ~/bitcoin
