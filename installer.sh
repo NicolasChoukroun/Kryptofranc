@@ -1,21 +1,46 @@
 #!/bin/bash
+
+# Reset
+Color_Off='\033[0m'       # Text Reset
+
+# Regular Colors
+Black='\033[0;30m'        # Black
+Red='\033[0;31m'          # Red
+Green='\033[0;32m'        # Green
+Yellow='\033[0;33m'       # Yellow
+Blue='\033[0;34m'         # Blue
+Purple='\033[0;35m'       # Purple
+Cyan='\033[0;36m'         # Cyan
+White='\033[0;37m'        # White
+
+# Bold
+BBlack='\033[1;30m'       # Black
+BRed='\033[1;31m'         # Red
+BGreen='\033[1;32m'       # Green
+BYellow='\033[1;33m'      # Yellow
+BBlue='\033[1;34m'        # Blue
+BPurple='\033[1;35m'      # Purple
+BCyan='\033[1;36m'        # Cyan
+BWhite='\033[1;37m'       # White
+
 echo "--------------------------------------------------------------"
-echo "bitFranc Installer: version 1.23"
-echo "installer [option1] [option2] [option3] [option3]"
-echo "  win       compile for Windows os "
-echo "  unix      compile for Unix (default)"
-echo "  install   install and update the dependencies (default = no)"
-echo "  clone     clone bitcoin in its working directory (default = no)"
-echo "  extras    install extras (vsftpd for example) (default = no)"
-echo "  noexec    do not execute the wallet at the end (default = no)"
-echo "  copy      update the bitcoin directory with the assets_installer changes (default = no)"
+echo -e "$BCyan bitFranc Installer: version 1.24"
+echo -e "$BBlue installer [option1] [option2] [option3] [option3]"
+echo -e "$BGreen  win       compile for Windows os "
+echo -e "  unix      compile for Unix (default)"
+echo -e "  all       do all options at a time (default = no)"
+echo -e "  install   install and update the dependencies (default = no)"
+echo -e "  clone     clone bitcoin in its working directory (default = no)"
+echo -e "  extras    install extras (vsftpd for example) (default = no)"
+echo -e "  noexec    do not execute the wallet at the end (default = no)"
+echo -e "  copy      update the bitcoin directory with the assets_installer changes (default = no)"
 echo
-echo "example: ./installer.sh install noexec clone copy"
-echo "will compile for unix, install qt, git db4 etc.. clone git bitcoin, and copy the bifFranc changes over it."
+echo -e "$BYellow example: ./installer.sh install noexec clone copy"
+echo "  ->will compile for unix, install qt, git db4 etc.. clone git bitcoin, and copy the bifFranc changes over it."
 echo "--------------------------------------------------------------"
+echo -e $Color_Off
 
 # initialize the internal variables
-
 OS="unix"
 INSTALL="no"
 COPY="no"
@@ -23,55 +48,66 @@ CLONE="no"
 EXTRAS="no"
 NOEXEC="no"
 
-
 # test the number max of options
-if [ "$#" -le 1 ] ; then
-   	echo "exiting..."
+if [ "$#" = 0 ] ; then
+   	echo -e "$BRed no option selected: exiting..."
+	echo -e $Color_Off
+        exit;
 fi
 if [ "$#" -ge 5 ]  ; then
-	echo "Error: too many parameters (5 max)"
+	echo -e "$BRed Error: too many parameters (5 max)"
+	echo -e $Color_Off
 	exit
 fi
 
 # loop through all the options and set the corresponding variables
 while [ "$1" != "" ]; do
 	case $1 in
+	    all)
+		OS="unix"
+		INSTALL="yes"
+		COPY="yes"
+		CLONE="yes"
+		EXTRAS="no"
+		NOEXEC="yes"
+	      ;;
 	    win)
-	    OS="windows"
+	    	OS="windows"
 	     ;;
 	    copy)
-	    COPY="yes"
+	    	COPY="yes"
 	     ;;
 	    install)
-	    INSTALL="yes"
+	    	INSTALL="yes"
 	     ;;
 	    noexec)
-	    NOEXEC="yes"
+	    	NOEXEC="yes"
 	     ;;
 	    extras)
-	    EXTRAS="yes"
+	    	EXTRAS="yes"
 	     ;;
 	    help)
-	    exit
+	    	exit
 	    ;;
 	esac
 	shift
 done
 
-echo "--------------------------------------------------"
+echo -e "$BYellow --------------------------------------------------"
 echo " *** EXECUTING SCRIPT WITH OPTIONS ***"
-echo "OS=$OS"
-echo "INSTALL=$INSTALL"
-echo "COPY=$COPY"
-echo "CLONE=$CLONE"
-echo "EXTRAS=$EXTRAS"
-echo "NOEXEC=$NOEXEC"
+echo "OS option $OS"
+echo "INSTALL option $INSTALL"
+echo "COPY option $COPY"
+echo "CLONE option $CLONE"
+echo "EXTRAS option  $EXTRAS"
+echo "NOEXEC option $NOEXEC"
 echo "--------------------------------------------------"
-
+echo -e $Color_Off
 
 if [ $INSTALL="yes" ]; then
-    echo "--------------------------------------------------"
-    echo "Install option executing (install option is on)..."
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Install option executing (install option is on)..."
+    echo -e $Color_Off
 
     sudo apt-get --assume-yes update
     sudo apt-get --assume-yes upgrade
@@ -83,21 +119,23 @@ if [ $INSTALL="yes" ]; then
 fi
 
 if [ $CLONE="yes" ]; then
-    echo "--------------------------------------------------"
-    echo "Cloning bitcoin core locally (clone option is on)..."
-
-    sudo cd
-    sudo rm -r -f bitcoin
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Cloning bitcoin core locally (clone option is on)..."
+    echo -e $Color_Off
+    cd $HOME
+    rm -r -f bitcoin
     sudo git clone https://github.com/bitcoin/bitcoin 
 fi
 
 if [ $EXTRAS="yes" ]; then
-    echo "--------------------------------------------------"
-    echo "Extras Installation..."
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Extras Installation..."
+    echo -e $Color_Off
+     
     sudo apt update
-    sudo apt-get install hardinfo
-    sudo apt install software-center*
-    sudo apt-get isntall git-core
+    sudo apt-get --assume-yes install hardinfo
+    sudo apt --assume-yes install software-center*
+    sudo apt-get --assume-yes install git-core
     git.config --global.username "bitFranc"
     echo "I need you GIT user email so that later on you push with your name:"
     read GITUSER
@@ -129,12 +167,23 @@ if [ $EXTRAS="yes" ]; then
 
 fi
 
+cd $HOME
+
+if [ ! -d "bitcoin" ]; then
+    # check if bitcoin directory is here or not
+    echo -e "$BRed bitcoin directory not found. Please use the <<clone>> option first"
+    echo -e $Color_Off
+    exit 
+fi
+
+
 if [ $COPY="yes" ]; then
     $MOD="-u"
 fi
 
-echo "--------------------------------------------------"
-echo "Copy option executing with $MOD parameter..."
+echo -e "$BYellow --------------------------------------------------"
+echo -e "$BGreen Copy option executing with $MOD parameter..."
+echo -e $Color_Off
 
 sudo cp $MOD assets_installer/bitfranc_replace/modaloverlay.ui ~/bitcoin/src/qt/forms/
 sudo cp $MOD assets_installer/bitfranc_replace/overviewpage.ui ~/bitcoin/src/qt/forms/
@@ -188,9 +237,10 @@ sudo cp $MOD assets_installer/bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
 sudo cp $MOD assets_installer/bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
 
 if [ $INSTALL="yes" ]; then
-    echo "--------------------------------------------------"
-    echo "Install and configure DB4..."
-
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Install and configure DB4..."
+    echo -e $Color_Off
+    
     sudo mkdir ~/bitcoin/db4/
     cd ~/bitcoin/db4
     sudo wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
