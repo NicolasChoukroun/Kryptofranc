@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "--------------------------------------------------------------"
-echo "bitFranc Installer: version 1.2"
+echo "bitFranc Installer: version 1.21"
 echo "installer [option1] [option2] [option3] [option3]"
 echo "  win:       compile for Windows os "
 echo "  unix:      compile for Unix (default)"
