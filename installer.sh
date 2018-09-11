@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "--------------------------------------------------------------"
-echo "bitFranc Installer: version 1.22"
+echo "bitFranc Installer: version 1.23"
 echo "installer [option1] [option2] [option3] [option3]"
 echo "  win       compile for Windows os "
 echo "  unix      compile for Unix (default)"
@@ -25,7 +25,6 @@ NOEXEC="no"
 
 
 # test the number max of options
-
 if [ "$#" -le 1 ] ; then
    	echo "exiting..."
 fi
@@ -58,7 +57,7 @@ while [ "$1" != "" ]; do
 	esac
 	shift
 done
-	
+
 echo "--------------------------------------------------"
 echo " *** EXECUTING SCRIPT WITH OPTIONS ***"
 echo "OS=$OS"
@@ -69,7 +68,6 @@ echo "EXTRAS=$EXTRAS"
 echo "NOEXEC=$NOEXEC"
 echo "--------------------------------------------------"
 
-exit
 
 if [ $INSTALL="yes" ]; then
     echo "--------------------------------------------------"
@@ -204,7 +202,6 @@ if [ $INSTALL="yes" ]; then
     sudo make install
 fi
 
-cd ~/bitcoin
 if [ $OS = "win"]; then
     cd ~/bitcoin/depends
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
@@ -213,6 +210,7 @@ if [ $OS = "win"]; then
 fi
 
 if [ $INSTALL = "yes" ]; then
+    cd ~/bitcoin
     sudo ./autogen.sh
     sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
     sudo sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
@@ -223,6 +221,7 @@ if [ $INSTALL = "yes" ]; then
     sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
 fi
 
+cd ~/bitcoin
 sudo make
 
 sudo mv ~/bitcoin/src/bitcoind ~/bitcoin/src/bitfrancd
