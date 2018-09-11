@@ -122,7 +122,7 @@ if [ $CLONE = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Copy the clean bitcoin folder the the working one (clone option is on)..."
     echo -e $Color_Off
-    sudo rm -r -f bitcoin
+    sudo rm -r -f ~/bitcoin
     sudo cp -r bitcoin ~/ 
     #sudo git clone https://github.com/bitcoin/bitcoin 
 fi
