@@ -163,6 +163,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
     sudo cp assets_installer/vsftpd.conf /etc/vsftpd.conf
     sudo cp assets_installer/vsftpd.pem /etc/ssl/private/vsftpd.pem
+    echo "$FTPLOGIN" | sudo tee -a /etc/vsftpd.userlist
     sudo systemctl restart vsftpd
 
 fi
