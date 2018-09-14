@@ -153,6 +153,11 @@ if [ $EXTRAS = "yes" ]; then
     sudo yfw allow 443:tcp
     echo "Please enter a login/user for the FTP:"
     sudo read FTPLOGIN
+    if [ $FTPLOGIN="" ]; then
+    	echo -e "$BRed Error: FTP Login cannot be empty"
+	echo -e $Color_Off
+	exit
+    fi
     sudo adduser $FTPLOGIN
     sudo mkdir /home/$FTPLOGIN/ftp
     sudo mkdir /home/$FTPLOGIN/http
