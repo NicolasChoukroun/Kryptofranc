@@ -175,8 +175,8 @@ if [ $EXTRAS = "yes" ]; then
     echo -e $Color_Off
 
     sudo adduser $FTPLOGIN
-    mkdir $FTPPATH/$FTPLOGIN/ftp
-    mkdir $FTPPATH/$FTPLOGIN/http
+    mkdir -v -p $FTPPATH/$FTPLOGIN/ftp
+    mkdir -v -p $FTPPATH/$FTPLOGIN/http
     sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/ftp
     sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/http
     sudo chmod +rw $FTPPATH/$FTPLOGIN/ftp
