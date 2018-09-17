@@ -174,7 +174,7 @@ if [ $EXTRAS = "yes" ]; then
     fi
     echo -e $Color_Off
  
-    deluser $FTPLOGIN   
+    sudo deluser $FTPLOGIN   
     mkdir -v -p $FTPPATH/$FTPLOGIN/ftp
     mkdir -v -p $FTPPATH/$FTPLOGIN/http
     sudo chmod +rw $FTPPATH/$FTPLOGIN/ftp
