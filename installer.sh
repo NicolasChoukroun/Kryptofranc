@@ -150,8 +150,8 @@ if [ $EXTRAS = "yes" ]; then
     sudo ufw allow 21/tcp
     sudo ufw allow 990/tcp
     sudo ufw allow 40000:50000/tcp
-    sudo ufw allow 80:tcp
-    sudo yfw allow 443:tcp
+    sudo ufw allow 80/tcp
+    sudo yfw allow 443/tcp
     echo -e "$BBlue Please enter a login/user for the FTP:"
     read FTPLOGIN
     if [ $FTPLOGIN="" ]; then
