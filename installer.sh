@@ -137,7 +137,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo apt --assume-yes install software-center*
     sudo apt-get --assume-yes install git-core
     git.config --global.username "bitFranc"
-    echo "$BBlueI need you GIT user email so that later on you push with your name:"
+    echo "$BBlue I need you GIT user email so that later on you push with your name:"
     read GITUSER
     echo -e $Color_Off
     git.config --global user.email $GITUSER
@@ -152,7 +152,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo ufw allow 40000:50000/tcp
     sudo ufw allow 80:tcp
     sudo yfw allow 443:tcp
-    echo "$BBluePlease enter a login/user for the FTP:"
+    echo "$BBlue Please enter a login/user for the FTP:"
     read FTPLOGIN
     if [ $FTPLOGIN="" ]; then
     	echo -e "$BRed Error: FTP Login cannot be empty"
@@ -160,7 +160,7 @@ if [ $EXTRAS = "yes" ]; then
 	exit
     fi
     echo -e $Color_Off
-    echo "$BBluePlease enter a path for the FTP (ex:/home or /mnt/fsc):"
+    echo "$BBlue Please enter a path for the FTP (ex:/home or /mnt/fsc):"
     sudo read FTPPATH
     if [ $FTPPATH="" ]; then
     	echo -e "$BRed Error: FTP Path cannot be empty"
