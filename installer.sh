@@ -140,6 +140,11 @@ if [ $EXTRAS = "yes" ]; then
     echo -e "$BBlue I need you GIT user email so that later on you push with your name:"
     read GITUSER
     echo -e $Color_Off
+    if [ -z $GITUSER ]; then
+	echo -e "$BRed Error: Git user cannot be empty"
+	echo -e $Color_Off
+	exit
+    fi  
     git.config --global user.email $GITUSER
     snap install ubuntu-mate-welcome --classic
     snap install software-boutique --classic
@@ -154,7 +159,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo ufw allow 443/tcp
     echo -e "$BBlue Please enter a login/user for the FTP:"
     read FTPLOGIN
-    if [ $FTPLOGIN="" ]; then
+    if [ -z $FTPLOGIN ]; then
     	echo -e "$BRed Error: FTP Login cannot be empty"
 	echo -e $Color_Off
 	exit
@@ -162,7 +167,7 @@ if [ $EXTRAS = "yes" ]; then
     echo -e $Color_Off
     echo -e "$BBlue Please enter a path for the FTP (ex:/home or /mnt/fsc):"
     sudo read FTPPATH
-    if [ $FTPPATH="" ]; then
+    if [ -z $FTPPATH ]; then
     	echo -e "$BRed Error: FTP Path cannot be empty"
 	echo -e $Color_Off
 	exit
