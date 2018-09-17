@@ -151,20 +151,30 @@ if [ $EXTRAS = "yes" ]; then
     sudo ufw allow 40000:50000/tcp
     sudo ufw allow 80:tcp
     sudo yfw allow 443:tcp
-    echo "Please enter a login/user for the FTP:"
+    echo "$BBluePlease enter a login/user for the FTP:"
     sudo read FTPLOGIN
     if [ $FTPLOGIN="" ]; then
     	echo -e "$BRed Error: FTP Login cannot be empty"
 	echo -e $Color_Off
 	exit
     fi
+    echo -e $Color_Off
+    echo "$BBluePlease enter a path for the FTP (ex:/home or /mnt/fsc):"
+    sudo read FTPPATH
+    if [ $FTPPATH="" ]; then
+    	echo -e "$BRed Error: FTP Path cannot be empty"
+	echo -e $Color_Off
+	exit
+    fi
+    echo -e $Color_Off
+
     sudo adduser $FTPLOGIN
-    sudo mkdir /home/$FTPLOGIN/ftp
-    sudo mkdir /home/$FTPLOGIN/http
-    sudo chown nobody:nogroup /home/$FTPLOGIN/ftp
-    sudo chown nobody:nogroup /home/$FTPLOGIN/http
-    sudo chmod +rw /home/$FTPLOGIN/ftp
-    sudo chmod +rw /home/$FTPLOGIN/http
+    sudo mkdir $FTPPATH/$FTPLOGIN/ftp
+    sudo mkdir $FTPPATH/$FTPLOGIN/http
+    sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/ftp
+    sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/http
+    sudo chmod +rw $FTPPATH/$FTPLOGIN/ftp
+    sudo chmod +rw $FTPPATH/$FTPLOGIN/http
     sudo openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
     sudo cp assets_installer/vsftpd.conf /etc/vsftpd.conf
     sudo cp assets_installer/vsftpd.pem /etc/ssl/private/vsftpd.pem
