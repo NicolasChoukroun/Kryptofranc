@@ -138,7 +138,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo apt-get --assume-yes install git-core
     git.config --global.username "bitFranc"
     echo "I need you GIT user email so that later on you push with your name:"
-    sudo read GITUSER
+    read GITUSER
     git.config --global user.email $GITUSER
     snap install ubuntu-mate-welcome --classic
     snap install software-boutique --classic
@@ -152,7 +152,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo ufw allow 80:tcp
     sudo yfw allow 443:tcp
     echo "$BBluePlease enter a login/user for the FTP:"
-    sudo read FTPLOGIN
+    read FTPLOGIN
     if [ $FTPLOGIN="" ]; then
     	echo -e "$BRed Error: FTP Login cannot be empty"
 	echo -e $Color_Off
