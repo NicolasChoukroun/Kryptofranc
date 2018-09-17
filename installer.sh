@@ -136,16 +136,16 @@ if [ $EXTRAS = "yes" ]; then
     sudo apt-get --assume-yes install hardinfo
     sudo apt --assume-yes install software-center*
     sudo apt-get --assume-yes install git-core
-    git.config --global.username "bitFranc"
-    echo -e "$BBlue I need you GIT user email so that later on you push with your name:"
-    read GITUSER
-    echo -e $Color_Off
-    if [ -z $GITUSER ]; then
-	echo -e "$BRed Error: Git user cannot be empty"
-	echo -e $Color_Off
-	exit
-    fi  
-    git.config --global user.email $GITUSER
+    #git.config --global.username "bitFranc"
+    #echo -e "$BBlue I need you GIT user email so that later on you push with your name:"
+    #read GITUSER
+    #echo -e $Color_Off
+    #if [ -z $GITUSER ]; then
+#	echo -e "$BRed Error: Git user cannot be empty"
+#	echo -e $Color_Off
+#	exit
+#    fi  
+#    git.config --global user.email $GITUSER
     snap install ubuntu-mate-welcome --classic
     snap install software-boutique --classic
     snap install pulsemixer
