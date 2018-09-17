@@ -174,15 +174,15 @@ if [ $EXTRAS = "yes" ]; then
     fi
     echo -e $Color_Off
  
-    deluser $FTPLOGIN
-    sudo adduser $FTPLOGIN    
+    deluser $FTPLOGIN   
     mkdir -v -p $FTPPATH/$FTPLOGIN/ftp
     mkdir -v -p $FTPPATH/$FTPLOGIN/http
     sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/ftp
     sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/http
     sudo chmod +rw $FTPPATH/$FTPLOGIN/ftp
     sudo chmod +rw $FTPPATH/$FTPLOGIN/http
-    sudo usermod -d $FTPPATH/$FTPLOGIN/ftp/ $FTPLOGIN
+    sudo adduser $FTPPATH/$FTPLOGIN/ftp $FTPLOGIN  
+    # sudo usermod -d $FTPPATH/$FTPLOGIN/ftp/ $FTPLOGIN
     sudo openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
     sudo cp assets_installer/vsftpd.conf /etc/vsftpd.conf
     sudo cp assets_installer/vsftpd.pem /etc/ssl/private/vsftpd.pem
