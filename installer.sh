@@ -166,7 +166,7 @@ if [ $EXTRAS = "yes" ]; then
     fi
     echo -e $Color_Off
     echo -e "$BBlue Please enter a path for the FTP (ex:/home or /mnt/fsc):"
-    sudo read FTPPATH
+    read FTPPATH
     if [ -z $FTPPATH ]; then
     	echo -e "$BRed Error: FTP Path cannot be empty"
 	echo -e $Color_Off
