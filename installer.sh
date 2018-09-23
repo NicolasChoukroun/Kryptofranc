@@ -80,6 +80,9 @@ while [ "$1" != "" ]; do
 	    install)
 	    	INSTALL="yes"
 	     ;;
+	    clone)
+	    	CLONE="yes"
+	     ;;
 	    noexec)
 	    	NOEXEC="yes"
 	     ;;
