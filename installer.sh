@@ -193,7 +193,11 @@ fi
 
 
 
-if [ ! -d "~/bitcoin" ]; then
+if [ -d "~/bitcoin" ] 
+then
+    echo -e "$BYellow Directory ~/bitcoin already exists." 
+    echo -e $Color_Off
+else
     # check if bitcoin directory is here or not
     echo -e "$BRed bitcoin directory not found. Please use the <<clone>> option first"
     echo -e $Color_Off
