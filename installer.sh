@@ -127,7 +127,7 @@ if [ $CLONE = "yes" ]; then
     echo -e $Color_Off
     sudo rm -r -f ~/bitcoin
     sudo cp -r bitcoin ~/ 
-    #sudo git clone https://github.com/bitcoin/bitcoin 
+    sudo git clone https://github.com/bitcoin/bitcoin 
 fi
 
 if [ $EXTRAS = "yes" ]; then
