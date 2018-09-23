@@ -127,7 +127,8 @@ if [ $CLONE = "yes" ]; then
     echo -e $Color_Off
     sudo rm -r -f ~/bitcoin
     sudo cp -r bitcoin ~/ 
-    sudo git clone https://github.com/bitcoin/bitcoin 
+    # do not clone systematically or it ask to merge with the latest Bitcoin core release.
+    # sudo git clone https://github.com/bitcoin/bitcoin 
 fi
 
 if [ $EXTRAS = "yes" ]; then
