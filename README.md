@@ -1,8 +1,8 @@
-# bitFranc
+# KryptoFranc
 
-## English - bit₣ranc: Rebirth of the French Currency
+## English - KryptoFranc: Rebirth of the French Currency
 
-from http://bitfranc.net/bitcoin_whitepaper_us.php?language=us
+from http://KryptoFranc.com/bitcoin_whitepaper_us.php?language=us
 ###### 1. Introduction
 In 1999, the euro replaced the French currency: the franc. People from all over the world had 3 years left to give back all their francs. In 2002, the franc disappeared after more than 700 years of existence to make room for the Euro. The franc was a faithful image of French culture and success. In 2010, the French Central Bank estimated that more than 4 billion francs were not returned and were still in circulation in the hands of the people. With time, the removal of the franc left a bitter taste. While GDP growth was + 3% in 1999, it is never approaching this figure ever since. Many saw this sacrifice as the beginning of the French economic downfall and its loss of sovereignty. It was not possible at that time for people to change the course of things, there was an unprecedented pro-Euro propaganda campaign, all the mainstream media and all the most influential people were pushing to the obliteration of the franc. But things have changed since. With the invention of blockchain technology by Satoshi Nakamoto and the rise of bitCoin, it is now possible for the right team, with the right technical skills, to create a currency without the approval of any authority. We are this team, so why not do it? The bit₣ranc is the incredible renaissance of the franc. This is not a new technological revolution in the field of blockchain, but it is a revolutionary idea: to redo what has been erased by the bureaucrats, by the people for the people, open source, free and unstoppable!
 
@@ -23,8 +23,8 @@ As explained in the previously, the bit₣ranc blockchain will not be the same a
 
 2.5 Billions of bit₣rancs will be pre-mined and shared between the authors of the bit₣ranc, and used to finance the maintenance and the future development. bit₣ranc must be well funded to continue its path and be supported on the long term.
 
-## French: bit₣ranc: Renaissance de la monnaie française
-from http://bitfranc.net/bitcoin_whitepaper_us.php?language=fr
+## French: KryptoFranc: Renaissance de la monnaie française
+from http://KryptoFranc.com/bitcoin_whitepaper_us.php?language=fr
 
 ###### 1. introduction
 En 1999, l'euro a remplacé la monnaie française: le franc. Il restait 3 ans aux gens du monde entier pour rembourser tous leurs francs. En 2002, le franc a disparu après plus de 700 ans d’existence pour faire place à l’euro. Le franc était une image fidèle de la culture et du succès français. En 2010, la Banque centrale française a estimé que plus de 4 milliards de francs n'ont pas été restitués et sont encore en circulation entre les mains du peuple. Avec le temps, l'élimination du franc a laissé un goût amer. Alors que la croissance du PIB était de + 3% en 1999, elle n’a jamais approché ce chiffre depuis. Beaucoup ont vu ce sacrifice comme le début de la chute économique française et sa perte de souveraineté. Il n'était pas possible à l'époque pour les gens de changer le cours des choses, il y avait une campagne de propagande pro-euro sans précédent, tous les médias grand public et toutes les personnes les plus influentes poussaient à l'effacement du franc. Mais les choses ont changé depuis. Avec l'invention de la technologie de la chaîne de blocs par Satoshi Nakamoto et la montée en puissance de bitCoin, il est désormais possible pour la bonne équipe, dotée des compétences techniques adéquates, de créer une monnaie sans l'approbation d'aucune autorité. Nous sommes cette équipe, alors pourquoi ne pas le faire? Le bit₣ranc est l'incroyable renaissance du franc. Ce n'est pas une nouvelle révolution technologique dans le domaine de la blockchain, mais c'est une idée révolutionnaire: refaire ce qui a été effacé par les bureaucrates, par le peuple pour le peuple, open source, libre et imparable!
@@ -47,4 +47,4 @@ Comme expliqué précédemment, la chaîne de blocs bit₣ranc ne sera pas la m�
 2,5 milliards de bit₣rancs seront pré-programmés et partagés entre les divers auteurs du bit₣ranc, et utilisés pour financer la maintenance et le développement futur. Bit₣ranc doit être bien financé pour continuer sur sa lancée et être soutenu sur le long terme.
 
 ## License
-BitFranc Core is released under the terms of the MIT license. See COPYING for more information or see https://opensource.org/licenses/MIT.
+KryptoFranc Core is released under the terms of the MIT license. See COPYING for more information or see https://opensource.org/licenses/MIT.
