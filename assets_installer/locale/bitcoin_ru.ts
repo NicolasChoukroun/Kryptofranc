@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Клик правой кнопкой для редактирования адреса или метки</translation>
+        <translation>Кликните правой кнопкой для редактирования адреса или метки</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -27,11 +27,15 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Удалить выбранный адрес из списка</translation>
+        <translation>Удалить текущий выбранный адрес из списка</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Введите адрес или метку для поиска</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Экспортировать данные из вкладки в файл</translation>
+        <translation>Экспортировать данные текущей вкладки в файл</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -63,11 +67,11 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши адреса Bitfranc для отправки платежей. Всегда проверяйте сумму и адрес получателя перед отправкой перевода.</translation>
+        <translation>Это ваши адреса KryptoFranc для отправки платежей. Всегда проверяйте сумму и адрес получателя перед отправкой перевода.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши адреса Bitfranc для приёма платежей. Рекомендуется использовать новый адрес получения для каждой транзакции.</translation>
+        <translation>Это ваши адреса KryptoFranc для приёма платежей. Рекомендуется использовать новый адрес получения для каждой транзакции.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -95,7 +99,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Произошла ошибка при сохранении списка адресов в %1. Пожалуйста, попробуйте еще раз.</translation>
+        <translation>Произошла ошибка сохранения списка адресов в %1. Пожалуйста, повторите попытку.</translation>
     </message>
 </context>
 <context>
@@ -117,7 +121,7 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Диалог ввода пароля</translation>
+        <translation>Пароль</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -141,11 +145,11 @@
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Зашифровать бумажник</translation>
+        <translation>Зашифровать электронный кошелёк</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
+        <translation>Для выполнения операции требуется пароль от вашего кошелька.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -153,7 +157,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
+        <translation>Данная операция требует введения пароля для расшифровки вашего бумажника.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -161,15 +165,15 @@
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Сменить пароль</translation>
+        <translation>Изменить пароль</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
-        <translation>Введите старый и новый пароль для бумажника.</translation>
+        <translation>Введите старый и новый пароль для кошелька.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Подтвердите шифрование бумажника</translation>
+        <translation>Подтвердить шифрование кошелька</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
@@ -177,7 +181,7 @@
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Вы уверены, что хотите зашифровать ваш бумажник?</translation>
+        <translation>Вы уверены, что хотите зашифровать ваш кошелёк?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -343,7 +347,7 @@
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Отправить монеты на указанный адрес Bitfranc</translation>
+        <translation>Отправить монеты на указанный адрес KryptoFranc</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -367,7 +371,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitfranc</translation>
+        <translation>KryptoFranc</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -395,11 +399,11 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Подписать сообщения вашим адресом Bitfranc, чтобы доказать, что вы им владеете</translation>
+        <translation>Подписать сообщения вашим адресом KryptoFranc, чтобы доказать, что вы им владеете</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом Bitfranc</translation>
+        <translation>Проверить сообщения, чтобы удостовериться, что они были подписаны определённым адресом KryptoFranc</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -419,7 +423,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Запросить платежи (создаёт QR-коды и bitfranc: ссылки)</translation>
+        <translation>Запросить платежи (создаёт QR-коды и KryptoFranc: ссылки)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -431,7 +435,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Открыть bitfranc: URI или запрос платежа</translation>
+        <translation>Открыть KryptoFranc: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -439,7 +443,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n активных соединений с сетью Bitfranc</numerusform><numerusform>%n активных соединений с сетью Bitfranc</numerusform><numerusform>%n активных соединений с сетью Bitfranc</numerusform><numerusform>%n активных соединений с сетью Bitfranc</numerusform></translation>
+        <translation><numerusform>%n активных соединений с сетью KryptoFranc</numerusform><numerusform>%n активных соединений с сетью KryptoFranc</numerusform><numerusform>%n активных соединений с сетью KryptoFranc</numerusform><numerusform>%n активных соединений с сетью KryptoFranc</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -553,7 +557,7 @@
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. Bitfranc не может безопасно продолжать работу и будет закрыт.</translation>
+        <translation>Произошла неисправимая ошибка. KryptoFranc не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -747,7 +751,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Введённый адрес "%1" не является правильным Bitfranc-адресом.</translation>
+        <translation>Введённый адрес "%1" не является правильным KryptoFranc-адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -872,7 +876,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitfranc</translation>
+        <translation>KryptoFranc</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -884,7 +888,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 будет загружать и хранить копию цепочки блоков Bitfranc.</translation>
+        <translation>%1 будет загружать и хранить копию цепочки блоков KryptoFranc.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1089,7 +1093,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Bitfranc-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <translation>Автоматически открыть порт для KryptoFranc-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1105,11 +1109,11 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Подключаться к сети Bitfranc через прокси SOCKS5</translation>
+        <translation>Подключаться к сети KryptoFranc через прокси SOCKS5</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Подключаться к сети Bitfranc через прокси SOCKS5 (прокси по умолчанию):</translation>
+        <translation>&amp;Подключаться к сети KryptoFranc через прокси SOCKS5 (прокси по умолчанию):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1141,7 +1145,7 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Подключаться к сети Bitfranc через прокси SOCKS5 для скрытых сервисов Tor.</translation>
+        <translation>Подключаться к сети KryptoFranc через прокси SOCKS5 для скрытых сервисов Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1248,7 +1252,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Bitfranc после подключения, но этот процесс пока не завершён.</translation>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью KryptoFranc после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1323,7 +1327,7 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Не удаётся запустить bitfranc: обработчик click-to-pay</translation>
+        <translation>Не удаётся запустить KryptoFranc: обработчик click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1339,7 +1343,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Bitfranc или неправильными параметрами URI.</translation>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом KryptoFranc или неправильными параметрами URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1441,7 +1445,7 @@
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Введите адрес Bitfranc (например, %1)</translation>
+        <translation>Введите адрес KryptoFranc (например, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1865,7 +1869,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Заметьте: сообщение не будет отправлено вместе с платежом через сеть Bitfranc.</translation>
+        <translation>Необязательное сообщение для запроса платежа, которое будет показано при открытии запроса. Заметьте: сообщение не будет отправлено вместе с платежом через сеть KryptoFranc.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2282,7 +2286,7 @@
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Внимание: неверный адрес Bitfranc</translation>
+        <translation>Внимание: неверный адрес KryptoFranc</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2325,7 +2329,7 @@
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>Адрес Bitfranc, на который отправить платёж</translation>
+        <translation>Адрес KryptoFranc, на который отправить платёж</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2373,7 +2377,7 @@
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>К bitfranc: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть Bitfranc.</translation>
+        <translation>К KryptoFranc: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Заметьте: сообщение не будет отправлено через сеть KryptoFranc.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2422,7 +2426,7 @@
     </message>
     <message>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>Адрес Bitfranc, которым подписать сообщение</translation>
+        <translation>Адрес KryptoFranc, которым подписать сообщение</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2454,7 +2458,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом Bitfranc</translation>
+        <translation>Подписать сообщение, чтобы доказать владение адресом KryptoFranc</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2478,11 +2482,11 @@
     </message>
     <message>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>Адрес Bitfranc, которым было подписано сообщение</translation>
+        <translation>Адрес KryptoFranc, которым было подписано сообщение</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Bitfranc</translation>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом KryptoFranc</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3175,7 +3179,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitfranc Core</translation>
+        <translation>KryptoFranc Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

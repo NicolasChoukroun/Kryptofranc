@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/KryptoFranc.iml" filepath="$PROJECT_DIR$/.idea/KryptoFranc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lefrancoin.iml" filepath="$PROJECT_DIR$/.idea/lefrancoin.iml" />
     </modules>
   </component>

@@ -22,7 +22,7 @@ static void StartPhase(const char* name) {
 static const char* GetTempDir(void) {
     const char* ret = getenv("TEST_TMPDIR");
     if (ret == NULL || ret[0] == '\0')
-        ret = "/bitfranc_replace";
+        ret = "/tmp";
     return ret;
 }
 

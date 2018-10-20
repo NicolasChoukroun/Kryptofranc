@@ -65,13 +65,18 @@ class ConfArgsTest(BitcoinTestFramework):
         # Temporarily disabled, because this test would access the user's home dir (~/.bitcoin)
         #self.start_node(0, ['-conf='+conf_file, '-wallet=w1'])
         #self.stop_node(0)
+        #assert os.path.exists(os.path.join(new_data_dir, 'regtest', 'blocks'))
+        #if self.is_wallet_compiled():
         #assert os.path.exists(os.path.join(new_data_dir, 'regtest', 'wallets', 'w1'))
 
         # Ensure command line argument overrides datadir in conf
         os.mkdir(new_data_dir_2)
         self.nodes[0].datadir = new_data_dir_2
         self.start_node(0, ['-datadir='+new_data_dir_2, '-conf='+conf_file, '-wallet=w2'])
-        assert os.path.exists(os.path.join(new_data_dir_2, 'regtest', 'wallets', 'w2'))
+        assert os.path.exists(os.path.join(new_data_dir_2, 'regtest', 'blocks'))
+        if self.is_wallet_compiled():
+            assert os.path.exists(os.path.join(new_data_dir_2, 'regtest', 'wallets', 'w2'))
+
 
 if __name__ == '__main__':
     ConfArgsTest().main()
