@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # Reset
 Color_Off='\033[0m'       # Text Reset
@@ -107,7 +107,7 @@ echo "NOEXEC option $NOEXEC"
 echo "--------------------------------------------------"
 echo -e $Color_Off
 
-if [ $INSTALL="yes" ]; then
+if [ $INSTALL = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Install option executing (install option is on)..."
     echo -e $Color_Off
@@ -197,19 +197,7 @@ fi
 
 
 
-if [ -d "~/bitcoin" ] 
-then
-    echo -e "$BYellow Directory ~/bitcoin already exists." 
-    echo -e $Color_Off
-else
-    # check if bitcoin directory is here or not
-    echo -e "$BRed bitcoin directory not found. Please use the <<clone>> option first"
-    echo -e $Color_Off
-    exit 
-fi
-
-
-if [ $COPY="yes" ]; then
+if [ $COPY = "yes" ]; then
     $MOD="-u"
 fi
 
@@ -284,7 +272,7 @@ if [ $INSTALL="yes" ]; then
     sudo make install
 fi
 
-if [ $OS = "win"]; then
+if [ $OS = "win" ]; then
     cd ~/bitcoin/depends
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
     sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
