@@ -107,6 +107,8 @@ echo "NOEXEC option $NOEXEC"
 echo "--------------------------------------------------"
 echo -e $Color_Off
 
+
+
 if [ $INSTALL = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Install option executing (install option is on)..."
@@ -127,8 +129,11 @@ if [ $CLONE = "yes" ]; then
     echo -e $Color_Off
     sudo rm -r -f ~/bitcoin
     sudo cp -r bitcoin ~/ 
+    
     # do not clone systematically or it ask to merge with the latest Bitcoin core release.
+    # sudo rm -r -f bitcoin    
     # sudo git clone https://github.com/bitcoin/bitcoin 
+    # exit;
 fi
 
 if [ $EXTRAS = "yes" ]; then
@@ -183,8 +188,7 @@ if [ $EXTRAS = "yes" ]; then
     mkdir -v -p $FTPPATH/$FTPLOGIN/http
     sudo chmod +rw $FTPPATH/$FTPLOGIN/ftp
     sudo chmod +rw $FTPPATH/$FTPLOGIN/http
-    sudo adduser $FTPLOGIN  
-    sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/ftp
+    sudo adduser $FTPLOGIN     sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/ftp
     sudo chown nobody:nogroup $FTPPATH/$FTPLOGIN/http
     sudo usermod -d $FTPPATH/$FTPLOGIN/ftp/ $FTPLOGIN
     #sudo openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
@@ -207,56 +211,61 @@ echo -e $Color_Off
 
 sudo cp $MOD assets_installer/bitfranc_replace/modaloverlay.ui ~/bitcoin/src/qt/forms/
 sudo cp $MOD assets_installer/bitfranc_replace/overviewpage.ui ~/bitcoin/src/qt/forms/
-sudo cp $MOD assets_installer/bitfranc_replace/guiutil.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/update-translations.py ~/bitcoin/contrib/devtools/
-sudo cp $MOD assets_installer/bitfranc_replace/bitcoin-cli.cpp ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/bitcoind.cpp ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/init.cpp ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/key.cpp ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/net.cpp ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/util.h ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/validation.cpp ~/bitcoin/src/
-sudo cp $MOD assets_installer/bitfranc_replace/addressbookpage.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/askpassphrasedialog.cpp ~/bitcoin/src/qt/forms/
-sudo cp $MOD assets_installer/bitfranc_replace/bitcoin.cpp ~/bitcoin/src/qt/
-sudo cp	$MOD assets_installer/bitfranc_replace/bitcoingui.cpp ~/bitcoin/src/qt/
-sudo cp	$MOD assets_installer/bitfranc_replace/blockchain.cpp ~/bitcoin/src/rpc/
-sudo cp	$MOD assets_installer/bitfranc_replace/db.cpp ~/bitcoin/src/wallet/
-sudo cp	$MOD assets_installer/bitfranc_replace/editaddressdialog.cpp ~/bitcoin/src/qt/
 sudo cp	$MOD assets_installer/bitfranc_replace/feature_help.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/interface_bitcoin_cli.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/interface_rest.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/intro.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/update-translations.py ~/bitcoin/contrib/devtools/
 sudo cp $MOD assets_installer/bitfranc_replace/mempool_persist.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/mining.cpp ~/bitcoin/src/rpc/
+sudo cp $MOD assets_installer/bitfranc_replace/interface_rest.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/mininode.py ~/bitcoin/test/functional/test_framework/
+sudo cp $MOD assets_installer/bitfranc_replace/rpc_fundrawtransaction.py ~/bitcoin/test/functional/
+sudo cp $MOD assets_installer/bitfranc_replace/rpc_rawtransaction.py ~/bitcoin/test/functional/
+sudo cp $MOD assets_installer/bitfranc_replace/test_runner.py ~/bitcoin/test/functional/
+sudo cp $MOD assets_installer/bitfranc_replace/wallettests.cpp ~/bitcoin/src/qt/test/
+sudo cp $MOD assets_installer/bitfranc_replace/wallet_tests.cpp ~/bitcoin/src/wallet/test/
+
+sudo cp $MOD assets_installer/bitfranc_replace/guiutil.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/addressbookpage.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/openuridialog.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/paymentserver.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/sendcoinsdialog.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/utilitydialog.cpp ~/bitcoin/src/qt/
+sudo cp	$MOD assets_installer/bitfranc_replace/editaddressdialog.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/bitcoin.cpp ~/bitcoin/src/qt/
+sudo cp	$MOD assets_installer/bitfranc_replace/bitcoingui.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/intro.cpp ~/bitcoin/src/qt/
+
+sudo cp $MOD assets_installer/bitfranc_replace/askpassphrasedialog.cpp ~/bitcoin/src/qt/forms/
+
+sudo cp $MOD assets_installer/bitfranc_replace/rpcdump.cpp ~/bitcoin/src/wallet/
+sudo cp $MOD assets_installer/bitfranc_replace/rpcwallet.cpp ~/bitcoin/src/wallet/
+sudo cp	$MOD assets_installer/bitfranc_replace/db.cpp ~/bitcoin/src/wallet/
+
+sudo cp	$MOD assets_installer/bitfranc_replace/blockchain.cpp ~/bitcoin/src/rpc/
+sudo cp $MOD assets_installer/bitfranc_replace/mining.cpp ~/bitcoin/src/rpc/
 sudo cp $MOD assets_installer/bitfranc_replace/misc.cpp ~/bitcoin/src/rpc
 sudo cp $MOD assets_installer/bitfranc_replace/net2.cpp ~/bitcoin/src/rpc/
 sudo mv ~/bitcoin/src/rpc/net2.cpp ~/bitcoin/src/rpc/net.cpp
-sudo cp $MOD assets_installer/bitfranc_replace/openuridialog.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/paymentserver.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/rawtransaction.cpp ~/bitcoin/src/rpc/
-sudo cp $MOD assets_installer/bitfranc_replace/rpcdump.cpp ~/bitcoin/src/wallet/
-sudo cp $MOD assets_installer/bitfranc_replace/rpc_fundrawtransaction.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/rpc_rawtransaction.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/rpcwallet.cpp ~/bitcoin/src/wallet/
-sudo cp $MOD assets_installer/bitfranc_replace/sendcoinsdialog.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/server.cpp ~/bitcoin/src/rpc/
-sudo cp $MOD assets_installer/bitfranc_replace/test_runner.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/utilitydialog.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/wallettests.cpp ~/bitcoin/src/qt/test/
-sudo cp $MOD assets_installer/bitfranc_replace/wallet_tests.cpp ~/bitcoin/src/wallet/test/
+
 sudo cp $MOD assets_installer/bitfranc_replace/amount.h ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/bitcoin-cli.cpp ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/bitcoind.cpp ~/bitcoin/src/
 sudo cp $MOD assets_installer/bitfranc_replace/chainparams.cpp ~/bitcoin/src/
 sudo cp $MOD assets_installer/bitfranc_replace/chainparamsbase.cpp ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/init.cpp ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/key.cpp ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/net.cpp ~/bitcoin/src/
 sudo cp $MOD assets_installer/bitfranc_replace/pow.cpp ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/util.h ~/bitcoin/src/
+sudo cp $MOD assets_installer/bitfranc_replace/validation.cpp ~/bitcoin/src/
 
 sudo rm -rf ~/bitcoin/src/qt/locale
 sudo cp $MOD -R assets_installer/locale ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitcoin.png ~/bitcoin/src/qt/res/icons/bitcoin.png
 sudo cp $MOD assets_installer/bitcoin.ico ~/bitcoin/src/qt/res/icons/bitcoin.ico
 
-if [ $INSTALL="yes" ]; then
+if [ $INSTALL = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Install and configure DB4..."
     echo -e $Color_Off
@@ -269,17 +278,35 @@ if [ $INSTALL="yes" ]; then
     DB4_PATH=$PWD
     cd db-4.8.30.NC/build_unix
     sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$DB4_PATH
-    sudo make install
+    @sudo make install --quiet
 fi
 
 if [ $OS = "win" ]; then
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Windows specific settings"
+    echo -e $Color_Off
+
     cd ~/bitcoin/depends
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site
     sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
     sudo make HOST=x86_64-w64-mingw32
 fi
+if [ $OS = "unix" ]; then
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Unix libraries and specific installs"
+    echo -e $Color_Off
+
+    sudo apt-get install libzmq3-dev
+    sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools 
+    sudo apt-get install libprotobuf-dev protobuf-compiler
+    sudo apt-get install libqrencode-dev
+fi
 
 if [ $INSTALL = "yes" ]; then
+    echo -e "$BYellow --------------------------------------------------"
+    echo -e "$BGreen Create the Make file and configs (autogen.sh)..."
+    echo -e $Color_Off
+    
     cd ~/bitcoin
     sudo ./autogen.sh
     sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
@@ -298,6 +325,9 @@ if [ $INSTALL = "yes" ]; then
     sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/build_msvc/bitcoin_config.h
 
 fi
+
+sudo -R 777 ~/bitcoin
+sudo -R 777 ~/kryptofranc
 
 cd ~/bitcoin
 sudo make
