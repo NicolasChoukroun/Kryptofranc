@@ -18,5 +18,5 @@ void ConfirmMessage(QString* text, int msec)
             }
         }
         delete callback;
-    }), &Callback::call);
+    }), SLOT(call()));
 }

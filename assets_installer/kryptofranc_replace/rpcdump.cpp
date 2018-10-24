@@ -18,6 +18,7 @@
 
 #include <wallet/rpcwallet.h>
 
+#include <fstream>
 #include <stdint.h>
 
 #include <boost/algorithm/string.hpp>
@@ -41,7 +42,7 @@ int64_t static DecodeDumpTime(const std::string &str) {
 
 std::string static EncodeDumpString(const std::string &str) {
     std::stringstream ret;
-    for (const unsigned char c : str) {
+    for (unsigned char c : str) {
         if (c <= 32 || c >= 128 || c == '%') {
             ret << '%' << HexStr(&c, &c + 1);
         } else {
@@ -415,7 +416,8 @@ UniValue removeprunedfunds(const JSONRPCRequest& request)
 
     LOCK2(cs_main, pwallet->cs_wallet);
 
-    uint256 hash(ParseHashV(request.params[0], "txid"));
+    uint256 hash;
+    hash.SetHex(request.params[0].get_str());
     std::vector<uint256> vHash;
     vHash.push_back(hash);
     std::vector<uint256> vHashOut;
@@ -540,8 +542,8 @@ UniValue importwallet(const JSONRPCRequest& request)
 
         EnsureWalletIsUnlocked(pwallet);
 
-        fsbridge::ifstream file;
-        file.open(request.params[0].get_str(), std::ios::in | std::ios::ate);
+        std::ifstream file;
+        file.open(request.params[0].get_str().c_str(), std::ios::in | std::ios::ate);
         if (!file.is_open()) {
             throw JSONRPCError(RPC_INVALID_PARAMETER, "Cannot open wallet dump file");
         }
@@ -705,20 +707,20 @@ UniValue dumpwallet(const JSONRPCRequest& request)
 
     EnsureWalletIsUnlocked(pwallet);
 
-    fs::path filepath = request.params[0].get_str();
-    filepath = fs::absolute(filepath);
+    boost::filesystem::path filepath = request.params[0].get_str();
+    filepath = boost::filesystem::absolute(filepath);
 
     /* Prevent arbitrary files from being overwritten. There have been reports
      * that users have overwritten wallet files this way:
      * https://github.com/bitcoin/bitcoin/issues/9934
      * It may also avoid other security issues.
      */
-    if (fs::exists(filepath)) {
+    if (boost::filesystem::exists(filepath)) {
         throw JSONRPCError(RPC_INVALID_PARAMETER, filepath.string() + " already exists. If you are sure this is what you want, move it out of the way first");
     }
 
-    fsbridge::ofstream file;
-    file.open(filepath);
+    std::ofstream file;
+    file.open(filepath.string().c_str());
     if (!file.is_open())
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Cannot open wallet dump file");
 
@@ -848,9 +850,6 @@ static UniValue ProcessImport(CWallet * const pwallet, const UniValue& data, con
 
             std::vector<unsigned char> vData(ParseHex(output));
             script = CScript(vData.begin(), vData.end());
-            if (!ExtractDestination(script, dest) && !internal) {
-                throw JSONRPCError(RPC_INVALID_PARAMETER, "Internal must be set to true for nonstandard scriptPubKey imports.");
-            }
         }
 
         // Watchonly and private keys
@@ -861,6 +860,11 @@ static UniValue ProcessImport(CWallet * const pwallet, const UniValue& data, con
         // Internal + Label
         if (internal && data.exists("label")) {
             throw JSONRPCError(RPC_INVALID_PARAMETER, "Incompatibility found between internal and label");
+        }
+
+        // Not having Internal + Script
+        if (!internal && isScript) {
+            throw JSONRPCError(RPC_INVALID_PARAMETER, "Internal must be set for hex scriptPubKey");
         }
 
         // Keys / PubKeys size check.
@@ -966,8 +970,19 @@ static UniValue ProcessImport(CWallet * const pwallet, const UniValue& data, con
                 CTxDestination pubkey_dest = pubKey.GetID();
 
                 // Consistency check.
-                if (!(pubkey_dest == dest)) {
+                if (!isScript && !(pubkey_dest == dest)) {
                     throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Consistency check failed");
+                }
+
+                // Consistency check.
+                if (isScript) {
+                    CTxDestination destination;
+
+                    if (ExtractDestination(script, destination)) {
+                        if (!(destination == pubkey_dest)) {
+                            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Consistency check failed");
+                        }
+                    }
                 }
 
                 CScript pubKeyScript = GetScriptForDestination(pubkey_dest);
@@ -1020,8 +1035,19 @@ static UniValue ProcessImport(CWallet * const pwallet, const UniValue& data, con
                 CTxDestination pubkey_dest = pubKey.GetID();
 
                 // Consistency check.
-                if (!(pubkey_dest == dest)) {
+                if (!isScript && !(pubkey_dest == dest)) {
                     throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Consistency check failed");
+                }
+
+                // Consistency check.
+                if (isScript) {
+                    CTxDestination destination;
+
+                    if (ExtractDestination(script, destination)) {
+                        if (!(destination == pubkey_dest)) {
+                            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Consistency check failed");
+                        }
+                    }
                 }
 
                 CKeyID vchAddress = pubKey.GetID();
@@ -1055,9 +1081,11 @@ static UniValue ProcessImport(CWallet * const pwallet, const UniValue& data, con
                     throw JSONRPCError(RPC_WALLET_ERROR, "Error adding address to wallet");
                 }
 
-                // add to address book or update label
-                if (IsValidDestination(dest)) {
-                    pwallet->SetAddressBook(dest, label, "receive");
+                if (scriptPubKey.getType() == UniValue::VOBJ) {
+                    // add to address book or update label
+                    if (IsValidDestination(dest)) {
+                        pwallet->SetAddressBook(dest, label, "receive");
+                    }
                 }
 
                 success = true;
@@ -1123,7 +1151,7 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
             "      \"keys\": [\"<key>\", ... ]                               , (array, optional) Array of strings giving private keys whose corresponding public keys must occur in the output or redeemscript\n"
             "      \"internal\": <true>                                    , (boolean, optional, default: false) Stating whether matching outputs should be treated as not incoming payments\n"
             "      \"watchonly\": <true>                                   , (boolean, optional, default: false) Stating whether matching outputs should be considered watched even when they're not spendable, only allowed if keys are empty\n"
-            "      \"label\": <label>                                      , (string, optional, default: '') Label to assign to the address, only allowed with internal=false\n"
+            "      \"label\": <label>                                      , (string, optional, default: '') Label to assign to the address (aka account name, for now), only allowed with internal=false\n"
             "    }\n"
             "  ,...\n"
             "  ]\n"

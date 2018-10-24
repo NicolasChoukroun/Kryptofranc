@@ -82,11 +82,11 @@ static double test_cache(size_t megabytes, double load)
      */
     std::vector<uint256> hashes_insert_copy = hashes;
     /** Do the insert */
-    for (const uint256& h : hashes_insert_copy)
+    for (uint256& h : hashes_insert_copy)
         set.insert(h);
     /** Count the hits */
     uint32_t count = 0;
-    for (const uint256& h : hashes)
+    for (uint256& h : hashes)
         count += set.contains(h, false);
     double hit_rate = ((double)count) / ((double)n_insert);
     return hit_rate;
@@ -323,7 +323,7 @@ static void test_cache_generations()
                 reads.push_back(inserts[i]);
             for (uint32_t i = n_insert - (n_insert / 4); i < n_insert; ++i)
                 reads.push_back(inserts[i]);
-            for (const auto& h : inserts)
+            for (auto h : inserts)
                 c.insert(h);
         }
     };

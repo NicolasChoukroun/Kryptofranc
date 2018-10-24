@@ -248,32 +248,32 @@ public:
 
     prevector() : _size(0), _union{{}} {}
 
-    explicit prevector(size_type n) : prevector() {
+    explicit prevector(size_type n) : _size(0) {
         resize(n);
     }
 
-    explicit prevector(size_type n, const T& val) : prevector() {
+    explicit prevector(size_type n, const T& val = T()) : _size(0) {
         change_capacity(n);
         _size += n;
         fill(item_ptr(0), n, val);
     }
 
     template<typename InputIterator>
-    prevector(InputIterator first, InputIterator last) : prevector() {
+    prevector(InputIterator first, InputIterator last) : _size(0) {
         size_type n = last - first;
         change_capacity(n);
         _size += n;
         fill(item_ptr(0), first, last);
     }
 
-    prevector(const prevector<N, T, Size, Diff>& other) : prevector() {
+    prevector(const prevector<N, T, Size, Diff>& other) : _size(0) {
         size_type n = other.size();
         change_capacity(n);
         _size += n;
         fill(item_ptr(0), other.begin(),  other.end());
     }
 
-    prevector(prevector<N, T, Size, Diff>&& other) : prevector() {
+    prevector(prevector<N, T, Size, Diff>&& other) : _size(0) {
         swap(other);
     }
 

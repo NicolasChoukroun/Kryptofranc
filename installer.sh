@@ -209,13 +209,13 @@ echo -e "$BYellow --------------------------------------------------"
 echo -e "$BGreen Copy option executing with $MOD parameter..."
 echo -e $Color_Off
 
+sudo cp $MOD assets_installer/bitfranc_replace/interface_rest.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/modaloverlay.ui ~/bitcoin/src/qt/forms/
 sudo cp $MOD assets_installer/bitfranc_replace/overviewpage.ui ~/bitcoin/src/qt/forms/
 sudo cp	$MOD assets_installer/bitfranc_replace/feature_help.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/interface_bitcoin_cli.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/update-translations.py ~/bitcoin/contrib/devtools/
 sudo cp $MOD assets_installer/bitfranc_replace/mempool_persist.py ~/bitcoin/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/interface_rest.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/mininode.py ~/bitcoin/test/functional/test_framework/
 sudo cp $MOD assets_installer/bitfranc_replace/rpc_fundrawtransaction.py ~/bitcoin/test/functional/
 sudo cp $MOD assets_installer/bitfranc_replace/rpc_rawtransaction.py ~/bitcoin/test/functional/
@@ -223,22 +223,21 @@ sudo cp $MOD assets_installer/bitfranc_replace/test_runner.py ~/bitcoin/test/fun
 sudo cp $MOD assets_installer/bitfranc_replace/wallettests.cpp ~/bitcoin/src/qt/test/
 sudo cp $MOD assets_installer/bitfranc_replace/wallet_tests.cpp ~/bitcoin/src/wallet/test/
 
-sudo cp $MOD assets_installer/bitfranc_replace/guiutil.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/addressbookpage.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/openuridialog.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/paymentserver.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/sendcoinsdialog.cpp ~/bitcoin/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/utilitydialog.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/askpassphrasedialog.cpp ~/bitcoin/src/qt/
 sudo cp	$MOD assets_installer/bitfranc_replace/editaddressdialog.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/bitcoin.cpp ~/bitcoin/src/qt/
 sudo cp	$MOD assets_installer/bitfranc_replace/bitcoingui.cpp ~/bitcoin/src/qt/
 sudo cp $MOD assets_installer/bitfranc_replace/intro.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/guiutil.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/openuridialog.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/paymentserver.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/sendcoinsdialog.cpp ~/bitcoin/src/qt/
+sudo cp $MOD assets_installer/bitfranc_replace/utilitydialog.cpp ~/bitcoin/src/qt/
 
-sudo cp $MOD assets_installer/bitfranc_replace/askpassphrasedialog.cpp ~/bitcoin/src/qt/forms/
-
+sudo cp	$MOD assets_installer/bitfranc_replace/db.cpp ~/bitcoin/src/wallet/
 sudo cp $MOD assets_installer/bitfranc_replace/rpcdump.cpp ~/bitcoin/src/wallet/
 sudo cp $MOD assets_installer/bitfranc_replace/rpcwallet.cpp ~/bitcoin/src/wallet/
-sudo cp	$MOD assets_installer/bitfranc_replace/db.cpp ~/bitcoin/src/wallet/
 
 sudo cp	$MOD assets_installer/bitfranc_replace/blockchain.cpp ~/bitcoin/src/rpc/
 sudo cp $MOD assets_installer/bitfranc_replace/mining.cpp ~/bitcoin/src/rpc/

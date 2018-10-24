@@ -318,8 +318,8 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
                 tr("Cannot start bitcoin: click-to-pay handler"));
         }
         else {
-            connect(uriServer, &QLocalServer::newConnection, this, &PaymentServer::handleURIConnection);
-            connect(this, &PaymentServer::receivedPaymentACK, this, &PaymentServer::handlePaymentACK);
+            connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
+            connect(this, SIGNAL(receivedPaymentACK(QString)), this, SLOT(handlePaymentACK(QString)));
         }
     }
 }
@@ -369,8 +369,10 @@ void PaymentServer::initNetManager()
     else
         qDebug() << "PaymentServer::initNetManager: No active proxy server found.";
 
-    connect(netManager, &QNetworkAccessManager::finished, this, &PaymentServer::netRequestFinished);
-    connect(netManager, &QNetworkAccessManager::sslErrors, this, &PaymentServer::reportSslErrors);
+    connect(netManager, SIGNAL(finished(QNetworkReply*)),
+            this, SLOT(netRequestFinished(QNetworkReply*)));
+    connect(netManager, SIGNAL(sslErrors(QNetworkReply*, const QList<QSslError> &)),
+            this, SLOT(reportSslErrors(QNetworkReply*, const QList<QSslError> &)));
 }
 
 void PaymentServer::uiReady()
@@ -468,7 +470,8 @@ void PaymentServer::handleURIConnection()
     while (clientConnection->bytesAvailable() < (int)sizeof(quint32))
         clientConnection->waitForReadyRead();
 
-    connect(clientConnection, &QLocalSocket::disconnected, clientConnection, &QLocalSocket::deleteLater);
+    connect(clientConnection, SIGNAL(disconnected()),
+            clientConnection, SLOT(deleteLater()));
 
     QDataStream in(clientConnection);
     in.setVersion(QDataStream::Qt_4_0);
