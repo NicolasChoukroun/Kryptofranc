@@ -309,20 +309,19 @@ if [ $INSTALL = "yes" ]; then
     cd ~/bitcoin
     sudo ./autogen.sh
     sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
-    sudo sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
-    sudo sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/src/config/bitcoin-config.h
-    sudo sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/src/config/bitcoin-config.h
-    sudo sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
-    sudo sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
-    sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
+    sudo sed -i -e 's/bitcoin/kryptoFranc/g' ~/bitcoin/src/config/bitcoin-config.h
+    sudo sed -i -e 's/Bitcoin/KryptoFranc/g' ~/bitcoin/src/config/bitcoin-config.h
+    sudo sed -i -e 's/BITCOIN/KRYPTOFRANC/g' ~/bitcoin/src/config/bitcoin-config.h
+    sudo sed -i -e 's/bitcoins/Kryptofrancs/g' ~/bitcoin/src/config/bitcoin-config.h
+    sudo sed -i -e 's/Bitcoins/KryptoFrancs/g' ~/bitcoin/src/config/bitcoin-config.h
+    sudo sed -i -e 's/BITCOINS/KRYPTOPFRANCS/g' ~/bitcoin/src/config/bitcoin-config.h
 
-    sudo sed -i -e 's/bitcoin/bitFranc/g' ~/bitcoin/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/Bitcoin/BitFranc/g' ~/bitcoin/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/BITCOIN/BITFRANC/g' ~/bitcoin/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/bitcoins/bitFrancs/g' ~/bitcoin/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/Bitcoins/BitFrancs/g' ~/bitcoin/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/bitcoin/build_msvc/bitcoin_config.h
-
+    sudo sed -i -e 's/bitcoin/kryptoFranc/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/Bitcoin/KryptoFranc/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/BITCOIN/KRYPTOFRANC/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/bitcoins/kryptoFrancs/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/Bitcoins/KryptoFrancs/g' ~/bitcoin/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/BITCOINS/KRYPTOFRANCS/g' ~/bitcoin/build_msvc/bitcoin_config.h
 fi
 
 sudo -R 777 ~/bitcoin
