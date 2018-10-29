@@ -328,6 +328,9 @@ sudo -R 777 ~/bitcoin
 sudo -R 777 ~/kryptofranc
 
 cd ~/bitcoin
+echo -e "$BYellow --------------------------------------------------"
+echo -e "$BGreen MAKE!"
+echo -e $Color_Off
 sudo make
 
 sudo mv ~/bitcoin/src/bitcoind ~/bitcoin/src/bitfrancd
