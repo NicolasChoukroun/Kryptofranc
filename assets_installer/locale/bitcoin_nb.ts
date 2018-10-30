@@ -1,112 +1,112 @@
-<TS language="fr" version="2.1">
+<TS language="nb" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Cliquer à droite pour modifier l’adresse ou l’étiquette</translation>
+        <translation>Høyreklikk for å redigere adressen eller merkelappen</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Créer une nouvelle adresse</translation>
+        <translation>Opprett en ny addresse</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Nouvelle</translation>
+        <translation>&amp;Ny</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copier l’adresse sélectionnée actuellement dans le presse-papiers</translation>
+        <translation>Kopier den valgte adressen til systemets utklippstavle</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Copier</translation>
+        <translation>&amp;Kopier</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Fermer</translation>
+        <translation>&amp;Lukk</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Supprimer de la liste l’adresse sélectionnée actuellement</translation>
+        <translation>Slett den valgte adressen fra listen.</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
-        <translation>Saisir une adresse ou une étiquette à rechercher</translation>
+        <translation>Skriv inn adresse eller merkelapp for å søke</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Exporter les données de l’onglet actuel vers un fichier</translation>
+        <translation>Eksporter data fra nåværende fane til fil</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exporter</translation>
+        <translation>&amp;Eksporter</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Supprimer</translation>
+        <translation>&amp;Slett</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisir l’adresse à laquelle envoyer des pièces</translation>
+        <translation>Velg adressen å sende mynter til</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisir l’adresse avec laquelle recevoir des pîèces</translation>
+        <translation>Velg adressen til å motta mynter med</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>C&amp;hoisir</translation>
+        <translation>V&amp;elg</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Adresses d’envoi</translation>
+        <translation>Utsendingsadresser</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>Adresses de réception</translation>
+        <translation>Mottaksadresser</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses kryptoFranc pour envoyer des paiements. Vérifiez toujours le montant et l’adresse du destinataire avant d’envoyer des pièces.</translation>
+        <translation>Dette er dine kryptoFranc-adresser for sending av betalinger. Sjekk alltid beløpet og mottakeradressen før sending av mynter.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses kryptoFranc pour recevoir des paiements. Il est recommandé d’utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <translation>Dette er dine kryptoFranc-adresser for å sende betalinger med. Det er anbefalt å bruke en ny mottaksadresse for hver transaksjon.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Copier l’adresse</translation>
+        <translation>&amp;Kopier Adresse</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Copier l’é&amp;tiquette</translation>
+        <translation>Kopier &amp;Merkelapp</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Modifier</translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>Exporter la liste d’adresses</translation>
+        <translation>Eksporter adresseliste</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Valeurs séparées par des virgules (*.csv)</translation>
+        <translation>Kommaseparert fil (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Échec d’exportation</translation>
+        <translation>Eksportering feilet</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Une erreur est survenue lors de l’enregistrement de la liste d’adresses vers %1. Veuillez ressayer plus tard.</translation>
+        <translation>Det oppstod en feil under lagring av adresselisten til %1. Vennligst prøv på nytt.</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Merkelapp</translation>
     </message>
     <message>
         <source>Address</source>
@@ -114,272 +114,260 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(ingen merkelapp)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Fenêtre de dialogue de la phrase de passe</translation>
+        <translation>Dialog for Adgangsfrase</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Saisir la phrase de passe</translation>
+        <translation>Angi adgangsfrase</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Nouvelle phrase de passe</translation>
+        <translation>Ny adgangsfrase</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Répéter la phrase de passe</translation>
+        <translation>Gjenta ny adgangsfrase</translation>
     </message>
     <message>
         <source>Show password</source>
-        <translation>Afficher le mot de passe</translation>
+        <translation>Vis passord</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Saisissez la nouvelle phrase de passe du porte-monnaie.&lt;br/&gt;Veuillez utiliser une phrase de passe composée de &lt;b&gt;dix caractères aléatoires ou plus&lt;/b&gt;, ou de &lt;b&gt;huit mots ou plus&lt;/b&gt;.</translation>
+        <translation>Oppgi adgangsfrasen til lommeboken.&lt;br/&gt;Vennligst bruk en adgangsfrase med &lt;b&gt;ti eller flere tilfeldige tegn&lt;/b&gt;, eller &lt;b&gt;åtte eller flere ord&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Chiffrer le porte-monnaie</translation>
+        <translation>Krypter lommebok</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Cette opération nécessite votre phrase de passe pour déverrouiller le porte-monnaie.</translation>
+        <translation>Denne operasjonen krever adgangsfrasen til lommeboken for å låse den opp.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>Déverrouiller le porte-monnaie</translation>
+        <translation>Lås opp lommebok</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Cette opération nécessite votre phrase de passe pour déchiffrer le porte-monnaie.</translation>
+        <translation>Denne operasjonen krever adgangsfrasen til lommeboken for å dekryptere den.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Déchiffrer le porte-monnaie</translation>
+        <translation>Dekrypter lommebok</translation>
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Changer la phrase de passe</translation>
+        <translation>Endre adgangsfrase</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
-        <translation>Saisir l’ancienne puis la nouvelle phrase de passe du porte-monnaie.</translation>
+        <translation>Angi den gamle og en ny adgangsfrase til lommeboken.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Confirmer le chiffrement du porte-monnaie</translation>
+        <translation>Bekreft kryptering av lommebok</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Avertissement : si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ TOUS VOS KRYPTOFRANCS&lt;/b&gt; !</translation>
+        <translation>Advarsel: Hvis du krypterer lommeboken og mister adgangsfrasen, så vil du &lt;b&gt;MISTE ALLE DINE KRYPTOFRANCS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Voulez-vous vraiment chiffrer votre porte-monnaie ?</translation>
+        <translation>Er du sikker på at du vil kryptere lommeboken?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation>Le porte-monnaie est chiffré</translation>
+        <translation>Lommebok kryptert</translation>
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 va maintenant se fermer pour terminer le processus de chiffrement. Souvenez-vous que le chiffrement de votre porte-monnaie ne peut pas protéger entièrement vos kryptofrancs contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
+        <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine kryptofrancs fra å bli stjålet om skadevare infiserer datamaskinen din.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>IMPORTANT : toutes les sauvegardes précédentes du fichier de votre porte-monnaie devraient être remplacées par le fichier du porte-monnaie chiffré nouvellement généré. Pour des raisons de sécurité, les sauvegardes précédentes de votre fichier de porte-monnaie non chiffré deviendront inutilisables dès que vous commencerez à utiliser le nouveau porte-monnaie chiffré.</translation>
+        <translation>VIKTIG: Tidligere sikkerhetskopier av din lommebokfil bør erstattes med den nylig genererte og krypterte filen, da de blir ugyldiggjort av sikkerhetshensyn så snart du begynner å bruke den nye krypterte lommeboken.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Échec de chiffrement du porte-monnaie</translation>
+        <translation>Kryptering av lommebok feilet</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Le chiffrement du porte-monnaie a échoué en raison d’une erreur interne. Votre porte-monnaie n’a pas été chiffré.</translation>
+        <translation>Kryptering av lommebok feilet på grunn av en intern feil. Din lommebok ble ikke kryptert.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>Les phrases de passe saisies ne correspondent pas.</translation>
+        <translation>De angitte adgangsfrasene er ulike.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Échec de déverrouillage du porte-monnaie</translation>
+        <translation>Opplåsing av lommebok feilet</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>La phrase de passe saisie pour déchiffrer le porte-monnaie était erronée.</translation>
+        <translation>Adgangsfrasen angitt for dekryptering av lommeboken var feil.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Échec de déchiffrement du porte-monnaie</translation>
+        <translation>Dekryptering av lommebok feilet</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>La phrase de passe du porte-monnaie a été modifiée avec succès.</translation>
+        <translation>Adgangsfrase for lommebok er endret.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Avertissement : la touche Verr. Maj. est activée !</translation>
+        <translation>Advarsel: Caps Lock er på!</translation>
     </message>
 </context>
 <context>
     <name>BanTableModel</name>
     <message>
         <source>IP/Netmask</source>
-        <translation>IP/masque réseau</translation>
+        <translation>IP/Nettmaske</translation>
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>Banni jusqu’au</translation>
+        <translation>Utestengt til</translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>Signer un &amp;message...</translation>
+        <translation>Signer &amp;melding...</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>Synchronisation avec le réseau…</translation>
+        <translation>Synkroniserer med nettverk...</translation>
     </message>
     <message>
         <source>&amp;Overview</source>
-        <translation>&amp;Vue d’ensemble</translation>
+        <translation>&amp;Oversikt</translation>
     </message>
     <message>
         <source>Node</source>
-        <translation>Nœud</translation>
+        <translation>Node</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Afficher une vue d’ensemble du porte-monnaie</translation>
+        <translation>Vis generell oversikt over lommeboken</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
+        <translation>&amp;Transaksjoner</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Parcourir l’historique transactionnel</translation>
+        <translation>Vis transaksjonshistorikk</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>Q&amp;uitter</translation>
+        <translation>&amp;Avslutt</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Quitter l’application</translation>
+        <translation>Avslutt applikasjonen</translation>
     </message>
     <message>
         <source>&amp;About %1</source>
-        <translation>À &amp;propos de %1</translation>
+        <translation> &amp;Om %1</translation>
     </message>
     <message>
         <source>Show information about %1</source>
-        <translation>Afficher des informations à propos de %1</translation>
+        <translation>Vis informasjon om %1</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>À propos de &amp;Qt</translation>
+        <translation>Om &amp;Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Afficher des informations sur Qt</translation>
+        <translation>Vis informasjon om Qt</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
-        <translation>&amp;Options…</translation>
+        <translation>&amp;Innstillinger...</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
-        <translation>Modifier les options de configuration de %1</translation>
+        <translation>Endre innstilinger for %1</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Chiffrer le porte-monnaie...</translation>
+        <translation>&amp;Krypter Lommebok...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
-        <translation>Sauvegarder le &amp;porte-monnaie...</translation>
+        <translation>Lag &amp;Sikkerhetskopi av Lommebok...</translation>
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Changer la phrase de passe...</translation>
+        <translation>&amp;Endre Adgangsfrase...</translation>
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>Adresses d’&amp;envoi...</translation>
+        <translation>&amp;Utsendingsadresser...</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>Adresses de &amp;réception...</translation>
+        <translation>&amp;Mottaksadresser...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
-        <translation>Ouvrir une &amp;URI...</translation>
-    </message>
-    <message>
-        <source>Wallet:</source>
-        <translation>Porte-monnaie :</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>porte-monnaie par défaut</translation>
+        <translation>Åpne &amp;URI...</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Cliquer pour désactiver l’activité réseau.</translation>
+        <translation>Klikk for å deaktivere nettverksaktivitet.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation>L’activité réseau est désactivée.</translation>
+        <translation>Nettverksaktivitet deaktivert.</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-        <translation>Cliquer pour réactiver l’activité réseau.</translation>
+        <translation>Klikk for å aktivere nettverksaktivitet igjen.</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation>Synchronisation des en-têtes (%1)...</translation>
+        <translation>Synkroniserer blokkhoder (%1%)...</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
-        <translation>Réindexation des blocs sur le disque...</translation>
-    </message>
-    <message>
-        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
-        <translation>Le serveur mandataire est &lt;b&gt;activé&lt;/b&gt; : %1</translation>
+        <translation>Reindekserer blokker på harddisk...</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Envoyer des pièces à une adresse kryptoFranc</translation>
+        <translation>Send til en kryptoFranc-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>Sauvegarder le porte-monnaie vers un autre emplacement</translation>
+        <translation>Sikkerhetskopier lommebok til annet sted</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Modifier la phrase de passe utilisée pour le chiffrement du porte-monnaie</translation>
+        <translation>Endre adgangsfrasen brukt for kryptering av lommebok</translation>
     </message>
     <message>
         <source>&amp;Debug window</source>
-        <translation>Fenêtre de &amp;débogage</translation>
+        <translation>&amp;Feilsøkingsvindu</translation>
     </message>
     <message>
         <source>Open debugging and diagnostic console</source>
-        <translation>Ouvrir une console de débogage et de diagnostic</translation>
+        <translation>Åpne konsoll for feilsøk og diagnostikk</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Vérifier un message...</translation>
+        <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
         <source>Bitcoin</source>
@@ -387,365 +375,359 @@
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Porte-monnaie</translation>
+        <translation>Lommebok</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;Envoyer</translation>
+        <translation>&amp;Send</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;Recevoir</translation>
+        <translation>&amp;Motta</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Afficher / cacher</translation>
+        <translation>&amp;Vis / Skjul</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Afficher ou cacher la fenêtre principale</translation>
+        <translation>Vis eller skjul hovedvinduet</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Chiffrer les clés privées qui appartiennent à votre porte-monnaie</translation>
+        <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signer les messages avec vos adresses kryptoFranc pour prouver que vous les détenez</translation>
+        <translation>Signer en melding med kryptoFranc-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Vérifier les messages pour s’assurer qu’ils ont été signés avec les adresses kryptoFranc indiquées</translation>
+        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt kryptoFranc-adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>&amp;Fichier</translation>
+        <translation>&amp;Fil</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>&amp;Paramètres</translation>
+        <translation>&amp;Innstillinger</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <translation>&amp;Hjelp</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>Barre d’outils des onglets</translation>
+        <translation>Verktøylinje for faner</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Demander des paiements (génère des codes QR et des URI kryptofranc:)</translation>
+        <translation>Forespør betalinger (genererer QR-koder og kryptofranc: URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Afficher la liste d’adresses d’envoi et d’étiquettes utilisées</translation>
+        <translation>Vis listen av brukte utsendingsadresser og merkelapper</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Afficher la liste d’adresses de réception et d’étiquettes utilisées</translation>
+        <translation>Vis listen over bruke mottaksadresser og merkelapper</translation>
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Ouvrir une URI kryptofranc: ou une demande de paiement</translation>
+        <translation>Åpne en kryptoFranc: URI eller betalingsetterspørring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
-        <translation>Options de ligne de &amp;commande</translation>
+        <translation>&amp;Kommandolinjevalg</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n connexion active avec le réseau kryptoFranc</numerusform><numerusform>%n connexions actives avec le réseau kryptoFranc</numerusform></translation>
+        <translation><numerusform>%n aktiv forbindelse til kryptoFranc-nettverket</numerusform><numerusform>%n aktive forbindelser til kryptoFranc-nettverket</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
-        <translation>Indexation des blocs sur le disque...</translation>
+        <translation>Indekserer blokker på disk...</translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
-        <translation>Traitement des blocs sur le disque...</translation>
+        <translation>Prosesserer blokker på disk...</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>%n bloc d’historique transactionnel a été traité</numerusform><numerusform>%n blocs d’historique transactionnel ont été traités</numerusform></translation>
+        <translation><numerusform>Lastet %n blokk med transaksjonshistorikk.</numerusform><numerusform>Lastet %n blokker med transaksjonshistorikk.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>en retard de %1</translation>
+        <translation>%1 bak</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Le dernier bloc reçu avait été généré il y a %1.</translation>
+        <translation>Siste mottatte blokk ble generert for %1 siden.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Les transactions suivantes ne seront pas déjà visibles.</translation>
+        <translation>Transaksjoner etter dette vil ikke være synlige enda.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Avertissement</translation>
+        <translation>Advarsel</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation>Informasjon</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>À jour</translation>
+        <translation>Oppdatert</translation>
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Afficher le message d’aide de %1 pour obtenir la liste des options de ligne de commande kryptoFranc possibles.</translation>
+        <translation>Vis %1 hjelpemeldingen for å få en liste med mulige kryptoFranc kommandolinjevalg.</translation>
     </message>
     <message>
         <source>%1 client</source>
-        <translation>Client %1</translation>
+        <translation>%1 klient</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
-        <translation>Connexion aux pairs...</translation>
+        <translation>Kobler til likemannsnettverket...</translation>
     </message>
     <message>
         <source>Catching up...</source>
-        <translation>Rattrapage…</translation>
+        <translation>Laster ned...</translation>
     </message>
     <message>
         <source>Date: %1
 </source>
-        <translation>Date : %1
+        <translation>Dato: %1
 </translation>
     </message>
     <message>
         <source>Amount: %1
 </source>
-        <translation>Montant : %1
-</translation>
-    </message>
-    <message>
-        <source>Wallet: %1
-</source>
-        <translation>Porte-monnaie : %1
+        <translation>Beløp: %1:
 </translation>
     </message>
     <message>
         <source>Type: %1
 </source>
-        <translation>Type : %1
+        <translation>Type: %1
 </translation>
     </message>
     <message>
         <source>Label: %1
 </source>
-        <translation>Étiquette : %1
+        <translation>Merkelapp: %1
 </translation>
     </message>
     <message>
         <source>Address: %1
 </source>
-        <translation>Adresse : %1
+        <translation>Adresse: %1
 </translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Transaction envoyée</translation>
+        <translation>Sendt transaksjon</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Transaction entrante</translation>
+        <translation>Innkommende transaksjon</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>La génération de clé HD est &lt;b&gt;activée&lt;/b&gt;</translation>
+        <translation>HD nøkkelgenerering er &lt;b&gt;aktivert&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>La génération de clé HD est &lt;b&gt;désactivée&lt;/b&gt;</translation>
+        <translation>HD nøkkelgenerering er&lt;b&gt;deaktivert&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;déverrouillé&lt;/b&gt;</translation>
+        <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst opp&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
+        <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale est survenue. kryptoFranc ne peut plus continuer en toute sécurité et va s’arrêter.</translation>
+        <translation>En fatal feil har inntruffet. kryptoFranc kan ikke lenger trygt fortsette, og må derfor avslutte.</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
-        <translation>Sélection des pièces</translation>
+        <translation>Mynt Valg</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Quantité :</translation>
+        <translation>Mengde:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octets :</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Montant :</translation>
+        <translation>Beløp:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Frais :</translation>
+        <translation>Avgift:</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Poussière :</translation>
+        <translation>Støv:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Après les frais :</translation>
+        <translation>Totalt:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Monnaie :</translation>
+        <translation>Veksel:</translation>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>Tout (des)sélectionner</translation>
+        <translation>velg (fjern) alle</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation>Mode arborescence</translation>
+        <translation>Trevisning</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>Mode liste</translation>
+        <translation>Listevisning</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Beløp</translation>
     </message>
     <message>
         <source>Received with label</source>
-        <translation>Reçu avec une étiquette</translation>
+        <translation>Mottatt med merkelapp</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>Reçu avec une adresse</translation>
+        <translation>Mottatt med adresse</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Dato</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Confirmations</translation>
+        <translation>Bekreftelser</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Confirmée</translation>
+        <translation>Bekreftet</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copier l’adresse</translation>
+        <translation>Kopiér adresse</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copier l’étiquette</translation>
+        <translation>Kopiér merkelapp</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <translation>Kopiér beløp</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Copier l’ID de la transaction</translation>
+        <translation>Kopier transaksjons-ID</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Verrouiller les transactions non dépensées</translation>
+        <translation>Lås ubrukte</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Déverrouiller les transactions non dépensées</translation>
+        <translation>Lås opp ubrukte</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Copier la quantité</translation>
+        <translation>Kopiér mengde</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Copier les frais</translation>
+        <translation>Kopiér gebyr</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Copier après les frais</translation>
+        <translation>Kopiér totalt</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Copier les octets</translation>
+        <translation>Kopiér bytes</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Copier la poussière</translation>
+        <translation>Kopiér støv</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Copier la monnaie</translation>
+        <translation>Kopier veksel</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation>(%1 verrouillée)</translation>
+        <translation>(%1 låst)</translation>
     </message>
     <message>
         <source>yes</source>
-        <translation>oui</translation>
+        <translation>ja</translation>
     </message>
     <message>
         <source>no</source>
-        <translation>non</translation>
+        <translation>nei</translation>
     </message>
     <message>
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation>Cette étiquette devient rouge si un destinataire reçoit un montant inférieur au seuil actuel de poussière.</translation>
+        <translation>Denne merkelappen blir rød hvis en mottaker får mindre enn gjeldende støvterskel.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Peut varier +/- %1 satoshi(s) par entrée.</translation>
+        <translation>Kan variere +/- %1 satoshi(er) per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(ingen merkelapp)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
-        <translation>monnaie de %1 (%2)</translation>
+        <translation>veksel fra %1 (%2)</translation>
     </message>
     <message>
         <source>(change)</source>
-        <translation>(monnaie)</translation>
+        <translation>(veksel)</translation>
     </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>Modifier l’adresse</translation>
+        <translation>Rediger adresse</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>É&amp;tiquette</translation>
+        <translation>&amp;Merkelapp</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>L’étiquette associée à cette entrée de la liste d’adresses</translation>
+        <translation>Merkelappen koblet til denne adresseliste oppføringen</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>L’adresse associée à cette entrée de la liste d’adresses. Cela ne peut être modifié que pour les adresses d’envoi.</translation>
+        <translation>Adressen til denne oppføringen i adresseboken. Denne kan kun endres for utsendingsadresser.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -753,112 +735,104 @@
     </message>
     <message>
         <source>New sending address</source>
-        <translation>Nouvelle adresse d’envoi</translation>
+        <translation>Ny utsendingsadresse</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Modifier l’adresse de réception</translation>
+        <translation>Rediger mottaksadresse</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Modifier l’adresse d’envoi</translation>
+        <translation>Rediger utsendingsadresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>L’adresse saisie « %1 » n’est pas une adresse kryptoFranc valide.</translation>
-    </message>
-    <message>
-        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
-        <translation>L’adresse « %1 » existe déjà en tant qu’adresse de réception avec l’étiquette « %2 » et ne peut donc pas être ajoutée en tant qu’adresse d’envoi.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book with label "%2".</source>
-        <translation>L’adresse saisie « %1 » est déjà présente dans le carnet d’adresses avec l’étiquette « %2 ».</translation>
+        <translation>Den angitte adressen "%1" er ikke en gyldig kryptoFranc-adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>Impossible de déverrouiller le porte-monnaie.</translation>
+        <translation>Kunne ikke låse opp lommebok.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>Échec de génération de la nouvelle clé.</translation>
+        <translation>Generering av ny nøkkel feilet.</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Un nouveau répertoire de données sera créé.</translation>
+        <translation>En ny datamappe vil bli laget.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>nom</translation>
+        <translation>navn</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Le répertoire existe déjà. Ajouter %1 si vous comptez créer un nouveau répertoire ici.</translation>
+        <translation>Mappe finnes allerede. Legg til %1 hvis du vil lage en ny mappe her.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Le chemin existe déjà et n’est pas un répertoire.</translation>
+        <translation>Snarvei finnes allerede, og er ikke en mappe.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>Impossible de créer un répertoire de données ici.</translation>
+        <translation>Kan ikke lage datamappe her.</translation>
     </message>
 </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
-        <translation>version</translation>
+        <translation>versjon</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
+        <translation> (%1-bit)</translation>
     </message>
     <message>
         <source>About %1</source>
-        <translation>À propos de %1</translation>
+        <translation>Om %1</translation>
     </message>
     <message>
         <source>Command-line options</source>
-        <translation>Options de ligne de commande</translation>
+        <translation>Kommandolinjevalg</translation>
     </message>
 </context>
 <context>
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-        <translation>Bienvenue</translation>
+        <translation>Velkommen</translation>
     </message>
     <message>
         <source>Welcome to %1.</source>
-        <translation>Bienvenue à %1.</translation>
+        <translation>Velkommen til %1.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation>Puisque c’est la première fois que le logiciel est lancé, vous pouvez choisir où %1 stockera ses données.</translation>
+        <translation>Siden dette er første gang programmet starter, kan du nå velge hvor %1 skal lagre sine data.</translation>
     </message>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Lorsque vous cliquez sur OK, %1 commence à télécharger et à traiter l’intégralité de la chaîne de blocs %4 (%2 Go) en débutant avec les transactions les plus anciennes de %3, quand %4 a été lancé initialement.</translation>
+        <translation>Når du klikker OK, vil %1 starte nedlasting og behandle hele den %4 blokkjeden (%2GB) fra de eldste transaksjonene i %3 når %4 først startet.</translation>
     </message>
     <message>
         <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>La synchronisation initiale est très exigeante et pourrait exposer des problèmes matériels dans votre ordinateur passés inaperçus auparavant. Chaque fois que vous exécuterez %1, le téléchargement reprendra où il s’était arrêté.</translation>
+        <translation>Den initielle synkroniseringen er svært krevende, og kan forårsake problemer med maskinvaren i datamaskinen din som du tidligere ikke merket. Hver gang du kjører %1 vil den fortsette nedlastingen der den sluttet. </translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Si vous avez choisi de limiter le stockage de la chaîne de blocs (élagage), les données historiques doivent quand même être téléchargées et traitées, mais seront supprimées par la suite pour minimiser l’utilisation de votre espace disque.</translation>
+        <translation>Hvis du har valgt å begrense blokkjedelagring (beskjæring), må historiske data fortsatt lastes ned og behandles, men de vil bli slettet etterpå for å holde bruken av lagringsplass lav. </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>Utiliser le répertoire de données par défaut</translation>
+        <translation>Bruk standard datamappe</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>Utiliser un répertoire de données personnalisé :</translation>
+        <translation>Bruk en egendefinert datamappe:</translation>
     </message>
     <message>
         <source>Bitcoin</source>
@@ -866,272 +840,256 @@
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>Au moins %1 Go de données seront stockés dans ce répertoire et sa taille augmentera avec le temps.</translation>
+        <translation>Minst %1 GB data vil bli lagret i denne mappen og den vil vokse over tid.</translation>
     </message>
     <message>
         <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>Approximativement %1 Go de données seront stockés dans ce répertoire.</translation>
+        <translation>Omtrent %1GB data vil bli lagret i denne mappen.</translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 téléchargera et stockera une copie de la chaîne de blocs kryptoFranc.</translation>
+        <translation>%1 vil laste ned og lagre en kopi av kryptoFranc blokkjeden.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
-        <translation>Le porte-monnaie sera aussi stocké dans ce répertoire.</translation>
+        <translation>Lommeboken vil også bli lagret i denne mappen.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Erreur : Le répertoire de données indiqué « %1 » ne peut pas être créé.</translation>
+        <translation>Feil: Den oppgitte datamappen "%1" kan ikke opprettes.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Feil</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of free space available</source>
-        <translation><numerusform>%n Go d’espace libre disponible</numerusform><numerusform>%n Go d’espace libre disponibles</numerusform></translation>
+        <translation><numerusform>%n GB med ledig lagringsplass</numerusform><numerusform>%n GB med ledig lagringsplass</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>(of %n GB needed)</source>
-        <translation><numerusform>(sur %n Go requis)</numerusform><numerusform>(sur %n Go requis)</numerusform></translation>
+        <translation><numerusform>(av %n GB som trengs)</numerusform><numerusform>(av %n GB som trengs)</numerusform></translation>
     </message>
 </context>
 <context>
     <name>ModalOverlay</name>
     <message>
         <source>Form</source>
-        <translation>Formulaire</translation>
+        <translation>Skjema</translation>
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Les transactions récentes ne sont peut-être pas encore visibles et par conséquent le solde de votre porte-monnaie est peut-être erroné. Cette information sera juste quand votre porte-monnaie aura fini de se synchroniser avec le réseau kryptoFranc, comme décrit ci-dessous.</translation>
+        <translation>Det kan hende nylige transaksjoner ikke vises enda, og at lommeboksaldoen dermed blir uriktig. Denne informasjonen vil rette seg når synkronisering av lommeboka mot kryptofranc-nettverket er fullført, som anvist nedenfor.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Toute tentative de dépense de kryptofrancs affectés par des transactions qui ne sont pas encore affichées ne sera pas acceptée par le réseau.</translation>
+        <translation>Forsøk på å bruke kryptofranc som er påvirket av transaksjoner som ikke er vist enda godtas ikke av nettverket.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
-        <translation>Nombre de blocs restants</translation>
+        <translation>Antall gjenværende blokker</translation>
     </message>
     <message>
         <source>Unknown...</source>
-        <translation>Inconnu...</translation>
+        <translation>Ukjent...</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Estampille temporelle du dernier bloc</translation>
+        <translation>Tidspunkt for siste blokk</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation>Progression</translation>
+        <translation>Fremgang</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
-        <translation>Avancement de la progression par heure</translation>
+        <translation>Fremgangen stiger hver time</translation>
     </message>
     <message>
         <source>calculating...</source>
-        <translation>calcul en cours...</translation>
+        <translation>kalkulerer...</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
-        <translation>Temps estimé avant la fin de la synchronisation</translation>
+        <translation>Estimert gjenstående tid før ferdig synkronisert</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation>Cacher</translation>
+        <translation>Skjul</translation>
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1)...</source>
-        <translation>Inconnu. Synchronisation des en-têtes (%1)...</translation>
+        <translation>Ukjent. Synkroniserer hoder (%1)…</translation>
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
-        <translation>Ouvrir une URI</translation>
+        <translation>Åpne URI</translation>
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Ouvrir une demande de paiement à partir d’une URI ou d’un fichier</translation>
+        <translation>Åpne betalingsetterspørring fra URI eller fil</translation>
     </message>
     <message>
         <source>URI:</source>
-        <translation>URI :</translation>
+        <translation>URI:</translation>
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation>Choisir le fichier de demande de paiement</translation>
+        <translation>Velg fil for betalingsetterspørring</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation>Choisir le fichier de demande de paiement à ouvrir</translation>
+        <translation>Velg betalingsforespørselsfil å åpne</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation>Innstillinger</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation>&amp;Principaux</translation>
+        <translation>&amp;Hoved</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
-        <translation>Démarrer %1 automatiquement après avoir ouvert une session sur l’ordinateur.</translation>
+        <translation>Start %1 automatisk etter å ha logget inn på systemet.</translation>
     </message>
     <message>
         <source>&amp;Start %1 on system login</source>
-        <translation>&amp;Démarrer %1 lors de l’ouverture d’une session</translation>
+        <translation>&amp;Start %1 ved systeminnlogging</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation>Taille du cache de la base de &amp;données</translation>
+        <translation>Størrelse på &amp;database hurtigbuffer</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>Mo</translation>
+        <translation>MB</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Nombre de fils de &amp;vérification de script</translation>
+        <translation>Antall script &amp;verifikasjonstråder</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>Adresse IP du mandataire (p. ex. IPv4 : 127.0.0.1 / IPv6 : ::1)</translation>
+        <translation>IP-adressen til proxyen (f.eks. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Indique si le mandataire SOCKS5 par défaut fourni est utilisé pour atteindre des pairs par ce type de réseau.</translation>
+        <translation>Viser hvorvidt angitt SOCKS5-mellomtjener blir brukt for å nå noder via denne nettverkstypen.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Utiliser un mandataire SOCKS&amp;5 séparé pour atteindre les pairs en utilisant les services cachés de Tor.</translation>
+        <translation>Bruk egen SOCKS&amp;5-proxy for å nå noder via Tor hidden services:</translation>
     </message>
     <message>
         <source>Hide the icon from the system tray.</source>
-        <translation>Cacher l’icône dans la zone de notification.</translation>
+        <translation>Skjul ikonet fra systemkurven.</translation>
     </message>
     <message>
         <source>&amp;Hide tray icon</source>
-        <translation>Cac&amp;her l’icône de la zone de notification</translation>
+        <translation>&amp;Skjul systemkurvsikon</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
-        <translation>Quand la fenêtre est fermée, réduire au lieu de quitter l’application. Si cette option est activée, l’application ne sera fermée qu’en sélectionnant Quitter dans le menu.</translation>
+        <translation>Minimer i stedet for å avslutte applikasjonen når vinduet lukkes. Når dette er valgt, vil applikasjonen avsluttes kun etter at Avslutte er valgt i menyen.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL de tiers (p. ex. un explorateur de blocs) apparaissant dans l’onglet des transactions comme éléments du menu contextuel. %s dans l’URL est remplacé par le hachage de la transaction. Les URL multiples sont séparées par une barre verticale |.</translation>
+        <translation>Tredjepart URLer (f. eks. en blokkutforsker) som dukker opp i transaksjonsfanen som kontekst meny elementer. %s i URLen er erstattet med transaksjonen sin hash. Flere URLer er separert av en vertikal linje |.</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation>Options de ligne de commande actives qui remplacent les options ci-dessus :</translation>
+        <translation>Aktive kommandolinjevalg som overstyrer valgene ovenfor:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
-        <translation>Ouvrir le fichier de configuration %1 du répertoire de travail.</translation>
+        <translation>Åpne %1-oppsettsfila fra arbeidsmappen.</translation>
     </message>
     <message>
         <source>Open Configuration File</source>
-        <translation>Ouvrir le fichier de configuration</translation>
+        <translation>Åpne oppsettsfil</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Réinitialiser toutes les options du client aux valeurs par défaut.</translation>
+        <translation>Tilbakestill alle klient valg til standard</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Réinitialiser les options</translation>
+        <translation>&amp;Tilbakestill Instillinger</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation>&amp;Réseau</translation>
-    </message>
-    <message>
-        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Désactive certaines fonctions avancées, mais tous les blocs seront quand même validés entièrement. Changer ce paramètre à sa valeur antérieure exige de retélécharger la chaîne de blocs dans son intégralité. L’espace disque utilisé pourrait être un peu plus élevé.</translation>
-    </message>
-    <message>
-        <source>Prune &amp;block storage to</source>
-        <translation>Élaguer l’espace de stockage des &amp;blocs jusqu’à</translation>
-    </message>
-    <message>
-        <source>GB</source>
-        <translation>Go</translation>
-    </message>
-    <message>
-        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
-        <translation>Changer ce paramètre à sa valeur antérieure exige de retélécharger la chaîne de blocs dans son intégralité.</translation>
+        <translation>&amp;Nettverk</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt; 0 = laisser ce nombre de cœurs inutilisés)</translation>
+        <translation>(0 = automatisk, &lt;0 = la så mange kjerner være ledig)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation>&amp;Porte-monnaie</translation>
+        <translation>L&amp;ommebok</translation>
     </message>
     <message>
         <source>Expert</source>
-        <translation>Expert</translation>
+        <translation>Ekspert</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Activer les fonctions de &amp;contrôle des pièces</translation>
+        <translation>Aktiver &amp;myntkontroll funksjoner</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation>Si vous désactivé la dépense de la monnaie non confirmée, la monnaie d’une transaction ne peut pas être utilisée tant que cette transaction n’a pas reçu au moins une confirmation. Celai affecte aussi le calcul de votre solde.</translation>
+        <translation>Hvis du sperrer for bruk av ubekreftet veksel, kan ikke vekselen fra transaksjonen bli brukt før transaksjonen har minimum en bekreftelse. Dette påvirker også hvordan balansen din blir beregnet.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Dépenser la monnaie non confirmée</translation>
+        <translation>&amp;Bruk ubekreftet veksel</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client kryptoFranc sur le routeur. Cela ne fonctionne que si votre routeur prend en charge l’UPnP et si la fonction est activée.</translation>
+        <translation>Åpne automatisk kryptoFranc klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Mapper le port avec l’&amp;UPnP</translation>
+        <translation>Sett opp port ved hjelp av &amp;UPnP</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
-        <translation>Accepter les connexions provenant de l’extérieur.</translation>
+        <translation>Tillat tilkoblinger fra utsiden</translation>
     </message>
     <message>
         <source>Allow incomin&amp;g connections</source>
-        <translation>Permettre les connexions e&amp;ntrantes</translation>
+        <translation>Tillatt innkommend&amp;e tilkoblinger</translation>
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Se connecter au réseau kryptoFranc par un mandataire SOCKS5.</translation>
+        <translation>Koble til kryptoFranc-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>Se &amp;connecter par un mandataire SOCKS5 (mandataire par défaut) :</translation>
+        <translation>&amp;Koble til gjennom SOCKS5 proxy (standardvalg proxy):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP du mandataire :</translation>
+        <translation>Proxy &amp;IP:</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation>&amp;Port :</translation>
+        <translation>&amp;Port:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Port du mandataire (p. ex. 9050)</translation>
+        <translation>Proxyens port (f.eks. 9050)</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
-        <translation>Utilisé pour rejoindre les pairs par :</translation>
+        <translation>Brukt for å nå noder via:</translation>
     </message>
     <message>
         <source>IPv4</source>
@@ -1147,51 +1105,51 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Se connecter au réseau kryptoFranc au travers d’un mandataire SOCKS5 séparé pour les services cachés de Tor.</translation>
+        <translation>Koble til kryptoFranc-nettverket gjennom en separat SOCKS5 mellomtjener for Tor skjulte tjenester.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;Fenêtre</translation>
+        <translation>&amp;Vindu</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>N’afficher qu’une icône dans la zone de notification après minimisation.</translation>
+        <translation>Vis kun ikon i systemkurv etter minimering av vinduet.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Réduire dans la zone de notification au lieu de la barre des tâches</translation>
+        <translation>&amp;Minimer til systemkurv istedenfor oppgavelinjen</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation>Ré&amp;duire lors de la fermeture</translation>
+        <translation>M&amp;inimer ved lukking</translation>
     </message>
     <message>
         <source>&amp;Display</source>
-        <translation>&amp;Affichage</translation>
+        <translation>&amp;Visning</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Langue de l’interface utilisateur :</translation>
+        <translation>&amp;Språk for brukergrensesnitt</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
-        <translation>La langue de l’interface utilisateur peut être définie ici. Ce réglage sera pris en compte après redémarrage de %1.</translation>
+        <translation>Brukergrensesnittspråket kan endres her. Denne innstillingen trer i kraft etter omstart av %1.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unité d’affichage des montants :</translation>
+        <translation>&amp;Enhet for visning av beløper:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Choisir la sous-unité par défaut d’affichage dans l’interface et lors d’envoi de pièces.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av kryptofrancs.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Afficher ou non les fonctions de contrôle des pièces.</translation>
+        <translation>Skal myntkontroll funksjoner vises eller ikke.</translation>
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
-        <translation>URL de transaction de &amp;tiers</translation>
+        <translation>Tredjepart transaksjon URLer</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1199,271 +1157,267 @@
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>A&amp;nnuler</translation>
+        <translation>&amp;Avbryt</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>par défaut</translation>
+        <translation>standardverdi</translation>
     </message>
     <message>
         <source>none</source>
-        <translation>aucune</translation>
+        <translation>ingen</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Confirmer la réinitialisation des options</translation>
+        <translation>Bekreft tilbakestilling av innstillinger</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Le redémarrage du client est exigé pour activer les changements.</translation>
+        <translation>Omstart av klienten er nødvendig for å aktivere endringene.</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
-        <translation>Le client sera arrêté. Voulez-vous continuer ?</translation>
+        <translation>Klienten vil bli lukket. Ønsker du å gå videre?</translation>
     </message>
     <message>
         <source>Configuration options</source>
-        <translation>Options de configuration</translation>
+        <translation>Oppsettsvalg</translation>
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Le fichier de configuration est utilisé pour indiquer aux utilisateurs experts quelles options remplacent les paramètres de l’IUG. De plus, toute option de ligne de commande modifiera ce fichier de configuration.</translation>
+        <translation>Oppsettsfil brukt for å angi avanserte brukervalg som overstyrer innstillinger gjort i grafisk brukergrensesnitt. I tillegg vil enhver handling utført på kommandolinjen overstyre denne oppsettsfila.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <source>The configuration file could not be opened.</source>
-        <translation>Impossible d’ouvrir le fichier de configuration.</translation>
+        <translation>Kunne ikke åpne oppsettsfila.</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>Ce changement demanderait un redémarrage du client.</translation>
+        <translation>Denne endringen krever omstart av klienten.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>L’adresse de serveur mandataire fournie est invalide.</translation>
+        <translation>Angitt proxyadresse er ugyldig.</translation>
     </message>
 </context>
 <context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
-        <translation>Formulaire</translation>
+        <translation>Skjema</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre porte-monnaie est automatiquement synchronisé avec le réseau kryptoFranc lorsque la connexion s’établit, or ce processus n’est pas encore terminé.</translation>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med kryptoFranc-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Juste-regarder :</translation>
+        <translation>Kun observerbar:</translation>
     </message>
     <message>
         <source>Available:</source>
-        <translation>Disponible :</translation>
+        <translation>Tilgjengelig:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
-        <translation>Votre solde actuel disponible</translation>
+        <translation>Din nåværende saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>En attente :</translation>
+        <translation>Under behandling:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Total des transactions qui doivent encore être confirmées et qui ne sont pas prises en compte dans le solde disponible</translation>
+        <translation>Totalt antall ubekreftede transaksjoner som ikke teller med i saldo</translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation>Immature :</translation>
+        <translation>Umoden:</translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
-        <translation>Le solde miné n’est pas encore mûr</translation>
+        <translation>Minet saldo har ikke modnet enda</translation>
     </message>
     <message>
         <source>Balances</source>
-        <translation>Soldes</translation>
+        <translation>Saldoer</translation>
     </message>
     <message>
         <source>Total:</source>
-        <translation>Total :</translation>
+        <translation>Totalt:</translation>
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Votre solde total actuel</translation>
+        <translation>Din nåværende saldo</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
-        <translation>Votre balance actuelle en adresses juste-regarder</translation>
+        <translation>Din nåværende balanse i kun observerbare adresser</translation>
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>Disponible :</translation>
+        <translation>Kan brukes:</translation>
     </message>
     <message>
         <source>Recent transactions</source>
-        <translation>Transactions récentes</translation>
+        <translation>Nylige transaksjoner</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Transactions non confirmées vers des adresses juste-regarder</translation>
+        <translation>Ubekreftede transaksjoner til kun observerbare adresser</translation>
     </message>
     <message>
         <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>Le solde miné dans des adresses juste-regarder, qui n’est pas encore mûr</translation>
+        <translation>Utvunnet balanse i kun observerbare adresser som ennå ikke har modnet</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
-        <translation>Solde total actuel dans des adresses juste-regarder</translation>
+        <translation>Nåværende totale balanse i kun observerbare adresser</translation>
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
-        <translation>Erreur de demande de paiement</translation>
+        <translation>Feil ved betalingsforespørsel</translation>
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer kryptofranc:</translation>
+        <translation>Kan ikke starte kryptofranc: Klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>URI handling</source>
-        <translation>Gestion des URI</translation>
-    </message>
-    <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'kryptofranc://' n’est pas une URI valide. Utilisez plutôt 'kryptofranc:'.</translation>
+        <translation>URI-håndtering</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>L’URL de récupération de la demande de paiement est invalide : %1</translation>
+        <translation>Nettadressen for betalingsforespørselshenting er ugyldig: %1</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
-        <translation>Adresse de paiement invalide %1</translation>
+        <translation>Ugyldig betalingsadresse %1</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>L’URI ne peut pas être analysée ! Cela peut être causé par une adresse kryptoFranc invalide ou par des paramètres d’URI mal formés.</translation>
+        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig kryptofranc-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
-        <translation>Gestion des fichiers de demande de paiement</translation>
+        <translation>Håndtering av betalingsforespørselsfil</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Le fichier de demande de paiement ne peut pas être lu ! Cela peut être causé par un fichier de demande de paiement invalide.</translation>
+        <translation>Betalingsforespørselsfila kan ikke leses! Dette kan ha sitt opphav i at den er ugyldig.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
-        <translation>Demande de paiement rejetée</translation>
+        <translation>Betalingsforespørsel avslått</translation>
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
-        <translation>Le réseau de la demande de paiement ne correspond pas au réseau du client.</translation>
+        <translation>Betalingsforespørselsnettverket samsvarer ikke med klientnettverket.</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
-        <translation>La demande de paiement a expiré</translation>
+        <translation>Tidsavbrudd for betalingsforespørsel</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
-        <translation>La demande de paiement n’est pas initialisée.</translation>
+        <translation>Betalingsforespørselen er ikke igangsatt.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Les demandes de paiements non vérifiées vers des scripts de paiement personnalisés ne sont pas prises en charge.</translation>
+        <translation>Uverifiserte betalingsforespørsler til egentilpassede betalingsskript støttes ikke.</translation>
     </message>
     <message>
         <source>Invalid payment request.</source>
-        <translation>Demande de paiement invalide.</translation>
+        <translation>Ugyldig betalingsforespørsel.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Le paiement demandé d’un montant de %1 est trop faible (considéré comme de la poussière).</translation>
+        <translation>Forespurt betalingsbeløp på %1 er for lite (betraktet som støv).</translation>
     </message>
     <message>
         <source>Refund from %1</source>
-        <translation>Remboursement de %1</translation>
+        <translation>Tilbakebetaling fra %1</translation>
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>La demande de paiement %1 est trop grande (%2 octets, %3 octets permis).</translation>
+        <translation>Betalingsforespørsel %1 er for stor (%2 byte, %3 byte tillatt).</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
-        <translation>Erreur de communication avec %1 : %2</translation>
+        <translation>Feil under kommunikasjon med %1: %2</translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
-        <translation>La demande de paiement ne peut pas être analysée !</translation>
+        <translation>Betalingsforespørselen kan ikke tolkes!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation>Mauvaise réponse du serveur %1</translation>
+        <translation>Feilaktig svar fra tjeneren %1</translation>
     </message>
     <message>
         <source>Network request error</source>
-        <translation>Erreur de demande réseau</translation>
+        <translation>Nettverksforespørselsfeil</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
-        <translation>Le paiement a été confirmé</translation>
+        <translation>Betaling anerkjent</translation>
     </message>
 </context>
 <context>
     <name>PeerTableModel</name>
     <message>
         <source>User Agent</source>
-        <translation>Agent utilisateur</translation>
+        <translation>Brukeragent</translation>
     </message>
     <message>
         <source>Node/Service</source>
-        <translation>Nœud/service</translation>
+        <translation>Node/Tjeneste</translation>
     </message>
     <message>
         <source>NodeId</source>
-        <translation>ID de nœud</translation>
+        <translation>NodeId</translation>
     </message>
     <message>
         <source>Ping</source>
-        <translation>Ping</translation>
+        <translation>Nettverkssvarkall</translation>
     </message>
     <message>
         <source>Sent</source>
-        <translation>Envoyé</translation>
+        <translation>Sendt</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Reçu</translation>
+        <translation>Mottatt</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Beløp</translation>
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Saisir une adresse kryptoFranc (p. ex. %1)</translation>
+        <translation>Oppgi en kryptoFranc-adresse (f.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
-        <translation>%1 j</translation>
+        <translation>%1 d</translation>
     </message>
     <message>
         <source>%1 h</source>
-        <translation>%1 h</translation>
+        <translation>%1 t</translation>
     </message>
     <message>
         <source>%1 m</source>
-        <translation>%1 min</translation>
+        <translation>%1 m</translation>
     </message>
     <message>
         <source>%1 s</source>
@@ -1471,11 +1425,11 @@
     </message>
     <message>
         <source>None</source>
-        <translation>Aucun</translation>
+        <translation>Ingen</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N.D.</translation>
+        <translation>-</translation>
     </message>
     <message>
         <source>%1 ms</source>
@@ -1483,518 +1437,482 @@
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation><numerusform>%n seconde</numerusform><numerusform>%n secondes</numerusform></translation>
+        <translation><numerusform>%n sekund</numerusform><numerusform>%n sekunder</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minute</numerusform><numerusform>%n minutes</numerusform></translation>
+        <translation><numerusform>%n minutt</numerusform><numerusform>%n minutter</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n heure</numerusform><numerusform>%n heures</numerusform></translation>
+        <translation><numerusform>%n time</numerusform><numerusform>%n timer</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform>%n jour</numerusform><numerusform>%n jours</numerusform></translation>
+        <translation><numerusform>%n dag</numerusform><numerusform>%n dager</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n semaine</numerusform><numerusform>%n semaines</numerusform></translation>
+        <translation><numerusform>%n uke</numerusform><numerusform>%n uker</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
-        <translation>%1 et %2</translation>
+        <translation>%1 og %2</translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n an</numerusform><numerusform>%n ans</numerusform></translation>
+        <translation><numerusform>%n år</numerusform><numerusform>%n år</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
-        <translation>%1 o</translation>
+        <translation>%1 B</translation>
     </message>
     <message>
         <source>%1 KB</source>
-        <translation>%1 Ko</translation>
+        <translation>%1 KB</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation>%1 Mo</translation>
+        <translation>%1 MB</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation>%1 Go</translation>
+        <translation>%1 GB</translation>
     </message>
     <message>
         <source>%1 didn't yet exit safely...</source>
-        <translation>%1 ne s’est pas encore arrêté en toute sécurité...</translation>
+        <translation>%1 har ikke avsluttet trygt enda…</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation>inconnue</translation>
+        <translation>ukjent</translation>
     </message>
 </context>
 <context>
     <name>QObject::QObject</name>
     <message>
-        <source>Error parsing command line arguments: %1.</source>
-        <translation>Erreur d’analyse des arguments de ligne de commande : %1.</translation>
-    </message>
-    <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>Erreur : Le répertoire de données indiqué « %1 » n’existe pas.</translation>
-    </message>
-    <message>
-        <source>Error: Cannot parse configuration file: %1.</source>
-        <translation>Erreur : Impossible d’analyser le fichier de configuration : %1.</translation>
+        <translation>Feil: Den spesifiserte datamappen "%1" finnes ikke.</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>Erreur : %1</translation>
+        <translation>Feil: %1</translation>
     </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Enregistrer l’image...</translation>
+        <translation>&amp;Lagre bilde...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
-        <translation>&amp;Copier l’image</translation>
+        <translation>&amp;Kopier bilde</translation>
     </message>
     <message>
         <source>Save QR Code</source>
-        <translation>Enregistrer le code QR</translation>
+        <translation>Lagre QR-kode</translation>
     </message>
     <message>
         <source>PNG Image (*.png)</source>
-        <translation>Image PNG (*.png)</translation>
+        <translation>PNG-bilde (*.png)</translation>
     </message>
 </context>
 <context>
     <name>RPCConsole</name>
     <message>
         <source>N/A</source>
-        <translation>N.D.</translation>
+        <translation>-</translation>
     </message>
     <message>
         <source>Client version</source>
-        <translation>Version du client</translation>
+        <translation>Klientversjon</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Informations</translation>
+        <translation>&amp;Informasjon</translation>
     </message>
     <message>
         <source>Debug window</source>
-        <translation>Fenêtre de débogage</translation>
+        <translation>Feilsøkingsvindu</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Général</translation>
+        <translation>Generelt</translation>
     </message>
     <message>
         <source>Using BerkeleyDB version</source>
-        <translation>Version BerkeleyDB utilisée</translation>
+        <translation>Bruker BerkeleyDB versjon</translation>
     </message>
     <message>
         <source>Datadir</source>
-        <translation>Datadir</translation>
+        <translation>Datamappe</translation>
     </message>
     <message>
         <source>Startup time</source>
-        <translation>Heure de démarrage</translation>
+        <translation>Oppstartstidspunkt</translation>
     </message>
     <message>
         <source>Network</source>
-        <translation>Réseau</translation>
+        <translation>Nettverk</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>Navn</translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Nombre de connexions</translation>
+        <translation>Antall tilkoblinger</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>Chaîne de blocs</translation>
+        <translation>Blokkjeden</translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Nombre actuel de blocs</translation>
+        <translation>Nåværende antall blokker</translation>
     </message>
     <message>
         <source>Memory Pool</source>
-        <translation>Réserve de mémoire</translation>
+        <translation>Hukommelsespulje</translation>
     </message>
     <message>
         <source>Current number of transactions</source>
-        <translation>Nombre actuel de transactions</translation>
+        <translation>Nåværende antall transaksjoner</translation>
     </message>
     <message>
         <source>Memory usage</source>
-        <translation>Utilisation de la mémoire</translation>
-    </message>
-    <message>
-        <source>Wallet: </source>
-        <translation>Porte-monnaie :</translation>
-    </message>
-    <message>
-        <source>(none)</source>
-        <translation>(aucun)</translation>
+        <translation>Minnebruk</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation>&amp;Réinitialiser</translation>
+        <translation>&amp;Tilbakestill</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Reçu</translation>
+        <translation>Mottatt</translation>
     </message>
     <message>
         <source>Sent</source>
-        <translation>Envoyé</translation>
+        <translation>Sendt</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Pairs</translation>
+        <translation>&amp;Noder</translation>
     </message>
     <message>
         <source>Banned peers</source>
-        <translation>Pairs bannis</translation>
+        <translation>Utestengte noder</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Choisir un pair pour voir l’information détaillée.</translation>
+        <translation>Velg en node for å vise detaljert informasjon.</translation>
     </message>
     <message>
         <source>Whitelisted</source>
-        <translation>Dans la liste blanche</translation>
+        <translation>Hvitelistet</translation>
     </message>
     <message>
         <source>Direction</source>
-        <translation>Direction</translation>
+        <translation>Retning</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Versjon</translation>
     </message>
     <message>
         <source>Starting Block</source>
-        <translation>Bloc de départ</translation>
+        <translation>Startblokk</translation>
     </message>
     <message>
         <source>Synced Headers</source>
-        <translation>En-têtes synchronisés</translation>
+        <translation>Synkroniserte Blokkhoder</translation>
     </message>
     <message>
         <source>Synced Blocks</source>
-        <translation>Blocs synchronisés</translation>
+        <translation>Synkroniserte Blokker</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agent utilisateur</translation>
+        <translation>Brukeragent</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier journal de débogage de %1 à partir du répertoire de données actuel. Cela peut prendre quelques secondes pour les fichiers journaux de grande taille.</translation>
+        <translation>Åpne %1-feilrettingsloggfila fra gjeldende datamappe. Dette kan ta et par sekunder for store loggfiler.</translation>
     </message>
     <message>
         <source>Decrease font size</source>
-        <translation>Diminuer la taille de police</translation>
+        <translation>Forminsk font størrelsen</translation>
     </message>
     <message>
         <source>Increase font size</source>
-        <translation>Augmenter la taille de police</translation>
+        <translation>Forstørr font størrelse</translation>
     </message>
     <message>
         <source>Services</source>
-        <translation>Services</translation>
+        <translation>Tjenester</translation>
     </message>
     <message>
         <source>Ban Score</source>
-        <translation>Pointage des bannissements</translation>
+        <translation>Ban Poengsum</translation>
     </message>
     <message>
         <source>Connection Time</source>
-        <translation>Temps de connexion</translation>
+        <translation>Tilkoblingstid</translation>
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Dernier envoi</translation>
+        <translation>Siste Sendte</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Dernière réception</translation>
+        <translation>Siste Mottatte</translation>
     </message>
     <message>
         <source>Ping Time</source>
-        <translation>Temps de ping</translation>
+        <translation>Ping-tid</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
-        <translation>La durée d’un ping en cours.</translation>
+        <translation>Tidsforløp for utestående ping.</translation>
     </message>
     <message>
         <source>Ping Wait</source>
-        <translation>Attente du ping</translation>
+        <translation>Ping Tid</translation>
     </message>
     <message>
         <source>Min Ping</source>
-        <translation>Ping min.</translation>
+        <translation>Minimalt nettverkssvarkall</translation>
     </message>
     <message>
         <source>Time Offset</source>
-        <translation>Décalage temporel</translation>
+        <translation>Tidsforskyvning</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Estampille temporelle du dernier bloc</translation>
+        <translation>Tidspunkt for siste blokk</translation>
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation>&amp;Ouvrir</translation>
+        <translation>&amp;Åpne</translation>
     </message>
     <message>
         <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
+        <translation>&amp;Konsoll</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>Trafic &amp;réseau</translation>
+        <translation>&amp;Nettverkstrafikk</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation>Totaux</translation>
+        <translation>Totalt</translation>
     </message>
     <message>
         <source>In:</source>
-        <translation>Entrant :</translation>
+        <translation>Inn:</translation>
     </message>
     <message>
         <source>Out:</source>
-        <translation>Sortant :</translation>
+        <translation>Ut:</translation>
     </message>
     <message>
         <source>Debug log file</source>
-        <translation>Fichier journal de débogage</translation>
+        <translation>Loggfil for feilsøk</translation>
     </message>
     <message>
         <source>Clear console</source>
-        <translation>Effacer la console</translation>
+        <translation>Tøm konsoll</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation>1 &amp;heure</translation>
+        <translation>1 &amp;time</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
-        <translation>1 &amp;jour</translation>
+        <translation>1 &amp;dag</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
-        <translation>1 &amp;semaine</translation>
+        <translation>1 &amp;uke</translation>
     </message>
     <message>
         <source>1 &amp;year</source>
-        <translation>1 &amp;an</translation>
+        <translation>1 &amp;år</translation>
     </message>
     <message>
         <source>&amp;Disconnect</source>
-        <translation>&amp;Déconnecter</translation>
+        <translation>&amp;Koble fra</translation>
     </message>
     <message>
         <source>Ban for</source>
-        <translation>Bannir pendant</translation>
+        <translation>Bannlys i</translation>
     </message>
     <message>
         <source>&amp;Unban</source>
-        <translation>&amp;Réhabiliter</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>porte-monnaie par défaut</translation>
+        <translation>&amp;Opphev bannlysning</translation>
     </message>
     <message>
         <source>Welcome to the %1 RPC console.</source>
-        <translation>Bienvenue sur la console RPC de %1.</translation>
+        <translation>Velkommen til %1 RPC-konsoll.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
-        <translation>Utiliser les touches de déplacement pour naviguer dans l’historique et %1 pour effacer l’écran.</translation>
+        <translation>Bruk ↑ og ↓ til å navigere historikk, og %1 for å tømme skjermen.</translation>
     </message>
     <message>
         <source>Type %1 for an overview of available commands.</source>
-        <translation>Taper %1 pour afficher un aperçu des commandes proposées.</translation>
+        <translation>Skriv %1 for en oversikt over tilgjengelige kommandoer.</translation>
     </message>
     <message>
         <source>For more information on using this console type %1.</source>
-        <translation>Pour plus d’informations sur l’utilisation de cette console, taper %1.</translation>
+        <translation>For mer informasjon om hvordan konsollet brukes skriv %1.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>AVERTISSEMENT : des fraudeurs sont réputés être à l’oeuvre, demandant aux utilisateurs de taper des commandes ici, dérobant ainsi le contenu de leurs porte-monnaie. Ne pas utiliser cette console sans une compréhension parfaite des conséquences d’une commande.</translation>
+        <translation>Advarsel: Svindlere har vært på ferde, i oppfordringen om å skrive kommandoer her, for å stjele lommebokinnhold. Ikke bruk konsollen uten at du forstår alle ringvirkningene av en kommando.</translation>
     </message>
     <message>
         <source>Network activity disabled</source>
-        <translation>L’activité réseau est désactivée.</translation>
-    </message>
-    <message>
-        <source>Executing command without any wallet</source>
-        <translation>Exécution de la commande sans aucun porte-monnaie</translation>
-    </message>
-    <message>
-        <source>Executing command using "%1" wallet</source>
-        <translation>Exécution de la commande en utilisant le porte-monnaie « %1 »</translation>
+        <translation>Nettverksaktivitet avskrudd</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
-        <translation>(ID de nœud : %1)</translation>
+        <translation>(node id: %1)</translation>
     </message>
     <message>
         <source>via %1</source>
-        <translation>par %1</translation>
+        <translation>via %1</translation>
     </message>
     <message>
         <source>never</source>
-        <translation>jamais</translation>
+        <translation>aldri</translation>
     </message>
     <message>
         <source>Inbound</source>
-        <translation>Entrant</translation>
+        <translation>Innkommende</translation>
     </message>
     <message>
         <source>Outbound</source>
-        <translation>Sortant</translation>
+        <translation>Utgående</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Oui</translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Non</translation>
+        <translation>Nei</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Inconnu</translation>
+        <translation>Ukjent</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>&amp;Amount:</source>
-        <translation>&amp;Montant :</translation>
+        <translation>&amp;Beløp:</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>&amp;Étiquette :</translation>
+        <translation>&amp;Merkelapp:</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation>M&amp;essage :</translation>
+        <translation>&amp;Melding:</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Un message facultatif à joindre à la demande de paiement et qui sera affiché à l’ouverture de celle-ci. Note : le message ne sera pas envoyé avec le paiement par le réseau kryptoFranc.</translation>
+        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over kryptoFranc-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>Un étiquette facultative à associer à la nouvelle adresse de réception.</translation>
+        <translation>En valgfri merkelapp å tilknytte den nye mottakeradressen.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Utiliser ce formulaire pour demander des paiements. Tous les champs sont  &lt;b&gt;facultatifs&lt;/b&gt;.</translation>
+        <translation>Bruk dette skjemaet til betalingsforespørsler. Alle felt er &lt;b&gt;valgfrie&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Un montant facultatif à demander. Ne rien saisir ou un zéro pour ne pas demander de montant précis.</translation>
+        <translation>Et valgfritt beløp å etterspørre. La stå tomt eller null for ikke å etterspørre et spesifikt beløp.</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Effacer tous les champs du formulaire.</translation>
+        <translation>Fjern alle felter fra skjemaet.</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Effacer</translation>
-    </message>
-    <message>
-        <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don't support them. When unchecked, an address compatible with older wallets will be created instead.</source>
-        <translation>Les adresses SegWit natives (aussi appelées Bech32 ou BIP-173) réduisent vos frais de transaction ultérieurs et offrent une meilleure protection contre les erreurs de frappe, mais les anciens porte-monnaie ne les prennent pas en charge. Si cette option n’est pas cochée, une adresse compatible avec les anciens porte-monnaie sera plutôt créée.</translation>
-    </message>
-    <message>
-        <source>Generate native segwit (Bech32) address</source>
-        <translation>Générer une adresse SegWit native (Bech32)</translation>
+        <translation>Fjern</translation>
     </message>
     <message>
         <source>Requested payments history</source>
-        <translation>Historique des paiements demandés</translation>
+        <translation>Etterspurt betalingshistorikk</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
-        <translation>&amp;Demander un paiement</translation>
+        <translation>&amp;Etterspør betaling</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Afficher la demande choisie (comme double-cliquer sur une entrée)</translation>
+        <translation>Vis den valgte etterspørringen (gjør det samme som å dobbelklikke på en oppføring)</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>Afficher</translation>
+        <translation>Vis</translation>
     </message>
     <message>
         <source>Remove the selected entries from the list</source>
-        <translation>Retirer les entrées sélectionnées de la liste</translation>
+        <translation>Fjern de valgte oppføringene fra listen</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Retirer</translation>
+        <translation>Fjern</translation>
     </message>
     <message>
         <source>Copy URI</source>
-        <translation>Copier l’URI</translation>
+        <translation>Kopier URI</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copier l’étiquette</translation>
+        <translation>Kopiér merkelapp</translation>
     </message>
     <message>
         <source>Copy message</source>
-        <translation>Copier le message</translation>
+        <translation>Kopier melding</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <translation>Kopier beløp</translation>
     </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
         <source>QR Code</source>
-        <translation>Code QR</translation>
+        <translation>QR-kode</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
-        <translation>Copier l’&amp;URI</translation>
+        <translation>Kopier &amp;URI</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation>Copier l’&amp;adresse</translation>
+        <translation>Kopier &amp;Adresse</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Enregistrer l’image...</translation>
+        <translation>&amp;Lagre Bilde...</translation>
     </message>
     <message>
         <source>Request payment to %1</source>
-        <translation>Demande de paiement à %1</translation>
+        <translation>Forespør betaling til %1</translation>
     </message>
     <message>
         <source>Payment information</source>
-        <translation>Informations de paiement</translation>
+        <translation>Betalingsinformasjon</translation>
     </message>
     <message>
         <source>URI</source>
@@ -2006,376 +1924,356 @@
     </message>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Beløp</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Merkelapp</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Melding</translation>
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Porte-monnaie</translation>
+        <translation>Lommebok</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>L’URI résultante est trop longue. Essayez de réduire le texte de l’étiquette ou du message.</translation>
+        <translation>Resulterende URI er for lang, prøv å redusere teksten for merkelapp / melding.</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Erreur d’encodage de l’URI en code QR.</translation>
+        <translation>Feil ved koding av URI til QR-kode.</translation>
     </message>
 </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Dato</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Merkelapp</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Melding</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(ingen merkelapp)</translation>
     </message>
     <message>
         <source>(no message)</source>
-        <translation>(aucun message)</translation>
+        <translation>(ingen melding)</translation>
     </message>
     <message>
         <source>(no amount requested)</source>
-        <translation>(aucun montant demandé)</translation>
+        <translation>(inget beløp forespurt)</translation>
     </message>
     <message>
         <source>Requested</source>
-        <translation>Demandée</translation>
+        <translation>Forespurt</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Envoyer des pièces</translation>
+        <translation>Send kryptoFrancs</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Fonctions de contrôle des pièces</translation>
+        <translation>Myntkontroll Funksjoner</translation>
     </message>
     <message>
         <source>Inputs...</source>
-        <translation>Entrants...</translation>
+        <translation>Inndata...</translation>
     </message>
     <message>
         <source>automatically selected</source>
-        <translation>choisi automatiquement</translation>
+        <translation>automatisk valgte</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Fonds insuffisants !</translation>
+        <translation>Utilstrekkelige midler!</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Quantité :</translation>
+        <translation>Mengde:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octets :</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Montant :</translation>
+        <translation>Beløp:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Frais :</translation>
+        <translation>Gebyr:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Après les frais :</translation>
+        <translation>Etter Gebyr:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Monnaie :</translation>
+        <translation>Veksel:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Si cette option est activée et l’adresse de monnaie est vide ou invalide, la monnaie sera envoyée vers une adresse nouvellement générée.</translation>
+        <translation>Hvis dette er aktivert, men adressen for veksel er tom eller ugyldig, vil veksel bli sendt til en nylig generert adresse.</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation>Adresse personnalisée de monnaie</translation>
+        <translation>Egendefinert adresse for veksel</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
-        <translation>Frais de transaction :</translation>
+        <translation>Transaksjonsgebyr:</translation>
     </message>
     <message>
         <source>Choose...</source>
-        <translation>Choisir...</translation>
+        <translation>Velg...</translation>
     </message>
     <message>
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
-        <translation>L’utilisation de l’option « fallbackfee » (frais de repli) peut avoir comme effet d’envoyer une transaction qui prendra plusieurs heures ou jours pour être confirmée ou qui ne le sera jamais. Envisagez de choisir vos frais manuellement ou attendez d’avoir validé l’intégralité de la chaîne.</translation>
+        <translation>Bruk av tilbakefallsgebyr kan medføre at en transaksjon tar flere timer eller dager, å fullføre, eller aldri gjør det. Overvei å velge et gebyr manuelt, eller vent til du har bekreftet hele kjeden.</translation>
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
-        <translation>Avertissement : l’estimation des frais n’est actuellement pas possible.</translation>
+        <translation>Advarsel: Gebyroverslag er ikke tilgjengelig for tiden.</translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
-        <translation>réduire les paramètres des frais</translation>
-    </message>
-    <message>
-        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
-
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
-        <translation>Déterminer des frais personnalisés par Ko (1 000 octets) de la taille virtuelle de la transaction.
-
-Note : Les frais étant calculés par octet, des frais de « 100 satoshis par Ko » pour une transaction d’une taille de 500 octets (la moitié de 1 Ko) donneront des frais de seulement 50 satoshis.</translation>
+        <translation>Legg ned gebyrinnstillinger</translation>
     </message>
     <message>
         <source>per kilobyte</source>
-        <translation>par kilo-octet</translation>
+        <translation>per kilobyte</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation>Cacher</translation>
+        <translation>Skjul</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Il est correct de payer les frais minimum tant que le volume transactionnel est inférieur à l’espace dans les blocs. Mais soyez conscient que cela pourrait résulter en une transaction n’étant jamais confirmée une fois qu’il y aura plus de transactions que le réseau ne pourra en traiter.</translation>
+        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter kryptoFranc-transaksjoner enn nettverket kan behandle.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
-        <translation>(lire l’infobulle)</translation>
+        <translation>(les verktøytipset)</translation>
     </message>
     <message>
         <source>Recommended:</source>
-        <translation>Recommandés :</translation>
+        <translation>Anbefalt:</translation>
     </message>
     <message>
         <source>Custom:</source>
-        <translation>Personnalisés : </translation>
+        <translation>Egendefinert:</translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Les frais intelligents ne sont pas encore initialisés. Cela prend habituellement quelques blocs...)</translation>
+        <translation>(Smartgebyr ikke innført ennå. Dette tar vanligvis noen blokker...)</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
-        <translation>Envoyer à plusieurs destinataires à la fois</translation>
+        <translation>Send til flere enn en mottaker</translation>
     </message>
     <message>
         <source>Add &amp;Recipient</source>
-        <translation>Ajouter un &amp;destinataire</translation>
+        <translation>Legg til &amp;Mottaker</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Effacer tous les champs du formulaire.</translation>
+        <translation>Fjern alle felter fra skjemaet.</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Poussière :</translation>
+        <translation>Støv:</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
-        <translation>Estimation du délai de confirmation :</translation>
+        <translation>Bekreftelsestidsmål:</translation>
     </message>
     <message>
         <source>Enable Replace-By-Fee</source>
-        <translation>Activer Remplacer-par-des-frais</translation>
+        <translation>Aktiver Replace-By-Fee</translation>
     </message>
     <message>
         <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
-        <translation>Avec Remplacer-par-des-frais (BIP-125), vous pouvez augmenter les frais de transaction après qu’elle est envoyée. Sans cela, des frais plus élevés peuvent être recommandés pour compenser le risque accru de retard transactionnel.</translation>
+        <translation>Med Replace-By-Fee (BIP-125) kan du øke transaksjonens gebyr etter at den er sendt. Uten dette aktivert anbefales et høyere gebyr for å kompensere for risikoen for at transaksjonen blir forsinket. </translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>&amp;Tout effacer</translation>
+        <translation>Fjern &amp;Alt</translation>
     </message>
     <message>
         <source>Balance:</source>
-        <translation>Solde :</translation>
+        <translation>Saldo:</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation>Confirmer l’action d’envoi</translation>
+        <translation>Bekreft sending</translation>
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation>E&amp;nvoyer</translation>
+        <translation>S&amp;end</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Copier la quantité</translation>
+        <translation>Kopier mengde</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <translation>Kopier beløp</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Copier les frais</translation>
+        <translation>Kopier gebyr</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Copier après les frais</translation>
+        <translation>Kopiér totalt</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Copier les octets</translation>
+        <translation>Kopiér bytes</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Copier la poussière</translation>
+        <translation>Kopiér støv</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Copier la monnaie</translation>
+        <translation>Kopier veksel</translation>
     </message>
     <message>
         <source>%1 (%2 blocks)</source>
-        <translation>%1 (%2 blocs)</translation>
+        <translation>%1 (%2 blokker)</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation>%1 à %2</translation>
+        <translation>%1 til %2</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
-        <translation>Voulez-vous vraiment envoyer ?</translation>
+        <translation>Er du sikker på at du vil sende?</translation>
     </message>
     <message>
         <source>or</source>
-        <translation>ou</translation>
+        <translation>eller</translation>
     </message>
     <message>
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
-        <translation>Vous pouvez augmenter les frais ultérieurement (signale Remplacer-par-des-frais, BIP-125).</translation>
-    </message>
-    <message>
-        <source>from wallet %1</source>
-        <translation>du porte-monnaie %1</translation>
-    </message>
-    <message>
-        <source>Please, review your transaction.</source>
-        <translation>Veuillez vérifier votre transaction.</translation>
+        <translation>Du kan øke gebyret senere (signaliserer Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Frais de transaction</translation>
+        <translation>Transaksjonsgebyr</translation>
     </message>
     <message>
         <source>Not signalling Replace-By-Fee, BIP-125.</source>
-        <translation>Ne signale pas Remplacer-par-des-frais, BIP-125.</translation>
-    </message>
-    <message>
-        <source>Total Amount</source>
-        <translation>Montant total</translation>
+        <translation>Signaliserer ikke Replace-By-Fee, BIP-125</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Confirmer l’envoi de pièces</translation>
+        <translation>Bekreft forsendelse av mynter</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
-        <translation>L’adresse du destinataire est invalide. Veuillez la revérifier.</translation>
+        <translation>Mottakeradressen er ikke gyldig. Sjekk den igjen.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>Le montant à payer doit être supérieur à 0.</translation>
+        <translation>Betalingsbeløpet må være høyere enn 0.</translation>
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Le montant dépasse votre solde.</translation>
+        <translation>Beløper overstiger saldo.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Le montant dépasse votre solde lorsque les frais de transaction de %1 sont inclus.</translation>
+        <translation>Totalbeløpet overstiger saldo etter at %1-transaksjonsgebyret er lagt til.</translation>
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Adresse identique trouvée : chaque adresse ne devrait être utilisée qu’une fois.</translation>
+        <translation>Gjenbruk av adresse funnet: Adresser skal kun brukes én gang hver.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
-        <translation>Échec de création de la transaction !</translation>
+        <translation>Opprettelse av transaksjon mislyktes!</translation>
     </message>
     <message>
         <source>The transaction was rejected with the following reason: %1</source>
-        <translation>La transaction a été rejetée pour la raison suivante : %1</translation>
+        <translation>Transaksjonen ble avslått av følgende grunn: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
-        <translation>Des frais supérieurs à %1 sont considérés comme ridiculement élevés.</translation>
+        <translation>Et gebyr høyere enn %1 anses som absurd høyt.</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
-        <translation>La demande de paiement a expiré</translation>
+        <translation>Tidsavbrudd for betalingsforespørsel</translation>
     </message>
     <message>
         <source>Pay only the required fee of %1</source>
-        <translation>Payer seulement les frais exigés de %1</translation>
+        <translation>Kun betal påkrevd gebyr på %1</translation>
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Il est estimé que la confirmation commencera dans %n bloc.</numerusform><numerusform>Il est estimé que la confirmation commencera dans %n blocs.</numerusform></translation>
+        <translation><numerusform>Antatt bekreftelsesbegynnelse innen %n blokk.</numerusform><numerusform>Antatt bekreftelsesbegynnelse innen %n blokker.</numerusform></translation>
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Avertissement : adresse kryptoFranc invalide</translation>
+        <translation>Advarsel Ugyldig kryptofranc-adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
-        <translation>Avertissement : adresse de monnaie inconnue</translation>
+        <translation>Advarsel: Ukjent vekslingsadresse</translation>
     </message>
     <message>
         <source>Confirm custom change address</source>
-        <translation>Confimer l’adresse personnalisée de monnaie</translation>
+        <translation>Bekreft egendefinert vekslingsadresse</translation>
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
-        <translation>L’adresse que vous avez sélectionnée pour la monnaie ne fait pas partie de ce porte-monnaie. Les fonds de ce porte-monnaie peuvent en partie ou en totalité être envoyés vers cette adresse. Êtes-vous certain ?</translation>
+        <translation>Adressen du valgte for veksling er ikke en del av denne lommeboka. Alle verdiene i din lommebok vil bli sendt til denne adressen. Er du sikker?</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(ingen merkelapp)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
         <source>A&amp;mount:</source>
-        <translation>&amp;Montant :</translation>
+        <translation>&amp;Beløp:</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Payer à :</translation>
+        <translation>Betal &amp;Til:</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>É&amp;tiquette :</translation>
+        <translation>&amp;Merkelapp:</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Choisir une adresse déjà utilisée</translation>
+        <translation>Velg tidligere brukt adresse</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
-        <translation>Ceci est un paiement normal.</translation>
+        <translation>Dette er en normal betaling.</translation>
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>L’adresse kryptoFranc à laquelle envoyer le paiement</translation>
+        <translation>kryptoFranc-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2383,7 +2281,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Coller l’adresse du presse-papiers</translation>
+        <translation>Lim inn adresse fra utklippstavlen</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2391,92 +2289,92 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Remove this entry</source>
-        <translation>Retirer cette entrée</translation>
+        <translation>Fjern denne oppføringen</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Les frais seront déduits du montant envoyé. Le destinataire recevra moins de kryptofrancs que le montant saisi dans le champ de montant. Si plusieurs destinataires sont sélectionnés, les frais seront partagés également..</translation>
+        <translation>Gebyret vil bli trukket fra beløpet som blir sendt. Mottakeren vil motta mindre kryptofrancs enn det du skriver inn i beløpsfeltet. Hvis det er valgt flere mottakere, deles gebyret likt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
-        <translation>S&amp;oustraire les frais du montant</translation>
+        <translation>T&amp;rekk fra gebyr fra beløp</translation>
     </message>
     <message>
         <source>Use available balance</source>
-        <translation>Utiliser le solde disponible</translation>
+        <translation>Bruk tilgjengelig saldo</translation>
     </message>
     <message>
         <source>Message:</source>
-        <translation>Message :</translation>
+        <translation>Melding:</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
-        <translation>Cette demande de paiement n’est pas authentifiée.</translation>
+        <translation>Dette er en uautorisert betalingsetterspørring.</translation>
     </message>
     <message>
         <source>This is an authenticated payment request.</source>
-        <translation>Cette demande de paiement est authentifiée.</translation>
+        <translation>Dette er en autorisert betalingsetterspørring.</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Saisir une étiquette pour cette adresse afin de l’ajouter à la liste d’adresses utilisées</translation>
+        <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Un message qui était joint à l’URI kryptofranc: et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau kryptoFranc.</translation>
+        <translation>En melding som var tilknyttet kryptofrancen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over kryptoFranc-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
-        <translation>Payer à :</translation>
+        <translation>Betal Til:</translation>
     </message>
     <message>
         <source>Memo:</source>
-        <translation>Mémo :</translation>
+        <translation>Memo:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Saisir une étiquette pour cette adresse afin de l’ajouter à votre carnet d’adresses</translation>
+        <translation>Skriv inn en merkelapp for denne adressen for å legge den til i din adressebok</translation>
     </message>
 </context>
 <context>
     <name>SendConfirmationDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Oui</translation>
+        <translation>Ja</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <source>%1 is shutting down...</source>
-        <translation>Arrêt de %1...</translation>
+        <translation>%1 lukker...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Ne pas éteindre l’ordinateur jusqu’à la disparition de cette fenêtre.</translation>
+        <translation>Slå ikke av datamaskinen før dette vinduet forsvinner.</translation>
     </message>
 </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Signer / vérifier un message</translation>
+        <translation>Signaturer - Signer / Verifiser en Melding</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Signer un message</translation>
+        <translation>&amp;Signer Melding</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Vous pouvez signer des messages ou des accords avec vos adresses pour prouver que vous pouvez recevoir des kryptofrancs à ces dernières. Faites attention de ne rien signer de vague ou au hasard, car des attaques d’hameçonnage pourraient essayer de vous faire signer avec votre identité afin de l’usurper. Ne signez que des déclarations entièrement détaillées et avec lesquelles vous êtes d’accord.</translation>
+        <translation>Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta kryptofrancs sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
     </message>
     <message>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>L’adresse kryptoFranc avec laquelle signer le message</translation>
+        <translation>kryptoFranc-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Choisir une adresse déjà utilisée</translation>
+        <translation>Velg tidligere brukt adresse</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2484,7 +2382,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Coller une adresse du presse-papiers</translation>
+        <translation>Lim inn adresse fra utklippstavlen</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2492,306 +2390,302 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Saisir ici le message que vous désirez signer</translation>
+        <translation>Skriv inn meldingen du vil signere her</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Signature</translation>
+        <translation>Signatur</translation>
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Copier la signature actuelle dans le presse-papiers</translation>
+        <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signer le message afin de prouver que vous détenez cette adresse kryptoFranc</translation>
+        <translation>Signer meldingen for å bevise at du eier denne kryptoFranc-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>Signer le &amp;message</translation>
+        <translation>Signer &amp;Melding</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
-        <translation>Réinitialiser tous les champs de signature de message</translation>
+        <translation>Tilbakestill alle felter for meldingssignering</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>&amp;Tout effacer</translation>
+        <translation>Fjern &amp;Alt</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Vérifier un message</translation>
+        <translation>&amp;Verifiser Melding</translation>
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Saisir ci-dessous l’adresse du destinataire, le message (s’assurer de copier fidèlement les retours à la ligne, les espaces, les tabulations, etc.) et la signature pour vérifier le message. Faire attention à ne pas déduire davantage de la signature que ce qui est contenu dans le message signé même, pour éviter d’être trompé par une attaque d’homme du milieu. Prendre en compte que cela ne fait que prouver que le signataire reçoit l’adresse et ne peut pas prouver la provenance d’une transaction !</translation>
+        <translation>Skriv inn mottakerens adresse, melding (forsikre deg om at du kopier linjeskift, mellomrom, faner osv. nøyaktig) og underskrift nedenfor for å bekrefte meldingen. Vær forsiktig så du ikke leser mer ut av signaturen enn hva som er i den signerte meldingen i seg selv, for å unngå å bli lurt av et man-in-the-middle-angrep. Merk at dette bare beviser at den som signerer kan motta med adressen, dette beviser ikke hvem som har sendt transaksjoner!</translation>
     </message>
     <message>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>L’adresse kryptoFranc avec laquelle le message a été signé</translation>
+        <translation>kryptoFranc-adressen meldingen ble signert med</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Vérifier le message pour s’assurer qu’il a été signé avec l’adresse kryptoFranc indiquée</translation>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte kryptoFranc-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
-        <translation>Vérifier le &amp;message</translation>
+        <translation>Verifiser &amp;Melding</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation>Réinitialiser tous les champs de vérification de message</translation>
+        <translation>Tilbakestill alle felter for meldingsverifikasjon</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
-        <translation>Cliquez sur « Signer le message » pour générer la signature</translation>
+        <translation>Klikk "Signer melding" for å generere signatur</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>L’adresse saisie est invalide.</translation>
+        <translation>Innskrevet adresse er ugyldig.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Veuillez vérifier l’adresse et ressayer.</translation>
+        <translation>Sjekk adressen og prøv igjen.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>L’adresse saisie ne fait pas référence à une clé.</translation>
+        <translation>Innskrevet adresse refererer ikke til noen nøkkel.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Le déverrouillage du porte-monnaie a été annulé.</translation>
+        <translation>Opplåsning av lommebok ble avbrutt.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>La clé privée pour l’adresse saisie n’est pas disponible.</translation>
+        <translation>Privat nøkkel for den angitte adressen er ikke tilgjengelig.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Échec de signature du message.</translation>
+        <translation>Signering av melding feilet.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Le message a été signé.</translation>
+        <translation>Melding signert.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
-        <translation>La signature n’a pu être décodée.</translation>
+        <translation>Signaturen kunne ikke dekodes.</translation>
     </message>
     <message>
         <source>Please check the signature and try again.</source>
-        <translation>Veuillez vérifier la signature et ressayer.</translation>
+        <translation>Sjekk signaturen og prøv igjen.</translation>
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>La signature ne correspond pas au condensé du message.</translation>
+        <translation>Signaturen samsvarer ikke med meldingsporteføljen.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Échec de vérification du message.</translation>
+        <translation>Meldingsverifiseringen mislyktes.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Le message a été vérifié.</translation>
+        <translation>Melding bekreftet.</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation>[testnett]</translation>
     </message>
 </context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
         <source>KB/s</source>
-        <translation>Ko/s</translation>
+        <translation>KB/s</translation>
     </message>
 </context>
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ouvert pendant encore %n bloc</numerusform><numerusform>Ouvert pendant encore %n blocs</numerusform></translation>
+        <translation><numerusform>Åpen for %n blokk til</numerusform><numerusform>Åpen for %n flere blokker</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Ouvert jusqu’à %1</translation>
+        <translation>Åpen til %1</translation>
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
-        <translation>est en conflit avec une transaction ayant %1 confirmations</translation>
+        <translation>gikk ikke overens med en transaksjon med %1 bekreftelser</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
-        <translation>0/non confirmées, %1</translation>
+        <translation>0/ubekreftet, %1</translation>
     </message>
     <message>
         <source>in memory pool</source>
-        <translation>dans la réserve de mémoire</translation>
+        <translation>i hukommelsespulje</translation>
     </message>
     <message>
         <source>not in memory pool</source>
-        <translation>pas dans la réserve de mémoire</translation>
+        <translation>ikke i hukommelsespulje</translation>
     </message>
     <message>
         <source>abandoned</source>
-        <translation>abandonnée</translation>
+        <translation>forlatt</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
-        <translation>%1/non confirmée</translation>
+        <translation>%1/ubekreftet</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation>%1 confirmations</translation>
+        <translation>%1 bekreftelser</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>État</translation>
+        <translation>Status</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Dato</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation>Source</translation>
+        <translation>Kilde</translation>
     </message>
     <message>
         <source>Generated</source>
-        <translation>Générée</translation>
+        <translation>Generert</translation>
     </message>
     <message>
         <source>From</source>
-        <translation>De</translation>
+        <translation>Fra</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation>inconnue</translation>
+        <translation>ukjent</translation>
     </message>
     <message>
         <source>To</source>
-        <translation>À</translation>
+        <translation>Til</translation>
     </message>
     <message>
         <source>own address</source>
-        <translation>votre adresse</translation>
+        <translation>egen adresse</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>juste-regarder</translation>
+        <translation>kun oppsyn</translation>
     </message>
     <message>
         <source>label</source>
-        <translation>étiquette</translation>
+        <translation>merkelapp</translation>
     </message>
     <message>
         <source>Credit</source>
-        <translation>Crédit</translation>
+        <translation>Kreditt</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>arrivera à maturité dans %n bloc</numerusform><numerusform>arrivera à maturité dans %n blocs</numerusform></translation>
+        <translation><numerusform>modner om %n blokk</numerusform><numerusform>modner om %n blokker</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
-        <translation>refusée</translation>
+        <translation>ikke akseptert</translation>
     </message>
     <message>
         <source>Debit</source>
-        <translation>Débit</translation>
+        <translation>Debet</translation>
     </message>
     <message>
         <source>Total debit</source>
-        <translation>Débit total</translation>
+        <translation>Total debet</translation>
     </message>
     <message>
         <source>Total credit</source>
-        <translation>Crédit total</translation>
+        <translation>Total kreditt</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Frais de transaction</translation>
+        <translation>Transaksjonsgebyr</translation>
     </message>
     <message>
         <source>Net amount</source>
-        <translation>Montant net</translation>
+        <translation>Nettobeløp</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Melding</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Commentaire</translation>
+        <translation>Kommentar</translation>
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>ID de la transaction</translation>
+        <translation>Transaksjons-ID</translation>
     </message>
     <message>
         <source>Transaction total size</source>
-        <translation>Taille totale de la transaction</translation>
-    </message>
-    <message>
-        <source>Transaction virtual size</source>
-        <translation>Taille virtuelle de la transaction</translation>
+        <translation>Total transaksjonsstørrelse</translation>
     </message>
     <message>
         <source>Output index</source>
-        <translation>Index de sorties</translation>
+        <translation>Utdatainndeks</translation>
     </message>
     <message>
         <source>Merchant</source>
-        <translation>Marchand</translation>
+        <translation>Forretningsdrivende</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Les pièces générées doivent mûrir pendant %1 blocs avant de pouvoir être dépensées. Lorsque ce bloc a été généré, il a été diffusé sur le réseau pour être ajouté à la chaîne de blocs. Si son intégration à la chaîne échoue, son état sera modifié en « refusée » et il ne sera pas possible de le dépenser. Cela peut arriver occasionnellement si un autre nœud génère un bloc à quelques secondes du vôtre.</translation>
+        <translation>Genererte kryptofrancs må modne %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert", og vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk innen noen sekunder av din.</translation>
     </message>
     <message>
         <source>Debug information</source>
-        <translation>Informations de débogage</translation>
+        <translation>Feilrettingsinformasjon</translation>
     </message>
     <message>
         <source>Transaction</source>
-        <translation>Transaction</translation>
+        <translation>Transaksjon</translation>
     </message>
     <message>
         <source>Inputs</source>
-        <translation>Entrées</translation>
+        <translation>Inndata</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Beløp</translation>
     </message>
     <message>
         <source>true</source>
-        <translation>vrai</translation>
+        <translation>sant</translation>
     </message>
     <message>
         <source>false</source>
-        <translation>faux</translation>
+        <translation>usant</translation>
     </message>
 </context>
 <context>
     <name>TransactionDescDialog</name>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Ce panneau affiche une description détaillée de la transaction</translation>
+        <translation>Her vises en detaljert beskrivelse av transaksjonen</translation>
     </message>
     <message>
         <source>Details for %1</source>
-        <translation>Détails de %1</translation>
+        <translation>Detaljer for %1</translation>
     </message>
 </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Dato</translation>
     </message>
     <message>
         <source>Type</source>
@@ -2799,226 +2693,226 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Merkelapp</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ouvert pendant encore %n bloc</numerusform><numerusform>Ouvert pendant encore %n blocs</numerusform></translation>
+        <translation><numerusform>Åpen for én blokk til</numerusform><numerusform>Åpen for %n blokker til</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Ouvert jusqu’à %1</translation>
+        <translation>Åpen til %1</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Non confirmée</translation>
+        <translation>Ubekreftet</translation>
     </message>
     <message>
         <source>Abandoned</source>
-        <translation>Abandonnée</translation>
+        <translation>Forlatt</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Confirmation (%1 sur %2 confirmations recommandées)</translation>
+        <translation>Bekrefter (%1 av %2 anbefalte bekreftelser)</translation>
     </message>
     <message>
         <source>Confirmed (%1 confirmations)</source>
-        <translation>Confirmée (%1 confirmations)</translation>
+        <translation>Bekreftet (%1 bekreftelser)</translation>
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>En conflit</translation>
+        <translation>Gikk ikke overens</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Immature (%1 confirmations, sera disponible après %2)</translation>
+        <translation>Umoden (%1 bekreftelser, vil være tilgjengelig etter %2)</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
-        <translation>Générée mais refusée</translation>
+        <translation>Generert, men ikke akseptert</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Reçue avec</translation>
+        <translation>Mottatt med</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>Reçue de</translation>
+        <translation>Mottatt fra</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Envoyée à</translation>
+        <translation>Sendt til</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
-        <translation>Paiement à vous-même</translation>
+        <translation>Betaling til deg selv</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Miné</translation>
+        <translation>Utvunnet</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>juste-regarder</translation>
+        <translation>kun oppsyn</translation>
     </message>
     <message>
         <source>(n/a)</source>
-        <translation>(n.d)</translation>
+        <translation>(i/t)</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(ingen merkelapp)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>État de la transaction. Survoler ce champ avec la souris pour afficher le nombre de confirmations.</translation>
+        <translation>Transaksjonsstatus. Hold pekeren over dette feltet for å se antall bekreftelser.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
-        <translation>Date et heure de réception de la transaction.</translation>
+        <translation>Dato og tid for mottak av transaksjonen.</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
-        <translation>Type de transaction.</translation>
+        <translation>Transaksjonstype.</translation>
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Une adresse juste-regarder est-elle ou non impliquée dans cette transaction.</translation>
+        <translation>Hvorvidt en oppsynsadresse er involvert i denne transaksjonen.</translation>
     </message>
     <message>
         <source>User-defined intent/purpose of the transaction.</source>
-        <translation>Intention/but de la transaction défini par l’utilisateur.</translation>
+        <translation>Brukerdefinert intensjon/hensikt med transaksjonen.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation>Le montant a été ajouté ou soustrait du solde.</translation>
+        <translation>Beløp fjernet eller lagt til saldo.</translation>
     </message>
 </context>
 <context>
     <name>TransactionView</name>
     <message>
         <source>All</source>
-        <translation>Toutes</translation>
+        <translation>Alt</translation>
     </message>
     <message>
         <source>Today</source>
-        <translation>Aujourd’hui</translation>
+        <translation>I dag</translation>
     </message>
     <message>
         <source>This week</source>
-        <translation>Cette semaine</translation>
+        <translation>Denne uka</translation>
     </message>
     <message>
         <source>This month</source>
-        <translation>Ce mois</translation>
+        <translation>Denne måneden</translation>
     </message>
     <message>
         <source>Last month</source>
-        <translation>Le mois dernier</translation>
+        <translation>Forrige måned</translation>
     </message>
     <message>
         <source>This year</source>
-        <translation>Cette année</translation>
+        <translation>Dette året</translation>
     </message>
     <message>
         <source>Range...</source>
-        <translation>Plage…</translation>
+        <translation>Rekkevidde…</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Reçue avec</translation>
+        <translation>Mottatt med</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Envoyée à</translation>
+        <translation>Sendt til</translation>
     </message>
     <message>
         <source>To yourself</source>
-        <translation>À vous-même</translation>
+        <translation>Til deg selv</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Miné </translation>
+        <translation>Utvunnet</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Autres </translation>
+        <translation>Andre</translation>
     </message>
     <message>
         <source>Enter address, transaction id, or label to search</source>
-        <translation>Saisir l’adresse, l’ID de transaction ou l’étiquette à chercher</translation>
+        <translation>Oppgi adresse, transaksjons-ID eller merkelapp for å søke</translation>
     </message>
     <message>
         <source>Min amount</source>
-        <translation>Montant min.</translation>
+        <translation>Minimumsbeløp</translation>
     </message>
     <message>
         <source>Abandon transaction</source>
-        <translation>Abandonner la transaction</translation>
+        <translation>Avbryt transaksjon</translation>
     </message>
     <message>
         <source>Increase transaction fee</source>
-        <translation>Augmenter les frais de transaction</translation>
+        <translation>Øk overføringsgebyret</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copier l’adresse</translation>
+        <translation>Kopier adresse</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copier l’étiquette </translation>
+        <translation>Kopiér merkelapp</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant </translation>
+        <translation>Kopier beløp</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Copier l’ID de la transaction</translation>
+        <translation>Kopier transaksjons-ID</translation>
     </message>
     <message>
         <source>Copy raw transaction</source>
-        <translation>Copier la transaction brute</translation>
+        <translation>Kopier råtransaksjon</translation>
     </message>
     <message>
         <source>Copy full transaction details</source>
-        <translation>Copier tous les détails de la transaction</translation>
+        <translation>Kopier helhetlig transaksjonsdetaljering</translation>
     </message>
     <message>
         <source>Edit label</source>
-        <translation>Modifier l’étiquette </translation>
+        <translation>Rediger merkelapp</translation>
     </message>
     <message>
         <source>Show transaction details</source>
-        <translation>Afficher les détails de la transaction</translation>
+        <translation>Vis transaksjonsdetaljer</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
-        <translation>Exporter l’historique transactionnel</translation>
+        <translation>Eksporter transaksjonshistorikk</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Valeurs séparées par des virgules (*.csv)</translation>
+        <translation>Kommaseparert fil (*.csv)</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Confirmée</translation>
+        <translation>Bekreftet</translation>
     </message>
     <message>
         <source>Watch-only</source>
-        <translation>Juste-regarder</translation>
+        <translation>Kun oppsyn</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date </translation>
+        <translation>Dato</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type </translation>
+        <translation>Type</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Merkelapp</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3026,158 +2920,154 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>ID</source>
-        <translation>ID </translation>
+        <translation>ID</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Échec d’exportation</translation>
+        <translation>Eksportering feilet</translation>
     </message>
     <message>
         <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Une erreur est survenue lors de l’enregistrement de l’historique transactionnel vers %1.</translation>
+        <translation>En feil oppstod ved lagring av transaksjonshistorikk til %1.</translation>
     </message>
     <message>
         <source>Exporting Successful</source>
-        <translation>L’exportation est réussie</translation>
+        <translation>Eksportert</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation>L’historique transactionnel a été enregistré avec succès vers %1.</translation>
+        <translation>Transaksjonshistorikken ble lagret til %1.</translation>
     </message>
     <message>
         <source>Range:</source>
-        <translation>Plage :</translation>
+        <translation>Rekkevidde:</translation>
     </message>
     <message>
         <source>to</source>
-        <translation>à </translation>
+        <translation>til</translation>
     </message>
 </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Unité d’affichage des montants. Cliquer pour choisir une autre unité.</translation>
+        <translation>Enhet å vise beløper i. Klikk for å velge en annen enhet.</translation>
     </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
-        <translation>Aucun porte-monnaie n’a été chargé.</translation>
+        <translation>Ingen lommebok har blitt lastet inn.</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Envoyer des pièces</translation>
+        <translation>Send mynter</translation>
     </message>
     <message>
         <source>Fee bump error</source>
-        <translation>Erreur d’augmentation des frais</translation>
+        <translation>Gebyrforhøyelsesfeil</translation>
     </message>
     <message>
         <source>Increasing transaction fee failed</source>
-        <translation>Échec d’augmentation des frais de transaction</translation>
+        <translation>Økning av transaksjonsgebyr mislyktes</translation>
     </message>
     <message>
         <source>Do you want to increase the fee?</source>
-        <translation>Souhaitez-vous augmenter les frais ?</translation>
+        <translation>Ønsker du å øke gebyret?</translation>
     </message>
     <message>
         <source>Current fee:</source>
-        <translation>Frais actuels :</translation>
+        <translation>Nåværede gebyr:</translation>
     </message>
     <message>
         <source>Increase:</source>
-        <translation>Augmentation :</translation>
+        <translation>Økning:</translation>
     </message>
     <message>
         <source>New fee:</source>
-        <translation>Nouveaux frais :</translation>
+        <translation>Nytt gebyr:</translation>
     </message>
     <message>
         <source>Confirm fee bump</source>
-        <translation>Confirmer l’augmentation des frais</translation>
+        <translation>Bekreft gebyrøkning</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
-        <translation>Impossible de signer la transaction.</translation>
+        <translation>Kan ikke signere transaksjon</translation>
     </message>
     <message>
         <source>Could not commit transaction</source>
-        <translation>Impossible de valider la transaction</translation>
+        <translation>Kunne ikke sende inn transaksjon</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exporter</translation>
+        <translation>&amp;Eksporter</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Exporter les données de l’onglet actuel vers un fichier</translation>
+        <translation>Eksporter data fra nåværende fane til fil</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
-        <translation>Sauvegarder le porte-monnaie</translation>
+        <translation>Sikkerhetskopier lommebok</translation>
     </message>
     <message>
         <source>Wallet Data (*.dat)</source>
-        <translation>Données du porte-monnaie (*.dat)</translation>
+        <translation>Lommeboksdata (*.dat)</translation>
     </message>
     <message>
         <source>Backup Failed</source>
-        <translation>Échec de la sauvegarde</translation>
+        <translation>Sikkerhetskopiering mislyktes</translation>
     </message>
     <message>
         <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Une erreur est survenue lors de l’enregistrement des données du porte-monnaie vers %1.</translation>
+        <translation>Feil under forsøk på lagring av lommebokdata til %1</translation>
     </message>
     <message>
         <source>Backup Successful</source>
-        <translation>La sauvegarde est réussie</translation>
+        <translation>Sikkerhetskopiert</translation>
     </message>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
-        <translation>Les données du porte-monnaie ont été enregistrées avec succès vers %1</translation>
+        <translation>Lommebokdata lagret til %1.</translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Annuler</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>Distribué sous la licence MIT d’utilisation d’un logiciel. Consulter le fichier joint %s ou %s</translation>
+        <translation>Lisensiert MIT. Se tilhørende fil %s eller %s</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation>L’élagage est configuré au-dessous du minimum de %d Mio. Veuillez utiliser un nombre plus élevé.</translation>
+        <translation>Beskjæringsmodus er konfigurert under minimum på %d MiB. Vennligst bruk et høyere nummer.</translation>
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Élagage : la dernière synchronisation de porte-monnaie va par-delà les données élaguées.  Vous devez -reindex (réindexer, télécharger de nouveau toute la chaîne de blocs en cas de nœud élagué)</translation>
+        <translation>Beskjæring: siste lommeboksynkronisering går utenfor beskjærte data. Du må bruke -reindex (laster ned hele blokkjeden igjen for beskjærte noder)</translation>
     </message>
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Les rebalayages sont impossibles en mode élagage. Vous devrez utiliser -reindex, ce qui téléchargera de nouveau la chaîne de blocs en entier.</translation>
+        <translation>Omsøk er ikke mulig i beskjært modus. Du vil måtte bruke -reindex som vil laste nede hele blokkjeden på nytt.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Erreur : Une erreur interne fatale s’est produite. Voir debug.log pour plus de détails</translation>
+        <translation>Feil: En fatal intern feil oppstod, se debug.log for detaljer</translation>
     </message>
     <message>
         <source>Pruning blockstore...</source>
-        <translation>Élagage du magasin de blocs...</translation>
+        <translation>Beskjærer blokklageret...</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
+        <translation>Kunne ikke starte HTTP-tjener. Se feilrettingslogg for detaljer.</translation>
     </message>
     <message>
         <source>Bitcoin Core</source>
@@ -3185,475 +3075,455 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>The %s developers</source>
-        <translation>Les développeurs de %s</translation>
+        <translation>%s-utviklerne</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
-        <translation>Impossible d’obtenir un verrou sur le répertoire de données %s. %s fonctionne probablement déjà.</translation>
+        <translation>Kan ikke låse datamappen %s. %s kjører antagelig allerede.</translation>
     </message>
     <message>
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
-        <translation>Il est impossible de fournir des connexions particulières et en même temps demander à addrman de trouver les connexions sortantes.</translation>
+        <translation>Kan ikke angi spesifikke tilkoblinger og ha addrman til å finne utgående tilkoblinger samtidig. </translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Erreur de lecture de %s ! Toutes les clés ont été lues correctement, mais les données transactionnelles ou les entrées du carnet d’adresses sont peut-être manquantes ou incorrectes.</translation>
+        <translation>Feil under lesing av %s! Alle nøkler har blitt lest rett, men transaksjonsdata eller adressebokoppføringer kan mangle eller være uriktige.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
-        <translation>Veuillez vérifier que l’heure et la date de votre ordinateur sont justes ! Si votre horloge n’est pas à l’heure, %s ne fonctionnera pas correctement.</translation>
+        <translation>Sjekk at din datamaskins dato og klokke er stilt rett! Hvis klokka er feil, vil ikke %s fungere ordentlig.</translation>
     </message>
     <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
-        <translation>Si vous trouvez %s utile, vous pouvez y contribuer. Vous trouverez davantage d’informations à propos du logiciel sur %s.</translation>
+        <translation>Bidra hvis du finner %s nyttig. Besøk %s for mer informasjon om programvaren.</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>La base de données de blocs contient un bloc qui semble provenir du futur. Cela pourrait être causé par la date et l’heure erronées de votre ordinateur. Ne reconstruisez la base de données de blocs que si vous êtes certain que la date et l’heure de votre ordinateur sont justes.</translation>
+        <translation>Blokkdatabasen inneholder en blokk som ser ut til å være fra fremtiden. Dette kan være fordi dato og tid på din datamaskin er satt feil. Gjenopprett kun blokkdatabasen når du er sikker på at dato og tid er satt riktig.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Ceci est une préversion de test - son utilisation est entièrement à vos risques - ne pas l’utiliser pour miner ou pour des applications marchandes</translation>
+        <translation>Dette er en testversjon i påvente av utgivelse - bruk på egen risiko - ikke for bruk til blokkutvinning eller i forretningsøyemed</translation>
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>Les frais de transaction que vous pouvez ignorer si la monnaie rendue est inférieure à la poussière à ce niveau</translation>
+        <translation>Dette er transaksjonsgebyret du kan se bort fra hvis vekslepengene utgjør mindre enn støv på dette nivået</translation>
     </message>
     <message>
         <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
-        <translation>Impossible de relire les blocs. Vous devrez reconstruire la base de données en utilisant -reindex-chainstate.</translation>
+        <translation>Kan ikke spille av blokker igjen. Du må bygge opp igjen databasen ved bruk av -reindex-chainstate.</translation>
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
-        <translation>Impossible de rebobiner la base de données à un état préfourche. Vous devrez retélécharger la chaîne de blocs</translation>
+        <translation>Kan ikke spole tilbake databasen til en tilstand før forgreiningen. Du må laste ned blokkjeden igjen</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Avertissement : le réseau ne semble pas totalement d’accord ! Certains mineurs semblent éprouver des problèmes.</translation>
+        <translation>Advarsel: Nettverket ser ikke ut til å være i overenstemmelse! Noen utvinnere ser ut til å ha problemer.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Avertissement : nous ne semblons pas être en accord complet avec nos pairs ! Une mise à niveau pourrait être nécessaire pour vous ou pour d’autres nœuds du réseau.</translation>
+        <translation>Advarsel: Vi ser ikke ut til å være i full overenstemmelse med våre likemenn! Du kan trenge å oppgradere, eller andre noder kan trenge å oppgradere.</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>
-        <translation>%d des 100 derniers blocs ont une version inattendue</translation>
+        <translation>%d av minst 100 blokker har uventet versjon</translation>
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
-        <translation>%s corrompu, la récupération a échoué</translation>
+        <translation>%s skadet, berging mislyktes</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
-        <translation>-maxmempool doit être d’au moins %d Mo</translation>
+        <translation>-maxmempool må være minst %d MB</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
-        <translation>Impossible de résoudre l’adresse -%s : « %s »</translation>
+        <translation>Kunne ikke slå opp -%s-adresse: "%s"</translation>
     </message>
     <message>
         <source>Change index out of range</source>
-        <translation>L’index de changement est hors échelle</translation>
+        <translation>Kjedeindeks utenfor rekkevidde</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
-        <translation>Tous droits réservés (C) %i-%i</translation>
+        <translation>Kopirett © %i-%i</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
-        <translation>Une base de données de blocs corrompue a été détectée</translation>
+        <translation>Oppdaget korrupt blokkdatabase</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Voulez-vous reconstruire la base de données de blocs maintenant ?</translation>
+        <translation>Ønsker du å gjenopprette blokkdatabasen nå?</translation>
     </message>
     <message>
         <source>Error creating %s: You can't create non-HD wallets with this version.</source>
-        <translation>Erreur de création de %s : vous ne pouvez pas créer de porte-monnaie non HD avec cette version.</translation>
+        <translation>Feil under oppretting av %s: Du kan ikke lage en lommebok uten HD med denne versjonen.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Erreur d’initialisation de la base de données de blocs</translation>
+        <translation>Feil under initialisering av blokkdatabase</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Erreur d’initialisation de l’environnement de la base de données du porte-monnaie %s !</translation>
+        <translation>Feil under oppstart av lommeboken sitt databasemiljø %s!</translation>
     </message>
     <message>
         <source>Error loading %s</source>
-        <translation>Erreur de chargement de %s</translation>
-    </message>
-    <message>
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>Erreur de chargement de %s : les clés privées ne peuvent être désactivées qu’à la création.</translation>
+        <translation>Feil ved lasting av %s</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet corrupted</source>
-        <translation>Erreur de chargement de %s : porte-monnaie corrompu</translation>
+        <translation>Feil under innlasting av %s: Skadet lommebok</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet requires newer version of %s</source>
-        <translation>Erreur de chargement de %s : le porte-monnaie exige une version plus récente de %s</translation>
+        <translation>Feil under innlasting av %s: Lommeboka krever nyere versjon av %s</translation>
     </message>
     <message>
         <source>Error loading block database</source>
-        <translation>Erreur de chargement de la base de données de blocs</translation>
+        <translation>Feil ved lasting av blokkdatabase</translation>
     </message>
     <message>
         <source>Error opening block database</source>
-        <translation>Erreur d’ouverture de la base de données de blocs</translation>
+        <translation>Feil under åpning av blokkdatabase</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
-        <translation>Erreur : Il reste peu d’espace disque !</translation>
+        <translation>Feil: Lite ledig lagringsplass!</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Échec d’écoute sur un port quelconque. Utiliser -listen=0 si vous le voulez.</translation>
+        <translation>Kunne ikke lytte på noen port. Bruk -listen=0 hvis det er dette du vil.</translation>
     </message>
     <message>
         <source>Failed to rescan the wallet during initialization</source>
-        <translation>Échec de réanalyse du porte-monnaie lors de l’initialisation</translation>
+        <translation>Klarte ikke gå igjennom lommeboken under oppstart</translation>
     </message>
     <message>
         <source>Importing...</source>
-        <translation>Importation...</translation>
+        <translation>Importerer...</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Bloc de genèse incorrect ou introuvable. Mauvais datadir pour le réseau ?</translation>
+        <translation>Ugyldig eller ingen skaperblokk funnet. Feil datamappe for nettverk?</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
-        <translation>L’initialisation du test de cohérence a échoué. %s est en cours de fermeture. </translation>
+        <translation>Sunnhetssjekk ved oppstart mislyktes. %s skrus av.</translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Montant invalide pour -%s=&lt;amount&gt; : « %s »</translation>
+        <translation>Ugyldig beløp for -%s=&lt;amount&gt;: "%s"</translation>
     </message>
     <message>
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
-        <translation>Montant invalide pour -discardfee=&lt;amount&gt; : « %s »</translation>
+        <translation>Ugyldig beløp for -discardfee=&lt;amount&gt;: "%s"</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
-        <translation>Montant invalide pour -fallbackfee=&lt;amount&gt; : « %s »</translation>
-    </message>
-    <message>
-        <source>Upgrading txindex database</source>
-        <translation>Mise à niveau de la base de données txindex</translation>
+        <translation>Ugyldig beløp for -fallbackfee=&lt;amount&gt;: "%s"</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>
-        <translation>Chargement des adresses P2P...</translation>
+        <translation>Laster maskin-til-maskin -adresser…</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
-        <translation>Chargement de la liste d’interdiction...</translation>
+        <translation>Laster inn bannlysningsliste…</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
-        <translation>Pas assez de descripteurs de fichiers proposés.</translation>
+        <translation>For få fildeskriptorer tilgjengelig.</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
-        <translation>L’élagage ne peut pas être configuré avec une valeur négative.</translation>
+        <translation>Beskjæringsmodus kan ikke konfigureres med en negativ verdi.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
-        <translation>Le mode élagage n’est pas compatible avec -txindex.</translation>
+        <translation>Beskjæringsmodus er ikke kompatibel med -txindex.</translation>
     </message>
     <message>
         <source>Replaying blocks...</source>
-        <translation>Relecture des blocs...</translation>
+        <translation>Spiller av blokker igjen…</translation>
     </message>
     <message>
         <source>Rewinding blocks...</source>
-        <translation>Rebobinage des blocs...</translation>
+        <translation>Spoler tilbake blokker…</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
-        <translation>Le code source se trouve sur %s.</translation>
+        <translation>Kildekoden er tilgjengelig fra %s.</translation>
     </message>
     <message>
         <source>Transaction fee and change calculation failed</source>
-        <translation>Échec du calcul des frais de transaction et de la monnaie</translation>
+        <translation>Transaksjonsgebyr og vekslingsutregning mislyktes</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
-        <translation>Impossible de se lier à %s sur cet ordinateur. %s fonctionne probablement déjà.</translation>
-    </message>
-    <message>
-        <source>Unable to generate keys</source>
-        <translation>Impossible de générer les clés</translation>
+        <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører %s allerede.</translation>
     </message>
     <message>
         <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Argument non pris en charge -benchmark ignoré, utiliser -debug=bench.</translation>
+        <translation>Ustøttet argument -benchmark ble ignorert, bruk -debug=bench.</translation>
     </message>
     <message>
         <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Argument non pris en charge -debugnet ignoré, utiliser -debug=net.</translation>
+        <translation>Advarsel: Argumentet -debugnet er ikke støttet og ble ignorert, bruk -debug=net.</translation>
     </message>
     <message>
         <source>Unsupported argument -tor found, use -onion.</source>
-        <translation>Argument non pris en charge -tor trouvé, utiliser -onion</translation>
+        <translation>Feil: Argumentet -tor er ikke støttet, bruk -onion.</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
-        <translation>Catégorie de journalisation non prise en charge %s=%s.</translation>
+        <translation>Ustøttet loggingskategori %s=%s.</translation>
     </message>
     <message>
         <source>Upgrading UTXO database</source>
-        <translation>Mise à niveau de la base de données UTXO</translation>
+        <translation>Oppgraderer UTXO-database</translation>
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation>Le commentaire d’agent utilisateur (%s) contient des caractères dangereux.</translation>
+        <translation>User Agent kommentar (%s) inneholder utrygge tegn.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
-        <translation>Vérification des blocs... </translation>
+        <translation>Verifiserer blokker...</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
-        <translation>Le porte-monnaie devait être réécrit : redémarrer %s pour terminer l’opération.</translation>
+        <translation>Lommeboka må skrives om: Start %s på nytt for å fullføre</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Erreur : L’écoute des connexions entrantes a échoué (l’écoute a retourné l’erreur %s)</translation>
+        <translation>Feil: Lytting etter innkommende tilkoblinger feilet (lytting returnerte feil %s)</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Montant invalide pour -maxtxfee=&lt;amount&gt; : « %s » (doit être au moins les frais minrelay de %s pour prévenir le blocage des transactions)</translation>
+        <translation>Ugyldig beløp for -maxtxfee=&lt;amount&gt;: '%s' (må være minst minimum relé gebyr på %s for å hindre fastlåste transaksjoner)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
-        <translation>Le montant de la transaction est trop bas pour être envoyé une fois que les frais ont été déduits</translation>
+        <translation>Transaksjonsbeløpet er for lite til å sendes etter at gebyret er fratrukket</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
-        <translation>Vous devez reconstruire la base de données en utilisant -reindex afin de revenir au mode sans élagage. Cela retéléchargera complètement la chaîne de blocs.</translation>
+        <translation>Du må gjenoppbygge databasen ved hjelp av -reindex for å gå tilbake til ubeskåret modus. Dette vil laste ned hele blokkjeden på nytt.</translation>
     </message>
     <message>
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
-        <translation>Erreur de chargement de %s : vous ne pouvez pas désactiver HD sur un porte-monnaie HD existant</translation>
+        <translation>Feil ved innlasting av %s: Du kan ikke skru av HD på ei HD-lommebok som allerede finnes</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
-        <translation>Erreur de lecture de la base de données, fermeture en cours.</translation>
+        <translation>Feil ved lesing fra database, stenger ned.</translation>
     </message>
     <message>
         <source>Error upgrading chainstate database</source>
-        <translation>Erreur de mise à niveau de la base de données d’état de la chaîne</translation>
+        <translation>Feil ved oppgradering av kjedetilstandsdatabase</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informations</translation>
+        <translation>Informasjon</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Adresse ou nom d’hôte -onion invalide : « %s »</translation>
+        <translation>Ugyldig -onion adresse eller vertsnavn: "%s"</translation>
     </message>
     <message>
         <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Adresse ou nom d’hôte -proxy invalide : « %s »</translation>
+        <translation>Ugyldig -mellomtjeneradresse eller vertsnavn: "%s"</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Montant invalide pour -paytxfee=&lt;montant&gt; : « %s » (doit être au moins %s)</translation>
+        <translation>Ugyldig beløp for -paytxfee=&lt;amount&gt;: '%s' (må være minst %s)</translation>
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Masque réseau invalide indiqué dans -whitelist : « %s »</translation>
+        <translation>Ugyldig nettmaske spesifisert i -whitelist: '%s'</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Un port doit être précisé avec -whitebind : « %s »</translation>
+        <translation>Må oppgi en port med -whitebind: '%s'</translation>
     </message>
     <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
-        <translation>Réduction de -maxconnections de %d à %d, due aux restrictions du système</translation>
+        <translation>Reduserer -maxconnections fra %d til %d, pga. systembegrensninger.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>Échec de signature de la transaction</translation>
+        <translation>Signering av transaksjon feilet</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>Oppgitt -walletdir "%s" eksisterer ikke</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>Oppgitt -walletdir "%s" er en relativ sti</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>Oppgitt -walletdir "%s" er ikke en katalog</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
-        <translation>Le montant de la transaction est trop bas pour que les frais soient payés</translation>
+        <translation>Transaksjonsbeløpet er for lite til å betale gebyr</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
-        <translation>Ceci est un logiciel expérimental.</translation>
+        <translation>Dette er eksperimentell programvare.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Le montant de la transaction est trop bas</translation>
+        <translation>Transaksjonen er for liten</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
-        <translation>La transaction est trop grosse pour la politique de frais</translation>
+        <translation>Transaksjon for stor for gebyrpolitikken</translation>
     </message>
     <message>
         <source>Transaction too large</source>
-        <translation>La transaction est trop grosse</translation>
+        <translation>Transaksjonen er for stor</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Impossible de se lier à %s sur cet ordinateur (bind a retourné l’erreur %s)</translation>
+        <translation>Kan ikke binde til %s på denne datamaskinen (binding returnerte feilen %s)</translation>
     </message>
     <message>
         <source>Unable to generate initial keys</source>
-        <translation>Impossible de générer les clés initiales</translation>
+        <translation>Klarte ikke lage første nøkkel</translation>
     </message>
     <message>
         <source>Verifying wallet(s)...</source>
-        <translation>Vérification des porte-monnaie...</translation>
+        <translation>Lommebokbekreftelse pågår…</translation>
     </message>
     <message>
         <source>Wallet %s resides outside wallet directory %s</source>
-        <translation>Le porte-monnaie %s se trouve en dehors du répertoire de porte-monnaie %s</translation>
+        <translation>Lommebok %s befinner seg utenfor lommebokkatalog %s</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Avertissement</translation>
+        <translation>Advarsel</translation>
     </message>
     <message>
         <source>Warning: unknown new rules activated (versionbit %i)</source>
-        <translation>Avertissement : nouvelles règles inconnues activées (bit de version %i)</translation>
+        <translation>Advarsel: Ukjente nye regler aktivert (versionbit %i)</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation>Supprimer toutes les transactions du porte-monnaie...</translation>
+        <translation>Zapper alle transaksjoner fra lommeboken...</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>La valeur -maxtxfee est très élevée ! Des frais aussi élevés pourraient être payés en une seule transaction.</translation>
+        <translation>-maxtxfee er satt veldig høyt! Så stort gebyr kan bli betalt ved en enkelt transaksjon.</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
-        <translation>Erreur de chargement de %s : vous ne pouvez pas activer HD sur un porte-monnaie non HD existant</translation>
+        <translation>Feil ved innlasting av %s: Du kan ikke skru på HD på ei ikke-HD-lommebok som allerede finnes</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>Il s’agit des frais de transaction que vous pourriez payer si aucune estimation de frais n’est proposée.</translation>
+        <translation>Dette er transaksjonsgebyret du kan betale når gebyranslag ikke er tilgjengelige.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Ce produit comprend des logiciels développés par le Projet OpenSSL pour être utilisés dans la boîte à outils OpenSSL %s, et un logiciel cryptographique écrit par Eric Young, ainsi qu’un logiciel UPnP écrit par Thomas Bernard.</translation>
+        <translation>Dette produktet inneholder programmet utviklet av OpenSSL-prosjektet for bruk i OpenSSL-verktøyssettet %s og kryptografisk programvare skrevet av Eric Young og UPnP-programvare skrevet av Thomas Bernard.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>La taille totale de la chaîne de version de réseau (%i) dépasse la longueur maximale (%i). Réduire le nombre ou la taille des commentaires uacomments.</translation>
+        <translation>Total lengde av nettverks-versionstreng (%i) er over maks lengde (%i). Reduser tallet eller størrelsen av uacomments.</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>L’argument non pris en charge -socks a été trouvé. Il n’est plus possible de définir la version de SOCKS, seuls les mandataires SOCKS5 sont pris en charge.</translation>
+        <translation>Argumentet -socks er ikke støttet. Det er ikke lenger mulig å sette SOCKS-versjon; bare SOCKS5-proxyer er støttet.</translation>
     </message>
     <message>
         <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
-        <translation>Argument non pris charge -whitelistalwaysrelay ignoré, utiliser -whitelistrelay et/ou -whitelistforcerelay.</translation>
+        <translation>Argumentet -whitelistalwaysrelay støttes ikke, og blir ignorert, bruk -whitelistrelay og/eller -whitelistforcerelay.</translation>
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
-        <translation>Avertissement : des versions de blocs inconnues sont minées ! Il est possible que des règles inconnues soient en vigueur</translation>
+        <translation>Advarsel: Ukjente blokkversjoner blir utvunnet! Det er mulig ukjente regler er i spill</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Avertissement : le fichier du porte-monnaie est corrompu, les données ont été récupérées ! Le fichier %s original a été enregistré en tant que %s dans %s ; si votre solde ou vos transactions sont incorrects, vous devriez restaurer une sauvegarde.</translation>
+        <translation>Advarsel: Lommeboksfil skadet, data berget! Original %s lagret som %s i %s; hvis din saldo eller transaksjoner er uriktige, bør du gjenopprette fra sikkerhetskopi.</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation>La valeur %s est très élevée !</translation>
+        <translation>%s er satt veldig høyt!</translation>
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
-        <translation>Erreur de chargement du porte-monnaie %s. Le nom de fichier -wallet indiqué est un doublon.</translation>
+        <translation>Feil ved innlasting av lommeboka %s. Duplisert -wallet -filnavn angitt.</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
-        <translation>La réserve de clés est épuisée, veuillez d’abord appeler « keypoolrefill »</translation>
+        <translation>Nøkkelpuljen gikk tom, kall keypoolrefill først</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
-        <translation>Démarrage des processus réseau...</translation>
+        <translation>Starter nettverkstråder…</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
-        <translation>Le porte-monnaie évitera de payer moins que les frais minimaux de relais. </translation>
+        <translation>Lommeboka vil unngå å betale mindre enn minimumsstafettgebyret.</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Il s’agit des frais minimaux que vous payez pour chaque transaction. </translation>
+        <translation>Dette er minimumsgebyret du betaler for hver transaksjon.</translation>
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Il s’agit des frais minimaux que vous payez si vous envoyez une transaction.</translation>
+        <translation>Dette er transaksjonsgebyret du betaler som forsender av transaksjon.</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
-        <translation>Les montants transactionnels ne doivent pas être négatifs</translation>
+        <translation>Transaksjonsbeløpet kan ikke være negativt</translation>
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
-        <translation>La chaîne de la réserve de mémoire de la transaction est trop longue</translation>
+        <translation>Transaksjonen har for lang hukommelsespuljekjede</translation>
     </message>
     <message>
         <source>Transaction must have at least one recipient</source>
-        <translation>La transaction doit comporter au moins un destinataire</translation>
+        <translation>Transaksjonen må ha minst én mottaker</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Réseau inconnu précisé dans -onlynet : « %s »</translation>
+        <translation>Ukjent nettverk angitt i -onlynet '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Fonds insuffisants</translation>
-    </message>
-    <message>
-        <source>Can't generate a change-address key. Private keys are disabled for this wallet.</source>
-        <translation>Impossible de générer une clé d’adresse de monnaie. Les clés privées sont désactivées pour ce porte-monnaie.</translation>
-    </message>
-    <message>
-        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
-        <translation>Impossible de mettre à niveau un porte-monnaie divisé non-HD sans mettre à niveau pour prendre en charge la réserve de clés antérieure à la division. Veuillez utiliser -upgradewallet=169900 ou -upgradewallet sans indiquer de version.</translation>
-    </message>
-    <message>
-        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
-        <translation>Échec d’estimation des frais. L’option de frais de repli est désactivée. Attendez quelques blocs ou activez -fallbackfee.</translation>
-    </message>
-    <message>
-        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
-        <translation>Avertissement : Des clés privées ont été détectées dans le porte-monnaie {%s} dont les clés privées sont désactivées.</translation>
-    </message>
-    <message>
-        <source>Cannot write to data directory '%s'; check permissions.</source>
-        <translation>Impossible d’écrire dans le répertoire de données '%s' ; veuillez vérifier les droits.</translation>
+        <translation>Utilstrekkelige midler</translation>
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Chargement de l’index des blocs…</translation>
+        <translation>Laster blokkindeks...</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
-        <translation>Chargement du porte-monnaie…</translation>
+        <translation>Laster lommebok...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation>Impossible de revenir à une version inférieure du porte-monnaie</translation>
+        <translation>Kan ikke nedgradere lommebok</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Nouvelle analyse…</translation>
+        <translation>Leser gjennom...</translation>
     </message>
     <message>
         <source>Done loading</source>
-        <translation>Chargement terminé</translation>
+        <translation>Ferdig med lasting</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Feil</translation>
     </message>
 </context>
 </TS>

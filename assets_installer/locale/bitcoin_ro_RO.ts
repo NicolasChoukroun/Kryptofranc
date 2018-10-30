@@ -1,385 +1,385 @@
-<TS language="fr" version="2.1">
+<TS language="ro_RO" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Cliquer à droite pour modifier l’adresse ou l’étiquette</translation>
+        <translation>Click-dreapta pentru a edita adresa sau eticheta</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Créer une nouvelle adresse</translation>
+        <translation>Creează o adresă nouă</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Nouvelle</translation>
+        <translation>&amp;Nou</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copier l’adresse sélectionnée actuellement dans le presse-papiers</translation>
+        <translation>Copiază adresa selectată în clipboard</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Copier</translation>
+        <translation>&amp;Copiază</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Fermer</translation>
+        <translation>Închide</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Supprimer de la liste l’adresse sélectionnée actuellement</translation>
+        <translation>Şterge adresa selectată din listă</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
-        <translation>Saisir une adresse ou une étiquette à rechercher</translation>
+        <translation>Introduceţi adresa sau eticheta pentru căutare</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Exporter les données de l’onglet actuel vers un fichier</translation>
+        <translation>Exportă datele din tab-ul curent într-un fişier</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exporter</translation>
+        <translation>&amp;Exportă</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Supprimer</translation>
+        <translation>&amp;Şterge</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisir l’adresse à laquelle envoyer des pièces</translation>
+        <translation>Alege $adresa unde să trimiteţi monede</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisir l’adresse avec laquelle recevoir des pîèces</translation>
+        <translation>Alege adresa la care sa primesti monedele cu</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>C&amp;hoisir</translation>
+        <translation>A&amp;lege</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Adresses d’envoi</translation>
+        <translation>Adresa de trimitere</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>Adresses de réception</translation>
+        <translation>Adresa de primire</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses kryptoFranc pour envoyer des paiements. Vérifiez toujours le montant et l’adresse du destinataire avant d’envoyer des pièces.</translation>
+        <translation>Acestea sunt adresele tale kryptoFranc pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses kryptoFranc pour recevoir des paiements. Il est recommandé d’utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <translation>Acestea sunt adresele tale kryptoFranc pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Copier l’adresse</translation>
+        <translation>&amp;Copiază Adresa</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Copier l’é&amp;tiquette</translation>
+        <translation>Copiaza si eticheteaza</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Modifier</translation>
+        <translation>&amp;Editare</translation>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>Exporter la liste d’adresses</translation>
+        <translation>Exportă listă de adrese</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Valeurs séparées par des virgules (*.csv)</translation>
+        <translation>Fisier cu separator virgulă (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Échec d’exportation</translation>
+        <translation>Export nereusit</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Une erreur est survenue lors de l’enregistrement de la liste d’adresses vers %1. Veuillez ressayer plus tard.</translation>
+        <translation>A apărut o eroare la salvarea listei de adrese la %1. Vă rugăm să încercaţi din nou.</translation>
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Etichetă</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Adresse</translation>
+        <translation>Adresă</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(fără etichetă)</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Fenêtre de dialogue de la phrase de passe</translation>
+        <translation>Dialogul pentru fraza de acces</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Saisir la phrase de passe</translation>
+        <translation>Introduceţi fraza de acces</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Nouvelle phrase de passe</translation>
+        <translation>Frază de acces nouă</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Répéter la phrase de passe</translation>
+        <translation>Repetaţi noua frază de acces</translation>
     </message>
     <message>
         <source>Show password</source>
-        <translation>Afficher le mot de passe</translation>
+        <translation>Arata parola</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Saisissez la nouvelle phrase de passe du porte-monnaie.&lt;br/&gt;Veuillez utiliser une phrase de passe composée de &lt;b&gt;dix caractères aléatoires ou plus&lt;/b&gt;, ou de &lt;b&gt;huit mots ou plus&lt;/b&gt;.</translation>
+        <translation>Introduceţi noua parolă a portofelului electronic.&lt;br/&gt;Vă rugăm să folosiţi o parolă de&lt;b&gt;minimum 10 caractere aleatoare&lt;/b&gt;, sau &lt;b&gt;minimum 8 cuvinte&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Chiffrer le porte-monnaie</translation>
+        <translation>Criptare portofel</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Cette opération nécessite votre phrase de passe pour déverrouiller le porte-monnaie.</translation>
+        <translation>Această acţiune necesită introducerea parolei de acces pentru deblocarea portofelului.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>Déverrouiller le porte-monnaie</translation>
+        <translation>Deblocare portofel</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Cette opération nécessite votre phrase de passe pour déchiffrer le porte-monnaie.</translation>
+        <translation>Această acţiune necesită introducerea parolei de acces pentru decriptarea portofelului.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Déchiffrer le porte-monnaie</translation>
+        <translation>Decriptare portofel</translation>
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Changer la phrase de passe</translation>
+        <translation>Schimbă parola</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
-        <translation>Saisir l’ancienne puis la nouvelle phrase de passe du porte-monnaie.</translation>
+        <translation>Introduceţi vechea şi noua parolă pentru portofel.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Confirmer le chiffrement du porte-monnaie</translation>
+        <translation>Confirmaţi criptarea portofelului</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Avertissement : si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ TOUS VOS KRYPTOFRANCS&lt;/b&gt; !</translation>
+        <translation>Atenţie: Dacă va criptati portofelul si ulterior pierdeti parola, &lt;b&gt;VEŢI PIERDE TOTI KRYPTOFRANCII&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Voulez-vous vraiment chiffrer votre porte-monnaie ?</translation>
+        <translation>Sigur doriţi să criptaţi portofelul dvs.?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation>Le porte-monnaie est chiffré</translation>
+        <translation>Portofel criptat</translation>
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 va maintenant se fermer pour terminer le processus de chiffrement. Souvenez-vous que le chiffrement de votre porte-monnaie ne peut pas protéger entièrement vos kryptofrancs contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
+        <translation>%1 se va închide acum pentru a termina procesul de criptare. Ţineţi minte că criptarea portofelului nu vă poate proteja în totalitate de furtul monedelor de către programe malware care vă infectează calculatorul.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>IMPORTANT : toutes les sauvegardes précédentes du fichier de votre porte-monnaie devraient être remplacées par le fichier du porte-monnaie chiffré nouvellement généré. Pour des raisons de sécurité, les sauvegardes précédentes de votre fichier de porte-monnaie non chiffré deviendront inutilisables dès que vous commencerez à utiliser le nouveau porte-monnaie chiffré.</translation>
+        <translation>IMPORTANT: Orice copie de siguranţă făcută anterior portofelului dumneavoastră ar trebui înlocuită cu cea generată cel mai recent, fişier criptat al portofelului. Pentru siguranţă, copiile de siguranţă vechi ale portofelului ne-criptat vor deveni inutile imediat ce veţi începe folosirea noului fişier criptat al portofelului.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Échec de chiffrement du porte-monnaie</translation>
+        <translation>Criptarea portofelului a eşuat.</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Le chiffrement du porte-monnaie a échoué en raison d’une erreur interne. Votre porte-monnaie n’a pas été chiffré.</translation>
+        <translation>Criptarea portofelului nu a reuşit din cauza unei erori interne. Portofelul dvs. nu a fost criptat.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>Les phrases de passe saisies ne correspondent pas.</translation>
+        <translation>Parolele furnizate nu se potrivesc.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Échec de déverrouillage du porte-monnaie</translation>
+        <translation>Deblocarea portofelului a esuat.</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>La phrase de passe saisie pour déchiffrer le porte-monnaie était erronée.</translation>
+        <translation>Parola introdusă pentru decriptarea portofelului a fost incorectă.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Échec de déchiffrement du porte-monnaie</translation>
+        <translation>Decriptarea portofelului a esuat.</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>La phrase de passe du porte-monnaie a été modifiée avec succès.</translation>
+        <translation>Parola portofelului a fost schimbata.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Avertissement : la touche Verr. Maj. est activée !</translation>
+        <translation>Atenţie! Caps Lock este pornit!</translation>
     </message>
 </context>
 <context>
     <name>BanTableModel</name>
     <message>
         <source>IP/Netmask</source>
-        <translation>IP/masque réseau</translation>
+        <translation>IP/Netmask</translation>
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>Banni jusqu’au</translation>
+        <translation>Banat până la</translation>
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>Signer un &amp;message...</translation>
+        <translation>Semnează &amp;mesaj...</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>Synchronisation avec le réseau…</translation>
+        <translation>Se sincronizează cu reţeaua...</translation>
     </message>
     <message>
         <source>&amp;Overview</source>
-        <translation>&amp;Vue d’ensemble</translation>
+        <translation>&amp;Imagine de ansamblu</translation>
     </message>
     <message>
         <source>Node</source>
-        <translation>Nœud</translation>
+        <translation>Nod</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Afficher une vue d’ensemble du porte-monnaie</translation>
+        <translation>Arată o stare generală de ansamblu a portofelului</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
+        <translation>&amp;Tranzacţii</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Parcourir l’historique transactionnel</translation>
+        <translation>Răsfoire istoric tranzacţii</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>Q&amp;uitter</translation>
+        <translation>Ieşire</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Quitter l’application</translation>
+        <translation>Închide aplicaţia</translation>
     </message>
     <message>
         <source>&amp;About %1</source>
-        <translation>À &amp;propos de %1</translation>
+        <translation>&amp;Despre %1</translation>
     </message>
     <message>
         <source>Show information about %1</source>
-        <translation>Afficher des informations à propos de %1</translation>
+        <translation>Arată informaţii despre %1</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>À propos de &amp;Qt</translation>
+        <translation>Despre &amp;Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Afficher des informations sur Qt</translation>
+        <translation>Arată informaţii despre Qt</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
-        <translation>&amp;Options…</translation>
+        <translation>&amp;Opţiuni...</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
-        <translation>Modifier les options de configuration de %1</translation>
+        <translation>Modifică opţiunile de configurare pentru %1</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Chiffrer le porte-monnaie...</translation>
+        <translation>Cript&amp;ează portofelul...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
-        <translation>Sauvegarder le &amp;porte-monnaie...</translation>
+        <translation>Face o copie de siguranţă a portofelului...</translation>
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Changer la phrase de passe...</translation>
+        <translation>S&amp;chimbă parola...</translation>
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>Adresses d’&amp;envoi...</translation>
+        <translation>Adrese de trimitere...</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>Adresses de &amp;réception...</translation>
+        <translation>Adrese de p&amp;rimire...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
-        <translation>Ouvrir une &amp;URI...</translation>
+        <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
         <source>Wallet:</source>
-        <translation>Porte-monnaie :</translation>
+        <translation>Portofel:</translation>
     </message>
     <message>
         <source>default wallet</source>
-        <translation>porte-monnaie par défaut</translation>
+        <translation>portofel implicit</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Cliquer pour désactiver l’activité réseau.</translation>
+        <translation>Click pentru a opri activitatea retelei.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation>L’activité réseau est désactivée.</translation>
+        <translation>Activitatea retelei a fost oprita.</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-        <translation>Cliquer pour réactiver l’activité réseau.</translation>
+        <translation>Click pentu a porni activitatea retelei.</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation>Synchronisation des en-têtes (%1)...</translation>
+        <translation>Se sincronizeaza Header-ele (%1%)...</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
-        <translation>Réindexation des blocs sur le disque...</translation>
+        <translation>Se reindexează blocurile pe disc...</translation>
     </message>
     <message>
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
-        <translation>Le serveur mandataire est &lt;b&gt;activé&lt;/b&gt; : %1</translation>
+        <translation>Proxy este&lt;b&gt;activat&lt;/b&gt;:%1</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Envoyer des pièces à une adresse kryptoFranc</translation>
+        <translation>Trimite monede către o adresă kryptoFranc</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>Sauvegarder le porte-monnaie vers un autre emplacement</translation>
+        <translation>Creează o copie de rezervă a portofelului într-o locaţie diferită</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Modifier la phrase de passe utilisée pour le chiffrement du porte-monnaie</translation>
+        <translation>Schimbă fraza de acces folosită pentru criptarea portofelului</translation>
     </message>
     <message>
         <source>&amp;Debug window</source>
-        <translation>Fenêtre de &amp;débogage</translation>
+        <translation>Fereastra de &amp;depanare</translation>
     </message>
     <message>
         <source>Open debugging and diagnostic console</source>
-        <translation>Ouvrir une console de débogage et de diagnostic</translation>
+        <translation>Deschide consola de depanare şi diagnosticare</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Vérifier un message...</translation>
+        <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
         <source>Bitcoin</source>
@@ -387,119 +387,119 @@
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Porte-monnaie</translation>
+        <translation>Portofel</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;Envoyer</translation>
+        <translation>Trimite</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;Recevoir</translation>
+        <translation>P&amp;rimeşte</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Afficher / cacher</translation>
+        <translation>Arată/Ascunde</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Afficher ou cacher la fenêtre principale</translation>
+        <translation>Arată sau ascunde fereastra principală</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Chiffrer les clés privées qui appartiennent à votre porte-monnaie</translation>
+        <translation>Criptează cheile private ale portofelului dvs.</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signer les messages avec vos adresses kryptoFranc pour prouver que vous les détenez</translation>
+        <translation>Semnaţi mesaje cu adresa dvs. kryptoFranc pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Vérifier les messages pour s’assurer qu’ils ont été signés avec les adresses kryptoFranc indiquées</translation>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa kryptoFranc specificată</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>&amp;Fichier</translation>
+        <translation>&amp;Fişier</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>&amp;Paramètres</translation>
+        <translation>&amp;Setări</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <translation>A&amp;jutor</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>Barre d’outils des onglets</translation>
+        <translation>Bara de unelte</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Demander des paiements (génère des codes QR et des URI kryptofranc:)</translation>
+        <translation>Cereţi plăţi (generează coduri QR şi kryptofranc-uri: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Afficher la liste d’adresses d’envoi et d’étiquettes utilisées</translation>
+        <translation>Arată lista de adrese trimise şi etichetele folosite.</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Afficher la liste d’adresses de réception et d’étiquettes utilisées</translation>
+        <translation>Arată lista de adrese pentru primire şi etichetele</translation>
     </message>
     <message>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Ouvrir une URI kryptofranc: ou une demande de paiement</translation>
+        <translation>Deschidere kryptofranc: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
-        <translation>Options de ligne de &amp;commande</translation>
+        <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n connexion active avec le réseau kryptoFranc</numerusform><numerusform>%n connexions actives avec le réseau kryptoFranc</numerusform></translation>
+        <translation><numerusform>%n conexiune activă către reţeaua kryptoFranc</numerusform><numerusform>%n conexiuni active către reţeaua kryptoFranc</numerusform><numerusform>%n de conexiuni active către reţeaua kryptoFranc</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
-        <translation>Indexation des blocs sur le disque...</translation>
+        <translation>Se indexează blocurile pe disc...</translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
-        <translation>Traitement des blocs sur le disque...</translation>
+        <translation>Se proceseaza blocurile pe disc...</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>%n bloc d’historique transactionnel a été traité</numerusform><numerusform>%n blocs d’historique transactionnel ont été traités</numerusform></translation>
+        <translation><numerusform>S-a procesat %n bloc din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n blocuri din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n de blocuri din istoricul tranzacţiilor.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>en retard de %1</translation>
+        <translation>%1 în urmă</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Le dernier bloc reçu avait été généré il y a %1.</translation>
+        <translation>Ultimul bloc recepţionat a fost generat acum %1.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Les transactions suivantes ne seront pas déjà visibles.</translation>
+        <translation>Tranzacţiile după aceasta nu vor fi vizibile încă.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Eroare</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Avertissement</translation>
+        <translation>Avertisment</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation>Informaţie</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>À jour</translation>
+        <translation>Actualizat</translation>
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Afficher le message d’aide de %1 pour obtenir la liste des options de ligne de commande kryptoFranc possibles.</translation>
+        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă kryptoFranc</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -507,311 +507,307 @@
     </message>
     <message>
         <source>Connecting to peers...</source>
-        <translation>Connexion aux pairs...</translation>
+        <translation>Se conecteaza cu alte noduri...</translation>
     </message>
     <message>
         <source>Catching up...</source>
-        <translation>Rattrapage…</translation>
+        <translation>Se actualizează...</translation>
     </message>
     <message>
         <source>Date: %1
 </source>
-        <translation>Date : %1
+        <translation>Data: %1
 </translation>
     </message>
     <message>
         <source>Amount: %1
 </source>
-        <translation>Montant : %1
+        <translation>Sumă: %1
 </translation>
     </message>
     <message>
         <source>Wallet: %1
 </source>
-        <translation>Porte-monnaie : %1
+        <translation>Portofel: %1
 </translation>
     </message>
     <message>
         <source>Type: %1
 </source>
-        <translation>Type : %1
+        <translation>Tip: %1
 </translation>
     </message>
     <message>
         <source>Label: %1
 </source>
-        <translation>Étiquette : %1
+        <translation>Etichetă: %1
 </translation>
     </message>
     <message>
         <source>Address: %1
 </source>
-        <translation>Adresse : %1
+        <translation>Adresă: %1
 </translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Transaction envoyée</translation>
+        <translation>Tranzacţie expediată</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Transaction entrante</translation>
+        <translation>Tranzacţie recepţionată</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>La génération de clé HD est &lt;b&gt;activée&lt;/b&gt;</translation>
+        <translation>Generarea de chei HD este &lt;b&gt;activata&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>La génération de clé HD est &lt;b&gt;désactivée&lt;/b&gt;</translation>
+        <translation>Generarea de chei HD este &lt;b&gt;dezactivata&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;déverrouillé&lt;/b&gt;</translation>
+        <translation>Portofelul este &lt;b&gt;criptat&lt;/b&gt; iar în momentul de faţă este &lt;b&gt;deblocat&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
+        <translation>Portofelul este &lt;b&gt;criptat&lt;/b&gt; iar în momentul de faţă este &lt;b&gt;blocat&lt;/b&gt;</translation>
     </message>
     <message>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale est survenue. kryptoFranc ne peut plus continuer en toute sécurité et va s’arrêter.</translation>
+        <translation>A survenit o eroare fatală. kryptoFranc nu mai poate continua în siguranţă şi se va opri.</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
-        <translation>Sélection des pièces</translation>
+        <translation>Selectarea monedei</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Quantité :</translation>
+        <translation>Cantitate:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octets :</translation>
+        <translation>Octeţi:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Montant :</translation>
+        <translation>Sumă:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Frais :</translation>
+        <translation>Taxă:</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Poussière :</translation>
+        <translation>Praf:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Après les frais :</translation>
+        <translation>După taxă:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Monnaie :</translation>
+        <translation>Schimb:</translation>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>Tout (des)sélectionner</translation>
+        <translation>(de)selectare tot</translation>
     </message>
     <message>
         <source>Tree mode</source>
-        <translation>Mode arborescence</translation>
+        <translation>Mod arbore</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>Mode liste</translation>
+        <translation>Mod listă</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Sumă</translation>
     </message>
     <message>
         <source>Received with label</source>
-        <translation>Reçu avec une étiquette</translation>
+        <translation>Primite cu eticheta</translation>
     </message>
     <message>
         <source>Received with address</source>
-        <translation>Reçu avec une adresse</translation>
+        <translation>Primite cu adresa</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Confirmations</translation>
+        <translation>Confirmări</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Confirmée</translation>
+        <translation>Confirmat</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copier l’adresse</translation>
+        <translation>Copiază adresa</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copier l’étiquette</translation>
+        <translation>Copiază eticheta</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <translation>Copiază suma</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Copier l’ID de la transaction</translation>
+        <translation>Copiază ID tranzacţie</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Verrouiller les transactions non dépensées</translation>
+        <translation>Blocare necheltuiţi</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Déverrouiller les transactions non dépensées</translation>
+        <translation>Deblocare necheltuiţi</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Copier la quantité</translation>
+        <translation>Copiază cantitea</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Copier les frais</translation>
+        <translation>Copiază taxa</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Copier après les frais</translation>
+        <translation>Copiază după taxă</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Copier les octets</translation>
+        <translation>Copiază octeţi</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Copier la poussière</translation>
+        <translation>Copiază praf</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Copier la monnaie</translation>
-    </message>
-    <message>
-        <source>(%1 locked)</source>
-        <translation>(%1 verrouillée)</translation>
+        <translation>Copiază rest</translation>
     </message>
     <message>
         <source>yes</source>
-        <translation>oui</translation>
+        <translation>da</translation>
     </message>
     <message>
         <source>no</source>
-        <translation>non</translation>
+        <translation>nu</translation>
     </message>
     <message>
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation>Cette étiquette devient rouge si un destinataire reçoit un montant inférieur au seuil actuel de poussière.</translation>
+        <translation>Această etichetă devine roşie, dacă orice beneficiar primeşte o sumă mai mică decât pragul curent pentru praf.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Peut varier +/- %1 satoshi(s) par entrée.</translation>
+        <translation>Poate varia +/- %1 satoshi pentru fiecare intrare.</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(fără etichetă)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
-        <translation>monnaie de %1 (%2)</translation>
+        <translation>restul de la %1 (%2)</translation>
     </message>
     <message>
         <source>(change)</source>
-        <translation>(monnaie)</translation>
+        <translation>(rest)</translation>
     </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>Modifier l’adresse</translation>
+        <translation>Editează adresa</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>É&amp;tiquette</translation>
+        <translation>&amp;Etichetă</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>L’étiquette associée à cette entrée de la liste d’adresses</translation>
+        <translation>Eticheta asociată cu această intrare din listă.</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>L’adresse associée à cette entrée de la liste d’adresses. Cela ne peut être modifié que pour les adresses d’envoi.</translation>
+        <translation>Adresa asociată cu această adresă din listă. Aceasta poate fi modificată doar pentru adresele de trimitere.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation>&amp;Adresse</translation>
+        <translation>&amp;Adresă</translation>
     </message>
     <message>
         <source>New sending address</source>
-        <translation>Nouvelle adresse d’envoi</translation>
+        <translation>Noua adresă de trimitere</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Modifier l’adresse de réception</translation>
+        <translation>Editează adresa de primire</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Modifier l’adresse d’envoi</translation>
+        <translation>Editează adresa de trimitere</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>L’adresse saisie « %1 » n’est pas une adresse kryptoFranc valide.</translation>
+        <translation>Adresa introdusă "%1" nu este o adresă kryptoFranc validă.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
-        <translation>L’adresse « %1 » existe déjà en tant qu’adresse de réception avec l’étiquette « %2 » et ne peut donc pas être ajoutée en tant qu’adresse d’envoi.</translation>
+        <translation>Adresa "%1" exista deja ca si adresa de primire cu eticheta "%2" si deci nu poate fi folosita ca si adresa de trimitere.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book with label "%2".</source>
-        <translation>L’adresse saisie « %1 » est déjà présente dans le carnet d’adresses avec l’étiquette « %2 ».</translation>
+        <translation>Adresa introdusa "%1" este deja in lista de adrese cu eticheta "%2"</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>Impossible de déverrouiller le porte-monnaie.</translation>
+        <translation>Portofelul nu a putut fi deblocat.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>Échec de génération de la nouvelle clé.</translation>
+        <translation>Generarea noii chei nu a reuşit.</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Un nouveau répertoire de données sera créé.</translation>
+        <translation>Va fi creat un nou dosar de date.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>nom</translation>
+        <translation>nume</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Le répertoire existe déjà. Ajouter %1 si vous comptez créer un nouveau répertoire ici.</translation>
+        <translation>Dosarul deja există. Adaugă %1 dacă intenţionaţi să creaţi un nou dosar aici.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Le chemin existe déjà et n’est pas un répertoire.</translation>
+        <translation>Calea deja există şi nu este un dosar.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>Impossible de créer un répertoire de données ici.</translation>
+        <translation>Nu se poate crea un dosar de date aici.</translation>
     </message>
 </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
-        <translation>version</translation>
+        <translation>versiunea</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -819,46 +815,46 @@
     </message>
     <message>
         <source>About %1</source>
-        <translation>À propos de %1</translation>
+        <translation>Despre %1</translation>
     </message>
     <message>
         <source>Command-line options</source>
-        <translation>Options de ligne de commande</translation>
+        <translation>Opţiuni linie de comandă</translation>
     </message>
 </context>
 <context>
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-        <translation>Bienvenue</translation>
+        <translation>Bun venit</translation>
     </message>
     <message>
         <source>Welcome to %1.</source>
-        <translation>Bienvenue à %1.</translation>
+        <translation>Bun venit la %1!</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation>Puisque c’est la première fois que le logiciel est lancé, vous pouvez choisir où %1 stockera ses données.</translation>
+        <translation>Deoarece este prima lansare a programului poți alege unde %1 va stoca datele sale.</translation>
     </message>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>Lorsque vous cliquez sur OK, %1 commence à télécharger et à traiter l’intégralité de la chaîne de blocs %4 (%2 Go) en débutant avec les transactions les plus anciennes de %3, quand %4 a été lancé initialement.</translation>
+        <translation>Cand apasati OK, %1 va incepe descarcarea si procesarea intregului %4 blockchain (%2GB) incepand cu cele mai vechi tranzactii din %3 de la lansarea initiala a %4.</translation>
     </message>
     <message>
         <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>La synchronisation initiale est très exigeante et pourrait exposer des problèmes matériels dans votre ordinateur passés inaperçus auparavant. Chaque fois que vous exécuterez %1, le téléchargement reprendra où il s’était arrêté.</translation>
+        <translation>Sincronizarea initiala necesita foarte multe resurse, si poate releva probleme de hardware ale computerului care anterior au trecut neobservate. De fiecare data cand rulati %1, descarcarea va continua de unde a fost intrerupta.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation>Si vous avez choisi de limiter le stockage de la chaîne de blocs (élagage), les données historiques doivent quand même être téléchargées et traitées, mais seront supprimées par la suite pour minimiser l’utilisation de votre espace disque.</translation>
+        <translation>Daca ati ales o limita pentru capacitatea de stocare a blockchainului (pruning), datele mai vechi tot trebuie sa fie descarcate si procesate, insa vor fi sterse ulterior pentru a reduce utilizarea harddiskului.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>Utiliser le répertoire de données par défaut</translation>
+        <translation>Foloseşte dosarul de date implicit</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>Utiliser un répertoire de données personnalisé :</translation>
+        <translation>Foloseşte un dosar de date personalizat:</translation>
     </message>
     <message>
         <source>Bitcoin</source>
@@ -866,216 +862,200 @@
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation>Au moins %1 Go de données seront stockés dans ce répertoire et sa taille augmentera avec le temps.</translation>
+        <translation>Cel putin %1GB de date vor fi stocate in acest director, si aceasta valoare va creste in timp.</translation>
     </message>
     <message>
         <source>Approximately %1 GB of data will be stored in this directory.</source>
-        <translation>Approximativement %1 Go de données seront stockés dans ce répertoire.</translation>
+        <translation>Aproximativ %1 GB de date vor fi stocate in acest director.</translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 téléchargera et stockera une copie de la chaîne de blocs kryptoFranc.</translation>
+        <translation>%1 va descarca si stoca o copie a blockchainului kryptoFranc</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
-        <translation>Le porte-monnaie sera aussi stocké dans ce répertoire.</translation>
+        <translation>Portofelul va fi de asemeni stocat in acest director.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Erreur : Le répertoire de données indiqué « %1 » ne peut pas être créé.</translation>
+        <translation>Eroare: Directorul datelor specificate "%1" nu poate fi creat.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Eroare</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of free space available</source>
-        <translation><numerusform>%n Go d’espace libre disponible</numerusform><numerusform>%n Go d’espace libre disponibles</numerusform></translation>
+        <translation><numerusform>%n GB de spaţiu liber disponibil</numerusform><numerusform>%n GB de spaţiu liber disponibil</numerusform><numerusform>%n GB de spaţiu liber disponibil</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>(of %n GB needed)</source>
-        <translation><numerusform>(sur %n Go requis)</numerusform><numerusform>(sur %n Go requis)</numerusform></translation>
+        <translation><numerusform>(din %n GB necesar)</numerusform><numerusform>(din %n GB necesari)</numerusform><numerusform>(din %n GB necesari)</numerusform></translation>
     </message>
 </context>
 <context>
     <name>ModalOverlay</name>
     <message>
         <source>Form</source>
-        <translation>Formulaire</translation>
+        <translation>Form</translation>
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Les transactions récentes ne sont peut-être pas encore visibles et par conséquent le solde de votre porte-monnaie est peut-être erroné. Cette information sera juste quand votre porte-monnaie aura fini de se synchroniser avec le réseau kryptoFranc, comme décrit ci-dessous.</translation>
+        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua kryptoFranc, asa cum este detaliat mai jos.</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Toute tentative de dépense de kryptofrancs affectés par des transactions qui ne sont pas encore affichées ne sera pas acceptée par le réseau.</translation>
+        <translation>Incercarea de a cheltui kryptofranci care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
-        <translation>Nombre de blocs restants</translation>
+        <translation>Numarul de blocuri ramase</translation>
     </message>
     <message>
         <source>Unknown...</source>
-        <translation>Inconnu...</translation>
+        <translation>Necunoscut...</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Estampille temporelle du dernier bloc</translation>
+        <translation>Data ultimului bloc</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation>Progression</translation>
+        <translation>Progres</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
-        <translation>Avancement de la progression par heure</translation>
+        <translation>Cresterea progresului per ora</translation>
     </message>
     <message>
         <source>calculating...</source>
-        <translation>calcul en cours...</translation>
+        <translation>calculeaza...</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
-        <translation>Temps estimé avant la fin de la synchronisation</translation>
+        <translation>Timp estimat pana la sincronizare</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation>Cacher</translation>
+        <translation>Ascunde</translation>
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1)...</source>
-        <translation>Inconnu. Synchronisation des en-têtes (%1)...</translation>
+        <translation>Necunoscut. Se sincronizeaza headerele (%1)...</translation>
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
-        <translation>Ouvrir une URI</translation>
+        <translation>Deschide URI</translation>
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Ouvrir une demande de paiement à partir d’une URI ou d’un fichier</translation>
+        <translation>Deschideţi cerere de plată prin intermediul adresei URI sau a fişierului</translation>
     </message>
     <message>
         <source>URI:</source>
-        <translation>URI :</translation>
+        <translation>URI:</translation>
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation>Choisir le fichier de demande de paiement</translation>
+        <translation>Selectaţi fişierul cerere de plată</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation>Choisir le fichier de demande de paiement à ouvrir</translation>
+        <translation>Selectati care fisier de cerere de plata va fi deschis</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation>Opţiuni</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation>&amp;Principaux</translation>
+        <translation>Principal</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
-        <translation>Démarrer %1 automatiquement après avoir ouvert une session sur l’ordinateur.</translation>
+        <translation>Porneşte automat %1 după logarea in sistem.</translation>
     </message>
     <message>
         <source>&amp;Start %1 on system login</source>
-        <translation>&amp;Démarrer %1 lors de l’ouverture d’une session</translation>
+        <translation>&amp;Porneste %1 la logarea in sistem.</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation>Taille du cache de la base de &amp;données</translation>
+        <translation>Mărimea bazei de &amp;date cache</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>Mo</translation>
+        <translation>MB</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Nombre de fils de &amp;vérification de script</translation>
+        <translation>Numărul de thread-uri de &amp;verificare</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>Adresse IP du mandataire (p. ex. IPv4 : 127.0.0.1 / IPv6 : ::1)</translation>
+        <translation>Adresa IP a serverului proxy (de exemplu: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Indique si le mandataire SOCKS5 par défaut fourni est utilisé pour atteindre des pairs par ce type de réseau.</translation>
+        <translation>Arata daca proxy-ul SOCKS5 furnizat implicit este folosit pentru a gasi parteneri via acest tip de retea.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Utiliser un mandataire SOCKS&amp;5 séparé pour atteindre les pairs en utilisant les services cachés de Tor.</translation>
+        <translation>Foloseste un proxy SOCKS&amp;5 separat pentru a gasi parteneri via servicii TOR ascunse</translation>
     </message>
     <message>
         <source>Hide the icon from the system tray.</source>
-        <translation>Cacher l’icône dans la zone de notification.</translation>
+        <translation>Ascunde icon-ul din system tray.</translation>
     </message>
     <message>
         <source>&amp;Hide tray icon</source>
-        <translation>Cac&amp;her l’icône de la zone de notification</translation>
+        <translation>&amp;Ascunde icon-ul din system tray.</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
-        <translation>Quand la fenêtre est fermée, réduire au lieu de quitter l’application. Si cette option est activée, l’application ne sera fermée qu’en sélectionnant Quitter dans le menu.</translation>
+        <translation>Minimizează fereastra în locul părăsirii programului în momentul închiderii ferestrei. Cînd acestă opţiune e activă, aplicaţia se va opri doar în momentul selectării comenzii 'Închide aplicaţia' din menu.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL de tiers (p. ex. un explorateur de blocs) apparaissant dans l’onglet des transactions comme éléments du menu contextuel. %s dans l’URL est remplacé par le hachage de la transaction. Les URL multiples sont séparées par une barre verticale |.</translation>
+        <translation>URL-uri terţe părţi (de exemplu, un explorator de bloc), care apar în tab-ul tranzacţiilor ca elemente de meniu contextual. %s în URL este înlocuit cu hash de tranzacţie. URL-urile multiple sînt separate prin bară verticală |.</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation>Options de ligne de commande actives qui remplacent les options ci-dessus :</translation>
+        <translation>Opţiuni linie de comandă active care oprimă opţiunile de mai sus:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
-        <translation>Ouvrir le fichier de configuration %1 du répertoire de travail.</translation>
+        <translation>Deschide fisierul de configurare %1 din directorul curent.</translation>
     </message>
     <message>
         <source>Open Configuration File</source>
-        <translation>Ouvrir le fichier de configuration</translation>
+        <translation>Deschide fisierul de configurare.</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Réinitialiser toutes les options du client aux valeurs par défaut.</translation>
+        <translation>Resetează toate setările clientului la valorile implicite.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Réinitialiser les options</translation>
+        <translation>&amp;Resetează opţiunile</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation>&amp;Réseau</translation>
-    </message>
-    <message>
-        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Désactive certaines fonctions avancées, mais tous les blocs seront quand même validés entièrement. Changer ce paramètre à sa valeur antérieure exige de retélécharger la chaîne de blocs dans son intégralité. L’espace disque utilisé pourrait être un peu plus élevé.</translation>
-    </message>
-    <message>
-        <source>Prune &amp;block storage to</source>
-        <translation>Élaguer l’espace de stockage des &amp;blocs jusqu’à</translation>
-    </message>
-    <message>
-        <source>GB</source>
-        <translation>Go</translation>
-    </message>
-    <message>
-        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
-        <translation>Changer ce paramètre à sa valeur antérieure exige de retélécharger la chaîne de blocs dans son intégralité.</translation>
+        <translation>Reţea</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt; 0 = laisser ce nombre de cœurs inutilisés)</translation>
+        <translation>(0 = automat, &lt;0 = lasă atîtea nuclee libere)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation>&amp;Porte-monnaie</translation>
+        <translation>Portofel</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -1083,55 +1063,55 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Activer les fonctions de &amp;contrôle des pièces</translation>
+        <translation>Activare caracteristici de control ale monedei</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation>Si vous désactivé la dépense de la monnaie non confirmée, la monnaie d’une transaction ne peut pas être utilisée tant que cette transaction n’a pas reçu au moins une confirmation. Celai affecte aussi le calcul de votre solde.</translation>
+        <translation>Dacă dezactivaţi cheltuirea restului neconfirmat, restul dintr-o tranzacţie nu poate fi folosit pînă cînd tranzacţia are cel puţin o confirmare. Aceasta afectează de asemenea calcularea soldului.</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Dépenser la monnaie non confirmée</translation>
+        <translation>Cheltuire rest neconfirmat</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client kryptoFranc sur le routeur. Cela ne fonctionne que si votre routeur prend en charge l’UPnP et si la fonction est activée.</translation>
+        <translation>Deschide automat în router portul aferent clientului kryptoFranc. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Mapper le port avec l’&amp;UPnP</translation>
+        <translation>Mapare port folosind &amp;UPnP</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
-        <translation>Accepter les connexions provenant de l’extérieur.</translation>
+        <translation>Acceptă conexiuni din exterior</translation>
     </message>
     <message>
         <source>Allow incomin&amp;g connections</source>
-        <translation>Permettre les connexions e&amp;ntrantes</translation>
+        <translation>Permite conexiuni de intrar&amp;e</translation>
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Se connecter au réseau kryptoFranc par un mandataire SOCKS5.</translation>
+        <translation>Conectare la reţeaua kryptoFranc printr-un proxy SOCKS.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>Se &amp;connecter par un mandataire SOCKS5 (mandataire par défaut) :</translation>
+        <translation>&amp;Conectare printr-un proxy SOCKS (implicit proxy):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>&amp;IP du mandataire :</translation>
+        <translation>Proxy &amp;IP:</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation>&amp;Port :</translation>
+        <translation>&amp;Port:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Port du mandataire (p. ex. 9050)</translation>
+        <translation>Portul proxy (de exemplu: 9050)</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
-        <translation>Utilisé pour rejoindre les pairs par :</translation>
+        <translation>Folosit pentru a gasi parteneri via:</translation>
     </message>
     <message>
         <source>IPv4</source>
@@ -1147,51 +1127,51 @@
     </message>
     <message>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Se connecter au réseau kryptoFranc au travers d’un mandataire SOCKS5 séparé pour les services cachés de Tor.</translation>
+        <translation>Conectare la reteaua kryptoFranc printr-un proxy SOCKS5 separat pentru serviciile TOR ascunse.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;Fenêtre</translation>
+        <translation>&amp;Fereastră</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>N’afficher qu’une icône dans la zone de notification après minimisation.</translation>
+        <translation>Arată doar un icon în tray la ascunderea ferestrei</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Réduire dans la zone de notification au lieu de la barre des tâches</translation>
+        <translation>&amp;Minimizare în tray în loc de taskbar</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation>Ré&amp;duire lors de la fermeture</translation>
+        <translation>M&amp;inimizare fereastră în locul închiderii programului</translation>
     </message>
     <message>
         <source>&amp;Display</source>
-        <translation>&amp;Affichage</translation>
+        <translation>&amp;Afişare</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Langue de l’interface utilisateur :</translation>
+        <translation>&amp;Limbă interfaţă utilizator</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
-        <translation>La langue de l’interface utilisateur peut être définie ici. Ce réglage sera pris en compte après redémarrage de %1.</translation>
+        <translation>Limba interfeţei utilizatorului poate fi setată aici. Această setare va avea efect după repornirea %1.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unité d’affichage des montants :</translation>
+        <translation>&amp;Unitatea de măsură pentru afişarea sumelor:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Choisir la sous-unité par défaut d’affichage dans l’interface et lors d’envoi de pièces.</translation>
+        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de kryptofranc.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Afficher ou non les fonctions de contrôle des pièces.</translation>
+        <translation>Arată controlul caracteristicilor monedei sau nu.</translation>
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
-        <translation>URL de transaction de &amp;tiers</translation>
+        <translation>URL-uri tranzacţii &amp;terţe părţi</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1199,236 +1179,232 @@
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>A&amp;nnuler</translation>
+        <translation>Renunţă</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>par défaut</translation>
+        <translation>iniţial</translation>
     </message>
     <message>
         <source>none</source>
-        <translation>aucune</translation>
+        <translation>nimic</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Confirmer la réinitialisation des options</translation>
+        <translation>Confirmă resetarea opţiunilor</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Le redémarrage du client est exigé pour activer les changements.</translation>
+        <translation>Este necesară repornirea clientului pentru a activa schimbările.</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
-        <translation>Le client sera arrêté. Voulez-vous continuer ?</translation>
+        <translation>Clientul va fi închis. Doriţi să continuaţi?</translation>
     </message>
     <message>
         <source>Configuration options</source>
-        <translation>Options de configuration</translation>
+        <translation>Optiuni de configurare</translation>
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
-        <translation>Le fichier de configuration est utilisé pour indiquer aux utilisateurs experts quelles options remplacent les paramètres de l’IUG. De plus, toute option de ligne de commande modifiera ce fichier de configuration.</translation>
+        <translation>Fisierul de configurare e folosit pentru a specifica optiuni utilizator avansate care modifica setarile din GUI. In plus orice optiune din linia de comanda va modifica acest fisier de configurare. </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Eroare</translation>
     </message>
     <message>
         <source>The configuration file could not be opened.</source>
-        <translation>Impossible d’ouvrir le fichier de configuration.</translation>
+        <translation>Fisierul de configurare nu a putut fi deschis.</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>Ce changement demanderait un redémarrage du client.</translation>
+        <translation>Această schimbare necesită o repornire a clientului.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>L’adresse de serveur mandataire fournie est invalide.</translation>
+        <translation>Adresa kryptofranc pe care aţi specificat-o nu este validă.</translation>
     </message>
 </context>
 <context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
-        <translation>Formulaire</translation>
+        <translation>Form</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre porte-monnaie est automatiquement synchronisé avec le réseau kryptoFranc lorsque la connexion s’établit, or ce processus n’est pas encore terminé.</translation>
+        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua kryptoFranc după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>Juste-regarder :</translation>
+        <translation>Doar-supraveghere:</translation>
     </message>
     <message>
         <source>Available:</source>
-        <translation>Disponible :</translation>
+        <translation>Disponibil:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
-        <translation>Votre solde actuel disponible</translation>
+        <translation>Balanţa dvs. curentă de cheltuieli</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>En attente :</translation>
+        <translation>În aşteptare:</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Total des transactions qui doivent encore être confirmées et qui ne sont pas prises en compte dans le solde disponible</translation>
+        <translation>Totalul tranzacţiilor care nu sunt confirmate încă şi care nu sunt încă adunate la balanţa de cheltuieli</translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation>Immature :</translation>
+        <translation>Nematurizat:</translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
-        <translation>Le solde miné n’est pas encore mûr</translation>
+        <translation>Balanţa minata ce nu s-a maturizat încă</translation>
     </message>
     <message>
         <source>Balances</source>
-        <translation>Soldes</translation>
+        <translation>Balanţă</translation>
     </message>
     <message>
         <source>Total:</source>
-        <translation>Total :</translation>
+        <translation>Total:</translation>
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Votre solde total actuel</translation>
+        <translation>Balanţa totală curentă</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
-        <translation>Votre balance actuelle en adresses juste-regarder</translation>
+        <translation>Soldul dvs. curent în adresele doar-supraveghere</translation>
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>Disponible :</translation>
+        <translation>Cheltuibil:</translation>
     </message>
     <message>
         <source>Recent transactions</source>
-        <translation>Transactions récentes</translation>
+        <translation>Tranzacţii recente</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Transactions non confirmées vers des adresses juste-regarder</translation>
+        <translation>Tranzacţii neconfirmate la adresele doar-supraveghere</translation>
     </message>
     <message>
         <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>Le solde miné dans des adresses juste-regarder, qui n’est pas encore mûr</translation>
+        <translation>Balanţă minată în adresele doar-supraveghere care nu s-a maturizat încă</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
-        <translation>Solde total actuel dans des adresses juste-regarder</translation>
+        <translation>Soldul dvs. total în adresele doar-supraveghere</translation>
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
-        <translation>Erreur de demande de paiement</translation>
+        <translation>Eroare la cererea de plată</translation>
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer kryptofranc:</translation>
+        <translation>kryptoFranc nu poate porni: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
-        <translation>Gestion des URI</translation>
-    </message>
-    <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'kryptofranc://' n’est pas une URI valide. Utilisez plutôt 'kryptofranc:'.</translation>
+        <translation>Gestionare URI</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>L’URL de récupération de la demande de paiement est invalide : %1</translation>
+        <translation>URL-ul cererii de plată preluat nu este valid: %1</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
-        <translation>Adresse de paiement invalide %1</translation>
+        <translation>Adresă pentru plată invalidă %1</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>L’URI ne peut pas être analysée ! Cela peut être causé par une adresse kryptoFranc invalide ou par des paramètres d’URI mal formés.</translation>
+        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă kryptoFranc invalidă sau parametri URI deformaţi.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
-        <translation>Gestion des fichiers de demande de paiement</translation>
+        <translation>Manipulare fişier cerere de plată</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Le fichier de demande de paiement ne peut pas être lu ! Cela peut être causé par un fichier de demande de paiement invalide.</translation>
+        <translation>Fişierul cerere de plată nu poate fi citit! Cauza poate fi un fişier cerere de plată nevalid.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
-        <translation>Demande de paiement rejetée</translation>
+        <translation>Cerere de plată refuzată</translation>
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
-        <translation>Le réseau de la demande de paiement ne correspond pas au réseau du client.</translation>
+        <translation>Cererea de plată din reţea nu se potriveşte cu clientul din reţea</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
-        <translation>La demande de paiement a expiré</translation>
+        <translation>Cerere de plată expirata</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
-        <translation>La demande de paiement n’est pas initialisée.</translation>
+        <translation>Cererea de plată nu este iniţializată.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Les demandes de paiements non vérifiées vers des scripts de paiement personnalisés ne sont pas prises en charge.</translation>
+        <translation>Cererile nesecurizate către scripturi personalizate de plăți nu sunt suportate</translation>
     </message>
     <message>
         <source>Invalid payment request.</source>
-        <translation>Demande de paiement invalide.</translation>
+        <translation>Cerere de plată invalidă.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Le paiement demandé d’un montant de %1 est trop faible (considéré comme de la poussière).</translation>
+        <translation>Suma cerută de plată de %1 este prea mică (considerată praf).</translation>
     </message>
     <message>
         <source>Refund from %1</source>
-        <translation>Remboursement de %1</translation>
+        <translation>Rambursare de la %1</translation>
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>La demande de paiement %1 est trop grande (%2 octets, %3 octets permis).</translation>
+        <translation>Cererea de plată %1 este prea mare (%2 octeţi, permis %3 octeţi).</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
-        <translation>Erreur de communication avec %1 : %2</translation>
+        <translation>Eroare la comunicarea cu %1: %2</translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
-        <translation>La demande de paiement ne peut pas être analysée !</translation>
+        <translation>Cererea de plată nu poate fi analizată!</translation>
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation>Mauvaise réponse du serveur %1</translation>
+        <translation>Răspuns greşit de la server %1</translation>
     </message>
     <message>
         <source>Network request error</source>
-        <translation>Erreur de demande réseau</translation>
+        <translation>Eroare în cererea de reţea</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
-        <translation>Le paiement a été confirmé</translation>
+        <translation>Plată acceptată</translation>
     </message>
 </context>
 <context>
     <name>PeerTableModel</name>
     <message>
         <source>User Agent</source>
-        <translation>Agent utilisateur</translation>
+        <translation>Agent utilizator</translation>
     </message>
     <message>
         <source>Node/Service</source>
-        <translation>Nœud/service</translation>
+        <translation>Nod/Serviciu</translation>
     </message>
     <message>
         <source>NodeId</source>
-        <translation>ID de nœud</translation>
+        <translation>NodeID</translation>
     </message>
     <message>
         <source>Ping</source>
@@ -1436,26 +1412,26 @@
     </message>
     <message>
         <source>Sent</source>
-        <translation>Envoyé</translation>
+        <translation>Expediat</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Reçu</translation>
+        <translation>Recepţionat</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Cantitate</translation>
     </message>
     <message>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Saisir une adresse kryptoFranc (p. ex. %1)</translation>
+        <translation>Introduceţi o adresă kryptoFranc (de exemplu %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
-        <translation>%1 j</translation>
+        <translation>%1 z</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -1463,7 +1439,7 @@
     </message>
     <message>
         <source>%1 m</source>
-        <translation>%1 min</translation>
+        <translation>%1 m</translation>
     </message>
     <message>
         <source>%1 s</source>
@@ -1471,11 +1447,11 @@
     </message>
     <message>
         <source>None</source>
-        <translation>Aucun</translation>
+        <translation>Niciuna</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N.D.</translation>
+        <translation>N/A</translation>
     </message>
     <message>
         <source>%1 ms</source>
@@ -1483,320 +1459,304 @@
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation><numerusform>%n seconde</numerusform><numerusform>%n secondes</numerusform></translation>
+        <translation><numerusform>%n secunda</numerusform><numerusform>%n secunde</numerusform><numerusform>%n secunde</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minute</numerusform><numerusform>%n minutes</numerusform></translation>
+        <translation><numerusform>%n minut</numerusform><numerusform>%n minute</numerusform><numerusform>%n minute</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n heure</numerusform><numerusform>%n heures</numerusform></translation>
+        <translation><numerusform>%n ora</numerusform><numerusform>%n ore</numerusform><numerusform>%n ore</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform>%n jour</numerusform><numerusform>%n jours</numerusform></translation>
+        <translation><numerusform>%n zi</numerusform><numerusform>%n zile</numerusform><numerusform>%n zile</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n semaine</numerusform><numerusform>%n semaines</numerusform></translation>
+        <translation><numerusform>%n saptamana</numerusform><numerusform>%n saptamani</numerusform><numerusform>%n saptamani</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
-        <translation>%1 et %2</translation>
+        <translation>%1 şi %2</translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n an</numerusform><numerusform>%n ans</numerusform></translation>
+        <translation><numerusform>%n an</numerusform><numerusform>%n ani</numerusform><numerusform>%n ani</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
-        <translation>%1 o</translation>
+        <translation>%1 B</translation>
     </message>
     <message>
         <source>%1 KB</source>
-        <translation>%1 Ko</translation>
+        <translation>%1 KB</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation>%1 Mo</translation>
+        <translation>%1 MB</translation>
     </message>
     <message>
         <source>%1 GB</source>
-        <translation>%1 Go</translation>
+        <translation>%1 GB</translation>
     </message>
     <message>
         <source>%1 didn't yet exit safely...</source>
-        <translation>%1 ne s’est pas encore arrêté en toute sécurité...</translation>
+        <translation>%1 nu a fost inchis in siguranta...</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation>inconnue</translation>
+        <translation>necunoscut</translation>
     </message>
 </context>
 <context>
     <name>QObject::QObject</name>
     <message>
-        <source>Error parsing command line arguments: %1.</source>
-        <translation>Erreur d’analyse des arguments de ligne de commande : %1.</translation>
-    </message>
-    <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>Erreur : Le répertoire de données indiqué « %1 » n’existe pas.</translation>
-    </message>
-    <message>
-        <source>Error: Cannot parse configuration file: %1.</source>
-        <translation>Erreur : Impossible d’analyser le fichier de configuration : %1.</translation>
+        <translation>Eroare: Directorul de date specificat "%1" nu există.</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation>Erreur : %1</translation>
+        <translation>Eroare: %1</translation>
     </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Enregistrer l’image...</translation>
+        <translation>&amp;Salvează Imaginea...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
-        <translation>&amp;Copier l’image</translation>
+        <translation>&amp;Copiaza Imaginea</translation>
     </message>
     <message>
         <source>Save QR Code</source>
-        <translation>Enregistrer le code QR</translation>
+        <translation>Salvează codul QR</translation>
     </message>
     <message>
         <source>PNG Image (*.png)</source>
-        <translation>Image PNG (*.png)</translation>
+        <translation>Imagine de tip PNG (*.png)</translation>
     </message>
 </context>
 <context>
     <name>RPCConsole</name>
     <message>
         <source>N/A</source>
-        <translation>N.D.</translation>
+        <translation>Nespecificat</translation>
     </message>
     <message>
         <source>Client version</source>
-        <translation>Version du client</translation>
+        <translation>Versiune client</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Informations</translation>
+        <translation>&amp;Informaţii</translation>
     </message>
     <message>
         <source>Debug window</source>
-        <translation>Fenêtre de débogage</translation>
+        <translation>Fereastra de depanare</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Général</translation>
+        <translation>General</translation>
     </message>
     <message>
         <source>Using BerkeleyDB version</source>
-        <translation>Version BerkeleyDB utilisée</translation>
+        <translation>Foloseşte BerkeleyDB versiunea</translation>
     </message>
     <message>
         <source>Datadir</source>
-        <translation>Datadir</translation>
+        <translation>Dirdate</translation>
     </message>
     <message>
         <source>Startup time</source>
-        <translation>Heure de démarrage</translation>
+        <translation>Ora de pornire</translation>
     </message>
     <message>
         <source>Network</source>
-        <translation>Réseau</translation>
+        <translation>Reţea</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nom</translation>
+        <translation>Nume</translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Nombre de connexions</translation>
+        <translation>Numărul de conexiuni</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>Chaîne de blocs</translation>
+        <translation>Lanţ de blocuri</translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Nombre actuel de blocs</translation>
+        <translation>Numărul curent de blocuri</translation>
     </message>
     <message>
         <source>Memory Pool</source>
-        <translation>Réserve de mémoire</translation>
+        <translation>Pool Memorie</translation>
     </message>
     <message>
         <source>Current number of transactions</source>
-        <translation>Nombre actuel de transactions</translation>
+        <translation>Numărul curent de tranzacţii</translation>
     </message>
     <message>
         <source>Memory usage</source>
-        <translation>Utilisation de la mémoire</translation>
-    </message>
-    <message>
-        <source>Wallet: </source>
-        <translation>Porte-monnaie :</translation>
-    </message>
-    <message>
-        <source>(none)</source>
-        <translation>(aucun)</translation>
+        <translation>Memorie folosită</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation>&amp;Réinitialiser</translation>
+        <translation>&amp;Resetare</translation>
     </message>
     <message>
         <source>Received</source>
-        <translation>Reçu</translation>
+        <translation>Recepţionat</translation>
     </message>
     <message>
         <source>Sent</source>
-        <translation>Envoyé</translation>
+        <translation>Expediat</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Pairs</translation>
+        <translation>&amp;Parteneri</translation>
     </message>
     <message>
         <source>Banned peers</source>
-        <translation>Pairs bannis</translation>
+        <translation>Terti banati</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Choisir un pair pour voir l’information détaillée.</translation>
+        <translation>Selectaţi un partener pentru a vedea informaţiile detaliate.</translation>
     </message>
     <message>
         <source>Whitelisted</source>
-        <translation>Dans la liste blanche</translation>
+        <translation>Whitelisted</translation>
     </message>
     <message>
         <source>Direction</source>
-        <translation>Direction</translation>
+        <translation>Direcţie</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Versiune</translation>
     </message>
     <message>
         <source>Starting Block</source>
-        <translation>Bloc de départ</translation>
+        <translation>Bloc de început</translation>
     </message>
     <message>
         <source>Synced Headers</source>
-        <translation>En-têtes synchronisés</translation>
+        <translation>Headere Sincronizate</translation>
     </message>
     <message>
         <source>Synced Blocks</source>
-        <translation>Blocs synchronisés</translation>
+        <translation>Blocuri Sincronizate</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agent utilisateur</translation>
+        <translation>Agent utilizator</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier journal de débogage de %1 à partir du répertoire de données actuel. Cela peut prendre quelques secondes pour les fichiers journaux de grande taille.</translation>
+        <translation>Deschide fişierul jurnal depanare %1 din directorul curent. Aceasta poate dura cateva secunde pentru fişierele mai mari.</translation>
     </message>
     <message>
         <source>Decrease font size</source>
-        <translation>Diminuer la taille de police</translation>
+        <translation>Micsoreaza fontul</translation>
     </message>
     <message>
         <source>Increase font size</source>
-        <translation>Augmenter la taille de police</translation>
+        <translation>Mareste fontul</translation>
     </message>
     <message>
         <source>Services</source>
-        <translation>Services</translation>
+        <translation>Servicii</translation>
     </message>
     <message>
         <source>Ban Score</source>
-        <translation>Pointage des bannissements</translation>
+        <translation>Scor Ban</translation>
     </message>
     <message>
         <source>Connection Time</source>
-        <translation>Temps de connexion</translation>
+        <translation>Timp conexiune</translation>
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Dernier envoi</translation>
+        <translation>Ultima trimitere</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Dernière réception</translation>
+        <translation>Ultima primire</translation>
     </message>
     <message>
         <source>Ping Time</source>
-        <translation>Temps de ping</translation>
+        <translation>Timp ping</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
-        <translation>La durée d’un ping en cours.</translation>
+        <translation>Durata ping-ului intarziat.</translation>
     </message>
     <message>
         <source>Ping Wait</source>
-        <translation>Attente du ping</translation>
+        <translation>Asteptare ping</translation>
     </message>
     <message>
         <source>Min Ping</source>
-        <translation>Ping min.</translation>
+        <translation>Min Ping</translation>
     </message>
     <message>
         <source>Time Offset</source>
-        <translation>Décalage temporel</translation>
+        <translation>Diferenta timp</translation>
     </message>
     <message>
         <source>Last block time</source>
-        <translation>Estampille temporelle du dernier bloc</translation>
+        <translation>Data ultimului bloc</translation>
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation>&amp;Ouvrir</translation>
+        <translation>&amp;Deschide</translation>
     </message>
     <message>
         <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
+        <translation>&amp;Consolă</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>Trafic &amp;réseau</translation>
+        <translation>Trafic reţea</translation>
     </message>
     <message>
         <source>Totals</source>
-        <translation>Totaux</translation>
+        <translation>Totaluri</translation>
     </message>
     <message>
         <source>In:</source>
-        <translation>Entrant :</translation>
+        <translation>Intrare:</translation>
     </message>
     <message>
         <source>Out:</source>
-        <translation>Sortant :</translation>
+        <translation>Ieşire:</translation>
     </message>
     <message>
         <source>Debug log file</source>
-        <translation>Fichier journal de débogage</translation>
+        <translation>Fişier jurnal depanare</translation>
     </message>
     <message>
         <source>Clear console</source>
-        <translation>Effacer la console</translation>
+        <translation>Curăţă consola</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation>1 &amp;heure</translation>
+        <translation>1 &amp;oră</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
-        <translation>1 &amp;jour</translation>
+        <translation>1 &amp;zi</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
-        <translation>1 &amp;semaine</translation>
+        <translation>1 &amp;săptămână</translation>
     </message>
     <message>
         <source>1 &amp;year</source>
@@ -1804,197 +1764,189 @@
     </message>
     <message>
         <source>&amp;Disconnect</source>
-        <translation>&amp;Déconnecter</translation>
+        <translation>&amp;Deconectare</translation>
     </message>
     <message>
         <source>Ban for</source>
-        <translation>Bannir pendant</translation>
+        <translation>Interzicere pentru</translation>
     </message>
     <message>
         <source>&amp;Unban</source>
-        <translation>&amp;Réhabiliter</translation>
+        <translation>&amp;Unban</translation>
     </message>
     <message>
         <source>default wallet</source>
-        <translation>porte-monnaie par défaut</translation>
+        <translation>portofel implicit</translation>
     </message>
     <message>
         <source>Welcome to the %1 RPC console.</source>
-        <translation>Bienvenue sur la console RPC de %1.</translation>
+        <translation>Bun venit la consola %1 RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
-        <translation>Utiliser les touches de déplacement pour naviguer dans l’historique et %1 pour effacer l’écran.</translation>
+        <translation>Folosiţi săgetile sus şi jos pentru a naviga în istoric şi %1 pentru a curăţa ecranul.</translation>
     </message>
     <message>
         <source>Type %1 for an overview of available commands.</source>
-        <translation>Taper %1 pour afficher un aperçu des commandes proposées.</translation>
+        <translation>Tastati %1 pentru o recapitulare a comenzilor disponibile.</translation>
     </message>
     <message>
         <source>For more information on using this console type %1.</source>
-        <translation>Pour plus d’informations sur l’utilisation de cette console, taper %1.</translation>
+        <translation>Pentru mai multe informatii despre folosirea acestei console tastati %1.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>AVERTISSEMENT : des fraudeurs sont réputés être à l’oeuvre, demandant aux utilisateurs de taper des commandes ici, dérobant ainsi le contenu de leurs porte-monnaie. Ne pas utiliser cette console sans une compréhension parfaite des conséquences d’une commande.</translation>
+        <translation>ATENTIONARE: Sunt excroci care instruiesc userii sa introduca aici comenzi, pentru a le fura continutul portofelelor. Nu folositi aceasta consolă fara a intelege pe deplin ramificatiile unei comenzi.</translation>
     </message>
     <message>
         <source>Network activity disabled</source>
-        <translation>L’activité réseau est désactivée.</translation>
-    </message>
-    <message>
-        <source>Executing command without any wallet</source>
-        <translation>Exécution de la commande sans aucun porte-monnaie</translation>
-    </message>
-    <message>
-        <source>Executing command using "%1" wallet</source>
-        <translation>Exécution de la commande en utilisant le porte-monnaie « %1 »</translation>
+        <translation>Activitatea retelei a fost oprita.</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
-        <translation>(ID de nœud : %1)</translation>
+        <translation>(node id: %1)</translation>
     </message>
     <message>
         <source>via %1</source>
-        <translation>par %1</translation>
+        <translation>via %1</translation>
     </message>
     <message>
         <source>never</source>
-        <translation>jamais</translation>
+        <translation>niciodată</translation>
     </message>
     <message>
         <source>Inbound</source>
-        <translation>Entrant</translation>
+        <translation>Intrare</translation>
     </message>
     <message>
         <source>Outbound</source>
-        <translation>Sortant</translation>
+        <translation>Ieşire</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Oui</translation>
+        <translation>Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Non</translation>
+        <translation>Nu</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Inconnu</translation>
+        <translation>Necunoscut</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>&amp;Amount:</source>
-        <translation>&amp;Montant :</translation>
+        <translation>Sum&amp;a:</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>&amp;Étiquette :</translation>
+        <translation>&amp;Etichetă:</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation>M&amp;essage :</translation>
+        <translation>&amp;Mesaj:</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Un message facultatif à joindre à la demande de paiement et qui sera affiché à l’ouverture de celle-ci. Note : le message ne sera pas envoyé avec le paiement par le réseau kryptoFranc.</translation>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua kryptoFranc.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>Un étiquette facultative à associer à la nouvelle adresse de réception.</translation>
+        <translation>O etichetă opţională de asociat cu adresa de primire.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Utiliser ce formulaire pour demander des paiements. Tous les champs sont  &lt;b&gt;facultatifs&lt;/b&gt;.</translation>
+        <translation>Foloseşte acest formular pentru a solicita plăţi. Toate cîmpurile sînt &lt;b&gt;opţionale&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Un montant facultatif à demander. Ne rien saisir ou un zéro pour ne pas demander de montant précis.</translation>
+        <translation>O sumă opţională de cerut. Lăsaţi gol sau zero pentru a nu cere o sumă anume.</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Effacer tous les champs du formulaire.</translation>
+        <translation>Curăţă toate cîmpurile formularului.</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Effacer</translation>
+        <translation>Curăţă</translation>
     </message>
     <message>
         <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don't support them. When unchecked, an address compatible with older wallets will be created instead.</source>
-        <translation>Les adresses SegWit natives (aussi appelées Bech32 ou BIP-173) réduisent vos frais de transaction ultérieurs et offrent une meilleure protection contre les erreurs de frappe, mais les anciens porte-monnaie ne les prennent pas en charge. Si cette option n’est pas cochée, une adresse compatible avec les anciens porte-monnaie sera plutôt créée.</translation>
+        <translation>Adresele native segwit (aka Bech32 sau BIP-173) vor reduce mai tarziu comisioanele de tranzactionare si vor oferi o mai buna protectie impotriva introducerii gresite, dar portofelele vechi nu sunt compatibile. Daca optiunea nu e bifata, se va crea o adresa compatibila cu portofelele vechi.</translation>
     </message>
     <message>
         <source>Generate native segwit (Bech32) address</source>
-        <translation>Générer une adresse SegWit native (Bech32)</translation>
+        <translation>Genereaza adresa nativa segwit (Bech32)</translation>
     </message>
     <message>
         <source>Requested payments history</source>
-        <translation>Historique des paiements demandés</translation>
+        <translation>Istoricul plăţilor cerute</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
-        <translation>&amp;Demander un paiement</translation>
+        <translation>&amp;Cerere plată</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Afficher la demande choisie (comme double-cliquer sur une entrée)</translation>
+        <translation>Arată cererea selectată (acelaşi lucru ca şi dublu-clic pe o înregistrare)</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>Afficher</translation>
+        <translation>Arată</translation>
     </message>
     <message>
         <source>Remove the selected entries from the list</source>
-        <translation>Retirer les entrées sélectionnées de la liste</translation>
+        <translation>Înlătură intrările selectate din listă</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Retirer</translation>
+        <translation>Înlătură</translation>
     </message>
     <message>
         <source>Copy URI</source>
-        <translation>Copier l’URI</translation>
+        <translation>Copiază URl</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copier l’étiquette</translation>
+        <translation>Copiază eticheta</translation>
     </message>
     <message>
         <source>Copy message</source>
-        <translation>Copier le message</translation>
+        <translation>Copiază mesajul</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <translation>Copiază suma</translation>
     </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
         <source>QR Code</source>
-        <translation>Code QR</translation>
+        <translation>Cod QR</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
-        <translation>Copier l’&amp;URI</translation>
+        <translation>Copiază &amp;URl</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation>Copier l’&amp;adresse</translation>
+        <translation>Copiază &amp;adresa</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Enregistrer l’image...</translation>
+        <translation>&amp;Salvează imaginea...</translation>
     </message>
     <message>
         <source>Request payment to %1</source>
-        <translation>Demande de paiement à %1</translation>
+        <translation>Cere plata pentru %1</translation>
     </message>
     <message>
         <source>Payment information</source>
-        <translation>Informations de paiement</translation>
+        <translation>Informaţiile plată</translation>
     </message>
     <message>
         <source>URI</source>
@@ -2002,380 +1954,360 @@
     </message>
     <message>
         <source>Address</source>
-        <translation>Adresse</translation>
+        <translation>Adresă</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Cantitate</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Etichetă</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Mesaj</translation>
     </message>
     <message>
         <source>Wallet</source>
-        <translation>Porte-monnaie</translation>
+        <translation>Portofel</translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>L’URI résultante est trop longue. Essayez de réduire le texte de l’étiquette ou du message.</translation>
+        <translation>URI rezultat este prea lung, încearcă să reduci textul pentru etichetă / mesaj.</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Erreur d’encodage de l’URI en code QR.</translation>
+        <translation>Eroare la codarea URl-ului în cod QR.</translation>
     </message>
 </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Etichetă</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Mesaj</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(fără etichetă)</translation>
     </message>
     <message>
         <source>(no message)</source>
-        <translation>(aucun message)</translation>
+        <translation>(nici un mesaj)</translation>
     </message>
     <message>
         <source>(no amount requested)</source>
-        <translation>(aucun montant demandé)</translation>
+        <translation>(nici o sumă solicitată)</translation>
     </message>
     <message>
         <source>Requested</source>
-        <translation>Demandée</translation>
+        <translation>Ceruta</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Envoyer des pièces</translation>
+        <translation>Trimite monede</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Fonctions de contrôle des pièces</translation>
+        <translation>Caracteristici de control ale monedei</translation>
     </message>
     <message>
         <source>Inputs...</source>
-        <translation>Entrants...</translation>
+        <translation>Intrări...</translation>
     </message>
     <message>
         <source>automatically selected</source>
-        <translation>choisi automatiquement</translation>
+        <translation>selecţie automată</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Fonds insuffisants !</translation>
+        <translation>Fonduri insuficiente!</translation>
     </message>
     <message>
         <source>Quantity:</source>
-        <translation>Quantité :</translation>
+        <translation>Cantitate:</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octets :</translation>
+        <translation>Octeţi:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Montant :</translation>
+        <translation>Sumă:</translation>
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Frais :</translation>
+        <translation>Comision:</translation>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Après les frais :</translation>
+        <translation>După taxă:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Monnaie :</translation>
+        <translation>Rest:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Si cette option est activée et l’adresse de monnaie est vide ou invalide, la monnaie sera envoyée vers une adresse nouvellement générée.</translation>
+        <translation>Dacă este activat, dar adresa de rest este goală sau nevalidă, restul va fi trimis la o adresă nou generată.</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation>Adresse personnalisée de monnaie</translation>
+        <translation>Adresă personalizată de rest</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
-        <translation>Frais de transaction :</translation>
+        <translation>Taxă tranzacţie:</translation>
     </message>
     <message>
         <source>Choose...</source>
-        <translation>Choisir...</translation>
+        <translation>Alegeţi...</translation>
     </message>
     <message>
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
-        <translation>L’utilisation de l’option « fallbackfee » (frais de repli) peut avoir comme effet d’envoyer une transaction qui prendra plusieurs heures ou jours pour être confirmée ou qui ne le sera jamais. Envisagez de choisir vos frais manuellement ou attendez d’avoir validé l’intégralité de la chaîne.</translation>
+        <translation>Folosirea taxei implicite poate rezulta in trimiterea unei tranzactii care va dura cateva ore sau zile (sau niciodata) pentru a fi confirmata. Luati in considerare sa setati manual taxa sau asteptati pana ati validat complet lantul.</translation>
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
-        <translation>Avertissement : l’estimation des frais n’est actuellement pas possible.</translation>
+        <translation>Avertisment: Estimarea comisionului nu s-a putut efectua.</translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
-        <translation>réduire les paramètres des frais</translation>
-    </message>
-    <message>
-        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
-
-Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
-        <translation>Déterminer des frais personnalisés par Ko (1 000 octets) de la taille virtuelle de la transaction.
-
-Note : Les frais étant calculés par octet, des frais de « 100 satoshis par Ko » pour une transaction d’une taille de 500 octets (la moitié de 1 Ko) donneront des frais de seulement 50 satoshis.</translation>
+        <translation>inchide setarile de taxare</translation>
     </message>
     <message>
         <source>per kilobyte</source>
-        <translation>par kilo-octet</translation>
+        <translation>per kilooctet</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation>Cacher</translation>
+        <translation>Ascunde</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Il est correct de payer les frais minimum tant que le volume transactionnel est inférieur à l’espace dans les blocs. Mais soyez conscient que cela pourrait résulter en une transaction n’étant jamais confirmée une fois qu’il y aura plus de transactions que le réseau ne pourra en traiter.</translation>
+        <translation>Plata unei taxe minime de tranzactie este in regula atata timp cat exista mai mult spatiu in blocuri dacat sunt tranzactii. Insa trebuie sa fiti constienti ca acest lucru poate conduce la tranzactii care nu vor fi niciodata confirmate in cazul in care exista cerere de tranzactii mai mare decat poate procesa reteaua.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
-        <translation>(lire l’infobulle)</translation>
+        <translation>(citeste tooltip)</translation>
     </message>
     <message>
         <source>Recommended:</source>
-        <translation>Recommandés :</translation>
+        <translation>Recomandat:</translation>
     </message>
     <message>
         <source>Custom:</source>
-        <translation>Personnalisés : </translation>
+        <translation>Personalizat:</translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Les frais intelligents ne sont pas encore initialisés. Cela prend habituellement quelques blocs...)</translation>
+        <translation>(Taxa smart nu este inca initializata. Aceasta poate dura cateva blocuri...)</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
-        <translation>Envoyer à plusieurs destinataires à la fois</translation>
+        <translation>Trimite simultan către mai mulţi destinatari</translation>
     </message>
     <message>
         <source>Add &amp;Recipient</source>
-        <translation>Ajouter un &amp;destinataire</translation>
+        <translation>Adaugă destinata&amp;r</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Effacer tous les champs du formulaire.</translation>
+        <translation>Şterge toate câmpurile formularului.</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Poussière :</translation>
+        <translation>Praf:</translation>
     </message>
     <message>
         <source>Confirmation time target:</source>
-        <translation>Estimation du délai de confirmation :</translation>
+        <translation>Timp confirmare tinta:</translation>
     </message>
     <message>
         <source>Enable Replace-By-Fee</source>
-        <translation>Activer Remplacer-par-des-frais</translation>
+        <translation>Autorizeaza Replace-By-Fee</translation>
     </message>
     <message>
         <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
-        <translation>Avec Remplacer-par-des-frais (BIP-125), vous pouvez augmenter les frais de transaction après qu’elle est envoyée. Sans cela, des frais plus élevés peuvent être recommandés pour compenser le risque accru de retard transactionnel.</translation>
+        <translation>Cu Replace-By-Fee (BIP-125) se poate creste taxa unei tranzactii dupa ce a fost trimisa. Fara aceasta optiune, o taxa mai mare e posibil sa fie recomandata pentru a compensa riscul crescut de intarziere a tranzactiei.</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>&amp;Tout effacer</translation>
+        <translation>Curăţă to&amp;ate</translation>
     </message>
     <message>
         <source>Balance:</source>
-        <translation>Solde :</translation>
+        <translation>Balanţă:</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation>Confirmer l’action d’envoi</translation>
+        <translation>Confirmă operaţiunea de trimitere</translation>
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation>E&amp;nvoyer</translation>
+        <translation>Trimit&amp;e</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Copier la quantité</translation>
+        <translation>Copiază cantitea</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <translation>Copiază suma</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Copier les frais</translation>
+        <translation>Copiază taxa</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Copier après les frais</translation>
+        <translation>Copiază după taxă</translation>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Copier les octets</translation>
+        <translation>Copiază octeţi</translation>
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Copier la poussière</translation>
+        <translation>Copiază praf</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Copier la monnaie</translation>
+        <translation>Copiază rest</translation>
     </message>
     <message>
         <source>%1 (%2 blocks)</source>
-        <translation>%1 (%2 blocs)</translation>
+        <translation>%1(%2 blocuri)</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation>%1 à %2</translation>
+        <translation>%1 la %2</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
-        <translation>Voulez-vous vraiment envoyer ?</translation>
+        <translation>Sigur doriţi să trimiteţi?</translation>
     </message>
     <message>
         <source>or</source>
-        <translation>ou</translation>
+        <translation>sau</translation>
     </message>
     <message>
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
-        <translation>Vous pouvez augmenter les frais ultérieurement (signale Remplacer-par-des-frais, BIP-125).</translation>
-    </message>
-    <message>
-        <source>from wallet %1</source>
-        <translation>du porte-monnaie %1</translation>
-    </message>
-    <message>
-        <source>Please, review your transaction.</source>
-        <translation>Veuillez vérifier votre transaction.</translation>
+        <translation>Puteti creste taxa mai tarziu (semnaleaza Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Frais de transaction</translation>
+        <translation>Taxă tranzacţie</translation>
     </message>
     <message>
         <source>Not signalling Replace-By-Fee, BIP-125.</source>
-        <translation>Ne signale pas Remplacer-par-des-frais, BIP-125.</translation>
-    </message>
-    <message>
-        <source>Total Amount</source>
-        <translation>Montant total</translation>
+        <translation>Nu se semnalizeaza Replace-By-Fee, BIP-125</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Confirmer l’envoi de pièces</translation>
+        <translation>Confirmă trimiterea monedelor</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
-        <translation>L’adresse du destinataire est invalide. Veuillez la revérifier.</translation>
+        <translation>Adresa destinatarului nu este validă. Rugăm să reverificaţi.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>Le montant à payer doit être supérieur à 0.</translation>
+        <translation>Suma de plată trebuie să fie mai mare decît 0.</translation>
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Le montant dépasse votre solde.</translation>
+        <translation>Suma depăşeşte soldul contului.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Le montant dépasse votre solde lorsque les frais de transaction de %1 sont inclus.</translation>
+        <translation>Totalul depăşeşte soldul contului dacă se include şi plata taxei de %1.</translation>
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Adresse identique trouvée : chaque adresse ne devrait être utilisée qu’une fois.</translation>
+        <translation>Adresă duplicat găsită: fiecare adresă ar trebui folosită o singură dată.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
-        <translation>Échec de création de la transaction !</translation>
+        <translation>Creare tranzacţie nereuşită!</translation>
     </message>
     <message>
         <source>The transaction was rejected with the following reason: %1</source>
-        <translation>La transaction a été rejetée pour la raison suivante : %1</translation>
+        <translation>Tranzactia a fost refuzata pentru urmatorul motiv: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
-        <translation>Des frais supérieurs à %1 sont considérés comme ridiculement élevés.</translation>
+        <translation> O taxă mai mare de %1 este considerată o taxă absurd de mare </translation>
     </message>
     <message>
         <source>Payment request expired.</source>
-        <translation>La demande de paiement a expiré</translation>
+        <translation>Cerere de plată expirata</translation>
     </message>
     <message>
         <source>Pay only the required fee of %1</source>
-        <translation>Payer seulement les frais exigés de %1</translation>
+        <translation>Plăteşte doar taxa solicitata de %1</translation>
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Il est estimé que la confirmation commencera dans %n bloc.</numerusform><numerusform>Il est estimé que la confirmation commencera dans %n blocs.</numerusform></translation>
+        <translation><numerusform>Se estimeaza inceperea confirmarii in %n bloc.</numerusform><numerusform>Se estimeaza inceperea confirmarii in %n blocuri.</numerusform><numerusform>Se estimeaza inceperea confirmarii in %n blocuri.</numerusform></translation>
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Avertissement : adresse kryptoFranc invalide</translation>
+        <translation>Atenţie: Adresa kryptofranc nevalidă!</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
-        <translation>Avertissement : adresse de monnaie inconnue</translation>
+        <translation>Atenţie: Adresă de rest necunoscută</translation>
     </message>
     <message>
         <source>Confirm custom change address</source>
-        <translation>Confimer l’adresse personnalisée de monnaie</translation>
+        <translation>Confirmati adresa personalizata de rest</translation>
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
-        <translation>L’adresse que vous avez sélectionnée pour la monnaie ne fait pas partie de ce porte-monnaie. Les fonds de ce porte-monnaie peuvent en partie ou en totalité être envoyés vers cette adresse. Êtes-vous certain ?</translation>
+        <translation>Adresa selectata pentru rest nu face parte din acest portofel. Orice suma, sau intreaga suma din portofel poate fi trimisa la aceasta adresa. Sunteti sigur?</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(fără etichetă)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
         <source>A&amp;mount:</source>
-        <translation>&amp;Montant :</translation>
+        <translation>Su&amp;mă:</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Payer à :</translation>
+        <translation>Plăteşte că&amp;tre:</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
-        <translation>É&amp;tiquette :</translation>
+        <translation>&amp;Etichetă:</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Choisir une adresse déjà utilisée</translation>
+        <translation>Alegeţi adrese folosite anterior</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
-        <translation>Ceci est un paiement normal.</translation>
+        <translation>Aceasta este o tranzacţie normală.</translation>
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>L’adresse kryptoFranc à laquelle envoyer le paiement</translation>
+        <translation>Adresa kryptofranc către care se face plata</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2383,7 +2315,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Coller l’adresse du presse-papiers</translation>
+        <translation>Lipeşte adresa din clipboard</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2391,92 +2323,92 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Remove this entry</source>
-        <translation>Retirer cette entrée</translation>
+        <translation>Înlătură această intrare</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Les frais seront déduits du montant envoyé. Le destinataire recevra moins de kryptofrancs que le montant saisi dans le champ de montant. Si plusieurs destinataires sont sélectionnés, les frais seront partagés également..</translation>
+        <translation>Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini kryptofranc decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
-        <translation>S&amp;oustraire les frais du montant</translation>
+        <translation>S&amp;cade taxa din suma</translation>
     </message>
     <message>
         <source>Use available balance</source>
-        <translation>Utiliser le solde disponible</translation>
+        <translation>Folosește balanța disponibilă</translation>
     </message>
     <message>
         <source>Message:</source>
-        <translation>Message :</translation>
+        <translation>Mesaj:</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
-        <translation>Cette demande de paiement n’est pas authentifiée.</translation>
+        <translation>Aceasta este o cerere de plata neautentificata.</translation>
     </message>
     <message>
         <source>This is an authenticated payment request.</source>
-        <translation>Cette demande de paiement est authentifiée.</translation>
+        <translation>Aceasta este o cerere de plata autentificata.</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Saisir une étiquette pour cette adresse afin de l’ajouter à la liste d’adresses utilisées</translation>
+        <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Un message qui était joint à l’URI kryptofranc: et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau kryptoFranc.</translation>
+        <translation>un mesaj a fost ataşat la kryptofranc: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua kryptofranc.</translation>
     </message>
     <message>
         <source>Pay To:</source>
-        <translation>Payer à :</translation>
+        <translation>Plăteşte către:</translation>
     </message>
     <message>
         <source>Memo:</source>
-        <translation>Mémo :</translation>
+        <translation>Memo:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Saisir une étiquette pour cette adresse afin de l’ajouter à votre carnet d’adresses</translation>
+        <translation>Introduceţi o etichetă pentru această adresă pentru a fi adăugată în lista dvs. de adrese</translation>
     </message>
 </context>
 <context>
     <name>SendConfirmationDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Oui</translation>
+        <translation>Da</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <source>%1 is shutting down...</source>
-        <translation>Arrêt de %1...</translation>
+        <translation>%1 se închide</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Ne pas éteindre l’ordinateur jusqu’à la disparition de cette fenêtre.</translation>
+        <translation>Nu închide calculatorul pînă ce această fereastră nu dispare.</translation>
     </message>
 </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Signer / vérifier un message</translation>
+        <translation>Semnaturi - Semnează/verifică un mesaj</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Signer un message</translation>
+        <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Vous pouvez signer des messages ou des accords avec vos adresses pour prouver que vous pouvez recevoir des kryptofrancs à ces dernières. Faites attention de ne rien signer de vague ou au hasard, car des attaques d’hameçonnage pourraient essayer de vous faire signer avec votre identité afin de l’usurper. Ne signez que des déclarations entièrement détaillées et avec lesquelles vous êtes d’accord.</translation>
+        <translation>Puteţi semna mesaje/contracte cu adresele dvs. pentru a demostra ca puteti primi kryptofranci trimisi la ele. Aveţi grijă să nu semnaţi nimic vag sau aleator, deoarece atacurile de tip phishing vă pot păcăli să le transferaţi identitatea. Semnaţi numai declaraţiile detaliate cu care sînteti de acord.</translation>
     </message>
     <message>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>L’adresse kryptoFranc avec laquelle signer le message</translation>
+        <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Choisir une adresse déjà utilisée</translation>
+        <translation>Alegeţi adrese folosite anterior</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2484,7 +2416,7 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Coller une adresse du presse-papiers</translation>
+        <translation>Lipeşte adresa copiată din clipboard</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2492,107 +2424,107 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Saisir ici le message que vous désirez signer</translation>
+        <translation>Introduceţi mesajul pe care vreţi să-l semnaţi, aici</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Signature</translation>
+        <translation>Semnătură</translation>
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Copier la signature actuelle dans le presse-papiers</translation>
+        <translation>Copiază semnatura curentă în clipboard-ul sistemului</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signer le message afin de prouver que vous détenez cette adresse kryptoFranc</translation>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă kryptoFranc</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>Signer le &amp;message</translation>
+        <translation>Semnează &amp;mesaj</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
-        <translation>Réinitialiser tous les champs de signature de message</translation>
+        <translation>Resetează toate cîmpurile mesajelor semnate</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>&amp;Tout effacer</translation>
+        <translation>Curăţă to&amp;ate</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Vérifier un message</translation>
+        <translation>&amp;Verifică mesaj</translation>
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Saisir ci-dessous l’adresse du destinataire, le message (s’assurer de copier fidèlement les retours à la ligne, les espaces, les tabulations, etc.) et la signature pour vérifier le message. Faire attention à ne pas déduire davantage de la signature que ce qui est contenu dans le message signé même, pour éviter d’être trompé par une attaque d’homme du milieu. Prendre en compte que cela ne fait que prouver que le signataire reçoit l’adresse et ne peut pas prouver la provenance d’une transaction !</translation>
+        <translation>Introduceţi adresa de semnatură, mesajul (asiguraţi-vă că aţi copiat spaţiile, taburile etc. exact) şi semnatura dedesubt pentru a verifica mesajul. Aveţi grijă să nu citiţi mai mult în semnatură decît mesajul în sine, pentru a evita să fiţi păcăliţi de un atac de tip man-in-the-middle. De notat ca aceasta dovedeste doar ca semnatarul primeste odata cu adresa, nu dovedesta insa trimiterea vreunei tranzactii.</translation>
     </message>
     <message>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>L’adresse kryptoFranc avec laquelle le message a été signé</translation>
+        <translation>Introduceţi o adresă kryptoFranc</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Vérifier le message pour s’assurer qu’il a été signé avec l’adresse kryptoFranc indiquée</translation>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa kryptoFranc specificată</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
-        <translation>Vérifier le &amp;message</translation>
+        <translation>Verifică &amp;mesaj</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation>Réinitialiser tous les champs de vérification de message</translation>
+        <translation>Resetează toate cîmpurile mesajelor semnate</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
-        <translation>Cliquez sur « Signer le message » pour générer la signature</translation>
+        <translation>Faceţi clic pe "Semneaza msaj" pentru a genera semnătura</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>L’adresse saisie est invalide.</translation>
+        <translation>Adresa introdusă este invalidă.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Veuillez vérifier l’adresse et ressayer.</translation>
+        <translation>Vă rugăm verificaţi adresa şi încercaţi din nou.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>L’adresse saisie ne fait pas référence à une clé.</translation>
+        <translation>Adresa introdusă nu se referă la o cheie.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Le déverrouillage du porte-monnaie a été annulé.</translation>
+        <translation>Deblocarea portofelului a fost anulata.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>La clé privée pour l’adresse saisie n’est pas disponible.</translation>
+        <translation>Cheia privată pentru adresa introdusă nu este disponibila.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Échec de signature du message.</translation>
+        <translation>Semnarea mesajului nu a reuşit.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Le message a été signé.</translation>
+        <translation>Mesaj semnat.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
-        <translation>La signature n’a pu être décodée.</translation>
+        <translation>Semnatura nu a putut fi decodată.</translation>
     </message>
     <message>
         <source>Please check the signature and try again.</source>
-        <translation>Veuillez vérifier la signature et ressayer.</translation>
+        <translation>Vă rugăm verificaţi semnătura şi încercaţi din nou.</translation>
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>La signature ne correspond pas au condensé du message.</translation>
+        <translation>Semnatura nu se potriveşte cu mesajul.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Échec de vérification du message.</translation>
+        <translation>Verificarea mesajului nu a reuşit.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Le message a été vérifié.</translation>
+        <translation>Mesaj verificat. </translation>
     </message>
 </context>
 <context>
@@ -2606,1054 +2538,1014 @@ Note : Les frais étant calculés par octet, des frais de « 100 satoshis par
     <name>TrafficGraphWidget</name>
     <message>
         <source>KB/s</source>
-        <translation>Ko/s</translation>
+        <translation>KB/s</translation>
     </message>
 </context>
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ouvert pendant encore %n bloc</numerusform><numerusform>Ouvert pendant encore %n blocs</numerusform></translation>
+        <translation><numerusform>Deschis pentru inca un bloc</numerusform><numerusform>Deschis pentru inca %n blocuri</numerusform><numerusform>Deschis pentru inca %n blocuri</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Ouvert jusqu’à %1</translation>
+        <translation>Deschis pînă la %1</translation>
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
-        <translation>est en conflit avec une transaction ayant %1 confirmations</translation>
+        <translation>in conflict cu o tranzactie cu %1 confirmari</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
-        <translation>0/non confirmées, %1</translation>
+        <translation>0/neconfirmat, %1</translation>
     </message>
     <message>
         <source>in memory pool</source>
-        <translation>dans la réserve de mémoire</translation>
+        <translation>in memory pool</translation>
     </message>
     <message>
         <source>not in memory pool</source>
-        <translation>pas dans la réserve de mémoire</translation>
+        <translation>nu e in memory pool</translation>
     </message>
     <message>
         <source>abandoned</source>
-        <translation>abandonnée</translation>
+        <translation>abandonat</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
-        <translation>%1/non confirmée</translation>
+        <translation>%1/neconfirmat</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation>%1 confirmations</translation>
+        <translation>%1 confirmări</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>État</translation>
+        <translation>Stare</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation>Source</translation>
+        <translation>Sursa</translation>
     </message>
     <message>
         <source>Generated</source>
-        <translation>Générée</translation>
+        <translation>Generat</translation>
     </message>
     <message>
         <source>From</source>
-        <translation>De</translation>
+        <translation>De la</translation>
     </message>
     <message>
         <source>unknown</source>
-        <translation>inconnue</translation>
+        <translation>necunoscut</translation>
     </message>
     <message>
         <source>To</source>
-        <translation>À</translation>
+        <translation>Către</translation>
     </message>
     <message>
         <source>own address</source>
-        <translation>votre adresse</translation>
+        <translation>adresa proprie</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>juste-regarder</translation>
+        <translation>doar-supraveghere</translation>
     </message>
     <message>
         <source>label</source>
-        <translation>étiquette</translation>
+        <translation>etichetă</translation>
     </message>
     <message>
         <source>Credit</source>
-        <translation>Crédit</translation>
+        <translation>Credit</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>arrivera à maturité dans %n bloc</numerusform><numerusform>arrivera à maturité dans %n blocs</numerusform></translation>
+        <translation><numerusform>se matureaza intr-un bloc</numerusform><numerusform>se matureaza in %n blocuri</numerusform><numerusform>se matureaza in %n blocuri</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
-        <translation>refusée</translation>
+        <translation>neacceptat</translation>
     </message>
     <message>
         <source>Debit</source>
-        <translation>Débit</translation>
+        <translation>Debit</translation>
     </message>
     <message>
         <source>Total debit</source>
-        <translation>Débit total</translation>
+        <translation>Total debit</translation>
     </message>
     <message>
         <source>Total credit</source>
-        <translation>Crédit total</translation>
+        <translation>Total credit</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Frais de transaction</translation>
+        <translation>Taxă tranzacţie</translation>
     </message>
     <message>
         <source>Net amount</source>
-        <translation>Montant net</translation>
+        <translation>Suma netă</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation>Mesaj</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Commentaire</translation>
+        <translation>Comentariu</translation>
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>ID de la transaction</translation>
+        <translation>ID tranzacţie</translation>
     </message>
     <message>
         <source>Transaction total size</source>
-        <translation>Taille totale de la transaction</translation>
-    </message>
-    <message>
-        <source>Transaction virtual size</source>
-        <translation>Taille virtuelle de la transaction</translation>
+        <translation>Dimensiune totala tranzacţie</translation>
     </message>
     <message>
         <source>Output index</source>
-        <translation>Index de sorties</translation>
+        <translation>Index debit</translation>
     </message>
     <message>
         <source>Merchant</source>
-        <translation>Marchand</translation>
+        <translation>Comerciant</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Les pièces générées doivent mûrir pendant %1 blocs avant de pouvoir être dépensées. Lorsque ce bloc a été généré, il a été diffusé sur le réseau pour être ajouté à la chaîne de blocs. Si son intégration à la chaîne échoue, son état sera modifié en « refusée » et il ne sera pas possible de le dépenser. Cela peut arriver occasionnellement si un autre nœud génère un bloc à quelques secondes du vôtre.</translation>
+        <translation>Monedele generate se pot cheltui doar dupa inca %1 blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat in blockchain.  Dacă nu poate fi inclus in lanţ, starea sa va deveni "neacceptat" si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
     </message>
     <message>
         <source>Debug information</source>
-        <translation>Informations de débogage</translation>
+        <translation>Informaţii pentru depanare</translation>
     </message>
     <message>
         <source>Transaction</source>
-        <translation>Transaction</translation>
+        <translation>Tranzacţie</translation>
     </message>
     <message>
         <source>Inputs</source>
-        <translation>Entrées</translation>
+        <translation>Intrări</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Montant</translation>
+        <translation>Cantitate</translation>
     </message>
     <message>
         <source>true</source>
-        <translation>vrai</translation>
+        <translation>adevărat</translation>
     </message>
     <message>
         <source>false</source>
-        <translation>faux</translation>
+        <translation>fals</translation>
     </message>
 </context>
 <context>
     <name>TransactionDescDialog</name>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Ce panneau affiche une description détaillée de la transaction</translation>
+        <translation>Acest panou arată o descriere detaliată a tranzacţiei</translation>
     </message>
     <message>
         <source>Details for %1</source>
-        <translation>Détails de %1</translation>
+        <translation>Detalii pentru %1</translation>
     </message>
 </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Tip</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ouvert pendant encore %n bloc</numerusform><numerusform>Ouvert pendant encore %n blocs</numerusform></translation>
+        <translation>Etichetă</translation>
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Ouvert jusqu’à %1</translation>
+        <translation>Deschis pînă la %1</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Non confirmée</translation>
+        <translation>Neconfirmat</translation>
     </message>
     <message>
         <source>Abandoned</source>
-        <translation>Abandonnée</translation>
+        <translation>Abandonat</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Confirmation (%1 sur %2 confirmations recommandées)</translation>
+        <translation>Confirmare (%1 din %2 confirmari recomandate)</translation>
     </message>
     <message>
         <source>Confirmed (%1 confirmations)</source>
-        <translation>Confirmée (%1 confirmations)</translation>
+        <translation>Confirmat (%1 confirmari)</translation>
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>En conflit</translation>
+        <translation>În conflict</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Immature (%1 confirmations, sera disponible après %2)</translation>
+        <translation>Imatur (%1 confirmari, va fi disponibil după %2)</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
-        <translation>Générée mais refusée</translation>
+        <translation>Generat dar neacceptat</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Reçue avec</translation>
+        <translation>Recepţionat cu</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>Reçue de</translation>
+        <translation>Primit de la</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Envoyée à</translation>
+        <translation>Trimis către</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
-        <translation>Paiement à vous-même</translation>
+        <translation>Plată către dvs.</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Miné</translation>
+        <translation>Minat</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>juste-regarder</translation>
+        <translation>doar-supraveghere</translation>
     </message>
     <message>
         <source>(n/a)</source>
-        <translation>(n.d)</translation>
+        <translation>(indisponibil)</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
+        <translation>(fără etichetă)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>État de la transaction. Survoler ce champ avec la souris pour afficher le nombre de confirmations.</translation>
+        <translation>Starea tranzacţiei. Treceţi cu mouse-ul peste acest cîmp pentru afişarea numărului de confirmari.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
-        <translation>Date et heure de réception de la transaction.</translation>
+        <translation>Data şi ora la care a fost recepţionată tranzacţia.</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
-        <translation>Type de transaction.</translation>
+        <translation>Tipul tranzacţiei.</translation>
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Une adresse juste-regarder est-elle ou non impliquée dans cette transaction.</translation>
+        <translation>Indiferent dacă sau nu o adresa doar-suăpraveghere este implicată în această tranzacţie.</translation>
     </message>
     <message>
         <source>User-defined intent/purpose of the transaction.</source>
-        <translation>Intention/but de la transaction défini par l’utilisateur.</translation>
+        <translation>Intentie/scop al tranzactie definit de user.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
-        <translation>Le montant a été ajouté ou soustrait du solde.</translation>
+        <translation>Suma extrasă sau adăugată la sold.</translation>
     </message>
 </context>
 <context>
     <name>TransactionView</name>
     <message>
         <source>All</source>
-        <translation>Toutes</translation>
+        <translation>Toate</translation>
     </message>
     <message>
         <source>Today</source>
-        <translation>Aujourd’hui</translation>
+        <translation>Astăzi</translation>
     </message>
     <message>
         <source>This week</source>
-        <translation>Cette semaine</translation>
+        <translation>Saptamana aceasta</translation>
     </message>
     <message>
         <source>This month</source>
-        <translation>Ce mois</translation>
+        <translation>Luna aceasta</translation>
     </message>
     <message>
         <source>Last month</source>
-        <translation>Le mois dernier</translation>
+        <translation>Luna trecuta</translation>
     </message>
     <message>
         <source>This year</source>
-        <translation>Cette année</translation>
+        <translation>Anul acesta</translation>
     </message>
     <message>
         <source>Range...</source>
-        <translation>Plage…</translation>
+        <translation>Interval...</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Reçue avec</translation>
+        <translation>Recepţionat cu</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Envoyée à</translation>
+        <translation>Trimis către</translation>
     </message>
     <message>
         <source>To yourself</source>
-        <translation>À vous-même</translation>
+        <translation>Către dvs.</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Miné </translation>
+        <translation>Minat</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Autres </translation>
+        <translation>Altele</translation>
     </message>
     <message>
         <source>Enter address, transaction id, or label to search</source>
-        <translation>Saisir l’adresse, l’ID de transaction ou l’étiquette à chercher</translation>
+        <translation>Introduceți adresa, ID-ul tranzacției, sau eticheta pentru a căuta</translation>
     </message>
     <message>
         <source>Min amount</source>
-        <translation>Montant min.</translation>
+        <translation>Suma minimă</translation>
     </message>
     <message>
         <source>Abandon transaction</source>
-        <translation>Abandonner la transaction</translation>
+        <translation>Abandoneaza tranzacţia</translation>
     </message>
     <message>
         <source>Increase transaction fee</source>
-        <translation>Augmenter les frais de transaction</translation>
+        <translation>Cresteti comisionul pentru tranzacţie</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copier l’adresse</translation>
+        <translation>Copiază adresa</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Copier l’étiquette </translation>
+        <translation>Copiază eticheta</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Copier le montant </translation>
+        <translation>Copiază suma</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Copier l’ID de la transaction</translation>
+        <translation>Copiază ID tranzacţie</translation>
     </message>
     <message>
         <source>Copy raw transaction</source>
-        <translation>Copier la transaction brute</translation>
+        <translation>Copiază tranzacţia bruta</translation>
     </message>
     <message>
         <source>Copy full transaction details</source>
-        <translation>Copier tous les détails de la transaction</translation>
+        <translation>Copiaza toate detaliile tranzacţiei</translation>
     </message>
     <message>
         <source>Edit label</source>
-        <translation>Modifier l’étiquette </translation>
+        <translation>Editează eticheta</translation>
     </message>
     <message>
         <source>Show transaction details</source>
-        <translation>Afficher les détails de la transaction</translation>
+        <translation>Arată detaliile tranzacţiei</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
-        <translation>Exporter l’historique transactionnel</translation>
+        <translation>Export istoric tranzacţii</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Valeurs séparées par des virgules (*.csv)</translation>
+        <translation>Fisier .csv cu separator - virgula</translation>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>Confirmée</translation>
+        <translation>Confirmat</translation>
     </message>
     <message>
         <source>Watch-only</source>
-        <translation>Juste-regarder</translation>
+        <translation>Doar-supraveghere</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Date </translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Type </translation>
+        <translation>Tip</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Étiquette</translation>
+        <translation>Etichetă</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Adresse</translation>
+        <translation>Adresă</translation>
     </message>
     <message>
         <source>ID</source>
-        <translation>ID </translation>
+        <translation>ID</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Échec d’exportation</translation>
+        <translation>Exportarea a eșuat</translation>
     </message>
     <message>
         <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Une erreur est survenue lors de l’enregistrement de l’historique transactionnel vers %1.</translation>
+        <translation>S-a produs o eroare la salvarea istoricului tranzacţiilor la %1.</translation>
     </message>
     <message>
         <source>Exporting Successful</source>
-        <translation>L’exportation est réussie</translation>
+        <translation>Export reuşit</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation>L’historique transactionnel a été enregistré avec succès vers %1.</translation>
+        <translation>Istoricul tranzacţiilor a fost salvat cu succes la %1.</translation>
     </message>
     <message>
         <source>Range:</source>
-        <translation>Plage :</translation>
+        <translation>Interval:</translation>
     </message>
     <message>
         <source>to</source>
-        <translation>à </translation>
+        <translation>către</translation>
     </message>
 </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Unité d’affichage des montants. Cliquer pour choisir une autre unité.</translation>
+        <translation>Unitatea în care sînt arătate sumele. Faceţi clic pentru a selecta o altă unitate.</translation>
     </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
-        <translation>Aucun porte-monnaie n’a été chargé.</translation>
+        <translation>Nu a fost încărcat nici un portofel.</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Envoyer des pièces</translation>
+        <translation>Trimite monede</translation>
     </message>
     <message>
         <source>Fee bump error</source>
-        <translation>Erreur d’augmentation des frais</translation>
+        <translation>Eroare in cresterea taxei</translation>
     </message>
     <message>
         <source>Increasing transaction fee failed</source>
-        <translation>Échec d’augmentation des frais de transaction</translation>
+        <translation>Cresterea comisionului pentru tranzactie a esuat.</translation>
     </message>
     <message>
         <source>Do you want to increase the fee?</source>
-        <translation>Souhaitez-vous augmenter les frais ?</translation>
+        <translation>Doriti sa cresteti taxa de tranzactie?</translation>
     </message>
     <message>
         <source>Current fee:</source>
-        <translation>Frais actuels :</translation>
+        <translation>Comision curent:</translation>
     </message>
     <message>
         <source>Increase:</source>
-        <translation>Augmentation :</translation>
+        <translation>Crestere:</translation>
     </message>
     <message>
         <source>New fee:</source>
-        <translation>Nouveaux frais :</translation>
+        <translation>Noul comision:</translation>
     </message>
     <message>
         <source>Confirm fee bump</source>
-        <translation>Confirmer l’augmentation des frais</translation>
+        <translation>Confirma cresterea comisionului</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
-        <translation>Impossible de signer la transaction.</translation>
+        <translation>Nu s-a reuşit semnarea tranzacţiei</translation>
     </message>
     <message>
         <source>Could not commit transaction</source>
-        <translation>Impossible de valider la transaction</translation>
+        <translation>Tranzactia nu a putut fi consemnata.</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exporter</translation>
+        <translation>&amp;Export</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Exporter les données de l’onglet actuel vers un fichier</translation>
+        <translation>Exportă datele din tab-ul curent într-un fişier</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
-        <translation>Sauvegarder le porte-monnaie</translation>
+        <translation>Backup portofelul electronic</translation>
     </message>
     <message>
         <source>Wallet Data (*.dat)</source>
-        <translation>Données du porte-monnaie (*.dat)</translation>
+        <translation>Date portofel (*.dat)</translation>
     </message>
     <message>
         <source>Backup Failed</source>
-        <translation>Échec de la sauvegarde</translation>
+        <translation>Backup esuat</translation>
     </message>
     <message>
         <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Une erreur est survenue lors de l’enregistrement des données du porte-monnaie vers %1.</translation>
+        <translation>S-a produs o eroare la salvarea datelor portofelului la %1.</translation>
     </message>
     <message>
         <source>Backup Successful</source>
-        <translation>La sauvegarde est réussie</translation>
+        <translation>Backup efectuat cu succes</translation>
     </message>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
-        <translation>Les données du porte-monnaie ont été enregistrées avec succès vers %1</translation>
+        <translation>Datele portofelului s-au salvat cu succes la %1.</translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Annuler</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>Distribué sous la licence MIT d’utilisation d’un logiciel. Consulter le fichier joint %s ou %s</translation>
+        <translation>Distribuit sub licenţa de programe MIT, vezi fişierul însoţitor %s sau %s</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation>L’élagage est configuré au-dessous du minimum de %d Mio. Veuillez utiliser un nombre plus élevé.</translation>
+        <translation>Reductia e configurata sub minimul de %d MiB. Rugam folositi un numar mai mare.</translation>
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Élagage : la dernière synchronisation de porte-monnaie va par-delà les données élaguées.  Vous devez -reindex (réindexer, télécharger de nouveau toute la chaîne de blocs en cas de nœud élagué)</translation>
+        <translation>Reductie: ultima sincronizare merge dincolo de datele reductiei. Trebuie sa faceti -reindex (sa descarcati din nou intregul blockchain in cazul unui nod redus)</translation>
     </message>
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Les rebalayages sont impossibles en mode élagage. Vous devrez utiliser -reindex, ce qui téléchargera de nouveau la chaîne de blocs en entier.</translation>
+        <translation>Rescanarile nu sunt posibile in modul redus. Va trebui sa folositi -reindex, ceea ce va descarca din nou intregul blockchain.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Erreur : Une erreur interne fatale s’est produite. Voir debug.log pour plus de détails</translation>
+        <translation>Eroare: S-a produs o eroare interna fatala, vedeti debug.log pentru detalii</translation>
     </message>
     <message>
         <source>Pruning blockstore...</source>
-        <translation>Élagage du magasin de blocs...</translation>
+        <translation>Reductie blockstore...</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
+        <translation>Imposibil de pornit serverul HTTP. Pentru detalii vezi logul de depanare.</translation>
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>kryptoFranc Core</translation>
+        <translation>Nucleul kryptoFranc</translation>
     </message>
     <message>
         <source>The %s developers</source>
-        <translation>Les développeurs de %s</translation>
+        <translation>Dezvoltatorii %s</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
-        <translation>Impossible d’obtenir un verrou sur le répertoire de données %s. %s fonctionne probablement déjà.</translation>
+        <translation>Nu se poate obține o blocare a directorului de date %s. %s probabil rulează deja.</translation>
     </message>
     <message>
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
-        <translation>Il est impossible de fournir des connexions particulières et en même temps demander à addrman de trouver les connexions sortantes.</translation>
+        <translation>Nu se pot furniza conexiuni specifice in acelasi timp in care addrman este folosit pentru a gasi conexiuni de iesire.</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Erreur de lecture de %s ! Toutes les clés ont été lues correctement, mais les données transactionnelles ou les entrées du carnet d’adresses sont peut-être manquantes ou incorrectes.</translation>
+        <translation>Eroare la citirea %s! Toate cheile sînt citite corect, dar datele tranzactiei sau anumite intrări din agenda sînt incorecte sau lipsesc.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
-        <translation>Veuillez vérifier que l’heure et la date de votre ordinateur sont justes ! Si votre horloge n’est pas à l’heure, %s ne fonctionnera pas correctement.</translation>
+        <translation>Vă rugăm verificaţi dacă data/timpul calculatorului dvs. sînt corecte! Dacă ceasul calcultorului este gresit, %s nu va funcţiona corect.</translation>
     </message>
     <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
-        <translation>Si vous trouvez %s utile, vous pouvez y contribuer. Vous trouverez davantage d’informations à propos du logiciel sur %s.</translation>
+        <translation>Va rugam sa contribuiti daca apreciati ca %s va este util. Vizitati %s pentru mai multe informatii despre software.</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>La base de données de blocs contient un bloc qui semble provenir du futur. Cela pourrait être causé par la date et l’heure erronées de votre ordinateur. Ne reconstruisez la base de données de blocs que si vous êtes certain que la date et l’heure de votre ordinateur sont justes.</translation>
+        <translation>Baza de date a blocurilor contine un bloc ce pare a fi din viitor. Acest lucru poate fi cauzat de setarea incorecta a datei si orei in computerul dvs. Reconstruiti baza de date a blocurilor doar daca sunteti sigur ca data si ora calculatorului dvs sunt corecte.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Ceci est une préversion de test - son utilisation est entièrement à vos risques - ne pas l’utiliser pour miner ou pour des applications marchandes</translation>
+        <translation>Aceasta este o versiune de test preliminară - vă asumaţi riscul folosind-o - nu folosiţi pentru minerit sau aplicaţiile comercianţilor</translation>
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>Les frais de transaction que vous pouvez ignorer si la monnaie rendue est inférieure à la poussière à ce niveau</translation>
+        <translation>Aceasta este taxa de tranzactie la care puteti renunta daca restul este mai mic decat praful la acest nivel.</translation>
     </message>
     <message>
         <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
-        <translation>Impossible de relire les blocs. Vous devrez reconstruire la base de données en utilisant -reindex-chainstate.</translation>
+        <translation>Imposibil de refacut blocurile. Va trebui sa reconstruiti baza de date folosind -reindex-chainstate.</translation>
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
-        <translation>Impossible de rebobiner la base de données à un état préfourche. Vous devrez retélécharger la chaîne de blocs</translation>
+        <translation>Imposibil de a readuce baza de date la statusul pre-fork. Va trebui redescarcat blockchainul.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Avertissement : le réseau ne semble pas totalement d’accord ! Certains mineurs semblent éprouver des problèmes.</translation>
+        <translation>Atenţie: Reţeaua nu pare să fie de acord în totalitate! Aparent nişte mineri au probleme.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Avertissement : nous ne semblons pas être en accord complet avec nos pairs ! Une mise à niveau pourrait être nécessaire pour vous ou pour d’autres nœuds du réseau.</translation>
+        <translation>Atenţie: Aparent, nu sîntem de acord cu toţi partenerii noştri! Va trebui să faceţi o actualizare, sau alte noduri necesită actualizare.</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>
-        <translation>%d des 100 derniers blocs ont une version inattendue</translation>
+        <translation>%d din ultimele 100 blocuri a o versiune neasteptata</translation>
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
-        <translation>%s corrompu, la récupération a échoué</translation>
+        <translation>%s corupt, salvare nereuşită</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
-        <translation>-maxmempool doit être d’au moins %d Mo</translation>
+        <translation>-maxmempool trebuie sa fie macar %d MB</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
-        <translation>Impossible de résoudre l’adresse -%s : « %s »</translation>
+        <translation>Nu se poate rezolva adresa -%s: '%s'</translation>
     </message>
     <message>
         <source>Change index out of range</source>
-        <translation>L’index de changement est hors échelle</translation>
+        <translation>Indexul de schimbare este iesit din parametrii</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
-        <translation>Tous droits réservés (C) %i-%i</translation>
+        <translation>Copyright (C) %i-%i</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
-        <translation>Une base de données de blocs corrompue a été détectée</translation>
+        <translation>Bloc defect din baza de date detectat</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Voulez-vous reconstruire la base de données de blocs maintenant ?</translation>
+        <translation>Doriţi să reconstruiţi baza de date blocuri acum?</translation>
     </message>
     <message>
         <source>Error creating %s: You can't create non-HD wallets with this version.</source>
-        <translation>Erreur de création de %s : vous ne pouvez pas créer de porte-monnaie non HD avec cette version.</translation>
+        <translation>Eroare la crearea %s: Nu se pot crea portofele non-HD cu aceasta versiune.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Erreur d’initialisation de la base de données de blocs</translation>
+        <translation>Eroare la iniţializarea bazei de date de blocuri</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Erreur d’initialisation de l’environnement de la base de données du porte-monnaie %s !</translation>
+        <translation>Eroare la iniţializarea mediului de bază de date a portofelului %s!</translation>
     </message>
     <message>
         <source>Error loading %s</source>
-        <translation>Erreur de chargement de %s</translation>
-    </message>
-    <message>
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>Erreur de chargement de %s : les clés privées ne peuvent être désactivées qu’à la création.</translation>
+        <translation>Eroare la încărcarea %s</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet corrupted</source>
-        <translation>Erreur de chargement de %s : porte-monnaie corrompu</translation>
+        <translation>Eroare la încărcarea %s: Portofel corupt</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet requires newer version of %s</source>
-        <translation>Erreur de chargement de %s : le porte-monnaie exige une version plus récente de %s</translation>
+        <translation>Eroare la încărcarea %s: Portofelul are nevoie de o versiune %s mai nouă</translation>
     </message>
     <message>
         <source>Error loading block database</source>
-        <translation>Erreur de chargement de la base de données de blocs</translation>
+        <translation>Eroare la încărcarea bazei de date de blocuri</translation>
     </message>
     <message>
         <source>Error opening block database</source>
-        <translation>Erreur d’ouverture de la base de données de blocs</translation>
+        <translation>Eroare la deschiderea bazei de date de blocuri</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
-        <translation>Erreur : Il reste peu d’espace disque !</translation>
+        <translation>Eroare: Spaţiu pe disc redus!</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Échec d’écoute sur un port quelconque. Utiliser -listen=0 si vous le voulez.</translation>
+        <translation>Nu s-a reuşit ascultarea pe orice port. Folosiţi -listen=0 dacă vreţi asta.</translation>
     </message>
     <message>
         <source>Failed to rescan the wallet during initialization</source>
-        <translation>Échec de réanalyse du porte-monnaie lors de l’initialisation</translation>
+        <translation>Rescanarea portofelului in timpul initializarii a esuat.</translation>
     </message>
     <message>
         <source>Importing...</source>
-        <translation>Importation...</translation>
+        <translation>Import...</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Bloc de genèse incorrect ou introuvable. Mauvais datadir pour le réseau ?</translation>
+        <translation>Incorect sau nici un bloc de geneza găsit. Directorul de retea greşit?</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
-        <translation>L’initialisation du test de cohérence a échoué. %s est en cours de fermeture. </translation>
+        <translation>Nu s-a reuşit iniţierea verificării sănătăţii. %s se inchide.</translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Montant invalide pour -%s=&lt;amount&gt; : « %s »</translation>
+        <translation>Sumă nevalidă pentru -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
-        <translation>Montant invalide pour -discardfee=&lt;amount&gt; : « %s »</translation>
+        <translation>Sumă nevalidă pentru -discardfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
-        <translation>Montant invalide pour -fallbackfee=&lt;amount&gt; : « %s »</translation>
-    </message>
-    <message>
-        <source>Upgrading txindex database</source>
-        <translation>Mise à niveau de la base de données txindex</translation>
+        <translation>Suma nevalidă pentru -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>
-        <translation>Chargement des adresses P2P...</translation>
+        <translation>Încărcare adrese P2P...</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
-        <translation>Chargement de la liste d’interdiction...</translation>
+        <translation>Încărcare banlist...</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
-        <translation>Pas assez de descripteurs de fichiers proposés.</translation>
+        <translation>Nu sînt destule descriptoare disponibile.</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
-        <translation>L’élagage ne peut pas être configuré avec une valeur négative.</translation>
+        <translation>Reductia nu poate fi configurata cu o valoare negativa.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
-        <translation>Le mode élagage n’est pas compatible avec -txindex.</translation>
+        <translation>Modul redus este incompatibil cu -txindex.</translation>
     </message>
     <message>
         <source>Replaying blocks...</source>
-        <translation>Relecture des blocs...</translation>
+        <translation>Se reiau blocurile...</translation>
     </message>
     <message>
         <source>Rewinding blocks...</source>
-        <translation>Rebobinage des blocs...</translation>
+        <translation>Se deruleaza blocurile...</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
-        <translation>Le code source se trouve sur %s.</translation>
+        <translation>Codul sursa este disponibil la %s.</translation>
     </message>
     <message>
         <source>Transaction fee and change calculation failed</source>
-        <translation>Échec du calcul des frais de transaction et de la monnaie</translation>
+        <translation>Calcului taxei de tranzactie si a restului a esuat.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
-        <translation>Impossible de se lier à %s sur cet ordinateur. %s fonctionne probablement déjà.</translation>
-    </message>
-    <message>
-        <source>Unable to generate keys</source>
-        <translation>Impossible de générer les clés</translation>
+        <translation>Nu se poate efectua legatura la %s pe acest computer. %s probabil ruleaza deja.</translation>
     </message>
     <message>
         <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Argument non pris en charge -benchmark ignoré, utiliser -debug=bench.</translation>
+        <translation>Argumentul nesuportat -benchmark este ignorat, folositi debug=bench.</translation>
     </message>
     <message>
         <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Argument non pris en charge -debugnet ignoré, utiliser -debug=net.</translation>
+        <translation>Argument nesuportat -debugnet ignorat, folosiţi -debug=net.</translation>
     </message>
     <message>
         <source>Unsupported argument -tor found, use -onion.</source>
-        <translation>Argument non pris en charge -tor trouvé, utiliser -onion</translation>
+        <translation>Argument nesuportat -tor găsit, folosiţi -onion.</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
-        <translation>Catégorie de journalisation non prise en charge %s=%s.</translation>
+        <translation>Categoria de logging %s=%s nu este suportata.</translation>
     </message>
     <message>
         <source>Upgrading UTXO database</source>
-        <translation>Mise à niveau de la base de données UTXO</translation>
+        <translation>Actualizarea bazei de date UTXO</translation>
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation>Le commentaire d’agent utilisateur (%s) contient des caractères dangereux.</translation>
+        <translation>Comentariul (%s) al Agentului Utilizator contine caractere nesigure.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
-        <translation>Vérification des blocs... </translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart %s to complete</source>
-        <translation>Le porte-monnaie devait être réécrit : redémarrer %s pour terminer l’opération.</translation>
+        <translation>Se verifică blocurile...</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Erreur : L’écoute des connexions entrantes a échoué (l’écoute a retourné l’erreur %s)</translation>
+        <translation>Eroare: Ascultarea conexiunilor de intrare nu a reuşit (ascultarea a reurnat eroarea %s)</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Montant invalide pour -maxtxfee=&lt;amount&gt; : « %s » (doit être au moins les frais minrelay de %s pour prévenir le blocage des transactions)</translation>
+        <translation>Sumă nevalidă pentru -maxtxfee=&lt;amount&gt;: '%s' (trebuie să fie cel puţin taxa minrelay de %s pentru a preveni blocarea tranzactiilor)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
-        <translation>Le montant de la transaction est trop bas pour être envoyé une fois que les frais ont été déduits</translation>
+        <translation>Suma tranzactiei este prea mica pentru a fi trimisa dupa ce se scade taxa.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
-        <translation>Vous devez reconstruire la base de données en utilisant -reindex afin de revenir au mode sans élagage. Cela retéléchargera complètement la chaîne de blocs.</translation>
+        <translation>Trebuie reconstruita intreaga baza de date folosind -reindex pentru a va intoarce la modul non-redus. Aceasta va determina descarcarea din nou a intregului blockchain</translation>
     </message>
     <message>
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
-        <translation>Erreur de chargement de %s : vous ne pouvez pas désactiver HD sur un porte-monnaie HD existant</translation>
+        <translation>Eroare la incarcarea %s: Nu se poate dezactiva HD la un portofel care este deja HD.</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
-        <translation>Erreur de lecture de la base de données, fermeture en cours.</translation>
+        <translation>Eroare la citirea bazei de date. Oprire.</translation>
     </message>
     <message>
         <source>Error upgrading chainstate database</source>
-        <translation>Erreur de mise à niveau de la base de données d’état de la chaîne</translation>
+        <translation>Eroare la actualizarea bazei de date chainstate</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informations</translation>
+        <translation>Informaţie</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Adresse ou nom d’hôte -onion invalide : « %s »</translation>
+        <translation>Adresa sau hostname -onion invalide: '%s'</translation>
     </message>
     <message>
         <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Adresse ou nom d’hôte -proxy invalide : « %s »</translation>
+        <translation>Adresa sau hostname -proxy invalide: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Montant invalide pour -paytxfee=&lt;montant&gt; : « %s » (doit être au moins %s)</translation>
+        <translation>Sumă nevalidă pentru -paytxfee=&lt;suma&gt;: '%s' (trebuie să fie cel puţin %s)</translation>
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Masque réseau invalide indiqué dans -whitelist : « %s »</translation>
+        <translation>Mască reţea nevalidă specificată în -whitelist: '%s'</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Un port doit être précisé avec -whitebind : « %s »</translation>
+        <translation>Trebuie să specificaţi un port cu -whitebind: '%s'</translation>
     </message>
     <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
-        <translation>Réduction de -maxconnections de %d à %d, due aux restrictions du système</translation>
+        <translation>Se micsoreaza -maxconnections de la %d la %d, datorita limitarilor de sistem.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation>Échec de signature de la transaction</translation>
+        <translation>Nu s-a reuşit semnarea tranzacţiei</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>Nu exista -walletdir "%s" specificat</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>-walletdir "%s" specificat este o cale relativa</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
-        <translation>Le montant de la transaction est trop bas pour que les frais soient payés</translation>
+        <translation>Suma tranzactiei este prea mica pentru plata taxei</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
-        <translation>Ceci est un logiciel expérimental.</translation>
+        <translation>Acesta este un program experimental.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Le montant de la transaction est trop bas</translation>
+        <translation>Suma tranzacţionată este prea mică</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
-        <translation>La transaction est trop grosse pour la politique de frais</translation>
+        <translation>Tranzacţia are suma prea mare pentru a beneficia de gratuitate</translation>
     </message>
     <message>
         <source>Transaction too large</source>
-        <translation>La transaction est trop grosse</translation>
+        <translation>Tranzacţie prea mare</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Impossible de se lier à %s sur cet ordinateur (bind a retourné l’erreur %s)</translation>
+        <translation>Nu se poate lega la %s pe acest calculator. (Legarea a întors eroarea %s)</translation>
     </message>
     <message>
         <source>Unable to generate initial keys</source>
-        <translation>Impossible de générer les clés initiales</translation>
+        <translation>Nu s-au putut genera cheile initiale</translation>
     </message>
     <message>
         <source>Verifying wallet(s)...</source>
-        <translation>Vérification des porte-monnaie...</translation>
+        <translation>Se verifică portofelul(ele)...</translation>
     </message>
     <message>
         <source>Wallet %s resides outside wallet directory %s</source>
-        <translation>Le porte-monnaie %s se trouve en dehors du répertoire de porte-monnaie %s</translation>
+        <translation>Portofelul %s se află în afara directorului portofelului %s</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Avertissement</translation>
+        <translation>Avertisment</translation>
     </message>
     <message>
         <source>Warning: unknown new rules activated (versionbit %i)</source>
-        <translation>Avertissement : nouvelles règles inconnues activées (bit de version %i)</translation>
+        <translation>Atentie: se activeaza reguli noi necunoscute (versionbit %i)</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation>Supprimer toutes les transactions du porte-monnaie...</translation>
+        <translation>Şterge toate tranzacţiile din portofel...</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>La valeur -maxtxfee est très élevée ! Des frais aussi élevés pourraient être payés en une seule transaction.</translation>
+        <translation>-maxtxfee este setata foarte sus! Se pot plati taxe de aceasta marime pe o singura tranzactie.</translation>
     </message>
     <message>
         <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
-        <translation>Erreur de chargement de %s : vous ne pouvez pas activer HD sur un porte-monnaie non HD existant</translation>
+        <translation>Eroare la incarcarea %s: Nu se poate activa HD la un portofel care este deja non-HD.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>Il s’agit des frais de transaction que vous pourriez payer si aucune estimation de frais n’est proposée.</translation>
+        <translation>Aceasta este taxa de tranzactie pe care este posibil sa o platiti daca estimarile de taxe nu sunt disponibile.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Ce produit comprend des logiciels développés par le Projet OpenSSL pour être utilisés dans la boîte à outils OpenSSL %s, et un logiciel cryptographique écrit par Eric Young, ainsi qu’un logiciel UPnP écrit par Thomas Bernard.</translation>
+        <translation>Acest produs include software dezvoltat de OpenSSL Project pentru a fi folosit in Toolkitul OpenSSL %s, software criptografic scris de Eric Young si software UPnP scris de Thomas Bernard. </translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>La taille totale de la chaîne de version de réseau (%i) dépasse la longueur maximale (%i). Réduire le nombre ou la taille des commentaires uacomments.</translation>
+        <translation>Lungimea totala a sirului versiunii retelei (%i) depaseste lungimea maxima (%i). Reduceti numarul sa dimensiunea uacomments. </translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>L’argument non pris en charge -socks a été trouvé. Il n’est plus possible de définir la version de SOCKS, seuls les mandataires SOCKS5 sont pris en charge.</translation>
+        <translation>S-a gasit un argument -socks nesuportat. Setarea versiunii SOCKS nu mai este posibila, sunt suportate doar proxiurile SOCKS5.</translation>
     </message>
     <message>
         <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
-        <translation>Argument non pris charge -whitelistalwaysrelay ignoré, utiliser -whitelistrelay et/ou -whitelistforcerelay.</translation>
+        <translation>Se ignora argumentul nesuportat -whitelistalwaysrelay, folositi -whitelistrelay si/sau -whitelistforcerelay.</translation>
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
-        <translation>Avertissement : des versions de blocs inconnues sont minées ! Il est possible que des règles inconnues soient en vigueur</translation>
+        <translation>Atentie: se mineaza blocuri cu versiune necunoscuta! Este posibil sa fie in vigoare reguli necunoscute.</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Avertissement : le fichier du porte-monnaie est corrompu, les données ont été récupérées ! Le fichier %s original a été enregistré en tant que %s dans %s ; si votre solde ou vos transactions sont incorrects, vous devriez restaurer une sauvegarde.</translation>
+        <translation>Atenţie: fişierul portofelului este corupt, date salvate! Fişierul %s a fost salvat ca %s in %s; dacă balanta sau tranzactiile sunt incorecte ar trebui să restauraţi dintr-o copie de siguranţă.</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation>La valeur %s est très élevée !</translation>
+        <translation>%s este setata foarte sus!</translation>
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
-        <translation>Erreur de chargement du porte-monnaie %s. Le nom de fichier -wallet indiqué est un doublon.</translation>
+        <translation>Eroare la incarcarea portofelului %s. Este specificat un fisier -wallet duplicat.</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
-        <translation>La réserve de clés est épuisée, veuillez d’abord appeler « keypoolrefill »</translation>
+        <translation>Keypool epuizat, folositi intai functia keypoolrefill</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
-        <translation>Démarrage des processus réseau...</translation>
+        <translation>Se pornesc threadurile retelei...</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
-        <translation>Le porte-monnaie évitera de payer moins que les frais minimaux de relais. </translation>
+        <translation>Portofelul va evita sa plateasca mai putin decat minimul taxei de retransmisie.</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Il s’agit des frais minimaux que vous payez pour chaque transaction. </translation>
+        <translation>Acesta este minimum de taxa de tranzactie care va fi platit la fiecare tranzactie.</translation>
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Il s’agit des frais minimaux que vous payez si vous envoyez une transaction.</translation>
+        <translation>Aceasta este taxa de tranzactie pe care o platiti cand trimiteti o tranzactie.</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
-        <translation>Les montants transactionnels ne doivent pas être négatifs</translation>
+        <translation>Sumele tranzactionate nu pot fi negative</translation>
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
-        <translation>La chaîne de la réserve de mémoire de la transaction est trop longue</translation>
+        <translation>Tranzacţia are o  lungime prea mare in lantul mempool</translation>
     </message>
     <message>
         <source>Transaction must have at least one recipient</source>
-        <translation>La transaction doit comporter au moins un destinataire</translation>
+        <translation>Tranzactia trebuie sa aiba cel putin un destinatar</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Réseau inconnu précisé dans -onlynet : « %s »</translation>
+        <translation>Reţeaua specificată în -onlynet este necunoscută: '%s'</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Fonds insuffisants</translation>
-    </message>
-    <message>
-        <source>Can't generate a change-address key. Private keys are disabled for this wallet.</source>
-        <translation>Impossible de générer une clé d’adresse de monnaie. Les clés privées sont désactivées pour ce porte-monnaie.</translation>
-    </message>
-    <message>
-        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
-        <translation>Impossible de mettre à niveau un porte-monnaie divisé non-HD sans mettre à niveau pour prendre en charge la réserve de clés antérieure à la division. Veuillez utiliser -upgradewallet=169900 ou -upgradewallet sans indiquer de version.</translation>
-    </message>
-    <message>
-        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
-        <translation>Échec d’estimation des frais. L’option de frais de repli est désactivée. Attendez quelques blocs ou activez -fallbackfee.</translation>
-    </message>
-    <message>
-        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
-        <translation>Avertissement : Des clés privées ont été détectées dans le porte-monnaie {%s} dont les clés privées sont désactivées.</translation>
-    </message>
-    <message>
-        <source>Cannot write to data directory '%s'; check permissions.</source>
-        <translation>Impossible d’écrire dans le répertoire de données '%s' ; veuillez vérifier les droits.</translation>
+        <translation>Fonduri insuficiente</translation>
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Chargement de l’index des blocs…</translation>
+        <translation>Încărcare index bloc...</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
-        <translation>Chargement du porte-monnaie…</translation>
+        <translation>Încărcare portofel...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation>Impossible de revenir à une version inférieure du porte-monnaie</translation>
+        <translation>Nu se poate retrograda portofelul</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Nouvelle analyse…</translation>
+        <translation>Rescanare...</translation>
     </message>
     <message>
         <source>Done loading</source>
-        <translation>Chargement terminé</translation>
+        <translation>Încărcare terminată</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Erreur</translation>
+        <translation>Eroare</translation>
     </message>
 </context>
 </TS>
