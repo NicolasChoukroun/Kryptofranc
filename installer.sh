@@ -24,7 +24,7 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan bitFranc Installer: version 1.25"
+echo -e "$BCyan kryptofranc Installer: version 1.25"
 echo -e "$BBlue installer [option1] [option2] [option3] [option3]"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
@@ -114,9 +114,9 @@ if [ $INSTALL = "yes" ]; then
     echo -e "$BGreen Install option executing (install option is on)..."
     echo -e $Color_Off
 
-    sudo apt-get --assume-yes update
-    sudo apt-get --assume-yes upgrade
-    sudo apt-get --assume-yes install git
+    # sudo apt-get --assume-yes update
+    # sudo apt-get --assume-yes upgrade
+    # sudo apt-get --assume-yes install git
     sudo apt-get --assume-yes install build-essential
     sudo apt-get --assume-yes install qt5-default qttools5-dev-tools
     sudo apt-get --assume-yes install autoconf libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module
@@ -145,7 +145,7 @@ if [ $EXTRAS = "yes" ]; then
     sudo apt-get --assume-yes install hardinfo
     sudo apt --assume-yes install software-center*
     sudo apt-get --assume-yes install git-core
-    #git.config --global.username "bitFranc"
+    #git.config --global.username "kryptofranc"
     #echo -e "$BBlue I need you GIT user email so that later on you push with your name:"
     #read GITUSER
     #echo -e $Color_Off
@@ -200,64 +200,61 @@ if [ $EXTRAS = "yes" ]; then
 fi
 
 
-
-if [ $COPY = "yes" ]; then
-    $MOD="-u"
-fi
+$MOD="-u"
 
 echo -e "$BYellow --------------------------------------------------"
 echo -e "$BGreen Copy option executing with $MOD parameter..."
 echo -e $Color_Off
 
-sudo cp $MOD assets_installer/bitfranc_replace/interface_rest.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/modaloverlay.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
-sudo cp $MOD assets_installer/bitfranc_replace/overviewpage.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
-sudo cp	$MOD assets_installer/bitfranc_replace/feature_help.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/interface_bitcoin_cli.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/update-translations.py ~/kryptofranc/kryptofranccore/contrib/devtools/
-sudo cp $MOD assets_installer/bitfranc_replace/mempool_persist.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/mininode.py ~/kryptofranc/kryptofranccore/test/functional/test_framework/
-sudo cp $MOD assets_installer/bitfranc_replace/rpc_fundrawtransaction.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/rpc_rawtransaction.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/test_runner.py ~/kryptofranc/kryptofranccore/test/functional/
-sudo cp $MOD assets_installer/bitfranc_replace/wallettests.cpp ~/kryptofranc/kryptofranccore/src/qt/test/
-sudo cp $MOD assets_installer/bitfranc_replace/wallet_tests.cpp ~/kryptofranc/kryptofranccore/src/wallet/test/
+sudo cp $MOD assets_installer/kryptofranc_replace/interface_rest.py ~/kryptofranc/kryptofranccore/test/functional/
+# sudo cp $MOD assets_installer/kryptofranc_replace/modaloverlay.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
+# sudo cp $MOD assets_installer/kryptofranc_replace/overviewpage.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
+sudo cp	$MOD assets_installer/kryptofranc_replace/feature_help.py ~/kryptofranc/kryptofranccore/test/functional/
+sudo cp $MOD assets_installer/kryptofranc_replace/interface_bitcoin_cli.py ~/kryptofranc/kryptofranccore/test/functional/
+sudo cp $MOD assets_installer/kryptofranc_replace/update-translations.py ~/kryptofranc/kryptofranccore/contrib/devtools/
+sudo cp $MOD assets_installer/kryptofranc_replace/mempool_persist.py ~/kryptofranc/kryptofranccore/test/functional/
+sudo cp $MOD assets_installer/kryptofranc_replace/mininode.py ~/kryptofranc/kryptofranccore/test/functional/test_framework/
+sudo cp $MOD assets_installer/kryptofranc_replace/rpc_fundrawtransaction.py ~/kryptofranc/kryptofranccore/test/functional/
+sudo cp $MOD assets_installer/kryptofranc_replace/rpc_rawtransaction.py ~/kryptofranc/kryptofranccore/test/functional/
+sudo cp $MOD assets_installer/kryptofranc_replace/test_runner.py ~/kryptofranc/kryptofranccore/test/functional/
+# sudo cp $MOD assets_installer/kryptofranc_replace/wallettests.cpp ~/kryptofranc/kryptofranccore/src/qt/test/
+# sudo cp $MOD assets_installer/kryptofranc_replace/wallet_tests.cpp ~/kryptofranc/kryptofranccore/src/wallet/test/
 
-sudo cp $MOD assets_installer/bitfranc_replace/addressbookpage.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/askpassphrasedialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp	$MOD assets_installer/bitfranc_replace/editaddressdialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/bitcoin.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp	$MOD assets_installer/bitfranc_replace/bitcoingui.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/intro.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/guiutil.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/openuridialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/paymentserver.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/sendcoinsdialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/bitfranc_replace/utilitydialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/addressbookpage.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/askpassphrasedialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp	$MOD assets_installer/kryptofranc_replace/editaddressdialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/bitcoin.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp	$MOD assets_installer/kryptofranc_replace/bitcoingui.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/intro.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/guiutil.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/openuridialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/paymentserver.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/sendcoinsdialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
+sudo cp $MOD assets_installer/kryptofranc_replace/utilitydialog.cpp ~/kryptofranc/kryptofranccore/src/qt/
 
-sudo cp	$MOD assets_installer/bitfranc_replace/db.cpp ~/kryptofranc/kryptofranccore/src/wallet/
-sudo cp $MOD assets_installer/bitfranc_replace/rpcdump.cpp ~/kryptofranc/kryptofranccore/src/wallet/
-sudo cp $MOD assets_installer/bitfranc_replace/rpcwallet.cpp ~/kryptofranc/kryptofranccore/src/wallet/
+sudo cp	$MOD assets_installer/kryptofranc_replace/db.cpp ~/kryptofranc/kryptofranccore/src/wallet/
+sudo cp $MOD assets_installer/kryptofranc_replace/rpcdump.cpp ~/kryptofranc/kryptofranccore/src/wallet/
+sudo cp $MOD assets_installer/kryptofranc_replace/rpcwallet.cpp ~/kryptofranc/kryptofranccore/src/wallet/
 
-sudo cp	$MOD assets_installer/bitfranc_replace/blockchain.cpp ~/kryptofranc/kryptofranccore/src/rpc/
-sudo cp $MOD assets_installer/bitfranc_replace/mining.cpp ~/kryptofranc/kryptofranccore/src/rpc/
-sudo cp $MOD assets_installer/bitfranc_replace/misc.cpp ~/kryptofranc/kryptofranccore/src/rpc
-sudo cp $MOD assets_installer/bitfranc_replace/net2.cpp ~/kryptofranc/kryptofranccore/src/rpc/
+sudo cp	$MOD assets_installer/kryptofranc_replace/blockchain.cpp ~/kryptofranc/kryptofranccore/src/rpc/
+sudo cp $MOD assets_installer/kryptofranc_replace/mining.cpp ~/kryptofranc/kryptofranccore/src/rpc/
+sudo cp $MOD assets_installer/kryptofranc_replace/misc.cpp ~/kryptofranc/kryptofranccore/src/rpc
+sudo cp $MOD assets_installer/kryptofranc_replace/net2.cpp ~/kryptofranc/kryptofranccore/src/rpc/
 sudo mv ~/kryptofranc/kryptofranccore/src/rpc/net2.cpp ~/kryptofranc/kryptofranccore/src/rpc/net.cpp
-sudo cp $MOD assets_installer/bitfranc_replace/rawtransaction.cpp ~/kryptofranc/kryptofranccore/src/rpc/
-sudo cp $MOD assets_installer/bitfranc_replace/server.cpp ~/kryptofranc/kryptofranccore/src/rpc/
+sudo cp $MOD assets_installer/kryptofranc_replace/rawtransaction.cpp ~/kryptofranc/kryptofranccore/src/rpc/
+sudo cp $MOD assets_installer/kryptofranc_replace/server.cpp ~/kryptofranc/kryptofranccore/src/rpc/
 
-sudo cp $MOD assets_installer/bitfranc_replace/amount.h ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/bitcoin-cli.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/bitcoind.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/chainparams.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/chainparamsbase.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/init.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/key.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/net.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/pow.cpp ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/util.h ~/kryptofranc/kryptofranccore/src/
-sudo cp $MOD assets_installer/bitfranc_replace/validation.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/amount.h ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/bitcoin-cli.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/bitcoind.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/chainparams.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/chainparamsbase.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/init.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/key.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/net.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/pow.cpp ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/util.h ~/kryptofranc/kryptofranccore/src/
+sudo cp $MOD assets_installer/kryptofranc_replace/validation.cpp ~/kryptofranc/kryptofranccore/src/
 
 sudo rm -rf ~/kryptofranc/kryptofranccore/src/qt/locale
 sudo cp $MOD -R assets_installer/locale ~/kryptofranc/kryptofranccore/src/qt/
@@ -271,7 +268,7 @@ if [ $INSTALL = "yes" ]; then
     
     sudo mkdir ~/kryptofranc/kryptofranccore/db4/
     cd ~/kryptofranc/kryptofranccore/db4
-    sudo wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+    @sudo wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
     sudo tar -xzvf db-4.8.30.NC.tar.gz
     sudo rm -rf db-4.8.30.NC.tar.gz
     DB4_PATH=$PWD
@@ -309,19 +306,19 @@ if [ $INSTALL = "yes" ]; then
     cd ~/kryptofranc/kryptofranccore
     sudo ./autogen.sh
     sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
-    sudo sed -i -e 's/bitcoin/bitFranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/Bitcoin/BitFranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/BITCOIN/BITFRANC/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/bitcoins/bitFrancs/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/Bitcoins/BitFrancs/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/Bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/BITCOIN/kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/Bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/BITCOINS/kryptofrancS/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
 
-    sudo sed -i -e 's/bitcoin/bitFranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/Bitcoin/BitFranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/BITCOIN/BITFRANC/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/bitcoins/bitFrancs/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/Bitcoins/BitFrancs/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/BITCOINS/BITFRANCS/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/Bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/BITCOIN/kryptofranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/Bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
+    sudo sed -i -e 's/BITCOINS/kryptofrancS/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
 
 fi
 
@@ -333,12 +330,12 @@ echo -e $Color_Off
 cd ~/kryptofranc/kryptofranccore
 sudo make
 
-sudo mv ~/kryptofranc/kryptofranccore/src/bitcoind ~/kryptofranc/binaries/bitfrancd
-sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-tx ~/kryptofranc/binaries/bitfranc-tx
-sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-cli ~/kryptofranc/binaries/bitfranc-cli
-sudo mv	~/kryptofranc/kryptofranccore/src/qt/bitcoin-qt ~/kryptofranc/binaries/qt/bitfranc-qt
+sudo mv ~/kryptofranc/kryptofranccore/src/bitcoind ~/kryptofranc/binaries/kryptofrancd
+sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-tx ~/kryptofranc/binaries/kryptofranc-tx
+sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-cli ~/kryptofranc/binaries/kryptofranc-cli
+sudo mv	~/kryptofranc/kryptofranccore/src/qt/bitcoin-qt ~/kryptofranc/binaries/qt/kryptofranc-qt
 
 if [ $NOEXEC = "no" ]; then
-    ~/kryptofranc/binaries/qt/bitfranc-qt
+    ~/kryptofranc/binaries/qt/kryptofranc-qt
 fi
 exit;
