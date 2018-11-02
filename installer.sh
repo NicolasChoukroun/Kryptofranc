@@ -206,9 +206,9 @@ echo -e "$BYellow --------------------------------------------------"
 echo -e "$BGreen Copy option executing with $MOD parameter..."
 echo -e $Color_Off
 
+sudo cp $MOD assets_installer/kryptofranc_replace/modaloverlay.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
+sudo cp $MOD assets_installer/kryptofranc_replace/overviewpage.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
 sudo cp $MOD assets_installer/kryptofranc_replace/interface_rest.py ~/kryptofranc/kryptofranccore/test/functional/
-# sudo cp $MOD assets_installer/kryptofranc_replace/modaloverlay.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
-# sudo cp $MOD assets_installer/kryptofranc_replace/overviewpage.ui ~/kryptofranc/kryptofranccore/src/qt/forms/
 sudo cp	$MOD assets_installer/kryptofranc_replace/feature_help.py ~/kryptofranc/kryptofranccore/test/functional/
 sudo cp $MOD assets_installer/kryptofranc_replace/interface_bitcoin_cli.py ~/kryptofranc/kryptofranccore/test/functional/
 sudo cp $MOD assets_installer/kryptofranc_replace/update-translations.py ~/kryptofranc/kryptofranccore/contrib/devtools/
@@ -305,21 +305,11 @@ if [ $INSTALL = "yes" ]; then
     
     cd ~/kryptofranc/kryptofranccore
     sudo ./autogen.sh
-    sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/"
+    sudo ./configure LDFLAGS="-L$DB4_PATH/lib/" CPPFLAGS="-I$DB4_PATH/include/" 
+    sudo sed -i -e 's/bitcoincore.org/kryptofranc.com/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h    
     sudo sed -i -e 's/bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/Bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/BITCOIN/kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/Bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-    sudo sed -i -e 's/BITCOINS/kryptofrancS/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
-
-    sudo sed -i -e 's/bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/Bitcoin/kryptofranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/BITCOIN/kryptofranc/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/Bitcoins/kryptofrancs/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-    sudo sed -i -e 's/BITCOINS/kryptofrancS/g' ~/kryptofranc/kryptofranccore/build_msvc/bitcoin_config.h
-
+    sudo sed -i -e 's/Bitcoin/Kryptofranc/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h
+    sudo sed -i -e 's/BITCOIN/KRYPTOFRANC/g' ~/kryptofranc/kryptofranccore/src/config/bitcoin-config.h    
 fi
 
 sudo chmod -R 777 ~/kryptofranc
@@ -329,13 +319,14 @@ echo -e "$BGreen MAKING! "
 echo -e $Color_Off
 cd ~/kryptofranc/kryptofranccore
 sudo make
-
-sudo mv ~/kryptofranc/kryptofranccore/src/bitcoind ~/kryptofranc/binaries/kryptofrancd
-sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-tx ~/kryptofranc/binaries/kryptofranc-tx
-sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-cli ~/kryptofranc/binaries/kryptofranc-cli
-sudo mv	~/kryptofranc/kryptofranccore/src/qt/bitcoin-qt ~/kryptofranc/binaries/qt/kryptofranc-qt
+sudo make
+sudo @mkdir ~/kryptofranc/kryptofranccore/binaries
+sudo mv ~/kryptofranc/kryptofranccore/src/bitcoind ~/kryptofranc/kryptofranccore/binaries/kryptofrancd
+sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-tx ~/kryptofranc/kryptofranccore/binaries/kryptofranc-tx
+sudo mv	~/kryptofranc/kryptofranccore/src/bitcoin-cli ~/kryptofranc/kryptofranccore/binaries/kryptofranc-cli
+sudo mv	~/kryptofranc/kryptofranccore/src/qt/bitcoin-qt ~/kryptofranc/kryptofranccore/binaries/kryptofranc-qt
 
 if [ $NOEXEC = "no" ]; then
-    ~/kryptofranc/binaries/qt/kryptofranc-qt
+    ~/kryptofranc/kryptofranccore/binaries/kryptofranc-qt
 fi
 exit;
