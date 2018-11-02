@@ -9,6 +9,19 @@ This program is based on "Remember remember the 5th of November"'s post [[ANN] G
 + Add command line arguments for startNonce and unixtime
 + If timestamp string is longer than 76 bytes, add `OP_PUSHDATA1(0x4c)` to scriptSig.
 
+Compilation
+=====
+```
+gcc genesis_generator.c -o genesis_generator -lcrypto
+```
+
+Generate public and private keys
+=====
+```
+openssl ecparam -genkey -name secp256k1 -text -noout -outform DER | xxd -p -c 1000 | sed 's/41534e31204f49443a20736563703235366b310a30740201010420/PrivKey: /' | sed 's/a00706052b8104000aa144034200/\'$'\nPubKey: /'
+
+```
+
 Usage
 =====
 
@@ -34,3 +47,12 @@ Usage
     Nonce: 2083236893
     Unix time: 1231006505
 ```
+
+Kryptofranc generation
+=====
+
+
+
+Reference
+=====
+https://stackoverflow.com/questions/48101258/how-to-convert-an-ecdsa-key-to-pem-format/49213805#49213805
