@@ -48,6 +48,11 @@ Usage
     Unix time: 1231006505
 ```
 
+Kryptofranc generation
+=====
+
+
+
 Reference
 =====
 https://stackoverflow.com/questions/48101258/how-to-convert-an-ecdsa-key-to-pem-format/49213805#49213805
