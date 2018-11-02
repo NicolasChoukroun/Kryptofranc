@@ -8,7 +8,7 @@
 #include <QFrame>
 #include <QMap>
 
-class kryptoFrancGUI;
+class BitcoinGUI;
 class ClientModel;
 class PlatformStyle;
 class SendCoinsRecipient;
@@ -21,7 +21,7 @@ QT_END_NAMESPACE
 
 /**
  * A container for embedding all wallet-related
- * controls into kryptoFrancGUI. The purpose of this class is to allow future
+ * controls into BitcoinGUI. The purpose of this class is to allow future
  * refinements of the wallet controls with minimal need for further
  * modifications to kryptoFrancGUI, thus greatly simplifying merges while
  * reducing the risk of breaking top-level stuff.

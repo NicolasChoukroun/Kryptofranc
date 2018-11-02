@@ -9,7 +9,7 @@
 
 #include <QStackedWidget>
 
-class kryptoFrancGUI;
+class BitcoinGUI;
 class ClientModel;
 class OverviewPage;
 class PlatformStyle;

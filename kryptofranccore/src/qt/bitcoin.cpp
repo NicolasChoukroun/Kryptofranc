@@ -82,7 +82,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("kryptofranc-core", psz).toStdString();
+    return QCoreApplication::translate("bitcoin-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -149,10 +149,10 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating kryptoFranc Core startup and shutdown.
+/** Class encapsulating Bitcoin Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class kryptoFrancCore: public QObject
+class BitcoinCore: public QObject
 {
     Q_OBJECT
 public:
@@ -175,7 +175,7 @@ private:
 };
 
 /** Main kryptoFranc application object */
-class kryptoFrancApplication: public QApplication
+class BitcoinApplication: public QApplication
 {
     Q_OBJECT
 public:

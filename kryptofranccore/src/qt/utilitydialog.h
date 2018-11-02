@@ -8,7 +8,7 @@
 #include <QDialog>
 #include <QObject>
 
-class kryptoFrancGUI;
+class BitcoinGUI;
 
 namespace interfaces {
     class Node;

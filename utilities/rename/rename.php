@@ -10,7 +10,7 @@ foreach ($cdir as $key => $value)
 	$nbr=0;$nbrfiles++;
 	if (!in_array($value,array(".",".."))) 
 	{ 
-		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,"test")===false && strpos($value,".tmp")===false && (strpos($value,".h")>0 || strpos($value,".cpp")>0 ||  strpos($value,".ui")>0)) 
+		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,"test")===false && strpos($value,".ui")===false && strpos($value,".tmp")===false && (strpos($value,".h")>0 || strpos($value,".cpp")>0)) 
 		{ 
 			$result = $value; 
 			echo "Renaming ".$result."...\r\n";
@@ -24,7 +24,7 @@ foreach ($cdir as $key => $value)
 			while (!feof($reading)) {
 				$line = fgets($reading);
 	
-				if (stripos($line,"TRANSLATE_NOOP")===false && stripos($line,"include")===false && strpos($line,"Copyright")===false && (stripos($line,"bitcoin")>0 || strpos($line,"BTC")>0) && strpos($line,"")===false && $line<>false){
+				if (stripos($line,"class")===false && stripos($line,"translate")===false && stripos($line,"TRANSLATE_NOOP")===false && stripos($line,"include")===false && strpos($line,"Copyright")===false && (stripos($line,"bitcoin")>0 || strpos($line,"BTC")>0) && strpos($line,"")===false && $line<>false){
 					
 					$line=str_replace("bitcoin", strtolower($name),$line);
 					$line=str_replace("bitCoin", $name,$line);

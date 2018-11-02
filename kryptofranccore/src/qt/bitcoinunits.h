@@ -44,7 +44,7 @@
 /** kryptoFranc unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class kryptoFrancUnits: public QAbstractListModel
+class BitcoinUnits: public QAbstractListModel
 {
     Q_OBJECT
 
