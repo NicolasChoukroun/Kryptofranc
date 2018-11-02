@@ -435,7 +435,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :bitcoin)</translation>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :kryptofranc)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1305,7 +1305,7 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>לא ניתן להפעיל את המקשר bitcoin: click-to-pay</translation>
+        <translation>לא ניתן להפעיל את המקשר kryptofranc: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1313,7 +1313,7 @@
     </message>
     <message>
         <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'//:bitcoin' אינה כתובת URI תקינה. השתמשו במקום ב ':bitcoin'.</translation>
+        <translation>'//:kryptofranc' אינה כתובת URI תקינה. השתמשו במקום ב ':kryptofranc'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>kryptoFranc</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -266,7 +266,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <translation>kryptoFranc</translation>
     </message>
     <message>
         <source>Error</source>
@@ -761,7 +761,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>kryptoFranc Core</translation>
     </message>
     <message>
         <source>Information</source>

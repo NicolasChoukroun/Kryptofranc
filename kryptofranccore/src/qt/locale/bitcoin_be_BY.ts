@@ -1227,7 +1227,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>kryptoFranc Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

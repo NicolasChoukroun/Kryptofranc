@@ -1823,7 +1823,7 @@
     <name>bitcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
-        <translation> هسته Bitcoin </translation>
+        <translation> هسته kryptoFranc </translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
