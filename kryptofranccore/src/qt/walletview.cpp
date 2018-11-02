@@ -88,7 +88,7 @@ WalletView::~WalletView()
 {
 }
 
-void WalletView::setBitcoinGUI(BitcoinGUI *gui)
+void WalletView::setkryptoFrancGUI(kryptoFrancGUI *gui)
 {
     if (gui)
     {

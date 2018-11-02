@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TXMEMPOOL_H
-#define BITCOIN_TXMEMPOOL_H
+#ifndef KRYPTOFRANC_TXMEMPOOL_H
+#define KRYPTOFRANC_TXMEMPOOL_H
 
 #include <memory>
 #include <set>
@@ -804,4 +804,4 @@ struct DisconnectedBlockTransactions {
     }
 };
 
-#endif // BITCOIN_TXMEMPOOL_H
+#endif // KRYPTOFRANC_TXMEMPOOL_H

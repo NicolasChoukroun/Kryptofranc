@@ -8,8 +8,8 @@
  * Server/client environment: argument handling, config file parsing,
  * thread wrappers, startup time
  */
-#ifndef BITCOIN_UTIL_H
-#define BITCOIN_UTIL_H
+#ifndef KRYPTOFRANC_UTIL_H
+#define KRYPTOFRANC_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
@@ -48,8 +48,8 @@ public:
 
 extern CTranslationInterface translationInterface;
 
-extern const char * const BITCOIN_CONF_FILENAME;
-extern const char * const BITCOIN_PID_FILENAME;
+extern const char * const KRYPTOFRANC_CONF_FILENAME;
+extern const char * const KRYPTOFRANC_PID_FILENAME;
 
 /**
  * Translation function: Call Translate signal on UI interface, which returns a boost::optional result.
@@ -370,4 +370,4 @@ inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
 
 } // namespace util
 
-#endif // BITCOIN_UTIL_H
+#endif // KRYPTOFRANC_UTIL_H
