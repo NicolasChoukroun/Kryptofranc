@@ -149,10 +149,10 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating Bitcoin Core startup and shutdown.
+/** Class encapsulating kryptoFranc Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class BitcoinCore: public QObject
+class kryptoFrancCore: public QObject
 {
     Q_OBJECT
 public:
@@ -175,7 +175,7 @@ private:
 };
 
 /** Main kryptoFranc application object */
-class BitcoinApplication: public QApplication
+class kryptoFrancApplication: public QApplication
 {
     Q_OBJECT
 public:

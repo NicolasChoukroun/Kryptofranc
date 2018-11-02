@@ -17,7 +17,7 @@ QT_END_NAMESPACE
 
 /** Widget for entering kryptofranc amounts.
   */
-class BitcoinAmountField: public QWidget
+class kryptoFrancAmountField: public QWidget
 {
     Q_OBJECT
 

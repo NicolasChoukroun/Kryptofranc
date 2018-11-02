@@ -10,7 +10,7 @@
 /** Base58 entry widget validator, checks for valid characters and
  * removes some whitespace.
  */
-class BitcoinAddressEntryValidator : public QValidator
+class kryptoFrancAddressEntryValidator : public QValidator
 {
     Q_OBJECT
 
@@ -22,7 +22,7 @@ public:
 
 /** kryptoFranc address widget validator, checks for a valid kryptofranc address.
  */
-class BitcoinAddressCheckValidator : public QValidator
+class kryptoFrancAddressCheckValidator : public QValidator
 {
     Q_OBJECT
 

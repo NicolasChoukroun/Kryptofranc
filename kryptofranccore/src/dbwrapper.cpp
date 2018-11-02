@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include <algorithm>
 
-class CBitcoinLevelDBLogger : public leveldb::Logger {
+class CkryptoFrancLevelDBLogger : public leveldb::Logger {
 public:
     // This code is adapted from posix_logger.h, which is why it is using vsprintf.
     // Please do not do this in normal code

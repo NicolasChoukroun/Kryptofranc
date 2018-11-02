@@ -24,7 +24,7 @@ foreach ($cdir as $key => $value)
 			while (!feof($reading)) {
 				$line = fgets($reading);
 	
-				if (stripos($line,"class")===false && stripos($line,"translate")===false && stripos($line,"TRANSLATE_NOOP")===false && stripos($line,"include")===false && strpos($line,"Copyright")===false && (stripos($line,"bitcoin")>0 || strpos($line,"BTC")>0) && strpos($line,"")===false && $line<>false){
+				if ( stripos($line,"translate")===false && stripos($line,"TRANSLATE_NOOP")===false && stripos($line,"include")===false && strpos($line,"Copyright")===false && (stripos($line,"bitcoin")>0 || strpos($line,"BTC")>0) && strpos($line,"")===false && $line<>false){
 					
 					$line=str_replace("bitcoin", strtolower($name),$line);
 					$line=str_replace("bitCoin", $name,$line);
