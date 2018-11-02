@@ -9,6 +9,10 @@ This program is based on "Remember remember the 5th of November"'s post [[ANN] G
 + Add command line arguments for startNonce and unixtime
 + If timestamp string is longer than 76 bytes, add `OP_PUSHDATA1(0x4c)` to scriptSig.
 
+Compilation
+=====
+gcc genesis_generator.c -o genesis_generator -lcrypto
+
 Usage
 =====
 
