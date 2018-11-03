@@ -1,7 +1,7 @@
 <?php
-$path_to_file = "../../assets_installer/locale/";
-if (!file_exists($path_to_file."bitcoin_en.ts")) die("Wrong Path: you need to edit the path of your project in the PHP file");
-$cdir = array_slice(scandir($path_to_file), 2);
+$path_to_file = "d:/projects 2/KryptoFranc/kryptofranccore/src/qt/locale";
+if (!file_exists($path_to_file."/bitcoin_en.ts")) die("Wrong Path: you need to edit the path of your project in the PHP file");
+$cdir=find_all_files($path_to_file);
 $name="KryptoFranc";
 $nbrtotal=0;
 foreach ($cdir as $key => $value) 
@@ -32,7 +32,7 @@ foreach ($cdir as $key => $value)
 					$line=str_replace("BITCOIN", strtoupper($name),$line);							
 					$replaced=true;
 					$nbr++;$nbrtotal++;
-					echo "\r\nline=".$line." Nbr: ".$nbr." - Total: ".$nbrtotal."\r\n";
+					echo "\r\nline=".$line."Nbr: ".$nbr." - Total: ".$nbrtotal."\r\n";
 				
 				}
 				fputs($writing, $line);
@@ -47,11 +47,24 @@ foreach ($cdir as $key => $value)
 			} else {
 				unlink($result.'.tmp');
 			}
-			echo "Nbr of modifications: ".$nbr." - Total: ".$nbrtotal."\r\n";
+			echo "Nbr of modifications: ".$nbr." - Total: ".$nbrtotal." ->";
 		} 
 	} 
 } 
 echo "\r\nOperation Finished\r\n";
 echo "Total modifications: ".$nbrtotal;
-
+function find_all_files($dir) 
+{ 
+    $root = scandir($dir); 
+    foreach($root as $value) 
+    { 
+        if($value === '.' || $value === '..') {continue;} 
+        if(is_file("$dir/$value")) {$result[]="$dir/$value";continue;} 
+        foreach(find_all_files("$dir/$value") as $value) 
+        { 
+            $result[]=$value; 
+        } 
+    } 
+    return $result; 
+} 
 ?>

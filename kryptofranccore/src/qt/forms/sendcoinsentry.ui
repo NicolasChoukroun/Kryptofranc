@@ -1260,7 +1260,7 @@
   <customwidget>
    <class>kryptoFrancAmountField</class>
    <extends>QLineEdit</extends>
-   <header>qt/kryptofrancamountfield.h</header>
+   <header>qt/bitcoinamountfield.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>

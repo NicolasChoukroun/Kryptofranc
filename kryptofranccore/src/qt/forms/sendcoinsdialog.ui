@@ -1271,7 +1271,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
   <customwidget>
    <class>kryptoFrancAmountField</class>
    <extends>QLineEdit</extends>
-   <header>qt/kryptofrancamountfield.h</header>
+   <header>qt/bitcoinamountfield.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
