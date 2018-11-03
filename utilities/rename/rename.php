@@ -10,7 +10,7 @@ foreach ($cdir as $key => $value)
 	$nbr=0;$nbrfiles++;
 	if (!in_array($value,array(".",".."))) 
 	{ 
-		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,"test")===false && strpos($value,".ui")===false && strpos($value,".tmp")===false && (strpos($value,".h")>0 || strpos($value,".cpp")>0)) 
+		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,"test")===false && strpos($value,".tmp")===false && (strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
 		{ 
 			$result = $value; 
 			echo "Renaming ".$result."...\r\n";

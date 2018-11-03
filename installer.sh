@@ -257,11 +257,14 @@ if [ $OLDCOPY = "yes" ]; then
 	sudo cp $MOD assets_installer/kryptofranc_replace/util.h ~/kryptofranc/kryptofranccore/src/
 	sudo cp $MOD assets_installer/kryptofranc_replace/validation.cpp ~/kryptofranc/kryptofranccore/src/
 
-	sudo rm -rf ~/kryptofranc/kryptofranccore/src/qt/locale
-	sudo cp $MOD -R assets_installer/locale ~/kryptofranc/kryptofranccore/src/qt/
-	sudo cp $MOD assets_installer/bitcoin.png ~/kryptofranc/kryptofranccore/src/qt/res/icons/bitcoin.png
-	sudo cp $MOD assets_installer/bitcoin.ico ~/kryptofranc/kryptofranccore/src/qt/res/icons/bitcoin.ico
 fi
+
+	#sudo rm -rf ~/kryptofranc/kryptofranccore/src/qt/locale
+	#sudo cp $MOD -R assets_installer/locale ~/kryptofranc/kryptofranccore/src/qt/
+	sudo cp $MOD assets_installer/kryptofranc.png ~/kryptofranc/kryptofranccore/src/qt/res/icons/kryptofranc.png
+	sudo cp $MOD assets_installer/kryptofranc.ico ~/kryptofranc/kryptofranccore/src/qt/res/icons/kryptofranc.ico
+
+
 if [ $INSTALL = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Install and configure DB4..."
