@@ -32,7 +32,7 @@ foreach ($cdir as $key => $value)
 					$line=str_replace("BITCOIN", strtoupper($name),$line);							
 					$replaced=true;
 					$nbr++;$nbrtotal++;
-					echo "\r\nline=".$line."Nbr: ".$nbr." - Total: ".$nbrtotal."\r\n";
+					echo "line=".$line."Nbr: ".$nbr." - Total: ".$nbrtotal."\r\n";
 				
 				}
 				fputs($writing, $line);
@@ -47,7 +47,7 @@ foreach ($cdir as $key => $value)
 			} else {
 				unlink($result.'.tmp');
 			}
-			echo "Nbr of modifications: ".$nbr." - Total: ".$nbrtotal." ->";
+			//echo "Nbr of modifications: ".$nbr." - Total: ".$nbrtotal." ->";
 		} 
 	} 
 } 
