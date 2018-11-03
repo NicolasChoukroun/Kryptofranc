@@ -149,7 +149,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating kryptoFranc Core startup and shutdown.
+/** Class encapsulating KryptoFranc startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class kryptoFrancCore: public QObject
