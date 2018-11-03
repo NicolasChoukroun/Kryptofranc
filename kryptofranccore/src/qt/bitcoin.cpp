@@ -244,7 +244,7 @@ private:
 
 #include <qt/bitcoin.moc>
 
-BitcoinCore::BitcoinCore(interfaces::Node& node) :
+kryptoFrancCore::kryptoFrancCore(interfaces::Node& node) :
     QObject(), m_node(node)
 {
 }
@@ -284,7 +284,7 @@ void kryptoFrancCore::shutdown()
     }
 }
 
-BitcoinApplication::BitcoinApplication(interfaces::Node& node, int &argc, char **argv):
+kryptoFrancApplication::kryptoFrancApplication(interfaces::Node& node, int &argc, char **argv):
     QApplication(argc, argv),
     coreThread(0),
     m_node(node),
@@ -315,7 +315,7 @@ void kryptoFrancApplication::setupPlatformStyle()
     assert(platformStyle);
 }
 
-BitcoinApplication::~BitcoinApplication()
+kryptoFrancApplication::~kryptoFrancApplication()
 {
     if(coreThread)
     {

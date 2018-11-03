@@ -15,7 +15,7 @@
   - All lower-case letters except for 'l'
 */
 
-BitcoinAddressEntryValidator::BitcoinAddressEntryValidator(QObject *parent) :
+kryptoFrancAddressEntryValidator::kryptoFrancAddressEntryValidator(QObject *parent) :
     QValidator(parent)
 {
 }
@@ -80,7 +80,7 @@ QValidator::State kryptoFrancAddressEntryValidator::validate(QString &input, int
     return state;
 }
 
-BitcoinAddressCheckValidator::BitcoinAddressCheckValidator(QObject *parent) :
+kryptoFrancAddressCheckValidator::kryptoFrancAddressCheckValidator(QObject *parent) :
     QValidator(parent)
 {
 }

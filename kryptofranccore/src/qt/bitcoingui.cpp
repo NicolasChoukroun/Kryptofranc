@@ -68,7 +68,7 @@ const std::string kryptoFrancGUI::DEFAULT_UIPLATFORM =
 #endif
         ;
 
-BitcoinGUI::BitcoinGUI(interfaces::Node& node, const PlatformStyle *_platformStyle, const NetworkStyle *networkStyle, QWidget *parent) :
+kryptoFrancGUI::kryptoFrancGUI(interfaces::Node& node, const PlatformStyle *_platformStyle, const NetworkStyle *networkStyle, QWidget *parent) :
     QMainWindow(parent),
     m_node(node),
     platformStyle(_platformStyle)
@@ -206,7 +206,7 @@ BitcoinGUI::BitcoinGUI(interfaces::Node& node, const PlatformStyle *_platformSty
 #endif
 }
 
-BitcoinGUI::~BitcoinGUI()
+kryptoFrancGUI::~kryptoFrancGUI()
 {
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();

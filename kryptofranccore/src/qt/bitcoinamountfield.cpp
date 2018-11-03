@@ -190,7 +190,7 @@ Q_SIGNALS:
 
 #include <qt/bitcoinamountfield.moc>
 
-BitcoinAmountField::BitcoinAmountField(QWidget *parent) :
+kryptoFrancAmountField::kryptoFrancAmountField(QWidget *parent) :
     QWidget(parent),
     amount(0)
 {

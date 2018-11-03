@@ -8,7 +8,7 @@
 
 #include <QStringList>
 
-BitcoinUnits::BitcoinUnits(QObject *parent):
+kryptoFrancUnits::kryptoFrancUnits(QObject *parent):
         QAbstractListModel(parent),
         unitlist(availableUnits())
 {
