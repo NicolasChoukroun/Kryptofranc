@@ -30,6 +30,28 @@ PubKey for Kryptofranc:
 
 Private key has been destroyed... for obvious reason.
 
+Result for Kryptofranc
+=====
+```
+sudo ./genesis 049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed "2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin" 486604799
+-------------------------------------------------------------------------------------------------
+nBits: 0x1d00ffff
+startNonce: 0
+unixtime: 0
+
+Coinbase: 04ffff001d01044c55323031382f30372f32342053696e6761706f7265204261636b7320612043727970746f43757272656e637920616e642045737461626c6973686573206974206173207468656972204f6666696369616c20436f696e
+
+PubkeyScript: 41049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3edac
+
+Merkle Hash: cd52c2a681471ddfe69b756138f4749a8a25250c3527c2c228e8431be5b57a67
+Byteswapped: 677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd
+Generating block...
+1506935 Hashes/s, Nonce 9806050415
+Block found!
+Hash: 0000000072051fbf3a18e627f8f650b8d8c3e795fd73810f3ad843fc12e02038
+Nonce: 981099688
+
+```
 
 Usage
 =====
