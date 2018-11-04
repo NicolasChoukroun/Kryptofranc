@@ -10,6 +10,13 @@ replace_in_file($path_to_file."/qt/intro.cpp","storageRequiresMsg.arg(requiredSp
 replace_in_file($path_to_file."/qt/intro.cpp","BLOCK_CHAIN_SIZE = 220","BLOCK_CHAIN_SIZE = 1");
 replace_in_file($path_to_file."/qt/intro.cpp",".arg(2009)",".arg(2019)");
 replace_in_file($path_to_file."/qt/bitcoinstrings.cpp","(\"bitcoin-core\", \"Bitcoin Core\")","(\"bitcoin-core\", \"KryptoFranc Core\")");
+replace_in_file($path_to_file."/chainparams.cpp","= 0x48;","= 0x4b;");
+replace_in_file($path_to_file."/chainparams.cpp","= 0x48;","= 0x59;");
+replace_in_file($path_to_file."/chainparams.cpp","= 0x46;","= 0x46;");
+replace_in_file($path_to_file."/chainparams.cpp","= 0x20;","= 0x20;");
+replace_in_file($path_to_file."/chainparams.cpp","= 8333;","= 1789;");
+replace_in_file($path_to_file."/chainparams.cpp","18333;","11789;");
+replace_in_file($path_to_file."/chainparams.cpp","nSubsidyHalvingInterval = 210000;)","nSubsidyHalvingInterval = 52500;");
 
 foreach ($cdir as $key => $value) 
 { 
@@ -30,12 +37,14 @@ foreach ($cdir as $key => $value)
 			while (!feof($reading)) {
 				$line = fgets($reading);
 	
-				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && strpos($line,"Copyright")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false) && strpos($line,"")===false && $line<>false){
+				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false) && strpos($line,"")===false && $line<>false){
 					
 					//if (stripos($line,"TRANSLATE_NOOP")!==false && stripos($line,"Bitcoin Core")!==false) {
 					//	$line=str_replace("Bitcoin Core", "KryptoFranc",$line);
 					//	
 					//}else{
+							
+						$line=str_replace("The Bitcoin Core developers", "xxxxxx",$line);
 						$line=str_replace("bitcoin-core", strtolower($name)."-core",$line);
 						$line=str_replace("Bitcoin Core", ucwords($name),$line);
 						$line=str_replace("bitcoin", strtolower($name),$line);

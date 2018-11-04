@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 xxxxxx
 // Copyright (c) 2017 The Zcash developers
 // Copyright (c) 2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
