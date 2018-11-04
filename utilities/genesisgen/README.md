@@ -60,7 +60,7 @@ Usage
 Kryptofranc specific genesis creation
 =====
 
-./genesis 049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed "CNBC 2018/07/24 Singapore Officially Backs a CryptoCurrency and Establishes it as their Official Coin" 486604799 
+./genesis 049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed "2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin" 486604799 
 
 
 Reference
