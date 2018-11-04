@@ -74,8 +74,9 @@ replace_in_file($path_to_file."/configure.ac","bitcoind","kyfd");
 replace_in_file($path_to_file."/configure.ac","bitcoin-qt","kyf-qt");
 replace_in_file($path_to_file."/configure.ac","bitcoin-cli","kyf-cli");
 replace_in_file($path_to_file."/configure.ac","bitcoin-tx","kyf-tx");
-replace_in_file($path_to_file."/configure.ac","nSubsidyHalvingInterval = 210000;)","nSubsidyHalvingInterval = 52500;");
-replace_in_file($path_to_file."/configure.ac","nSubsidyHalvingInterval = 210000;)","nSubsidyHalvingInterval = 52500;");replace_in_file($path_to_file."/configure.ac","nSubsidyHalvingInterval = 210000;)","nSubsidyHalvingInterval = 52500;");
+replace_in_file($path_to_file."/configure.ac","[https://github.com/bitcoin/bitcoin/issues],[bitcoin],[https://bitcoincore.org/])","[https://github.com/kryptofranc/kryptofranc/issues],[kryptofranc],[https://kryptofranc.org/])");
+
+
 
 foreach ($cdir as $key => $value) 
 { 

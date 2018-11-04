@@ -9,59 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/addressbookpage.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/amount.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/askpassphrasedialog.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/bitcoin-cli.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/bitcoin.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/bitcoind.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/bitcoingui.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/blockchain.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/chainparams.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/chainparamsbase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/db.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/editaddressdialog.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/feature_help.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/guiutil.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/init.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/interface_bitcoin_cli.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/interface_rest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/intro.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/key.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/mempool_persist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/mining.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/mininode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/misc.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/net.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/net2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/openuridialog.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/paymentserver.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/pow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/rawtransaction.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/rpc_fundrawtransaction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/rpc_rawtransaction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/rpcdump.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/rpcwallet.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/sendcoinsdialog.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/server.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/test_runner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/update-translations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/utilitydialog.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/validation.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/wallet_tests.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets_installer/kryptofranc_replace/wallettests.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/installer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/installer.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparamsbase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparamsbase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparamsbase.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparamsbase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparamsseeds.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparamsseeds.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validation.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/rename/rename.php" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/rename/rename.php" afterDir="false" />
-    </list>
+    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,9 +116,7 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2601" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -327,12 +273,12 @@
       <workItem from="1536226159673" duration="4414000" />
       <workItem from="1536331444415" duration="4316000" />
       <workItem from="1536480242624" duration="1295000" />
-      <workItem from="1540030751413" duration="5504000" />
+      <workItem from="1540030751413" duration="6079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16996000" />
+    <option name="totallyTimeSpent" value="17571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3763" height="2176" extended-state="6" />
@@ -463,9 +409,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2601" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
