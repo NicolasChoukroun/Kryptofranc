@@ -1,5 +1,4 @@
 // Copyright (c) 2011-2018 xxxxxx
-// Copyright (c) 2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -527,7 +526,7 @@ void kryptoFrancApplication::shutdownResult()
 
 void kryptoFrancApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(0, "Runaway exception", kryptoFrancGUI::tr("A fatal error occurred. KryptoFranc can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", kryptoFrancGUI::tr("A fatal error occurred. kryptoFranc can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 

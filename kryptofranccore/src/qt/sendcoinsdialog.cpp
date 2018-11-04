@@ -1,5 +1,4 @@
 // Copyright (c) 2011-2018 xxxxxx
-// Copyright (c) 2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -812,7 +811,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!IsValidDestination(dest)) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid KryptoFranc address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid kryptoFranc address"));
         }
         else // Valid address
         {

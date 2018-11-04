@@ -1,5 +1,4 @@
 // Copyright (c) 2011-2018 xxxxxx
-// Copyright (c) 2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -113,7 +112,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setFont(fixedPitchFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a KryptoFranc address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a kryptoFranc address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
     widget->setValidator(new kryptoFrancAddressEntryValidator(parent));
     widget->setCheckValidator(new kryptoFrancAddressCheckValidator(parent));
