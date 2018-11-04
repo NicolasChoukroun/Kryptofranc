@@ -22,6 +22,15 @@ openssl ecparam -genkey -name secp256k1 -text -noout -outform DER | xxd -p -c 10
 
 ```
 
+``
+PubKey for Kryptofranc:
+
+049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed
+``
+
+Private key has been destroyed... for obvious reason.
+
+
 Usage
 =====
 
@@ -51,11 +60,7 @@ Usage
 Kryptofranc specific genesis creation
 =====
 
-./genesis 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f "CNBC 2018/07/24 Singapore Officially Backs a CryptoCurrency and Establishes it as their Official Coin" 486604799 
-
-Kryptofranc generation
-=====
-
+./genesis 049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed "CNBC 2018/07/24 Singapore Officially Backs a CryptoCurrency and Establishes it as their Official Coin" 486604799 
 
 
 Reference
