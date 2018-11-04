@@ -12,6 +12,7 @@ replace_in_file($path_to_file."/src/qt/intro.cpp",".arg(2009)",".arg(2019)");
 replace_in_file($path_to_file."/src/qt/bitcoinstrings.cpp","(\"bitcoin-core\", \"Bitcoin Core\")","(\"bitcoin-core\", \"KryptoFranc Core\")");
 
 // change the blockchain parameters
+replace_in_file($path_to_file."/src/chainparams.cpp","nSubsidyHalvingInterval = 210000;","nSubsidyHalvingInterval = 210000/4; // every year");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xf9;","= 0x4b;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xbe;","= 0x59;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xb4;","= 0x46;");
@@ -32,19 +33,19 @@ replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.
 replace_in_file($path_to_file."/src/chainparams.cpp","{ 11111,","//{ 11111,");
 replace_in_file($path_to_file."/src/chainparams.cpp","{ 33333,","//{ 33333,");
 replace_in_file($path_to_file."/src/chainparams.cpp","{ 74000,","//{ 74000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 105000,","//{ 105000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 134444,","//{ 134444,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 168000,","//{ 168000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 193000,","//{ 193000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 210000,","//{ 210000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 216116,","//{ 216116,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 225430,","//{ 225430,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 250000,","//{ 250000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 279000,","//{ 279000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 295000,","//{ 295000,");
-replace_in_file($path_to_file."/src/chainparams.cpp","BIP34Height = 227931","BIP34Height = 0 // optimization starting from 0");
-replace_in_file($path_to_file."/src/chainparams.cpp","BIP65Height = 388381","BIP65Height = 0 // optimization starting from 0");
-replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 363725","BIP65Height = 0 // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","{105000,","//{ 105000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{134444,","//{ 134444,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{168000,","//{ 168000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{193000,","//{ 193000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{210000,","//{ 210000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{216116,","//{ 216116,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{225430,","//{ 225430,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{250000,","//{ 250000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{279000,","//{ 279000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","{295000,","//{ 295000,");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP34Height = 227931","BIP34Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP65Height = 388381","BIP65Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 363725","BIP65Height = 0; // optimization starting from 0");
 replace_in_file($path_to_file."/src/chainparams.cpp","0x0000000000000000000000000000000000000000028822fef1c230963535a90d","0000000000000000000000000000000000000000000000000000000100010001"); 
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetSpacing = 10 * 60","nPowTargetSpacing = 10 * 60"); // change block time (10 min)
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetTimespan = 14 * 24 * 60 * 60;","nPowTargetTimespan = 14 * 24 * 60 * 60;"); // Change the difficulty adjustment interval (2 weeks)
