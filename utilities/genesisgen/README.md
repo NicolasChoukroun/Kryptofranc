@@ -22,11 +22,11 @@ openssl ecparam -genkey -name secp256k1 -text -noout -outform DER | xxd -p -c 10
 
 ```
 
-``
+
 PubKey for Kryptofranc:
 
 049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed
-``
+
 
 Private key has been destroyed... for obvious reason.
 
