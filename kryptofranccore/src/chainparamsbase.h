@@ -1,17 +1,17 @@
-// Copyright (c) 2014-2018 xxxxxx
+// Copyright (c) 2014-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_CHAINPARAMSBASE_H
-#define KRYPTOFRANC_CHAINPARAMSBASE_H
+#ifndef BITCOIN_CHAINPARAMSBASE_H
+#define BITCOIN_CHAINPARAMSBASE_H
 
 #include <memory>
 #include <string>
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between kryptofranc-cli and kryptofrancd)
- * of a given instance of the kryptoFranc system.
+ * CBaseChainParams defines the base parameters (shared between bitcoin-cli and bitcoind)
+ * of a given instance of the Bitcoin system.
  */
 class CBaseChainParams
 {
@@ -53,4 +53,4 @@ const CBaseChainParams& BaseParams();
 /** Sets the params returned by Params() to those for the given network. */
 void SelectBaseParams(const std::string& chain);
 
-#endif // KRYPTOFRANC_CHAINPARAMSBASE_H
+#endif // BITCOIN_CHAINPARAMSBASE_H
