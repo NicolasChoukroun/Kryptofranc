@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/configure.ac" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/configure.ac" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/rename/rename.php" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/rename/rename.php" afterDir="false" />
     </list>
@@ -123,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -131,8 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="110" column="83" selection-start-line="110" selection-start-column="83" selection-end-line="110" selection-end-column="83" />
+            <state relative-caret-position="680">
+              <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -215,6 +214,7 @@
         <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/validation.cpp" />
         <option value="$PROJECT_DIR$/assets_installer/bitfranc_replace/wallet_tests.cpp" />
         <option value="$PROJECT_DIR$/assets_installer/kryptofranc_replace/addressbookpage.cpp" />
+        <option value="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" />
       </list>
     </option>
   </component>
@@ -303,12 +303,12 @@
       <workItem from="1536226159673" duration="4414000" />
       <workItem from="1536331444415" duration="4316000" />
       <workItem from="1536480242624" duration="1295000" />
-      <workItem from="1540030751413" duration="7138000" />
+      <workItem from="1540030751413" duration="7842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18630000" />
+    <option name="totallyTimeSpent" value="19334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3763" height="2176" extended-state="6" />
@@ -441,14 +441,14 @@
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="110" column="83" selection-start-line="110" selection-start-column="83" selection-end-line="110" selection-end-column="83" />
+        <state relative-caret-position="680">
+          <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
         </state>
       </provider>
     </entry>
