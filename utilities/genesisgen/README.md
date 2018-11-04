@@ -12,7 +12,7 @@ This program is based on "Remember remember the 5th of November"'s post [[ANN] G
 Compilation
 =====
 ```
-gcc genesis_generator.c -o genesis_generator -lcrypto
+gcc genesis.c -o genesis -lcrypto
 ```
 
 Generate public and private keys
