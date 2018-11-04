@@ -120,7 +120,7 @@ Transaction *InitTransaction()
 	transaction->locktime = 0;
 	transaction->prevoutIndex = 0xFFFFFFFF;
 	transaction->sequence = 0xFFFFFFFF;
-	transaction->outValue = 50*COIN;
+	transaction->outValue = 1*COIN; // changed for Kryptofranc
 
 	// We initialize the previous output to 0 as there is none
 	memset(transaction->prevOutput, 0, 32);
@@ -313,7 +313,8 @@ int main(int argc, char *argv[])
 		printf("Generating block...\n");
 		if(!unixtime)
 		{
-			unixtime = time(NULL);
+			//unixtime = time(NULL);
+			unixtime = 1546300800; // 1st Jan 2019 changed for Kryptofranc
 		}
 
 		unsigned char block_header[80], block_hash1[32], block_hash2[32];
