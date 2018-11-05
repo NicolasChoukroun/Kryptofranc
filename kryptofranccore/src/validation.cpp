@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
+Copyright (c) 2018 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1161,25 +1162,19 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    CAmount nSubsidy;
-	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
-	
-	if(nHeight <= 30)  
-	{
-		CAmount nSubsidy = 100000000 * COIN;  // premine 100 billions on 3rd ->300 blocks
-		halvings=1.0;
-	}else {
-		CAmount nSubsidy = 28028 * COIN; 
-		int years = (int) nHeight/52560; 
-		halvings = (years/1.618033988750);
-	}
+    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+    // Force block reward to zero when right shift is undefined.
+    if (halvings >= 64)
+        return 0;
 
-	if (halvings<=1.0) halvings=1.0;
-	nSubsidy =   nSubsidy / halvings;
+    CAmount nSubsidy = 50 * COIN;
+    // Kryptofranc specific
+    
+	if (halfings<=1.0) halfings=1.0;
+	nSubsidy =   nSubsidy / halfings;
 
     return nSubsidy;
 }
-
 
 bool IsInitialBlockDownload()
 {

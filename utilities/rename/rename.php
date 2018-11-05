@@ -24,6 +24,12 @@ replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006
 replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chancellor on brink of second bailout for banks","2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin");
 //replace_in_file($path_to_file."/src/chainparams.cpp","assert(consensus.hashGenesisBlock","//assert(consensus.hashGenesisBlock");
 //replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
+
+replace_in_file($path_to_file."/src/chainparams.cpp",'assert(consensus.hashGenesisBlock == uint256S("0x000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"));',"// removed");
+replace_in_file($path_to_file."/src/chainparams.cpp",'assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));',"// removed");
+replace_in_file($path_to_file."/src/chainparams.cpp",'assert(consensus.hashGenesisBlock == uint256S("0x0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"));',"// removed");
+replace_in_file($path_to_file."/src/chainparams.cpp",'assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));',"// removed");
+
 replace_in_file($path_to_file."/src/chainparams.cpp","seed.bitcoin.sipa.be","seed1.kryptofranc.net");
 replace_in_file($path_to_file."/src/chainparams.cpp","dnsseed.bluematt.me","seed2.kryptofranc.net");
 replace_in_file($path_to_file."/src/chainparams.cpp","dnsseed.bitcoin.dashjr.org","seed3.kryptofranc.net");
@@ -77,6 +83,9 @@ replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 
 // validation host the rewards 
 replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 replace_in_file($path_to_file."/src/validation.cpp","// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.","// Kryptofranc specific");
+
+
+
 // halving algo for Kryptofranc
 replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
@@ -94,7 +103,7 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
     return nSubsidy;
 }","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    CAmount nSubsidy;
+    CAmount nSubsidy=0;
 	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
 	
 	if(nHeight <= 30)  
@@ -139,11 +148,15 @@ unlink($path_to_file."/qt/res/icons/bitcoin.icns");
 unlink($path_to_file."/qt/res/icons/bitcoin_testnet.ico");
 unlink($path_to_file."/qt/res/icons/about.png");
 copy("kryptofranc.ico",$path_to_file."/src/qt/res/icons/kryptofranc.ico") or die("error copy kryptofranc.ico");
-copy("kryptofranc.png",$path_to_file."/src/qt/res/icons/kryptofranc.png") or die("error copy kryptofranc.png");;
-copy("kryptofranc.icns",$path_to_file."/src/qt/res/icons/kryptofranc.icns") or die("error copy kryptofranc.icns");;
+copy("kryptofranc.ico",$path_to_file."/src/qt/res/icons/bitcoin.ico") or die("error copy bitcoin.ico");
+copy("kryptofranc.png",$path_to_file."/src/qt/res/icons/kryptofranc.png") or die("error copy kryptofranc.png");
+copy("kryptofranc.png",$path_to_file."/src/qt/res/icons/bitcoin.png") or die("error copy bitcoin.png");
+copy("kryptofranc.icns",$path_to_file."/src/qt/res/icons/kryptofranc.icns") or die("error copy kryptofranc.icns");
+copy("kryptofranc.icns",$path_to_file."/src/qt/res/icons/bitcoin.icns") or die("error copy bitcoin.icns");
 copy("kryptofranc_testnet.ico",$path_to_file."/src/qt/res/icons/kryptofranc_testnet.ico") or die("error copy kryptofranc_testnet.ico");;
 copy("about.png",$path_to_file."/src/qt/res/icons/about.png") or die("error copy about.png");;
-copy("kryptofranc.png",$path_to_file."/doc/kryptofranc_logo_doxygen.png") or die("error copy kryptofranc_logo_doxygen.png");;
+copy("kryptofranc_logo_doxygen.png",$path_to_file."/doc/kryptofranc_logo_doxygen.png") or die("error copy kryptofranc_logo_doxygen.png");
+copy("kryptofranc_logo_doxygen.png",$path_to_file."/doc/bitcoin_logo_doxygen.png") or die("error copy kryptofranc_logo_doxygen.png 2");
 
 replace_in_file($path_to_file."/doc/Doxyfile.in","Bitcoin","Kryptofranc");
 
@@ -167,7 +180,9 @@ foreach ($cdir as $key => $value)
 				$line = fgets($reading);
 				
 				
-				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
+				$line=str_replace("Copyright (c) 2009-2018 The Bitcoin Core developers", "Copyright (c) 2009-2018 The Bitcoin Core developers\r\nCopyright (c) 2018 The Kryptofranc Core developers",$line);
+											
+				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && strpos($line,"tr(")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
 					
 					//if (stripos($line,"TRANSLATE_NOOP")!==false && stripos($line,"Bitcoin Core")!==false) {
 					//	$line=str_replace("Bitcoin Core", "KryptoFranc",$line);
