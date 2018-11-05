@@ -217,6 +217,8 @@ foreach ($cdir as $key => $value)
 } 
 
 replace_in_file($path_to_file."/src/qt/bitcoin.cpp","BitcoinGUI::tr(","kryptoFrancGUI::tr(");
+replace_in_file($path_to_file."/src/qt/bitcoingui.cpp","arg(BitcoinUnits::","arg(kryptoFrancUnits::");
+
 
 echo "\r\nOperation Finished\r\n";
 echo "Total modifications: ".$nbrtotal." - Nbr files scanned: ".$nbrfiles;

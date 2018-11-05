@@ -9,13 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-cli.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-cli.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/askpassphrasedialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/askpassphrasedialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcwallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcwallet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/rename/rename.php" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/rename/rename.php" afterDir="false" />
-    </list>
+    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,12 +97,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="6" />
+          <entry key="cpp" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="6" />
+          <entry key="ObjectiveC" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -129,11 +123,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="528" column="64" selection-start-line="528" selection-start-column="50" selection-end-line="528" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -162,6 +165,7 @@
       <find>will download</find>
       <find>alert</find>
       <find>tr(&quot;</find>
+      <find>kryptofrancgui</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -230,7 +234,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="3763" />
@@ -266,6 +270,13 @@
               <item name="KryptoFranc" type="462c0819:PsiDirectoryNode" />
               <item name="kryptofranccore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KryptoFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KryptoFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="kryptofranccore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KryptoFranc" type="b2602c69:ProjectViewProjectNode" />
@@ -309,15 +320,15 @@
       <workItem from="1536226159673" duration="4414000" />
       <workItem from="1536331444415" duration="4316000" />
       <workItem from="1536480242624" duration="1295000" />
-      <workItem from="1540030751413" duration="11640000" />
+      <workItem from="1540030751413" duration="12597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23132000" />
+    <option name="totallyTimeSpent" value="24089000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3763" height="2176" extended-state="6" />
+    <frame x="-8" y="-8" width="3763" height="2176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16500135" />
@@ -349,13 +360,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitcoin/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -454,7 +458,14 @@
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="528" column="64" selection-start-line="528" selection-start-column="50" selection-end-line="528" selection-end-column="64" />
         </state>
       </provider>
     </entry>
