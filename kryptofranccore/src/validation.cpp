@@ -1161,28 +1161,25 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
-
-    
-	if(nHeight == 3)  
+    CAmount nSubsidy;
+	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
+	
+	if(nHeight <= 30)  
 	{
-		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions on 3rd block
-	else {
+		CAmount nSubsidy = 100000000 * COIN;  // premine 100 billions on 3rd ->300 blocks
+		halvings=1.0;
+	}else {
 		CAmount nSubsidy = 28028 * COIN; 
 		int years = (int) nHeight/52560; 
-		halfings = (years/1.618033988750);
+		halvings = (years/1.618033988750);
 	}
 
-    // Kryptofranc specific
-    
-	if (halfings<=1.0) halfings=1.0;
-	nSubsidy =   nSubsidy / halfings;
+	if (halvings<=1.0) halvings=1.0;
+	nSubsidy =   nSubsidy / halvings;
 
     return nSubsidy;
 }
+
 
 bool IsInitialBlockDownload()
 {

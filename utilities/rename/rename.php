@@ -86,8 +86,11 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
         return 0;
 
     CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
+    // Kryptofranc specific
+    
+	if (halfings<=1.0) halfings=1.0;
+	nSubsidy =   nSubsidy / halfings;
+
     return nSubsidy;
 }","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
@@ -112,22 +115,6 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
 ");
 
 
-
-replace_in_file($path_to_file."/src/validation.cpp","int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;","double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo");
-
-
-
-replace_in_file($path_to_file."/src/validation.cpp","CAmount nSubsidy = 50 * COIN;",
-"
-	if(nHeight == 3)  
-	{
-		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions on 3rd block
-	else {
-		CAmount nSubsidy = 28028 * COIN; 
-		int years = (int) nHeight/52560; 
-		halfings = (years/1.618033988750);
-	}
-");
 
 replace_in_file($path_to_file."/src/validation.cpp","nSubsidy >>= halvings;","
 	if (halfings<=1.0) halfings=1.0;
