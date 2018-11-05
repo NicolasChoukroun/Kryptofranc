@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 xxxxxx
+// Copyright (c) 2009-2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -119,9 +119,9 @@ public:
         nDefaultPort = 1789;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1546300801, 981099688, 486604799, 1, 1 * COIN);
+        genesis = CreateGenesisBlock(1541385242, 629567413, 486604799, 1, 1 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000000072051fbf3a18e627f8f650b8d8c3e795fd73810f3ad843fc12e02038"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"));
         assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
@@ -129,9 +129,9 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("seed1.kryptofranc.net"); // Pieter Wuille, only supports x1, x5, x9, and xd
-        vSeeds.emplace_back("seed2.kryptofranc.net"); // Matt Corallo, only supports x9
-        vSeeds.emplace_back("seed3.kryptofranc.net"); // Luke Dashjr
+        vSeeds.emplace_back("seed1.kryptofranc.net"); // Kryptofranc network 1GB/s
+        vSeeds.emplace_back("seed2.kryptofranc.net"); 
+        vSeeds.emplace_back("seed3.kryptofranc.net"); 
         //vSeeds.emplace_back("seed.kryptofrancstats.com"); // Christian Decker, supports x1 - xf
         //vSeeds.emplace_back("seed.kryptofranc.jonasschnelli.ch"); // Jonas Schnelli, only supports x1, x5, x9, and xd
         //vSeeds.emplace_back("seed.btc.petertodd.org"); // Peter Todd, only supports x1, x5, x9, and xd
@@ -190,10 +190,10 @@ public:
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 210000/4; // every year
         consensus.BIP16Exception = uint256S("0x00000000dd30457c001f4095d208cc1296b0eed002427aa599874af7a432b105");
-        consensus.BIP34Height = 21111;
+        consensus.BIP34Height = 0; // optimization starting from 0;
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8");
-        consensus.BIP65Height = 581885; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
-        consensus.BIP66Height = 330776; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
+        consensus.BIP65Height = 0; // optimization starting from 0; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
+        consensus.BIP65Height = 0; // optimization starting from 0; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 10 * 60;
@@ -228,10 +228,10 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300801, 414098458, 486604799, 1, 1 * COIN);
+        genesis = CreateGenesisBlock(1296688602, 414098458, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        //assert(consensus.hashGenesisBlock == uint256S("0x000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"));
+        assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -283,10 +283,10 @@ public:
         strNetworkID = "regtest";
         consensus.nSubsidyHalvingInterval = 150;
         consensus.BIP16Exception = uint256();
-        consensus.BIP34Height = 100000000; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests)
+        consensus.BIP34Height = 0; // optimization starting from 0; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests)
         consensus.BIP34Hash = uint256();
-        consensus.BIP65Height = 1351; // BIP65 activated on regtest (Used in rpc activation tests)
-        consensus.BIP66Height = 1251; // BIP66 activated on regtest (Used in rpc activation tests)
+        consensus.BIP65Height = 0; // optimization starting from 0; // BIP65 activated on regtest (Used in rpc activation tests)
+        consensus.BIP65Height = 0; // optimization starting from 0; // BIP66 activated on regtest (Used in rpc activation tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 10 * 60;
@@ -314,13 +314,13 @@ public:
         pchMessageStart[1] = 0xbf;
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
-        nDefaultPort = 18444;
+        nDefaultPort = 21789;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        //assert(consensus.hashGenesisBlock == uint256S("0x0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"));
+        assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
