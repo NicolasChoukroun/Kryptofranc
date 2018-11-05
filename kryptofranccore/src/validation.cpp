@@ -1174,13 +1174,13 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 	else {
 		CAmount nSubsidy = 28028 * COIN; 
 		int years = (int) nHeight/52560; 
-		halfings = (years/1.618033988750);
+		halvings = (years/1.618033988750);
 	}
 
     // Kryptofranc specific
     
-	if (halfings<=1.0) halfings=1.0;
-	nSubsidy =   nSubsidy / halfings;
+	if (halvings<=1.0) halvings=1.0;
+	nSubsidy =   nSubsidy / halvings;
 
     return nSubsidy;
 }
