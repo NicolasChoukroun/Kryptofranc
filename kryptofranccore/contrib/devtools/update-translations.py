@@ -126,7 +126,7 @@ def escape_cdata(text):
 
 def contains_bitcoin_addr(text, errors):
     if text != None and ADDRESS_REGEXP.search(text) != None:
-        errors.append('Translation "%s" contains a KryptoFranc address. This will be removed.' % (text))
+        errors.append('Translation "%s" contains a bitcoin address. This will be removed.' % (text))
         return True
     return False
 

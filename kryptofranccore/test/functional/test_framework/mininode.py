@@ -87,7 +87,7 @@ class P2PConnection(asyncio.Protocol):
         self.on_connection_send_msg = None
         self.recvbuf = b""
         self.network = net
-        logger.debug('Connecting to KryptoFranc Node: %s:%d' % (self.dstaddr, self.dstport))
+        logger.debug('Connecting to Bitcoin Node: %s:%d' % (self.dstaddr, self.dstport))
 
         loop = NetworkThread.network_event_loop
         conn_gen_unsafe = loop.create_connection(lambda: self, host=self.dstaddr, port=self.dstport)
@@ -220,7 +220,7 @@ class P2PConnection(asyncio.Protocol):
 
 
 class P2PInterface(P2PConnection):
-    """A high-level P2P interface class for communicating with a KryptoFranc node.
+    """A high-level P2P interface class for communicating with a Bitcoin node.
 
     This class provides high-level callbacks for processing P2P message
     payloads, as well as convenience methods for interacting with the
@@ -482,7 +482,7 @@ class P2PDataStore(P2PInterface):
         self.reject_code_received = message.code
         self.reject_reason_received = message.reason
 
-    def send_blocks_and_test(self, blocks, node, *, success=True, request_block=True, reject_code=None, reject_reason=None, timeout=60):
+    def send_blocks_and_test(self, blocks, rpc, success=True, request_block=True, reject_code=None, reject_reason=None, timeout=60):
         """Send blocks to test node and test whether the tip advances.
 
          - add all blocks to our block_store
@@ -508,16 +508,16 @@ class P2PDataStore(P2PInterface):
             wait_until(lambda: blocks[-1].sha256 in self.getdata_requests, timeout=timeout, lock=mininode_lock)
 
         if success:
-            wait_until(lambda: node.getbestblockhash() == blocks[-1].hash, timeout=timeout)
+            wait_until(lambda: rpc.getbestblockhash() == blocks[-1].hash, timeout=timeout)
         else:
-            assert node.getbestblockhash() != blocks[-1].hash
+            assert rpc.getbestblockhash() != blocks[-1].hash
 
         if reject_code is not None:
             wait_until(lambda: self.reject_code_received == reject_code, lock=mininode_lock)
         if reject_reason is not None:
             wait_until(lambda: self.reject_reason_received == reject_reason, lock=mininode_lock)
 
-    def send_txs_and_test(self, txs, node, *, success=True, expect_disconnect=False, reject_code=None, reject_reason=None):
+    def send_txs_and_test(self, txs, rpc, success=True, expect_disconnect=False, reject_code=None, reject_reason=None):
         """Send txs to test node and test whether they're accepted to the mempool.
 
          - add all txs to our tx_store
@@ -541,7 +541,7 @@ class P2PDataStore(P2PInterface):
         else:
             self.sync_with_ping()
 
-        raw_mempool = node.getrawmempool()
+        raw_mempool = rpc.getrawmempool()
         if success:
             # Check that all txs are now in the mempool
             for tx in txs:

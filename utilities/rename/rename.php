@@ -77,8 +77,40 @@ replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 
 // validation host the rewards 
 replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 replace_in_file($path_to_file."/src/validation.cpp","// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.","// Kryptofranc specific");
-replace_in_file($path_to_file."/src/validation.cpp","if (halvings >= 64)","// if (halvings >= 64) // stupid");
-replace_in_file($path_to_file."/src/validation.cpp","return 0;","// return 0; // re-stupid");
+// halving algo for Kryptofranc
+replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
+{
+    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+    // Force block reward to zero when right shift is undefined.
+    if (halvings >= 64)
+        return 0;
+
+    CAmount nSubsidy = 50 * COIN;
+    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    nSubsidy >>= halvings;
+    return nSubsidy;
+}","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
+{
+    CAmount nSubsidy;
+	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
+	
+	if(nHeight <= 30)  
+	{
+		CAmount nSubsidy = 100000000 * COIN;  // premine 100 billions on 3rd ->300 blocks
+		halvings=1.0;
+	}else {
+		CAmount nSubsidy = 28028 * COIN; 
+		int years = (int) nHeight/52560; 
+		halvings = (years/1.618033988750);
+	}
+
+	if (halvings<=1.0) halvings=1.0;
+	nSubsidy =   nSubsidy / halvings;
+
+    return nSubsidy;
+}
+");
+
 
 
 replace_in_file($path_to_file."/src/validation.cpp","int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;","double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo");
@@ -146,9 +178,9 @@ foreach ($cdir as $key => $value)
 
 			while (!feof($reading)) {
 				$line = fgets($reading);
-				if (stripos($line,"xxxxxx")!==false) {$line=str_replace( "xxxxxx","The Bitcoin Core developers",$line);$replaced=true;} 
 				
-				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
+				
+				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
 					
 					//if (stripos($line,"TRANSLATE_NOOP")!==false && stripos($line,"Bitcoin Core")!==false) {
 					//	$line=str_replace("Bitcoin Core", "KryptoFranc",$line);

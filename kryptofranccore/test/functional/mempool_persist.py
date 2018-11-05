@@ -107,8 +107,8 @@ class MempoolPersistTest(BitcoinTestFramework):
         self.start_node(1, extra_args=[])
         wait_until(lambda: len(self.nodes[1].getrawmempool()) == 5)
 
-        self.log.debug("Prevent KryptoFrancd from writing mempool.dat to disk. Verify that `savemempool` fails")
-        # to test the exception we are creating a KryptoFranc_replace folder called mempool.dat.new
+        self.log.debug("Prevent bitcoind from writing mempool.dat to disk. Verify that `savemempool` fails")
+        # to test the exception we are creating a tmp folder called mempool.dat.new
         # which is an implementation detail that could change and break this test
         mempooldotnew1 = mempooldat1 + '.new'
         os.mkdir(mempooldotnew1)
