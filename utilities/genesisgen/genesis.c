@@ -313,8 +313,8 @@ int main(int argc, char *argv[])
 		printf("Generating block...\n");
 		if(!unixtime)
 		{
-			//unixtime = time(NULL);
-			unixtime = 1546300800; // 1st Jan 2019 changed for Kryptofranc
+			unixtime = time(NULL); // time is now
+			//unixtime = 1546300800; // 1st Jan 2019 changed for Kryptofranc
 		}
 
 		unsigned char block_header[80], block_hash1[32], block_hash2[32];
