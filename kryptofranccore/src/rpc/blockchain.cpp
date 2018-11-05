@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 xxxxxx
+// Copyright (c) 2009-2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1187,19 +1187,19 @@ UniValue getblockchaininfo(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"chain\": \"xxxx\",              (string) current network name as defined in BIP70 (main, test, regtest)\n"
-            "  \"blocks\": xxxxxx,             (numeric) the current number of blocks processed in the server\n"
-            "  \"headers\": xxxxxx,            (numeric) the current number of headers we have validated\n"
+            "  \"blocks\": The KryptoFranc developers,             (numeric) the current number of blocks processed in the server\n"
+            "  \"headers\": The KryptoFranc developers,            (numeric) the current number of headers we have validated\n"
             "  \"bestblockhash\": \"...\",       (string) the hash of the currently best block\n"
-            "  \"difficulty\": xxxxxx,         (numeric) the current difficulty\n"
-            "  \"mediantime\": xxxxxx,         (numeric) median time for the current best block\n"
+            "  \"difficulty\": The KryptoFranc developers,         (numeric) the current difficulty\n"
+            "  \"mediantime\": The KryptoFranc developers,         (numeric) median time for the current best block\n"
             "  \"verificationprogress\": xxxx, (numeric) estimate of verification progress [0..1]\n"
             "  \"initialblockdownload\": xxxx, (bool) (debug information) estimate of whether this node is in Initial Block Download mode.\n"
             "  \"chainwork\": \"xxxx\"           (string) total amount of work in active chain, in hexadecimal\n"
-            "  \"size_on_disk\": xxxxxx,       (numeric) the estimated size of the block and undo files on disk\n"
+            "  \"size_on_disk\": The KryptoFranc developers,       (numeric) the estimated size of the block and undo files on disk\n"
             "  \"pruned\": xx,                 (boolean) if the blocks are subject to pruning\n"
-            "  \"pruneheight\": xxxxxx,        (numeric) lowest-height complete block stored (only present if pruning is enabled)\n"
+            "  \"pruneheight\": The KryptoFranc developers,        (numeric) lowest-height complete block stored (only present if pruning is enabled)\n"
             "  \"automatic_pruning\": xx,      (boolean) whether automatic pruning is enabled (only present if pruning is enabled)\n"
-            "  \"prune_target_size\": xxxxxx,  (numeric) the target size used by pruning (only present if automatic pruning is enabled)\n"
+            "  \"prune_target_size\": The KryptoFranc developers,  (numeric) the target size used by pruning (only present if automatic pruning is enabled)\n"
             "  \"softforks\": [                (array) status of softforks in progress\n"
             "     {\n"
             "        \"id\": \"xxxx\",           (string) name of softfork\n"

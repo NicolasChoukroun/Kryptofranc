@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 xxxxxx
+// Copyright (c) 2009-2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -327,8 +327,8 @@ static UniValue getmemoryinfo(const JSONRPCRequest& request)
             "  \"locked\": {               (json object) Information about locked memory manager\n"
             "    \"used\": xxxxx,          (numeric) Number of bytes used\n"
             "    \"free\": xxxxx,          (numeric) Number of bytes available in current arenas\n"
-            "    \"total\": xxxxxxx,       (numeric) Total number of bytes managed\n"
-            "    \"locked\": xxxxxx,       (numeric) Amount of bytes that succeeded locking. If this number is smaller than total, locking pages failed at some point and key data could be swapped to disk.\n"
+            "    \"total\": The KryptoFranc developersx,       (numeric) Total number of bytes managed\n"
+            "    \"locked\": The KryptoFranc developers,       (numeric) Amount of bytes that succeeded locking. If this number is smaller than total, locking pages failed at some point and key data could be swapped to disk.\n"
             "    \"chunks_used\": xxxxx,   (numeric) Number allocated chunks\n"
             "    \"chunks_free\": xxxxx,   (numeric) Number unused chunks\n"
             "  }\n"

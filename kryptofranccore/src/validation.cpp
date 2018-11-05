@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The KryptoFranc developers
+// Copyright (c) 2018 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1163,8 +1164,8 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
     // Force block reward to zero when right shift is undefined.
-    // if (halvings >= 64) // stupid
-        // return 0; // re-stupid
+    // // if (halvings >= 64) // stupid // stupid
+        // // return 0; // re-stupid // re-stupid
 
     
 	if(nHeight == 3)  
@@ -1730,7 +1731,7 @@ private:
 public:
     explicit WarningBitsConditionChecker(int bitIn) : bit(bitIn) {}
 
-    int64_t BeginTime(const Consensus::Params& params) const override { // return 0; // re-stupid }
+    int64_t BeginTime(const Consensus::Params& params) const override { // // return 0; // re-stupid // re-stupid }
     int64_t EndTime(const Consensus::Params& params) const override { return std::numeric_limits<int64_t>::max(); }
     int Period(const Consensus::Params& params) const override { return params.nMinerConfirmationWindow; }
     int Threshold(const Consensus::Params& params) const override { return params.nRuleChangeActivationThreshold; }

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 xxxxxx
+// Copyright (c) 2009-2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1223,7 +1223,7 @@ std::string CopyrightHolders(const std::string& strPrefix)
 
     // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
     if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("KryptoFranc") == std::string::npos) {
-        strCopyrightHolders += "\n" + strPrefix + "xxxxxx";
+        strCopyrightHolders += "\n" + strPrefix + "The KryptoFranc developers";
     }
     return strCopyrightHolders;
 }

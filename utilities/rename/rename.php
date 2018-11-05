@@ -146,8 +146,9 @@ foreach ($cdir as $key => $value)
 
 			while (!feof($reading)) {
 				$line = fgets($reading);
-	
-				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false) && strpos($line,"")===false && $line<>false){
+				if (stripos($line,"xxxxxx")!==false) {$line=str_replace( "xxxxxx","The Bitcoin Core developers",$line);$replaced=true;} 
+				
+				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
 					
 					//if (stripos($line,"TRANSLATE_NOOP")!==false && stripos($line,"Bitcoin Core")!==false) {
 					//	$line=str_replace("Bitcoin Core", "KryptoFranc",$line);
@@ -155,7 +156,7 @@ foreach ($cdir as $key => $value)
 					//}else{
 							
 						//$line=str_replace("The Bitcoin Core developers", "xxxxxx",$line);
-						$line=str_replace( "xxxxxx","The Bitcoin Core developers",$line);
+						//$line=str_replace( "xxxxxx","The Bitcoin Core developers",$line);
 						$line=str_replace("bitcoin-core", strtolower($name)."-core",$line);
 						$line=str_replace("Bitcoin Core", ucwords($name),$line);
 						$line=str_replace("bitcoin", strtolower($name),$line);
