@@ -1169,10 +1169,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
     CAmount nSubsidy = 50 * COIN;
     // Kryptofranc specific
-    
-	if (halfings<=1.0) halfings=1.0;
-	nSubsidy =   nSubsidy / halfings;
-
+    nSubsidy >>= halvings;
     return nSubsidy;
 }
 

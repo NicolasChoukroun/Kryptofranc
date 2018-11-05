@@ -97,8 +97,8 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
     CAmount nSubsidy = 50 * COIN;
     // Kryptofranc specific
     
-	if (halfings<=1.0) halfings=1.0;
-	nSubsidy =   nSubsidy / halfings;
+	if (halvings<=1.0) halvings=1.0;
+	nSubsidy =   nSubsidy / halvings;
 
     return nSubsidy;
 }","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
@@ -123,15 +123,6 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
 }
 ");
 
-
-
-replace_in_file($path_to_file."/src/validation.cpp","nSubsidy >>= halvings;","
-	if (halfings<=1.0) halfings=1.0;
-	nSubsidy =   nSubsidy / halfings;
-");
-//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
-//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
-//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 
 
 // change the names of the executables as well as the Bitcoin Core weird strings.
