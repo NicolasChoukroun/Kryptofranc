@@ -223,7 +223,7 @@ replace_in_file($path_to_file."/src/qt/receiverequestdialog.cpp","BitcoinUnits::
 replace_in_file($path_to_file."/src/qt/sendcoinsdialog.cpp","BitcoinUnits::","kryptoFrancUnits::");
 replace_in_file($path_to_file."/src/qt/transactiondesc.cpp","BitcoinUnits::","kryptoFrancUnits::");
 replace_in_file($path_to_file."/src/qt/transactiontablemodel.cpp","BitcoinUnits::","kryptoFrancUnits::");
-
+replace_in_file($path_to_file."/src/qt/recentrequeststablemodel.cpp","BitcoinUnits::","kryptoFrancUnits::");
 
 echo "\r\nOperation Finished\r\n";
 echo "Total modifications: ".$nbrtotal." - Nbr files scanned: ".$nbrfiles;
