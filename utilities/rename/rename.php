@@ -180,7 +180,7 @@ foreach ($cdir as $key => $value)
 				$line = fgets($reading);
 				
 				
-				$line=str_replace("Copyright (c) 2009-2018 The Bitcoin Core developers", "Copyright (c) 2009-2018 The Bitcoin Core developers\r\nCopyright (c) 2018 The Kryptofranc Core developers",$line);
+				$line=str_replace("Copyright (c) 2009-2018 The Bitcoin Core developers", "Copyright (c) 2009-2018 The Bitcoin Core developers\r\n// Copyright (c) 2018 The Kryptofranc Core developers",$line);
 											
 				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && strpos($line,"tr(")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
 					
