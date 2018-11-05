@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 xxxxxx
+// Copyright (c) 2009-2018 The KryptoFranc developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1161,14 +1161,26 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+    double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
     // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
+    // if (halvings >= 64) // stupid
+        // return 0; // re-stupid
 
-    CAmount nSubsidy = 28028 * COIN; int years = (int) nHeight/52560; double half = (years/1.618033988750);
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy =   nSubsidy / half;
+    
+	if(nHeight == 3)  
+	{
+		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions on 3rd block
+	else {
+		CAmount nSubsidy = 28028 * COIN; 
+		int years = (int) nHeight/52560; 
+		halfings = (years/1.618033988750);
+	}
+
+    // Kryptofranc specific
+    
+	if (halfings<=1.0) halfings=1.0;
+	nSubsidy =   nSubsidy / halfings;
+
     return nSubsidy;
 }
 
@@ -1718,7 +1730,7 @@ private:
 public:
     explicit WarningBitsConditionChecker(int bitIn) : bit(bitIn) {}
 
-    int64_t BeginTime(const Consensus::Params& params) const override { return 0; }
+    int64_t BeginTime(const Consensus::Params& params) const override { // return 0; // re-stupid }
     int64_t EndTime(const Consensus::Params& params) const override { return std::numeric_limits<int64_t>::max(); }
     int Period(const Consensus::Params& params) const override { return params.nMinerConfirmationWindow; }
     int Threshold(const Consensus::Params& params) const override { return params.nRuleChangeActivationThreshold; }
