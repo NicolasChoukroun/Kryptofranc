@@ -10,6 +10,7 @@ replace_in_file($path_to_file."/src/qt/intro.cpp","storageRequiresMsg.arg(requir
 replace_in_file($path_to_file."/src/qt/intro.cpp","BLOCK_CHAIN_SIZE = 220","BLOCK_CHAIN_SIZE = 1");
 replace_in_file($path_to_file."/src/qt/intro.cpp",".arg(2009)",".arg(2019)");
 replace_in_file($path_to_file."/src/qt/bitcoinstrings.cpp","(\"bitcoin-core\", \"Bitcoin Core\")","(\"bitcoin-core\", \"KryptoFranc Core\")");
+replace_in_file($path_to_file."/src/qt/intro.cpp",".arg(2009)",".arg(2019)");
 
 // change the blockchain parameters
 replace_in_file($path_to_file."/src/chainparams.cpp","nSubsidyHalvingInterval = 210000;","nSubsidyHalvingInterval = 210000/4; // every year");
@@ -173,7 +174,7 @@ foreach ($cdir as $key => $value)
 				
 				$line=str_replace("Copyright (c) 2009-2018 The Bitcoin Core developers", "Copyright (c) 2009-2018 The Bitcoin Core developers\r\n// Copyright (c) 2018 The Kryptofranc Core developers",$line);
 											
-				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && strpos($line,"tr(")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
+				if ( strpos($line,"_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && strpos($line,'tr("')===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
 					
 					//if (stripos($line,"TRANSLATE_NOOP")!==false && stripos($line,"Bitcoin Core")!==false) {
 					//	$line=str_replace("Bitcoin Core", "KryptoFranc",$line);
@@ -189,7 +190,8 @@ foreach ($cdir as $key => $value)
 						$line=str_replace("BitCoin", ucwords($name),$line);
 						$line=str_replace("Bitcoin", lcfirst($name),$line);
 						$line=str_replace("BITCOIN", strtoupper($name),$line);	
-						$line=str_replace("BTC", "KYF",$line);						
+						$line=str_replace("BTC", "KYF",$line);
+						$line=str_replace("your kryptofrancs from being stolen by malware infecting your computer", "your bitcoins from being stolen by malware infecting your computer",$line);						
 					//}
 					$replaced=true;
 					$nbr++;$nbrtotal++;

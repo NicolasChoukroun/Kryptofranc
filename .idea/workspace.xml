@@ -9,7 +9,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="" />
+    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-cli.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-cli.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/askpassphrasedialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/askpassphrasedialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcwallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcwallet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/rename/rename.php" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/rename/rename.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="43" column="150" selection-start-line="43" selection-start-column="150" selection-end-line="43" selection-end-column="150" />
+            <state relative-caret-position="555">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,6 +160,8 @@
       <find>DEFAULT_MAX_TIP_AGE</find>
       <find>vAlertPubKey</find>
       <find>will download</find>
+      <find>alert</find>
+      <find>tr(&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -222,7 +230,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="3763" />
@@ -301,15 +309,15 @@
       <workItem from="1536226159673" duration="4414000" />
       <workItem from="1536331444415" duration="4316000" />
       <workItem from="1536480242624" duration="1295000" />
-      <workItem from="1540030751413" duration="11000000" />
+      <workItem from="1540030751413" duration="11640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22492000" />
+    <option name="totallyTimeSpent" value="23132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3763" height="2176" extended-state="7" />
+    <frame x="-8" y="-8" width="3763" height="2176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16500135" />
@@ -445,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="43" column="150" selection-start-line="43" selection-start-column="150" selection-end-line="43" selection-end-column="150" />
+        <state relative-caret-position="555">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
         </state>
       </provider>
     </entry>
