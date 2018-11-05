@@ -218,6 +218,11 @@ foreach ($cdir as $key => $value)
 
 replace_in_file($path_to_file."/src/qt/bitcoin.cpp","BitcoinGUI::tr(","kryptoFrancGUI::tr(");
 replace_in_file($path_to_file."/src/qt/bitcoingui.cpp","arg(BitcoinUnits::","arg(kryptoFrancUnits::");
+replace_in_file($path_to_file."/src/qt/receiverequestdialog.cpp","BitcoinUnits::formatHtmlWithUnit","kryptoFrancUnits::formatHtmlWithUnit");
+replace_in_file($path_to_file."/src/qt/receiverequestdialog.cpp","BitcoinUnits::","kryptoFrancUnits::");
+replace_in_file($path_to_file."/src/qt/sendcoinsdialog.cpp","BitcoinUnits::","kryptoFrancUnits::");
+replace_in_file($path_to_file."/src/qt/transactiondesc.cpp","BitcoinUnits::","kryptoFrancUnits::");
+replace_in_file($path_to_file."/src/qt/transactiontablemodel.cpp","BitcoinUnits::","kryptoFrancUnits::");
 
 
 echo "\r\nOperation Finished\r\n";
