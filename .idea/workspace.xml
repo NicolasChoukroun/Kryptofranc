@@ -11,7 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-cli-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-cli-res.rc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-tx-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/bitcoin-tx-res.rc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/bitcoind-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/bitcoind-res.rc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/bitcoin-qt-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/bitcoin-qt-res.rc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/icons/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/icons/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/GenesisH0/genesis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/GenesisH0/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/GenesisH0/rungenesis.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/rename/rename.php" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/rename/rename.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -130,8 +139,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
+            <state relative-caret-position="71">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -156,6 +165,7 @@
       <find>pindex-&gt;nHeight</find>
       <find>(1 &lt;&lt; 10) * COIN</find>
       <find>DEFAULT_MAX_TIP_AGE</find>
+      <find>vAlertPubKey</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -224,7 +234,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="3763" />
@@ -303,15 +313,15 @@
       <workItem from="1536226159673" duration="4414000" />
       <workItem from="1536331444415" duration="4316000" />
       <workItem from="1536480242624" duration="1295000" />
-      <workItem from="1540030751413" duration="7842000" />
+      <workItem from="1540030751413" duration="10014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19334000" />
+    <option name="totallyTimeSpent" value="21506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3763" height="2176" extended-state="6" />
+    <frame x="-8" y="-8" width="3763" height="2176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16500135" />
@@ -447,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
+        <state relative-caret-position="71">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>

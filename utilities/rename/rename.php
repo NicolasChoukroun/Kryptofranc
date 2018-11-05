@@ -19,13 +19,17 @@ replace_in_file($path_to_file."/src/chainparams.cpp","= 0xb4;","= 0x46;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xd9;","= 0x20;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 8333;","= 1789;");
 replace_in_file($path_to_file."/src/chainparams.cpp","18333;","11789;");
-replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);","CreateGenesisBlock(1546300801, 981099688, 0x1d00ffff, 1, 1 * COIN);");  // genesis params
-replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chancellor on brink of second bailout for banks","CNBC 2018/07/24 Singapore Officially Backs a CryptoCurrency and Establishes it as their Official Coin");
+replace_in_file($path_to_file."/src/chainparams.cpp","18444;","21789;");
+replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);","CreateGenesisBlock(1541385242, 629567413, 486604799, 1, 1 * COIN);");  // genesis params
+replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chancellor on brink of second bailout for banks","2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin");
 //replace_in_file($path_to_file."/src/chainparams.cpp","assert(consensus.hashGenesisBlock","//assert(consensus.hashGenesisBlock");
 //replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
 replace_in_file($path_to_file."/src/chainparams.cpp","seed.bitcoin.sipa.be","seed1.kryptofranc.net");
 replace_in_file($path_to_file."/src/chainparams.cpp","dnsseed.bluematt.me","seed2.kryptofranc.net");
 replace_in_file($path_to_file."/src/chainparams.cpp","dnsseed.bitcoin.dashjr.org","seed3.kryptofranc.net");
+replace_in_file($path_to_file."/src/chainparams.cpp","// Pieter Wuille, only supports x1, x5, x9, and xd","// Kryptofranc network 1GB/s");
+replace_in_file($path_to_file."/src/chainparams.cpp","// Matt Corallo, only supports x9","");
+replace_in_file($path_to_file."/src/chainparams.cpp","// Luke Dashjr","");
 replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.bitcoinstats','//vSeeds.emplace_back("seed.bitcoinstats');
 replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.bitcoin.jonasschnelli.ch','//vSeeds.emplace_back("seed.bitcoin.jonasschnelli.ch');
 replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.btc.petertodd.org','//vSeeds.emplace_back("seed.btc.petertodd.org');
@@ -46,12 +50,23 @@ replace_in_file($path_to_file."/src/chainparams.cpp","{295000,","//{ 295000,");
 replace_in_file($path_to_file."/src/chainparams.cpp","BIP34Height = 227931","BIP34Height = 0; // optimization starting from 0");
 replace_in_file($path_to_file."/src/chainparams.cpp","BIP65Height = 388381","BIP65Height = 0; // optimization starting from 0");
 replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 363725","BIP65Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP34Height = 21111","BIP34Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP65Height = 581885","BIP65Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 330776","BIP65Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP34Height = 100000000","BIP34Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP65Height = 1351","BIP65Height = 0; // optimization starting from 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 1251","BIP65Height = 0; // optimization starting from 0");
 replace_in_file($path_to_file."/src/chainparams.cpp","0x0000000000000000000000000000000000000000028822fef1c230963535a90d","0000000000000000000000000000000000000000000000000000000100010001"); 
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetSpacing = 10 * 60","nPowTargetSpacing = 10 * 60"); // change block time (10 min)
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetTimespan = 14 * 24 * 60 * 60;","nPowTargetTimespan = 14 * 24 * 60 * 60;"); // Change the difficulty adjustment interval (2 weeks)
-replace_in_file($path_to_file."/src/chainparams.cpp","04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f","41049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3edac"); // change the genesis public key
+replace_in_file($path_to_file."/src/chainparams.cpp","04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f","049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed"); // change the genesis public key
 replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
+
 
 replace_in_file($path_to_file."/src/chainparamsbase.cpp","8332","1790"); // change RPC port value
 
@@ -61,11 +76,34 @@ replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 
 
 // validation host the rewards 
 replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
-replace_in_file($path_to_file."/src/validation.cpp","CAmount nSubsidy = 50 * COIN;","CAmount nSubsidy = 28028 * COIN; int years = (int) nHeight/52560; double half = (years/1.618033988750);");
-replace_in_file($path_to_file."/src/validation.cpp","nSubsidy >>= halvings;","nSubsidy =   nSubsidy / half;");
-replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
-replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
-replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
+replace_in_file($path_to_file."/src/validation.cpp","// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.","// Kryptofranc specific");
+replace_in_file($path_to_file."/src/validation.cpp","if (halvings >= 64)","// if (halvings >= 64) // stupid");
+replace_in_file($path_to_file."/src/validation.cpp","return 0;","// return 0; // re-stupid");
+
+
+replace_in_file($path_to_file."/src/validation.cpp","int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;","double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo");
+
+
+
+replace_in_file($path_to_file."/src/validation.cpp","CAmount nSubsidy = 50 * COIN;",
+"
+	if(nHeight == 3)  
+	{
+		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions on 3rd block
+	else {
+		CAmount nSubsidy = 28028 * COIN; 
+		int years = (int) nHeight/52560; 
+		halfings = (years/1.618033988750);
+	}
+");
+
+replace_in_file($path_to_file."/src/validation.cpp","nSubsidy >>= halvings;","
+	if (halfings<=1.0) halfings=1.0;
+	nSubsidy =   nSubsidy / halfings;
+");
+//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
+//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
+//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 
 
 // change the names of the executables as well as the Bitcoin Core weird strings.
@@ -76,14 +114,26 @@ replace_in_file($path_to_file."/configure.ac","bitcoin-cli","kyf-cli");
 replace_in_file($path_to_file."/configure.ac","bitcoin-tx","kyf-tx");
 replace_in_file($path_to_file."/configure.ac","[https://github.com/bitcoin/bitcoin/issues],[bitcoin],[https://bitcoincore.org/])","[https://github.com/kryptofranc/kryptofranc/issues],[kryptofranc],[https://kryptofranc.org/])");
 
+unlink($path_to_file."/qt/res/icons/bitcoin.ico");
+unlink($path_to_file."/qt/res/icons/bitcoin.png");
+unlink($path_to_file."/qt/res/icons/bitcoin.icns");
+unlink($path_to_file."/qt/res/icons/bitcoin_testnet.ico");
+unlink($path_to_file."/qt/res/icons/about.png");
+copy("kryptofranc.ico",$path_to_file."/src/qt/res/icons/kryptofranc.ico") or die("error copy kryptofranc.ico");
+copy("kryptofranc.png",$path_to_file."/src/qt/res/icons/kryptofranc.png") or die("error copy kryptofranc.png");;
+copy("kryptofranc.icns",$path_to_file."/src/qt/res/icons/kryptofranc.icns") or die("error copy kryptofranc.icns");;
+copy("kryptofranc_testnet.ico",$path_to_file."/src/qt/res/icons/kryptofranc_testnet.ico") or die("error copy kryptofranc_testnet.ico");;
+copy("about.png",$path_to_file."/src/qt/res/icons/about.png") or die("error copy about.png");;
+copy("kryptofranc.png",$path_to_file."/doc/kryptofranc_logo_doxygen.png") or die("error copy kryptofranc_logo_doxygen.png");;
 
+replace_in_file($path_to_file."/doc/Doxyfile.in","Bitcoin","Kryptofranc");
 
 foreach ($cdir as $key => $value) 
 { 
 	$nbr=0;$nbrfiles++;
 	if (!in_array($value,array(".",".."))) 
 	{ 
-		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
+		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false || strpos($value,".1")!==false || strpos($value,".rc")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
 		{ 
 			$result = $value; 
 			echo "Renaming ".$result."...\r\n";
@@ -104,7 +154,8 @@ foreach ($cdir as $key => $value)
 					//	
 					//}else{
 							
-						$line=str_replace("The Bitcoin Core developers", "xxxxxx",$line);
+						//$line=str_replace("The Bitcoin Core developers", "xxxxxx",$line);
+						$line=str_replace( "xxxxxx","The Bitcoin Core developers",$line);
 						$line=str_replace("bitcoin-core", strtolower($name)."-core",$line);
 						$line=str_replace("Bitcoin Core", ucwords($name),$line);
 						$line=str_replace("bitcoin", strtolower($name),$line);
