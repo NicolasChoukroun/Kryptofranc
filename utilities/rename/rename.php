@@ -27,9 +27,11 @@ replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chan
 //replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
 
 replace_in_file($path_to_file."/src/chainparams.cpp",'assert(consensus.hashGenesisBlock == uint256S("0x000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"));',"// removed");
-replace_in_file($path_to_file."/src/chainparams.cpp",'assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));',"// removed");
+//replace_in_file($path_to_file."/src/chainparams.cpp",'assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));',"// removed");
 replace_in_file($path_to_file."/src/chainparams.cpp",'assert(consensus.hashGenesisBlock == uint256S("0x0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"));',"// removed");
 replace_in_file($path_to_file."/src/chainparams.cpp",'assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));',"// removed");
+replace_in_file($path_to_file."/src/chainparams.cpp",'assert(consensus.hashGenesisBlock == uint256S("0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"));',"// removed");
+
 
 replace_in_file($path_to_file."/src/chainparams.cpp","seed.bitcoin.sipa.be","seed1.kryptofranc.net");
 replace_in_file($path_to_file."/src/chainparams.cpp","dnsseed.bluematt.me","seed2.kryptofranc.net");
