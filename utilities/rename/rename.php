@@ -129,6 +129,7 @@ replace_in_file($path_to_file."/Makefile.qt.include","bitcoin.ico","kryptofranc.
 replace_in_file($path_to_file."/Makefile.qt.include","bitcoin_testnet.ico","kryptofranc_testnet.ico");
 
 replace_in_file($path_to_file."/src/qt/bitcoin.qrc","res/icons/bitcoin.png","res/icons/kryptofranc.png");
+replace_in_file($path_to_file."/src/qt/bitcoin.qrc",'"bitcoin"','"kryptofranc"');
 
 
 // change the names of the executables as well as the Bitcoin Core weird strings.
