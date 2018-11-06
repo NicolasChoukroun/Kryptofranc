@@ -126,7 +126,9 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
 }
 ");
 
-
+replace_in_file($path_to_file."/makefile.qt.include","bitcoin.png","kryptofranc.png");
+replace_in_file($path_to_file."/makefile.qt.include","bitcoin.ico","kryptofranc.ico");
+replace_in_file($path_to_file."/makefile.qt.include","bitcoin_testnet.ico","kryptofranc_testnet.ico");
 
 // change the names of the executables as well as the Bitcoin Core weird strings.
 replace_in_file($path_to_file."/configure.ac","[Bitcoin Core]","[Kryptofranc Core]");
@@ -159,7 +161,7 @@ foreach ($cdir as $key => $value)
 	$nbr=0;$nbrfiles++;
 	if (!in_array($value,array(".",".."))) 
 	{ 
-		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false || strpos($value,".1")!==false || strpos($value,".rc")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
+		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false || strpos($value,".qrc")!==false || strpos($value,".1")!==false || strpos($value,".rc")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
 		{ 
 			$result = $value; 
 			echo "Renaming ".$result."...\r\n";
