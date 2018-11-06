@@ -23,8 +23,8 @@ replace_in_file($path_to_file."/src/chainparams.cpp","18333;","11789;");
 replace_in_file($path_to_file."/src/chainparams.cpp","18444;","21789;");
 replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);","CreateGenesisBlock(1541385242, 629567413, 486604799, 1, 1 * COIN);");  // genesis params
 replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chancellor on brink of second bailout for banks","2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin");
-//replace_in_file($path_to_file."/src/chainparams.cpp","assert(consensus.hashGenesisBlock","//assert(consensus.hashGenesisBlock");
-//replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
+replace_in_file($path_to_file."/src/chainparams.cpp","assert(consensus.hashGenesisBlock","//assert(consensus.hashGenesisBlock");
+replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
 
 replace_in_file($path_to_file."/src/chainparams.cpp",'assert(consensus.hashGenesisBlock == uint256S("0x000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"));',"// removed");
 replace_in_file($path_to_file."/src/chainparams.cpp",'assert(genesis.hashMerkleRoot == uint256S("0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"));',"// removed");
@@ -79,7 +79,7 @@ replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae1
 
 replace_in_file($path_to_file."/src/chainparamsbase.cpp","8332","1790"); // change RPC port value
 
-replace_in_file($path_to_file."/amount.h","21000000","1000000000"); // change the max money that can  be spend in 1 transaction 
+replace_in_file($path_to_file."/amount.h","21000000","1000000000000"); // change the max money that can  be spend in 1 transaction 
 
 replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 100","COINBASE_MATURITY = 1"); // change the number of confirmations to a low number for starting - change to a higher value later
 
