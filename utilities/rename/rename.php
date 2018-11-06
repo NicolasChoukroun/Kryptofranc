@@ -87,8 +87,6 @@ replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 
 replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 replace_in_file($path_to_file."/src/validation.cpp","// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.","// Kryptofranc specific");
 
-
-
 // halving algo for Kryptofranc
 replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
@@ -126,9 +124,12 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
 }
 ");
 
-replace_in_file($path_to_file."/makefile.qt.include","bitcoin.png","kryptofranc.png");
-replace_in_file($path_to_file."/makefile.qt.include","bitcoin.ico","kryptofranc.ico");
-replace_in_file($path_to_file."/makefile.qt.include","bitcoin_testnet.ico","kryptofranc_testnet.ico");
+replace_in_file($path_to_file."/Makefile.qt.include","bitcoin.png","kryptofranc.png");
+replace_in_file($path_to_file."/Makefile.qt.include","bitcoin.ico","kryptofranc.ico");
+replace_in_file($path_to_file."/Makefile.qt.include","bitcoin_testnet.ico","kryptofranc_testnet.ico");
+
+replace_in_file($path_to_file."/src/qt/bitcoin.qrc","res/icons/bitcoin.png","res/icons/kryptofranc.png");
+
 
 // change the names of the executables as well as the Bitcoin Core weird strings.
 replace_in_file($path_to_file."/configure.ac","[Bitcoin Core]","[Kryptofranc Core]");
@@ -161,7 +162,7 @@ foreach ($cdir as $key => $value)
 	$nbr=0;$nbrfiles++;
 	if (!in_array($value,array(".",".."))) 
 	{ 
-		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false || strpos($value,".qrc")!==false || strpos($value,".1")!==false || strpos($value,".rc")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
+		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false  || strpos($value,".1")!==false || strpos($value,".rc")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
 		{ 
 			$result = $value; 
 			echo "Renaming ".$result."...\r\n";
@@ -178,7 +179,7 @@ foreach ($cdir as $key => $value)
 				
 				$line=str_replace("Copyright (c) 2009-2018 The Bitcoin Core developers", "Copyright (c) 2009-2018 The Bitcoin Core developers\r\n// Copyright (c) 2018 The Kryptofranc Core developers",$line);
 											
-				if ( stripos($line,"Copyright")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
+				if ( strpos($line,"Q_INIT_RESOURCE")===false && stripos($line,"Copyright")===false && stripos($line,"</header>")===false && stripos($line,"translate")===false && stripos($line,"include")===false && (stripos($line,"bitcoin")!==false || strpos($line,"BTC")!==false ) && strpos($line,"")===false && $line<>false){
 					
 					//if (stripos($line,"TRANSLATE_NOOP")!==false && stripos($line,"Bitcoin Core")!==false) {
 					//	$line=str_replace("Bitcoin Core", "KryptoFranc",$line);
