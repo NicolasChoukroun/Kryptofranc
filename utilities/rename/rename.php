@@ -159,7 +159,7 @@ foreach ($cdir as $key => $value)
 	$nbr=0;$nbrfiles++;
 	if (!in_array($value,array(".",".."))) 
 	{ 
-		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false || strpos($value,".1")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
+		if (!is_dir($dir . DIRECTORY_SEPARATOR . $value) && strpos($value,".tmp")===false && (strpos($value,".md")!==false || strpos($value,".1")!==false || strpos($value,".rc")!==false || strpos($value,".ui")!==false || strpos($value,".h")!==false || strpos($value,".cpp")!==false)) 
 		{ 
 			$result = $value; 
 			echo "Renaming ".$result."...\r\n";
