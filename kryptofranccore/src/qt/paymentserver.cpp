@@ -315,7 +315,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(0, tr("Payment request error"),
-                tr("Cannot start bitcoin: click-to-pay handler"));
+                tr("Cannot start kryptofranc: click-to-pay handler"));
         }
         else {
             connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
@@ -397,7 +397,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
 
     if (s.startsWith("kryptofranc://", Qt::CaseInsensitive))
     {
-        Q_EMIT message(tr("URI handling"), tr("'bitcoin://' is not a valid URI. Use 'bitcoin:' instead."),
+        Q_EMIT message(tr("URI handling"), tr("'kryptofranc://' is not a valid URI. Use 'kryptofranc:' instead."),
             CClientUIInterface::MSG_ERROR);
     }
     else if (s.startsWith(KRYPTOFRANC_IPC_PREFIX, Qt::CaseInsensitive)) // kryptofranc: URI
@@ -439,7 +439,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
             }
             else
                 Q_EMIT message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid kryptoFranc address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;

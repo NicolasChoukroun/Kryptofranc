@@ -28,7 +28,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>kryptoFrancGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -38,7 +38,7 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>kryptoFranc</source>
         <translation>kryptoFranc</translation>
     </message>
     <message>
@@ -101,7 +101,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>kryptoFranc</source>
         <translation>kryptoFranc</translation>
     </message>
     <message>
@@ -342,7 +342,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>kryptofranc-core</name>
     <message>
         <source>Information</source>
         <translation>Маалымат</translation>

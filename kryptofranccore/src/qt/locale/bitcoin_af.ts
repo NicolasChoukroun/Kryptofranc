@@ -62,11 +62,11 @@
         <translation>Ontvanger adresse</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your kryptoFranc addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hierdie is die adresse vanwaar u kryptoFranc betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your kryptoFranc addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Hierdie is die adresse waar u kryptoFrancs sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
     </message>
     <message>
@@ -172,7 +172,7 @@
         <translation>Bevestig dat die beursie gekodifiseer is</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KRYPTOFRANCS&lt;/b&gt;!</source>
         <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U KRYPTOFRANCS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>kryptoFrancGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Teken &amp;boodskap...</translation>
@@ -334,7 +334,7 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a kryptoFranc address</source>
         <translation>Stuur munte na 'n kryptoFranc adres</translation>
     </message>
     <message>
@@ -358,7 +358,7 @@
         <translation>&amp;Verifieer boodskap...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>kryptoFranc</source>
         <translation>kryptoFranc</translation>
     </message>
     <message>
@@ -386,11 +386,11 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your kryptoFranc addresses to prove you own them</source>
         <translation>Onderteken boodskappe met u kryptoFranc adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified kryptoFranc addresses</source>
         <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde kryptoFranc adresse</translation>
     </message>
     <message>
@@ -410,7 +410,7 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and kryptofranc: URIs)</source>
         <translation>Versoek betalings (genereer QR-kodes en kryptofranc: URI's)</translation>
     </message>
     <message>
@@ -422,7 +422,7 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
+        <source>Open a kryptofranc: URI or payment request</source>
         <translation>Skep 'n kryptofranc: URI of betalingsversoek</translation>
     </message>
     <message>
@@ -516,7 +516,7 @@
         <translation>Inkomende transaksie</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. kryptoFranc can no longer continue safely and will quit.</source>
         <translation>'N fatale fout het voorgekom. kryptoFranc kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
     </message>
 </context>
@@ -706,7 +706,7 @@
         <translation>Wysig stuur adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid kryptoFranc address.</source>
         <translation>Die ingevoerde adres "%1" is nie 'n geldige kryptoFranc adres nie.</translation>
     </message>
     <message>
@@ -779,7 +779,7 @@
         <translation>Gebruik 'n persoonlike data gids:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>kryptoFranc</source>
         <translation>kryptoFranc</translation>
     </message>
     <message>
@@ -1144,7 +1144,7 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a kryptoFranc address (e.g. %1)</source>
         <translation>Voer in 'n kryptoFranc adres (bv. %1)</translation>
     </message>
     <message>
@@ -1876,9 +1876,9 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>kryptofranc-core</name>
     <message>
-        <source>Bitcoin Core</source>
+        <source>kryptoFranc Core</source>
         <translation>kryptoFranc Kern</translation>
     </message>
     <message>

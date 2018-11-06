@@ -23,8 +23,8 @@ foreach ($cdir as $key => $value)
 			while (!feof($reading)) {
 				$line = fgets($reading);
 	
-				if (strpos($line,"<translation>")>0 && $line<>false){
-					
+				//if (strpos($line,"<translation>")>0 && $line<>false){
+				if ($line<>false){					
 					$line=str_replace("bitcoin", strtolower($name),$line);
 					$line=str_replace("bitCoin", $name,$line);
 					$line=str_replace("BitCoin", ucwords($name),$line);
