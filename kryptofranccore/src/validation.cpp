@@ -48,6 +48,10 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/thread.hpp>
 
+#include <iostream>
+using namespace std;
+
+
 #if defined(NDEBUG)
 # error "kryptoFranc cannot be compiled without assertions."
 #endif
@@ -1160,16 +1164,25 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
     return ReadRawBlockFromDisk(block, block_pos, message_start);
 }
 
+
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
+    CAmount nSubsidy=0;
+	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
+	
+	if(nHeight  == 3)  // block 3 is pre-mining
+	{
+		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions 
+		halvings=1.0;
+	}else {
+		CAmount nSubsidy = 282028 * COIN; 
+		int years = (int) nHeight/52560; // 210000/4
+		halvings = (years/1.618033988750);
+	}
 
-    CAmount nSubsidy = 50 * COIN;
-    // Kryptofranc specific
-    nSubsidy >>= halvings;
+	if (halvings<=1.0) halvings=1.0;
+	nSubsidy =   nSubsidy / halvings;
+    cout << "nSubsidy:" << nSubsidy << "\r\n"; 
     return nSubsidy;
 }
 
