@@ -1167,23 +1167,24 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    CAmount nSubsidy=0;
+    	CAmount nSubsidy=0;
+	// should be 210000/4
 	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
-	
-	if(nHeight  == 3)  // block 3 is pre-mining
+
+	if(nHeight  == 1)  // block 1 is pre-mining
 	{
 		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions 
 		halvings=1.0;
+		return nSubsidy;
 	}else {
-		CAmount nSubsidy = 282028 * COIN; 
-		int years = (int) nHeight/52560; // 210000/4
-		halvings = (years/1.618033988750);
+		CAmount nSubsidy = 182028 * COIN; 		
+		halvings /= 1.618033988750;
 	}
 
 	if (halvings<=1.0) halvings=1.0;
-	nSubsidy =   nSubsidy / halvings;
-    cout << "nSubsidy:" << nSubsidy << "\r\n"; 
-    return nSubsidy;
+	nSubsidy /= halvings;
+    	cout << "nSubsidy:" << nSubsidy << "\r\n"; 
+    	return nSubsidy;
 }
 
 bool IsInitialBlockDownload()
