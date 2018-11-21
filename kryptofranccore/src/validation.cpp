@@ -1173,7 +1173,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
 	if(nHeight  == 1)  // block 1 is pre-mining
 	{
-		CAmount nSubsidy = 100000000000 * COIN;  // premine 100 billions 
+		CAmount nSubsidy = 50000000000 * COIN;  // premine 50 billions 
 		halvings=1.0;
 		return nSubsidy;
 	}else {
