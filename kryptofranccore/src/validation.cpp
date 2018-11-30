@@ -1164,16 +1164,16 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
     return ReadRawBlockFromDisk(block, block_pos, message_start);
 }
 
-
+/*
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     	CAmount nSubsidy=0;
 	// should be 210000/4
 	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
 
-	if(nHeight  == 1)  // block 1 is pre-mining
+	if(nHeight  == 1000)  // block <1000 is pre-mining
 	{
-		nSubsidy = 50000000000 * COIN;  // premine 50 billions 
+		nSubsidy = 500000000 * COIN;  // premine 50 billions 
 		halvings=1.0;
 		return nSubsidy;
 	}else {
@@ -1185,6 +1185,20 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 	nSubsidy /= halvings;
     	cout << "nSubsidy:" << nSubsidy << "\r\n"; 
     	return nSubsidy;
+}
+*/
+CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
+{
+    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+    // Force block reward to zero when right shift is undefined.
+    if (halvings >= 64)
+        return 0;
+
+    CAmount nSubsidy = 5000000 * COIN;
+    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    nSubsidy >>= halvings;
+	cout << "nSubsidy:" << nSubsidy << "\r\n"; 
+    return nSubsidy;
 }
 
 bool IsInitialBlockDownload()
