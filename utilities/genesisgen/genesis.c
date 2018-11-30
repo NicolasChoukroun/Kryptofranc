@@ -120,7 +120,7 @@ Transaction *InitTransaction()
 	transaction->locktime = 0;
 	transaction->prevoutIndex = 0xFFFFFFFF;
 	transaction->sequence = 0xFFFFFFFF;
-	transaction->outValue = 1*COIN; // changed for Kryptofranc
+	transaction->outValue = 51*COIN; // changed for Kryptofranc
 
 	// We initialize the previous output to 0 as there is none
 	memset(transaction->prevOutput, 0, 32);
@@ -306,7 +306,7 @@ int main(int argc, char *argv[])
 	char *merkleHashSwapped = bin2hex(transaction->merkleHash, 32);
 	char *txScriptSig = bin2hex(transaction->scriptSig, scriptSig_len);
 	char *pubScriptSig = bin2hex(transaction->pubkeyScript, pubkeyScript_len);
-	printf("\nCoinbase: %s\n\nPubkeyScript: %s\n\nMerkle Hash: %s\nByteswapped: %s\n",txScriptSig, pubScriptSig, merkleHash, merkleHashSwapped);
+	printf("\nCoinbase: %s\n\nPubkeyScript: %s\n\nMerkle Hash: %s\nMerkle Byteswapped (used in assert): %s\n",txScriptSig, pubScriptSig, merkleHash, merkleHashSwapped);
 
 	//if(generateBlock)
 	{
@@ -340,7 +340,9 @@ int main(int argc, char *argv[])
 			{
 				byteswap(block_hash2, 32);
 				char *blockHash = bin2hex(block_hash2, 32);
-				printf("\nBlock found!\nHash: %s\nNonce: %u\nUnix time: %u", blockHash, startNonce, unixtime);
+				printf("\nBlock found!\nHash (copy to assert): %s\nNonce: %u\nUnix time: %u\n", blockHash, startNonce, unixtime);
+				printf("\ngenesis = CreateGenesisBlock(%u, %u, 486604799, 1, 51*COIN);\n", unixtime,startNonce);
+
 				free(blockHash);
 				break;
 			}
