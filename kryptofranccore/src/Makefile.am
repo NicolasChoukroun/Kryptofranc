@@ -230,6 +230,7 @@ libbitcoin_server_a_SOURCES = \
   dbwrapper.cpp \
   merkleblock.cpp \
   miner.cpp \
+  iminer.cpp \
   net.cpp \
   net_processing.cpp \
   noui.cpp \

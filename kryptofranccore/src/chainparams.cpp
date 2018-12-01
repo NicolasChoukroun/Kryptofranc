@@ -19,6 +19,8 @@
 #include <chainparamsseeds.h>
 
 
+#include "iminer.h"
+
 using namespace std;
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
@@ -95,6 +97,7 @@ public:
         consensus.nPowTargetSpacing = 10 * 60; // 600 seconds = 10 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
+        fMiningRequiresPeers=false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -168,13 +171,15 @@ consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; /
 
         checkpointData = {
             {
-                {0, uint256S("0x1")},
+                {0, uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
             }
         };
 
         chainTxData = ChainTxData{
 
         };
+
+        )
 
         /* disable fallback fee on mainnet */
         m_fallback_fee_enabled = false;
@@ -199,6 +204,7 @@ public:
         consensus.nPowTargetSpacing = 2.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
+        fMiningRequiresPeers=false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -288,6 +294,7 @@ public:
         consensus.nPowTargetSpacing = 10 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
+        fMiningRequiresPeers=false;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
         consensus.nMinerConfirmationWindow = 144; // Faster than normal for regtest (144 instead of 2016)
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;

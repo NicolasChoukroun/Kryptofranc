@@ -197,6 +197,7 @@ libbitcoin_server_a_SOURCES = \
   main.cpp \
   merkleblock.cpp \
   miner.cpp \
+  iminer.cpp \
   net.cpp \
   noui.cpp \
   policy/fees.cpp \
