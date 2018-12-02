@@ -1,5 +1,5 @@
 <?php
-$path_to_file = "d:/projects 2/KryptoFranc/kryptofranccore";
+$path_to_file = "d:/projects 2/KryptoFranc/dash";
 if (!file_exists($path_to_file."/configure.ac")) die("Wrong Path: you need to edit the path of your project in the PHP file");
 //$cdir = array_slice(scandir($path_to_file), 2);
 $cdir=find_all_files($path_to_file);
@@ -87,6 +87,8 @@ replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 
 replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 replace_in_file($path_to_file."/src/validation.cpp","// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.","// Kryptofranc specific");
 
+
+/*
 // halving algo for Kryptofranc
 replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
@@ -123,7 +125,7 @@ replace_in_file($path_to_file."/src/validation.cpp","CAmount GetBlockSubsidy(int
     return nSubsidy;
 }
 ");
-
+*/
 replace_in_file($path_to_file."/Makefile.qt.include","bitcoin.png","kryptofranc.png");
 replace_in_file($path_to_file."/Makefile.qt.include","bitcoin.ico","kryptofranc.ico");
 replace_in_file($path_to_file."/Makefile.qt.include","bitcoin_testnet.ico","kryptofranc_testnet.ico");
