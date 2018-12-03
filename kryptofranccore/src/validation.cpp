@@ -48,10 +48,6 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/thread.hpp>
 
-#include <iostream>
-using namespace std;
-
-
 #if defined(NDEBUG)
 # error "kryptoFranc cannot be compiled without assertions."
 #endif
@@ -1164,29 +1160,6 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
     return ReadRawBlockFromDisk(block, block_pos, message_start);
 }
 
-/*
-CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
-{
-    	CAmount nSubsidy=0;
-	// should be 210000/4
-	double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
-
-	if(nHeight  == 1000)  // block <1000 is pre-mining
-	{
-		nSubsidy = 500000000 * COIN;  // premine 50 billions 
-		halvings=1.0;
-		return nSubsidy;
-	}else {
-		nSubsidy = 182028 * COIN; 		
-		halvings /= 1.618033988750;
-	}
-
-	if (halvings<=1.0) halvings=1.0;
-	nSubsidy /= halvings;
-    	cout << "nSubsidy:" << nSubsidy << "\r\n"; 
-    	return nSubsidy;
-}
-*/
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
@@ -1194,10 +1167,9 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (halvings >= 64)
         return 0;
 
-    CAmount nSubsidy = 5000000 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    CAmount nSubsidy = 50 * COIN;
+    // Kryptofranc specific
     nSubsidy >>= halvings;
-	cout << "nSubsidy:" << nSubsidy << "\r\n"; 
     return nSubsidy;
 }
 

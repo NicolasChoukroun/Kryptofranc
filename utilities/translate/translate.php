@@ -1,5 +1,5 @@
 <?php
-$path_to_file = "d:/projects 2/KryptoFranc/kryptofranccore/src/qt/locale";
+$path_to_file = "d:/projects 2/bitcoin-0.17.0.1/src/qt/locale";
 if (!file_exists($path_to_file."/bitcoin_en.ts")) die("Wrong Path: you need to edit the path of your project in the PHP file");
 $cdir=find_all_files($path_to_file);
 $name="KryptoFranc";

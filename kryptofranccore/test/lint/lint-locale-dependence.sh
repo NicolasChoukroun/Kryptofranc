@@ -3,9 +3,9 @@
 export LC_ALL=C
 KNOWN_VIOLATIONS=(
     "src/base58.cpp:.*isspace"
-    "src/bitcoin-tx.cpp.*stoul"
-    "src/bitcoin-tx.cpp.*trim_right"
-    "src/bitcoin-tx.cpp:.*atoi"
+    "src/kryptofranc-tx.cpp.*stoul"
+    "src/kryptofranc-tx.cpp.*trim_right"
+    "src/kryptofranc-tx.cpp:.*atoi"
     "src/core_read.cpp.*is_digit"
     "src/dbwrapper.cpp.*stoul"
     "src/dbwrapper.cpp:.*vsnprintf"

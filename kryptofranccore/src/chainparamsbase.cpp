@@ -11,10 +11,6 @@
 
 #include <assert.h>
 
-#include <iostream>
-using namespace std;
-
-
 const std::string CBaseChainParams::MAIN = "main";
 const std::string CBaseChainParams::TESTNET = "test";
 const std::string CBaseChainParams::REGTEST = "regtest";

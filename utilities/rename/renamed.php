@@ -13,15 +13,15 @@ replace_in_file($path_to_file."/src/qt/bitcoinstrings.cpp","(\"bitcoin-core\", \
 replace_in_file($path_to_file."/src/qt/intro.cpp",".arg(2009)",".arg(2019)");
 
 // change the blockchain parameters
-replace_in_file($path_to_file."/src/chainparams.cpp","nSubsidyHalvingInterval = 210000;","nSubsidyHalvingInterval = 210000/4; // every year");
-replace_in_file($path_to_file."/src/chainparams.cpp","= 0xf9;","= 0x4b;");
-replace_in_file($path_to_file."/src/chainparams.cpp","= 0xbe;","= 0x59;");
-replace_in_file($path_to_file."/src/chainparams.cpp","= 0xb4;","= 0x46;");
-replace_in_file($path_to_file."/src/chainparams.cpp","= 0xd9;","= 0x20;");
-replace_in_file($path_to_file."/src/chainparams.cpp","= 8333;","= 1789;");
-replace_in_file($path_to_file."/src/chainparams.cpp","18333;","11789;");
+//replace_in_file($path_to_file."/src/chainparams.cpp","nSubsidyHalvingInterval = 210000;","nSubsidyHalvingInterval = 210000/4; // every year");
+replace_in_file($path_to_file."/src/chainparams.cpp","= 0xbf;","= 0x4b;");
+replace_in_file($path_to_file."/src/chainparams.cpp","= 0x0c;","= 0x59;");
+replace_in_file($path_to_file."/src/chainparams.cpp","= 0x6b;","= 0x46;");
+replace_in_file($path_to_file."/src/chainparams.cpp","= 0xbd;","= 0x20;");
+replace_in_file($path_to_file."/src/chainparams.cpp","= 9999;","= 1789;");
+replace_in_file($path_to_file."/src/chainparams.cpp","19999;","11789;");
 replace_in_file($path_to_file."/src/chainparams.cpp","18444;","21789;");
-replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);","CreateGenesisBlock(1541385242, 629567413, 486604799, 1, 1 * COIN);");  // genesis params
+replace_in_file($path_to_file."/src/chainparams.cpp","genesis = CreateGenesisBlock(1390095618, 28917698, 0x1e0ffff0, 1, 50 * COIN);","CreateGenesisBlock(1541385242, 629567413, 486604799, 1, 1 * COIN);");  // genesis params
 replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chancellor on brink of second bailout for banks","2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin");
 replace_in_file($path_to_file."/src/chainparams.cpp","assert(consensus.hashGenesisBlock","//assert(consensus.hashGenesisBlock");
 replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
@@ -68,9 +68,9 @@ replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 1251","BIP65
 replace_in_file($path_to_file."/src/chainparams.cpp","0x0000000000000000000000000000000000000000028822fef1c230963535a90d","0000000000000000000000000000000000000000000000000000000100010001"); 
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetSpacing = 10 * 60","nPowTargetSpacing = 10 * 60"); // change block time (10 min)
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetTimespan = 14 * 24 * 60 * 60;","nPowTargetTimespan = 14 * 24 * 60 * 60;"); // Change the difficulty adjustment interval (2 weeks)
-replace_in_file($path_to_file."/src/chainparams.cpp","04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f","049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed"); // change the genesis public key
-replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6","0x049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed"); // change the genesis public key
+replace_in_file($path_to_file."/src/chainparams.cpp","0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
 replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
 replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
 replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash

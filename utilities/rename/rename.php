@@ -1,5 +1,7 @@
 <?php
-$path_to_file = "d:/projects 2/KryptoFranc/dash";
+
+
+$path_to_file = "d:/projects 2/bitcoin-0.17.0.1";
 if (!file_exists($path_to_file."/configure.ac")) die("Wrong Path: you need to edit the path of your project in the PHP file");
 //$cdir = array_slice(scandir($path_to_file), 2);
 $cdir=find_all_files($path_to_file);
@@ -14,6 +16,14 @@ replace_in_file($path_to_file."/src/qt/intro.cpp",".arg(2009)",".arg(2019)");
 
 // change the blockchain parameters
 replace_in_file($path_to_file."/src/chainparams.cpp","nSubsidyHalvingInterval = 210000;","nSubsidyHalvingInterval = 210000/4; // every year");
+replace_in_file($path_to_file."/src/chainparams.cpp","std::vector<unsigned char>(1,0)","std::vector<unsigned char>(1,75)"); // KYF keys starting with K
+replace_in_file($path_to_file."/src/chainparams.cpp","std::vector<unsigned char>(1,5)","std::vector<unsigned char>(1,107)"); // with k
+replace_in_file($path_to_file."/src/chainparams.cpp","std::vector<unsigned char>(1,128)","std::vector<unsigned char>(1,198)"); // with ╛ supposed to be yuan
+
+replace_in_file($path_to_file."/src/chainparams.cpp","/* nTime    */ 1532884444,","/* nTime    */ 1543507133,");
+replace_in_file($path_to_file."/src/chainparams.cpp","/* nTxCount */ 331282217,","/* nTxCount */ 0,");
+replace_in_file($path_to_file."/src/chainparams.cpp","/* dTxRate  */ 2.4,","/* dTxRate  */ 0");
+replace_in_file($path_to_file."/src/chainparams.cpp","1532884444","1543507133");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xf9;","= 0x4b;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xbe;","= 0x59;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 0xb4;","= 0x46;");
@@ -21,7 +31,7 @@ replace_in_file($path_to_file."/src/chainparams.cpp","= 0xd9;","= 0x20;");
 replace_in_file($path_to_file."/src/chainparams.cpp","= 8333;","= 1789;");
 replace_in_file($path_to_file."/src/chainparams.cpp","18333;","11789;");
 replace_in_file($path_to_file."/src/chainparams.cpp","18444;","21789;");
-replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);","CreateGenesisBlock(1541385242, 629567413, 486604799, 1, 1 * COIN);");  // genesis params
+replace_in_file($path_to_file."/src/chainparams.cpp","CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);","CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);");  // genesis params
 replace_in_file($path_to_file."/src/chainparams.cpp","The Times 03/Jan/2009 Chancellor on brink of second bailout for banks","2018/07/24 Singapore Backs a CryptoCurrency and Establishes it as their Official Coin");
 replace_in_file($path_to_file."/src/chainparams.cpp","assert(consensus.hashGenesisBlock","//assert(consensus.hashGenesisBlock");
 replace_in_file($path_to_file."/src/chainparams.cpp","assert(genesis.hashMerkleRoot","//assert(genesis.hashMerkleRoot");
@@ -43,7 +53,10 @@ replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.
 replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.bitcoin.jonasschnelli.ch','//vSeeds.emplace_back("seed.bitcoin.jonasschnelli.ch');
 replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.btc.petertodd.org','//vSeeds.emplace_back("seed.btc.petertodd.org');
 replace_in_file($path_to_file."/src/chainparams.cpp",'vSeeds.emplace_back("seed.bitcoin.sprovoost.nl','//vSeeds.emplace_back("seed.bitcoin.sprovoost.nl');
-replace_in_file($path_to_file."/src/chainparams.cpp","{ 11111,","//{ 11111,");
+
+// checkpoint
+
+replace_in_file($path_to_file."/src/chainparams.cpp",'{ 11111, uint256S("0x0000000069e244f73d78e8fd29ba2fd2ed618bd6fa2ee92559f542fdb26e7c1d")}','{ 0, uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75")}');
 replace_in_file($path_to_file."/src/chainparams.cpp","{ 33333,","//{ 33333,");
 replace_in_file($path_to_file."/src/chainparams.cpp","{ 74000,","//{ 74000,");
 replace_in_file($path_to_file."/src/chainparams.cpp","{105000,","//{ 105000,");
@@ -65,16 +78,16 @@ replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 330776","BIP
 replace_in_file($path_to_file."/src/chainparams.cpp","BIP34Height = 100000000","BIP34Height = 0; // optimization starting from 0");
 replace_in_file($path_to_file."/src/chainparams.cpp","BIP65Height = 1351","BIP65Height = 0; // optimization starting from 0");
 replace_in_file($path_to_file."/src/chainparams.cpp","BIP66Height = 1251","BIP65Height = 0; // optimization starting from 0");
-replace_in_file($path_to_file."/src/chainparams.cpp","0x0000000000000000000000000000000000000000028822fef1c230963535a90d","0000000000000000000000000000000000000000000000000000000100010001"); 
+replace_in_file($path_to_file."/src/chainparams.cpp","0x0000000000000000000000000000000000000000028822fef1c230963535a90d","0000000000000000000000000000000000000000000000000000000000000001"); 
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetSpacing = 10 * 60","nPowTargetSpacing = 10 * 60"); // change block time (10 min)
 replace_in_file($path_to_file."/src/chainparams.cpp","nPowTargetTimespan = 14 * 24 * 60 * 60;","nPowTargetTimespan = 14 * 24 * 60 * 60;"); // Change the difficulty adjustment interval (2 weeks)
 replace_in_file($path_to_file."/src/chainparams.cpp","04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f","049da5cd045a7b22b11d2b4629354b040f6cc5838443c0447bcfe1d3f74025377ce3842fdb92cd1fb2041e78432b9a0a0148604303d00ccd0dfe1514d45b00d3ed"); // change the genesis public key
-replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x677ab5e51b43e828c2c227350c25258a9a74f43861759be6df1d4781a6c252cd"); // byte swapped Merkkle hash
-replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x0000000080f4f927283ede64c9f58eb8cc381cd0292e3e339862f2aef8f91465"); // hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"); // hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"); // hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b","0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"); // byte swapped Merkkle hash
+replace_in_file($path_to_file."/src/chainparams.cpp","0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f","0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"); // hash
 
 
 replace_in_file($path_to_file."/src/chainparamsbase.cpp","8332","1790"); // change RPC port value
@@ -84,7 +97,7 @@ replace_in_file($path_to_file."/amount.h","21000000","1000000000000"); // change
 replace_in_file($path_to_file."/src/consensus/consensus.h","COINBASE_MATURITY = 100","COINBASE_MATURITY = 1"); // change the number of confirmations to a low number for starting - change to a higher value later
 
 // validation host the rewards 
-replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
+//replace_in_file($path_to_file."/src/validation.cpp","(1 << 10) * COIN","(1 << 10) * COIN");
 replace_in_file($path_to_file."/src/validation.cpp","// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.","// Kryptofranc specific");
 
 
@@ -136,10 +149,6 @@ replace_in_file($path_to_file."/src/qt/bitcoin.qrc",'"bitcoin"','"kryptofranc"')
 
 // change the names of the executables as well as the Bitcoin Core weird strings.
 replace_in_file($path_to_file."/configure.ac","[Bitcoin Core]","[Kryptofranc Core]");
-replace_in_file($path_to_file."/configure.ac","bitcoind","kyfd");
-replace_in_file($path_to_file."/configure.ac","bitcoin-qt","kyf-qt");
-replace_in_file($path_to_file."/configure.ac","bitcoin-cli","kyf-cli");
-replace_in_file($path_to_file."/configure.ac","bitcoin-tx","kyf-tx");
 replace_in_file($path_to_file."/configure.ac","[https://github.com/bitcoin/bitcoin/issues],[bitcoin],[https://bitcoincore.org/])","[https://github.com/kryptofranc/kryptofranc/issues],[kryptofranc],[https://kryptofranc.org/])");
 
 unlink($path_to_file."/qt/res/icons/bitcoin.ico");
