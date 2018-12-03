@@ -19,7 +19,6 @@
 #include <chainparamsseeds.h>
 
 
-#include "iminer.h"
 
 using namespace std;
 
@@ -87,11 +86,11 @@ public:
         strNetworkID = "main";
         cout << "CreateGenesisBlock at Main\r\n";
         consensus.nSubsidyHalvingInterval = 210000;
-        consensus.BIP16Exception = uint256S("0x00000000000002dc756eebf4f49723ed8d30cc28a5f108eb94b1ba88ac4f9c22");
-        consensus.BIP34Height = 227931;
-        consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
-        consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
-        consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+        consensus.BIP16Exception = uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac");
+        consensus.BIP34Height = 0;
+        consensus.BIP34Hash = uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac");
+        consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+        consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 10 * 60; // 600 seconds = 10 min
@@ -102,7 +101,7 @@ public:
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
-consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
 
         // Deployment of BIP68, BIP112, and BIP113.
@@ -116,11 +115,11 @@ consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; /
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1510704000; // November 15th, 2017.
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        //consensus.defaultAssumeValid = uint256S("0x0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8"); //534292
-        consensus.defaultAssumeValid = uint256S("0x00"); //534292
+        consensus.defaultAssumeValid = uint256S("0x0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8"); //534292
+        //consensus.defaultAssumeValid = uint256S("0x00"); //534292
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -149,9 +148,9 @@ consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; /
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("seed1.kryptofranc.net"); // Kryptofranc network 1GB/s
-        vSeeds.emplace_back("seed2.kryptofranc.net"); 
-        vSeeds.emplace_back("seed3.kryptofranc.net"); 
+        //vSeeds.emplace_back("seed1.kryptofranc.net"); // Kryptofranc network 1GB/s
+        //vSeeds.emplace_back("seed2.kryptofranc.net");
+        //vSeeds.emplace_back("seed3.kryptofranc.net");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -165,7 +164,7 @@ consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; /
 
         fDefaultConsistencyChecks = true;
         fRequireStandard = true;
-        fMineBlocksOnDemand = false;
+        fMineBlocksOnDemand = true;
 
 
 
@@ -176,10 +175,11 @@ consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; /
         };
 
         chainTxData = ChainTxData{
+            0,0,0
 
         };
 
-        )
+
 
         /* disable fallback fee on mainnet */
         m_fallback_fee_enabled = false;
