@@ -4465,13 +4465,13 @@
         <counts>
           <entry key="ac" value="2" />
           <entry key="am" value="4" />
-          <entry key="cpp" value="21" />
-          <entry key="h" value="3" />
+          <entry key="cpp" value="24" />
+          <entry key="h" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="24" />
+          <entry key="ObjectiveC" value="28" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -4497,21 +4497,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="1049" column="36" lean-forward="true" selection-start-line="1049" selection-start-column="36" selection-end-line="1049" selection-end-column="36" />
+            <state relative-caret-position="664">
+              <caret line="1045" column="17" selection-start-line="1045" selection-start-column="17" selection-end-line="1045" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/init.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="291" column="4" lean-forward="true" selection-start-line="291" selection-start-column="4" selection-end-line="291" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/init.cpp">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="347" column="81" lean-forward="true" selection-start-line="347" selection-start-column="81" selection-end-line="347" selection-end-column="81" />
-            </state>
+            <state relative-caret-position="-2499" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-663" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net_processing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3060" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/netbase.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3162" />
           </provider>
         </entry>
       </file>
@@ -4525,19 +4553,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/modaloverlay.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="76" column="97" selection-start-line="76" selection-start-column="97" selection-end-line="76" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="766" column="33" selection-start-line="766" selection-start-column="21" selection-end-line="766" selection-end-column="33" />
+            <state relative-caret-position="388">
+              <caret line="770" column="19" lean-forward="true" selection-start-line="770" selection-start-column="19" selection-end-line="770" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -4559,35 +4578,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3172">
-              <caret line="273" column="17" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/Makefile.am">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
-              <caret line="298" selection-start-line="298" selection-end-line="298" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/configure.ac">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="471" column="39" selection-start-line="471" selection-start-column="39" selection-end-line="471" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/miner.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
+            <state relative-caret-position="3087">
+              <caret line="268" column="17" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -4596,10 +4588,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vAlertPubKey</find>
-      <find>will download</find>
-      <find>alert</find>
-      <find>tr(&quot;</find>
       <find>kryptofrancgui</find>
       <find>Q_INIT_RESOURCE</find>
       <find>CheckProofOfWork</find>
@@ -4624,8 +4612,12 @@
       <find>iminin</find>
       <find>modaloverlay</find>
       <find>nVerificationProgress</find>
-      <find>setNumBlocks</find>
+      <find>fMineBlocksOnDemand</find>
+      <find>min_connection</find>
       <find>chainpara</find>
+      <find>connecting to peers</find>
+      <find>setNumBlocks</find>
+      <find>setClientModel</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -4701,7 +4693,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="3763" />
@@ -4721,6 +4713,17 @@
             <path>
               <item name="KryptoFranc" type="b2602c69:ProjectViewProjectNode" />
               <item name="KryptoFranc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KryptoFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KryptoFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="kryptofranccore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KryptoFranc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KryptoFranc" type="462c0819:PsiDirectoryNode" />
+              <item name="kryptofranccore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -4761,15 +4764,16 @@
       <workItem from="1540030751413" duration="12597000" />
       <workItem from="1541515277179" duration="1011000" />
       <workItem from="1543417965231" duration="1594000" />
-      <workItem from="1543663417046" duration="13188000" />
+      <workItem from="1543663417046" duration="16807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39882000" />
+    <option name="totallyTimeSpent" value="43501000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3763" height="2176" extended-state="6" />
+    <frame x="-8" y="-8" width="3763" height="2176" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16743182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -4800,10 +4804,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/interface_bitcoin_cli.py" />
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/intro.cpp" />
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/mining.cpp" />
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/misc.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" />
@@ -4952,13 +4952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="766" column="33" selection-start-line="766" selection-start-column="21" selection-end-line="766" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1252">
@@ -4973,8 +4966,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3172">
-          <caret line="273" column="17" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="17" />
+        <state relative-caret-position="3087">
+          <caret line="268" column="17" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -4985,17 +4978,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/init.cpp">
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="347" column="81" lean-forward="true" selection-start-line="347" selection-start-column="81" selection-end-line="347" selection-end-column="81" />
+        <state relative-caret-position="664">
+          <caret line="1045" column="17" selection-start-line="1045" selection-start-column="17" selection-end-line="1045" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp">
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="1049" column="36" lean-forward="true" selection-start-line="1049" selection-start-column="36" selection-end-line="1049" selection-end-column="36" />
+        <state relative-caret-position="-2499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net_processing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3060" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/netbase.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="770" column="19" lean-forward="true" selection-start-line="770" selection-start-column="19" selection-end-line="770" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/init.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="291" column="4" lean-forward="true" selection-start-line="291" selection-start-column="4" selection-end-line="291" selection-end-column="38" />
         </state>
       </provider>
     </entry>
