@@ -98,6 +98,7 @@ replace_in_file($path_to_file."/src/chainparams.cpp","/**
  /**
  Mining algorithm
  */
+ const arith_uint256 maxUint = UintToArith256(uint256S("ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"));
  static void MineGenesis(CBlockHeader& genesisBlock, const uint256& powLimit, bool noProduction)
 {
     if(noProduction)  genesisBlock.nTime = std::time(0);
