@@ -15,7 +15,6 @@ replace_in_file($path_to_file."/src/qt/bitcoinstrings.cpp","(\"bitcoin-core\", \
 replace_in_file($path_to_file."/src/qt/intro.cpp",".arg(2009)",".arg(2019)");
 
 // change the blockchain parameters
-bech32_hrp = "bc";
 replace_in_file($path_to_file."/src/chainparams.cpp",'bech32_hrp = "bc";','bech32_hrp = "kf";');
 replace_in_file($path_to_file."/src/chainparams.cpp","fMineBlocksOnDemand = false;","fMineBlocksOnDemand = true;");
 replace_in_file($path_to_file."/src/chainparams.cpp","nSubsidyHalvingInterval = 210000;","nSubsidyHalvingInterval = 210000/4; // every year");
