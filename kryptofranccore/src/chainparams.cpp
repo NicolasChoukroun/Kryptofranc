@@ -122,8 +122,8 @@ public:
 
         genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        //assert(consensus.hashGenesisBlock == uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"));
+        assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -144,7 +144,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        bech32_hrp = "bc";
+        bech32_hrp = "kf";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -154,19 +154,7 @@ public:
 
         checkpointData = {
             {
-                { 0, uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75")},
-                //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
-                //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
-                //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
-                //{ 134444, uint256S("0x00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe")},
-                //{ 168000, uint256S("0x000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
-                //{ 193000, uint256S("0x000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
-                //{ 210000, uint256S("0x000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
-                //{ 216116, uint256S("0x00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e")},
-                //{ 225430, uint256S("0x00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932")},
-                //{ 250000, uint256S("0x000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214")},
-                //{ 279000, uint256S("0x0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
-                //{ 295000, uint256S("0x00000000000000004d9b4ef50f0f9d686fd69db2e03af35a100370c64632a983")},
+                { 0, uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
             }
         };
 
@@ -174,7 +162,7 @@ public:
             // Data from rpc: getchaintxstats 4096 0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8
             /* nTime    */ 1543507133,
             /* nTxCount */ 0,
-            /* dTxRate  */ 2.4
+            /* dTxRate  */ 500
         };
 
         /* disable fallback fee on mainnet */
@@ -229,7 +217,7 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 414098458, 0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         //// removed
         //assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
@@ -248,7 +236,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "tb";
+        bech32_hrp = "tk";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
@@ -259,7 +247,7 @@ public:
 
         checkpointData = {
             {
-                {546, uint256S("000000002a936ca763904c3c35fce2f3556c559c0214345d31b1bcebf76acb70")},
+                {0 uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
             }
         };
 
@@ -267,7 +255,7 @@ public:
             // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
             /* nTime    */ 1531929919,
             /* nTxCount */ 19438708,
-            /* dTxRate  */ 0.626
+            /* dTxRate  */ 250
         };
 
         /* enable fallback fee on testnet */
@@ -318,7 +306,7 @@ public:
         nDefaultPort = 21789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         //// removed
         //assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
@@ -332,14 +320,14 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206")},
+                {0, uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
             }
         };
 
         chainTxData = ChainTxData{
-            0,
-            0,
-            0
+            1531929919,
+            19438708,
+            100
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
@@ -348,7 +336,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "bcrt";
+        bech32_hrp = "kfrt";
 
         /* enable fallback fee on regtest */
         m_fallback_fee_enabled = true;
