@@ -24,37 +24,37 @@ BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFL
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBKRYPTOFRANC_SERVER=libkryptofranc_server.a
-LIBKRYPTOFRANC_COMMON=libkryptofranc_common.a
-LIBKRYPTOFRANC_CONSENSUS=libkryptofranc_consensus.a
-LIBKRYPTOFRANC_CLI=libkryptofranc_cli.a
-LIBKRYPTOFRANC_UTIL=libkryptofranc_util.a
-LIBKRYPTOFRANC_CRYPTO_BASE=crypto/libkryptofranc_crypto_base.a
-LIBKRYPTOFRANCQT=qt/libkryptofrancqt.a
+LIBBITCOIN_SERVER=libbitcoin_server.a
+LIBBITCOIN_COMMON=libbitcoin_common.a
+LIBBITCOIN_CONSENSUS=libbitcoin_consensus.a
+LIBBITCOIN_CLI=libbitcoin_cli.a
+LIBBITCOIN_UTIL=libbitcoin_util.a
+LIBBITCOIN_CRYPTO_BASE=crypto/libbitcoin_crypto_base.a
+LIBBITCOINQT=qt/libbitcoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBKRYPTOFRANC_ZMQ=libkryptofranc_zmq.a
+LIBBITCOIN_ZMQ=libbitcoin_zmq.a
 endif
-if BUILD_KRYPTOFRANC_LIBS
-LIBKRYPTOFRANCCONSENSUS=libkryptofrancconsensus.la
+if BUILD_BITCOIN_LIBS
+LIBBITCOINCONSENSUS=libbitcoinconsensus.la
 endif
 if ENABLE_WALLET
-LIBKRYPTOFRANC_WALLET=libkryptofranc_wallet.a
+LIBBITCOIN_WALLET=libbitcoin_wallet.a
 endif
 
-LIBKRYPTOFRANC_CRYPTO= $(LIBKRYPTOFRANC_CRYPTO_BASE)
+LIBBITCOIN_CRYPTO= $(LIBBITCOIN_CRYPTO_BASE)
 if ENABLE_SSE41
-LIBKRYPTOFRANC_CRYPTO_SSE41 = crypto/libkryptofranc_crypto_sse41.a
-LIBKRYPTOFRANC_CRYPTO += $(LIBKRYPTOFRANC_CRYPTO_SSE41)
+LIBBITCOIN_CRYPTO_SSE41 = crypto/libbitcoin_crypto_sse41.a
+LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_SSE41)
 endif
 if ENABLE_AVX2
-LIBKRYPTOFRANC_CRYPTO_AVX2 = crypto/libkryptofranc_crypto_avx2.a
-LIBKRYPTOFRANC_CRYPTO += $(LIBKRYPTOFRANC_CRYPTO_AVX2)
+LIBBITCOIN_CRYPTO_AVX2 = crypto/libbitcoin_crypto_avx2.a
+LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_AVX2)
 endif
 if ENABLE_SHANI
-LIBKRYPTOFRANC_CRYPTO_SHANI = crypto/libkryptofranc_crypto_shani.a
-LIBKRYPTOFRANC_CRYPTO += $(LIBKRYPTOFRANC_CRYPTO_SHANI)
+LIBBITCOIN_CRYPTO_SHANI = crypto/libbitcoin_crypto_shani.a
+LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_SHANI)
 endif
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(wildcard secp256k1/include/*)
@@ -63,33 +63,33 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(w
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBKRYPTOFRANC_CRYPTO) \
-  $(LIBKRYPTOFRANC_UTIL) \
-  $(LIBKRYPTOFRANC_COMMON) \
-  $(LIBKRYPTOFRANC_CONSENSUS) \
-  $(LIBKRYPTOFRANC_SERVER) \
-  $(LIBKRYPTOFRANC_CLI) \
-  $(LIBKRYPTOFRANC_WALLET) \
-  $(LIBKRYPTOFRANC_ZMQ)
+  $(LIBBITCOIN_CRYPTO) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_COMMON) \
+  $(LIBBITCOIN_CONSENSUS) \
+  $(LIBBITCOIN_SERVER) \
+  $(LIBBITCOIN_CLI) \
+  $(LIBBITCOIN_WALLET) \
+  $(LIBBITCOIN_ZMQ)
 
-lib_LTLIBRARIES = $(LIBKRYPTOFRANCCONSENSUS)
+lib_LTLIBRARIES = $(LIBBITCOINCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
 TESTS =
 BENCHMARKS =
 
-if BUILD_KRYPTOFRANCD
-  bin_PROGRAMS += kryptofrancd
+if BUILD_BITCOIND
+  bin_PROGRAMS += bitcoind
 endif
 
-if BUILD_KRYPTOFRANC_UTILS
-  bin_PROGRAMS += kryptofranc-cli kryptofranc-tx
+if BUILD_BITCOIN_UTILS
+  bin_PROGRAMS += bitcoin-cli bitcoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# kryptofranc core #
-KRYPTOFRANC_CORE_H = \
+# bitcoin core #
+BITCOIN_CORE_H = \
   addrdb.h \
   addrman.h \
   base58.h \
@@ -209,12 +209,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh "$(abs_top_builddir)/src/obj/build.h" \
 	  "$(abs_top_srcdir)"
-libkryptofranc_util_a-clientversion.$(OBJEXT): obj/build.h
+libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between kryptofrancd and kryptofranc-qt
+# server: shared between bitcoind and bitcoin-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libkryptofranc_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_server_a_SOURCES = \
+libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_server_a_SOURCES = \
   addrdb.cpp \
   addrman.cpp \
   bloom.cpp \
@@ -256,12 +256,12 @@ libkryptofranc_server_a_SOURCES = \
   validation.cpp \
   validationinterface.cpp \
   versionbits.cpp \
-  $(KRYPTOFRANC_CORE_H)
+  $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
 libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libkryptofranc_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_zmq_a_SOURCES = \
+libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp \
@@ -269,11 +269,11 @@ libkryptofranc_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between kryptofrancd and kryptofranc-qt, but only linked
+# wallet: shared between bitcoind and bitcoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkryptofranc_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_wallet_a_SOURCES = \
+libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_wallet_a_SOURCES = \
   interfaces/wallet.cpp \
   wallet/coincontrol.cpp \
   wallet/crypter.cpp \
@@ -287,12 +287,12 @@ libkryptofranc_wallet_a_SOURCES = \
   wallet/walletdb.cpp \
   wallet/walletutil.cpp \
   wallet/coinselection.cpp \
-  $(KRYPTOFRANC_CORE_H)
+  $(BITCOIN_CORE_H)
 
 # crypto primitives library
-crypto_libkryptofranc_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libkryptofranc_crypto_base_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libkryptofranc_crypto_base_a_SOURCES = \
+crypto_libbitcoin_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libbitcoin_crypto_base_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libbitcoin_crypto_base_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha20.h \
@@ -312,31 +312,31 @@ crypto_libkryptofranc_crypto_base_a_SOURCES = \
   crypto/sha512.h
 
 if USE_ASM
-crypto_libkryptofranc_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
+crypto_libbitcoin_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
 endif
 
-crypto_libkryptofranc_crypto_sse41_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libkryptofranc_crypto_sse41_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libkryptofranc_crypto_sse41_a_CXXFLAGS += $(SSE41_CXXFLAGS)
-crypto_libkryptofranc_crypto_sse41_a_CPPFLAGS += -DENABLE_SSE41
-crypto_libkryptofranc_crypto_sse41_a_SOURCES = crypto/sha256_sse41.cpp
+crypto_libbitcoin_crypto_sse41_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libbitcoin_crypto_sse41_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libbitcoin_crypto_sse41_a_CXXFLAGS += $(SSE41_CXXFLAGS)
+crypto_libbitcoin_crypto_sse41_a_CPPFLAGS += -DENABLE_SSE41
+crypto_libbitcoin_crypto_sse41_a_SOURCES = crypto/sha256_sse41.cpp
 
-crypto_libkryptofranc_crypto_avx2_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libkryptofranc_crypto_avx2_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libkryptofranc_crypto_avx2_a_CXXFLAGS += $(AVX2_CXXFLAGS)
-crypto_libkryptofranc_crypto_avx2_a_CPPFLAGS += -DENABLE_AVX2
-crypto_libkryptofranc_crypto_avx2_a_SOURCES = crypto/sha256_avx2.cpp
+crypto_libbitcoin_crypto_avx2_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libbitcoin_crypto_avx2_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libbitcoin_crypto_avx2_a_CXXFLAGS += $(AVX2_CXXFLAGS)
+crypto_libbitcoin_crypto_avx2_a_CPPFLAGS += -DENABLE_AVX2
+crypto_libbitcoin_crypto_avx2_a_SOURCES = crypto/sha256_avx2.cpp
 
-crypto_libkryptofranc_crypto_shani_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libkryptofranc_crypto_shani_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libkryptofranc_crypto_shani_a_CXXFLAGS += $(SHANI_CXXFLAGS)
-crypto_libkryptofranc_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
-crypto_libkryptofranc_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
+crypto_libbitcoin_crypto_shani_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libbitcoin_crypto_shani_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libbitcoin_crypto_shani_a_CXXFLAGS += $(SHANI_CXXFLAGS)
+crypto_libbitcoin_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
+crypto_libbitcoin_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
 
 # consensus: shared between all executables that validate any consensus rules.
 libbitcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkryptofranc_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_consensus_a_SOURCES = \
+libbitcoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_consensus_a_SOURCES = \
   amount.h \
   arith_uint256.cpp \
   arith_uint256.h \
@@ -353,7 +353,7 @@ libkryptofranc_consensus_a_SOURCES = \
   primitives/transaction.h \
   pubkey.cpp \
   pubkey.h \
-  script/kryptofrancconsensus.cpp \
+  script/bitcoinconsensus.cpp \
   script/interpreter.cpp \
   script/interpreter.h \
   script/script.cpp \
@@ -369,10 +369,10 @@ libkryptofranc_consensus_a_SOURCES = \
   utilstrencodings.h \
   version.h
 
-# common: shared between kryptofrancd, and kryptofranc-qt and non-server tools
+# common: shared between bitcoind, and bitcoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkryptofranc_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_common_a_SOURCES = \
+libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_common_a_SOURCES = \
   base58.cpp \
   bech32.cpp \
   chainparams.cpp \
@@ -393,14 +393,14 @@ libkryptofranc_common_a_SOURCES = \
   script/sign.cpp \
   script/standard.cpp \
   warnings.cpp \
-  $(KRYPTOFRANC_CORE_H)
+  $(BITCOIN_CORE_H)
 
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkryptofranc_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_util_a_SOURCES = \
+libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -420,102 +420,102 @@ libkryptofranc_util_a_SOURCES = \
   utilmoneystr.cpp \
   utilstrencodings.cpp \
   utiltime.cpp \
-  $(KRYPTOFRANC_CORE_H)
+  $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libkryptofranc_util_a_SOURCES += compat/glibc_compat.cpp
+libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between kryptofranc-cli and kryptofranc-qt
+# cli: shared between bitcoin-cli and bitcoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkryptofranc_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkryptofranc_cli_a_SOURCES = \
+libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_cli_a_SOURCES = \
   rpc/client.cpp \
-  $(KRYPTOFRANC_CORE_H)
+  $(BITCOIN_CORE_H)
 
-nodist_libkryptofranc_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# kryptofrancd binary #
-kryptofrancd_SOURCES = kryptofrancd.cpp
+# bitcoind binary #
+bitcoind_SOURCES = bitcoind.cpp
 bitcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-kryptofrancd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kryptofrancd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bitcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kryptofrancd_SOURCES += kryptofrancd-res.rc
+bitcoind_SOURCES += bitcoind-res.rc
 endif
 
-kryptofrancd_LDADD = \
-  $(LIBKRYPTOFRANC_SERVER) \
-  $(LIBKRYPTOFRANC_WALLET) \
-  $(LIBKRYPTOFRANC_COMMON) \
+bitcoind_LDADD = \
+  $(LIBBITCOIN_SERVER) \
+  $(LIBBITCOIN_WALLET) \
+  $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
-  $(LIBKRYPTOFRANC_UTIL) \
-  $(LIBKRYPTOFRANC_ZMQ) \
-  $(LIBKRYPTOFRANC_CONSENSUS) \
-  $(LIBKRYPTOFRANC_CRYPTO) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_ZMQ) \
+  $(LIBBITCOIN_CONSENSUS) \
+  $(LIBBITCOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBLEVELDB_SSE42) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-kryptofrancd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+bitcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# kryptofranc-cli binary #
-kryptofranc_cli_SOURCES = kryptofranc-cli.cpp
+# bitcoin-cli binary #
+bitcoin_cli_SOURCES = bitcoin-cli.cpp
 bitcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-kryptofranc_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kryptofranc_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bitcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kryptofranc_cli_SOURCES += kryptofranc-cli-res.rc
+bitcoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-kryptofranc_cli_LDADD = \
-  $(LIBKRYPTOFRANC_CLI) \
+bitcoin_cli_LDADD = \
+  $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBKRYPTOFRANC_UTIL) \
-  $(LIBKRYPTOFRANC_CRYPTO)
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_CRYPTO)
 
-kryptofranc_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+bitcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# kryptofranc-tx binary #
-kryptofranc_tx_SOURCES = kryptofranc-tx.cpp
+# bitcoin-tx binary #
+bitcoin_tx_SOURCES = bitcoin-tx.cpp
 bitcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-kryptofranc_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kryptofranc_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bitcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kryptofranc_tx_SOURCES += kryptofranc-tx-res.rc
+bitcoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-kryptofranc_tx_LDADD = \
+bitcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBKRYPTOFRANC_COMMON) \
-  $(LIBKRYPTOFRANC_UTIL) \
-  $(LIBKRYPTOFRANC_CONSENSUS) \
-  $(LIBKRYPTOFRANC_CRYPTO) \
+  $(LIBBITCOIN_COMMON) \
+  $(LIBBITCOIN_UTIL) \
+  $(LIBBITCOIN_CONSENSUS) \
+  $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-kryptofranc_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+bitcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-# kryptofrancconsensus library #
-if BUILD_KRYPTOFRANC_LIBS
+# bitcoinconsensus library #
+if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
-libkryptofrancconsensus_la_SOURCES = $(crypto_libkryptofranc_crypto_base_a_SOURCES) $(libkryptofranc_consensus_a_SOURCES)
+libbitcoinconsensus_la_SOURCES = $(crypto_libbitcoin_crypto_base_a_SOURCES) $(libbitcoin_consensus_a_SOURCES)
 
 if GLIBC_BACK_COMPAT
-  libkryptofrancconsensus_la_SOURCES += compat/glibc_compat.cpp
+  libbitcoinconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libkryptofrancconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libkryptofrancconsensus_la_LIBADD = $(LIBSECP256K1)
+libbitcoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libbitcoinconsensus_la_LIBADD = $(LIBSECP256K1)
 libbitcoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
-libkryptofrancconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #
@@ -545,12 +545,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST = $(CTAES_DIST)
 
 
-config/kryptofranc-config.h: config/stamp-h1
+config/bitcoin-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/kryptofranc-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/bitcoin-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/kryptofranc-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/kryptofranc-config.h.in
+$(top_srcdir)/$(subdir)/config/bitcoin-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/bitcoin-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

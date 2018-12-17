@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/kryptofranc
-src/kryptofrancd
-src/kryptofranc-cli
-src/kryptofranc-tx
-src/test/test_kryptofranc
-src/test/test_kryptofranc_fuzzy
-src/qt/test/test_kryptofranc-qt
+src/bitcoin
+src/bitcoind
+src/bitcoin-cli
+src/bitcoin-tx
+src/test/test_bitcoin
+src/test/test_bitcoin_fuzzy
+src/qt/test/test_bitcoin-qt
 
 # autoreconf
 Makefile.in
@@ -30,8 +30,8 @@ config.log
 config.status
 configure
 libtool
-src/config/kryptofranc-config.h
-src/config/kryptofranc-config.h.in
+src/config/bitcoin-config.h
+src/config/bitcoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -44,10 +44,10 @@ src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
 
-src/qt/kryptofranc-qt.config
-src/qt/kryptofranc-qt.creator
-src/qt/kryptofranc-qt.creator.user
-src/qt/kryptofranc-qt.files
+src/qt/bitcoin-qt.config
+src/qt/bitcoin-qt.creator
+src/qt/bitcoin-qt.creator.user
+src/qt/bitcoin-qt.files
 src/qt/bitcoin-qt.includes
 
 .deps
@@ -80,13 +80,13 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-kryptofranc-qt
-kryptoFranc-Qt.app
+bitcoin-qt
+Bitcoin-Qt.app
 background.tiff*
 
 # Unit-tests
 Makefile.test
-kryptofranc-qt_test
+bitcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -99,7 +99,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_kryptofranc.coverage/
+test_bitcoin.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -114,5 +114,5 @@ test/cache/*
 
 /doc/doxygen/
 
-libkryptofrancconsensus.pc
+libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh

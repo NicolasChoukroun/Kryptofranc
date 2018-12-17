@@ -4,12 +4,12 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test multiwallet.
 
-Verify that a kryptofrancd node can load multiple wallet files
+Verify that a bitcoind node can load multiple wallet files
 """
 import os
 import shutil
 
-from test_framework.test_framework import kryptoFrancTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.test_node import ErrorMatch
 from test_framework.util import (
     assert_equal,
@@ -17,7 +17,7 @@ from test_framework.util import (
 )
 
 
-class MultiWalletTest(kryptoFrancTestFramework):
+class MultiWalletTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2

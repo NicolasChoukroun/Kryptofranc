@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.kryptofranc;
+package org.bitcoin;
 
 public class NativeSecp256k1Util{
 

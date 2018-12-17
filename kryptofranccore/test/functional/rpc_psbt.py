@@ -5,7 +5,7 @@
 """Test the Partially Signed Transaction RPCs.
 """
 
-from test_framework.test_framework import kryptoFrancTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error, find_output
 
 import json
@@ -14,14 +14,14 @@ import os
 MAX_BIP125_RBF_SEQUENCE = 0xfffffffd
 
 # Create one-input, one-output, no-fee transaction:
-class PSBTTest(kryptoFrancTestFramework):
+class PSBTTest(BitcoinTestFramework):
 
     def set_test_params(self):
         self.setup_clean_chain = False
         self.num_nodes = 3
 
     def run_test(self):
-        # Create and fund a raw tx for sending 10 KYF
+        # Create and fund a raw tx for sending 10 BTC
         psbtx1 = self.nodes[0].walletcreatefundedpsbt([], {self.nodes[2].getnewaddress():10})['psbt']
 
         # Node 1 should not be able to add anything to it but still return the psbtx same as before

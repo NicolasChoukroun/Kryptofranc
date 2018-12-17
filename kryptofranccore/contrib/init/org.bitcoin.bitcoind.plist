@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.kryptofranc.kryptofrancd</string>
+	<string>org.bitcoin.bitcoind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/kryptofrancd</string>
+		<string>/usr/local/bin/bitcoind</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
