@@ -1,37 +1,37 @@
-KryptoFranc version 0.9.4 is now available from:
+Bitcoin Core version 0.9.4 is now available from:
 
-  https://kryptofranc.org/bin/0.9.4/
+  https://bitcoin.org/bin/0.9.4/
 
 This is a new minor version release, bringing only bug fixes and updated
 translations. Upgrading to this release is recommended.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/kryptofranc/kryptofranc/issues
+  https://github.com/bitcoin/bitcoin/issues
 
 How to Upgrade
 ===============
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/kryptoFranc-Qt (on Mac) or
-kryptofrancd/kryptofranc-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
+bitcoind/bitcoin-qt (on Linux).
 
 OpenSSL Warning
 ================
 
 OpenSSL 1.0.0p / 1.0.1k was recently released and is being pushed out by
 various operating system maintainers. Review by Gregory Maxwell determined that
-this update is incompatible with the kryptoFranc system and could lead to consensus
+this update is incompatible with the Bitcoin system and could lead to consensus
 forks.
 
-KryptoFranc released binaries from https://kryptofranc.org are unaffected,
+Bitcoin Core released binaries from https://bitcoin.org are unaffected,
 as are any built with the gitian deterministic build system.
 
 However, if you are running either
 
-- The Ubuntu PPA from https://launchpad.net/~kryptofranc/+archive/ubuntu/kryptofranc
-- A third-party or self-compiled KryptoFranc
+- The Ubuntu PPA from https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin
+- A third-party or self-compiled Bitcoin Core
 
 upgrade to Bitcoin Core 0.9.4, which includes a workaround, **before** updating
 OpenSSL.
@@ -92,4 +92,4 @@ Thanks to who contributed to this release, at least:
 - Sergio Demian Lerner
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/kryptofranc/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
