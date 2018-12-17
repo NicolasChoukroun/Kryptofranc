@@ -123,8 +123,6 @@ public:
 
         genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        MineGenesis(genesis, consensus.powLimit, true); // true= start at time(0)
-
         assert(consensus.hashGenesisBlock == uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"));
         assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
 
@@ -234,8 +232,6 @@ public:
 
         genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        MineGenesis(genesis, consensus.powLimit, true); // true= start at time(0)
-
         // removed
         assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
 
@@ -325,8 +321,6 @@ public:
 
         genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        MineGenesis(genesis, consensus.powLimit, true); // true= start at time(0)
-
         // removed
         assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
 

@@ -225,12 +225,13 @@
           <entry key="am" value="4" />
           <entry key="cpp" value="24" />
           <entry key="h" value="4" />
+          <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ObjectiveC" value="28" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -258,26 +259,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/init.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="544">
               <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
-              <folding>
-                <element signature="e#9110#9313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/configure.ac">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="978">
-              <caret line="448" column="7" selection-start-line="448" selection-start-column="7" selection-end-line="448" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net.cpp">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/autogen.sh">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -328,10 +317,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="238">
               <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
@@ -341,7 +330,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CheckProofOfWork</find>
       <find>internal</find>
       <find>miner.cpp</find>
       <find>UpdateTime</find>
@@ -371,6 +359,7 @@
       <find>setClientModel</find>
       <find>PKGCHECK_MODULES</find>
       <find>kryptofr</find>
+      <find>AC_CHECK_LIB</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -512,15 +501,16 @@
       <workItem from="1541515277179" duration="1011000" />
       <workItem from="1543417965231" duration="1594000" />
       <workItem from="1543663417046" duration="16807000" />
-      <workItem from="1545050351699" duration="1369000" />
+      <workItem from="1545050351699" duration="2160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44870000" />
+    <option name="totallyTimeSpent" value="45661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2993" height="1742" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16842823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,7 +541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/net.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/net2.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" />
@@ -700,27 +689,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/autogen.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/configure.ac">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/init.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="544">
           <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
-          <folding>
-            <element signature="e#9110#9313#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/configure.ac">
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="978">
-          <caret line="448" column="7" selection-start-line="448" selection-start-column="7" selection-end-line="448" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
