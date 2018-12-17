@@ -220,7 +220,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1493596800; // May 1st 2017
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000007dbe94253893cbd463");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000010000");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75"); //1354312
@@ -232,7 +232,7 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 414098458, 0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         MineGenesis(genesis, consensus.powLimit, true); // true= start at time(0)
 
@@ -242,10 +242,10 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.kryptofranc.jonasschnelli.ch");
-        vSeeds.emplace_back("seed.tbtc.petertodd.org");
-        vSeeds.emplace_back("seed.testnet.kryptofranc.sprovoost.nl");
-        vSeeds.emplace_back("testnet-seed.bluematt.me"); // Just a static list of stable node(s), only supports x9
+        ////vSeeds.emplace_back("testnet-seed.kryptofranc.jonasschnelli.ch");
+        ////vSeeds.emplace_back("seed.tbtc.petertodd.org");
+        ////vSeeds.emplace_back("seed.testnet.kryptofranc.sprovoost.nl");
+        //vSeeds.emplace_back("testnet-seed.bluematt.me"); // Just a static list of stable node(s), only supports x9
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -264,14 +264,14 @@ public:
 
         checkpointData = {
             {
-                {546, uint256S("000000002a936ca763904c3c35fce2f3556c559c0214345d31b1bcebf76acb70")},
+                {0, uint256S("000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},,
             }
         };
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
-            /* nTime    */ 1531929919,
-            /* nTxCount */ 19438708,
+            /* nTime    */ 0,
+            /* nTxCount */ 0,
             /* dTxRate  */ 0.626
         };
 
@@ -323,7 +323,7 @@ public:
         nDefaultPort = 21789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         MineGenesis(genesis, consensus.powLimit, true); // true= start at time(0)
 
@@ -339,7 +339,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206")},
+                {0, uint256S("000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
             }
         };
 
