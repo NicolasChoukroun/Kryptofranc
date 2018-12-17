@@ -1,17 +1,17 @@
-Bitcoin Core version 0.17.0.1 is now available from:
+KryptoFranc version 0.17.0.1 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.17.0.1/>
+  <https://kryptofranccore.org/bin/kryptofranc-core-0.17.0.1/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/kryptofranc/kryptofranc/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://kryptofranccore.org/en/list/announcements/join/>
 
 Notable changes
 ===============

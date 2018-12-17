@@ -121,10 +121,10 @@ public:
         nDefaultPort = 1789;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
+        genesis = CreateGenesisBlock(1545058568, 3152143293, 0x1d00ffff, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac"));
-        assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000000082fab7070f15364eacce7cdb3874b52ed14b47512c9249626b51b692"));
+        assert(genesis.hashMerkleRoot == uint256S("0x273bbdb0de6cf9f189b72e147b463fba38823cb5d6814baaf04182b68efca98f"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -155,7 +155,7 @@ public:
 
         checkpointData = {
             {
-                { 0, uint256S("0x000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
+                { 0, uint256S("0x0000000082fab7070f15364eacce7cdb3874b52ed14b47512c9249626b51b692")},
                 //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
                 //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
                 //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
@@ -175,7 +175,7 @@ public:
             // Data from rpc: getchaintxstats 4096 0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8
             /* nTime    */ 0,
             /* nTxCount */ 0,
-            /* dTxRate  */ 2.4
+            /* dTxRate  */ 0
         };
 
         /* disable fallback fee on mainnet */
@@ -230,10 +230,10 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
+        genesis = CreateGenesisBlock(1545058568, 3152143293, 0x1d00ffff, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
-        assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
+        assert(genesis.hashMerkleRoot == uint256S("0x273bbdb0de6cf9f189b72e147b463fba38823cb5d6814baaf04182b68efca98f"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -260,7 +260,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},,
+                {0, uint256S("0000000082fab7070f15364eacce7cdb3874b52ed14b47512c9249626b51b692")},
             }
         };
 
@@ -268,7 +268,7 @@ public:
             // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
             /* nTime    */ 0,
             /* nTxCount */ 0,
-            /* dTxRate  */ 0.626
+            /* dTxRate  */ 0
         };
 
         /* enable fallback fee on testnet */
@@ -319,10 +319,10 @@ public:
         nDefaultPort = 21789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1543507133, 1084870916, 486604799, 1, 51*COIN);
+        genesis = CreateGenesisBlock(1545058568, 3152143293, 0x1d00ffff, 1, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
-        assert(genesis.hashMerkleRoot == uint256S("0x26cb14ab1af2df305bc2b7184288a969e537ed64b925caf169f2d820bd678b75"));
+        assert(genesis.hashMerkleRoot == uint256S("0x273bbdb0de6cf9f189b72e147b463fba38823cb5d6814baaf04182b68efca98f"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -333,7 +333,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("000000003d87575017affb1c3358f0c2286bdba8b8d27cb9ff87b241c744bcac")},
+                {0, uint256S("0x0000000082fab7070f15364eacce7cdb3874b52ed14b47512c9249626b51b692")},
             }
         };
 
