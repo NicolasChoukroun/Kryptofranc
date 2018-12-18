@@ -483,16 +483,16 @@ kyf_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-kyf-tx_SOURCES = kyf-tx.cpp
-kyf-tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-kyf-tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kyf-tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kyf_tx_SOURCES = kyf-tx.cpp
+kyf_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+kyf_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+kyf_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf-tx_SOURCES += bitcoin-tx-res.rc
+kyf_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-kyf-tx_LDADD = \
+kyf_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -500,7 +500,7 @@ kyf-tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-kyf-tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+kyf_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
