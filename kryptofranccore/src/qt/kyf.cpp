@@ -241,7 +241,7 @@ private:
     void startThread();
 };
 
-#include <qt/bitcoin.moc>
+#include <qt/kyf.moc>
 
 kryptoFrancCore::kryptoFrancCore(interfaces::Node& node) :
     QObject(), m_node(node)
