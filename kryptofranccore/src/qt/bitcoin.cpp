@@ -718,7 +718,6 @@ int main(int argc, char *argv[])
         if (node->baseInitialize()) {
             app.requestInitialize();
 #if defined(Q_OS_WIN)
-            cd qt
             WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("%1 didn't yet exit safely...").arg(QObject::tr(PACKAGE_NAME)), (HWND)app.getMainWinId());
 #endif
             app.exec();
