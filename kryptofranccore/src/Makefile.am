@@ -596,6 +596,12 @@ if ENABLE_QT
 include Makefile.qt.include
 endif
 
+
+rename bitcoind kyfd
+rename bitcoin-tx kyf-tx
+rename bitcoin-cli kyf-cli
+rename src/bitcoin-qt src/kyf-qt
 if ENABLE_QT_TESTS
+
 include Makefile.qttest.include
 endif
