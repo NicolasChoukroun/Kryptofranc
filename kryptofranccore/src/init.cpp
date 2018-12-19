@@ -528,8 +528,8 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/kryptofranc/kryptofranc>";
-    const std::string URL_WEBSITE = "<https://kryptofranccore.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/nicolaschoukroun/kryptofranc>";
+    const std::string URL_WEBSITE = "<https://kryptofranc.com>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

@@ -37,6 +37,7 @@ echo "  ->will compile for unix"
 echo "--------------------------------------------------------------"
 echo -e $Color_Off
 
+
 # initialize the internal variables
 OS="unix"
 
@@ -53,22 +54,26 @@ if [ "$#" -ge 5 ]  ; then
 fi
 
 ALL="no"
+INSTALL="no"
 
 # loop through all the options and set the corresponding variables
 while [ "$1" != "" ]; do
 	case $1 in
-	    all)
-			ALL="yes"
-		::
+	    install)
+            INSTALL="yes"
+        ;;
+        all)
+            ALL="yes"
+        ;;
 		unix)
 			OS="unix"
-	      ;;
+	    ;;
 	    win64)
 	    	OS="win64"
-	     ;;
+	    ;;
 	    win32)
 	    	OS="win32"
-	     ;;
+	    ;;
 	    help)
 	    	exit
 	    ;;
@@ -80,14 +85,17 @@ $MOD="-u"
 
 echo -e "$BYellow --------------------------------------------------"
 echo " *** EXECUTING SCRIPT WITH OPTIONS ***"
+echo
 echo "OS option $OS"
+echo "INSTALL option $INSTALL"
+echo "ALL option $ALL"
 echo "--------------------------------------------------"
 echo -e $Color_Off
 
 
 if [ $OS = "unix" ]; then
 
-	if [ $ALL = "yes" ]; then
+	if [ $INSTALL = "yes" ]; then
 		sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
 		sudo apt-get install libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev 
 		
@@ -98,24 +106,31 @@ if [ $OS = "unix" ]; then
 		
 		sudo apt-get install libminiupnpc-dev
 		sudo apt-get install libzmq3-dev
-	fi
-	sudo ./kryptofranccore/autogen.sh
-	sudo ./kryptofranccore/configuration --disable-tests --disable-bench
-	sudo make
-	mv ./kryptofranccore/src/bitcoind ./kryptofranccore/src/kyfd
-	mv ./kryptofranccore/src/bitcointx ./kryptofranccore/src/kyf-tx
-	mv ./kryptofranccore/src/bitcoin-cli ./kryptofranccore/src/kyf-cli
-	mv ./kryptofranccore/src/qt/bitcoin-qt ./kryptofranccore/src/qt/kyf-qt
+    fi
+    if [ $ALL = "yes" ]; then
+        cd kryptofranccore
+        ./autogen.sh
+        ./configure --disable-tests --disable-bench
+        cd ..
+    fi
+
+
+	cd kryptofranccore
+    make
+    cd ..
+	mv kryptofranccore/src/bitcoind kryptofranccore/src/kyfd
+	mv kryptofranccore/src/bitcointx .ryptofranccore/src/kyf-tx
+	mv kryptofranccore/src/bitcoin-cli .ryptofranccore/src/kyf-cli
+	mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
 fi
 
 
 echo -e "$BYellow --------------------------------------------------"
-echo -e "$BGreen MAKING! "
+echo -e "$BGreen PACKAGING "
 echo -e $Color_Off
-sudo @mkdir binaries
-sudo @mv kryptofranccore/src/bitcoind /binaries/kyfd
-sudo @mv kryptofranccore/src/bitcoin-tx /binaries/kyf-tx
-sudo @mv kryptofranccore/src/bitcoin-cli /binaries/kyf-cli
-sudo @mv kryptofranccore/src/qt/bitcoin-qt /binaries/kyf-qt
+sudo mkdir binaries
+sudo cp kryptofranccore/src/bitcoind /binaries/kyfd
+sudo cp kryptofranccore/src/bitcoin-tx /binaries/kyf-tx
+sudo cp kryptofranccore/src/bitcoin-cli /binaries/kyf-cli
+sudo cp kryptofranccore/src/qt/bitcoin-qt /binaries/kyf-qt
 
-exit;
