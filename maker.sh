@@ -37,8 +37,6 @@ echo "  ->will compile for unix"
 echo "--------------------------------------------------------------"
 echo -e $Color_Off
 
-sudo chmod -R 777 kryptofranc
-
 # initialize the internal variables
 OS="unix"
 
