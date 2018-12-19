@@ -73,7 +73,7 @@ while [ "$1" != "" ]; do
 		NOEXEC="yes"
 	      ;;
 	    win)
-	    	OS="windows"
+	    	OS="windows"cd kry
 	     ;;
 	    copy)
 	    	COPY="yes"
