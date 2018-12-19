@@ -24,7 +24,7 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan kryptofranc Installer: version 1.25"
+echo -e "$BCyan kryptofranc Installer: version 1.26"
 echo -e "$BBlue installer [option1] [option2] [option3] [option3]"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
@@ -124,19 +124,6 @@ if [ $INSTALL = "yes" ]; then
     
 fi
 
-if [ $CLONE = "yes" ]; then
-    echo -e "$BYellow --------------------------------------------------"
-    echo -e "$BGreen Copy the clean bitcoin folder the the working one (clone option is on)..."
-    echo -e $Color_Off
-    sudo rm -r -f ~/kryptofranc/kryptofranccore
-    sudo cp -r bitcoin ~/ 
-    
-    # do not clone systematically or it ask to merge with the latest Bitcoin core release.
-    # sudo rm -r -f bitcoin    
-    # sudo git clone https://github.com/bitcoin/bitcoin 
-    # exit;
-fi
-
 if [ $EXTRAS = "yes" ]; then
     echo -e "$BYellow --------------------------------------------------"
     echo -e "$BGreen Extras Installation..."
@@ -202,11 +189,6 @@ fi
 
 
 $MOD="-u"
-
-#sudo rm -rf ~/kryptofranc/kryptofranccore/src/qt/locale
-#sudo cp $MOD -R assets_installer/locale ~/kryptofranc/kryptofranccore/src/qt/
-sudo cp $MOD assets_installer/kryptofranc.png ~/kryptofranc/kryptofranccore/src/qt/res/icons/kryptofranc.png
-sudo cp $MOD assets_installer/kryptofranc.ico ~/kryptofranc/kryptofranccore/src/qt/res/icons/kryptofranc.ico
 
 
 if [ $INSTALL = "yes" ]; then
