@@ -1,5 +1,5 @@
 *.tar.gz
-
+.idea/
 *.exe
 src/bitcoin
 src/bitcoind
