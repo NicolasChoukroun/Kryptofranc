@@ -804,7 +804,7 @@ void Misbehaving(NodeId pnode, int howmuch, const std::string& message) EXCLUSIV
     CNodeState *state = State(pnode);
     if (state == nullptr)
         return;
-
+    printf("Missbehaving score: %i: Reason: %s\n",state->nMisbehavior,message.c_str());
     state->nMisbehavior += howmuch;
     int banscore = gArgs.GetArg("-banscore", DEFAULT_BANSCORE_THRESHOLD);
     std::string message_prefixed = message.empty() ? "" : (": " + message);
