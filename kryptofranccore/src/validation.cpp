@@ -41,7 +41,7 @@
 #include <utilstrencodings.h>
 #include <validationinterface.h>
 #include <warnings.h>
-
+#include  <cstdio>
 #include <future>
 #include <sstream>
 
@@ -460,6 +460,7 @@ std::string FormatStateMessage(const CValidationState &state)
 
 static bool IsCurrentForFeeEstimation()
 {
+    return true;
     AssertLockHeld(cs_main);
     if (IsInitialBlockDownload())
         return false;
@@ -1167,7 +1168,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (halvings >= 64)
         return 0;
 
-    CAmount nSubsidy = 50 * COIN;
+    CAmount nSubsidy = 50000000000 * COIN;
     // Kryptofranc specific
     nSubsidy >>= halvings;
     return nSubsidy;
@@ -1178,21 +1179,31 @@ bool IsInitialBlockDownload()
     // Once this function has returned false, it must remain false.
     static std::atomic<bool> latchToFalse{false};
     // Optimization: pre-test latch before taking the lock.
-    if (latchToFalse.load(std::memory_order_relaxed))
-        return false;
+    if (latchToFalse.load(std::memory_order_relaxed)) return false;
 
     LOCK(cs_main);
     if (latchToFalse.load(std::memory_order_relaxed))
+    {
+        //printf("latchToFalse.load(std::memory_order_relaxed) \n");
         return false;
+    }
+
     if (fImporting || fReindex)
         return true;
-    if (chainActive.Tip() == nullptr)
+    if (chainActive.Tip() == nullptr) {
+        printf("true=chainActive.Tip() == nullptr) \n");
         return true;
-    if (chainActive.Tip()->nChainWork < nMinimumChainWork)
+    }
+    if (chainActive.Tip()->nChainWork < nMinimumChainWork) {
+        printf("true=chainActive.Tip()->nChainWork < nMinimumChainWork) \n");
         return true;
-    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))
+    }
+    if (chainActive.Tip()->GetBlockTime() < (GetTime() - (nMaxTipAge*4000))) {
+        printf("true= Maxtipage  \n");
         return true;
+    }
     LogPrintf("Leaving InitialBlockDownload (latching to false)\n");
+    printf("false= Leaving InitialBlockDownload (latching to false)\n");
     latchToFalse.store(true, std::memory_order_relaxed);
     return false;
 }
@@ -1892,6 +1903,7 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     bool fEnforceBIP30 = !((pindex->nHeight==91842 && pindex->GetBlockHash() == uint256S("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
                            (pindex->nHeight==91880 && pindex->GetBlockHash() == uint256S("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
 
+    fEnforceBIP30=true;
     // Once BIP34 activated it was not possible to create new duplicate coinbases and thus other than starting
     // with the 2 existing duplicate coinbase pairs, not possible to create overwriting txs.  But by the
     // time BIP34 activated, in each of the existing pairs the duplicate coinbase had overwritten the first
@@ -3293,12 +3305,15 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     }
 
     // Enforce rule that the coinbase starts with serialized block height
-    if (nHeight >= consensusParams.BIP34Height)
+    if (nHeight >= consensusParams.BIP34Height && nHeight>0)
     {
         CScript expect = CScript() << nHeight;
+        printf("BIP34Height error: -> nHeight=%i, block size=%i, expected size=%i\n",nHeight,block.vtx[0]->vin[0].scriptSig.size(),
+                expect.size()  );
+
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0]->vin[0].scriptSig.begin())) {
-            return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
+        //    return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
         }
     }
 
