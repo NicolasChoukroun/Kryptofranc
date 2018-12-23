@@ -84,7 +84,7 @@ static const size_t DEFAULT_MAXRECEIVEBUFFER = 5 * 1000;
 static const size_t DEFAULT_MAXSENDBUFFER    = 1 * 1000;
 
 // NOTE: When adjusting this, update rpcnet:setban's help ("24h")
-static const unsigned int DEFAULT_MISBEHAVING_BANTIME = 60 * 60 * 24;  // Default 24-hour ban
+static const unsigned int DEFAULT_MISBEHAVING_BANTIME = 1 ; // Default 24-hour ban 60 * 60 * 24;
 
 typedef int64_t NodeId;
 
