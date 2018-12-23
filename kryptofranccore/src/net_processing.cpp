@@ -29,6 +29,9 @@
 #include <util.h>
 #include <utilmoneystr.h>
 #include <utilstrencodings.h>
+#include <iostream>
+#include <string>
+#include <stdio.h>
 
 #include <memory>
 
@@ -804,8 +807,9 @@ void Misbehaving(NodeId pnode, int howmuch, const std::string& message) EXCLUSIV
     CNodeState *state = State(pnode);
     if (state == nullptr)
         return;
+
+    //state->nMisbehavior += howmuch;
     printf("Missbehaving score: %i: Reason: %s\n",state->nMisbehavior,message.c_str());
-    state->nMisbehavior += howmuch;
     int banscore = gArgs.GetArg("-banscore", DEFAULT_BANSCORE_THRESHOLD);
     std::string message_prefixed = message.empty() ? "" : (": " + message);
     if (state->nMisbehavior >= banscore && state->nMisbehavior - howmuch < banscore)
