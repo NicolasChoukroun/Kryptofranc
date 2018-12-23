@@ -129,8 +129,8 @@ echo -e "$BYellow --------------------------------------------------"
 echo -e "$BGreen PACKAGING "
 echo -e $Color_Off
 sudo mkdir binaries
-sudo cp kryptofranccore/src/bitcoind /binaries/kyfd
-sudo cp kryptofranccore/src/bitcoin-tx /binaries/kyf-tx
-sudo cp kryptofranccore/src/bitcoin-cli /binaries/kyf-cli
-sudo cp kryptofranccore/src/qt/bitcoin-qt /binaries/kyf-qt
+sudo cp kryptofranccore/src/kyfd /binaries/kyfd
+sudo cp kryptofranccore/src/kyf-tx /binaries/kyf-tx
+sudo cp kryptofranccore/src/kyf-cli /binaries/kyf-cli
+sudo cp kryptofranccore/src/qt/kyf-qt /binaries/kyf-qt
 
