@@ -439,7 +439,8 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0)
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "kryptoFranc is not connected!");
 
-    if (IsInitialBlockDownload())
+    // added: chainActive.Height()>0 to avoid blockage altcoin after genesis impossible to mine.
+    if (IsInitialBlockDownload() && chainActive.Height()>0)
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "kryptoFranc is downloading blocks...");
 
     static unsigned int nTransactionsUpdatedLast;
