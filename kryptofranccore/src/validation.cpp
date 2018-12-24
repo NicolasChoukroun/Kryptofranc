@@ -1163,14 +1163,22 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
+    CAmount nSubsidy=0;
+    double halvings = nHeight / consensusParams.nSubsidyHalvingInterval; // no need to be an int with new algo
 
-    CAmount nSubsidy = 50000000000 * COIN;
-    // Kryptofranc specific
-    nSubsidy >>= halvings;
+    if(nHeight <= 100)
+    {
+        nSubsidy = 1000 * COIN;  // premine 50 billions on 3rd ->300 blocks
+        //halvings=1.0;
+    }else {
+        nSubsidy = 28028 * COIN/10; // after premine,
+    }
+    int years = (int) nHeight/52560;
+    halvings = (years/1.618033988750);
+
+    if (halvings<=1.0) halvings=1.0;
+    nSubsidy =   nSubsidy / halvings;
+
     return nSubsidy;
 }
 
@@ -3305,7 +3313,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     }
 
     // Enforce rule that the coinbase starts with serialized block height
-    if (nHeight >= consensusParams.BIP34Height && nHeight>0)
+    /*if (nHeight >= consensusParams.BIP34Height && nHeight>0)
     {
         CScript expect = CScript() << nHeight;
         printf("BIP34Height error: -> nHeight=%i, block size=%i, expected size=%i\n",nHeight,block.vtx[0]->vin[0].scriptSig.size(),
@@ -3316,7 +3324,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
         //    return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
         }
     }
-
+    */
     // Validation for witness commitments.
     // * We compute the witness hash (which is the hash including witnesses) of all the block's transactions, except the
     //   coinbase (where 0x0000....0000 is used instead).
