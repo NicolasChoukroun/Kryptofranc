@@ -113,24 +113,52 @@ if [ $OS = "unix" ]; then
         ./configure --disable-tests --disable-bench
         cd ..
     fi
+	echo -e "$BYellow --------------------------------------------------"
+	echo -e "$BGreen PACKAGING will install all in binaries folder"
+	echo -e $Color_Off
+	sudo mkdir binaries
+	sudo cp kryptofranccore/src/kyfd binaries/kyfd
+	sudo cp kryptofranccore/src/kyf-tx binaries/kyf-tx
+	sudo cp kryptofranccore/src/kyf-cli binaries/kyf-cli
+	sudo cp kryptofranccore/src/qt/kyf-qt binaries/kyf-qt
+fi
 
+if [ $OS = "win64" ]; then
 
+	if [ $INSTALL = "yes" ]; then
+		sudo apt update
+		sudo apt upgrade
+		sudo apt install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git
+		sudo apt install nsis
+		sudo apt install g++-mingw-w64-x86-64
+		echo -e "$BGreen select (1) Posix "
+		echo -e $Color_Off
+		sudo update-alternatives --config x86_64-w64-mingw32-g++
+		PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
+		sudo chmod -R 777 kryptofranccore
+		cd kryptofranccore
+		cd depends
+		#secret to insure the 
+		PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+		make HOST=x86_64-w64-mingw32
+		cd ..
+		cd ..
+		
+    fi
+    if [ $ALL = "yes" ]; then
+        cd kryptofranccore
+		./autogen.sh
+		CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench
+		cd ..
+	fi
+	echo -e "$BYellow --------------------------------------------------"
+	echo -e "$BGreen PACKAGING will install all in d:/kryptofranc"
+	echo -e $Color_Off
 	cd kryptofranccore
-    make
-    cd ..
-	mv kryptofranccore/src/bitcoind kryptofranccore/src/kyfd
-	mv kryptofranccore/src/bitcointx .ryptofranccore/src/kyf-tx
-	mv kryptofranccore/src/bitcoin-cli .ryptofranccore/src/kyf-cli
-	mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
+	make install DESTDIR=/mnt/d/kryptofranc
+	cd ..
 fi
 
 
-echo -e "$BYellow --------------------------------------------------"
-echo -e "$BGreen PACKAGING "
-echo -e $Color_Off
-sudo mkdir binaries
-sudo cp kryptofranccore/src/kyfd /binaries/kyfd
-sudo cp kryptofranccore/src/kyf-tx /binaries/kyf-tx
-sudo cp kryptofranccore/src/kyf-cli /binaries/kyf-cli
-sudo cp kryptofranccore/src/qt/kyf-qt /binaries/kyf-qt
+
 
