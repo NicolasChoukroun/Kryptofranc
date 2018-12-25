@@ -155,7 +155,7 @@ if [ $OS = "win64" ]; then
 	echo -e "$BGreen PACKAGING will install all in d:/kryptofranc"
 	echo -e $Color_Off
 	cd kryptofranccore
-	make install DESTDIR=/mnt/d/kryptofranc
+	make install DESTDIR=/mnt/d/kryptofranc -i
 	cd ..
 fi
 
