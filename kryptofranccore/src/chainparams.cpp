@@ -129,8 +129,8 @@ public:
         consensus.nPowTargetSpacing = 1 * 60; // 1 minute (bitcoin = 10 min = 10*60)
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = (nPowTargetTimespan / nPowTargetSpacing)*0.05; // 95% of 2016 = 1916
-        consensus.nMinerConfirmationWindow = nPowTargetTimespan / nPowTargetSpacing; // was 2016
+        consensus.nRuleChangeActivationThreshold = (consensus.nPowTargetTimespan / consensus.nPowTargetSpacing)*0.05; // 95% of 2016 = 1916
+        consensus.nMinerConfirmationWindow = consensus.nPowTargetTimespan / consensus.nPowTargetSpacing; // was 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
