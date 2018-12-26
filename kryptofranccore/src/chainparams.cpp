@@ -119,18 +119,18 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000/4; // every year
-        consensus.BIP16Exception = uint256();
+        consensus.BIP16Exception = uint256S("0x000000003fc2aaa5e5ed58f9b9341b85324b60410593f09545d1fb7c7aa4ddb9");
         consensus.BIP34Height = 0; // optimization starting from 0;
         consensus.BIP34Hash = uint256();
         consensus.BIP65Height = 0; // optimization starting from 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP65Height = 0; // optimization starting from 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 6 * 60 * 60; // two weeks = 14 * 24 * 60 * 60
-        consensus.nPowTargetSpacing = 1 * 60; // 1 minute
+        consensus.nPowTargetTimespan = 5 * 60; // 6h, bitcoin = two weeks = 14 * 24 * 60 * 60
+        consensus.nPowTargetSpacing = 1 * 60; // 1 minute (bitcoin = 10 min = 10*60)
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nRuleChangeActivationThreshold = (nPowTargetTimespan / nPowTargetSpacing)*0.05; // 95% of 2016 = 1916
+        consensus.nMinerConfirmationWindow = nPowTargetTimespan / nPowTargetSpacing; // was 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -180,7 +180,8 @@ public:
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("seed1.kryptofranc.net"); // Kryptofranc network 1GB/s
         vSeeds.emplace_back("seed2.kryptofranc.net"); 
-        vSeeds.emplace_back("seed3.kryptofranc.net"); 
+        vSeeds.emplace_back("seed3.kryptofranc.net");
+        vSeeds.emplace_back("seed4.kryptofranc.net");
         //vSeeds.emplace_back("seed.kryptofrancstats.com"); // Christian Decker, supports x1 - xf
         //vSeeds.emplace_back("seed.kryptofranc.jonasschnelli.ch"); // Jonas Schnelli, only supports x1, x5, x9, and xd
         //vSeeds.emplace_back("seed.btc.petertodd.org"); // Peter Todd, only supports x1, x5, x9, and xd
