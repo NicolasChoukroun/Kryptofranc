@@ -1,3 +1,6 @@
+.idea/
+*.pdf
+*.ind
 *.tar.gz
 .idea/
 *.exe
