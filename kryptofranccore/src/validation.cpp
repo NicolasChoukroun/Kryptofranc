@@ -1178,7 +1178,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
     }
     int years = (int) nHeight/52560;
-    halvings = (years/1.618033988750);
+    int halvings = (years/1.618033988750);
     nSubsidy =  nSubsidy / halvings;
     return nSubsidy;
 }
