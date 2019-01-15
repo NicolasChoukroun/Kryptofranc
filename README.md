@@ -22,6 +22,7 @@ cd KryptoFranc
 ./maker.sh win64
 
 ```
+In call cases, the files are in the /binaries/ directory
 
 ## English - KryptoFranc: Rebirth of the French Currency
 
