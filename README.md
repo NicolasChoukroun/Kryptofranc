@@ -1,5 +1,28 @@
 # KryptoFranc
 
+Build:
+```
+git clone https://github.com/NicolasChoukroun/Kryptofranc
+---------------------------
+Unix: 
+chmod -R 777 KryptoFranc
+cd KryptoFranc
+./maker.sh unix install
+./maker.sh unix all
+# then you can compile doing only
+./maker.sh unix
+
+-------------------------
+Windows (using windows ubuntu subsystem):
+chmod -R 777 KryptoFranc
+cd KryptoFranc
+./maker.sh win64 install
+./maker.sh win64 all
+# then you can compile doing only
+./maker.sh win64
+
+```
+
 ## English - KryptoFranc: Rebirth of the French Currency
 
 from http://KryptoFranc.com/bitcoin_whitepaper_us.php?language=us
