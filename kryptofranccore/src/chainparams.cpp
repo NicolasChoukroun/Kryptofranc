@@ -121,10 +121,10 @@ public:
         nDefaultPort = 1789;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,486604799,536870912, 51*COIN);
+        genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912, 666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee"));
-        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
+        // removed
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -230,10 +230,10 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,486604799,536870912,51*COIN);
+        genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912,666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
-        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
+        // removed
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -319,10 +319,10 @@ public:
         nDefaultPort = 211789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,486604799,536870912, 51*COIN);
+        genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912, 666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
-        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
+        // removed
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
