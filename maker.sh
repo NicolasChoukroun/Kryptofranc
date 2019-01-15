@@ -121,6 +121,7 @@ if [ $OS = "unix" ]; then
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
 	sudo mkdir binaries
+	sudo mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
 	sudo cp kryptofranccore/src/kyfd binaries/kyfd
 	sudo cp kryptofranccore/src/kyf-tx binaries/kyf-tx
 	sudo cp kryptofranccore/src/kyf-cli binaries/kyf-cli
