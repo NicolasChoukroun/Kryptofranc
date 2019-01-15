@@ -113,6 +113,9 @@ if [ $OS = "unix" ]; then
         ./configure --disable-tests --disable-bench
         cd ..
     fi
+    cd kryptofranccore
+    make
+    cd ..
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
