@@ -121,7 +121,7 @@ public:
         nDefaultPort = 1789;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,‭486604799‬,536870912, 51*COIN);
+        genesis = CreateGenesisBlock(1546300800,2144790290,486604799,536870912, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee"));
         assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
@@ -141,7 +141,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,K);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,k);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,╛);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,+);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -230,7 +230,7 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,‭486604799‬,536870912,51*COIN);
+        genesis = CreateGenesisBlock(1546300800,2144790290,486604799,536870912,51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
         assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
@@ -319,7 +319,7 @@ public:
         nDefaultPort = 211789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,‭486604799‬,536870912, 51*COIN);
+        genesis = CreateGenesisBlock(1546300800,2144790290,486604799,536870912, 51*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
         assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
