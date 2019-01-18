@@ -143,9 +143,9 @@ if [ $OS = "win64" ]; then
 		sudo chmod -R 777 kryptofranccore
 		cd kryptofranccore
 		cd depends
-		#secret to insure the 
+		#secret to insure the compilation will work 
 		PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-		make HOST=x86_64-w64-mingw32
+		make HOST=x86_64-w64-mingw32 -i
 		cd ..
 		cd ..
 		
