@@ -2,7 +2,6 @@
 *.pdf
 *.ind
 *.tar.gz
-.idea/
 *.exe
 src/bitcoin
 src/bitcoind
@@ -64,7 +63,6 @@ src/qt/bitcoin-qt.includes
 *.pyc
 *.o
 *.o-*
-*.patch
 *.a
 *.pb.cc
 *.pb.h
@@ -120,6 +118,4 @@ test/cache/*
 libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh
 .idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
+cmake-build-debug/CMakeFiles/clion-log.txt
