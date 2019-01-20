@@ -161,7 +161,7 @@ if [ $OS = "win64" ]; then
 	echo -e $Color_Off
 	cd kryptofranccore
 	make install DESTDIR=/mnt/d/kryptofranc -i
-	sudo mv /mnt/d/kryptofranc/bitcoin-qt /mnt/d/kryptofranc/kyf-qt
+	sudo mv /mnt/d/kryptofranc/bitcoin-qt.exe /mnt/d/kryptofranc/kyf-qt.exe
 	cd ..
 fi
 
