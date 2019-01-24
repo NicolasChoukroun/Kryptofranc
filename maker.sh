@@ -120,13 +120,18 @@ if [ $OS = "unix" ]; then
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
+	
 	sudo mkdir binaries
 	sudo mkdir binaries/unix
 	sudo mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
-	sudo cp kryptofranccore/src/kyfd binaries/unix/kyfd
+	sudo cp /assets/android-icon-192x192.png binaries/unix/kryptofranc.png
+	sudo cp /assets/android-icon-192x192.png /usr/share/app-install/icons/kryptofranc.png
+	sudo cp /assets/kyf-qt.desktop binaries/unix/kyf-qt.desktop
+	sudo cp kryptofranccore/src/kyfd binaries/unix/kyfd	
 	sudo cp kryptofranccore/src/kyf-tx binaries/unix/kyf-tx
 	sudo cp kryptofranccore/src/kyf-cli binaries/unix/kyf-cli
 	sudo cp kryptofranccore/src/qt/kyf-qt binaries/unix/kyf-qt
+	sudo cp kryptofranccore/src/qt/kyf-qt /usr/bin/kyf-qt
 fi
 
 if [ $OS = "win64" ]; then
