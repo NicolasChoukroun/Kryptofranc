@@ -6,5 +6,5 @@ Exec=/usr/bin/kyf-qt
 Icon=/usr/share/app-install/icons/kryptofranc.png
 Terminal=false
 Type=Application
-Categories=Application
+Categories=Categories=GTK;GNOME;Internet; 
                          
