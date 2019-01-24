@@ -121,6 +121,7 @@ if [ $OS = "unix" ]; then
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
 	sudo mkdir binaries
+	sudo mkdir binaries/unix
 	sudo mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
 	sudo cp kryptofranccore/src/kyfd binaries/unix/kyfd
 	sudo cp kryptofranccore/src/kyf-tx binaries/unix/kyf-tx
@@ -167,12 +168,13 @@ if [ $OS = "win64" ]; then
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
-	sudo mkdir binaries	
+	sudo mkdir binaries
+	sudo mkdir binaries/win64
 	sudo mv 'kryptofranccore/src/qt/bitcoin-qt.exe' 'kryptofranccore/src/kyf-qt.exe'
-	sudo cp 'kryptofranccore/src/kyfd.exe' 'binaries/unix/kyfd.exe'
-	sudo cp 'kryptofranccore/src/kyf-tx.exe' 'binaries/unix/kyf-tx.exe'
-	sudo cp 'kryptofranccore/src/kyf-cli.exe' 'binaries/unix/kyf-cli.exe'
-	sudo cp 'kryptofranccore/src/qt/kyf-qt.exe' 'binaries/unix/kyf-qt.exe'
+	sudo cp 'kryptofranccore/src/kyfd.exe' 'binaries/win64/kyfd.exe'
+	sudo cp 'kryptofranccore/src/kyf-tx.exe' 'binaries/win64/kyf-tx.exe'
+	sudo cp 'kryptofranccore/src/kyf-cli.exe' 'binaries/win64/kyf-cli.exe'
+	sudo cp 'kryptofranccore/src/qt/kyf-qt.exe' 'binaries/win64/kyf-qt.exe'
 	
 	
 	cd ..
