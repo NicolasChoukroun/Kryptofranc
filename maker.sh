@@ -168,11 +168,11 @@ if [ $OS = "win64" ]; then
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
 	sudo mkdir binaries	
-	sudo mv kryptofranccore/src/qt/bitcoin-qt.exe kryptofranccore/src/kyf-qt.exe
-	sudo cp kryptofranccore/src/kyfd binaries/unix/kyfd
-	sudo cp kryptofranccore/src/kyf-tx binaries/unix/kyf-tx
-	sudo cp kryptofranccore/src/kyf-cli binaries/unix/kyf-cli
-	sudo cp kryptofranccore/src/qt/kyf-qt binaries/unix/kyf-qt	
+	sudo mv 'kryptofranccore/src/qt/bitcoin-qt.exe' 'kryptofranccore/src/kyf-qt.exe'
+	sudo cp 'kryptofranccore/src/kyfd' 'binaries/unix/kyfd'
+	sudo cp 'kryptofranccore/src/kyf-tx' 'binaries/unix/kyf-tx'
+	sudo cp 'kryptofranccore/src/kyf-cli' 'binaries/unix/kyf-cli
+	sudo cp 'kryptofranccore/src/qt/kyf-qt' 'binaries/unix/kyf-qt'
 	
 	
 	cd ..
