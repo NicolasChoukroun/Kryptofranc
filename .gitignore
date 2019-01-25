@@ -119,3 +119,5 @@ libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh
 .idea/workspace.xml
 cmake-build-debug/CMakeFiles/clion-log.txt
+.idea/workspace.xml
+.idea/workspace.xml

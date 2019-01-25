@@ -134,8 +134,7 @@ public:
         vSeeds.emplace_back("seed1.kryptofranc.net"); // removed
         vSeeds.emplace_back("seed2.kryptofranc.net"); // removed
         vSeeds.emplace_back("seed3.kryptofranc.net"); // removed
-        vSeeds.emplace_back("seed4.kryptofranc.net"); // removed
-        //vSeeds.emplace_back("seed.kryptofrancstats.com"); // Christian Decker, supports x1 - xf
+        vSeeds.emplace_back("seed4.kryptofranc.net"); // Christian Decker, supports x1 - xf
         //vSeeds.emplace_back("seed.kryptofranc.jonasschnelli.ch"); // Jonas Schnelli, only supports x1, x5, x9, and xd
         //vSeeds.emplace_back("seed.btc.petertodd.org"); // Peter Todd, only supports x1, x5, x9, and xd
         //vSeeds.emplace_back("seed.kryptofranc.sprovoost.nl"); // Sjors Provoost

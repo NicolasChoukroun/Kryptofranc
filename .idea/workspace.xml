@@ -11,126 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/INSTALL.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/INSTALL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/devtools/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/devtools/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/gitian-keys/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/gitian-keys/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/init/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/init/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/linearize/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/linearize/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/qos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/qos/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/seeds/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/seeds/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/testgen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/testgen/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/verify-commits/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/verify-commits/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/verifybinaries/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/verifybinaries/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/depends/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/depends/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/depends/description.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/depends/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/REST-interface.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/REST-interface.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/benchmarking.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/benchmarking.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/bips.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/bips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-freebsd.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-freebsd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-netbsd.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-netbsd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-openbsd.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-openbsd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-osx.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-osx.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-unix.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-unix.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-windows.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-windows.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/dependencies.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/dependencies.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/descriptors.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/descriptors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/developer-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/developer-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/dnsseed-policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/dnsseed-policy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/files.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/files.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/fuzzing.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/fuzzing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/gitian-building.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/gitian-building.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/init.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/init.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoin-cli.1" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoin-cli.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoin-qt.1" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoin-qt.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoin-tx.1" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoin-tx.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoind.1" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/man/bitcoind.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/reduce-traffic.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/reduce-traffic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.12.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.12.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.13.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.13.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.14.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.14.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.15.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.15.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.18.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.18.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.20.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.20.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.20.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.20.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.21.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.21.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.22.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.22.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.23.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.23.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.24.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.24.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.6.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.6.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.5.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.5.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.6.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.6.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.5.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-process.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-process.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/shared-libraries.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/shared-libraries.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/tor.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/tor.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/translation_process.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/translation_process.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/translation_strings_policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/translation_strings_policy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/travis-ci.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/travis-ci.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/zmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/zmq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/crypto/ctaes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/crypto/ctaes/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/interfaces/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/interfaces/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/secp256k1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/secp256k1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/test/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/test/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/test/data/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/test/data/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/test/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/test/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/test/functional/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/test/functional/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/test/lint/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/test/lint/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -216,21 +96,22 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ac" value="3" />
           <entry key="am" value="4" />
-          <entry key="cpp" value="24" />
+          <entry key="cpp" value="26" />
           <entry key="h" value="5" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="29" />
+          <entry key="ObjectiveC" value="31" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -268,20 +149,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="1170" column="45" selection-start-line="1170" selection-start-column="45" selection-end-line="1170" selection-end-column="45" />
-              <folding>
-                <element signature="e#1348#1408#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="20094">
+              <caret line="1182" column="4" selection-start-line="1182" selection-start-column="4" selection-end-line="1182" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="40" />
+            <state relative-caret-position="2261">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
             </state>
           </provider>
         </entry>
@@ -299,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13056">
+            <state relative-caret-position="13090">
               <caret line="770" column="19" selection-start-line="770" selection-start-column="19" selection-end-line="770" selection-end-column="19" />
             </state>
           </provider>
@@ -308,7 +186,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9622">
+            <state relative-caret-position="9690">
               <caret line="570" column="20" selection-start-line="570" selection-start-column="8" selection-end-line="570" selection-end-column="20" />
               <folding>
                 <element signature="e#18855#18911#0" expanded="true" />
@@ -319,11 +197,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3213">
-              <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
+            <state relative-caret-position="544">
+              <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -332,9 +210,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>internal</find>
-      <find>miner.cpp</find>
-      <find>UpdateTime</find>
       <find>GeneratekryptoFrancs</find>
       <find>kryptoFrancMiner</find>
       <find>iProcessBlockFound</find>
@@ -362,6 +237,9 @@
       <find>PKGCHECK_MODULES</find>
       <find>kryptofr</find>
       <find>AC_CHECK_LIB</find>
+      <find>max_tip</find>
+      <find>halving</find>
+      <find>vSeeds</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -437,11 +315,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="3765" />
-    <option name="height" value="2178" />
+    <option name="height" value="2180" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -451,6 +329,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -473,7 +352,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,17 +388,19 @@
       <workItem from="1543417965231" duration="1594000" />
       <workItem from="1543663417046" duration="16807000" />
       <workItem from="1545050351699" duration="3559000" />
+      <workItem from="1547815244734" duration="1352000" />
+      <workItem from="1547869744293" duration="650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47085000" />
+    <option name="totallyTimeSpent" value="55146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="-7" width="2991" height="1742" extended-state="6" />
+    <frame x="88" y="-7" width="2991" height="1742" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17400205" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17775503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -534,7 +414,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.05900621" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.05900621" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.329907" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -549,9 +429,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/key.cpp" />
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/openuridialog.cpp" />
-    <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/paymentserver.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/pow.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rawtransaction.cpp" />
     <entry file="file://$PROJECT_DIR$/assets_installer/bitfranc_replace/rpc_fundrawtransaction.py" />
@@ -597,16 +474,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bitcoinmining0121/src/rpcclient.cpp" />
     <entry file="file://$PROJECT_DIR$/bitcoin2013/src/miner.cpp" />
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="1170" column="45" selection-start-line="1170" selection-start-column="45" selection-end-line="1170" selection-end-column="45" />
-          <folding>
-            <element signature="e#1348#1408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/timedata.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -666,25 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13056">
-          <caret line="770" column="19" selection-start-line="770" selection-start-column="19" selection-end-line="770" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9622">
-          <caret line="570" column="20" selection-start-line="570" selection-start-column="8" selection-end-line="570" selection-end-column="20" />
-          <folding>
-            <element signature="e#18855#18911#0" expanded="true" />
-            <element signature="e#29239#30302#0" expanded="true" />
-            <element signature="e#36867#37409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/autogen.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -702,17 +550,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
+        <state relative-caret-position="7497">
+          <caret line="441" column="3" selection-start-line="441" selection-start-column="3" selection-end-line="441" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20094">
+          <caret line="1182" column="4" selection-start-line="1182" selection-start-column="4" selection-end-line="1182" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="40" />
+        <state relative-caret-position="2261">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/bitcoind-res.rc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.qrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13090">
+          <caret line="770" column="19" selection-start-line="770" selection-start-column="19" selection-end-line="770" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9690">
+          <caret line="570" column="20" selection-start-line="570" selection-start-column="8" selection-end-line="570" selection-end-column="20" />
+          <folding>
+            <element signature="e#18855#18911#0" expanded="true" />
+            <element signature="e#29239#30302#0" expanded="true" />
+            <element signature="e#36867#37409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
         </state>
       </provider>
     </entry>
