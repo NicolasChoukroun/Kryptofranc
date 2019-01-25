@@ -1171,7 +1171,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
      nSubsidy >>= halvings; */
     
-    CAmount nSubsidy = 182028 * COIN; // after premine,
+	CAmount nSubsidy = 182028 * COIN; // after premine,
     if(nHeight == 1 || nHeight == 100 || nHeight == 200 || nHeight == 300 || nHeight == 400 || nHeight == 500) 
     {
         nSubsidy = 16000000000 * COIN;  // premine 96 billions
@@ -1185,6 +1185,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 		}
     }
     return nSubsidy;
+	
 }
 
 bool IsInitialBlockDownload()
