@@ -120,12 +120,18 @@ if [ $OS = "unix" ]; then
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
 	echo -e $Color_Off
+	
 	sudo mkdir binaries
+	sudo mkdir binaries/unix
 	sudo mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
-	sudo cp kryptofranccore/src/kyfd binaries/kyfd
-	sudo cp kryptofranccore/src/kyf-tx binaries/kyf-tx
-	sudo cp kryptofranccore/src/kyf-cli binaries/kyf-cli
-	sudo cp kryptofranccore/src/qt/kyf-qt binaries/kyf-qt
+	sudo cp assets/android-icon-192x192.png binaries/unix/kryptofranc.png
+	sudo cp assets/android-icon-192x192.png /usr/share/app-install/icons/kryptofranc.png
+	sudo cp assets/kyf-qt.desktop binaries/unix/kyf-qt.desktop
+	sudo cp kryptofranccore/src/kyfd binaries/unix/kyfd	
+	sudo cp kryptofranccore/src/kyf-tx binaries/unix/kyf-tx
+	sudo cp kryptofranccore/src/kyf-cli binaries/unix/kyf-cli
+	sudo cp kryptofranccore/src/qt/kyf-qt binaries/unix/kyf-qt
+	sudo cp kryptofranccore/src/qt/kyf-qt /usr/bin/kyf-qt
 fi
 
 if [ $OS = "win64" ]; then
@@ -145,6 +151,7 @@ if [ $OS = "win64" ]; then
 		cd depends
 		#secret to insure the compilation will work 
 		PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+		# -i or it will stop compiling
 		make HOST=x86_64-w64-mingw32 -i
 		cd ..
 		cd ..
@@ -160,8 +167,21 @@ if [ $OS = "win64" ]; then
 	echo -e "$BGreen PACKAGING will install all in d:/kryptofranc"
 	echo -e $Color_Off
 	cd kryptofranccore
+	# option -i or it will stop compiling
 	make install DESTDIR=/mnt/d/kryptofranc -i
-	sudo mv /mnt/d/kryptofranc/bitcoin-qt /mnt/d/kryptofranc/kyf-qt
+    cd ..
+	echo -e "$BYellow --------------------------------------------------"
+	echo -e "$BGreen PACKAGING will install all in binaries folder"
+	echo -e $Color_Off
+	sudo mkdir binaries
+	sudo mkdir binaries/win64
+	sudo mv 'kryptofranccore/src/qt/bitcoin-qt.exe' 'kryptofranccore/src/kyf-qt.exe'
+	sudo cp 'kryptofranccore/src/kyfd.exe' 'binaries/win64/kyfd.exe'
+	sudo cp 'kryptofranccore/src/kyf-tx.exe' 'binaries/win64/kyf-tx.exe'
+	sudo cp 'kryptofranccore/src/kyf-cli.exe' 'binaries/win64/kyf-cli.exe'
+	sudo cp 'kryptofranccore/src/qt/kyf-qt.exe' 'binaries/win64/kyf-qt.exe'
+	
+	
 	cd ..
 fi
 
