@@ -104,7 +104,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1510704000; // November 15th, 2017.
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000001d00fffe");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000001");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000000000002e63058c023a9a1de233554f28c7b21380b6c9003f36a8"); //534292
@@ -124,7 +124,7 @@ public:
         genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912, 666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee"));
-        // removed
+        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -218,7 +218,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1493596800; // May 1st 2017
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000001d00fffe");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000001");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75"); //1354312
@@ -233,12 +233,12 @@ public:
         genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912,666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
-        // removed
+        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        ////vSeeds.emplace_back("testnet-seed.kryptofranc.jonasschnelli.ch");
+        //vSeeds.emplace_back("testnet-seed.kryptofranc.jonasschnelli.ch");
         ////vSeeds.emplace_back("seed.tbtc.petertodd.org");
         ////vSeeds.emplace_back("seed.testnet.kryptofranc.sprovoost.nl");
         //vSeeds.emplace_back("testnet-seed.bluematt.me"); // Just a static list of stable node(s), only supports x9
@@ -321,8 +321,8 @@ public:
 
         genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912, 666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        // removed
-        // removed
+        assert(consensus.hashGenesisBlock == uint256S("0x0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee"));
+        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.

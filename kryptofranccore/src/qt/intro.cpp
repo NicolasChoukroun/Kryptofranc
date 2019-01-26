@@ -23,7 +23,7 @@
 
 static const uint64_t GB_BYTES = 1000000000LL;
 /* Minimum free space (in GB) needed for data directory */
-constexpr uint64_t BLOCK_CHAIN_SIZE = 1;
+constexpr uint64_t BLOCK_CHAIN_SIZE = 10 ;
 /* Minimum free space (in GB) needed for data directory when pruned; Does not include prune target */
 static const uint64_t CHAIN_STATE_SIZE = 3;
 /* Total required space (in GB) depending on user choice (prune, not prune) */
@@ -148,7 +148,7 @@ Intro::Intro(QWidget *parent) :
     requiredSpace += CHAIN_STATE_SIZE;
     ui->sizeWarningLabel->setText(
         tr("%1 will download and store a copy of the kryptoFranc block chain.").arg(tr(PACKAGE_NAME)) + " " +
-        
+        storageRequiresMsg.arg(requiredSpace) + " " +
         tr("The wallet will also be stored in this directory.")
     );
     startThread();
