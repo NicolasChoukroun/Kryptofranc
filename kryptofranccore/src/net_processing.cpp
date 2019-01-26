@@ -805,7 +805,8 @@ void Misbehaving(NodeId pnode, int howmuch, const std::string& message) EXCLUSIV
     if (state == nullptr)
         return;
 
-    state->nMisbehavior += howmuch;
+    printf("Misbehaving: %s\n",message.c_str());
+    //state->nMisbehavior += howmuch;
     int banscore = gArgs.GetArg("-banscore", DEFAULT_BANSCORE_THRESHOLD);
     std::string message_prefixed = message.empty() ? "" : (": " + message);
     if (state->nMisbehavior >= banscore && state->nMisbehavior - howmuch < banscore)
@@ -998,8 +999,9 @@ void PeerLogicValidation::BlockChecked(const CBlock& block, const CValidationSta
         if (it != mapBlockSource.end() && State(it->second.first) && state.GetRejectCode() > 0 && state.GetRejectCode() < REJECT_INTERNAL) {
             CBlockReject reject = {(unsigned char)state.GetRejectCode(), state.GetRejectReason().substr(0, MAX_REJECT_MESSAGE_LENGTH), hash};
             State(it->second.first)->rejects.push_back(reject);
-            if (nDoS > 0 && it->second.second)
+            if (nDoS > 0 && it->second.second) {
                 Misbehaving(it->second.first, nDoS);
+            }
         }
     }
     // Check that:

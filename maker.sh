@@ -168,7 +168,7 @@ if [ $OS = "win64" ]; then
 	echo -e $Color_Off
 	cd kryptofranccore
 	# option -i or it will stop compiling
-	make install DESTDIR=/mnt/d/kryptofranc -i
+	make install DESTDIR=/binaries/win64/ -i
     cd ..
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all in binaries folder"
