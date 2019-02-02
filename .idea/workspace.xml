@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,25 +95,28 @@
     <session id="-1553293090">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ac" value="3" />
           <entry key="am" value="4" />
-          <entry key="cpp" value="26" />
+          <entry key="cpp" value="27" />
           <entry key="h" value="5" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="31" />
+          <entry key="ObjectiveC" value="32" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -149,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20094">
-              <caret line="1182" column="4" selection-start-line="1182" selection-start-column="4" selection-end-line="1182" selection-end-column="4" />
+            <state relative-caret-position="20162">
+              <caret line="1186" column="4" selection-start-line="1186" selection-start-column="4" selection-end-line="1186" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -186,8 +191,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9690">
-              <caret line="570" column="20" selection-start-line="570" selection-start-column="8" selection-end-line="570" selection-end-column="20" />
+            <state relative-caret-position="225">
+              <caret line="391" column="74" selection-start-line="391" selection-start-column="74" selection-end-line="391" selection-end-column="74" />
               <folding>
                 <element signature="e#18855#18911#0" expanded="true" />
                 <element signature="e#29239#30302#0" expanded="true" />
@@ -200,8 +205,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+            <state relative-caret-position="578">
+              <caret line="79" column="111" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="111" />
             </state>
           </provider>
         </entry>
@@ -210,7 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>GeneratekryptoFrancs</find>
       <find>kryptoFrancMiner</find>
       <find>iProcessBlockFound</find>
       <find>ScanHash</find>
@@ -240,6 +244,7 @@
       <find>max_tip</find>
       <find>halving</find>
       <find>vSeeds</find>
+      <find>isinitia</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -315,9 +320,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="142" />
     <option name="width" value="3765" />
     <option name="height" value="2180" />
   </component>
@@ -329,7 +333,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,6 +355,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,17 +394,19 @@
       <workItem from="1545050351699" duration="3559000" />
       <workItem from="1547815244734" duration="1352000" />
       <workItem from="1547869744293" duration="650000" />
+      <workItem from="1549038819268" duration="230000" />
+      <workItem from="1549107640394" duration="546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55146000" />
+    <option name="totallyTimeSpent" value="55922000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="-7" width="2991" height="1742" extended-state="7" />
+    <frame x="114" y="0" width="3012" height="1744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17775503" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1802168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -414,7 +420,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.05900621" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.058933" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.329907" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -559,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20094">
-          <caret line="1182" column="4" selection-start-line="1182" selection-start-column="4" selection-end-line="1182" selection-end-column="4" />
+        <state relative-caret-position="20162">
+          <caret line="1186" column="4" selection-start-line="1186" selection-start-column="4" selection-end-line="1186" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -586,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9690">
-          <caret line="570" column="20" selection-start-line="570" selection-start-column="8" selection-end-line="570" selection-end-column="20" />
+        <state relative-caret-position="225">
+          <caret line="391" column="74" selection-start-line="391" selection-start-column="74" selection-end-line="391" selection-end-column="74" />
           <folding>
             <element signature="e#18855#18911#0" expanded="true" />
             <element signature="e#29239#30302#0" expanded="true" />
@@ -598,8 +604,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+        <state relative-caret-position="578">
+          <caret line="79" column="111" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="111" />
         </state>
       </provider>
     </entry>

@@ -76,10 +76,10 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 4375; 
-        consensus.BIP16Exception = uint256S("0x00000000000002dc756eebf4f49723ed8d30cc28a5f108eb94b1ba88ac4f9c22");
+        consensus.nSubsidyHalvingInterval = 210000/4/12;
+        consensus.BIP16Exception = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
         consensus.BIP34Height = 0; // optimization starting from 0;
-        consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
+        consensus.BIP34Hash = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
         consensus.BIP65Height = 0; // optimization starting from 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP65Height = 0; // optimization starting from 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -121,10 +121,10 @@ public:
         nDefaultPort = 1789;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912, 666*COIN);
+        genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee"));
-        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903"));
+        assert(genesis.hashMerkleRoot == uint256S("0x112f9dfb5c1fe2f10db2b34d3c363c1444e119f9caba3e80eb613dfaed4d8aa5"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -155,7 +155,7 @@ public:
 
         checkpointData = {
             {
-                { 0, uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee")},
+                { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
                 //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
                 //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
                 //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
@@ -190,7 +190,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 4375; 
+        consensus.nSubsidyHalvingInterval = 210000/4/12;
         consensus.BIP16Exception = uint256S("0x00000000dd30457c001f4095d208cc1296b0eed002427aa599874af7a432b105");
         consensus.BIP34Height = 0; // optimization starting from 0;
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8");
@@ -230,10 +230,10 @@ public:
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912,666*COIN);
+        genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912,666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // removed
-        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
+        assert(genesis.hashMerkleRoot == uint256S("0x112f9dfb5c1fe2f10db2b34d3c363c1444e119f9caba3e80eb613dfaed4d8aa5"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -260,7 +260,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee")},
+                {0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
             }
         };
 
@@ -319,10 +319,10 @@ public:
         nDefaultPort = 211789;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1546300800,2144790290,0x1d00ffff,536870912, 666*COIN);
+        genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 666*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee"));
-        assert(genesis.hashMerkleRoot == uint256S("0x19f92a3a53fddb25bff907c3f8ed4763a3fd699b0786af2897ca7fbabcdb85ea"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903"));
+        assert(genesis.hashMerkleRoot == uint256S("0x112f9dfb5c1fe2f10db2b34d3c363c1444e119f9caba3e80eb613dfaed4d8aa5"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -333,7 +333,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0x00000000f0dcaccad231bf39fd2d04bd049f7e13315b5036a64792d90fd8bcee")},
+                {0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
             }
         };
 
