@@ -22,18 +22,19 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     const CBlockIndex *BlockReading = pindexLast;
     const CBlockHeader *BlockCreating = pblock;
     BlockCreating = BlockCreating;
-    int64 nActualTimespan = 0;
-    int64 LastBlockTime = 0;
-    int64 PastBlocksMin = 24;
-    int64 PastBlocksMax = 24;
-    int64 CountBlocks = 0;
-    CBigNum PastDifficultyAverage;
-    CBigNum PastDifficultyAveragePrev;
+    int64_t bnProofOfWorkLimit=0x1e0fffff;
+    int64_t nActualTimespan = 0;
+    int64_t LastBlockTime = 0;
+    int64_t PastBlocksMin = 24;
+    int64_t PastBlocksMax = 24;
+    int64_t CountBlocks = 0;
+    arith_uint256 PastDifficultyAverage;
+    arith_uint256 PastDifficultyAveragePrev;
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
         // This is the first block or the height is < PastBlocksMin
         // Return minimal required work. (1e0fffff)
-        return bnProofOfWorkLimit.GetCompact();
+        return bnProofOfWorkLimit;
     }
 
     // loop over the past n blocks, where n == PastBlocksMax
@@ -44,14 +45,14 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
         // Calculate average difficulty based on the blocks we iterate over in this for loop
         if(CountBlocks <= PastBlocksMin) {
             if (CountBlocks == 1) { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
-            else { PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks)+(CBigNum().SetCompact(BlockReading->nBits))) / (CountBlocks+1); }
+            else { PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks)+(BlockReading->nBits)) / (CountBlocks+1); }
             PastDifficultyAveragePrev = PastDifficultyAverage;
         }
 
         // If this is the second iteration (LastBlockTime was set)
         if(LastBlockTime > 0){
             // Calculate time difference between previous block and current block
-            int64 Diff = (LastBlockTime - BlockReading->GetBlockTime());
+            int64_t Diff = (LastBlockTime - BlockReading->GetBlockTime());
             // Increment the actual timespan
             nActualTimespan += Diff;
         }
@@ -63,10 +64,10 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     }
 
     // bnNew is the difficulty
-    CBigNum bnNew(PastDifficultyAverage);
+    arith_uint256 bnNew(PastDifficultyAverage);
 
     // nTargetTimespan is the time that the CountBlocks should have taken to be generated.
-    int64 nTargetTimespan = CountBlocks*params.nTargetSpacing;
+    int64_t nTargetTimespan = CountBlocks*params.nPowTargetSpacing;
 
     // Limit the re-adjustment to 5x or 0.33x
 
@@ -87,8 +88,8 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     // Some logging.
     // TODO: only display these log messages for a certain debug option.
     printf("Difficulty Retarget - Dark Gravity Wave 3\n");
-    printf("Before: %08x %s\n", BlockLastSolved->nBits, CBigNum().SetCompact(BlockLastSolved->nBits).getuint256().ToString().c_str());
-    printf("After: %08x %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+    printf("Before: %02x\n", BlockLastSolved->nBits);
+    printf("After: %02x\n", bnNew.GetCompact());
 
     // Return the new diff.
     return bnNew.GetCompact();
@@ -162,14 +163,28 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     bool fNegative;
     bool fOverflow;
     arith_uint256 bnTarget;
+    printf("CheckProofOfWork: nBits = %i.\n",nBits);
 
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
 
     // Check range
-    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
-        fprintf("CheckProofOfWork: change not good exit to false.");
+    if (fNegative ) {
+        printf("CheckProofOfWork: range not good exit to false: fNegative=true.\n");
         return false;
     }
+
+    if (fOverflow ) {
+        printf("CheckProofOfWork: range not good exit to false: fOverflow=true.\n");
+        return false;
+    }
+    if (bnTarget > UintToArith256(params.powLimit)) {
+        printf("CheckProofOfWork: range not good exit to false. %s > %s \n",bnTarget.GetHex().c_str(),UintToArith256(params.powLimit).GetHex().c_str());
+        return false;
+    }
+    //if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
+    //    printf("CheckProofOfWork: range not good exit to false.");
+    //    return false;
+   // }
 
     // Check proof of work matches claimed amount
     if (UintToArith256(hash) > bnTarget)

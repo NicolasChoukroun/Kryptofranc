@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,14 +107,14 @@
         <counts>
           <entry key="ac" value="3" />
           <entry key="am" value="4" />
-          <entry key="cpp" value="27" />
+          <entry key="cpp" value="28" />
           <entry key="h" value="5" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="32" />
+          <entry key="ObjectiveC" value="33" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -128,13 +126,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="am" value="4" />
-          <entry key="cpp" value="88" />
+          <entry key="cpp" value="264" />
           <entry key="h" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="94" />
+          <entry key="ObjectiveC" value="270" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -202,11 +200,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="79" column="111" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="111" />
+            <state relative-caret-position="527">
+              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kryptofranccore/src/pow.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -215,7 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>kryptoFrancMiner</find>
       <find>iProcessBlockFound</find>
       <find>ScanHash</find>
       <find>IncrementExtraNonce</find>
@@ -245,6 +251,7 @@
       <find>halving</find>
       <find>vSeeds</find>
       <find>isinitia</find>
+      <find>nActualTimespan &lt; params.nPowTargetTimespan</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -311,6 +318,7 @@
         <option value="$PROJECT_DIR$/kryptofranccore/src/init.cpp" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/Makefile.am" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" />
+        <option value="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" />
       </list>
     </option>
   </component>
@@ -320,10 +328,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
-    <option name="width" value="3765" />
-    <option name="height" value="2180" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="132" />
+    <option name="width" value="2960" />
+    <option name="height" value="1359" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -395,18 +403,18 @@
       <workItem from="1547815244734" duration="1352000" />
       <workItem from="1547869744293" duration="650000" />
       <workItem from="1549038819268" duration="230000" />
-      <workItem from="1549107640394" duration="546000" />
+      <workItem from="1549107640394" duration="6674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55922000" />
+    <option name="totallyTimeSpent" value="62050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="0" width="3012" height="1744" extended-state="0" />
+    <frame x="106" y="0" width="2368" height="1087" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1802168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2305026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -420,7 +428,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.058933" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.09947644" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.329907" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -462,13 +470,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bitcoinmining0121/src/Makefile.am" />
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/pow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="208" column="53" selection-start-line="208" selection-start-column="53" selection-end-line="208" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/iminer.h" />
     <entry file="file://$PROJECT_DIR$/bitcoinmining0121/src/chainparams.cpp" />
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.h">
@@ -604,8 +605,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="79" column="111" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="111" />
+        <state relative-caret-position="527">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/pow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
         </state>
       </provider>
     </entry>
