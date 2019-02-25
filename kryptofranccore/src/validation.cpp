@@ -1172,16 +1172,16 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
      nSubsidy >>= halvings; */
     
 	CAmount nSubsidy = 182028 * COIN; // after premine,
-    if(nHeight == 1 || nHeight == 100 || nHeight == 200 || nHeight == 300 || nHeight == 400 || nHeight == 500) 
+    if(nHeight == 1 || nHeight == 100 || nHeight == 200 || nHeight == 300 || nHeight == 400 || nHeight == 500|| nHeight == 600|| nHeight == 700|| nHeight == 800|| nHeight == 900)
     {
-        nSubsidy = 16000000000 * COIN;  // premine 96 billions
+        nSubsidy = 10000000000 * COIN;  // premine 96 billions
     }else{
-	    if (nHeight <=600) {
-			 nSubsidy = 5 * COIN;  // small mining to carry the transactions
+	    if (nHeight <=1000) {
+			 nSubsidy = 1 * COIN;  // small mining to carry the transactions
 		}else {
 			int years = (int) nHeight/52560;
 			int halvings = (years/1.618033988750);
-			nSubsidy =  nSubsidy / halvings;			
+			nSubsidy =  nSubsidy / halvings;
 		}
     }
     return nSubsidy;
