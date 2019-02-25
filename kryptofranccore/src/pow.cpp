@@ -16,7 +16,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 }
 
 // from https://gist.github.com/GeertJohan/b28da8105babf0553f21
-unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader *pblock,const Consensus::Params& params) {
+unsigned int DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader *pblock,const Consensus::Params& params) {
     /* current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io */
     const CBlockIndex *BlockLastSolved = pindexLast;
     const CBlockIndex *BlockReading = pindexLast;
