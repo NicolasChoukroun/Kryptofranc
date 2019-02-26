@@ -1,5 +1,8 @@
 #!/bin/bash
 
+COINNAME="kyf"
+COINPATH="kryptofrancore"
+
 # Reset
 Color_Off='\033[0m'       # Text Reset
 
@@ -109,12 +112,12 @@ if [ $OS = "unix" ]; then
 		sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
     fi
     if [ $ALL = "yes" ]; then
-        cd kryptofranccore
+        cd $COINPATH
         ./autogen.sh
         ./configure --disable-tests --disable-bench
         cd ..
     fi
-    cd kryptofranccore
+    cd $COINPATH
     make
     cd ..
 	echo -e "$BYellow --------------------------------------------------"
@@ -123,15 +126,19 @@ if [ $OS = "unix" ]; then
 	
 	sudo mkdir binaries
 	sudo mkdir binaries/unix
-	sudo mv kryptofranccore/src/qt/bitcoin-qt kryptofranccore/src/qt/kyf-qt
+	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
+	
+	# this is for desktop icon, you have to make your own one.
 	sudo cp assets/android-icon-192x192.png binaries/unix/kryptofranc.png
 	sudo cp assets/android-icon-192x192.png /usr/share/app-install/icons/kryptofranc.png
-	sudo cp assets/kyf-qt.desktop binaries/unix/kyf-qt.desktop
-	sudo cp kryptofranccore/src/kyfd binaries/unix/kyfd	
-	sudo cp kryptofranccore/src/kyf-tx binaries/unix/kyf-tx
-	sudo cp kryptofranccore/src/kyf-cli binaries/unix/kyf-cli
-	sudo cp kryptofranccore/src/qt/kyf-qt binaries/unix/kyf-qt
-	sudo cp kryptofranccore/src/qt/kyf-qt /usr/bin/kyf-qt
+	sudo cp assets/$COINNAME-qt.desktop binaries/unix/$COINNAME-qt.desktop
+	# end of desktop icon 
+	
+	sudo cp $COINPATH/src/$COINNAMEd binaries/unix/$COINNAMEd	
+	sudo cp $COINPATH/src/$COINNAME-tx binaries/unix/$COINNAME-tx
+	sudo cp $COINPATH/src/$COINNAME-cli binaries/unix/$COINNAME-cli
+	sudo cp $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
+	sudo cp $COINPATH/src/qt/$COINNAME-qt /usr/bin/$COINNAME-qt
 fi
 
 if [ $OS = "win64" ]; then
@@ -146,8 +153,8 @@ if [ $OS = "win64" ]; then
 		echo -e $Color_Off
 		sudo update-alternatives --config x86_64-w64-mingw32-g++
 		PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
-		sudo chmod -R 777 kryptofranccore
-		cd kryptofranccore
+		sudo chmod -R 777 $COINPATH
+		cd $COINPATH
 		cd depends
 		#secret to insure the compilation will work 
 		PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
@@ -158,7 +165,7 @@ if [ $OS = "win64" ]; then
 		
     fi
     if [ $ALL = "yes" ]; then
-        cd kryptofranccore
+        cd $COINPATH
 		./autogen.sh
 		CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench
 		cd ..
@@ -175,11 +182,11 @@ if [ $OS = "win64" ]; then
 	echo -e $Color_Off
 	sudo mkdir binaries
 	sudo mkdir binaries/win64
-	sudo mv 'kryptofranccore/src/qt/bitcoin-qt.exe' 'kryptofranccore/src/kyf-qt.exe'
-	sudo cp 'kryptofranccore/src/kyfd.exe' 'binaries/win64/kyfd.exe'
-	sudo cp 'kryptofranccore/src/kyf-tx.exe' 'binaries/win64/kyf-tx.exe'
-	sudo cp 'kryptofranccore/src/kyf-cli.exe' 'binaries/win64/kyf-cli.exe'
-	sudo cp 'kryptofranccore/src/qt/kyf-qt.exe' 'binaries/win64/kyf-qt.exe'
+	sudo mv '$COINPATH/src/qt/bitcoin-qt.exe' '$COINPATH/src/$COINNAME-qt.exe'
+	sudo cp '$COINPATH/src/$COINNAMEd.exe' 'binaries/win64/$COINNAMEd.exe'
+	sudo cp '$COINPATH/src/$COINNAME-tx.exe' 'binaries/win64/$COINNAME-tx.exe'
+	sudo cp '$COINPATH/src/$COINNAME-cli.exe' 'binaries/win64/$COINNAME-cli.exe'
+	sudo cp '$COINPATH/src/qt/$COINNAME-qt.exe' 'binaries/win64/$COINNAME-qt.exe'
 	
 	
 	cd ..
