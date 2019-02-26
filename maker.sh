@@ -27,7 +27,7 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan kryptofranc Maker: version 1.0"
+echo -e "$BCyan Bitcoin Clone Maker: version 1.1"
 echo -e "$BBlue maker unix/win64/win32/mac"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
