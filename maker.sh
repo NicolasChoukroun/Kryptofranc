@@ -128,19 +128,19 @@ if [ $OS = "unix" ]; then
 	
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/unix
-	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
+	sudo mv $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
 	
 	# this is for desktop icon, you have to make your own one.
 	sudo cp assets/android-icon-192x192.png binaries/unix/kryptofranc.png
 	sudo cp assets/android-icon-192x192.png /usr/share/app-install/icons/kryptofranc.png
-	sudo cp assets/$COINNAME-qt.desktop binaries/unix/$COINNAME-qt.desktop
+	sudo cp assets/$COINNAME-wallet.desktop binaries/unix/$COINNAME-wallet.desktop
 	# end of desktop icon 
 	
 	sudo cp "$COINPATH/src/$COINNAME""d" "binaries/unix/$COINNAME""d"
 	sudo cp $COINPATH/src/$COINNAME-tx binaries/unix/$COINNAME-tx
 	sudo cp $COINPATH/src/$COINNAME-cli binaries/unix/$COINNAME-cli
-	sudo cp $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
-	sudo cp $COINPATH/src/qt/$COINNAME-qt /usr/bin/$COINNAME-qt
+	sudo cp $COINPATH/src/$COINNAME-wallet binaries/unix/$COINNAME-wallet
+	sudo cp $COINPATH/src/$COINNAME-wallet /usr/bin/$COINNAME-wallet
 fi
 
 if [ $OS = "win64" ]; then
@@ -184,11 +184,8 @@ if [ $OS = "win64" ]; then
 	sudo cp "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
 	sudo cp $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
 	sudo cp $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
-	sudo cp $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe
+	sudo cp $COINPATH/src/qt/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
 	
 	
 	cd ..
 fi
-
-
-
