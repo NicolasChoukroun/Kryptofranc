@@ -18,6 +18,9 @@ class TxnMallTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
 
+    def skip_test_if_missing_module(self):
+        self.skip_if_no_wallet()
+
     def add_options(self, parser):
         parser.add_argument("--mineblock", dest="mine_block", default=False, action="store_true",
                             help="Test double-spend of 1-confirmed transaction")
@@ -31,6 +34,14 @@ class TxnMallTest(BitcoinTestFramework):
     def run_test(self):
         # All nodes should start with 1,250 BTC:
         starting_balance = 1250
+
+        # All nodes should be out of IBD.
+        # If the nodes are not all out of IBD, that can interfere with
+        # blockchain sync later in the test when nodes are connected, due to
+        # timing issues.
+        for n in self.nodes:
+            assert n.getblockchaininfo()["initialblockdownload"] == False
+
         for i in range(4):
             assert_equal(self.nodes[i].getbalance(), starting_balance)
             self.nodes[i].getnewaddress("")  # bug workaround, coins generated assigned to first getnewaddress!

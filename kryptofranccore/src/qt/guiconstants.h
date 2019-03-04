@@ -50,5 +50,9 @@ static const int MAX_URI_LENGTH = 255;
 #define QAPP_ORG_DOMAIN "kryptofranc.org"
 #define QAPP_APP_NAME_DEFAULT "kryptoFranc-Qt"
 #define QAPP_APP_NAME_TESTNET "kryptoFranc-Qt-testnet"
+#define QAPP_APP_NAME_REGTEST "kryptoFranc-Qt-regtest"
+
+/* One gigabyte (GB) in bytes */
+static constexpr uint64_t GB_BYTES{1000000000};
 
 #endif // KRYPTOFRANC_QT_GUICONSTANTS_H

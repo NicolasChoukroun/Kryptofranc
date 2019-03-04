@@ -5,7 +5,7 @@ Upstart: kryptofrancd.conf
 OpenRC:  kryptofrancd.openrc
          kryptofrancd.openrcconf
 CentOS:  kryptofrancd.init
-macOS:    org.kryptofranc.kryptofrancd.plist
+macOS:   org.kryptofranc.kryptofrancd.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

@@ -135,7 +135,9 @@ unsigned int DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader 
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
 {
     // nikko do not retarget when < 10000 for premine
-    if (params.fPowNoRetargeting || pindexLast->nHeight<10000) return pindexLast->nBits;
+    //if (params.fPowNoRetargeting || pindexLast->nHeight<10000) return pindexLast->nBits;
+	if (params.fPowNoRetargeting)
+        return pindexLast->nBits;
 
     // Limit adjustment step
     int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;
@@ -181,6 +183,11 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
         printf("CheckProofOfWork: range not good exit to false. %s > %s \n",bnTarget.GetHex().c_str(),UintToArith256(params.powLimit).GetHex().c_str());
         return false;
     }
+	if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
+        printf("CheckProofOfWork: bnTarget=0");
+        return false;
+    }
+
     //if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
     //    printf("CheckProofOfWork: range not good exit to false.");
     //    return false;
