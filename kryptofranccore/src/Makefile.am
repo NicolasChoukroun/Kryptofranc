@@ -86,10 +86,10 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += bitcoin-cli
+  bin_PROGRAMS += kyf-cli
 endif
 if BUILD_BITCOIN_TX
-  bin_PROGRAMS += bitcoin-tx
+  bin_PROGRAMS += kyf-tx
 endif
 if ENABLE_WALLET
 if BUILD_BITCOIN_WALLET
@@ -471,7 +471,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between bitcoin-cli and bitcoin-qt
+# cli: shared between kyf-cli and bitcoin-qt
 libkyf_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libkyf_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libkyf_cli_a_SOURCES = \
@@ -508,14 +508,14 @@ kyfd_LDADD = \
 
 kyfd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# bitcoin-cli binary #
+# kyf-cli binary #
 kyf_cli_SOURCES = kyf-cli.cpp
 kyf_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 kyf_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 kyf_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf_cli_SOURCES += bitcoin-cli-res.rc
+kyf_cli_SOURCES += kyf-cli-res.rc
 endif
 
 kyf_cli_LDADD = \
@@ -527,14 +527,14 @@ kyf_cli_LDADD = \
 kyf_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# bitcoin-tx binary #
+# kyf-tx binary #
 kyf_tx_SOURCES = kyf-tx.cpp
 kyf_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 kyf_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 kyf_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf_tx_SOURCES += bitcoin-tx-res.rc
+kyf_tx_SOURCES += kyf-tx-res.rc
 endif
 
 kyf_tx_LDADD = \
@@ -548,14 +548,14 @@ kyf_tx_LDADD = \
 kyf_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-# bitcoin-wallet binary #
+# kyf-wallet binary #
 kyf_wallet_SOURCES = kyf-wallet.cpp
 kyf_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 kyf_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 kyf_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf_wallet_SOURCES += bitcoin-wallet-res.rc
+kyf_wallet_SOURCES += kyf-wallet-res.rc
 endif
 
 kyf_wallet_LDADD = \
