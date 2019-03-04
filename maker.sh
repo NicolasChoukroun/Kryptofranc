@@ -27,7 +27,7 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan Bitcoin Clone Maker: version 1.1"
+echo -e "$BCyan Bitcoin Clone Maker: version 1.2"
 echo -e "$BBlue maker unix/win64/win32/mac"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
@@ -129,6 +129,7 @@ if [ $OS = "unix" ]; then
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/unix
 	sudo mv $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
+	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
 	
 	# this is for desktop icon, you have to make your own one.
 	sudo cp assets/android-icon-192x192.png binaries/unix/kryptofranc.png
@@ -140,7 +141,8 @@ if [ $OS = "unix" ]; then
 	sudo cp $COINPATH/src/$COINNAME-tx binaries/unix/$COINNAME-tx
 	sudo cp $COINPATH/src/$COINNAME-cli binaries/unix/$COINNAME-cli
 	sudo cp $COINPATH/src/$COINNAME-wallet binaries/unix/$COINNAME-wallet
-	sudo cp $COINPATH/src/$COINNAME-wallet /usr/bin/$COINNAME-wallet
+	sudo cp $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
+	sudo cp $COINPATH/src/$COINNAME-qt /usr/bin/$COINNAME-qt
 fi
 
 if [ $OS = "win64" ]; then
@@ -178,13 +180,16 @@ if [ $OS = "win64" ]; then
 	cd kryptofranccore
 	# option -i or it will stop compiling
 	make install DESTDIR=/binaries/win64/ -i
-    cd ..	
+    	cd ..	
+	sudo mv $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
+	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/win64
 	sudo cp "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
 	sudo cp $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
 	sudo cp $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
-	sudo cp $COINPATH/src/qt/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
+	sudo cp $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe	
+	sudo cp $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
 	
 	
 	cd ..
