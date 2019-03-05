@@ -3,6 +3,10 @@
 COINNAME="kyf"
 COINPATH="kryptofranccore"
 
+#fix root issues
+sudo chown -R root:root $COINPATH
+sudo chmod -R 777 $COINPATH
+
 # Reset
 Color_Off='\033[0m'       # Text Reset
 
@@ -27,13 +31,13 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan Bitcoin Clone Maker: version 1.2"
-echo -e "$BBlue maker unix/win64/win32/mac"
+echo -e "$BCyan Bitcoin/Altcoin compiler helper: version 1.3"
+echo -e "$BBlue maker unix/win64"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
 echo -e "  win64      compile for windows 64 bits"
-echo -e "  win32      compile for windows 32 bits"
-echo -e "  mac      compile for MAC"
+echo -e "  soon win32      compile for windows 32 bits"
+echo -e "  maybe soon mac      compile for MAC"
 echo
 echo -e "$BYellow example: ./maker.sh unix"
 echo "  ->will compile for unix"
@@ -83,8 +87,6 @@ while [ "$1" != "" ]; do
 	esac
 	shift
 done
-
-$MOD="-u"
 
 echo -e "$BYellow --------------------------------------------------"
 echo " *** EXECUTING SCRIPT WITH OPTIONS ***"
@@ -137,12 +139,12 @@ if [ $OS = "unix" ]; then
 	sudo cp assets/$COINNAME-wallet.desktop binaries/unix/$COINNAME-wallet.desktop
 	# end of desktop icon 
 	
-	sudo cp "$COINPATH/src/$COINNAME""d" "binaries/unix/$COINNAME""d"
-	sudo cp $COINPATH/src/$COINNAME-tx binaries/unix/$COINNAME-tx
-	sudo cp $COINPATH/src/$COINNAME-cli binaries/unix/$COINNAME-cli
-	sudo cp $COINPATH/src/$COINNAME-wallet binaries/unix/$COINNAME-wallet
-	sudo cp $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
-	sudo cp $COINPATH/src/$COINNAME-qt /usr/bin/$COINNAME-qt
+	sudo cp -rf "$COINPATH/src/$COINNAME""d" "binaries/unix/$COINNAME""d"
+	sudo cp -rf $COINPATH/src/$COINNAME-tx binaries/unix/$COINNAME-tx
+	sudo cp -rf $COINPATH/src/$COINNAME-cli binaries/unix/$COINNAME-cli
+	sudo cp -rf $COINPATH/src/$COINNAME-wallet binaries/unix/$COINNAME-wallet
+	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
+	sudo cp -rf $COINPATH/src/$COINNAME-qt /usr/bin/$COINNAME-qt
 fi
 
 if [ $OS = "win64" ]; then
@@ -174,22 +176,29 @@ if [ $OS = "win64" ]; then
 		CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench
 		cd ..
 	fi
+	# remove warnings and compilation errors (maybe)
+	sudo update-alternatives --set i686-w64-mingw32-gcc /usr/bin/i686-w64-mingw32-gcc-posix
+	sudo update-alternatives --set i686-w64-mingw32-g++  /usr/bin/i686-w64-mingw32-g++-posix
+	sudo update-alternatives --set x86_64-w64-mingw32-gcc  /usr/bin/x86_64-w64-mingw32-gcc-posix
+	sudo update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix
+
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all win64 exed in $COINPATH"
 	echo -e $Color_Off
 	cd kryptofranccore
-	# option -i or it will stop compiling
+	sha|_# option -i or it will stop compiling
 	make install DESTDIR=/binaries/win64/ -i
     	cd ..	
 	sudo mv $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
 	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
+	sudo rm -r binaries
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/win64
-	sudo cp "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
-	sudo cp $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
-	sudo cp $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
-	sudo cp $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe	
-	sudo cp $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
+	sudo cp -rf "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
+	sudo cp -rf $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
+	sudo cp -rf $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
+	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe	
+	sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
 	
 	
 	cd ..
