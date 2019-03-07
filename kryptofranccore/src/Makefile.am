@@ -488,7 +488,7 @@ kyfd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 kyfd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyfd_SOURCES += bitcoind-res.rc
+kyfd_SOURCES += kyfd-res.rc
 endif
 
 kyfd_LDADD = \
