@@ -1164,7 +1164,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 	CAmount nSubsidy = 182028 * COIN; // after premine,
     if( nHeight == 1000 || nHeight == 2000 || nHeight == 3000 || nHeight == 4000 || nHeight == 5000|| nHeight == 6000|| nHeight == 7000|| nHeight == 8000|| nHeight == 9000|| nHeight == 10000|| nHeight == 10000)
     {
-        nSubsidy = 16000000000 * COIN;  // premine 100 billions
+        nSubsidy = 22000000 * COIN;  // premine 100 billions
     }else{
 	    if (nHeight <=10000) {
 			 nSubsidy = 10 * COIN;  // small mining to carry out the transactions
