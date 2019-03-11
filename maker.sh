@@ -121,24 +121,24 @@ if [ $OS = "unix" ]; then
         ./configure --disable-tests --disable-bench
         cd ..
     fi
-    cd $COINPATH
-    make
-    cd ..
+        cd $COINPATH
+	make
+	cd ..
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all Unix exe in binaries folder"
 	echo -e $Color_Off
-	
+
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/unix
-	sudo mv $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
-	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
-	
+	sudo cp -rf $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
+	sudo cp -rf $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
+
 	# this is for desktop icon, you have to make your own one.
 	sudo cp assets/android-icon-192x192.png binaries/unix/kryptofranc.png
 	sudo cp assets/android-icon-192x192.png /usr/share/app-install/icons/kryptofranc.png
 	sudo cp assets/$COINNAME-wallet.desktop binaries/unix/$COINNAME-wallet.desktop
 	# end of desktop icon 
-	
+
 	sudo cp -rf "$COINPATH/src/$COINNAME""d" "binaries/unix/$COINNAME""d"
 	sudo cp -rf $COINPATH/src/$COINNAME-tx binaries/unix/$COINNAME-tx
 	sudo cp -rf $COINPATH/src/$COINNAME-cli binaries/unix/$COINNAME-cli
@@ -148,58 +148,64 @@ if [ $OS = "unix" ]; then
 fi
 
 if [ $OS = "win64" ]; then
+	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$COINPATH
+	PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
 
 	if [ $INSTALL = "yes" ]; then
 		sudo apt update
 		sudo apt upgrade
+		sudo apt install g++-mingw-w64-x86-64		
 		sudo apt install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git
+		sudo apt-get install libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev 		
+		sudo apt-get install software-properties-common
+		sudo add-apt-repository ppa:bitcoin/bitcoin
+		sudo apt-get update
+		sudo apt-get install libdb4.8-dev libdb4.8++-dev
+		
+		sudo apt-get install libminiupnpc-dev
+		sudo apt-get install libzmq3-dev
+		sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 		sudo apt install nsis
-		sudo apt install g++-mingw-w64-x86-64
+		
 		echo -e "$BGreen select (1) Posix "
 		echo -e $Color_Off
 		sudo update-alternatives --config x86_64-w64-mingw32-g++
-		PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
 		sudo chmod -R 777 $COINPATH
 		cd $COINPATH
 		cd depends
-		#secret to insure the compilation will work 
-		PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 		# -i or it will stop compiling
 		make HOST=x86_64-w64-mingw32 -i
 		cd ..
-		cd ..
 		
-    fi
-    if [ $ALL = "yes" ]; then
-        cd $COINPATH
-		./autogen.sh
-		CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench
+    	fi
+    	if [ $ALL = "yes" ]; then
+        	cd $COINPATH
+		sudo ./autogen.sh
+		sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench 
 		cd ..
 	fi
-	# remove warnings and compilation errors (maybe)
-	sudo update-alternatives --set i686-w64-mingw32-gcc /usr/bin/i686-w64-mingw32-gcc-posix
-	sudo update-alternatives --set i686-w64-mingw32-g++  /usr/bin/i686-w64-mingw32-g++-posix
-	sudo update-alternatives --set x86_64-w64-mingw32-gcc  /usr/bin/x86_64-w64-mingw32-gcc-posix
-	sudo update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix
 
 	echo -e "$BYellow --------------------------------------------------"
-	echo -e "$BGreen PACKAGING will install all win64 exed in $COINPATH"
+	echo -e "$BGreen PACKAGING will install all win64 exe in $COINPATH"
 	echo -e $Color_Off
-	cd kryptofranccore
-	sha|_# option -i or it will stop compiling
-	make install DESTDIR=/binaries/win64/ -i
-    	cd ..	
-	sudo mv $COINPATH/src/bitcoin-wallet $COINPATH/src/$COINNAME-wallet
-	sudo mv $COINPATH/src/qt/bitcoin-qt $COINPATH/src/qt/$COINNAME-qt
-	sudo rm -r binaries
+	
+	# option -i or it will stop compiling
+	#make deploy -i
+	cd $COINPATH 
+	make -i
+	cd ..
+	sudo rm -rf binaries
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/win64
+
+	#sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe $COINPATH/src/$COINNAME-wallet.exe
+	sudo cp -rf $COINPATH/src/qt/bitcoin-qt.exe $COINPATH/src/qt/$COINNAME-qt.exe
+
 	sudo cp -rf "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
 	sudo cp -rf $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
 	sudo cp -rf $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
 	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe	
-	sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
-	
+	sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe	
 	
 	cd ..
 fi
