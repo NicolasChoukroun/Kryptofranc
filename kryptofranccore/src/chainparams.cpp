@@ -67,10 +67,10 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000/4/12;
         consensus.BIP16Exception = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
-        consensus.BIP34Height = 1; // optimization starting from 1;
+        consensus.BIP34Height = 0; // optimization starting from 1;
         consensus.BIP34Hash = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
-        consensus.BIP65Height = 1; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
-        consensus.BIP65Height = 1; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+        consensus.BIP65Height = 0; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+        consensus.BIP65Height = 0; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan =  60 ; // two weeks
         consensus.nPowTargetSpacing = 10 * 60;
@@ -93,7 +93,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1510704000; // November 15th, 2017.
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000051dc8b82f450202ecb3d471");
+        //consensus.nMinimumChainWork = uint256S("0x1d00fff0");
+		consensus.nMinimumChainWork = uint256S("0x0");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000000000000f1c54590ee18d15ec70e68c8cd4cfbadb1b4f11697eee"); //563378
@@ -164,10 +165,6 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Data from rpc: getchaintxstats 4096 0000000000000000000f1c54590ee18d15ec70e68c8cd4cfbadb1b4f11697eee
-            /* nTime    */ 1550374134,
-            /* nTxCount */ 383732546,
-            /* dTxRate  */ 3.685496590998308
         };
 
         /* disable fallback fee on mainnet */
@@ -221,7 +218,7 @@ public:
         pchMessageStart[3] = 0x07;
         nDefaultPort = 11789;
         nPruneAfterHeight = 1000;
-        m_assumed_blockchain_size = 30;
+        m_assumed_blockchain_size = 10;
         m_assumed_chain_state_size = 2;
 
         genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912,50*COIN);
