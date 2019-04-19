@@ -2086,7 +2086,7 @@ bool CWalletTx::IsTrusted(interfaces::Chain::Lock& locked_chain) const
         return true;
     if (nDepth < 0)
         return false;
-    if (!pwallet->m_spend_zero_conf_change) // || !IsFromMe(ISMINE_ALL)) // using wtx's cached debit
+    if (!pwallet->m_spend_zero_conf_change || !IsFromMe(ISMINE_ALL)) // using wtx's cached debit
         return false;
 
     // Don't trust unconfirmed transactions from us unless they are in the mempool.
