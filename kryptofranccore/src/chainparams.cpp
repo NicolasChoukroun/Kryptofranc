@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <chainparams.h>
-   #include <arith_uint256.h>
+#include <arith_uint256.h>
 
 #include <chainparamsseeds.h>
 #include <consensus/merkle.h>
@@ -18,6 +18,12 @@
 
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>
+
+
+//Mining algorithm
+
+
+
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
@@ -67,13 +73,13 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000/4/12;
         consensus.BIP16Exception = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
-        consensus.BIP34Height = 0; // optimization starting from 1;
+        consensus.BIP34Height = 1; // optimization starting from 1;
         consensus.BIP34Hash = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
-        consensus.BIP65Height = 0; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
-        consensus.BIP65Height = 0; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+        consensus.BIP65Height = 1; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+        consensus.BIP65Height = 1; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan =   14 * 24 * 60 * 60 ; // two weeks
-        consensus.nPowTargetSpacing = 10*60;
+        consensus.nPowTargetSpacing = 2.5*60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
@@ -94,7 +100,7 @@ public:
 
         // The best chain should have at least this much work.
         //consensus.nMinimumChainWork = uint256S("0x1d00fff0");
-		consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000100010001");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000100010001");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000000000000f1c54590ee18d15ec70e68c8cd4cfbadb1b4f11697eee"); //563378
@@ -110,8 +116,11 @@ public:
         pchMessageStart[3] = 0x20;
         nDefaultPort = 1789;
         nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 10;
-        m_assumed_chain_state_size = 3;
+        m_assumed_blockchain_size = 10; //10
+        m_assumed_chain_state_size = 3; //3
+
+        //genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 536870912, 50 * COIN); // 536870912 = BIP101
+        //MineGenesis(genesis, consensus.powLimit, true)
 
         genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 50*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -147,21 +156,21 @@ public:
         fMineBlocksOnDemand = false;
 
         checkpointData = {
-            {
-                { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
-                //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
-                //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
-                //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
-                //{ 134444, uint256S("0x00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe")},
-                //{ 168000, uint256S("0x000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
-                //{ 193000, uint256S("0x000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
-                //{ 210000, uint256S("0x000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
-                //{ 216116, uint256S("0x00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e")},
-                //{ 225430, uint256S("0x00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932")},
-                //{ 250000, uint256S("0x000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214")},
-                //{ 279000, uint256S("0x0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
-                //{ 295000, uint256S("0x00000000000000004d9b4ef50f0f9d686fd69db2e03af35a100370c64632a983")},
-            }
+                {
+                        { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
+                        //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
+                        //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
+                        //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
+                        //{ 134444, uint256S("0x00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe")},
+                        //{ 168000, uint256S("0x000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
+                        //{ 193000, uint256S("0x000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
+                        //{ 210000, uint256S("0x000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
+                        //{ 216116, uint256S("0x00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e")},
+                        //{ 225430, uint256S("0x00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932")},
+                        //{ 250000, uint256S("0x000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214")},
+                        //{ 279000, uint256S("0x0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
+                        //{ 295000, uint256S("0x00000000000000004d9b4ef50f0f9d686fd69db2e03af35a100370c64632a983")},
+                }
         };
 
         chainTxData = ChainTxData{
@@ -250,16 +259,16 @@ public:
 
 
         checkpointData = {
-            {
-                {0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
-            }
+                {
+                        {0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
+                }
         };
 
         chainTxData = ChainTxData{
-            // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
-            /* nTime    */ 0,
-            /* nTxCount */ 0,
-            /* dTxRate  */ 0
+                // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
+                /* nTime    */ 0,
+                /* nTxCount */ 0,
+                /* dTxRate  */ 0
         };
 
         /* enable fallback fee on testnet */
@@ -327,15 +336,15 @@ public:
         fMineBlocksOnDemand = true;
 
         checkpointData = {
-            {
-                {0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
-            }
+                {
+                        {0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
+                }
         };
 
         chainTxData = ChainTxData{
-            0,
-            0,
-            0
+                0,
+                0,
+                0
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
