@@ -1226,29 +1226,24 @@ bool ReadRawBlockFromDisk(std::vector <uint8_t> &block, const CBlockIndex *pinde
 }
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params &consensusParams) {
-    /* int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return 0;
 
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-     nSubsidy >>= halvings; */
-
-    //return 2000000001;
-
-    CAmount nSubsidy = 18208 * COIN; // after premine,
-    if (nHeight == 1 || nHeight == 100 || nHeight == 200 || nHeight == 300 || nHeight == 400 || nHeight == 500) {
-        nSubsidy = 20000000 * COIN;  // premine 100 Millions
+    CAmount nSubsidy=178;
+    float year=1.0;
+    
+    if (nHeight == 10 || nHeight == 50 || nHeight == 70 || nHeight == 90 || nHeight == 110 || nHeight == 130)  {
+        nSubsidy = 20000000*COIN;   // premine 120 Millions
     } else {
-        if (nHeight <= 500) {
-            nSubsidy = 10 * COIN;  // small mining to carry out the transactions
+        if (nHeight <= 150) {
+            nSubsidy = 10 * COIN ;  // small mining to carry out the transactions
         } else {
-            int years = (int) nHeight / 52560;
-            int halvings = (years / 1.618033988750);
-            nSubsidy = nSubsidy / halvings;
+
+            year= (nHeight / consensusParams.nSubsidyHalvingInterval)+1;
+
+            float halfing =  year/ 1.618033988750;
+            nSubsidy = (nSubsidy / halfing)*COIN;
         }
     }
+    printf("GetBlockSubsidy: height: %i - nSubsidy: %ld \n",nHeight, nSubsidy);
     return nSubsidy;
 
 }
@@ -2154,11 +2149,11 @@ bool CChainState::ConnectBlock(const CBlock &block, CValidationState &state, CBl
              nTimeConnect * MILLI / nBlocksTotal);
 
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
-    if (block.vtx[0]->GetValueOut() > blockReward)
-        return state.DoS(100,
-                         error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
-                               block.vtx[0]->GetValueOut(), blockReward),
-                         REJECT_INVALID, "bad-cb-amount");
+    //if (block.vtx[0]->GetValueOut() > blockReward)
+    //    return state.DoS(100,
+    //                     error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
+    //                           block.vtx[0]->GetValueOut(), blockReward),
+    //REJECT_INVALID, "bad-cb-amount");
 
     if (!control.Wait())
         return state.DoS(100, error("%s: CheckQueue failed", __func__), REJECT_INVALID, "block-validation-failed");
@@ -5064,5 +5059,3 @@ public:
         mapBlockIndex.clear();
     }
 } instance_of_cmaincleanup;
-
- 
