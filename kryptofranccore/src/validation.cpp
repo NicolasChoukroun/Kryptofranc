@@ -1227,30 +1227,18 @@ bool ReadRawBlockFromDisk(std::vector <uint8_t> &block, const CBlockIndex *pinde
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params &consensusParams) {
 
-    CAmount nSubsidy=178;
-    float year=1.0;
+    if (nHeight == 10 || nHeight == 30) return 1000000000 * COIN;
+    if (nHeight == 60 || nHeight == 90 || nHeight == 120) return 200000000 * COIN;
+    if (nHeight < 150) return 10 * COIN;
 
-    if (nHeight == 10 || nHeight == 50 || nHeight == 70 || nHeight == 90 || nHeight == 110 || nHeight == 130)  {
-        nSubsidy = 20000000*COIN;   // premine 120 Millions
-    } else {
-        if (nHeight<1000) {
-            // Jean Martial, asked more premine :( so be it
-            if (nHeight%30==0) {
-                nSubsidy = 20000000*COIN; // more premine
-            }
-        }else {
-            if (nHeight <= 150) {
-                nSubsidy = 10 * COIN;  // small mining to carry out the transactions
-            } else {
+    CAmount nSubsidy = 1666;
+    float year = 1.0;
 
-                year = (nHeight / consensusParams.nSubsidyHalvingInterval) + 1;
+    year = (nHeight / consensusParams.nSubsidyHalvingInterval) + 1;
+    float halfing = year / 1.618033988750;
+    nSubsidy = (nSubsidy / halfing) * COIN;
 
-                float halfing = year / 1.618033988750;
-                nSubsidy = (nSubsidy / halfing) * COIN;
-            }
-        }
-    }
-    printf("GetBlockSubsidy: height: %i - nSubsidy: %ld \n",nHeight, nSubsidy);
+    printf("GetBlockSubsidy: height: %i - nSubsidy: %ld \n", nHeight, nSubsidy);
     return nSubsidy;
 
 }
