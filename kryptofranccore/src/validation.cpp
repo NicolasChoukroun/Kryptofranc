@@ -1227,9 +1227,9 @@ bool ReadRawBlockFromDisk(std::vector <uint8_t> &block, const CBlockIndex *pinde
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params &consensusParams) {
 
-    if (nHeight == 10 || nHeight == 30) return 1000000000 * COIN;
-    if (nHeight == 60 || nHeight == 90 || nHeight == 120) return 200000000 * COIN;
-    if (nHeight < 150) return 10 * COIN;
+    if (nHeight == 10 ) return 1000000000 * COIN;
+    if (nHeight == 30 || nHeight == 60 || nHeight == 90) return 200000000 * COIN;
+    if (nHeight < 100) return 10 * COIN;
 
     CAmount nSubsidy = 1666;
     float year = 1.0;
@@ -1240,7 +1240,6 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params &consensusParams) {
 
     printf("GetBlockSubsidy: height: %i - nSubsidy: %ld \n", nHeight, nSubsidy);
     return nSubsidy;
-
 }
 
 bool IsInitialBlockDownload() {
@@ -2143,7 +2142,7 @@ bool CChainState::ConnectBlock(const CBlock &block, CValidationState &state, CBl
              nInputs <= 1 ? 0 : MILLI * (nTime3 - nTime2) / (nInputs - 1), nTimeConnect * MICRO,
              nTimeConnect * MILLI / nBlocksTotal);
 
-    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
+    // CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
     //if (block.vtx[0]->GetValueOut() > blockReward)
     //    return state.DoS(100,
     //                     error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
