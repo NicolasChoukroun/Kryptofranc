@@ -79,7 +79,7 @@ public:
         consensus.BIP65Height = 1; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP65Height = 1; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan =   14 * 24 * 60 * 60 ; // two weeks
+        consensus.nPowTargetTimespan =   10 * 60 ; // 10 min
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
@@ -136,11 +136,7 @@ public:
         vSeeds.emplace_back("seed1.kryptofranc.net"); // removed
         vSeeds.emplace_back("seed2.kryptofranc.net"); // removed
         vSeeds.emplace_back("seed3.kryptofranc.net"); // removed
-        vSeeds.emplace_back("seed4.kryptofranc.net"); // Christian Decker, supports x1 - xf
-        //vSeeds.emplace_back("seed.kryptofranc.jonasschnelli.ch"); // Jonas Schnelli, only supports x1, x5, x9, and xd
-        //vSeeds.emplace_back("seed.btc.petertodd.org"); // Peter Todd, only supports x1, x5, x9, and xd
-        //vSeeds.emplace_back("seed.kryptofranc.sprovoost.nl"); // Sjors Provoost
-        //vSeeds.emplace_back("dnsseed.emzy.de"); // Stephan Oeste
+        vSeeds.emplace_back("seed4.kryptofranc.net"); //
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,'K');
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,'k');
@@ -159,10 +155,10 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
-                //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
-                //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
-                //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
-                //{ 134444, uint256S("0x00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe")},
+                { 10, uint256S("0x00000000f20f642f5b3b493961a53884fac5820ba73c4a626bf45ca524583911")},
+                { 30, uint256S("0x000000001a56059a67b00b69f54641d89fe1cc4d56069234c51208b112b764f6")},
+                { 60, uint256S("0x00000000242f649948db25e86b77c4c1c1afc76535404ddcf1b03529d8cacff1")},
+                { 90, uint256S("0x000000002e58703250e8f4ceaf707325750487e1143efebb95239a5a5199edc4")},
                 //{ 168000, uint256S("0x000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
                 //{ 193000, uint256S("0x000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
                 //{ 210000, uint256S("0x000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
@@ -238,11 +234,6 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        // nodes with support for servicebits filtering should be at the top
-        //vSeeds.emplace_back("testnet-seed.kryptofranc.jonasschnelli.ch");
-        ////vSeeds.emplace_back("seed.tbtc.petertodd.org");
-        ////vSeeds.emplace_back("seed.testnet.kryptofranc.sprovoost.nl");
-        //vSeeds.emplace_back("testnet-seed.bluematt.me"); // Just a static list of stable node(s), only supports x9
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
