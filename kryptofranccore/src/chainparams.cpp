@@ -80,10 +80,11 @@ public:
         consensus.BIP65Height = 1; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 
-        consensus.nPowTargetSpacing = 2.5 * 60 * 10; // retarget difficulty every 10 blocs or 1500s or 25 min
-        consensus.nPowTargetTimespan =   2.5 * 60 ; // block generated every...
+        consensus.nPowTargetTimespan =   2.5 * 60 * 10;
+        consensus.nPowTargetSpacing = 2.5 * 60 ;
 
-        assert(consensus.nPowTargetTimespan<= consensus.nPowTargetSpacing );
+
+        assert(consensus.nPowTargetTimespan>= consensus.nPowTargetSpacing );
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
