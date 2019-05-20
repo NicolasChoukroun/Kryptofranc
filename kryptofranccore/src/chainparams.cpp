@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
-// Copyright (c) 2018 The Kryptofranc Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,6 +18,12 @@
 
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>
+
+
+//Mining algorithm
+
+
+
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
@@ -65,19 +71,25 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 210000/4/12;
+        consensus.nSubsidyHalvingInterval = 525600/2.5;
+
         consensus.BIP16Exception = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
-        consensus.BIP34Height = 0; // optimization starting from 1;
+        consensus.BIP34Height = 1; // optimization starting from 1;
         consensus.BIP34Hash = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
-        consensus.BIP65Height = 0; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
-        consensus.BIP65Height = 0; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
+        consensus.BIP65Height = 1; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
+        consensus.BIP65Height = 1; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan =   14 * 24 * 60 * 60 ; // two weeks
-        consensus.nPowTargetSpacing = 10*60;
+
+        consensus.nPowTargetTimespan =   2.5 * 60 * 10;
+        consensus.nPowTargetSpacing = 2.5 * 60 ;
+
+
+        assert(consensus.nPowTargetTimespan>= consensus.nPowTargetSpacing );
+
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+        consensus.nMinerConfirmationWindow = 2016;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -97,7 +109,7 @@ public:
 		consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000100010001");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000000000000000f1c54590ee18d15ec70e68c8cd4cfbadb1b4f11697eee"); //563378
+        consensus.defaultAssumeValid = uint256S("0x00"); //563378
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -109,9 +121,12 @@ public:
         pchMessageStart[2] = 0x46;
         pchMessageStart[3] = 0x20;
         nDefaultPort = 1789;
-        nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 10;
-        m_assumed_chain_state_size = 3;
+        nPruneAfterHeight = 1000;
+        m_assumed_blockchain_size = 10; //10
+        m_assumed_chain_state_size = 3; //3
+
+        //genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 536870912, 50 * COIN); // 536870912 = BIP101
+        //MineGenesis(genesis, consensus.powLimit, true)
 
         genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 50*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -126,11 +141,7 @@ public:
         vSeeds.emplace_back("seed1.kryptofranc.net"); // removed
         vSeeds.emplace_back("seed2.kryptofranc.net"); // removed
         vSeeds.emplace_back("seed3.kryptofranc.net"); // removed
-        vSeeds.emplace_back("seed4.kryptofranc.net"); // Christian Decker, supports x1 - xf
-        //vSeeds.emplace_back("seed.kryptofranc.jonasschnelli.ch"); // Jonas Schnelli, only supports x1, x5, x9, and xd
-        //vSeeds.emplace_back("seed.btc.petertodd.org"); // Peter Todd, only supports x1, x5, x9, and xd
-        //vSeeds.emplace_back("seed.kryptofranc.sprovoost.nl"); // Sjors Provoost
-        //vSeeds.emplace_back("dnsseed.emzy.de"); // Stephan Oeste
+        vSeeds.emplace_back("seed4.kryptofranc.net"); //
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,'K');
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,'k');
@@ -149,16 +160,16 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
-                //{ 33333, uint256S("0x000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6")},
-                //{ 74000, uint256S("0x0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20")},
-                //{ 105000, uint256S("0x00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97")},
-                //{ 134444, uint256S("0x00000000000005b12ffd4cd315cd34ffd4a594f430ac814c91184a0d42d2b0fe")},
-                //{ 168000, uint256S("0x000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
-                //{ 193000, uint256S("0x000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
-                //{ 210000, uint256S("0x000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
-                //{ 216116, uint256S("0x00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e")},
-                //{ 225430, uint256S("0x00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932")},
-                //{ 250000, uint256S("0x000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214")},
+                { 10, uint256S("0x000000003d6b36b9f12fe26c799b46113982858acf81dbea24b264edd28e8d09")},
+                { 30, uint256S("0x000000003ff7263fd000f58774fc4d8ba944dd4635485e91609067aa0c81e496")},
+                { 60, uint256S("0x0000000079f6b4191b430846be8a9e44592dd3211157cf14ac7219050ffed69b")},
+                { 90, uint256S("0x0000000018ba93402b6ea81289ebe0974e7725b165fa55d9e38b6771258da723")},
+                { 100, uint256S("0x0000000022ef05606968ce0b9c29e34ac4d56e87e1d17b6e5a528bb458411917")},
+                { 1000, uint256S("0x000000001e46994f912e4f624ee74b7d032b1def04f9245132be6f2ba94824f7")},
+                { 2000, uint256S("0x00000000352e32f053e4ff5554c62fe09ef19fc4f596822175798583ae496be7")},
+                { 3000, uint256S("0x000000003ce138ccba11dc815b60bc289bba76109856da99d684de1546bed04f")},
+                { 4000, uint256S("0x00000000e3abe31a8b417bb60aec4a3e8ec6ed373f36099647cbf4d5a67eec0f")},
+                { 5000, uint256S("0x000000000d7b962ad821e8ddb6078bd8a0c986a871f7f11ee6e3b9b49a69bb23")},
                 //{ 279000, uint256S("0x0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
                 //{ 295000, uint256S("0x00000000000000004d9b4ef50f0f9d686fd69db2e03af35a100370c64632a983")},
             }
@@ -179,15 +190,17 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 210000/4/12;
+        consensus.nSubsidyHalvingInterval = 525600/2.5;
+
         consensus.BIP16Exception = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
         consensus.BIP34Height = 1; // optimization starting from 1;
         consensus.BIP34Hash = uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903");
         consensus.BIP65Height = 1; // optimization starting from 1; // 00000000007f6655f22f98e72ed80d8b06dc761d5da09df0fa1dc4be4f861eb6
         consensus.BIP65Height = 1; // optimization starting from 1; // 000000002104c8c45e99a8853285a3b592602a3ccde2b832481da85e9e4ba182
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan =  60 ; // two weeks
-        consensus.nPowTargetSpacing = 10 * 60;
+        consensus.nPowTargetSpacing = 2.5 * 60 * 10; // retarget difficulty every 10 blocs or 1500s or 25 min
+        consensus.nPowTargetTimespan =   2.5 * 60 ; // block generated every...
+        assert(consensus.nPowTargetTimespan<= consensus.nPowTargetSpacing );
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -210,7 +223,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75"); //1354312
+        consensus.defaultAssumeValid = uint256S("0x00"); //1354312
 
         pchMessageStart[0] = 0x0b;
         pchMessageStart[1] = 0x11;
@@ -228,11 +241,6 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        // nodes with support for servicebits filtering should be at the top
-        //vSeeds.emplace_back("testnet-seed.kryptofranc.jonasschnelli.ch");
-        ////vSeeds.emplace_back("seed.tbtc.petertodd.org");
-        ////vSeeds.emplace_back("seed.testnet.kryptofranc.sprovoost.nl");
-        //vSeeds.emplace_back("testnet-seed.bluematt.me"); // Just a static list of stable node(s), only supports x9
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -274,15 +282,16 @@ class CRegTestParams : public CChainParams {
 public:
     explicit CRegTestParams(const ArgsManager& args) {
         strNetworkID = "regtest";
-        consensus.nSubsidyHalvingInterval = 150;
+        consensus.nSubsidyHalvingInterval = 1;
         consensus.BIP16Exception = uint256();
-        consensus.BIP34Height = 500; // BIP34 activated on regtest (Used in functional tests)
+        consensus.BIP34Height = 1; // BIP34 activated on regtest (Used in functional tests)
         consensus.BIP34Hash = uint256();
         consensus.BIP65Height = 1; // optimization starting from 1; // BIP65 activated on regtest (Used in functional tests)
         consensus.BIP65Height = 1; // optimization starting from 1; // BIP66 activated on regtest (Used in functional tests)
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan =  60 ; // two weeks
-        consensus.nPowTargetSpacing = 10 * 60;
+        consensus.nPowTargetSpacing = 2.5 * 60 * 10; // retarget difficulty every 10 blocs or 1500s or 25 min
+        consensus.nPowTargetTimespan =   2.5 * 60 ; // block generated every...
+        assert(consensus.nPowTargetTimespan<= consensus.nPowTargetSpacing );
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains

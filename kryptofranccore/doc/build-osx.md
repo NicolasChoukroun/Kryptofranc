@@ -82,6 +82,8 @@ KryptoFranc is now available at `./src/kryptofrancd`
 
 Before running, you may create an empty configuration file:
 
+    mkdir -p "/Users/${USER}/Library/Application Support/kryptoFranc"
+
     touch "/Users/${USER}/Library/Application Support/kryptoFranc/kryptofranc.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/kryptoFranc/kryptofranc.conf"

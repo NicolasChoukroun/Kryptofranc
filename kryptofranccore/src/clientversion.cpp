@@ -1,4 +1,5 @@
 // Copyright (c) 2012-2018 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -79,7 +80,10 @@ static std::string FormatVersion(int nVersion)
 
 std::string FormatFullVersion()
 {
-    return CLIENT_BUILD;
+    char myStr[50]; // MAKE THIS BIG ENOUGH!
+    sprintf(myStr, "%s.%s.%s", CLIENT_BUILD.c_str(), __DATE__, __TIME__ );
+    std::string s=myStr;
+    return s;
 }
 
 /**

@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
-// Copyright (c) 2018 The Kryptofranc Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -78,7 +79,7 @@ struct FlatSigningProvider final : public SigningProvider
 {
     std::map<CScriptID, CScript> scripts;
     std::map<CKeyID, CPubKey> pubkeys;
-    std::map<CKeyID, KeyOriginInfo> origins;
+    std::map<CKeyID, std::pair<CPubKey, KeyOriginInfo>> origins;
     std::map<CKeyID, CKey> keys;
 
     bool GetCScript(const CScriptID& scriptid, CScript& script) const override;

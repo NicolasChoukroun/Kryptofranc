@@ -1,5 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -296,8 +297,20 @@ static UniValue getrpcinfo(const JSONRPCRequest& request)
             RPCHelpMan{"getrpcinfo",
                 "\nReturns details of the RPC server.\n",
                 {},
-                RPCResults{},
-                RPCExamples{""},
+                RPCResult{
+            "{\n"
+            " \"active_commands\" (array) All active commands\n"
+            "  [\n"
+            "   {               (object) Information about an active command\n"
+            "    \"method\"       (string)  The name of the RPC command \n"
+            "    \"duration\"     (numeric)  The running time in microseconds\n"
+            "   },...\n"
+            "  ]\n"
+            "}\n"
+                },
+                RPCExamples{
+                    HelpExampleCli("getrpcinfo", "")
+                + HelpExampleRpc("getrpcinfo", "")},
             }.ToString()
         );
     }
