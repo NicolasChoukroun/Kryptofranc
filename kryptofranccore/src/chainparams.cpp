@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
-// Copyright (c) 2018 The Kryptofranc Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -121,7 +121,7 @@ public:
         pchMessageStart[2] = 0x46;
         pchMessageStart[3] = 0x20;
         nDefaultPort = 1789;
-        nPruneAfterHeight = 100000;
+        nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 10; //10
         m_assumed_chain_state_size = 3; //3
 
@@ -160,16 +160,16 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
-                { 10, uint256S("0x00000000f20f642f5b3b493961a53884fac5820ba73c4a626bf45ca524583911")},
-                { 30, uint256S("0x000000001a56059a67b00b69f54641d89fe1cc4d56069234c51208b112b764f6")},
-                { 60, uint256S("0x00000000242f649948db25e86b77c4c1c1afc76535404ddcf1b03529d8cacff1")},
-                { 90, uint256S("0x000000002e58703250e8f4ceaf707325750487e1143efebb95239a5a5199edc4")},
-                //{ 168000, uint256S("0x000000000000099e61ea72015e79632f216fe6cb33d7899acb35b75c8303b763")},
-                //{ 193000, uint256S("0x000000000000059f452a5f7340de6682a977387c17010ff6e6c3bd83ca8b1317")},
-                //{ 210000, uint256S("0x000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e")},
-                //{ 216116, uint256S("0x00000000000001b4f4b433e81ee46494af945cf96014816a4e2370f11b23df4e")},
-                //{ 225430, uint256S("0x00000000000001c108384350f74090433e7fcf79a606b8e797f065b130575932")},
-                //{ 250000, uint256S("0x000000000000003887df1f29024b06fc2200b55f8af8f35453d7be294df2d214")},
+                { 10, uint256S("0x000000003d6b36b9f12fe26c799b46113982858acf81dbea24b264edd28e8d09")},
+                { 30, uint256S("0x000000003ff7263fd000f58774fc4d8ba944dd4635485e91609067aa0c81e496")},
+                { 60, uint256S("0x0000000079f6b4191b430846be8a9e44592dd3211157cf14ac7219050ffed69b")},
+                { 90, uint256S("0x0000000018ba93402b6ea81289ebe0974e7725b165fa55d9e38b6771258da723")},
+                { 100, uint256S("0x0000000022ef05606968ce0b9c29e34ac4d56e87e1d17b6e5a528bb458411917")},
+                { 1000, uint256S("0x000000001e46994f912e4f624ee74b7d032b1def04f9245132be6f2ba94824f7")},
+                { 2000, uint256S("0x00000000352e32f053e4ff5554c62fe09ef19fc4f596822175798583ae496be7")},
+                { 3000, uint256S("0x000000003ce138ccba11dc815b60bc289bba76109856da99d684de1546bed04f")},
+                { 4000, uint256S("0x00000000e3abe31a8b417bb60aec4a3e8ec6ed373f36099647cbf4d5a67eec0f")},
+                { 5000, uint256S("0x000000000d7b962ad821e8ddb6078bd8a0c986a871f7f11ee6e3b9b49a69bb23")},
                 //{ 279000, uint256S("0x0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
                 //{ 295000, uint256S("0x00000000000000004d9b4ef50f0f9d686fd69db2e03af35a100370c64632a983")},
             }
