@@ -44,6 +44,8 @@ echo "  ->will compile for unix"
 echo "--------------------------------------------------------------"
 echo -e $Color_Off
 
+# force recompile of the version
+rm kryptofranccore/src/libbitcoin_util_a-clientversion.o  
 
 # initialize the internal variables
 OS="unix"
