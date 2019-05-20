@@ -79,7 +79,10 @@ static std::string FormatVersion(int nVersion)
 
 std::string FormatFullVersion()
 {
-    return CLIENT_BUILD;
+    char myStr[50]; // MAKE THIS BIG ENOUGH!
+    sprintf(myStr, "%s.%s.%s", CLIENT_BUILD.c_str(), __DATE__, __TIME__ );
+    std::string s=myStr;
+    return s;
 }
 
 /**
