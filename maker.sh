@@ -76,7 +76,14 @@ while [ "$1" != "" ]; do
         ;;
 		unix)
 			OS="unix"
+	    ;;		
+		mac)
+			OS="osx"
 	    ;;
+		osx)
+			OS="osx"
+	    ;;
+
 	    win64)
 	    	OS="win64"
 	    ;;
@@ -100,6 +107,31 @@ echo "INSTALL option $INSTALL"
 echo "ALL option $ALL"
 echo "--------------------------------------------------"
 echo -e $Color_Off
+
+if [ $OS = "osx" ]; then
+
+	if [ $INSTALL = "yes" ]; then
+		brew install automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf python qt libevent qrencode
+		brew install librsvg
+    fi
+    if [ $ALL = "yes" ]; then
+        cd $COINPATH
+        ./autogen.sh
+        ./configure --disable-tests --disable-bench
+        cd ..
+    fi
+        cd $COINPATH
+	make deploy -i
+	cd ..
+	echo -e "$BYellow --------------------------------------------------"
+	echo -e "$BGreen PACKAGING will install all Unix exe in binaries folder"
+	echo -e $Color_Off
+
+	sudo mkdir -p binaries
+	sudo mkdir -p binaries/osx
+
+	sudo cp -rf $COINPATH/src/$COINNAME-qt binaries/osx/$COINNAME-Qt.dmg
+fi
 
 
 if [ $OS = "unix" ]; then
