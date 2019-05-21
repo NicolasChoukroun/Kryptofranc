@@ -124,13 +124,13 @@ if [ $OS = "osx" ]; then
 	make deploy -i
 	cd ..
 	echo -e "$BYellow --------------------------------------------------"
-	echo -e "$BGreen PACKAGING will install all Unix exe in binaries folder"
+	echo -e "$BGreen PACKAGING will install the DMG in binaries folder"
 	echo -e $Color_Off
 
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/osx
 
-	sudo cp -rf $COINPATH/src/$COINNAME-qt binaries/osx/$COINNAME-Qt.dmg
+	sudo cp -rf $COINPATH/src/$COINNAME-qt.dmg binaries/osx/$COINNAME-Qt.dmg
 fi
 
 
