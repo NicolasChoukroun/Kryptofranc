@@ -130,7 +130,11 @@ if [ $OS = "osx" ]; then
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/osx
 
-	sudo cp -rf $COINPATH/src/$COINNAME-qt.dmg binaries/osx/$COINNAME-Qt.dmg
+	sudo cp -rf $COINPATH/$COINNAME-Qt.dmg binaries/osx/$COINNAME-Qt.dmg
+	sudo cp -rf $COINPATH/src/$COINNAME-tx binaries/osx/$COINNAME-tx
+	sudo cp -rf $COINPATH/src/$COINNAME-wallet binaries/osx/$COINNAME-wallet
+	sudo cp -rf $COINPATH/src/$COINNAME-cli binaries/osx/$COINNAME-cli
+	#sudo cp -rf "$COINPATH/src/$COINNAME""d" "binaries/osx/$COINNAME""d"	
 fi
 
 
