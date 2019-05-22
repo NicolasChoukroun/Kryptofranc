@@ -148,3 +148,4 @@ kryptofranccore/.travis/test_05_before_script.sh
 kryptofranccore/.travis/test_06_script_a.sh
 kryptofranccore/.travis/test_06_script_b.sh
 kryptofranccore/.tx/config
+.idea/workspace.xml

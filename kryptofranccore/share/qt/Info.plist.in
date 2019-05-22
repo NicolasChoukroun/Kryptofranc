@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.kryptofranc.KryptofrancPayment</string>
+      <string>org.kryptofranc.Kryptofranc</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>kryptofranc</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.kryptofranc.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Kryptofranc payment request</string>
+      <string>Bitcoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

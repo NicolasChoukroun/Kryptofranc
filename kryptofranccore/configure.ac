@@ -16,10 +16,10 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 BITCOIN_DAEMON_NAME=kyfd
-BITCOIN_GUI_NAME=bitcoin-qt
+BITCOIN_GUI_NAME=kyf-qt
 BITCOIN_CLI_NAME=kyf-cli
 BITCOIN_TX_NAME=kyf-tx
-BITCOIN_WALLET_TOOL_NAME=bitcoin-wallet
+BITCOIN_WALLET_TOOL_NAME=kyf-wallet
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])

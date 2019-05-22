@@ -10,13 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/Makefile.am" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/Makefile.am" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/custom_dsstore.py" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/custom_dsstore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/fancy.plist" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/fancy.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/bitcoin-qt-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/bitcoin-qt-res.rc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,7 +97,7 @@
     <session id="-1553293090">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -152,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
             </state>
           </provider>
         </entry>
@@ -170,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="1167" column="28" lean-forward="true" selection-end-line="4946" />
+              <caret line="1167" column="28" selection-end-line="4946" />
             </state>
           </provider>
         </entry>
@@ -188,7 +186,7 @@
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
-              <caret line="949" column="74" lean-forward="true" selection-end-line="1454" />
+              <caret line="949" column="74" selection-end-line="1454" />
             </state>
           </provider>
         </entry>
@@ -350,10 +348,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="130" />
-    <option name="width" value="2960" />
-    <option name="height" value="1360" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="131" />
+    <option name="y" value="3" />
+    <option name="width" value="2482" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -445,10 +444,9 @@
     <option name="totallyTimeSpent" value="73628000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="104" y="0" width="2368" height="1088" extended-state="1" />
-    <editor active="true" />
+    <frame x="105" y="3" width="1985" height="869" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24133448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28935066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -462,7 +460,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.09937239" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.12890095" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.329907" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,14 +651,14 @@
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="1167" column="28" lean-forward="true" selection-end-line="4946" />
+          <caret line="1167" column="28" selection-end-line="4946" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
         </state>
       </provider>
     </entry>
@@ -674,7 +672,7 @@
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
-          <caret line="949" column="74" lean-forward="true" selection-end-line="1454" />
+          <caret line="949" column="74" selection-end-line="1454" />
         </state>
       </provider>
     </entry>
