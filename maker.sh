@@ -31,7 +31,7 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan Bitcoin/Altcoin compiler helper: version 1.3"
+echo -e "$BCyan Bitcoin/Altcoin compiler helper: version 1.4"
 echo -e "$BBlue maker unix/win64"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
