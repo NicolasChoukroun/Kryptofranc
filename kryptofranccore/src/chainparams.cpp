@@ -23,6 +23,46 @@
 //Mining algorithm
 
 
+const arith_uint256 maxUint = UintToArith256(
+        uint256S("ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"));
+
+static void MineGenesis(CBlockHeader &genesisBlock, const uint256 &powLimit, bool noProduction) {
+    if (noProduction) genesisBlock.nTime = std::time(0);
+    genesisBlock.nNonce = 0;
+
+    printf("NOTE: Genesis nTime = %u \n", genesisBlock.nTime);
+    printf("WARN: Genesis nNonce (BLANK!) = %u \n", genesisBlock.nNonce);
+
+    arith_uint256 besthash;
+    memset(&besthash, 0xFF, 32);
+    arith_uint256 hashTarget = UintToArith256(powLimit);
+    printf("Target: %s\n", hashTarget.GetHex().c_str());
+    arith_uint256 newhash = UintToArith256(genesisBlock.GetHash());
+    while (newhash > hashTarget) {
+        genesisBlock.nNonce++;
+        if (genesisBlock.nNonce == 0) {
+            printf("NONCE WRAPPED, incrementing time\n");
+            ++genesisBlock.nTime;
+        }
+        // If nothing found after trying for a while, print status
+        if ((genesisBlock.nNonce & 0xffff) == 0)
+            printf("nonce %08X: hash = %s \r",
+                   genesisBlock.nNonce, newhash.ToString().c_str(),
+                   hashTarget.ToString().c_str());
+
+        if (newhash < besthash) {
+            besthash = newhash;
+            printf("New best: %s\n", newhash.GetHex().c_str());
+        }
+        newhash = UintToArith256(genesisBlock.GetHash());
+    }
+    printf("\nGenesis nTime = %u \n", genesisBlock.nTime);
+    printf("Genesis nNonce = %u \n", genesisBlock.nNonce);
+    printf("Genesis nBits: %08x\n", genesisBlock.nBits);
+    printf("Genesis Hash = %s\n", newhash.ToString().c_str());
+    printf("Genesis Hash Merkle Root = %s\n", genesisBlock.hashMerkleRoot.ToString().c_str());
+    printf("Genesis Hash Merkle Root = %s\n", genesisBlock.hashMerkleRoot.ToString().c_str());
+}
 
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
@@ -59,7 +99,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "2019/01/10 Yellow Vests hope to trigger bank run with financial protest";
+    const char* pszTimestamp = "24/05/2019 Washington menace de sanctions tous les pays qui achètent du pétrole iranien";
     const CScript genesisOutputScript = CScript() << ParseHex("04381abc5d5f369e088f72036f3ab76fce4e16c6262217d3fb5cf314ef1b39ca09bfcf878ef7742f3f97c6a6356457685ac39eb99ce8b359644a0af7a9554a7980") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -125,10 +165,10 @@ public:
         m_assumed_blockchain_size = 10; //10
         m_assumed_chain_state_size = 3; //3
 
-        //genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 536870912, 50 * COIN); // 536870912 = BIP101
-        //MineGenesis(genesis, consensus.powLimit, true)
-
-        genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 50*COIN);
+        genesis = CreateGenesisBlock(std::time(0), 0, 0x1d00ffff, 536870912, 1 * COIN); 
+        MineGenesis(genesis, consensus.powLimit, true)
+		
+        //genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 1*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903"));
         assert(genesis.hashMerkleRoot == uint256S("0x112f9dfb5c1fe2f10db2b34d3c363c1444e119f9caba3e80eb613dfaed4d8aa5"));
@@ -159,7 +199,7 @@ public:
 
         checkpointData = {
             {
-                { 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
+                /*{ 0, uint256S("0x000000006cd19f8978d0a07725bf8be24495dfbe071faea32c4b99c50d723903")},
                 { 10, uint256S("0x000000003d6b36b9f12fe26c799b46113982858acf81dbea24b264edd28e8d09")},
                 { 30, uint256S("0x000000003ff7263fd000f58774fc4d8ba944dd4635485e91609067aa0c81e496")},
                 { 60, uint256S("0x0000000079f6b4191b430846be8a9e44592dd3211157cf14ac7219050ffed69b")},
@@ -170,6 +210,7 @@ public:
                 { 3000, uint256S("0x000000003ce138ccba11dc815b60bc289bba76109856da99d684de1546bed04f")},
                 { 4000, uint256S("0x00000000e3abe31a8b417bb60aec4a3e8ec6ed373f36099647cbf4d5a67eec0f")},
                 { 5000, uint256S("0x000000000d7b962ad821e8ddb6078bd8a0c986a871f7f11ee6e3b9b49a69bb23")},
+				*/
                 //{ 279000, uint256S("0x0000000000000001ae8c72a0b0c301f67e3afca10e819efa9041e458e9bd7e40")},
                 //{ 295000, uint256S("0x00000000000000004d9b4ef50f0f9d686fd69db2e03af35a100370c64632a983")},
             }

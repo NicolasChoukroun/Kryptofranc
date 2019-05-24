@@ -20,7 +20,7 @@
  * Maximum amount of time that a block timestamp is allowed to exceed the
  * current network-adjusted time before the block will be accepted.
  */
-static constexpr int64_t MAX_FUTURE_BLOCK_TIME = 90*60*365;
+static constexpr int64_t MAX_FUTURE_BLOCK_TIME = 90*60;
 
 /**
  * Timestamp window used as a grace period by code that compares external
@@ -36,7 +36,7 @@ static constexpr int64_t TIMESTAMP_WINDOW = MAX_FUTURE_BLOCK_TIME;
  *
  * Ref: https://github.com/kryptofranc/kryptofranc/pull/1026
  */
-static constexpr int64_t MAX_BLOCK_TIME_GAP = 2*60*60*365;
+static constexpr int64_t MAX_BLOCK_TIME_GAP = 2*60*60;
 
 class CBlockFileInfo
 {
