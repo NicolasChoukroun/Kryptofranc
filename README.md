@@ -28,34 +28,6 @@ In call cases, the files are in the /binaries/ directory
 
 from http://KryptoFranc.com/whitepapers.php
 
-###### 1. Introduction
-The KryptoFranc is a new altcoin, which purpose is to support
-organizations and individuals who defend human and citizen rights all
-over the world.
-Beyond this general mission, we consider that human rights now include
-the right to a clean and sustainable environment on a planet protected
-from the damages of wild carbon emissions.
-Today, the conditions in which charities raise funds seem less and less
-efficient, with ever increasing marketing costs for profits that, although
-they grow in absolute value, frequently deteriorate in terms of the
-relationship between collected and distributed funds.
-The ambition of the KryptoFranc is to bring new fundraising solutions for
-NGOs or individuals through the creation of a large community of voters
-who will select the cause(s) that will receive a significant part of our
-money supply every fortnight.
-The voting process will happen online via traditional web channels.
-Organizations and individuals who wish to apply for a donation will also
-have to do it online.
-Every fortnight, the KryptoFranc community will decide on a donation to
-a defender or a cause that support human rights, freedom and
-preservation of the Earth.
-The KryptoFranc already disposes of 3,2 billions premined KYF, among
-which 2 billions KYF will be distributed in over a period of 10 years as free
-donations to causes we support.
-We believe that freedom in all its form has to be defended when and how
-the community decides it. 
-
-
 ###### 1. English
 The KryptoFranc is a new altcoin, which purpose is to support organizations and individuals who defend human and citizen rights all over the world. Beyond this general mission, we consider that human rights now include the right to a clean and sustainable environment on a planet protected from the damages of wild carbon emissions.
 Today, the conditions in which charities raise funds seem less and less efficient, with ever increasing marketing costs for profits that, although they grow in absolute value, frequently deteriorate in terms of the relationship between collected and distributed funds.
