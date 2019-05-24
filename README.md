@@ -1,4 +1,4 @@
-# KryptoFranc
+# KryptoFranc "The Popular"
 
 Build:
 ```
