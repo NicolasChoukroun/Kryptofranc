@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_CHECKQUEUE_H
-#define KRYPTOFRANC_CHECKQUEUE_H
+#ifndef BITCOIN_CHECKQUEUE_H
+#define BITCOIN_CHECKQUEUE_H
 
 #include <sync.h>
 
@@ -211,4 +211,4 @@ public:
     }
 };
 
-#endif // KRYPTOFRANC_CHECKQUEUE_H
+#endif // BITCOIN_CHECKQUEUE_H

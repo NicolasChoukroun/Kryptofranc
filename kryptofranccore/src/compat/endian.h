@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_COMPAT_ENDIAN_H
-#define KRYPTOFRANC_COMPAT_ENDIAN_H
+#ifndef BITCOIN_COMPAT_ENDIAN_H
+#define BITCOIN_COMPAT_ENDIAN_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
@@ -22,7 +22,7 @@
 #ifndef HAVE_CONFIG_H
 // While not technically a supported configuration, defaulting to defining these
 // DECLs when we were compiled without autotools makes it easier for other build
-// systems to build things like libkryptofrancconsensus for strange targets.
+// systems to build things like libbitcoinconsensus for strange targets.
 #ifdef htobe16
 #define HAVE_DECL_HTOBE16 1
 #endif
@@ -238,4 +238,4 @@ inline uint64_t le64toh(uint64_t little_endian_64bits)
 
 #endif // WORDS_BIGENDIAN
 
-#endif // KRYPTOFRANC_COMPAT_ENDIAN_H
+#endif // BITCOIN_COMPAT_ENDIAN_H

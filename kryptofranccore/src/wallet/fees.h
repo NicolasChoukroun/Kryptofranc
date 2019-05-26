@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_WALLET_FEES_H
-#define KRYPTOFRANC_WALLET_FEES_H
+#ifndef BITCOIN_WALLET_FEES_H
+#define BITCOIN_WALLET_FEES_H
 
 #include <amount.h>
 
@@ -46,4 +44,4 @@ CFeeRate GetMinimumFeeRate(const CWallet& wallet, const CCoinControl& coin_contr
  */
 CFeeRate GetDiscardRate(const CWallet& wallet, const CBlockPolicyEstimator& estimator);
 
-#endif // KRYPTOFRANC_WALLET_FEES_H
+#endif // BITCOIN_WALLET_FEES_H

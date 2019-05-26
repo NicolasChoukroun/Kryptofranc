@@ -113,11 +113,11 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. kryptofranc_de.qm (shortcut "de" needs to be defined in kryptofranc.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in bitcoin.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. kryptofranc_de_DE.qm (shortcut "de_DE" needs to be defined in kryptofranc.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in bitcoin.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -133,18 +133,18 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-kryptoFrancCore::kryptoFrancCore(interfaces::Node& node) :
+BitcoinCore::BitcoinCore(interfaces::Node& node) :
     QObject(), m_node(node)
 {
 }
 
-void kryptoFrancCore::handleRunawayException(const std::exception *e)
+void BitcoinCore::handleRunawayException(const std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
     Q_EMIT runawayException(QString::fromStdString(m_node.getWarnings("gui")));
 }
 
-void kryptoFrancCore::initialize()
+void BitcoinCore::initialize()
 {
     try
     {
@@ -158,7 +158,7 @@ void kryptoFrancCore::initialize()
     }
 }
 
-void kryptoFrancCore::shutdown()
+void BitcoinCore::shutdown()
 {
     try
     {
@@ -173,7 +173,7 @@ void kryptoFrancCore::shutdown()
     }
 }
 
-kryptoFrancApplication::kryptoFrancApplication(interfaces::Node& node, int &argc, char **argv):
+BitcoinApplication::BitcoinApplication(interfaces::Node& node, int &argc, char **argv):
     QApplication(argc, argv),
     coreThread(nullptr),
     m_node(node),
@@ -187,20 +187,20 @@ kryptoFrancApplication::kryptoFrancApplication(interfaces::Node& node, int &argc
     setQuitOnLastWindowClosed(false);
 }
 
-void kryptoFrancApplication::setupPlatformStyle()
+void BitcoinApplication::setupPlatformStyle()
 {
     // UI per-platform customization
-    // This must be done inside the kryptoFrancApplication constructor, or after it, because
+    // This must be done inside the BitcoinApplication constructor, or after it, because
     // PlatformStyle::instantiate requires a QApplication
     std::string platformName;
-    platformName = gArgs.GetArg("-uiplatform", kryptoFrancGUI::DEFAULT_UIPLATFORM);
+    platformName = gArgs.GetArg("-uiplatform", BitcoinGUI::DEFAULT_UIPLATFORM);
     platformStyle = PlatformStyle::instantiate(QString::fromStdString(platformName));
     if (!platformStyle) // Fall back to "other" if specified name not found
         platformStyle = PlatformStyle::instantiate("other");
     assert(platformStyle);
 }
 
-kryptoFrancApplication::~kryptoFrancApplication()
+BitcoinApplication::~BitcoinApplication()
 {
     if(coreThread)
     {
@@ -225,61 +225,61 @@ kryptoFrancApplication::~kryptoFrancApplication()
 }
 
 #ifdef ENABLE_WALLET
-void kryptoFrancApplication::createPaymentServer()
+void BitcoinApplication::createPaymentServer()
 {
     paymentServer = new PaymentServer(this);
 }
 #endif
 
-void kryptoFrancApplication::createOptionsModel(bool resetSettings)
+void BitcoinApplication::createOptionsModel(bool resetSettings)
 {
     optionsModel = new OptionsModel(m_node, nullptr, resetSettings);
 }
 
-void kryptoFrancApplication::createWindow(const NetworkStyle *networkStyle)
+void BitcoinApplication::createWindow(const NetworkStyle *networkStyle)
 {
-    window = new kryptoFrancGUI(m_node, platformStyle, networkStyle, nullptr);
+    window = new BitcoinGUI(m_node, platformStyle, networkStyle, nullptr);
 
     pollShutdownTimer = new QTimer(window);
-    connect(pollShutdownTimer, &QTimer::timeout, window, &kryptoFrancGUI::detectShutdown);
+    connect(pollShutdownTimer, &QTimer::timeout, window, &BitcoinGUI::detectShutdown);
 }
 
-void kryptoFrancApplication::createSplashScreen(const NetworkStyle *networkStyle)
+void BitcoinApplication::createSplashScreen(const NetworkStyle *networkStyle)
 {
     SplashScreen *splash = new SplashScreen(m_node, nullptr, networkStyle);
     // We don't hold a direct pointer to the splash screen after creation, but the splash
     // screen will take care of deleting itself when finish() happens.
     splash->show();
-    connect(this, &kryptoFrancApplication::splashFinished, splash, &SplashScreen::finish);
-    connect(this, &kryptoFrancApplication::requestedShutdown, splash, &QWidget::close);
+    connect(this, &BitcoinApplication::splashFinished, splash, &SplashScreen::finish);
+    connect(this, &BitcoinApplication::requestedShutdown, splash, &QWidget::close);
 }
 
-bool kryptoFrancApplication::baseInitialize()
+bool BitcoinApplication::baseInitialize()
 {
     return m_node.baseInitialize();
 }
 
-void kryptoFrancApplication::startThread()
+void BitcoinApplication::startThread()
 {
     if(coreThread)
         return;
     coreThread = new QThread(this);
-    kryptoFrancCore *executor = new kryptoFrancCore(m_node);
+    BitcoinCore *executor = new BitcoinCore(m_node);
     executor->moveToThread(coreThread);
 
     /*  communication to and from thread */
-    connect(executor, &kryptoFrancCore::initializeResult, this, &kryptoFrancApplication::initializeResult);
-    connect(executor, &kryptoFrancCore::shutdownResult, this, &kryptoFrancApplication::shutdownResult);
-    connect(executor, &kryptoFrancCore::runawayException, this, &kryptoFrancApplication::handleRunawayException);
-    connect(this, &kryptoFrancApplication::requestedInitialize, executor, &kryptoFrancCore::initialize);
-    connect(this, &kryptoFrancApplication::requestedShutdown, executor, &kryptoFrancCore::shutdown);
+    connect(executor, &BitcoinCore::initializeResult, this, &BitcoinApplication::initializeResult);
+    connect(executor, &BitcoinCore::shutdownResult, this, &BitcoinApplication::shutdownResult);
+    connect(executor, &BitcoinCore::runawayException, this, &BitcoinApplication::handleRunawayException);
+    connect(this, &BitcoinApplication::requestedInitialize, executor, &BitcoinCore::initialize);
+    connect(this, &BitcoinApplication::requestedShutdown, executor, &BitcoinCore::shutdown);
     /*  make sure executor object is deleted in its own thread */
     connect(coreThread, &QThread::finished, executor, &QObject::deleteLater);
 
     coreThread->start();
 }
 
-void kryptoFrancApplication::parameterSetup()
+void BitcoinApplication::parameterSetup()
 {
     // Default printtoconsole to false for the GUI. GUI programs should not
     // print to the console unnecessarily.
@@ -289,14 +289,14 @@ void kryptoFrancApplication::parameterSetup()
     m_node.initParameterInteraction();
 }
 
-void kryptoFrancApplication::requestInitialize()
+void BitcoinApplication::requestInitialize()
 {
     qDebug() << __func__ << ": Requesting initialize";
     startThread();
     Q_EMIT requestedInitialize();
 }
 
-void kryptoFrancApplication::requestShutdown()
+void BitcoinApplication::requestShutdown()
 {
     // Show a simple window indicating shutdown status
     // Do this first as some of the steps may take some time below,
@@ -324,7 +324,7 @@ void kryptoFrancApplication::requestShutdown()
     Q_EMIT requestedShutdown();
 }
 
-void kryptoFrancApplication::initializeResult(bool success)
+void BitcoinApplication::initializeResult(bool success)
 {
     qDebug() << __func__ << ": Initialization result: " << success;
     // Set exit result.
@@ -365,10 +365,10 @@ void kryptoFrancApplication::initializeResult(bool success)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // kryptofranc: URIs or payment requests:
+        // bitcoin: URIs or payment requests:
         if (paymentServer) {
-            connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &kryptoFrancGUI::handlePaymentRequest);
-            connect(window, &kryptoFrancGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
+            connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &BitcoinGUI::handlePaymentRequest);
+            connect(window, &BitcoinGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
             connect(paymentServer, &PaymentServer::message, [this](const QString& title, const QString& message, unsigned int style) {
                 window->message(title, message, style);
             });
@@ -382,18 +382,18 @@ void kryptoFrancApplication::initializeResult(bool success)
     }
 }
 
-void kryptoFrancApplication::shutdownResult()
+void BitcoinApplication::shutdownResult()
 {
     quit(); // Exit second main loop invocation after shutdown finished
 }
 
-void kryptoFrancApplication::handleRunawayException(const QString &message)
+void BitcoinApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(nullptr, "Runaway exception", kryptoFrancGUI::tr("A fatal error occurred. kryptoFranc can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(nullptr, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Bitcoin can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 
-WId kryptoFrancApplication::getMainWinId() const
+WId BitcoinApplication::getMainWinId() const
 {
     if (!window)
         return 0;
@@ -412,10 +412,10 @@ static void SetupUIArgs()
     gArgs.AddArg("-resetguisettings", "Reset all settings changed in the GUI", false, OptionsCategory::GUI);
     gArgs.AddArg("-rootcertificates=<file>", "Set SSL root certificates for payment request (default: -system-)", false, OptionsCategory::GUI);
     gArgs.AddArg("-splash", strprintf("Show splash screen on startup (default: %u)", DEFAULT_SPLASHSCREEN), false, OptionsCategory::GUI);
-    gArgs.AddArg("-uiplatform", strprintf("Select platform to customize UI for (one of windows, macosx, other; default: %s)", kryptoFrancGUI::DEFAULT_UIPLATFORM), true, OptionsCategory::GUI);
+    gArgs.AddArg("-uiplatform", strprintf("Select platform to customize UI for (one of windows, macosx, other; default: %s)", BitcoinGUI::DEFAULT_UIPLATFORM), true, OptionsCategory::GUI);
 }
 
-#ifndef KRYPTOFRANC_QT_TEST
+#ifndef BITCOIN_QT_TEST
 int GuiMain(int argc, char* argv[])
 {
 #ifdef WIN32
@@ -437,7 +437,7 @@ int GuiMain(int argc, char* argv[])
     Q_INIT_RESOURCE(bitcoin);
     Q_INIT_RESOURCE(bitcoin_locale);
 
-    kryptoFrancApplication app(*node, argc, argv);
+    BitcoinApplication app(*node, argc, argv);
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
 #if QT_VERSION >= 0x050600
@@ -493,7 +493,7 @@ int GuiMain(int argc, char* argv[])
     if (!Intro::pickDataDirectory(*node))
         return EXIT_SUCCESS;
 
-    /// 6. Determine availability of data and blocks directory and parse kryptofranc.conf
+    /// 6. Determine availability of data and blocks directory and parse bitcoin.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!fs::is_directory(GetDataDir(false)))
     {
@@ -543,7 +543,7 @@ int GuiMain(int argc, char* argv[])
         exit(EXIT_SUCCESS);
 
     // Start up the payment server early, too, so impatient users that click on
-    // kryptofranc: links repeatedly have their payment requests routed to this process:
+    // bitcoin: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
@@ -593,4 +593,4 @@ int GuiMain(int argc, char* argv[])
     }
     return rv;
 }
-#endif // KRYPTOFRANC_QT_TEST
+#endif // BITCOIN_QT_TEST

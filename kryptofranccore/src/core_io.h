@@ -1,11 +1,9 @@
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_CORE_IO_H
-#define KRYPTOFRANC_CORE_IO_H
+#ifndef BITCOIN_CORE_IO_H
+#define BITCOIN_CORE_IO_H
 
 #include <amount.h>
 #include <attributes.h>
@@ -55,4 +53,4 @@ void ScriptPubKeyToUniv(const CScript& scriptPubKey, UniValue& out, bool fInclud
 void ScriptToUniv(const CScript& script, UniValue& out, bool include_address);
 void TxToUniv(const CTransaction& tx, const uint256& hashBlock, UniValue& entry, bool include_hex = true, int serialize_flags = 0);
 
-#endif // KRYPTOFRANC_CORE_IO_H
+#endif // BITCOIN_CORE_IO_H

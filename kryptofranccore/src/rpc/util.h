@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_RPC_UTIL_H
-#define KRYPTOFRANC_RPC_UTIL_H
+#ifndef BITCOIN_RPC_UTIL_H
+#define BITCOIN_RPC_UTIL_H
 
 #include <node/transaction.h>
 #include <pubkey.h>
@@ -203,4 +203,4 @@ private:
     const RPCExamples m_examples;
 };
 
-#endif // KRYPTOFRANC_RPC_UTIL_H
+#endif // BITCOIN_RPC_UTIL_H

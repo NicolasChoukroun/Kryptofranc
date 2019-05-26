@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_QT_SENDCOINSDIALOG_H
-#define KRYPTOFRANC_QT_SENDCOINSDIALOG_H
+#ifndef BITCOIN_QT_SENDCOINSDIALOG_H
+#define BITCOIN_QT_SENDCOINSDIALOG_H
 
 #include <qt/walletmodel.h>
 
@@ -25,7 +25,7 @@ QT_BEGIN_NAMESPACE
 class QUrl;
 QT_END_NAMESPACE
 
-/** Dialog for sending kryptofrancs */
+/** Dialog for sending bitcoins */
 class SendCoinsDialog : public QDialog
 {
     Q_OBJECT
@@ -121,4 +121,4 @@ private:
     int secDelay;
 };
 
-#endif // KRYPTOFRANC_QT_SENDCOINSDIALOG_H
+#endif // BITCOIN_QT_SENDCOINSDIALOG_H

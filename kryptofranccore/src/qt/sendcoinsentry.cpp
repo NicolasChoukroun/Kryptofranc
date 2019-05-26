@@ -38,13 +38,13 @@ SendCoinsEntry::SendCoinsEntry(const PlatformStyle *_platformStyle, QWidget *par
         ui->payToLayout->setSpacing(4);
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
 
-    // normal kryptofranc address field
+    // normal bitcoin address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying kryptofranc address(es)
+    // just a label for displaying bitcoin address(es)
     ui->payTo_is->setFont(GUIUtil::fixedPitchFont());
 
     // Connect signals
-    connect(ui->payAmount, &kryptoFrancAmountField::valueChanged, this, &SendCoinsEntry::payAmountChanged);
+    connect(ui->payAmount, &BitcoinAmountField::valueChanged, this, &SendCoinsEntry::payAmountChanged);
     connect(ui->checkboxSubtractFeeFromAmount, &QCheckBox::toggled, this, &SendCoinsEntry::subtractFeeFromAmountChanged);
     connect(ui->deleteButton, &QPushButton::clicked, this, &SendCoinsEntry::deleteClicked);
     connect(ui->deleteButton_is, &QPushButton::clicked, this, &SendCoinsEntry::deleteClicked);
@@ -110,7 +110,7 @@ void SendCoinsEntry::clear()
     ui->memoTextLabel_s->clear();
     ui->payAmount_s->clear();
 
-    // update the display unit, to not use the default ("KYF")
+    // update the display unit, to not use the default ("BTC")
     updateDisplayUnit();
 }
 

@@ -36,7 +36,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>kryptoFrancGUI</name>
+    <name>BitcoinGUI</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -181,6 +181,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>kryptofranc-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>

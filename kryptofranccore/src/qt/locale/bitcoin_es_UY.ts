@@ -66,12 +66,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your kryptoFranc addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estás son tus direcciones de kryptoFranc para enviar pagos. Verifica siempre el monto y la dirección de recepción antes de enviar monedas.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estás son tus direcciones de Bitcoin para enviar pagos. Verifica siempre el monto y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your kryptoFranc addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son tus direcciones de kryptoFranc para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son tus direcciones de Bitcoin para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmar encriptación de billetera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KRYPTOFRANCS&lt;/b&gt;!</source>
-        <translation>Atención: Si encriptas tu billetera y pierdes tu contraseña, vas a &lt;b&gt;PERDER TODOS TUS KRYPTOFRANCS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Atención: Si encriptas tu billetera y pierdes tu contraseña, vas a &lt;b&gt;PERDER TODOS TUS BITCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Billetera encriptada</translation>
     </message>
     <message>
-        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your kryptofrancs from being stolen by malware infecting your computer.</source>
-        <translation>Tu billetera quedó encriptada. Recuerda que encriptar tu billetera no protege totalmente tus kryptofrancs de ser robados por malware que infecte tu computadora.</translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Tu billetera quedó encriptada. Recuerda que encriptar tu billetera no protege totalmente tus bitcoins de ser robados por malware que infecte tu computadora.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -204,7 +204,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>kryptoFrancGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
@@ -250,16 +250,16 @@
         <translation>Cambiar contraseña</translation>
     </message>
     <message>
-        <source>Send coins to a kryptoFranc address</source>
-        <translation>Enviar monedas a una dirección kryptoFranc</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Enviar monedas a una dirección Bitcoin</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
     </message>
     <message>
-        <source>kryptoFranc</source>
-        <translation>kryptoFranc</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -384,8 +384,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>kryptoFranc</source>
-        <translation>kryptoFranc</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -648,7 +648,7 @@
     </message>
     </context>
 <context>
-    <name>kryptofranc-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>Information</source>
         <translation>Información</translation>

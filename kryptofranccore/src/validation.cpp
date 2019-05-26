@@ -1,7 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -50,7 +48,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "kryptoFranc cannot be compiled without assertions."
+# error "Bitcoin cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -259,7 +257,7 @@ std::atomic_bool g_is_mempool_loaded{false};
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "kryptoFranc Signed Message:\n";
+const std::string strMessageMagic = "Bitcoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -944,7 +942,7 @@ static bool AcceptToMemoryPoolWorker(const CChainParams& chainparams, CTxMemPool
         // Remove conflicting transactions from the mempool
         for (CTxMemPool::txiter it : allConflicting)
         {
-            LogPrint(BCLog::MEMPOOL, "replacing tx %s with %s for %s KYF additional fees, %d delta bytes\n",
+            LogPrint(BCLog::MEMPOOL, "replacing tx %s with %s for %s BTC additional fees, %d delta bytes\n",
                     it->GetTx().GetHash().ToString(),
                     hash.ToString(),
                     FormatMoney(nModifiedFees - nConflictingFees),
@@ -1155,32 +1153,15 @@ bool ReadRawBlockFromDisk(std::vector<uint8_t>& block, const CBlockIndex* pindex
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    /* int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
+    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
     // Force block reward to zero when right shift is undefined.
     if (halvings >= 64)
         return 0;
 
     CAmount nSubsidy = 50 * COIN;
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-     nSubsidy >>= halvings; */
-    
-
-    CAmount nSubsidy = 3200;
-
-    if (nHeight == 1 ) return 2000000000 * COIN;
-    if (nHeight == 2 || nHeight == 3 || nHeight == 4) return 400000000 * COIN;
-    if (nHeight < 50) return 1 * COIN;
-
-
-    float year = 1.0;
-
-    year = (nHeight / consensusParams.nSubsidyHalvingInterval) + 1;
-    float halfing = year / 1.618033988750;
-    nSubsidy = (nSubsidy / halfing) * COIN;
-
+    nSubsidy >>= halvings;
     return nSubsidy;
-
-	
 }
 
 bool IsInitialBlockDownload()
@@ -1696,7 +1677,7 @@ static bool WriteUndoDataForBlock(const CBlockUndo& blockundo, CValidationState&
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("kryptofranc-scriptch");
+    RenameThread("bitcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3326,7 +3307,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
         CScript expect = CScript() << nHeight;
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0]->vin[0].scriptSig.begin())) {
-            // return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
+            return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
         }
     }
 
@@ -3362,7 +3343,7 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
     if (!fHaveWitness) {
       for (const auto& tx : block.vtx) {
             if (tx->HasWitness()) {
-                // return state.DoS(100, false, REJECT_INVALID, "unexpected-witness", true, strprintf("%s : unexpected witness data found", __func__));
+                return state.DoS(100, false, REJECT_INVALID, "unexpected-witness", true, strprintf("%s : unexpected witness data found", __func__));
             }
         }
     }

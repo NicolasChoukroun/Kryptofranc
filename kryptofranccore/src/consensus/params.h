@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_CONSENSUS_PARAMS_H
-#define KRYPTOFRANC_CONSENSUS_PARAMS_H
+#ifndef BITCOIN_CONSENSUS_PARAMS_H
+#define BITCOIN_CONSENSUS_PARAMS_H
 
 #include <uint256.h>
 #include <limits>
@@ -80,4 +78,4 @@ struct Params {
 };
 } // namespace Consensus
 
-#endif // KRYPTOFRANC_CONSENSUS_PARAMS_H
+#endif // BITCOIN_CONSENSUS_PARAMS_H

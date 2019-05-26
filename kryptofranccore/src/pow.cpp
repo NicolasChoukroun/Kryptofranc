@@ -1,6 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,10 +53,10 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 
     // Limit adjustment step
     int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;
-    if (nActualTimespan < params.nPowTargetTimespan/2)
-        nActualTimespan = params.nPowTargetTimespan/2;
-    if (nActualTimespan > params.nPowTargetTimespan*2)
-        nActualTimespan = params.nPowTargetTimespan*2;
+    if (nActualTimespan < params.nPowTargetTimespan/4)
+        nActualTimespan = params.nPowTargetTimespan/4;
+    if (nActualTimespan > params.nPowTargetTimespan*4)
+        nActualTimespan = params.nPowTargetTimespan*4;
 
     // Retarget
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
@@ -68,7 +67,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 
     if (bnNew > bnPowLimit)
         bnNew = bnPowLimit;
-    if (bnNew<0.0) bnNew=1.0;
+
     return bnNew.GetCompact();
 }
 
@@ -81,16 +80,12 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
 
     // Check range
-    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
-        //printf("CheckProofOfWork: not good 1\n");
+    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit))
         return false;
-    }
 
     // Check proof of work matches claimed amount
-    if (UintToArith256(hash) > bnTarget) {
-        //printf("CheckProofOfWork: not good 2\n");
+    if (UintToArith256(hash) > bnTarget)
         return false;
-    }
 
     return true;
 }

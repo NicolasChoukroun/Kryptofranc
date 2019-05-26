@@ -1,5 +1,4 @@
 // Copyright (c) 2012-2018 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +9,7 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both kryptofrancd and kryptofranc-qt, to make it harder for attackers to
+ * for both bitcoind and bitcoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
 const std::string CLIENT_NAME("Satoshi");
@@ -45,8 +44,8 @@ const std::string CLIENT_NAME("Satoshi");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "742f7dd972fca3dd4a33cfff90bf901b71a687e7"
-#define GIT_COMMIT_DATE "Sat, 2 Mar 2019 14:23:51 +0100"
+#define GIT_COMMIT_ID "be92be5644a763f98b6fa2de0b04ba44217dcef9"
+#define GIT_COMMIT_DATE "Thu, 2 May 2019 16:14:13 +0200"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
@@ -80,14 +79,11 @@ static std::string FormatVersion(int nVersion)
 
 std::string FormatFullVersion()
 {
-    char myStr[100]; // MAKE THIS BIG ENOUGH!
-    sprintf(myStr, "%s.%s.%s", CLIENT_BUILD.c_str(), __DATE__, __TIME__ );
-    std::string s=myStr;
-    return s;
+    return CLIENT_BUILD;
 }
 
 /**
- * Format the subversion field according to BIP 14 spec (https://github.com/kryptofranc/bips/blob/master/bip-0014.mediawiki)
+ * Format the subversion field according to BIP 14 spec (https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki)
  */
 std::string FormatSubVersion(const std::string& name, int nClientVersion, const std::vector<std::string>& comments)
 {

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_WALLET_WALLETUTIL_H
-#define KRYPTOFRANC_WALLET_WALLETUTIL_H
+#ifndef BITCOIN_WALLET_WALLETUTIL_H
+#define BITCOIN_WALLET_WALLETUTIL_H
 
 #include <fs.h>
 
@@ -35,4 +35,4 @@ public:
     bool Exists() const;
 };
 
-#endif // KRYPTOFRANC_WALLET_WALLETUTIL_H
+#endif // BITCOIN_WALLET_WALLETUTIL_H

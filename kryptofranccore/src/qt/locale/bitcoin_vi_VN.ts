@@ -62,12 +62,12 @@
         <translation>Địa chỉ nhận</translation>
     </message>
     <message>
-        <source>These are your kryptoFranc addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Đây là các địa chỉ kryptoFranc để gửi bạn gửi tiền. Trước khi gửi bạn nên kiểm tra lại số tiền bạn muốn gửi và địa chỉ kryptofranc của người nhận.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Đây là các địa chỉ Bitcoin để gửi bạn gửi tiền. Trước khi gửi bạn nên kiểm tra lại số tiền bạn muốn gửi và địa chỉ bitcoin của người nhận.</translation>
     </message>
     <message>
-        <source>These are your kryptoFranc addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Đây là các địa chỉ kryptoFranc để bạn nhận tiền. Với mỗi giao dịch, bạn nên dùng một địa chỉ kryptoFranc mới để nhận tiền.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Đây là các địa chỉ Bitcoin để bạn nhận tiền. Với mỗi giao dịch, bạn nên dùng một địa chỉ Bitcoin mới để nhận tiền.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -225,7 +225,7 @@ Ví của bạn chưa được mã hóa.</translation>
     </message>
 </context>
 <context>
-    <name>kryptoFrancGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Chứ ký &amp; Tin nhắn...</translation>
@@ -319,8 +319,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a kryptoFranc address</source>
-        <translation>Gửi coins đến tài khoản kryptoFranc</translation>
+        <source>Send coins to a Bitcoin address</source>
+        <translation>Gửi coins đến tài khoản Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -343,8 +343,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
-        <source>kryptoFranc</source>
-        <translation>kryptoFranc</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -367,12 +367,12 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your kryptoFranc addresses to prove you own them</source>
-        <translation>Dùng địa chỉ kryptoFranc của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <translation>Dùng địa chỉ Bitcoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified kryptoFranc addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ kryptoFranc xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Bitcoin xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,8 +391,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and kryptofranc: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ kryptoFranc: URLs)</translation>
+        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Bitcoin: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -403,16 +403,16 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a kryptofranc: URI or payment request</source>
-        <translation>Mở kryptofranc:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a bitcoin: URI or payment request</source>
+        <translation>Mở bitcoin:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>7Tùy chọn dòng lệnh</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to kryptoFranc network</source>
-        <translation><numerusform>%n liên kết hoạt động với mạng lưới kryptoFranc</numerusform></translation>
+        <source>%n active connection(s) to Bitcoin network</source>
+        <translation><numerusform>%n liên kết hoạt động với mạng lưới Bitcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -455,8 +455,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Đã cập nhật</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible kryptoFranc command-line options</source>
-        <translation>Hiển thị tin nhắn trợ giúp %1 để có được danh sách với các tùy chọn dòng lệnh kryptoFranc.</translation>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Hiển thị tin nhắn trợ giúp %1 để có được danh sách với các tùy chọn dòng lệnh Bitcoin.</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
@@ -620,8 +620,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Sử dụng vị trí dữ liệu mặc định</translation>
     </message>
     <message>
-        <source>kryptoFranc</source>
-        <translation>kryptoFranc</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -669,8 +669,8 @@ Ví của bạn chưa được mã hóa.</translation>
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the kryptoFranc network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ kryptoFranc thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ Bitcoin thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1180,10 +1180,10 @@ Ví của bạn chưa được mã hóa.</translation>
     </message>
     </context>
 <context>
-    <name>kryptofranc-core</name>
+    <name>bitcoin-core</name>
     <message>
-        <source>kryptoFranc Core</source>
-        <translation>kryptoFranc Core</translation>
+        <source>Bitcoin Core</source>
+        <translation>Bitcoin Core</translation>
     </message>
     <message>
         <source>Information</source>

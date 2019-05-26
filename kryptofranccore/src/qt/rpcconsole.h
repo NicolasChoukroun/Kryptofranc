@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_QT_RPCCONSOLE_H
-#define KRYPTOFRANC_QT_RPCCONSOLE_H
+#ifndef BITCOIN_QT_RPCCONSOLE_H
+#define BITCOIN_QT_RPCCONSOLE_H
 
 #include <qt/guiutil.h>
 #include <qt/peertablemodel.h>
@@ -32,7 +32,7 @@ class QMenu;
 class QItemSelection;
 QT_END_NAMESPACE
 
-/** Local kryptoFranc RPC console. */
+/** Local Bitcoin RPC console. */
 class RPCConsole: public QWidget
 {
     Q_OBJECT
@@ -170,4 +170,4 @@ private:
     void updateNetworkState();
 };
 
-#endif // KRYPTOFRANC_QT_RPCCONSOLE_H
+#endif // BITCOIN_QT_RPCCONSOLE_H

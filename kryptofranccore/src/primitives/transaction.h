@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_PRIMITIVES_TRANSACTION_H
-#define KRYPTOFRANC_PRIMITIVES_TRANSACTION_H
+#ifndef BITCOIN_PRIMITIVES_TRANSACTION_H
+#define BITCOIN_PRIMITIVES_TRANSACTION_H
 
 #include <stdint.h>
 #include <amount.h>
@@ -407,4 +405,4 @@ typedef std::shared_ptr<const CTransaction> CTransactionRef;
 static inline CTransactionRef MakeTransactionRef() { return std::make_shared<const CTransaction>(); }
 template <typename Tx> static inline CTransactionRef MakeTransactionRef(Tx&& txIn) { return std::make_shared<const CTransaction>(std::forward<Tx>(txIn)); }
 
-#endif // KRYPTOFRANC_PRIMITIVES_TRANSACTION_H
+#endif // BITCOIN_PRIMITIVES_TRANSACTION_H

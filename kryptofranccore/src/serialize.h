@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_SERIALIZE_H
-#define KRYPTOFRANC_SERIALIZE_H
+#ifndef BITCOIN_SERIALIZE_H
+#define BITCOIN_SERIALIZE_H
 
 #include <compat/endian.h>
 
@@ -993,4 +991,4 @@ size_t GetSerializeSizeMany(int nVersion, const T&... t)
     return sc.size();
 }
 
-#endif // KRYPTOFRANC_SERIALIZE_H
+#endif // BITCOIN_SERIALIZE_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_BLOOM_H
-#define KRYPTOFRANC_BLOOM_H
+#ifndef BITCOIN_BLOOM_H
+#define BITCOIN_BLOOM_H
 
 #include <serialize.h>
 
@@ -136,4 +136,4 @@ private:
     int nHashFuncs;
 };
 
-#endif // KRYPTOFRANC_BLOOM_H
+#endif // BITCOIN_BLOOM_H

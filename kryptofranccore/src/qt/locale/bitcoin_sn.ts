@@ -64,7 +64,7 @@
     </message>
 </context>
 <context>
-    <name>kryptoFrancGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>E&amp;xit</source>
         <translation>Buda</translation>
@@ -90,8 +90,8 @@
         <translation>Vhura &amp;URI</translation>
     </message>
     <message>
-        <source>kryptoFranc</source>
-        <translation>kryptoFranc</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -153,8 +153,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>kryptoFranc</source>
-        <translation>kryptoFranc</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     </context>
 <context>
@@ -182,8 +182,8 @@
         <translation>Marii </translation>
     </message>
     <message>
-        <source>Enter a kryptoFranc address (e.g. %1)</source>
-        <translation>Nyora kero ye kryptoFranc (sekuti %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Nyora kero ye Bitcoin (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -345,7 +345,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>kryptofranc-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>Information</source>
         <translation>Ruzivo</translation>

@@ -27,7 +27,7 @@ BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 LIBBITCOIN_SERVER=libbitcoin_server.a
 LIBBITCOIN_COMMON=libbitcoin_common.a
 LIBBITCOIN_CONSENSUS=libbitcoin_consensus.a
-LIBBITCOIN_CLI=libkyf_cli.a
+LIBBITCOIN_CLI=libbitcoin_cli.a
 LIBBITCOIN_UTIL=libbitcoin_util.a
 LIBBITCOIN_CRYPTO_BASE=crypto/libbitcoin_crypto_base.a
 LIBBITCOINQT=qt/libbitcoinqt.a
@@ -40,8 +40,8 @@ if BUILD_BITCOIN_LIBS
 LIBBITCOINCONSENSUS=libbitcoinconsensus.la
 endif
 if ENABLE_WALLET
-LIBBITCOIN_WALLET=libkyf_wallet.a
-LIBBITCOIN_WALLET_TOOL=libkyf_wallet_tool.a
+LIBBITCOIN_WALLET=libbitcoin_wallet.a
+LIBBITCOIN_WALLET_TOOL=libbitcoin_wallet_tool.a
 endif
 
 LIBBITCOIN_CRYPTO= $(LIBBITCOIN_CRYPTO_BASE)
@@ -86,14 +86,14 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += kyf-cli
+  bin_PROGRAMS += bitcoin-cli
 endif
 if BUILD_BITCOIN_TX
-  bin_PROGRAMS += kyf-tx
+  bin_PROGRAMS += bitcoin-tx
 endif
 if ENABLE_WALLET
 if BUILD_BITCOIN_WALLET
-  bin_PROGRAMS += kyf-wallet
+  bin_PROGRAMS += bitcoin-wallet
 endif
 endif
 
@@ -304,9 +304,9 @@ endif
 
 # wallet: shared between bitcoind and bitcoin-qt, but only linked
 # when wallet enabled
-libkyf_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkyf_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkyf_wallet_a_SOURCES = \
+libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_wallet_a_SOURCES = \
   interfaces/wallet.cpp \
   wallet/coincontrol.cpp \
   wallet/crypter.cpp \
@@ -323,9 +323,9 @@ libkyf_wallet_a_SOURCES = \
   wallet/coinselection.cpp \
   $(BITCOIN_CORE_H)
 
-libkyf_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkyf_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkyf_wallet_tool_a_SOURCES = \
+libbitcoin_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbitcoin_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_wallet_tool_a_SOURCES = \
   wallet/wallettool.cpp \
   $(BITCOIN_CORE_H)
 
@@ -471,10 +471,10 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between kyf-cli and bitcoin-qt
-libkyf_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libkyf_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libkyf_cli_a_SOURCES = \
+# cli: shared between bitcoin-cli and bitcoin-qt
+libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbitcoin_cli_a_SOURCES = \
   rpc/client.cpp \
   $(BITCOIN_CORE_H)
 
@@ -482,16 +482,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-kyfd_SOURCES = kyfd.cpp
-kyfd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-kyfd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kyfd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bitcoind_SOURCES = bitcoind.cpp
+bitcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+bitcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyfd_SOURCES += kyfd-res.rc
+bitcoind_SOURCES += bitcoind-res.rc
 endif
 
-kyfd_LDADD = \
+bitcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_SERVER) \
@@ -506,38 +506,38 @@ kyfd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-kyfd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+bitcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# kyf-cli binary #
-kyf_cli_SOURCES = kyf-cli.cpp
-kyf_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-kyf_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kyf_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# bitcoin-cli binary #
+bitcoin_cli_SOURCES = bitcoin-cli.cpp
+bitcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+bitcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf_cli_SOURCES += kyf-cli-res.rc
+bitcoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-kyf_cli_LDADD = \
+bitcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-kyf_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+bitcoin_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# kyf-tx binary #
-kyf_tx_SOURCES = kyf-tx.cpp
-kyf_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-kyf_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kyf_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# bitcoin-tx binary #
+bitcoin_tx_SOURCES = bitcoin-tx.cpp
+bitcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+bitcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf_tx_SOURCES += kyf-tx-res.rc
+bitcoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-kyf_tx_LDADD = \
+bitcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -545,20 +545,20 @@ kyf_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-kyf_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+bitcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-# kyf-wallet binary #
-kyf_wallet_SOURCES = kyf-wallet.cpp
-kyf_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-kyf_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-kyf_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# bitcoin-wallet binary #
+bitcoin_wallet_SOURCES = bitcoin-wallet.cpp
+bitcoin_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+bitcoin_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bitcoin_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-kyf_wallet_SOURCES += kyf-wallet-res.rc
+bitcoin_wallet_SOURCES += bitcoin-wallet-res.rc
 endif
 
-kyf_wallet_LDADD = \
+bitcoin_wallet_LDADD = \
   $(LIBBITCOIN_WALLET_TOOL) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_SERVER) \
@@ -571,7 +571,7 @@ kyf_wallet_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-kyf_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+bitcoin_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 #
 
 # bitcoinconsensus library #

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_WALLET_RPCWALLET_H
-#define KRYPTOFRANC_WALLET_RPCWALLET_H
+#ifndef BITCOIN_WALLET_RPCWALLET_H
+#define BITCOIN_WALLET_RPCWALLET_H
 
 #include <string>
 
@@ -30,4 +30,4 @@ bool EnsureWalletIsAvailable(CWallet *, bool avoidException);
 
 UniValue getaddressinfo(const JSONRPCRequest& request);
 UniValue signrawtransactionwithwallet(const JSONRPCRequest& request);
-#endif //KRYPTOFRANC_WALLET_RPCWALLET_H
+#endif //BITCOIN_WALLET_RPCWALLET_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_INDEX_TXINDEX_H
-#define KRYPTOFRANC_INDEX_TXINDEX_H
+#ifndef BITCOIN_INDEX_TXINDEX_H
+#define BITCOIN_INDEX_TXINDEX_H
 
 #include <chain.h>
 #include <index/base.h>
@@ -51,4 +51,4 @@ public:
 /// The global transaction index, used in GetTransaction. May be null.
 extern std::unique_ptr<TxIndex> g_txindex;
 
-#endif // KRYPTOFRANC_INDEX_TXINDEX_H
+#endif // BITCOIN_INDEX_TXINDEX_H

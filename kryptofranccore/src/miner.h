@@ -1,11 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_MINER_H
-#define KRYPTOFRANC_MINER_H
+#ifndef BITCOIN_MINER_H
+#define BITCOIN_MINER_H
 
 #include <optional.h>
 #include <primitives/block.h>
@@ -203,4 +202,4 @@ private:
 void IncrementExtraNonce(CBlock* pblock, const CBlockIndex* pindexPrev, unsigned int& nExtraNonce);
 int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParams, const CBlockIndex* pindexPrev);
 
-#endif // KRYPTOFRANC_MINER_H
+#endif // BITCOIN_MINER_H

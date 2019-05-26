@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_POLICY_RBF_H
-#define KRYPTOFRANC_POLICY_RBF_H
+#ifndef BITCOIN_POLICY_RBF_H
+#define BITCOIN_POLICY_RBF_H
 
 #include <txmempool.h>
 
@@ -25,4 +25,4 @@ bool SignalsOptInRBF(const CTransaction &tx);
 // as the sequence numbers of all in-mempool ancestors.
 RBFTransactionState IsRBFOptIn(const CTransaction &tx, CTxMemPool &pool) EXCLUSIVE_LOCKS_REQUIRED(pool.cs);
 
-#endif // KRYPTOFRANC_POLICY_RBF_H
+#endif // BITCOIN_POLICY_RBF_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_WALLET_TEST_INIT_TEST_FIXTURE_H
-#define KRYPTOFRANC_WALLET_TEST_INIT_TEST_FIXTURE_H
+#ifndef BITCOIN_WALLET_TEST_INIT_TEST_FIXTURE_H
+#define BITCOIN_WALLET_TEST_INIT_TEST_FIXTURE_H
 
 #include <interfaces/chain.h>
 #include <test/test_bitcoin.h>
@@ -21,4 +21,4 @@ struct InitWalletDirTestingSetup: public BasicTestingSetup {
     std::unique_ptr<interfaces::ChainClient> m_chain_client;
 };
 
-#endif // KRYPTOFRANC_WALLET_TEST_INIT_TEST_FIXTURE_H
+#endif // BITCOIN_WALLET_TEST_INIT_TEST_FIXTURE_H

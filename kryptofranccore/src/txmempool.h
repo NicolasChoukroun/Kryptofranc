@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_TXMEMPOOL_H
-#define KRYPTOFRANC_TXMEMPOOL_H
+#ifndef BITCOIN_TXMEMPOOL_H
+#define BITCOIN_TXMEMPOOL_H
 
 #include <memory>
 #include <set>
@@ -517,8 +515,8 @@ public:
      * @par Consistency bug
      *
      * The second guarantee above is not currently enforced, but
-     * https://github.com/kryptofranc/kryptofranc/pull/14193 will fix it. No known code
-     * in kryptofranc currently depends on second guarantee, but it is important to
+     * https://github.com/bitcoin/bitcoin/pull/14193 will fix it. No known code
+     * in bitcoin currently depends on second guarantee, but it is important to
      * fix for third party code that needs be able to frequently poll the
      * mempool without locking `cs_main` and without encountering missing
      * transactions during reorgs.
@@ -853,4 +851,4 @@ struct DisconnectedBlockTransactions {
     }
 };
 
-#endif // KRYPTOFRANC_TXMEMPOOL_H
+#endif // BITCOIN_TXMEMPOOL_H

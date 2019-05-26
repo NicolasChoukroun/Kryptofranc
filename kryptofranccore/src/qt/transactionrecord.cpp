@@ -55,7 +55,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const interface
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 if (wtx.txout_address_is_mine[i])
                 {
-                    // Received by kryptoFranc Address
+                    // Received by Bitcoin Address
                     sub.type = TransactionRecord::RecvWithAddress;
                     sub.address = EncodeDestination(wtx.txout_address[i]);
                 }
@@ -124,7 +124,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const interface
 
                 if (!boost::get<CNoDestination>(&wtx.txout_address[nOut]))
                 {
-                    // Sent to kryptoFranc Address
+                    // Sent to Bitcoin Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = EncodeDestination(wtx.txout_address[nOut]);
                 }

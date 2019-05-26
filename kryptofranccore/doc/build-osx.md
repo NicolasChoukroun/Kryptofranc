@@ -38,17 +38,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](/doc/build-osx.md#disable-wallet-mode)).
 
-Build KryptoFranc
+Build Bitcoin Core
 ------------------------
 
-1. Clone the KryptoFranc source code:
+1. Clone the Bitcoin Core source code:
 
-        git clone https://github.com/kryptofranc/kryptofranc
-        cd kryptofranc
+        git clone https://github.com/bitcoin/bitcoin
+        cd bitcoin
 
-2.  Build KryptoFranc:
+2.  Build Bitcoin Core:
 
-    Configure and build the headless KryptoFranc binaries as well as the GUI (if Qt is found).
+    Configure and build the headless Bitcoin Core binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -66,7 +66,7 @@ Build KryptoFranc
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, KryptoFranc may be compiled in
+When the intention is to run only a P2P node without a wallet, Bitcoin Core may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -78,35 +78,35 @@ Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC 
 Running
 -------
 
-KryptoFranc is now available at `./src/kryptofrancd`
+Bitcoin Core is now available at `./src/bitcoind`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/kryptoFranc"
+    mkdir -p "/Users/${USER}/Library/Application Support/Bitcoin"
 
-    touch "/Users/${USER}/Library/Application Support/kryptoFranc/kryptofranc.conf"
+    touch "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/kryptoFranc/kryptofranc.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
 
-The first time you run kryptofrancd, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
+The first time you run bitcoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/kryptoFranc/debug.log
+    tail -f $HOME/Library/Application\ Support/Bitcoin/debug.log
 
 Other commands:
 -------
 
-    ./src/kryptofrancd -daemon # Starts the kryptofranc daemon.
-    ./src/kryptofranc-cli --help # Outputs a list of command-line options.
-    ./src/kryptofranc-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/bitcoind -daemon # Starts the bitcoin daemon.
+    ./src/bitcoin-cli --help # Outputs a list of command-line options.
+    ./src/bitcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----
 
 * Tested on OS X 10.10 Yosemite through macOS 10.13 High Sierra on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/kryptofranc/kryptofranc/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/bitcoin/bitcoin/issues/7714)
 
 Deterministic macOS DMG Notes
 -----------------------------

@@ -104,16 +104,16 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setFont(fixedPitchFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a kryptoFranc address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a Bitcoin address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
-    widget->setValidator(new kryptoFrancAddressEntryValidator(parent));
-    widget->setCheckValidator(new kryptoFrancAddressCheckValidator(parent));
+    widget->setValidator(new BitcoinAddressEntryValidator(parent));
+    widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
 }
 
-bool parsekryptoFrancURI(const QUrl &uri, SendCoinsRecipient *out)
+bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no kryptofranc: URI
-    if(!uri.isValid() || uri.scheme() != QString("kryptofranc"))
+    // return if URI is not valid or is no bitcoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("bitcoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -149,7 +149,7 @@ bool parsekryptoFrancURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!kryptoFrancUnits::parse(kryptoFrancUnits::KYF, i->second, &rv.amount))
+                if(!BitcoinUnits::parse(BitcoinUnits::BTC, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -167,20 +167,20 @@ bool parsekryptoFrancURI(const QUrl &uri, SendCoinsRecipient *out)
     return true;
 }
 
-bool parsekryptoFrancURI(QString uri, SendCoinsRecipient *out)
+bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
     QUrl uriInstance(uri);
-    return parsekryptoFrancURI(uriInstance, out);
+    return parseBitcoinURI(uriInstance, out);
 }
 
-QString formatkryptoFrancURI(const SendCoinsRecipient &info)
+QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("kryptofranc:%1").arg(info.address);
+    QString ret = QString("bitcoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(kryptoFrancUnits::format(kryptoFrancUnits::KYF, info.amount, false, kryptoFrancUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BTC, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 
@@ -379,9 +379,9 @@ void openDebugLogfile()
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathDebug)));
 }
 
-bool openkryptoFrancConf()
+bool openBitcoinConf()
 {
-    fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", KRYPTOFRANC_CONF_FILENAME));
+    fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", BITCOIN_CONF_FILENAME));
 
     /* Create the file */
     fsbridge::ofstream configFile(pathConfig, std::ios_base::app);
@@ -391,7 +391,7 @@ bool openkryptoFrancConf()
 
     configFile.close();
 
-    /* Open kryptofranc.conf with the associated application */
+    /* Open bitcoin.conf with the associated application */
     return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
 
@@ -539,15 +539,15 @@ fs::path static StartupShortcutPath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "kryptoFranc.lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Bitcoin.lnk";
     if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "kryptoFranc (testnet).lnk";
-    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("kryptoFranc (%s).lnk", chain);
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Bitcoin (testnet).lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Bitcoin (%s).lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for kryptoFranc*.lnk
+    // check for Bitcoin*.lnk
     return fs::exists(StartupShortcutPath());
 }
 
@@ -622,8 +622,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "kryptofranc.desktop";
-    return GetAutostartDir() / strprintf("kryptofranc-%s.lnk", chain);
+        return GetAutostartDir() / "bitcoin.desktop";
+    return GetAutostartDir() / strprintf("bitcoin-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -663,13 +663,13 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = gArgs.GetChainName();
-        // Write a kryptofranc.desktop file to the autostart directory:
+        // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
-            optionFile << "Name=kryptoFranc\n";
+            optionFile << "Name=Bitcoin\n";
         else
-            optionFile << strprintf("Name=kryptoFranc (%s)\n", chain);
+            optionFile << strprintf("Name=Bitcoin (%s)\n", chain);
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", gArgs.GetBoolArg("-testnet", false), gArgs.GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -688,7 +688,7 @@ LSSharedFileListItemRef findStartupItemInList(CFArrayRef listSnapshot, LSSharedF
         return nullptr;
     }
 
-    // loop through the list of startup items and try to find the kryptofranc app
+    // loop through the list of startup items and try to find the bitcoin app
     for(int i = 0; i < CFArrayGetCount(listSnapshot); i++) {
         LSSharedFileListItemRef item = (LSSharedFileListItemRef)CFArrayGetValueAtIndex(listSnapshot, i);
         UInt32 resolutionFlags = kLSSharedFileListNoUserInteraction | kLSSharedFileListDoNotMountVolumes;
@@ -719,15 +719,15 @@ LSSharedFileListItemRef findStartupItemInList(CFArrayRef listSnapshot, LSSharedF
 
 bool GetStartOnSystemStartup()
 {
-    CFURLRef kryptofrancAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
-    if (kryptofrancAppUrl == nullptr) {
+    CFURLRef bitcoinAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
+    if (bitcoinAppUrl == nullptr) {
         return false;
     }
 
     LSSharedFileListRef loginItems = LSSharedFileListCreate(nullptr, kLSSharedFileListSessionLoginItems, nullptr);
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(loginItems, nullptr);
-    bool res = (findStartupItemInList(listSnapshot, loginItems, kryptofrancAppUrl) != nullptr);
-    CFRelease(kryptofrancAppUrl);
+    bool res = (findStartupItemInList(listSnapshot, loginItems, bitcoinAppUrl) != nullptr);
+    CFRelease(bitcoinAppUrl);
     CFRelease(loginItems);
     CFRelease(listSnapshot);
     return res;
@@ -735,25 +735,25 @@ bool GetStartOnSystemStartup()
 
 bool SetStartOnSystemStartup(bool fAutoStart)
 {
-    CFURLRef kryptofrancAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
-    if (kryptofrancAppUrl == nullptr) {
+    CFURLRef bitcoinAppUrl = CFBundleCopyBundleURL(CFBundleGetMainBundle());
+    if (bitcoinAppUrl == nullptr) {
         return false;
     }
 
     LSSharedFileListRef loginItems = LSSharedFileListCreate(nullptr, kLSSharedFileListSessionLoginItems, nullptr);
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(loginItems, nullptr);
-    LSSharedFileListItemRef foundItem = findStartupItemInList(listSnapshot, loginItems, kryptofrancAppUrl);
+    LSSharedFileListItemRef foundItem = findStartupItemInList(listSnapshot, loginItems, bitcoinAppUrl);
 
     if(fAutoStart && !foundItem) {
-        // add kryptofranc app to startup item list
-        LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, nullptr, nullptr, kryptofrancAppUrl, nullptr, nullptr);
+        // add bitcoin app to startup item list
+        LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, nullptr, nullptr, bitcoinAppUrl, nullptr, nullptr);
     }
     else if(!fAutoStart && foundItem) {
         // remove item
         LSSharedFileListItemRemove(loginItems, foundItem);
     }
 
-    CFRelease(kryptofrancAppUrl);
+    CFRelease(bitcoinAppUrl);
     CFRelease(loginItems);
     CFRelease(listSnapshot);
     return true;

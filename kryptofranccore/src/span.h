@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_SPAN_H
-#define KRYPTOFRANC_SPAN_H
+#ifndef BITCOIN_SPAN_H
+#define BITCOIN_SPAN_H
 
 #include <type_traits>
 #include <cstddef>

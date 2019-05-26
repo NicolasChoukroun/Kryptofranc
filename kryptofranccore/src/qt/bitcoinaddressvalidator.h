@@ -2,34 +2,34 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_QT_KRYPTOFRANCADDRESSVALIDATOR_H
-#define KRYPTOFRANC_QT_KRYPTOFRANCADDRESSVALIDATOR_H
+#ifndef BITCOIN_QT_BITCOINADDRESSVALIDATOR_H
+#define BITCOIN_QT_BITCOINADDRESSVALIDATOR_H
 
 #include <QValidator>
 
 /** Base58 entry widget validator, checks for valid characters and
  * removes some whitespace.
  */
-class kryptoFrancAddressEntryValidator : public QValidator
+class BitcoinAddressEntryValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit kryptoFrancAddressEntryValidator(QObject *parent);
+    explicit BitcoinAddressEntryValidator(QObject *parent);
 
     State validate(QString &input, int &pos) const;
 };
 
-/** kryptoFranc address widget validator, checks for a valid kryptofranc address.
+/** Bitcoin address widget validator, checks for a valid bitcoin address.
  */
-class kryptoFrancAddressCheckValidator : public QValidator
+class BitcoinAddressCheckValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit kryptoFrancAddressCheckValidator(QObject *parent);
+    explicit BitcoinAddressCheckValidator(QObject *parent);
 
     State validate(QString &input, int &pos) const;
 };
 
-#endif // KRYPTOFRANC_QT_KRYPTOFRANCADDRESSVALIDATOR_H
+#endif // BITCOIN_QT_BITCOINADDRESSVALIDATOR_H

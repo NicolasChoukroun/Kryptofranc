@@ -1,12 +1,10 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_RPC_SERVER_H
-#define KRYPTOFRANC_RPC_SERVER_H
+#ifndef BITCOIN_RPC_SERVER_H
+#define BITCOIN_RPC_SERVER_H
 
 #include <amount.h>
 #include <rpc/protocol.h>
@@ -140,7 +138,7 @@ public:
 };
 
 /**
- * kryptoFranc RPC command dispatcher.
+ * Bitcoin RPC command dispatcher.
  */
 class CRPCTable
 {
@@ -208,4 +206,4 @@ std::string JSONRPCExecBatch(const JSONRPCRequest& jreq, const UniValue& vReq);
 // Retrieves any serialization flags requested in command line argument
 int RPCSerializationFlags();
 
-#endif // KRYPTOFRANC_RPC_SERVER_H
+#endif // BITCOIN_RPC_SERVER_H

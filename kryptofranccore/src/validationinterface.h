@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_VALIDATIONINTERFACE_H
-#define KRYPTOFRANC_VALIDATIONINTERFACE_H
+#ifndef BITCOIN_VALIDATIONINTERFACE_H
+#define BITCOIN_VALIDATIONINTERFACE_H
 
 #include <primitives/transaction.h> // CTransaction(Ref)
 #include <sync.h>
@@ -193,4 +191,4 @@ public:
 
 CMainSignals& GetMainSignals();
 
-#endif // KRYPTOFRANC_VALIDATIONINTERFACE_H
+#endif // BITCOIN_VALIDATIONINTERFACE_H

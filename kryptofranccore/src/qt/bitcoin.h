@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_QT_KRYPTOFRANC_H
-#define KRYPTOFRANC_QT_KRYPTOFRANC_H
+#ifndef BITCOIN_QT_BITCOIN_H
+#define BITCOIN_QT_BITCOIN_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
@@ -13,7 +13,7 @@
 #include <memory>
 #include <vector>
 
-class kryptoFrancGUI;
+class BitcoinGUI;
 class ClientModel;
 class NetworkStyle;
 class OptionsModel;
@@ -27,14 +27,14 @@ class Handler;
 class Node;
 } // namespace interfaces
 
-/** Class encapsulating KryptoFranc startup and shutdown.
+/** Class encapsulating Bitcoin Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class kryptoFrancCore: public QObject
+class BitcoinCore: public QObject
 {
     Q_OBJECT
 public:
-    explicit kryptoFrancCore(interfaces::Node& node);
+    explicit BitcoinCore(interfaces::Node& node);
 
 public Q_SLOTS:
     void initialize();
@@ -52,13 +52,13 @@ private:
     interfaces::Node& m_node;
 };
 
-/** Main kryptoFranc application object */
-class kryptoFrancApplication: public QApplication
+/** Main Bitcoin application object */
+class BitcoinApplication: public QApplication
 {
     Q_OBJECT
 public:
-    explicit kryptoFrancApplication(interfaces::Node& node, int &argc, char **argv);
-    ~kryptoFrancApplication();
+    explicit BitcoinApplication(interfaces::Node& node, int &argc, char **argv);
+    ~BitcoinApplication();
 
 #ifdef ENABLE_WALLET
     /// Create payment server
@@ -83,7 +83,7 @@ public:
     /// Get process return value
     int getReturnValue() const { return returnValue; }
 
-    /// Get window identifier of QMainWindow (kryptoFrancGUI)
+    /// Get window identifier of QMainWindow (BitcoinGUI)
     WId getMainWinId() const;
 
     /// Setup platform style
@@ -99,14 +99,14 @@ Q_SIGNALS:
     void requestedInitialize();
     void requestedShutdown();
     void splashFinished();
-    void windowShown(kryptoFrancGUI* window);
+    void windowShown(BitcoinGUI* window);
 
 private:
     QThread *coreThread;
     interfaces::Node& m_node;
     OptionsModel *optionsModel;
     ClientModel *clientModel;
-    kryptoFrancGUI *window;
+    BitcoinGUI *window;
     QTimer *pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer{nullptr};
@@ -121,4 +121,4 @@ private:
 
 int GuiMain(int argc, char* argv[]);
 
-#endif // KRYPTOFRANC_QT_KRYPTOFRANC_H
+#endif // BITCOIN_QT_BITCOIN_H

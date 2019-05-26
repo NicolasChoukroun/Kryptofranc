@@ -1,10 +1,9 @@
 // Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_WALLET_PSBTWALLET_H
-#define KRYPTOFRANC_WALLET_PSBTWALLET_H
+#ifndef BITCOIN_WALLET_PSBTWALLET_H
+#define BITCOIN_WALLET_PSBTWALLET_H
 
 #include <node/transaction.h>
 #include <psbt.h>
@@ -32,4 +31,4 @@ NODISCARD TransactionError FillPSBT(const CWallet* pwallet,
               bool sign = true,
               bool bip32derivs = false);
 
-#endif // KRYPTOFRANC_WALLET_PSBTWALLET_H
+#endif // BITCOIN_WALLET_PSBTWALLET_H

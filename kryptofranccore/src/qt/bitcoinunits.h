@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_QT_KRYPTOFRANCUNITS_H
-#define KRYPTOFRANC_QT_KRYPTOFRANCUNITS_H
+#ifndef BITCOIN_QT_BITCOINUNITS_H
+#define BITCOIN_QT_BITCOINUNITS_H
 
 #include <amount.h>
 
@@ -41,24 +41,24 @@
 #define THIN_SP_UTF8 REAL_THIN_SP_UTF8
 #define THIN_SP_HTML HTML_HACK_SP
 
-/** kryptoFranc unit definitions. Encapsulates parsing and formatting
+/** Bitcoin unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class kryptoFrancUnits: public QAbstractListModel
+class BitcoinUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit kryptoFrancUnits(QObject *parent);
+    explicit BitcoinUnits(QObject *parent);
 
-    /** kryptoFranc units.
-      @note Source: https://en.kryptofranc.it/wiki/Units . Please add only sensible ones
+    /** Bitcoin units.
+      @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
     enum Unit
     {
-        KYF,
-        mKYF,
-        uKYF,
+        BTC,
+        mBTC,
+        uBTC,
         SAT
     };
 
@@ -124,8 +124,8 @@ public:
     static CAmount maxMoney();
 
 private:
-    QList<kryptoFrancUnits::Unit> unitlist;
+    QList<BitcoinUnits::Unit> unitlist;
 };
-typedef kryptoFrancUnits::Unit kryptoFrancUnit;
+typedef BitcoinUnits::Unit BitcoinUnit;
 
-#endif // KRYPTOFRANC_QT_KRYPTOFRANCUNITS_H
+#endif // BITCOIN_QT_BITCOINUNITS_H

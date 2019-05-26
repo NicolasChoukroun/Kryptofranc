@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_QT_KRYPTOFRANCAMOUNTFIELD_H
-#define KRYPTOFRANC_QT_KRYPTOFRANCAMOUNTFIELD_H
+#ifndef BITCOIN_QT_BITCOINAMOUNTFIELD_H
+#define BITCOIN_QT_BITCOINAMOUNTFIELD_H
 
 #include <amount.h>
 
@@ -15,18 +15,18 @@ QT_BEGIN_NAMESPACE
 class QValueComboBox;
 QT_END_NAMESPACE
 
-/** Widget for entering kryptofranc amounts.
+/** Widget for entering bitcoin amounts.
   */
-class kryptoFrancAmountField: public QWidget
+class BitcoinAmountField: public QWidget
 {
     Q_OBJECT
 
     // ugly hack: for some unknown reason CAmount (instead of qint64) does not work here as expected
-    // discussion: https://github.com/kryptofranc/kryptofranc/pull/5117
+    // discussion: https://github.com/bitcoin/bitcoin/pull/5117
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY valueChanged USER true)
 
 public:
-    explicit kryptoFrancAmountField(QWidget *parent = nullptr);
+    explicit BitcoinAmountField(QWidget *parent = nullptr);
 
     CAmount value(bool *value=nullptr) const;
     void setValue(const CAmount& value);
@@ -81,4 +81,4 @@ private Q_SLOTS:
 
 };
 
-#endif // KRYPTOFRANC_QT_KRYPTOFRANCAMOUNTFIELD_H
+#endif // BITCOIN_QT_BITCOINAMOUNTFIELD_H

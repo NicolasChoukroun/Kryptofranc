@@ -15,12 +15,12 @@
   - All lower-case letters except for 'l'
 */
 
-kryptoFrancAddressEntryValidator::kryptoFrancAddressEntryValidator(QObject *parent) :
+BitcoinAddressEntryValidator::BitcoinAddressEntryValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State kryptoFrancAddressEntryValidator::validate(QString &input, int &pos) const
+QValidator::State BitcoinAddressEntryValidator::validate(QString &input, int &pos) const
 {
     Q_UNUSED(pos);
 
@@ -80,15 +80,15 @@ QValidator::State kryptoFrancAddressEntryValidator::validate(QString &input, int
     return state;
 }
 
-kryptoFrancAddressCheckValidator::kryptoFrancAddressCheckValidator(QObject *parent) :
+BitcoinAddressCheckValidator::BitcoinAddressCheckValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State kryptoFrancAddressCheckValidator::validate(QString &input, int &pos) const
+QValidator::State BitcoinAddressCheckValidator::validate(QString &input, int &pos) const
 {
     Q_UNUSED(pos);
-    // Validate the passed kryptoFranc address
+    // Validate the passed Bitcoin address
     if (IsValidDestinationString(input.toStdString())) {
         return QValidator::Acceptable;
     }

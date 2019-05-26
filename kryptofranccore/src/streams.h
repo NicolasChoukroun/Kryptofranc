@@ -1,12 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef KRYPTOFRANC_STREAMS_H
-#define KRYPTOFRANC_STREAMS_H
+#ifndef BITCOIN_STREAMS_H
+#define BITCOIN_STREAMS_H
 
 #include <support/allocators/zeroafterfree.h>
 #include <serialize.h>
@@ -856,4 +854,4 @@ public:
     }
 };
 
-#endif // KRYPTOFRANC_STREAMS_H
+#endif // BITCOIN_STREAMS_H
