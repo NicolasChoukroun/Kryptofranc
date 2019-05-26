@@ -821,7 +821,7 @@ void Misbehaving(NodeId pnode, int howmuch, const std::string& message) EXCLUSIV
     if (state == nullptr)
         return;
 
-    printf("Misbehaving: %s\n",message.c_str());
+    state->nMisbehavior += howmuch;
     int banscore = gArgs.GetArg("-banscore", DEFAULT_BANSCORE_THRESHOLD);
     std::string message_prefixed = message.empty() ? "" : (": " + message);
     if (state->nMisbehavior >= banscore && state->nMisbehavior - howmuch < banscore)
