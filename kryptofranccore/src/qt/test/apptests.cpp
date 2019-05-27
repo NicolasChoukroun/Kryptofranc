@@ -51,7 +51,7 @@ void TestRpcCommand(RPCConsole* console)
 }
 } // namespace
 
-//! Entry point for kryptoFrancApplication tests.
+//! Entry point for KryptofrancApplication tests.
 void AppTests::appTests()
 {
 #ifdef Q_OS_MAC
@@ -72,7 +72,7 @@ void AppTests::appTests()
         NetworkStyle::instantiate(QString::fromStdString(Params().NetworkIDString())));
     m_app.setupPlatformStyle();
     m_app.createWindow(style.data());
-    connect(&m_app, &kryptoFrancApplication::windowShown, this, &AppTests::guiTests);
+    connect(&m_app, &KryptofrancApplication::windowShown, this, &AppTests::guiTests);
     expectCallback("guiTests");
     m_app.baseInitialize();
     m_app.requestInitialize();
@@ -85,11 +85,11 @@ void AppTests::appTests()
     UnloadBlockIndex();
 }
 
-//! Entry point for kryptoFrancGUI tests.
-void AppTests::guiTests(kryptoFrancGUI* window)
+//! Entry point for KryptofrancGUI tests.
+void AppTests::guiTests(KryptofrancGUI* window)
 {
     HandleCallback callback{"guiTests", *this};
-    connect(window, &kryptoFrancGUI::consoleShown, this, &AppTests::consoleTests);
+    connect(window, &KryptofrancGUI::consoleShown, this, &AppTests::consoleTests);
     expectCallback("consoleTests");
     QAction* action = window->findChild<QAction*>("openRPCConsoleAction");
     action->activate(QAction::Trigger);

@@ -8,7 +8,7 @@
 #include <QDialog>
 #include <QObject>
 
-class kryptoFrancGUI;
+class KryptofrancGUI;
 
 namespace interfaces {
     class Node;
@@ -46,7 +46,7 @@ class ShutdownWindow : public QWidget
 
 public:
     explicit ShutdownWindow(QWidget *parent=nullptr, Qt::WindowFlags f=Qt::Widget);
-    static QWidget *showShutdownWindow(kryptoFrancGUI *window);
+    static QWidget *showShutdownWindow(KryptofrancGUI *window);
 
 protected:
     void closeEvent(QCloseEvent *event);

@@ -73,8 +73,8 @@ int main(int argc, char *argv[])
 
     // Don't remove this, it's needed to access
     // QApplication:: and QCoreApplication:: in the tests
-    kryptoFrancApplication app(*node, argc, argv);
-    app.setApplicationName("kryptoFranc-Qt-test");
+    KryptofrancApplication app(*node, argc, argv);
+    app.setApplicationName("Kryptofranc-Qt-test");
 
     SSL_library_init();
 

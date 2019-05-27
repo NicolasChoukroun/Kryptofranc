@@ -32,7 +32,7 @@ class QMenu;
 class QItemSelection;
 QT_END_NAMESPACE
 
-/** Local kryptoFranc RPC console. */
+/** Local Kryptofranc RPC console. */
 class RPCConsole: public QWidget
 {
     Q_OBJECT

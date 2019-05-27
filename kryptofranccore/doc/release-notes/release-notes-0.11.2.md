@@ -18,7 +18,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/kryptoFranc-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Kryptofranc-Qt (on Mac) or
 kryptofrancd/kryptofranc-qt (on Linux).
 
 Downgrade warning
@@ -100,7 +100,7 @@ version 0.4.3 or any version from 0.5.2 onward.
 BIP113 mempool-only locktime enforcement using GetMedianTimePast()
 ----------------------------------------------------------------
 
-kryptoFranc transactions currently may specify a locktime indicating when
+Kryptofranc transactions currently may specify a locktime indicating when
 they may be added to a valid block.  Current consensus rules require
 that blocks have a block header time greater than the locktime specified
 in any transaction in that block.

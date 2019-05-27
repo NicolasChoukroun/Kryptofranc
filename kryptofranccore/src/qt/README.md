@@ -1,4 +1,4 @@
-This directory contains the kryptoFrancQT graphical user interface (GUI). It uses the cross-platform framework [Qt](https://www1.qt.io/developers/).
+This directory contains the KryptofrancQT graphical user interface (GUI). It uses the cross-platform framework [Qt](https://www1.qt.io/developers/).
 
 The current precise version for Qt 5 is specified in [qt.mk](/depends/packages/qt.mk).
 
@@ -32,7 +32,7 @@ Tests.
 
 ### kryptofrancgui.(h/cpp)
 
-Represents the main window of the kryptoFranc UI.
+Represents the main window of the Kryptofranc UI.
 
 ### \*model.(h/cpp)
 
@@ -58,7 +58,7 @@ Represents the view to a single wallet.
 
 ### Other .h/cpp files
 
-* UI elements like kryptoFrancAmountField, which inherit from QWidget.
+* UI elements like KryptofrancAmountField, which inherit from QWidget.
 * `kryptofrancstrings.cpp`: automatically generated
 * `kryptofrancunits.(h/cpp)`: KYF / mKYF / etc handling
 * `callback.h`

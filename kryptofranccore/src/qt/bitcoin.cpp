@@ -133,18 +133,18 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-kryptoFrancCore::kryptoFrancCore(interfaces::Node& node) :
+KryptofrancCore::KryptofrancCore(interfaces::Node& node) :
     QObject(), m_node(node)
 {
 }
 
-void kryptoFrancCore::handleRunawayException(const std::exception *e)
+void KryptofrancCore::handleRunawayException(const std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
     Q_EMIT runawayException(QString::fromStdString(m_node.getWarnings("gui")));
 }
 
-void kryptoFrancCore::initialize()
+void KryptofrancCore::initialize()
 {
     try
     {
@@ -158,7 +158,7 @@ void kryptoFrancCore::initialize()
     }
 }
 
-void kryptoFrancCore::shutdown()
+void KryptofrancCore::shutdown()
 {
     try
     {
@@ -173,7 +173,7 @@ void kryptoFrancCore::shutdown()
     }
 }
 
-kryptoFrancApplication::kryptoFrancApplication(interfaces::Node& node, int &argc, char **argv):
+KryptofrancApplication::KryptofrancApplication(interfaces::Node& node, int &argc, char **argv):
     QApplication(argc, argv),
     coreThread(nullptr),
     m_node(node),
@@ -187,20 +187,20 @@ kryptoFrancApplication::kryptoFrancApplication(interfaces::Node& node, int &argc
     setQuitOnLastWindowClosed(false);
 }
 
-void kryptoFrancApplication::setupPlatformStyle()
+void KryptofrancApplication::setupPlatformStyle()
 {
     // UI per-platform customization
-    // This must be done inside the kryptoFrancApplication constructor, or after it, because
+    // This must be done inside the KryptofrancApplication constructor, or after it, because
     // PlatformStyle::instantiate requires a QApplication
     std::string platformName;
-    platformName = gArgs.GetArg("-uiplatform", kryptoFrancGUI::DEFAULT_UIPLATFORM);
+    platformName = gArgs.GetArg("-uiplatform", KryptofrancGUI::DEFAULT_UIPLATFORM);
     platformStyle = PlatformStyle::instantiate(QString::fromStdString(platformName));
     if (!platformStyle) // Fall back to "other" if specified name not found
         platformStyle = PlatformStyle::instantiate("other");
     assert(platformStyle);
 }
 
-kryptoFrancApplication::~kryptoFrancApplication()
+KryptofrancApplication::~KryptofrancApplication()
 {
     if(coreThread)
     {
@@ -225,61 +225,61 @@ kryptoFrancApplication::~kryptoFrancApplication()
 }
 
 #ifdef ENABLE_WALLET
-void kryptoFrancApplication::createPaymentServer()
+void KryptofrancApplication::createPaymentServer()
 {
     paymentServer = new PaymentServer(this);
 }
 #endif
 
-void kryptoFrancApplication::createOptionsModel(bool resetSettings)
+void KryptofrancApplication::createOptionsModel(bool resetSettings)
 {
     optionsModel = new OptionsModel(m_node, nullptr, resetSettings);
 }
 
-void kryptoFrancApplication::createWindow(const NetworkStyle *networkStyle)
+void KryptofrancApplication::createWindow(const NetworkStyle *networkStyle)
 {
-    window = new kryptoFrancGUI(m_node, platformStyle, networkStyle, nullptr);
+    window = new KryptofrancGUI(m_node, platformStyle, networkStyle, nullptr);
 
     pollShutdownTimer = new QTimer(window);
-    connect(pollShutdownTimer, &QTimer::timeout, window, &kryptoFrancGUI::detectShutdown);
+    connect(pollShutdownTimer, &QTimer::timeout, window, &KryptofrancGUI::detectShutdown);
 }
 
-void kryptoFrancApplication::createSplashScreen(const NetworkStyle *networkStyle)
+void KryptofrancApplication::createSplashScreen(const NetworkStyle *networkStyle)
 {
     SplashScreen *splash = new SplashScreen(m_node, nullptr, networkStyle);
     // We don't hold a direct pointer to the splash screen after creation, but the splash
     // screen will take care of deleting itself when finish() happens.
     splash->show();
-    connect(this, &kryptoFrancApplication::splashFinished, splash, &SplashScreen::finish);
-    connect(this, &kryptoFrancApplication::requestedShutdown, splash, &QWidget::close);
+    connect(this, &KryptofrancApplication::splashFinished, splash, &SplashScreen::finish);
+    connect(this, &KryptofrancApplication::requestedShutdown, splash, &QWidget::close);
 }
 
-bool kryptoFrancApplication::baseInitialize()
+bool KryptofrancApplication::baseInitialize()
 {
     return m_node.baseInitialize();
 }
 
-void kryptoFrancApplication::startThread()
+void KryptofrancApplication::startThread()
 {
     if(coreThread)
         return;
     coreThread = new QThread(this);
-    kryptoFrancCore *executor = new kryptoFrancCore(m_node);
+    KryptofrancCore *executor = new KryptofrancCore(m_node);
     executor->moveToThread(coreThread);
 
     /*  communication to and from thread */
-    connect(executor, &kryptoFrancCore::initializeResult, this, &kryptoFrancApplication::initializeResult);
-    connect(executor, &kryptoFrancCore::shutdownResult, this, &kryptoFrancApplication::shutdownResult);
-    connect(executor, &kryptoFrancCore::runawayException, this, &kryptoFrancApplication::handleRunawayException);
-    connect(this, &kryptoFrancApplication::requestedInitialize, executor, &kryptoFrancCore::initialize);
-    connect(this, &kryptoFrancApplication::requestedShutdown, executor, &kryptoFrancCore::shutdown);
+    connect(executor, &KryptofrancCore::initializeResult, this, &KryptofrancApplication::initializeResult);
+    connect(executor, &KryptofrancCore::shutdownResult, this, &KryptofrancApplication::shutdownResult);
+    connect(executor, &KryptofrancCore::runawayException, this, &KryptofrancApplication::handleRunawayException);
+    connect(this, &KryptofrancApplication::requestedInitialize, executor, &KryptofrancCore::initialize);
+    connect(this, &KryptofrancApplication::requestedShutdown, executor, &KryptofrancCore::shutdown);
     /*  make sure executor object is deleted in its own thread */
     connect(coreThread, &QThread::finished, executor, &QObject::deleteLater);
 
     coreThread->start();
 }
 
-void kryptoFrancApplication::parameterSetup()
+void KryptofrancApplication::parameterSetup()
 {
     // Default printtoconsole to false for the GUI. GUI programs should not
     // print to the console unnecessarily.
@@ -289,14 +289,14 @@ void kryptoFrancApplication::parameterSetup()
     m_node.initParameterInteraction();
 }
 
-void kryptoFrancApplication::requestInitialize()
+void KryptofrancApplication::requestInitialize()
 {
     qDebug() << __func__ << ": Requesting initialize";
     startThread();
     Q_EMIT requestedInitialize();
 }
 
-void kryptoFrancApplication::requestShutdown()
+void KryptofrancApplication::requestShutdown()
 {
     // Show a simple window indicating shutdown status
     // Do this first as some of the steps may take some time below,
@@ -324,7 +324,7 @@ void kryptoFrancApplication::requestShutdown()
     Q_EMIT requestedShutdown();
 }
 
-void kryptoFrancApplication::initializeResult(bool success)
+void KryptofrancApplication::initializeResult(bool success)
 {
     qDebug() << __func__ << ": Initialization result: " << success;
     // Set exit result.
@@ -367,8 +367,8 @@ void kryptoFrancApplication::initializeResult(bool success)
         // Now that initialization/startup is done, process any command-line
         // kryptofranc: URIs or payment requests:
         if (paymentServer) {
-            connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &kryptoFrancGUI::handlePaymentRequest);
-            connect(window, &kryptoFrancGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
+            connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &KryptofrancGUI::handlePaymentRequest);
+            connect(window, &KryptofrancGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
             connect(paymentServer, &PaymentServer::message, [this](const QString& title, const QString& message, unsigned int style) {
                 window->message(title, message, style);
             });
@@ -382,18 +382,18 @@ void kryptoFrancApplication::initializeResult(bool success)
     }
 }
 
-void kryptoFrancApplication::shutdownResult()
+void KryptofrancApplication::shutdownResult()
 {
     quit(); // Exit second main loop invocation after shutdown finished
 }
 
-void kryptoFrancApplication::handleRunawayException(const QString &message)
+void KryptofrancApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(nullptr, "Runaway exception", kryptofrancGUI::tr("A fatal error occurred. kryptoFranc can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(nullptr, "Runaway exception", KryptofrancGUI::tr("A fatal error occurred. Kryptofranc can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 
-WId kryptoFrancApplication::getMainWinId() const
+WId KryptofrancApplication::getMainWinId() const
 {
     if (!window)
         return 0;
@@ -412,7 +412,7 @@ static void SetupUIArgs()
     gArgs.AddArg("-resetguisettings", "Reset all settings changed in the GUI", false, OptionsCategory::GUI);
     gArgs.AddArg("-rootcertificates=<file>", "Set SSL root certificates for payment request (default: -system-)", false, OptionsCategory::GUI);
     gArgs.AddArg("-splash", strprintf("Show splash screen on startup (default: %u)", DEFAULT_SPLASHSCREEN), false, OptionsCategory::GUI);
-    gArgs.AddArg("-uiplatform", strprintf("Select platform to customize UI for (one of windows, macosx, other; default: %s)", kryptoFrancGUI::DEFAULT_UIPLATFORM), true, OptionsCategory::GUI);
+    gArgs.AddArg("-uiplatform", strprintf("Select platform to customize UI for (one of windows, macosx, other; default: %s)", KryptofrancGUI::DEFAULT_UIPLATFORM), true, OptionsCategory::GUI);
 }
 
 #ifndef KRYPTOFRANC_QT_TEST
@@ -437,7 +437,7 @@ int GuiMain(int argc, char* argv[])
     Q_INIT_RESOURCE(bitcoin);
     Q_INIT_RESOURCE(bitcoin_locale);
 
-    kryptoFrancApplication app(*node, argc, argv);
+    KryptofrancApplication app(*node, argc, argv);
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
 #if QT_VERSION >= 0x050600

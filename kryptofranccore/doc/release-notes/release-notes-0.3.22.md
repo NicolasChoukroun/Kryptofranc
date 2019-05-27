@@ -1,4 +1,4 @@
-Download URL: https://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.3.22/
+Download URL: https://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.3.22/
 
 This is largely a bugfix and TX fee schedule release.  We also hope to make 0.3.23 a quick release, to fix problems that the network has seen due to explosive growth in the past week.
 

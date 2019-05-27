@@ -10,24 +10,24 @@
 /** Base58 entry widget validator, checks for valid characters and
  * removes some whitespace.
  */
-class kryptoFrancAddressEntryValidator : public QValidator
+class KryptofrancAddressEntryValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit kryptoFrancAddressEntryValidator(QObject *parent);
+    explicit KryptofrancAddressEntryValidator(QObject *parent);
 
     State validate(QString &input, int &pos) const;
 };
 
-/** kryptoFranc address widget validator, checks for a valid kryptofranc address.
+/** Kryptofranc address widget validator, checks for a valid kryptofranc address.
  */
-class kryptoFrancAddressCheckValidator : public QValidator
+class KryptofrancAddressCheckValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit kryptoFrancAddressCheckValidator(QObject *parent);
+    explicit KryptofrancAddressCheckValidator(QObject *parent);
 
     State validate(QString &input, int &pos) const;
 };

@@ -35,7 +35,7 @@
 #include <memory>
 
 #if defined(NDEBUG)
-# error "kryptoFranc cannot be compiled without assertions."
+# error "Kryptofranc cannot be compiled without assertions."
 #endif
 
 /** Expiration time for orphan transactions in seconds */

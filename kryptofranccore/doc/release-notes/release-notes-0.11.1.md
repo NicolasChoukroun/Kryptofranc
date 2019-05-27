@@ -17,7 +17,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/kryptoFranc-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Kryptofranc-Qt (on Mac) or
 kryptofrancd/kryptofranc-qt (on Linux).
 
 Downgrade warning
@@ -85,15 +85,15 @@ much more common since BIP62 was initially written.
 
 KryptoFranc has produced compatible signatures since a28fb70e in
 September 2013, but this didn't make it into a release until 0.9
-in March 2014; kryptoFrancj has done so for a similar span of time.
-kryptoFrancjs and electrum have been more recently updated.
+in March 2014; Kryptofrancj has done so for a similar span of time.
+Kryptofrancjs and electrum have been more recently updated.
 
 This does not replace the need for BIP62 or similar, as miners can
 still cooperate to break transactions.  Nor does it replace the
 need for wallet software to handle malleability sanely[1]. This
 only eliminates the cheap and irritating DOS attack.
 
-[1] On the Malleability of kryptoFranc Transactions
+[1] On the Malleability of Kryptofranc Transactions
 Marcin Andrychowicz, Stefan Dziembowski, Daniel Malinowski, Łukasz Mazurek
 http://fc15.ifca.ai/preproceedings/kryptofranc/paper_9.pdf
 

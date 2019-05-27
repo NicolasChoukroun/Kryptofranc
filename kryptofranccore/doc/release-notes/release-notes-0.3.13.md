@@ -12,7 +12,7 @@ Gavin Andresen:
 * Clean shutdown on SIGTERM on Linux.
 
 Download:
-http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.3.13/
+http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.3.13/
 
 (Thanks Laszlo for the Mac OSX build!)
 

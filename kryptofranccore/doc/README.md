@@ -3,7 +3,7 @@ KryptoFranc
 
 Setup
 ---------------------
-KryptoFranc is the original kryptoFranc client and it builds the backbone of the network. It downloads and, by default, stores the entire history of kryptoFranc transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+KryptoFranc is the original Kryptofranc client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Kryptofranc transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 To download KryptoFranc, visit [kryptofranccore.org](https://kryptofranccore.org/en/download/).
 
@@ -28,10 +28,10 @@ Drag KryptoFranc to your applications folder, and then run KryptoFranc.
 
 ### Need Help?
 
-* See the documentation at the [kryptoFranc Wiki](https://en.kryptofranc.it/wiki/Main_Page)
+* See the documentation at the [Kryptofranc Wiki](https://en.kryptofranc.it/wiki/Main_Page)
 for help and more information.
 * Ask for help on [#kryptofranc](http://webchat.freenode.net?channels=kryptofranc) on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net?channels=kryptofranc).
-* Ask for help on the [kryptoFrancTalk](https://kryptofranctalk.org/) forums, in the [Technical Support board](https://kryptofranctalk.org/index.php?board=4.0).
+* Ask for help on the [KryptofrancTalk](https://kryptofranctalk.org/) forums, in the [Technical Support board](https://kryptofranctalk.org/index.php?board=4.0).
 
 Building
 ---------------------
@@ -48,7 +48,7 @@ The following are developer notes on how to build Bitcoin Core on your native pl
 
 Development
 ---------------------
-The kryptoFranc repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Kryptofranc repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Productivity Notes](productivity.md)
@@ -66,9 +66,9 @@ The kryptoFranc repo's [root README](/README.md) contains relevant information o
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [kryptoFrancTalk](https://kryptofranctalk.org/) forums, in the [Development & Technical Discussion board](https://kryptofranctalk.org/index.php?board=6.0).
+* Discuss on the [KryptofrancTalk](https://kryptofranctalk.org/) forums, in the [Development & Technical Discussion board](https://kryptofranctalk.org/index.php?board=6.0).
 * Discuss project-specific development on #kryptofranc-core-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=kryptofranc-core-dev).
-* Discuss general kryptoFranc development on #kryptofranc-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=kryptofranc-dev).
+* Discuss general Kryptofranc development on #kryptofranc-dev on Freenode. If you don't have an IRC client, use [webchat here](http://webchat.freenode.net/?channels=kryptofranc-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

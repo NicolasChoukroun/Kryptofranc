@@ -104,13 +104,13 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setFont(fixedPitchFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a kryptoFranc address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a Kryptofranc address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
-    widget->setValidator(new kryptoFrancAddressEntryValidator(parent));
-    widget->setCheckValidator(new kryptoFrancAddressCheckValidator(parent));
+    widget->setValidator(new KryptofrancAddressEntryValidator(parent));
+    widget->setCheckValidator(new KryptofrancAddressCheckValidator(parent));
 }
 
-bool parsekryptoFrancURI(const QUrl &uri, SendCoinsRecipient *out)
+bool parseKryptofrancURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no kryptofranc: URI
     if(!uri.isValid() || uri.scheme() != QString("kryptofranc"))
@@ -149,7 +149,7 @@ bool parsekryptoFrancURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!kryptoFrancUnits::parse(kryptoFrancUnits::KYF, i->second, &rv.amount))
+                if(!KryptofrancUnits::parse(KryptofrancUnits::KYF, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -167,20 +167,20 @@ bool parsekryptoFrancURI(const QUrl &uri, SendCoinsRecipient *out)
     return true;
 }
 
-bool parsekryptoFrancURI(QString uri, SendCoinsRecipient *out)
+bool parseKryptofrancURI(QString uri, SendCoinsRecipient *out)
 {
     QUrl uriInstance(uri);
-    return parsekryptoFrancURI(uriInstance, out);
+    return parseKryptofrancURI(uriInstance, out);
 }
 
-QString formatkryptoFrancURI(const SendCoinsRecipient &info)
+QString formatKryptofrancURI(const SendCoinsRecipient &info)
 {
     QString ret = QString("kryptofranc:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(kryptoFrancUnits::format(kryptoFrancUnits::KYF, info.amount, false, kryptoFrancUnits::separatorNever));
+        ret += QString("?amount=%1").arg(KryptofrancUnits::format(KryptofrancUnits::KYF, info.amount, false, KryptofrancUnits::separatorNever));
         paramCount++;
     }
 
@@ -379,7 +379,7 @@ void openDebugLogfile()
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathDebug)));
 }
 
-bool openkryptoFrancConf()
+bool openKryptofrancConf()
 {
     fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", KRYPTOFRANC_CONF_FILENAME));
 
@@ -539,15 +539,15 @@ fs::path static StartupShortcutPath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "kryptoFranc.lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Kryptofranc.lnk";
     if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "kryptoFranc (testnet).lnk";
-    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("kryptoFranc (%s).lnk", chain);
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Kryptofranc (testnet).lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Kryptofranc (%s).lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for kryptoFranc*.lnk
+    // check for Kryptofranc*.lnk
     return fs::exists(StartupShortcutPath());
 }
 
@@ -667,9 +667,9 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
-            optionFile << "Name=kryptoFranc\n";
+            optionFile << "Name=Kryptofranc\n";
         else
-            optionFile << strprintf("Name=kryptoFranc (%s)\n", chain);
+            optionFile << strprintf("Name=Kryptofranc (%s)\n", chain);
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", gArgs.GetBoolArg("-testnet", false), gArgs.GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

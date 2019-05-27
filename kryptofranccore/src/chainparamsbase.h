@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between kryptofranc-cli and kryptofrancd)
- * of a given instance of the kryptoFranc system.
+ * of a given instance of the Kryptofranc system.
  */
 class CBaseChainParams
 {

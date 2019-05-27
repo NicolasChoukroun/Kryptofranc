@@ -5,11 +5,11 @@ KryptoFranc integration/staging tree
 
 https://kryptofranccore.org
 
-What is kryptoFranc?
+What is Kryptofranc?
 ----------------
 
-kryptoFranc is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. kryptoFranc uses peer-to-peer technology to operate
+Kryptofranc is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Kryptofranc uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. KryptoFranc is the name of open source
 software which enables the use of this currency.

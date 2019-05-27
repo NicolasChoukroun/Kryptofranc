@@ -1,5 +1,5 @@
-kryptoFranc version 0.6.3 is now available for download at:
-  http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.6.3/
+Kryptofranc version 0.6.3 is now available for download at:
+  http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.6.3/
 
 This is a bug-fix release, with no new features.
 
@@ -20,10 +20,10 @@ Fixed an obscure bug that could cause the kryptofranc process to get
 stuck on an invalid block-chain, if the invalid chain was
 hundreds of blocks long.
 
-kryptoFranc-Qt no longer automatically selects the first address
+Kryptofranc-Qt no longer automatically selects the first address
 in the address book (Issue #1384).
 
-Fixed minimize-to-dock behavior of kryptoFranc-Qt on the Mac.
+Fixed minimize-to-dock behavior of Kryptofranc-Qt on the Mac.
 
 Added a block checkpoint at block 185,333 to speed up initial
 blockchain download.

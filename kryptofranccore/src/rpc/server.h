@@ -140,7 +140,7 @@ public:
 };
 
 /**
- * kryptoFranc RPC command dispatcher.
+ * Kryptofranc RPC command dispatcher.
  */
 class CRPCTable
 {

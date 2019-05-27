@@ -8,7 +8,7 @@
 #include <QFrame>
 #include <QMap>
 
-class kryptoFrancGUI;
+class KryptofrancGUI;
 class ClientModel;
 class PlatformStyle;
 class SendCoinsRecipient;
@@ -21,9 +21,9 @@ QT_END_NAMESPACE
 
 /**
  * A container for embedding all wallet-related
- * controls into kryptoFrancGUI. The purpose of this class is to allow future
+ * controls into KryptofrancGUI. The purpose of this class is to allow future
  * refinements of the wallet controls with minimal need for further
- * modifications to kryptoFrancGUI, thus greatly simplifying merges while
+ * modifications to KryptofrancGUI, thus greatly simplifying merges while
  * reducing the risk of breaking top-level stuff.
  */
 class WalletFrame : public QFrame
@@ -31,7 +31,7 @@ class WalletFrame : public QFrame
     Q_OBJECT
 
 public:
-    explicit WalletFrame(const PlatformStyle *platformStyle, kryptoFrancGUI *_gui = nullptr);
+    explicit WalletFrame(const PlatformStyle *platformStyle, KryptofrancGUI *_gui = nullptr);
     ~WalletFrame();
 
     void setClientModel(ClientModel *clientModel);
@@ -51,7 +51,7 @@ Q_SIGNALS:
 
 private:
     QStackedWidget *walletStack;
-    kryptoFrancGUI *gui;
+    KryptofrancGUI *gui;
     ClientModel *clientModel;
     QMap<WalletModel*, WalletView*> mapWalletViews;
 

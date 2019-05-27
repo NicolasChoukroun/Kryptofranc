@@ -1,5 +1,5 @@
-kryptoFranc-Qt version 0.8.3 is now available from:
-  http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.8.3/
+Kryptofranc-Qt version 0.8.3 is now available from:
+  http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.8.3/
 
 This is a maintenance release to fix a denial-of-service attack that
 can cause nodes to crash.

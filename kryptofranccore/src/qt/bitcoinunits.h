@@ -41,17 +41,17 @@
 #define THIN_SP_UTF8 REAL_THIN_SP_UTF8
 #define THIN_SP_HTML HTML_HACK_SP
 
-/** kryptoFranc unit definitions. Encapsulates parsing and formatting
+/** Kryptofranc unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class kryptoFrancUnits: public QAbstractListModel
+class KryptofrancUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit kryptoFrancUnits(QObject *parent);
+    explicit KryptofrancUnits(QObject *parent);
 
-    /** kryptoFranc units.
+    /** Kryptofranc units.
       @note Source: https://en.kryptofranc.it/wiki/Units . Please add only sensible ones
      */
     enum Unit
@@ -124,8 +124,8 @@ public:
     static CAmount maxMoney();
 
 private:
-    QList<kryptoFrancUnits::Unit> unitlist;
+    QList<KryptofrancUnits::Unit> unitlist;
 };
-typedef kryptoFrancUnits::Unit kryptoFrancUnit;
+typedef KryptofrancUnits::Unit KryptofrancUnit;
 
 #endif // KRYPTOFRANC_QT_KRYPTOFRANCUNITS_H

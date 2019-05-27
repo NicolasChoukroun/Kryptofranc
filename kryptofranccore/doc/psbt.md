@@ -1,6 +1,6 @@
 # PSBT Howto for KryptoFranc
 
-Since KryptoFranc 0.17, an RPC interface exists for Partially Signed kryptoFranc
+Since KryptoFranc 0.17, an RPC interface exists for Partially Signed Kryptofranc
 Transactions (PSBTs, as specified in
 [BIP 174](https://github.com/kryptofranc/bips/blob/master/bip-0174.mediawiki)).
 
@@ -10,7 +10,7 @@ scenarios.
 
 ## PSBT in general
 
-PSBT is an interchange format for kryptoFranc transactions that are not fully signed
+PSBT is an interchange format for Kryptofranc transactions that are not fully signed
 yet, together with relevant metadata to help entities work towards signing it.
 It is intended to simplify workflows where multiple parties need to cooperate to
 produce a transaction. Examples include hardware wallets, multisig setups, and
@@ -18,7 +18,7 @@ produce a transaction. Examples include hardware wallets, multisig setups, and
 
 ### Overall workflow
 
-Overall, the construction of a fully signed kryptoFranc transaction goes through the
+Overall, the construction of a fully signed Kryptofranc transaction goes through the
 following steps:
 
 - A **Creator** proposes a particular transaction to be created. They construct
@@ -32,7 +32,7 @@ following steps:
   partial signature for the inputs for which they have relevant key(s).
 - A **Finalizer** is run for each input to convert the partial signatures and
   possibly script information into a final `scriptSig` and/or `scriptWitness`.
-- An **Extractor** produces a valid kryptoFranc transaction (in network format)
+- An **Extractor** produces a valid Kryptofranc transaction (in network format)
   from a PSBT for which all inputs are finalized.
 
 Generally, each of the above (excluding Creator and Extractor) will simply

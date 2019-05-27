@@ -1,5 +1,5 @@
-kryptoFranc version 0.7.1 is now available from:
-  http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.7.1/
+Kryptofranc version 0.7.1 is now available from:
+  http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.7.1/
 
 This is a bug-fix minor release.
 
@@ -30,7 +30,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait
 until it has completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-/Applications/kryptoFranc-Qt (on Mac) or kryptofrancd/kryptofranc-qt (on Linux).
+/Applications/Kryptofranc-Qt (on Mac) or kryptofrancd/kryptofranc-qt (on Linux).
 
 If you were running on Linux with a version that might have been compiled
 with a different version of Berkeley DB (for example, if you were using an
@@ -75,7 +75,7 @@ Dependency changes
 Bug fixes
 ---------
 
-* Clicking on a kryptofranc: URI on Windows should now launch kryptoFranc-Qt properly.
+* Clicking on a kryptofranc: URI on Windows should now launch Kryptofranc-Qt properly.
 
 * When running -testnet, use RPC port 18332 by default.
 

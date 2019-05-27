@@ -40,7 +40,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/kryptofranc/kryptofranc.git
 
-### kryptoFranc maintainers/release engineers, suggestion for writing release notes
+### Kryptofranc maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -278,14 +278,14 @@ kryptofranc.org (see below for kryptofranc.org update instructions).
 
 - Update kryptofranc.org version
 
-  - First, check to see if the kryptoFranc.org maintainers have prepared a
+  - First, check to see if the Kryptofranc.org maintainers have prepared a
     release: https://github.com/kryptofranc-dot-org/kryptofranc.org/labels/Core
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
-  - If they have not prepared a release, follow the kryptoFranc.org release
+  - If they have not prepared a release, follow the Kryptofranc.org release
     instructions: https://github.com/kryptofranc-dot-org/kryptofranc.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
@@ -333,6 +333,6 @@ kryptofranc.org (see below for kryptofranc.org update instructions).
 
   - Update title of #kryptofranc on Freenode IRC
 
-  - Optionally twitter, reddit /r/kryptoFranc, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Kryptofranc, ... but this will usually sort out itself
 
   - Celebrate

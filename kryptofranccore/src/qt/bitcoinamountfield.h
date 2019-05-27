@@ -17,7 +17,7 @@ QT_END_NAMESPACE
 
 /** Widget for entering kryptofranc amounts.
   */
-class kryptoFrancAmountField: public QWidget
+class KryptofrancAmountField: public QWidget
 {
     Q_OBJECT
 
@@ -26,7 +26,7 @@ class kryptoFrancAmountField: public QWidget
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY valueChanged USER true)
 
 public:
-    explicit kryptoFrancAmountField(QWidget *parent = nullptr);
+    explicit KryptofrancAmountField(QWidget *parent = nullptr);
 
     CAmount value(bool *value=nullptr) const;
     void setValue(const CAmount& value);

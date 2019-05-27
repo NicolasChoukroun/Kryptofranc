@@ -40,7 +40,7 @@ the vulnerable versions to 0.14.3, 0.15.2 or 0.16.3 as soon as possible.
 Known Bugs
 ==========
 
-Since 0.14.0 the approximate transaction fee shown in kryptoFranc-Qt when using coin
+Since 0.14.0 the approximate transaction fee shown in Kryptofranc-Qt when using coin
 control and smart fee estimation does not reflect any change in target from the
 smart fee slider. It will only present an approximate fee calculated using the
 default target. The fee calculated using the correct target is still applied to

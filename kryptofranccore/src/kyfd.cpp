@@ -34,8 +34,8 @@ const std::function<std::string(const char*)> G_TRANSLATION_FUN = nullptr;
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called kryptoFranc,
- * which enables instant payments to anyone, anywhere in the world. kryptoFranc uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Kryptofranc,
+ * which enables instant payments to anyone, anywhere in the world. Kryptofranc uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -149,7 +149,7 @@ static bool AppInit(int argc, char* argv[])
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #endif
-            fprintf(stdout, "kryptoFranc server starting\n");
+            fprintf(stdout, "Kryptofranc server starting\n");
 
             // Daemonize
             if (daemon(1, 0)) { // don't chdir (1), do close FDs (0)

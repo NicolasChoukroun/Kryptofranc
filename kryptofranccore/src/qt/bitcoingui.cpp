@@ -64,7 +64,7 @@
 #include <QWindow>
 
 
-const std::string kryptoFrancGUI::DEFAULT_UIPLATFORM =
+const std::string KryptofrancGUI::DEFAULT_UIPLATFORM =
 #if defined(Q_OS_MAC)
         "macosx"
 #elif defined(Q_OS_WIN)
@@ -74,7 +74,7 @@ const std::string kryptoFrancGUI::DEFAULT_UIPLATFORM =
 #endif
         ;
 
-kryptoFrancGUI::kryptoFrancGUI(interfaces::Node& node, const PlatformStyle *_platformStyle, const NetworkStyle *networkStyle, QWidget *parent) :
+KryptofrancGUI::KryptofrancGUI(interfaces::Node& node, const PlatformStyle *_platformStyle, const NetworkStyle *networkStyle, QWidget *parent) :
     QMainWindow(parent),
     m_node(node),
     trayIconMenu{new QMenu()},
@@ -204,9 +204,9 @@ kryptoFrancGUI::kryptoFrancGUI(interfaces::Node& node, const PlatformStyle *_pla
     modalOverlay = new ModalOverlay(this->centralWidget());
 #ifdef ENABLE_WALLET
     if(enableWallet) {
-        connect(walletFrame, &WalletFrame::requestedSyncWarningInfo, this, &kryptoFrancGUI::showModalOverlay);
-        connect(labelBlocksIcon, &GUIUtil::ClickableLabel::clicked, this, &kryptoFrancGUI::showModalOverlay);
-        connect(progressBar, &GUIUtil::ClickableProgressBar::clicked, this, &kryptoFrancGUI::showModalOverlay);
+        connect(walletFrame, &WalletFrame::requestedSyncWarningInfo, this, &KryptofrancGUI::showModalOverlay);
+        connect(labelBlocksIcon, &GUIUtil::ClickableLabel::clicked, this, &KryptofrancGUI::showModalOverlay);
+        connect(progressBar, &GUIUtil::ClickableProgressBar::clicked, this, &KryptofrancGUI::showModalOverlay);
     }
 #endif
 
@@ -215,7 +215,7 @@ kryptoFrancGUI::kryptoFrancGUI(interfaces::Node& node, const PlatformStyle *_pla
 #endif
 }
 
-kryptoFrancGUI::~kryptoFrancGUI()
+KryptofrancGUI::~KryptofrancGUI()
 {
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
@@ -233,7 +233,7 @@ kryptoFrancGUI::~kryptoFrancGUI()
     delete rpcConsole;
 }
 
-void kryptoFrancGUI::createActions()
+void KryptofrancGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
@@ -245,7 +245,7 @@ void kryptoFrancGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(platformStyle->SingleColorIcon(":/icons/send"), tr("&Send"), this);
-    sendCoinsAction->setStatusTip(tr("Send coins to a kryptoFranc address"));
+    sendCoinsAction->setStatusTip(tr("Send coins to a Kryptofranc address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
@@ -277,17 +277,17 @@ void kryptoFrancGUI::createActions()
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
     // can be triggered from the tray menu, and need to show the GUI to be useful.
     connect(overviewAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
-    connect(overviewAction, &QAction::triggered, this, &kryptoFrancGUI::gotoOverviewPage);
+    connect(overviewAction, &QAction::triggered, this, &KryptofrancGUI::gotoOverviewPage);
     connect(sendCoinsAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
     connect(sendCoinsAction, &QAction::triggered, [this]{ gotoSendCoinsPage(); });
     connect(sendCoinsMenuAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
     connect(sendCoinsMenuAction, &QAction::triggered, [this]{ gotoSendCoinsPage(); });
     connect(receiveCoinsAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
-    connect(receiveCoinsAction, &QAction::triggered, this, &kryptoFrancGUI::gotoReceiveCoinsPage);
+    connect(receiveCoinsAction, &QAction::triggered, this, &KryptofrancGUI::gotoReceiveCoinsPage);
     connect(receiveCoinsMenuAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
-    connect(receiveCoinsMenuAction, &QAction::triggered, this, &kryptoFrancGUI::gotoReceiveCoinsPage);
+    connect(receiveCoinsMenuAction, &QAction::triggered, this, &KryptofrancGUI::gotoReceiveCoinsPage);
     connect(historyAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
-    connect(historyAction, &QAction::triggered, this, &kryptoFrancGUI::gotoHistoryPage);
+    connect(historyAction, &QAction::triggered, this, &KryptofrancGUI::gotoHistoryPage);
 #endif // ENABLE_WALLET
 
     quitAction = new QAction(platformStyle->TextColorIcon(":/icons/quit"), tr("E&xit"), this);
@@ -316,9 +316,9 @@ void kryptoFrancGUI::createActions()
     changePassphraseAction = new QAction(platformStyle->TextColorIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
     signMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/edit"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your kryptoFranc addresses to prove you own them"));
+    signMessageAction->setStatusTip(tr("Sign messages with your Kryptofranc addresses to prove you own them"));
     verifyMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/verify"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified kryptoFranc addresses"));
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Kryptofranc addresses"));
 
     openRPCConsoleAction = new QAction(platformStyle->TextColorIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging and diagnostic console"));
@@ -343,15 +343,15 @@ void kryptoFrancGUI::createActions()
 
     showHelpMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/info"), tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
-    showHelpMessageAction->setStatusTip(tr("Show the %1 help message to get a list with possible kryptoFranc command-line options").arg(tr(PACKAGE_NAME)));
+    showHelpMessageAction->setStatusTip(tr("Show the %1 help message to get a list with possible Kryptofranc command-line options").arg(tr(PACKAGE_NAME)));
 
     connect(quitAction, &QAction::triggered, qApp, QApplication::quit);
-    connect(aboutAction, &QAction::triggered, this, &kryptoFrancGUI::aboutClicked);
+    connect(aboutAction, &QAction::triggered, this, &KryptofrancGUI::aboutClicked);
     connect(aboutQtAction, &QAction::triggered, qApp, QApplication::aboutQt);
-    connect(optionsAction, &QAction::triggered, this, &kryptoFrancGUI::optionsClicked);
-    connect(toggleHideAction, &QAction::triggered, this, &kryptoFrancGUI::toggleHidden);
-    connect(showHelpMessageAction, &QAction::triggered, this, &kryptoFrancGUI::showHelpMessageClicked);
-    connect(openRPCConsoleAction, &QAction::triggered, this, &kryptoFrancGUI::showDebugWindow);
+    connect(optionsAction, &QAction::triggered, this, &KryptofrancGUI::optionsClicked);
+    connect(toggleHideAction, &QAction::triggered, this, &KryptofrancGUI::toggleHidden);
+    connect(showHelpMessageAction, &QAction::triggered, this, &KryptofrancGUI::showHelpMessageClicked);
+    connect(openRPCConsoleAction, &QAction::triggered, this, &KryptofrancGUI::showDebugWindow);
     // prevents an open debug window from becoming stuck/unusable on client shutdown
     connect(quitAction, &QAction::triggered, rpcConsole, &QWidget::hide);
 
@@ -367,7 +367,7 @@ void kryptoFrancGUI::createActions()
         connect(verifyMessageAction, &QAction::triggered, [this]{ gotoVerifyMessageTab(); });
         connect(usedSendingAddressesAction, &QAction::triggered, walletFrame, &WalletFrame::usedSendingAddresses);
         connect(usedReceivingAddressesAction, &QAction::triggered, walletFrame, &WalletFrame::usedReceivingAddresses);
-        connect(openAction, &QAction::triggered, this, &kryptoFrancGUI::openClicked);
+        connect(openAction, &QAction::triggered, this, &KryptofrancGUI::openClicked);
         connect(m_open_wallet_action->menu(), &QMenu::aboutToShow, [this] {
             m_open_wallet_action->menu()->clear();
             for (std::string path : m_wallet_controller->getWalletsAvailableToOpen()) {
@@ -393,7 +393,7 @@ void kryptoFrancGUI::createActions()
                         connect(this, &QObject::destroyed, &box, &QDialog::accept);
                         box.exec();
                     });
-                    connect(activity, &OpenWalletActivity::opened, this, &kryptoFrancGUI::setCurrentWallet);
+                    connect(activity, &OpenWalletActivity::opened, this, &KryptofrancGUI::setCurrentWallet);
                     connect(activity, &OpenWalletActivity::finished, activity, &QObject::deleteLater);
                     connect(activity, &OpenWalletActivity::finished, dialog, &QObject::deleteLater);
                     bool invoked = QMetaObject::invokeMethod(activity, "open");
@@ -407,11 +407,11 @@ void kryptoFrancGUI::createActions()
     }
 #endif // ENABLE_WALLET
 
-    connect(new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_C), this), &QShortcut::activated, this, &kryptoFrancGUI::showDebugWindowActivateConsole);
-    connect(new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_D), this), &QShortcut::activated, this, &kryptoFrancGUI::showDebugWindow);
+    connect(new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_C), this), &QShortcut::activated, this, &KryptofrancGUI::showDebugWindowActivateConsole);
+    connect(new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_D), this), &QShortcut::activated, this, &KryptofrancGUI::showDebugWindow);
 }
 
-void kryptoFrancGUI::createMenuBar()
+void KryptofrancGUI::createMenuBar()
 {
 #ifdef Q_OS_MAC
     // Create a decoupled menu bar on Mac which stays even if the window is closed
@@ -509,7 +509,7 @@ void kryptoFrancGUI::createMenuBar()
     help->addAction(aboutQtAction);
 }
 
-void kryptoFrancGUI::createToolBars()
+void KryptofrancGUI::createToolBars()
 {
     if(walletFrame)
     {
@@ -531,7 +531,7 @@ void kryptoFrancGUI::createToolBars()
 
         m_wallet_selector = new QComboBox();
         m_wallet_selector->setSizeAdjustPolicy(QComboBox::AdjustToContents);
-        connect(m_wallet_selector, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &kryptoFrancGUI::setCurrentWalletBySelectorIndex);
+        connect(m_wallet_selector, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &KryptofrancGUI::setCurrentWalletBySelectorIndex);
 
         m_wallet_selector_label = new QLabel();
         m_wallet_selector_label->setText(tr("Wallet:") + " ");
@@ -546,7 +546,7 @@ void kryptoFrancGUI::createToolBars()
     }
 }
 
-void kryptoFrancGUI::setClientModel(ClientModel *_clientModel)
+void KryptofrancGUI::setClientModel(ClientModel *_clientModel)
 {
     this->clientModel = _clientModel;
     if(_clientModel)
@@ -557,12 +557,12 @@ void kryptoFrancGUI::setClientModel(ClientModel *_clientModel)
 
         // Keep up to date with client
         updateNetworkState();
-        connect(_clientModel, &ClientModel::numConnectionsChanged, this, &kryptoFrancGUI::setNumConnections);
-        connect(_clientModel, &ClientModel::networkActiveChanged, this, &kryptoFrancGUI::setNetworkActive);
+        connect(_clientModel, &ClientModel::numConnectionsChanged, this, &KryptofrancGUI::setNumConnections);
+        connect(_clientModel, &ClientModel::networkActiveChanged, this, &KryptofrancGUI::setNetworkActive);
 
         modalOverlay->setKnownBestHeight(_clientModel->getHeaderTipHeight(), QDateTime::fromTime_t(_clientModel->getHeaderTipTime()));
         setNumBlocks(m_node.getNumBlocks(), QDateTime::fromTime_t(m_node.getLastBlockTime()), m_node.getVerificationProgress(), false);
-        connect(_clientModel, &ClientModel::numBlocksChanged, this, &kryptoFrancGUI::setNumBlocks);
+        connect(_clientModel, &ClientModel::numBlocksChanged, this, &KryptofrancGUI::setNumBlocks);
 
         // Receive and report messages from client model
         connect(_clientModel, &ClientModel::message, [this](const QString &title, const QString &message, unsigned int style){
@@ -570,7 +570,7 @@ void kryptoFrancGUI::setClientModel(ClientModel *_clientModel)
         });
 
         // Show progress dialog
-        connect(_clientModel, &ClientModel::showProgress, this, &kryptoFrancGUI::showProgress);
+        connect(_clientModel, &ClientModel::showProgress, this, &KryptofrancGUI::showProgress);
 
         rpcConsole->setClientModel(_clientModel);
 
@@ -587,7 +587,7 @@ void kryptoFrancGUI::setClientModel(ClientModel *_clientModel)
         OptionsModel* optionsModel = _clientModel->getOptionsModel();
         if (optionsModel && trayIcon) {
             // be aware of the tray icon disable state change reported by the OptionsModel object.
-            connect(optionsModel, &OptionsModel::hideTrayIconChanged, this, &kryptoFrancGUI::setTrayIconVisible);
+            connect(optionsModel, &OptionsModel::hideTrayIconChanged, this, &KryptofrancGUI::setTrayIconVisible);
 
             // initialize the disable state of the tray icon with the current value in the model.
             setTrayIconVisible(optionsModel->getHideTrayIcon());
@@ -613,22 +613,22 @@ void kryptoFrancGUI::setClientModel(ClientModel *_clientModel)
 }
 
 #ifdef ENABLE_WALLET
-void kryptoFrancGUI::setWalletController(WalletController* wallet_controller)
+void KryptofrancGUI::setWalletController(WalletController* wallet_controller)
 {
     assert(!m_wallet_controller);
     assert(wallet_controller);
 
     m_wallet_controller = wallet_controller;
 
-    connect(wallet_controller, &WalletController::walletAdded, this, &kryptoFrancGUI::addWallet);
-    connect(wallet_controller, &WalletController::walletRemoved, this, &kryptoFrancGUI::removeWallet);
+    connect(wallet_controller, &WalletController::walletAdded, this, &KryptofrancGUI::addWallet);
+    connect(wallet_controller, &WalletController::walletRemoved, this, &KryptofrancGUI::removeWallet);
 
     for (WalletModel* wallet_model : m_wallet_controller->getWallets()) {
         addWallet(wallet_model);
     }
 }
 
-void kryptoFrancGUI::addWallet(WalletModel* walletModel)
+void KryptofrancGUI::addWallet(WalletModel* walletModel)
 {
     if (!walletFrame) return;
     const QString display_name = walletModel->getDisplayName();
@@ -642,7 +642,7 @@ void kryptoFrancGUI::addWallet(WalletModel* walletModel)
     }
 }
 
-void kryptoFrancGUI::removeWallet(WalletModel* walletModel)
+void KryptofrancGUI::removeWallet(WalletModel* walletModel)
 {
     if (!walletFrame) return;
     int index = m_wallet_selector->findData(QVariant::fromValue(walletModel));
@@ -658,7 +658,7 @@ void kryptoFrancGUI::removeWallet(WalletModel* walletModel)
     updateWindowTitle();
 }
 
-void kryptoFrancGUI::setCurrentWallet(WalletModel* wallet_model)
+void KryptofrancGUI::setCurrentWallet(WalletModel* wallet_model)
 {
     if (!walletFrame) return;
     walletFrame->setCurrentWallet(wallet_model);
@@ -671,13 +671,13 @@ void kryptoFrancGUI::setCurrentWallet(WalletModel* wallet_model)
     updateWindowTitle();
 }
 
-void kryptoFrancGUI::setCurrentWalletBySelectorIndex(int index)
+void KryptofrancGUI::setCurrentWalletBySelectorIndex(int index)
 {
     WalletModel* wallet_model = m_wallet_selector->itemData(index).value<WalletModel*>();
     if (wallet_model) setCurrentWallet(wallet_model);
 }
 
-void kryptoFrancGUI::removeAllWallets()
+void KryptofrancGUI::removeAllWallets()
 {
     if(!walletFrame)
         return;
@@ -686,7 +686,7 @@ void kryptoFrancGUI::removeAllWallets()
 }
 #endif // ENABLE_WALLET
 
-void kryptoFrancGUI::setWalletActionsEnabled(bool enabled)
+void KryptofrancGUI::setWalletActionsEnabled(bool enabled)
 {
     overviewAction->setEnabled(enabled);
     sendCoinsAction->setEnabled(enabled);
@@ -705,7 +705,7 @@ void kryptoFrancGUI::setWalletActionsEnabled(bool enabled)
     m_close_wallet_action->setEnabled(enabled);
 }
 
-void kryptoFrancGUI::createTrayIcon()
+void KryptofrancGUI::createTrayIcon()
 {
     assert(QSystemTrayIcon::isSystemTrayAvailable());
 
@@ -718,7 +718,7 @@ void kryptoFrancGUI::createTrayIcon()
 #endif
 }
 
-void kryptoFrancGUI::createTrayIconMenu()
+void KryptofrancGUI::createTrayIconMenu()
 {
 #ifndef Q_OS_MAC
     // return if trayIcon is unset (only on non-macOSes)
@@ -726,11 +726,11 @@ void kryptoFrancGUI::createTrayIconMenu()
         return;
 
     trayIcon->setContextMenu(trayIconMenu.get());
-    connect(trayIcon, &QSystemTrayIcon::activated, this, &kryptoFrancGUI::trayIconActivated);
+    connect(trayIcon, &QSystemTrayIcon::activated, this, &KryptofrancGUI::trayIconActivated);
 #else
     // Note: On macOS, the Dock icon is used to provide the tray's functionality.
     MacDockIconHandler *dockIconHandler = MacDockIconHandler::instance();
-    connect(dockIconHandler, &MacDockIconHandler::dockIconClicked, this, &kryptoFrancGUI::macosDockIconActivated);
+    connect(dockIconHandler, &MacDockIconHandler::dockIconClicked, this, &KryptofrancGUI::macosDockIconActivated);
     trayIconMenu->setAsDockMenu();
 #endif
 
@@ -757,7 +757,7 @@ void kryptoFrancGUI::createTrayIconMenu()
 }
 
 #ifndef Q_OS_MAC
-void kryptoFrancGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void KryptofrancGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if(reason == QSystemTrayIcon::Trigger)
     {
@@ -766,19 +766,19 @@ void kryptoFrancGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
     }
 }
 #else
-void kryptoFrancGUI::macosDockIconActivated()
+void KryptofrancGUI::macosDockIconActivated()
 {
     show();
     activateWindow();
 }
 #endif
 
-void kryptoFrancGUI::optionsClicked()
+void KryptofrancGUI::optionsClicked()
 {
     openOptionsDialogWithTab(OptionsDialog::TAB_MAIN);
 }
 
-void kryptoFrancGUI::aboutClicked()
+void KryptofrancGUI::aboutClicked()
 {
     if(!clientModel)
         return;
@@ -787,25 +787,25 @@ void kryptoFrancGUI::aboutClicked()
     dlg.exec();
 }
 
-void kryptoFrancGUI::showDebugWindow()
+void KryptofrancGUI::showDebugWindow()
 {
     GUIUtil::bringToFront(rpcConsole);
     Q_EMIT consoleShown(rpcConsole);
 }
 
-void kryptoFrancGUI::showDebugWindowActivateConsole()
+void KryptofrancGUI::showDebugWindowActivateConsole()
 {
     rpcConsole->setTabFocus(RPCConsole::TAB_CONSOLE);
     showDebugWindow();
 }
 
-void kryptoFrancGUI::showHelpMessageClicked()
+void KryptofrancGUI::showHelpMessageClicked()
 {
     helpMessageDialog->show();
 }
 
 #ifdef ENABLE_WALLET
-void kryptoFrancGUI::openClicked()
+void KryptofrancGUI::openClicked()
 {
     OpenURIDialog dlg(this);
     if(dlg.exec())
@@ -814,42 +814,42 @@ void kryptoFrancGUI::openClicked()
     }
 }
 
-void kryptoFrancGUI::gotoOverviewPage()
+void KryptofrancGUI::gotoOverviewPage()
 {
     overviewAction->setChecked(true);
     if (walletFrame) walletFrame->gotoOverviewPage();
 }
 
-void kryptoFrancGUI::gotoHistoryPage()
+void KryptofrancGUI::gotoHistoryPage()
 {
     historyAction->setChecked(true);
     if (walletFrame) walletFrame->gotoHistoryPage();
 }
 
-void kryptoFrancGUI::gotoReceiveCoinsPage()
+void KryptofrancGUI::gotoReceiveCoinsPage()
 {
     receiveCoinsAction->setChecked(true);
     if (walletFrame) walletFrame->gotoReceiveCoinsPage();
 }
 
-void kryptoFrancGUI::gotoSendCoinsPage(QString addr)
+void KryptofrancGUI::gotoSendCoinsPage(QString addr)
 {
     sendCoinsAction->setChecked(true);
     if (walletFrame) walletFrame->gotoSendCoinsPage(addr);
 }
 
-void kryptoFrancGUI::gotoSignMessageTab(QString addr)
+void KryptofrancGUI::gotoSignMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoSignMessageTab(addr);
 }
 
-void kryptoFrancGUI::gotoVerifyMessageTab(QString addr)
+void KryptofrancGUI::gotoVerifyMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoVerifyMessageTab(addr);
 }
 #endif // ENABLE_WALLET
 
-void kryptoFrancGUI::updateNetworkState()
+void KryptofrancGUI::updateNetworkState()
 {
     int count = clientModel->getNumConnections();
     QString icon;
@@ -865,7 +865,7 @@ void kryptoFrancGUI::updateNetworkState()
     QString tooltip;
 
     if (m_node.getNetworkActive()) {
-        tooltip = tr("%n active connection(s) to kryptoFranc network", "", count) + QString(".<br>") + tr("Click to disable network activity.");
+        tooltip = tr("%n active connection(s) to Kryptofranc network", "", count) + QString(".<br>") + tr("Click to disable network activity.");
     } else {
         tooltip = tr("Network activity disabled.") + QString("<br>") + tr("Click to enable network activity again.");
         icon = ":/icons/network_disabled";
@@ -878,17 +878,17 @@ void kryptoFrancGUI::updateNetworkState()
     connectionsControl->setPixmap(platformStyle->SingleColorIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
 }
 
-void kryptoFrancGUI::setNumConnections(int count)
+void KryptofrancGUI::setNumConnections(int count)
 {
     updateNetworkState();
 }
 
-void kryptoFrancGUI::setNetworkActive(bool networkActive)
+void KryptofrancGUI::setNetworkActive(bool networkActive)
 {
     updateNetworkState();
 }
 
-void kryptoFrancGUI::updateHeadersSyncProgressLabel()
+void KryptofrancGUI::updateHeadersSyncProgressLabel()
 {
     int64_t headersTipTime = clientModel->getHeaderTipTime();
     int headersTipHeight = clientModel->getHeaderTipHeight();
@@ -897,7 +897,7 @@ void kryptoFrancGUI::updateHeadersSyncProgressLabel()
         progressBarLabel->setText(tr("Syncing Headers (%1%)...").arg(QString::number(100.0 / (headersTipHeight+estHeadersLeft)*headersTipHeight, 'f', 1)));
 }
 
-void kryptoFrancGUI::openOptionsDialogWithTab(OptionsDialog::Tab tab)
+void KryptofrancGUI::openOptionsDialogWithTab(OptionsDialog::Tab tab)
 {
     if (!clientModel || !clientModel->getOptionsModel())
         return;
@@ -908,7 +908,7 @@ void kryptoFrancGUI::openOptionsDialogWithTab(OptionsDialog::Tab tab)
     dlg.exec();
 }
 
-void kryptoFrancGUI::setNumBlocks(int count, const QDateTime& blockDate, double nVerificationProgress, bool header)
+void KryptofrancGUI::setNumBlocks(int count, const QDateTime& blockDate, double nVerificationProgress, bool header)
 {
 // Disabling macOS App Nap on initial sync, disk and reindex operations.
 #ifdef Q_OS_MAC
@@ -1022,9 +1022,9 @@ void kryptoFrancGUI::setNumBlocks(int count, const QDateTime& blockDate, double 
     progressBar->setToolTip(tooltip);
 }
 
-void kryptoFrancGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
+void KryptofrancGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
-    QString strTitle = tr("kryptoFranc"); // default title
+    QString strTitle = tr("Kryptofranc"); // default title
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
@@ -1050,7 +1050,7 @@ void kryptoFrancGUI::message(const QString &title, const QString &message, unsig
             break;
         }
     }
-    // Append title to "kryptoFranc - "
+    // Append title to "Kryptofranc - "
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
 
@@ -1082,7 +1082,7 @@ void kryptoFrancGUI::message(const QString &title, const QString &message, unsig
         notificator->notify(static_cast<Notificator::Class>(nNotifyIcon), strTitle, message);
 }
 
-void kryptoFrancGUI::changeEvent(QEvent *e)
+void KryptofrancGUI::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -1093,12 +1093,12 @@ void kryptoFrancGUI::changeEvent(QEvent *e)
             QWindowStateChangeEvent *wsevt = static_cast<QWindowStateChangeEvent*>(e);
             if(!(wsevt->oldState() & Qt::WindowMinimized) && isMinimized())
             {
-                QTimer::singleShot(0, this, &kryptoFrancGUI::hide);
+                QTimer::singleShot(0, this, &KryptofrancGUI::hide);
                 e->ignore();
             }
             else if((wsevt->oldState() & Qt::WindowMinimized) && !isMinimized())
             {
-                QTimer::singleShot(0, this, &kryptoFrancGUI::show);
+                QTimer::singleShot(0, this, &KryptofrancGUI::show);
                 e->ignore();
             }
         }
@@ -1106,7 +1106,7 @@ void kryptoFrancGUI::changeEvent(QEvent *e)
 #endif
 }
 
-void kryptoFrancGUI::closeEvent(QCloseEvent *event)
+void KryptofrancGUI::closeEvent(QCloseEvent *event)
 {
 #ifndef Q_OS_MAC // Ignored on Mac
     if(clientModel && clientModel->getOptionsModel())
@@ -1129,7 +1129,7 @@ void kryptoFrancGUI::closeEvent(QCloseEvent *event)
 #endif
 }
 
-void kryptoFrancGUI::showEvent(QShowEvent *event)
+void KryptofrancGUI::showEvent(QShowEvent *event)
 {
     // enable the debug window when the main window shows up
     openRPCConsoleAction->setEnabled(true);
@@ -1138,11 +1138,11 @@ void kryptoFrancGUI::showEvent(QShowEvent *event)
 }
 
 #ifdef ENABLE_WALLET
-void kryptoFrancGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address, const QString& label, const QString& walletName)
+void KryptofrancGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address, const QString& label, const QString& walletName)
 {
     // On new transaction, make an info balloon
     QString msg = tr("Date: %1\n").arg(date) +
-                  tr("Amount: %1\n").arg(kryptofrancUnits::formatWithUnit(unit, amount, true));
+                  tr("Amount: %1\n").arg(KryptofrancUnits::formatWithUnit(unit, amount, true));
     if (m_node.getWallets().size() > 1 && !walletName.isEmpty()) {
         msg += tr("Wallet: %1\n").arg(walletName);
     }
@@ -1156,14 +1156,14 @@ void kryptoFrancGUI::incomingTransaction(const QString& date, int unit, const CA
 }
 #endif // ENABLE_WALLET
 
-void kryptoFrancGUI::dragEnterEvent(QDragEnterEvent *event)
+void KryptofrancGUI::dragEnterEvent(QDragEnterEvent *event)
 {
     // Accept only URIs
     if(event->mimeData()->hasUrls())
         event->acceptProposedAction();
 }
 
-void kryptoFrancGUI::dropEvent(QDropEvent *event)
+void KryptofrancGUI::dropEvent(QDropEvent *event)
 {
     if(event->mimeData()->hasUrls())
     {
@@ -1175,7 +1175,7 @@ void kryptoFrancGUI::dropEvent(QDropEvent *event)
     event->acceptProposedAction();
 }
 
-bool kryptoFrancGUI::eventFilter(QObject *object, QEvent *event)
+bool KryptofrancGUI::eventFilter(QObject *object, QEvent *event)
 {
     // Catch status tip events
     if (event->type() == QEvent::StatusTip)
@@ -1188,7 +1188,7 @@ bool kryptoFrancGUI::eventFilter(QObject *object, QEvent *event)
 }
 
 #ifdef ENABLE_WALLET
-bool kryptoFrancGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
+bool KryptofrancGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
 {
     // URI has to be valid
     if (walletFrame && walletFrame->handlePaymentRequest(recipient))
@@ -1200,7 +1200,7 @@ bool kryptoFrancGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
     return false;
 }
 
-void kryptoFrancGUI::setHDStatus(bool privkeyDisabled, int hdEnabled)
+void KryptofrancGUI::setHDStatus(bool privkeyDisabled, int hdEnabled)
 {
     labelWalletHDStatusIcon->setPixmap(platformStyle->SingleColorIcon(privkeyDisabled ? ":/icons/eye" : hdEnabled ? ":/icons/hd_enabled" : ":/icons/hd_disabled").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
     labelWalletHDStatusIcon->setToolTip(privkeyDisabled ? tr("Private key <b>disabled</b>") : hdEnabled ? tr("HD key generation is <b>enabled</b>") : tr("HD key generation is <b>disabled</b>"));
@@ -1209,7 +1209,7 @@ void kryptoFrancGUI::setHDStatus(bool privkeyDisabled, int hdEnabled)
     labelWalletHDStatusIcon->setEnabled(hdEnabled);
 }
 
-void kryptoFrancGUI::setEncryptionStatus(int status)
+void KryptofrancGUI::setEncryptionStatus(int status)
 {
     switch(status)
     {
@@ -1238,7 +1238,7 @@ void kryptoFrancGUI::setEncryptionStatus(int status)
     }
 }
 
-void kryptoFrancGUI::updateWalletStatus()
+void KryptofrancGUI::updateWalletStatus()
 {
     if (!walletFrame) {
         return;
@@ -1253,7 +1253,7 @@ void kryptoFrancGUI::updateWalletStatus()
 }
 #endif // ENABLE_WALLET
 
-void kryptoFrancGUI::updateProxyIcon()
+void KryptofrancGUI::updateProxyIcon()
 {
     std::string ip_port;
     bool proxy_enabled = clientModel->getProxyInfo(ip_port);
@@ -1271,7 +1271,7 @@ void kryptoFrancGUI::updateProxyIcon()
     }
 }
 
-void kryptoFrancGUI::updateWindowTitle()
+void KryptofrancGUI::updateWindowTitle()
 {
     QString window_title = tr(PACKAGE_NAME);
 #ifdef ENABLE_WALLET
@@ -1288,7 +1288,7 @@ void kryptoFrancGUI::updateWindowTitle()
     setWindowTitle(window_title);
 }
 
-void kryptoFrancGUI::showNormalIfMinimized(bool fToggleHidden)
+void KryptofrancGUI::showNormalIfMinimized(bool fToggleHidden)
 {
     if(!clientModel)
         return;
@@ -1300,12 +1300,12 @@ void kryptoFrancGUI::showNormalIfMinimized(bool fToggleHidden)
     }
 }
 
-void kryptoFrancGUI::toggleHidden()
+void KryptofrancGUI::toggleHidden()
 {
     showNormalIfMinimized(true);
 }
 
-void kryptoFrancGUI::detectShutdown()
+void KryptofrancGUI::detectShutdown()
 {
     if (m_node.shutdownRequested())
     {
@@ -1315,7 +1315,7 @@ void kryptoFrancGUI::detectShutdown()
     }
 }
 
-void kryptoFrancGUI::showProgress(const QString &title, int nProgress)
+void KryptofrancGUI::showProgress(const QString &title, int nProgress)
 {
     if (nProgress == 0) {
         progressDialog = new QProgressDialog(title, QString(), 0, 100);
@@ -1334,7 +1334,7 @@ void kryptoFrancGUI::showProgress(const QString &title, int nProgress)
     }
 }
 
-void kryptoFrancGUI::setTrayIconVisible(bool fHideTrayIcon)
+void KryptofrancGUI::setTrayIconVisible(bool fHideTrayIcon)
 {
     if (trayIcon)
     {
@@ -1342,13 +1342,13 @@ void kryptoFrancGUI::setTrayIconVisible(bool fHideTrayIcon)
     }
 }
 
-void kryptoFrancGUI::showModalOverlay()
+void KryptofrancGUI::showModalOverlay()
 {
     if (modalOverlay && (progressBar->isVisible() || modalOverlay->isLayerVisible()))
         modalOverlay->toggleVisibility();
 }
 
-static bool ThreadSafeMessageBox(kryptoFrancGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
+static bool ThreadSafeMessageBox(KryptofrancGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
 {
     bool modal = (style & CClientUIInterface::MODAL);
     // The SECURE flag has no effect in the Qt GUI.
@@ -1365,14 +1365,14 @@ static bool ThreadSafeMessageBox(kryptoFrancGUI* gui, const std::string& message
     return ret;
 }
 
-void kryptoFrancGUI::subscribeToCoreSignals()
+void KryptofrancGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
     m_handler_message_box = m_node.handleMessageBox(std::bind(ThreadSafeMessageBox, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
     m_handler_question = m_node.handleQuestion(std::bind(ThreadSafeMessageBox, this, std::placeholders::_1, std::placeholders::_3, std::placeholders::_4));
 }
 
-void kryptoFrancGUI::unsubscribeFromCoreSignals()
+void KryptofrancGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
     m_handler_message_box->disconnect();
@@ -1385,12 +1385,12 @@ UnitDisplayStatusBarControl::UnitDisplayStatusBarControl(const PlatformStyle *pl
 {
     createContextMenu();
     setToolTip(tr("Unit to show amounts in. Click to select another unit."));
-    QList<kryptoFrancUnits::Unit> units = kryptoFrancUnits::availableUnits();
+    QList<KryptofrancUnits::Unit> units = KryptofrancUnits::availableUnits();
     int max_width = 0;
     const QFontMetrics fm(font());
-    for (const kryptoFrancUnits::Unit unit : units)
+    for (const KryptofrancUnits::Unit unit : units)
     {
-        max_width = qMax(max_width, fm.width(kryptoFrancUnits::longName(unit)));
+        max_width = qMax(max_width, fm.width(KryptofrancUnits::longName(unit)));
     }
     setMinimumSize(max_width, 0);
     setAlignment(Qt::AlignRight | Qt::AlignVCenter);
@@ -1407,9 +1407,9 @@ void UnitDisplayStatusBarControl::mousePressEvent(QMouseEvent *event)
 void UnitDisplayStatusBarControl::createContextMenu()
 {
     menu = new QMenu(this);
-    for (const kryptoFrancUnits::Unit u : kryptoFrancUnits::availableUnits())
+    for (const KryptofrancUnits::Unit u : KryptofrancUnits::availableUnits())
     {
-        QAction *menuAction = new QAction(QString(kryptoFrancUnits::longName(u)), this);
+        QAction *menuAction = new QAction(QString(KryptofrancUnits::longName(u)), this);
         menuAction->setData(QVariant(u));
         menu->addAction(menuAction);
     }
@@ -1434,7 +1434,7 @@ void UnitDisplayStatusBarControl::setOptionsModel(OptionsModel *_optionsModel)
 /** When Display Units are changed on OptionsModel it will refresh the display text of the control on the status bar */
 void UnitDisplayStatusBarControl::updateDisplayUnit(int newUnits)
 {
-    setText(kryptoFrancUnits::longName(newUnits));
+    setText(KryptofrancUnits::longName(newUnits));
 }
 
 /** Shows context menu with Display Unit options by the mouse coordinates */

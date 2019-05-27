@@ -82,17 +82,17 @@ KryptoFranc is now available at `./src/kryptofrancd`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/kryptoFranc"
+    mkdir -p "/Users/${USER}/Library/Application Support/Kryptofranc"
 
-    touch "/Users/${USER}/Library/Application Support/kryptoFranc/kryptofranc.conf"
+    touch "/Users/${USER}/Library/Application Support/Kryptofranc/kryptofranc.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/kryptoFranc/kryptofranc.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Kryptofranc/kryptofranc.conf"
 
 The first time you run kryptofrancd, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/kryptoFranc/debug.log
+    tail -f $HOME/Library/Application\ Support/Kryptofranc/debug.log
 
 Other commands:
 -------

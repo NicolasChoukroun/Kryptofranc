@@ -9,7 +9,7 @@
 
 #include <QStackedWidget>
 
-class kryptoFrancGUI;
+class KryptofrancGUI;
 class ClientModel;
 class OverviewPage;
 class PlatformStyle;
@@ -39,7 +39,7 @@ public:
     explicit WalletView(const PlatformStyle *platformStyle, QWidget *parent);
     ~WalletView();
 
-    void setkryptoFrancGUI(kryptoFrancGUI *gui);
+    void setKryptofrancGUI(KryptofrancGUI *gui);
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
     */

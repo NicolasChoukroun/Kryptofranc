@@ -1,5 +1,5 @@
-kryptoFranc version 0.6.0 is now available for download at:
-http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.6.0/test/
+Kryptofranc version 0.6.0 is now available for download at:
+http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.6.0/test/
 
 This release includes more than 20 language localizations.
 More translations are welcome; join the
@@ -38,7 +38,7 @@ hours).
 
 Backup Wallet menu option.
 
-kryptoFranc-Qt can display and save QR codes for sending
+Kryptofranc-Qt can display and save QR codes for sending
 and receiving addresses.
 
 New context menu on addresses to copy/edit/delete them.
@@ -54,14 +54,14 @@ transactions and less traffic on the kryptofranc
 network. The shorter keys are already supported
 by the network but wallet.dat files containing
 short keys are not compatible with earlier
-versions of kryptoFranc-Qt/kryptofrancd.
+versions of Kryptofranc-Qt/kryptofrancd.
 
 New command-line argument -blocknotify=<command>
 that will spawn a shell process to run <command> 
 when a new block is accepted.
 
 New command-line argument -splash=0 to disable
-kryptoFranc-Qt's initial splash screen
+Kryptofranc-Qt's initial splash screen
 
 validateaddress JSON-RPC api command output includes
 two new fields for addresses in the wallet:
@@ -105,10 +105,10 @@ attacks were fixed.
 NOT YET IMPLEMENTED FEATURES
 
 Support for clicking on kryptofranc: URIs and
-opening/launching kryptoFranc-Qt is available only on Linux,
+opening/launching Kryptofranc-Qt is available only on Linux,
 and only if you configure your desktop to launch
-kryptoFranc-Qt. All platforms support dragging and dropping
-kryptofranc: URIs onto the kryptoFranc-Qt window to start
+Kryptofranc-Qt. All platforms support dragging and dropping
+kryptofranc: URIs onto the Kryptofranc-Qt window to start
 payment.
 
 
@@ -125,7 +125,7 @@ with this release multisignature transactions are
 considered standard and will start to be relayed
 and accepted into blocks.
 
-It is expected that future releases of kryptoFranc-Qt
+It is expected that future releases of Kryptofranc-Qt
 will support the creation of multisignature transactions,
 once enough of the network has upgraded so relaying
 and validating them is robust.

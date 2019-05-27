@@ -17,7 +17,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/kryptoFranc-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Kryptofranc-Qt (on Mac) or
 kryptofrancd/kryptofranc-qt (on Linux).
 
 Downgrade warning
@@ -74,7 +74,7 @@ BIP112 soft fork to enforce OP_CHECKSEQUENCEVERIFY
 --------------------------------------------------
 
 [BIP112][] redefines the existing OP_NOP3 as OP_CHECKSEQUENCEVERIFY (CSV)
-for a new opcode in the kryptoFranc scripting system that in combination with
+for a new opcode in the Kryptofranc scripting system that in combination with
 [BIP68][] allows execution pathways of a script to be restricted based
 on the age of the output being spent.
 
@@ -88,7 +88,7 @@ KryptoFranc 0.11.2 previously introduced mempool-only locktime
 enforcement using GetMedianTimePast(). This release seeks to
 consensus enforce the rule.
 
-kryptoFranc transactions currently may specify a locktime indicating when
+Kryptofranc transactions currently may specify a locktime indicating when
 they may be added to a valid block.  Current consensus rules require
 that blocks have a block header time greater than the locktime specified
 in any transaction in that block.

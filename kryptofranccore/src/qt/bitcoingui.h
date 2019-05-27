@@ -58,18 +58,18 @@ class ClickableProgressBar;
 }
 
 /**
-  kryptoFranc GUI main class. This class represents the main window of the kryptoFranc UI. It communicates with both the client and
+  Kryptofranc GUI main class. This class represents the main window of the Kryptofranc UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
-class kryptoFrancGUI : public QMainWindow
+class KryptofrancGUI : public QMainWindow
 {
     Q_OBJECT
 
 public:
     static const std::string DEFAULT_UIPLATFORM;
 
-    explicit kryptoFrancGUI(interfaces::Node& node, const PlatformStyle *platformStyle, const NetworkStyle *networkStyle, QWidget *parent = nullptr);
-    ~kryptoFrancGUI();
+    explicit KryptofrancGUI(interfaces::Node& node, const PlatformStyle *platformStyle, const NetworkStyle *networkStyle, QWidget *parent = nullptr);
+    ~KryptofrancGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.

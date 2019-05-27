@@ -63,7 +63,7 @@ public:
 };
 
 /**
- * kryptoFranc protocol message types. When adding new message types, don't forget
+ * Kryptofranc protocol message types. When adding new message types, don't forget
  * to update allNetMessageTypes in protocol.cpp.
  */
 namespace NetMsgType {
@@ -253,7 +253,7 @@ enum ServiceFlags : uint64_t {
     // set by all KryptoFranc non pruned nodes, and is unset by SPV clients or other light clients.
     NODE_NETWORK = (1 << 0),
     // NODE_GETUTXO means the node is capable of responding to the getutxo protocol request.
-    // KryptoFranc does not support this but a patch set called kryptoFranc XT does.
+    // KryptoFranc does not support this but a patch set called Kryptofranc XT does.
     // See BIP 64 for details on how this is implemented.
     NODE_GETUTXO = (1 << 1),
     // NODE_BLOOM means the node is capable and willing to handle bloom-filtered connections.

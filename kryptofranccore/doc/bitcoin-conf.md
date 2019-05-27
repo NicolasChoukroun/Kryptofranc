@@ -32,6 +32,6 @@ Network specific options can be:
 
 ## Configuration File Path
 
-The configuration file is not automatically created; you can create it using your favorite text editor. By default, the configuration file name is `kryptofranc.conf` and it is located in the kryptoFranc data directory, but both the kryptoFranc data directory and the configuration file path may be changed using the `-datadir` and `-conf` command-line options.
+The configuration file is not automatically created; you can create it using your favorite text editor. By default, the configuration file name is `kryptofranc.conf` and it is located in the Kryptofranc data directory, but both the Kryptofranc data directory and the configuration file path may be changed using the `-datadir` and `-conf` command-line options.
 
 The `includeconf=<file>` option in the `bitcoin.conf` file can be used to include additional configuration files.

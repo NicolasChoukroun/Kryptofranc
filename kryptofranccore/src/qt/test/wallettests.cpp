@@ -60,7 +60,7 @@ uint256 SendCoins(CWallet& wallet, SendCoinsDialog& sendCoinsDialog, const CTxDe
     QVBoxLayout* entries = sendCoinsDialog.findChild<QVBoxLayout*>("entries");
     SendCoinsEntry* entry = qobject_cast<SendCoinsEntry*>(entries->itemAt(0)->widget());
     entry->findChild<QValidatedLineEdit*>("payTo")->setText(QString::fromStdString(EncodeDestination(address)));
-    entry->findChild<kryptoFrancAmountField*>("payAmount")->setValue(amount);
+    entry->findChild<KryptofrancAmountField*>("payAmount")->setValue(amount);
     sendCoinsDialog.findChild<QFrame*>("frameFee")
         ->findChild<QFrame*>("frameFeeSelection")
         ->findChild<QCheckBox*>("optInRBF")
@@ -188,7 +188,7 @@ void TestGUI()
     QString balanceText = balanceLabel->text();
     int unit = walletModel.getOptionsModel()->getDisplayUnit();
     CAmount balance = walletModel.wallet().getBalance();
-    QString balanceComparison = kryptoFrancUnits::formatWithUnit(unit, balance, false, kryptoFrancUnits::separatorAlways);
+    QString balanceComparison = KryptofrancUnits::formatWithUnit(unit, balance, false, KryptofrancUnits::separatorAlways);
     QCOMPARE(balanceText, balanceComparison);
 
     // Check Request Payment button
@@ -201,7 +201,7 @@ void TestGUI()
     labelInput->setText("TEST_LABEL_1");
 
     // Amount input
-    kryptoFrancAmountField* amountInput = receiveCoinsDialog.findChild<kryptoFrancAmountField*>("reqAmount");
+    KryptofrancAmountField* amountInput = receiveCoinsDialog.findChild<KryptofrancAmountField*>("reqAmount");
     amountInput->setValue(1);
 
     // Message input

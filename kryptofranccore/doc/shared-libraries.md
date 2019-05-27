@@ -3,7 +3,7 @@ Shared Libraries
 
 ## kryptofrancconsensus
 
-The purpose of this library is to make the verification functionality that is critical to kryptoFranc's consensus available to other applications, e.g. to language bindings.
+The purpose of this library is to make the verification functionality that is critical to Kryptofranc's consensus available to other applications, e.g. to language bindings.
 
 ### API
 
@@ -43,7 +43,7 @@ The interface is defined in the C header `kryptofrancconsensus.h` located in `sr
 - `kryptofrancconsensus_ERR_AMOUNT_REQUIRED` - Input amount is required if WITNESS is used
 
 ### Example Implementations
-- [NkryptoFranc](https://github.com/NicolasDorier/NkryptoFranc/blob/master/NkryptoFranc/Script.cs#L814) (.NET Bindings)
+- [NKryptofranc](https://github.com/NicolasDorier/NKryptofranc/blob/master/NKryptofranc/Script.cs#L814) (.NET Bindings)
 - [node-libkryptofrancconsensus](https://github.com/bitpay/node-libkryptofrancconsensus) (Node.js Bindings)
 - [java-libkryptofrancconsensus](https://github.com/dexX7/java-libkryptofrancconsensus) (Java Bindings)
 - [kryptofrancconsensus-php](https://github.com/Bit-Wasp/kryptofrancconsensus-php) (PHP Bindings)

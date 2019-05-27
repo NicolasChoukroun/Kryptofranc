@@ -57,7 +57,7 @@
       <item>
        <widget class="QValidatedLineEdit" name="payTo">
         <property name="toolTip">
-         <string>The kryptoFranc address to send the payment to</string>
+         <string>The Kryptofranc address to send the payment to</string>
         </property>
        </widget>
       </item>
@@ -165,7 +165,7 @@
     <item row="2" column="1">
      <layout class="QHBoxLayout" name="horizontalLayoutAmount" stretch="0,1,0">
       <item>
-       <widget class="kryptoFrancAmountField" name="payAmount"/>
+       <widget class="KryptofrancAmountField" name="payAmount"/>
       </item>
       <item>
        <widget class="QCheckBox" name="checkboxSubtractFeeFromAmount">
@@ -199,7 +199,7 @@
     <item row="3" column="1">
      <widget class="QLabel" name="messageTextLabel">
       <property name="toolTip">
-       <string>A message that was attached to the kryptofranc: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the kryptoFranc network.</string>
+       <string>A message that was attached to the kryptofranc: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Kryptofranc network.</string>
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>
@@ -709,7 +709,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="kryptoFrancAmountField" name="payAmount_is">
+     <widget class="KryptofrancAmountField" name="payAmount_is">
       <property name="acceptDrops">
        <bool>false</bool>
       </property>
@@ -1242,7 +1242,7 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="kryptoFrancAmountField" name="payAmount_s">
+     <widget class="KryptofrancAmountField" name="payAmount_s">
       <property name="acceptDrops">
        <bool>false</bool>
       </property>
@@ -1258,7 +1258,7 @@
    <header>qt/qvalidatedlineedit.h</header>
   </customwidget>
   <customwidget>
-   <class>kryptoFrancAmountField</class>
+   <class>KryptofrancAmountField</class>
    <extends>QLineEdit</extends>
    <header>qt/bitcoinamountfield.h</header>
   </customwidget>

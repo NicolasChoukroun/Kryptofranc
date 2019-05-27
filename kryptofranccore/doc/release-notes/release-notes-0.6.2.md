@@ -1,5 +1,5 @@
-kryptoFranc version 0.6.2 is now available for download at:
-http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.6.2/
+Kryptofranc version 0.6.2 is now available for download at:
+http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.6.2/
 
 This is a bug-fix and code-cleanup release, with no major new features.
 

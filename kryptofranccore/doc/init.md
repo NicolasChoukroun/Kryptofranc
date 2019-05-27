@@ -84,9 +84,9 @@ OpenRC).
 ### macOS
 
 Binary:              `/usr/local/bin/kryptofrancd`  
-Configuration file:  `~/Library/Application Support/kryptoFranc/kryptofranc.conf`  
-Data directory:      `~/Library/Application Support/kryptoFranc`  
-Lock file:           `~/Library/Application Support/kryptoFranc/.lock`  
+Configuration file:  `~/Library/Application Support/Kryptofranc/kryptofranc.conf`  
+Data directory:      `~/Library/Application Support/Kryptofranc`  
+Lock file:           `~/Library/Application Support/Kryptofranc/.lock`  
 
 Installing Service Configuration
 -----------------------------------

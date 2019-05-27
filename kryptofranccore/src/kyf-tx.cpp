@@ -35,7 +35,7 @@ static const int CONTINUE_EXECUTION=-1;
 
 const std::function<std::string(const char*)> G_TRANSLATION_FUN = nullptr;
 
-static void SetupkryptoFrancTxArgs()
+static void SetupKryptofrancTxArgs()
 {
     SetupHelpOptions(gArgs);
 
@@ -80,7 +80,7 @@ static int AppInitRawTx(int argc, char* argv[])
     //
     // Parameters
     //
-    SetupkryptoFrancTxArgs();
+    SetupKryptofrancTxArgs();
     std::string error;
     if (!gArgs.ParseParameters(argc, argv, error)) {
         fprintf(stderr, "Error parsing command line arguments: %s\n", error.c_str());

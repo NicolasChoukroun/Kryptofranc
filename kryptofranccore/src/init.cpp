@@ -554,7 +554,7 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/NicolasChoukroun/KryptoFranc>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/kryptofranc/kryptofranc>";
     const std::string URL_WEBSITE = "<https://KryptoFranc.com>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
@@ -733,7 +733,7 @@ static void ThreadImport(std::vector<fs::path> vImportFiles)
 }
 
 /** Sanity checks
- *  Ensure that kryptoFranc is running in a usable environment with all
+ *  Ensure that Kryptofranc is running in a usable environment with all
  *  necessary library support.
  */
 static bool InitSanityCheck()
@@ -1178,7 +1178,7 @@ bool AppInitParameterInteraction()
 
 static bool LockDataDirectory(bool probeOnly)
 {
-    // Make sure only a single kryptoFranc process is using the data directory.
+    // Make sure only a single Kryptofranc process is using the data directory.
     fs::path datadir = GetDataDir();
     if (!DirIsWritable(datadir)) {
         return InitError(strprintf(_("Cannot write to data directory '%s'; check permissions."), datadir.string()));

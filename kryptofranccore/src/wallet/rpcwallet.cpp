@@ -159,7 +159,7 @@ static UniValue getnewaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 2)
         throw std::runtime_error(
             RPCHelpMan{"getnewaddress",
-                "\nReturns a new kryptoFranc address for receiving payments.\n"
+                "\nReturns a new Kryptofranc address for receiving payments.\n"
                 "If 'label' is specified, it is added to the address book \n"
                 "so payments received with the address will be associated with 'label'.\n",
                 {
@@ -222,7 +222,7 @@ static UniValue getrawchangeaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
             RPCHelpMan{"getrawchangeaddress",
-                "\nReturns a new kryptoFranc address, for receiving change.\n"
+                "\nReturns a new Kryptofranc address, for receiving change.\n"
                 "This is for use with raw transactions, NOT normal use.\n",
                 {
                     {"address_type", RPCArg::Type::STR, /* default */ "set by -changetype", "The address type to use. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."},
@@ -295,7 +295,7 @@ static UniValue setlabel(const JSONRPCRequest& request)
 
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(dest)) {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid kryptoFranc address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Kryptofranc address");
     }
 
     std::string label = LabelFromValue(request.params[1]);
@@ -325,7 +325,7 @@ static CTransactionRef SendMoney(interfaces::Chain::Lock& locked_chain, CWallet 
         throw JSONRPCError(RPC_CLIENT_P2P_DISABLED, "Error: Peer-to-peer functionality missing or disabled");
     }
 
-    // Parse kryptoFranc address
+    // Parse Kryptofranc address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -613,10 +613,10 @@ static UniValue getreceivedbyaddress(const JSONRPCRequest& request)
     auto locked_chain = pwallet->chain().lock();
     LOCK(pwallet->cs_wallet);
 
-    // kryptoFranc address
+    // Kryptofranc address
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(dest)) {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid kryptoFranc address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Kryptofranc address");
     }
     CScript scriptPubKey = GetScriptForDestination(dest);
     if (!IsMine(*pwallet, scriptPubKey)) {
@@ -906,7 +906,7 @@ static UniValue sendmany(const JSONRPCRequest& request)
     for (const std::string& name_ : keys) {
         CTxDestination dest = DecodeDestination(name_);
         if (!IsValidDestination(dest)) {
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid kryptoFranc address: ") + name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Kryptofranc address: ") + name_);
         }
 
         if (destinations.count(dest)) {
@@ -972,7 +972,7 @@ static UniValue addmultisigaddress(const JSONRPCRequest& request)
         std::string msg =
             RPCHelpMan{"addmultisigaddress",
                 "\nAdd a nrequired-to-sign multisignature address to the wallet. Requires a new wallet backup.\n"
-                "Each key is a kryptoFranc address or hex-encoded public key.\n"
+                "Each key is a Kryptofranc address or hex-encoded public key.\n"
                 "This functionality is only intended for use with non-watchonly addresses.\n"
                 "See `importaddress` for watchonly p2sh address support.\n"
                 "If 'label' is specified, assign address to that label.\n",
@@ -2801,7 +2801,7 @@ static UniValue listunspent(const JSONRPCRequest& request)
             const UniValue& input = inputs[idx];
             CTxDestination dest = DecodeDestination(input.get_str());
             if (!IsValidDestination(dest)) {
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid kryptoFranc address: ") + input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Kryptofranc address: ") + input.get_str());
             }
             if (!destinations.insert(dest).second) {
                 throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, duplicated address: ") + input.get_str());

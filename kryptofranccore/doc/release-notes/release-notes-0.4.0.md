@@ -1,5 +1,5 @@
-kryptoFranc version 0.4.0 is now available for download at:
-http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.4.0/
+Kryptofranc version 0.4.0 is now available for download at:
+http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.4.0/
 
 The main feature in this release is wallet private key encryption;
 you can set a passphrase that must be entered before sending coins.
@@ -27,14 +27,14 @@ Optimize database writes for large (lots of inputs) transactions
 
 Wallet Encryption
 
-kryptoFranc supports native wallet encryption so that people who steal your
-wallet file don't automatically get access to all of your kryptoFrancs.
+Kryptofranc supports native wallet encryption so that people who steal your
+wallet file don't automatically get access to all of your Kryptofrancs.
 In order to enable this feature, choose "Encrypt Wallet" from the
 Options menu.  You will be prompted to enter a passphrase, which
 will be used as the key to encrypt your wallet and will be needed
-every time you wish to send kryptoFrancs.  If you lose this passphrase,
+every time you wish to send Kryptofrancs.  If you lose this passphrase,
 you will lose access to spend all of the kryptofrancs in your wallet,
-no one, not even the kryptoFranc developers can recover your kryptoFrancs.
+no one, not even the Kryptofranc developers can recover your Kryptofrancs.
 This means you are responsible for your own security, store your
 passphrase in a secure location and do not forget it.
 
@@ -46,24 +46,24 @@ relevant transactions, you are only protected from someone spending
 your coins.
 
 It is recommended that you backup your wallet file before you
-encrypt your wallet.  To do this, close the kryptoFranc client and
+encrypt your wallet.  To do this, close the Kryptofranc client and
 copy the wallet.dat file from ~/.kryptofranc/ on Linux, /Users/(user
-name)/Application Support/kryptoFranc/ on Mac OSX, and %APPDATA%/kryptoFranc/
-on Windows (that is /Users/(user name)/AppData/Roaming/kryptoFranc on
+name)/Application Support/Kryptofranc/ on Mac OSX, and %APPDATA%/Kryptofranc/
+on Windows (that is /Users/(user name)/AppData/Roaming/Kryptofranc on
 Windows Vista and 7 and /Documents and Settings/(user name)/Application
-Data/kryptoFranc on Windows XP).  Once you have copied that file to a
-safe location, reopen the kryptoFranc client and Encrypt your wallet.
+Data/Kryptofranc on Windows XP).  Once you have copied that file to a
+safe location, reopen the Kryptofranc client and Encrypt your wallet.
 If everything goes fine, delete the backup and enjoy your encrypted
 wallet.  Note that once you encrypt your wallet, you will never be
-able to go back to a version of the kryptoFranc client older than 0.4.
+able to go back to a version of the Kryptofranc client older than 0.4.
 
 Keep in mind that you are always responsible for your own security.
 All it takes is a slightly more advanced wallet-stealing trojan which
 installs a keylogger to steal your wallet passphrase as you enter it
-in addition to your wallet file and you have lost all your kryptoFrancs.
+in addition to your wallet file and you have lost all your Kryptofrancs.
 Wallet encryption cannot keep you safe if you do not practice
 good security, such as running up-to-date antivirus software, only
-entering your wallet passphrase in the kryptoFranc client and using the
+entering your wallet passphrase in the Kryptofranc client and using the
 same passphrase only as your wallet passphrase.
 
 See the doc/README file in the kryptofranc source for technical details

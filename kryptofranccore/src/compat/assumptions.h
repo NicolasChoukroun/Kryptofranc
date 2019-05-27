@@ -15,7 +15,7 @@
 // Example(s): We use assert(...) extensively with the assumption of it never
 //             being a noop at runtime.
 #if defined(NDEBUG)
-# error "kryptoFranc cannot be compiled without assertions."
+# error "Kryptofranc cannot be compiled without assertions."
 #endif
 
 // Assumption: We assume the floating-point types to fulfill the requirements of

@@ -121,7 +121,7 @@ public:
     }
 };
 
-/** Interface to kryptoFranc wallet from Qt view code. */
+/** Interface to Kryptofranc wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

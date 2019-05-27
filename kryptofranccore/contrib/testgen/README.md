@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven kryptoFranc tests.
+Utilities to generate test vectors for the data-driven Kryptofranc tests.
 
 Usage: 
 

@@ -56,9 +56,9 @@ covered by the txid. This provides several immediate benefits:
   identifier (txid) of transactions without referencing the witness, which can
   sometimes be changed by third-parties (such as miners) or by co-signers in a
   multisig spend. This solves all known cases of unwanted transaction
-  malleability, which is a problem that makes programming kryptoFranc wallet
+  malleability, which is a problem that makes programming Kryptofranc wallet
   software more difficult and which seriously complicates the design of smart
-  contracts for kryptoFranc.
+  contracts for Kryptofranc.
 
 - **Capacity increase:** Segwit transactions contain new fields that are not
   part of the data currently used to calculate the size of a block, which
@@ -72,7 +72,7 @@ covered by the txid. This provides several immediate benefits:
   following section for details).
 
 - **Weighting data based on how it affects node performance:** Some parts of
-  each kryptoFranc block need to be stored by nodes in order to validate future
+  each Kryptofranc block need to be stored by nodes in order to validate future
   blocks; other parts of a block can be immediately forgotten (pruned) or used
   only for helping other nodes sync their copy of the block chain.  One large
   part of the immediately prunable data are transaction signatures (witnesses),
@@ -105,7 +105,7 @@ covered by the txid. This provides several immediate benefits:
   different signature method that doesn't suffer from this problem and doesn't
   have any unwanted side-effects.
 
-- **Increased security for multisig:** kryptoFranc addresses (both P2PKH addresses
+- **Increased security for multisig:** Kryptofranc addresses (both P2PKH addresses
   that start with a '1' and P2SH addresses that start with a '3') use a hash
   function known as RIPEMD-160.  For P2PKH addresses, this provides about 160
   bits of security---which is beyond what cryptographers believe can be broken
@@ -115,15 +115,15 @@ covered by the txid. This provides several immediate benefits:
   Segwit allows advanced transactions to use the SHA256 hash function instead,
   which provides about 128 bits of security  (that is 281 trillion times as
   much security as 80 bits and is equivalent to the maximum bits of security
-  believed to be provided by kryptoFranc's choice of parameters for its Elliptic
+  believed to be provided by Kryptofranc's choice of parameters for its Elliptic
   Curve Digital Security Algorithm [ECDSA].)
 
 - **More efficient almost-full-node security** Satoshi Nakamoto's original
-  kryptoFranc paper describes a method for allowing newly-started full nodes to
+  Kryptofranc paper describes a method for allowing newly-started full nodes to
   skip downloading and validating some data from historic blocks that are
   protected by large amounts of proof of work.  Unfortunately, Nakamoto's
   method can't guarantee that a newly-started node using this method will
-  produce an accurate copy of kryptoFranc's current ledger (called the UTXO set),
+  produce an accurate copy of Kryptofranc's current ledger (called the UTXO set),
   making the node vulnerable to falling out of consensus with other nodes.
   Although the problems with Nakamoto's method can't be fixed in a soft fork,
   Segwit accomplishes something similar to his original proposal: it makes it
@@ -135,14 +135,14 @@ covered by the txid. This provides several immediate benefits:
   of this 0.13.1 release.
 
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
-  kryptoFranc users to individually opt-in to almost any change in the kryptoFranc
+  Kryptofranc users to individually opt-in to almost any change in the Kryptofranc
   Script language when those users receive new transactions.  Features
   currently being researched by KryptoFranc contributors that may use this
   capability include support for Schnorr signatures, which can improve the
   privacy and efficiency of multisig transactions (or transactions with
   multiple inputs), and Merklized Abstract Syntax Trees (MAST), which can
   improve the privacy and efficiency of scripts with two or more conditions.
-  Other kryptoFranc community members are studying several other improvements
+  Other Kryptofranc community members are studying several other improvements
   that can be made using script versioning.
 
 Activation for the segwit soft fork is being managed using BIP9

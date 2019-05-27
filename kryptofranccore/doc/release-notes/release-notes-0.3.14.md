@@ -1,5 +1,5 @@
 Version 0.3.14 is now available
-http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.3.14/
+http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.3.14/
 
 Changes:
 * Key pool feature for safer wallet backup

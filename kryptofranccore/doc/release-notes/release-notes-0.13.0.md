@@ -232,7 +232,7 @@ files on disk. These two have now been split up, so that all blocks are known
 before validation starts. This was necessary to make certain optimizations that
 are available during normal synchronizations also available during reindexing.
 
-The two phases are distinct in the kryptoFranc-Qt GUI. During the first one,
+The two phases are distinct in the Kryptofranc-Qt GUI. During the first one,
 "Reindexing blocks on disk" is shown. During the second (slower) one,
 "Processing blocks on disk" is shown.
 
@@ -563,7 +563,7 @@ git merge commit are mentioned.
 - #8257 `ff03c50` Do not ask a UI question from kryptofrancd (sipa)
 - #8288 `91abb77` Network-specific example address (laanwj)
 - #7707 `a914968` UI support for abandoned transactions (jonasschnelli)
-- #8207 `f7a403b` Add a link to the kryptoFranc-Core repository and website to the About Dialog (MarcoFalke)
+- #8207 `f7a403b` Add a link to the Kryptofranc-Core repository and website to the About Dialog (MarcoFalke)
 - #8281 `6a87eb0` Remove client name from debug window (laanwj)
 - #8407 `45eba4b` Add dbcache migration path (jonasschnelli)
 
@@ -660,7 +660,7 @@ git merge commit are mentioned.
 - #8090 `a2df115` Adding P2SH(p2pkh) script test case (Christewart)
 - #7992 `ec45cc5` Extend #7956 with one more test (TheBlueMatt)
 - #8139 `ae5575b` Fix interrupted HTTP RPC connection workaround for Python 3.5+ (sipa)
-- #8164 `0f24eaf` [kryptoFranc-Tx] fix missing test fixtures, fix 32bit atoi issue (jonasschnelli)
+- #8164 `0f24eaf` [Kryptofranc-Tx] fix missing test fixtures, fix 32bit atoi issue (jonasschnelli)
 - #8166 `0b5279f` Src/test: Do not shadow local variables (paveljanik)
 - #8141 `44c1b1c` Continuing port of java comparison tool (mrbandrews)
 - #8201 `36b7400` fundrawtransaction: Fix race, assert amounts (MarcoFalke)

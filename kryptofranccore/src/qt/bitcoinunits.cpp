@@ -8,15 +8,15 @@
 
 #include <QStringList>
 
-kryptoFrancUnits::kryptoFrancUnits(QObject *parent):
+KryptofrancUnits::KryptofrancUnits(QObject *parent):
         QAbstractListModel(parent),
         unitlist(availableUnits())
 {
 }
 
-QList<kryptoFrancUnits::Unit> kryptoFrancUnits::availableUnits()
+QList<KryptofrancUnits::Unit> KryptofrancUnits::availableUnits()
 {
-    QList<kryptoFrancUnits::Unit> unitlist;
+    QList<KryptofrancUnits::Unit> unitlist;
     unitlist.append(KYF);
     unitlist.append(mKYF);
     unitlist.append(uKYF);
@@ -24,7 +24,7 @@ QList<kryptoFrancUnits::Unit> kryptoFrancUnits::availableUnits()
     return unitlist;
 }
 
-bool kryptoFrancUnits::valid(int unit)
+bool KryptofrancUnits::valid(int unit)
 {
     switch(unit)
     {
@@ -38,7 +38,7 @@ bool kryptoFrancUnits::valid(int unit)
     }
 }
 
-QString kryptoFrancUnits::longName(int unit)
+QString KryptofrancUnits::longName(int unit)
 {
     switch(unit)
     {
@@ -50,7 +50,7 @@ QString kryptoFrancUnits::longName(int unit)
     }
 }
 
-QString kryptoFrancUnits::shortName(int unit)
+QString KryptofrancUnits::shortName(int unit)
 {
     switch(unit)
     {
@@ -60,19 +60,19 @@ QString kryptoFrancUnits::shortName(int unit)
     }
 }
 
-QString kryptoFrancUnits::description(int unit)
+QString KryptofrancUnits::description(int unit)
 {
     switch(unit)
     {
-    case KYF: return QString("kryptoFrancs");
-    case mKYF: return QString("Milli-kryptoFrancs (1 / 1" THIN_SP_UTF8 "000)");
-    case uKYF: return QString("Micro-kryptoFrancs (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case KYF: return QString("Kryptofrancs");
+    case mKYF: return QString("Milli-Kryptofrancs (1 / 1" THIN_SP_UTF8 "000)");
+    case uKYF: return QString("Micro-Kryptofrancs (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
 
-qint64 kryptoFrancUnits::factor(int unit)
+qint64 KryptofrancUnits::factor(int unit)
 {
     switch(unit)
     {
@@ -84,7 +84,7 @@ qint64 kryptoFrancUnits::factor(int unit)
     }
 }
 
-int kryptoFrancUnits::decimals(int unit)
+int KryptofrancUnits::decimals(int unit)
 {
     switch(unit)
     {
@@ -96,7 +96,7 @@ int kryptoFrancUnits::decimals(int unit)
     }
 }
 
-QString kryptoFrancUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators)
+QString KryptofrancUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators)
 {
     // Note: not using straight sprintf here because we do NOT want
     // localized number formatting.
@@ -140,12 +140,12 @@ QString kryptoFrancUnits::format(int unit, const CAmount& nIn, bool fPlus, Separ
 // Please take care to use formatHtmlWithUnit instead, when
 // appropriate.
 
-QString kryptoFrancUnits::formatWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString KryptofrancUnits::formatWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     return format(unit, amount, plussign, separators) + QString(" ") + shortName(unit);
 }
 
-QString kryptoFrancUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString KryptofrancUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     QString str(formatWithUnit(unit, amount, plussign, separators));
     str.replace(QChar(THIN_SP_CP), QString(THIN_SP_HTML));
@@ -153,7 +153,7 @@ QString kryptoFrancUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bo
 }
 
 
-bool kryptoFrancUnits::parse(int unit, const QString &value, CAmount *val_out)
+bool KryptofrancUnits::parse(int unit, const QString &value, CAmount *val_out)
 {
     if(!valid(unit) || value.isEmpty())
         return false; // Refuse to parse invalid unit or empty string
@@ -192,23 +192,23 @@ bool kryptoFrancUnits::parse(int unit, const QString &value, CAmount *val_out)
     return ok;
 }
 
-QString kryptoFrancUnits::getAmountColumnTitle(int unit)
+QString KryptofrancUnits::getAmountColumnTitle(int unit)
 {
     QString amountTitle = QObject::tr("Amount");
-    if (kryptoFrancUnits::valid(unit))
+    if (KryptofrancUnits::valid(unit))
     {
-        amountTitle += " ("+kryptoFrancUnits::shortName(unit) + ")";
+        amountTitle += " ("+KryptofrancUnits::shortName(unit) + ")";
     }
     return amountTitle;
 }
 
-int kryptoFrancUnits::rowCount(const QModelIndex &parent) const
+int KryptofrancUnits::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     return unitlist.size();
 }
 
-QVariant kryptoFrancUnits::data(const QModelIndex &index, int role) const
+QVariant KryptofrancUnits::data(const QModelIndex &index, int role) const
 {
     int row = index.row();
     if(row >= 0 && row < unitlist.size())
@@ -228,7 +228,7 @@ QVariant kryptoFrancUnits::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
-CAmount kryptoFrancUnits::maxMoney()
+CAmount KryptofrancUnits::maxMoney()
 {
     return MAX_MONEY;
 }

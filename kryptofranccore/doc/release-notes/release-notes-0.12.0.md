@@ -16,7 +16,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/kryptoFranc-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Kryptofranc-Qt (on Mac) or
 kryptofrancd/kryptofranc-qt (on Linux).
 
 Downgrade warning
@@ -60,7 +60,7 @@ Notable changes
 Signature validation using libsecp256k1
 ---------------------------------------
 
-ECDSA signatures inside kryptoFranc transactions now use validation using
+ECDSA signatures inside Kryptofranc transactions now use validation using
 [libsecp256k1](https://github.com/kryptofranc-core/secp256k1) instead of OpenSSL.
 
 Depending on the platform, this means a significant speedup for raw signature
@@ -250,7 +250,7 @@ information, pass `-debug=tor`.
 Notifications through ZMQ
 -------------------------
 
-kryptoFrancd can now (optionally) asynchronously notify clients through a
+Kryptofrancd can now (optionally) asynchronously notify clients through a
 ZMQ-based PUB socket of the arrival of new transactions and blocks.
 This feature requires installation of the ZMQ C API library 4.x and
 configuring its use through the command line or configuration file.
@@ -263,7 +263,7 @@ Various improvements have been made to how the wallet calculates
 transaction fees.
 
 Users can decide to pay a predefined fee rate by setting `-paytxfee=<n>`
-(or `settxfee <n>` rpc during runtime). A value of `n=0` signals kryptoFranc
+(or `settxfee <n>` rpc during runtime). A value of `n=0` signals Kryptofranc
 Core to use floating fees. By default, KryptoFranc will use floating
 fees.
 
@@ -637,7 +637,7 @@ git merge commit are mentioned.
 ### Build system
 
 - #6210 `0e4f2a0` build: disable optional use of gmp in internal secp256k1 build (Wladimir J. van der Laan)
-- #6214 `87406aa` [OSX] revert renaming of kryptoFranc-Qt.app and use CFBundleDisplayName (partial revert of #6116) (Jonas Schnelli)
+- #6214 `87406aa` [OSX] revert renaming of Kryptofranc-Qt.app and use CFBundleDisplayName (partial revert of #6116) (Jonas Schnelli)
 - #6218 `9d67b10` build/gitian misc updates (Cory Fields)
 - #6269 `d4565b6` gitian: Use the new kryptofranc-detached-sigs git repo for OSX signatures (Cory Fields)
 - #6418 `d4a910c` Add autogen.sh to source tarball. (randy-waterhouse)

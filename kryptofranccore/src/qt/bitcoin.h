@@ -13,7 +13,7 @@
 #include <memory>
 #include <vector>
 
-class kryptoFrancGUI;
+class KryptofrancGUI;
 class ClientModel;
 class NetworkStyle;
 class OptionsModel;
@@ -30,11 +30,11 @@ class Node;
 /** Class encapsulating KryptoFranc startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
-class kryptoFrancCore: public QObject
+class KryptofrancCore: public QObject
 {
     Q_OBJECT
 public:
-    explicit kryptoFrancCore(interfaces::Node& node);
+    explicit KryptofrancCore(interfaces::Node& node);
 
 public Q_SLOTS:
     void initialize();
@@ -52,13 +52,13 @@ private:
     interfaces::Node& m_node;
 };
 
-/** Main kryptoFranc application object */
-class kryptoFrancApplication: public QApplication
+/** Main Kryptofranc application object */
+class KryptofrancApplication: public QApplication
 {
     Q_OBJECT
 public:
-    explicit kryptoFrancApplication(interfaces::Node& node, int &argc, char **argv);
-    ~kryptoFrancApplication();
+    explicit KryptofrancApplication(interfaces::Node& node, int &argc, char **argv);
+    ~KryptofrancApplication();
 
 #ifdef ENABLE_WALLET
     /// Create payment server
@@ -83,7 +83,7 @@ public:
     /// Get process return value
     int getReturnValue() const { return returnValue; }
 
-    /// Get window identifier of QMainWindow (kryptoFrancGUI)
+    /// Get window identifier of QMainWindow (KryptofrancGUI)
     WId getMainWinId() const;
 
     /// Setup platform style
@@ -99,14 +99,14 @@ Q_SIGNALS:
     void requestedInitialize();
     void requestedShutdown();
     void splashFinished();
-    void windowShown(kryptoFrancGUI* window);
+    void windowShown(KryptofrancGUI* window);
 
 private:
     QThread *coreThread;
     interfaces::Node& m_node;
     OptionsModel *optionsModel;
     ClientModel *clientModel;
-    kryptoFrancGUI *window;
+    KryptofrancGUI *window;
     QTimer *pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer{nullptr};

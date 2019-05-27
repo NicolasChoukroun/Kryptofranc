@@ -86,15 +86,15 @@ WalletView::~WalletView()
 {
 }
 
-void WalletView::setkryptoFrancGUI(kryptoFrancGUI *gui)
+void WalletView::setKryptofrancGUI(KryptofrancGUI *gui)
 {
     if (gui)
     {
         // Clicking on a transaction on the overview page simply sends you to transaction history page
-        connect(overviewPage, &OverviewPage::transactionClicked, gui, &kryptoFrancGUI::gotoHistoryPage);
+        connect(overviewPage, &OverviewPage::transactionClicked, gui, &KryptofrancGUI::gotoHistoryPage);
 
         // Navigate to transaction history page after send
-        connect(sendCoinsPage, &SendCoinsDialog::coinsSent, gui, &kryptoFrancGUI::gotoHistoryPage);
+        connect(sendCoinsPage, &SendCoinsDialog::coinsSent, gui, &KryptofrancGUI::gotoHistoryPage);
 
         // Receive and report messages
         connect(this, &WalletView::message, [gui](const QString &title, const QString &message, unsigned int style) {
@@ -102,13 +102,13 @@ void WalletView::setkryptoFrancGUI(kryptoFrancGUI *gui)
         });
 
         // Pass through encryption status changed signals
-        connect(this, &WalletView::encryptionStatusChanged, gui, &kryptoFrancGUI::updateWalletStatus);
+        connect(this, &WalletView::encryptionStatusChanged, gui, &KryptofrancGUI::updateWalletStatus);
 
         // Pass through transaction notifications
-        connect(this, &WalletView::incomingTransaction, gui, &kryptoFrancGUI::incomingTransaction);
+        connect(this, &WalletView::incomingTransaction, gui, &KryptofrancGUI::incomingTransaction);
 
         // Connect HD enabled state signal
-        connect(this, &WalletView::hdEnabledStatusChanged, gui, &kryptoFrancGUI::updateWalletStatus);
+        connect(this, &WalletView::hdEnabledStatusChanged, gui, &KryptofrancGUI::updateWalletStatus);
     }
 }
 

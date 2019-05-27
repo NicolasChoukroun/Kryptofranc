@@ -1,9 +1,9 @@
-kryptoFranc version 0.4.4 is now available for download at:
+Kryptofranc version 0.4.4 is now available for download at:
 http://luke.dashjr.org/programs/kryptofranc/files/kryptofrancd-0.4.4/
 
 This is a bugfix-only release based on 0.4.0.
 
-Please note that the wxkryptoFranc GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
+Please note that the wxKryptofranc GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
 
 Please report bugs for the daemon only using the issue tracker at github:
 https://github.com/kryptofranc/kryptofranc/issues

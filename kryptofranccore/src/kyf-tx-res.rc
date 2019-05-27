@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "kryptoFranc"
-            VALUE "FileDescription",    "kryptofranc-tx (CLI kryptoFranc transaction editor utility)"
+            VALUE "CompanyName",        "Kryptofranc"
+            VALUE "FileDescription",    "kryptofranc-tx (CLI Kryptofranc transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "kryptofranc-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

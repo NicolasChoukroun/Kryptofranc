@@ -682,13 +682,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\kryptoFranc
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\kryptoFranc
-    // Mac: ~/Library/Application Support/kryptoFranc
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Kryptofranc
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Kryptofranc
+    // Mac: ~/Library/Application Support/Kryptofranc
     // Unix: ~/.kryptofranc
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "kryptoFranc";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Kryptofranc";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -698,7 +698,7 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/kryptoFranc";
+    return pathRet / "Library/Application Support/Kryptofranc";
 #else
     // Unix
     return pathRet / ".kryptofranc";

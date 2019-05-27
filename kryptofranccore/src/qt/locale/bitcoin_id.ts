@@ -66,12 +66,12 @@
         <translation>Alamat menerima</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ini adalah alamat Bitcoin anda untuk mengirim pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirim koin</translation>
+        <source>These are your Kryptofranc addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ini adalah alamat Kryptofranc anda untuk mengirim pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirim koin</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ini adalah alamat Bitcoin anda untuk menerima pembayaran. Disarankan untuk menggunakan alamat penerimaan baru untuk setiap transaksi</translation>
+        <source>These are your Kryptofranc addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ini adalah alamat Kryptofranc anda untuk menerima pembayaran. Disarankan untuk menggunakan alamat penerimaan baru untuk setiap transaksi</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Konfirmasi proses enkripsi wallet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Peringatan:  Jika anda mengenkripsi wallet anda dan lupa/hilang passphrase anda, anda akan ‭&lt;b&gt; KEHILANGAN SEMUA BITCOIN ANDA &lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KRYPTOFRANCS&lt;/b&gt;!</source>
+        <translation>Peringatan:  Jika anda mengenkripsi wallet anda dan lupa/hilang passphrase anda, anda akan ‭&lt;b&gt; KEHILANGAN SEMUA KRYPTOFRANC ANDA &lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Wallet terenkripsi</translation>
     </message>
     <message>
-        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Wallet anda sekarang sudah terenkripsi. Perlu diingat bahwa enkripsi wallet anda tidak dapat sepenuhnya melindungi bitcoin dari pencurian melalui malware yang menginfeksi komputer anda. </translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your kryptofrancs from being stolen by malware infecting your computer.</source>
+        <translation>Wallet anda sekarang sudah terenkripsi. Perlu diingat bahwa enkripsi wallet anda tidak dapat sepenuhnya melindungi kryptofranc dari pencurian melalui malware yang menginfeksi komputer anda. </translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -240,7 +240,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>KryptofrancGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Verifikasi pesan...</translation>
@@ -342,8 +342,8 @@
         <translation>Proxy &lt;b&gt;aktif&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Kirim koin ke alamat Bitcoin</translation>
+        <source>Send coins to a Kryptofranc address</source>
+        <translation>Kirim koin ke alamat Kryptofranc</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -366,8 +366,8 @@
         <translation>&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Kryptofranc</source>
+        <translation>Kryptofranc</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -390,12 +390,12 @@
         <translation>Enkripsi private keys wallet anda</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tambahkan pesan di alamat Bitcoin untuk membuktikan bahwa anda pemiliknya</translation>
+        <source>Sign messages with your Kryptofranc addresses to prove you own them</source>
+        <translation>Tambahkan pesan di alamat Kryptofranc untuk membuktikan bahwa anda pemiliknya</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa telah ditanda tangani dengan alamat Bitcoin tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Kryptofranc addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa telah ditanda tangani dengan alamat Kryptofranc tertentu</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +414,8 @@
         <translation>Toolbar Tabs</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Meminta pembayaran (generate kode QR dan bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and kryptofranc: URIs)</source>
+        <translation>Meminta pembayaran (generate kode QR dan kryptofranc: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,16 +426,16 @@
         <translation>Perlihatkan daftar address penerima dan labelnya</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Buka bitcoin: URI atau permintaan pembayaran</translation>
+        <source>Open a kryptofranc: URI or payment request</source>
+        <translation>Buka kryptofranc: URI atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>opsi &amp;Command-line</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n koneksi aktif pada jaringan Bitcoin</numerusform></translation>
+        <source>%n active connection(s) to Kryptofranc network</source>
+        <translation><numerusform>%n koneksi aktif pada jaringan Kryptofranc</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -486,8 +486,8 @@
         <translation>Address &amp;Penerima</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Perlihatkan %1 pesan yang didapat dari daftar dengan opsi command-line Bitcoin yang memungkinkan</translation>
+        <source>Show the %1 help message to get a list with possible Kryptofranc command-line options</source>
+        <translation>Perlihatkan %1 pesan yang didapat dari daftar dengan opsi command-line Kryptofranc yang memungkinkan</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -777,8 +777,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Kryptofranc</source>
+        <translation>Kryptofranc</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1081,7 +1081,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>kryptofranc-core</name>
     <message>
         <source>Information</source>
         <translation>Informasi</translation>

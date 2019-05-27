@@ -104,7 +104,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>KryptofrancGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Võrguga sünkroniseerimine...</translation>
@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Kryptofranc</source>
+        <translation>Kryptofranc</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -261,8 +261,8 @@
         <translation>Tere tulemast</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Kryptofranc</source>
+        <translation>Kryptofranc</translation>
     </message>
     <message>
         <source>Error</source>
@@ -753,10 +753,10 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>kryptofranc-core</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Kryptofranc Core</source>
+        <translation>Kryptofranc Core</translation>
     </message>
     <message>
         <source>Information</source>

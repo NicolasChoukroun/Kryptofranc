@@ -1,5 +1,5 @@
-kryptoFranc version 0.5.1 is now available for download at:
-http://sourceforge.net/projects/kryptofranc/files/kryptoFranc/kryptofranc-0.5.1/
+Kryptofranc version 0.5.1 is now available for download at:
+http://sourceforge.net/projects/kryptofranc/files/Kryptofranc/kryptofranc-0.5.1/
 
 This is a bugfix-only release.
 

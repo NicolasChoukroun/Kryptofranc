@@ -11,7 +11,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* kryptoFrancGUI -- Size of icons in status bar */
+/* KryptofrancGUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -46,11 +46,11 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "kryptoFranc"
+#define QAPP_ORG_NAME "Kryptofranc"
 #define QAPP_ORG_DOMAIN "kryptofranc.org"
-#define QAPP_APP_NAME_DEFAULT "kryptoFranc-Qt"
-#define QAPP_APP_NAME_TESTNET "kryptoFranc-Qt-testnet"
-#define QAPP_APP_NAME_REGTEST "kryptoFranc-Qt-regtest"
+#define QAPP_APP_NAME_DEFAULT "Kryptofranc-Qt"
+#define QAPP_APP_NAME_TESTNET "Kryptofranc-Qt-testnet"
+#define QAPP_APP_NAME_REGTEST "Kryptofranc-Qt-regtest"
 
 /* One gigabyte (GB) in bytes */
 static constexpr uint64_t GB_BYTES{1000000000};
