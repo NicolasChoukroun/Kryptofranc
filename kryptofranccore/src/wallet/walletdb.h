@@ -1,10 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_WALLETDB_H
-#define BITCOIN_WALLET_WALLETDB_H
+#ifndef KRYPTOFRANC_WALLET_WALLETDB_H
+#define KRYPTOFRANC_WALLET_WALLETDB_H
 
 #include <amount.h>
 #include <primitives/transaction.h>
@@ -253,4 +255,4 @@ private:
 //! Compacts BDB state so that wallet.dat is self-contained (if there are changes)
 void MaybeCompactWalletDB();
 
-#endif // BITCOIN_WALLET_WALLETDB_H
+#endif // KRYPTOFRANC_WALLET_WALLETDB_H

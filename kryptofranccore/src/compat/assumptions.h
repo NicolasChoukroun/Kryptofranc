@@ -1,12 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 // Compile-time verification of assumptions we make.
 
-#ifndef BITCOIN_COMPAT_ASSUMPTIONS_H
-#define BITCOIN_COMPAT_ASSUMPTIONS_H
+#ifndef KRYPTOFRANC_COMPAT_ASSUMPTIONS_H
+#define KRYPTOFRANC_COMPAT_ASSUMPTIONS_H
 
 #include <limits>
 
@@ -14,7 +15,7 @@
 // Example(s): We use assert(...) extensively with the assumption of it never
 //             being a noop at runtime.
 #if defined(NDEBUG)
-# error "Bitcoin cannot be compiled without assertions."
+# error "kryptoFranc cannot be compiled without assertions."
 #endif
 
 // Assumption: We assume the floating-point types to fulfill the requirements of
@@ -46,4 +47,4 @@ static_assert(sizeof(int) == 4, "32-bit int assumed");
 // * We are NOT assuming a specific value for std::locale("").name().
 // * We are NOT assuming a specific value for std::numeric_limits<char>::is_signed.
 
-#endif // BITCOIN_COMPAT_ASSUMPTIONS_H
+#endif // KRYPTOFRANC_COMPAT_ASSUMPTIONS_H

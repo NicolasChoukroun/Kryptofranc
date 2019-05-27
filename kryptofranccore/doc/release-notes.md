@@ -1,17 +1,17 @@
-Bitcoin Core version 0.18.x is now available from:
+KryptoFranc version 0.18.x is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.18.x/>
+  <https://kryptofranccore.org/bin/kryptofranc-core-0.18.x/>
 
 This is a new major version release, including new features, various bug
 fixes and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/kryptofranc/kryptofranc/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://kryptofranccore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has
 completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-`/Applications/Bitcoin-Qt` (on Mac) or `bitcoind`/`bitcoin-qt` (on
+`/Applications/kryptoFranc-Qt` (on Mac) or `kryptofrancd`/`kryptofranc-qt` (on
 Linux).
 
 The first time you run version 0.15.0 or newer, your chainstate database
@@ -35,16 +35,16 @@ wallet versions are still supported.
 Compatibility
 ==============
 
-Bitcoin Core is supported and extensively tested on operating systems
+KryptoFranc is supported and extensively tested on operating systems
 using the Linux kernel, macOS 10.10+, and Windows 7 and newer. It is not
-recommended to use Bitcoin Core on unsupported systems.
+recommended to use KryptoFranc on unsupported systems.
 
-Bitcoin Core should also work on most other Unix-like systems but is not
+KryptoFranc should also work on most other Unix-like systems but is not
 as frequently tested on them.
 
 From 0.17.0 onwards, macOS <10.10 is no longer supported. 0.17.0 is
 built using Qt 5.9.x, which doesn't support versions of macOS older than
-10.10. Additionally, Bitcoin Core does not yet change appearance when
+10.10. Additionally, KryptoFranc does not yet change appearance when
 macOS "dark mode" is activated.
 
 In addition to previously-supported CPU platforms, this release's
@@ -52,11 +52,11 @@ pre-compiled distribution also provides binaries for the RISC-V
 platform.
 
 If you are using the `systemd` unit configuration file located at
-`contrib/init/bitcoind.service`, it has been changed to use
-`/var/lib/bitcoind` as the data directory instead of
-`~bitcoin/.bitcoin`. When switching over to the new configuration file,
-please make sure that the filesystem on which `/var/lib/bitcoind` will
-exist has enough space (check using `df -h /var/lib/bitcoind`), and
+`contrib/init/kryptofrancd.service`, it has been changed to use
+`/var/lib/kryptofrancd` as the data directory instead of
+`~kryptofranc/.kryptofranc`. When switching over to the new configuration file,
+please make sure that the filesystem on which `/var/lib/kryptofrancd` will
+exist has enough space (check using `df -h /var/lib/kryptofrancd`), and
 optionally copy over your existing data directory. See the [systemd init
 file section](#systemd-init-file) for more details.
 
@@ -86,4 +86,4 @@ Credits
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/kryptofranc/).

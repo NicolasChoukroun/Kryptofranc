@@ -1,10 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Kryptofranc Core developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_KEY_IO_H
-#define BITCOIN_KEY_IO_H
+#ifndef KRYPTOFRANC_KEY_IO_H
+#define KRYPTOFRANC_KEY_IO_H
 
 #include <chainparams.h>
 #include <key.h>
@@ -26,4 +28,4 @@ CTxDestination DecodeDestination(const std::string& str);
 bool IsValidDestinationString(const std::string& str);
 bool IsValidDestinationString(const std::string& str, const CChainParams& params);
 
-#endif // BITCOIN_KEY_IO_H
+#endif // KRYPTOFRANC_KEY_IO_H
