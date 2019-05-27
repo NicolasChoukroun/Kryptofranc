@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2019 The Bitcoin Core developers
-// Copyright (c) 2018-2019 The Kryptofranc Core developers
+// Copyright (c) 2018-2019 The KryptoFranc Core developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -554,8 +554,8 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/NicolasChoukroun/Kryptofranc>";
-    const std::string URL_WEBSITE = "<https://kryptofranc.com>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/NicolasChoukroun/KryptoFranc>";
+    const std::string URL_WEBSITE = "<https://KryptoFranc.com>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

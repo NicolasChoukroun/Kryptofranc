@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.kryptofranc.Kryptofranc</string>
+      <string>org.KryptoFranc.KryptoFranc</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>kryptofranc</string>

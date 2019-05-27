@@ -1142,7 +1142,7 @@ void kryptoFrancGUI::incomingTransaction(const QString& date, int unit, const CA
 {
     // On new transaction, make an info balloon
     QString msg = tr("Date: %1\n").arg(date) +
-                  tr("Amount: %1\n").arg(kryptoFrancUnits::formatWithUnit(unit, amount, true));
+                  tr("Amount: %1\n").arg(kryptofrancUnits::formatWithUnit(unit, amount, true));
     if (m_node.getWallets().size() > 1 && !walletName.isEmpty()) {
         msg += tr("Wallet: %1\n").arg(walletName);
     }

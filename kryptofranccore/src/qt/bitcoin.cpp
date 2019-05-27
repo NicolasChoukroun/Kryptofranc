@@ -389,7 +389,7 @@ void kryptoFrancApplication::shutdownResult()
 
 void kryptoFrancApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(nullptr, "Runaway exception", kryptoFrancGUI::tr("A fatal error occurred. kryptoFranc can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(nullptr, "Runaway exception", kryptofrancGUI::tr("A fatal error occurred. kryptoFranc can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 
