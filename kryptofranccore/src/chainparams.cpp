@@ -166,7 +166,7 @@ public:
         m_assumed_chain_state_size = 3; //3
 
         genesis = CreateGenesisBlock(std::time(0), 0, 0x1d00ffff, 536870912, 1 * COIN); 
-        MineGenesis(genesis, consensus.powLimit, true)
+        MineGenesis(genesis, consensus.powLimit, true);
 		
         //genesis = CreateGenesisBlock(1549103473,1044675857,0x1d00ffff,536870912, 1*COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
