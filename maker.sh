@@ -249,7 +249,7 @@ if [ $OS = "win64" ]; then
     	if [ $ALL = "yes" ]; then
         	cd $COINPATH
 		sudo ./autogen.sh
-		sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench --disable-gui-tests $DOC $DEPLOY
+		sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench --disable-gui-tests 
 		cd ..
 	fi
 
