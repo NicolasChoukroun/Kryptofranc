@@ -177,7 +177,7 @@ if [ $OS = "unix" ]; then
     if [ $ALL = "yes" ]; then
         cd $COINPATH
         ./autogen.sh
-        ./configure --disable-tests --disable-bench --disable-gui-tests $DOC $DEPLOY
+        ./configure --disable-tests --disable-bench --disable-gui-tests
         cd ..
     fi
     cd $COINPATH
