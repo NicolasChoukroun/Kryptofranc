@@ -31,13 +31,14 @@ BCyan='\033[1;36m'        # Cyan
 BWhite='\033[1;37m'       # White
 
 echo "--------------------------------------------------------------"
-echo -e "$BCyan Bitcoin/Altcoin compiler helper: version 1.4"
+echo -e "$BCyan Bitcoin/Altcoin compiler helper: version 1.5"
 echo -e "$BBlue maker unix/win64"
 echo -e "$BGreen  win       compile for Windows os "
 echo -e "  unix      compile for Unix (default)"
 echo -e "  win64      compile for windows 64 bits"
-echo -e "  soon win32      compile for windows 32 bits"
-echo -e "  maybe soon mac      compile for MAC"
+echo -e "  mac or osx     compile for MAC"
+echo -e "  doc generate the Doxygen documentation (unix only)"
+echo -e "  deploy create an exe or a dmg to install the coin."
 echo
 echo -e "$BYellow example: ./maker.sh unix"
 echo "  ->will compile for unix"
@@ -64,8 +65,8 @@ fi
 
 ALL="no"
 INSTALL="no"
-DOC=""
-DEPLOY=""
+DOC="no"
+DEPLOY="no"
 
 
 # loop through all the options and set the corresponding variables
@@ -94,10 +95,10 @@ while [ "$1" != "" ]; do
 	    	OS="win32"
 	    ;;
 	    doc)
-	    	DOC=" --enable-man "
+	    	DOC="yes"
 	    ;;
 	    deploy)
-	    	DEPLOY=" deploy "
+	    	DEPLOY="yes"
 	    ;;	    
 	    help)
 	    	exit
@@ -114,6 +115,8 @@ echo "Coin path=$COINPATH"
 echo "OS option $OS"
 echo "INSTALL option $INSTALL"
 echo "ALL option $ALL"
+echo "DEPLOY option $DEPLOY"
+echo "DOC option $DOC"
 echo "--------------------------------------------------"
 echo -e $Color_Off
 
@@ -129,8 +132,15 @@ if [ $OS = "osx" ]; then
         ./configure --disable-tests --disable-bench --disable-gui-tests $DOC $DEPLOY
         cd ..
     fi
-        cd $COINPATH
-	make deploy -i
+    cd $COINPATH
+	
+	if [ $DEPLOY = "yes" ]; then
+		make -i deploy
+	fi
+	if [ $DEPLOY = "no" ]; then
+		make -i
+	fi	
+
 	cd ..
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install the DMG in binaries folder"
@@ -161,6 +171,8 @@ if [ $OS = "unix" ]; then
 		sudo apt-get install libminiupnpc-dev
 		sudo apt-get install libzmq3-dev
 		sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+		
+		sudo apt-get install doxygen
     fi
     if [ $ALL = "yes" ]; then
         cd $COINPATH
@@ -168,8 +180,17 @@ if [ $OS = "unix" ]; then
         ./configure --disable-tests --disable-bench --disable-gui-tests $DOC $DEPLOY
         cd ..
     fi
-        cd $COINPATH
-	make
+    cd $COINPATH
+	if [ $DEPLOY = "yes" ]; then
+		make deploy
+	fi
+	if [ $DEPLOY = "no" ]; then
+		make 
+	fi	
+	if [ $DOC = "yes" ]; then
+		doxygen Doxyfile.in
+	fi	
+	
 	cd ..
 	echo -e "$BYellow --------------------------------------------------"
 	echo -e "$BGreen PACKAGING will install all Unix exe in binaries folder"
@@ -238,8 +259,14 @@ if [ $OS = "win64" ]; then
 	
 	# option -i or it will stop compiling
 	#make deploy -i
-	cd $COINPATH 
-	make -i
+	cd $COINPATH 	
+	if [ $DEPLOY = "yes" ]; then
+		make -i deploy 
+	fi
+	if [ $DEPLOY = "no" ]; then
+		make -i
+	fi	
+
 	cd ..
 	sudo rm -rf binaries
 	sudo mkdir -p binaries
