@@ -296,12 +296,12 @@ doc/doxygen/.stamp: doc/Doxyfile FORCE
 	$(DOXYGEN) $^
 	$(AM_V_at) touch $@
 
-# if HAVE_DOXYGEN
-# docs: doc/doxygen/.stamp
-# else
-# docs:
-# 	@echo "error: doxygen not found"
-# endif
+if HAVE_DOXYGEN
+docs: doc/doxygen/.stamp
+else
+docs:
+	@echo "error: doxygen not found"
+endif
 
 clean-docs:
 	rm -rf doc/doxygen
