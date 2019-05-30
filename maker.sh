@@ -214,7 +214,7 @@ if [ $OS = "unix" ]; then
 	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
 	sudo cp -rf $COINPATH/src/$COINNAME-qt /usr/bin/$COINNAME-qt
 fi
-
+ 
 if [ $OS = "win64" ]; then
 	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$COINPATH
 	PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
