@@ -1167,9 +1167,9 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
     CAmount nSubsidy = 3200; // base
 
-    if (nHeight == 1 ) return 2000000000 * COIN;
-    if (nHeight == 2 || nHeight == 3 || nHeight == 4) return 400000000 * COIN;
-    if (nHeight < 50) return 1 * COIN;
+    if (nHeight == 1 || nHeight == 50 ) return 1000000000 * COIN;
+    if (nHeight == 100) return 400000000 * COIN * 3;
+    if (nHeight < 100) return 1 * COIN;
 
 
     float year = 1.0;
@@ -1178,7 +1178,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     float halfing = year / 1.618033988750;
     nSubsidy = (nSubsidy / halfing) * COIN;
 
-	if (nSubsidy<=0.0 || nSubsidy>=6000.0) nSubsidy=1.0;
+	if (nSubsidy<=COIN || nSubsidy>=6000*COIN) nSubsidy=1*COIN;
 	
     return nSubsidy;
 
