@@ -1187,6 +1187,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
 bool IsInitialBlockDownload()
 {
+    true;
     // Once this function has returned false, it must remain false.
     static std::atomic<bool> latchToFalse{false};
     // Optimization: pre-test latch before taking the lock.
@@ -1194,16 +1195,26 @@ bool IsInitialBlockDownload()
         return false;
 
     LOCK(cs_main);
-    if (latchToFalse.load(std::memory_order_relaxed))
+    if (latchToFalse.load(std::memory_order_relaxed)) {
+        LogPrintf("IsInitialBlockDownload false: latchToFalse.load(std::memory_order_relaxed)\n");
         return false;
-    if (fImporting || fReindex)
+    }
+    if (fImporting || fReindex) {
+        LogPrintf("IsInitialBlockDownload true: fImporting || fReindex\n");
         return true;
-    if (chainActive.Tip() == nullptr)
+    }
+    if (chainActive.Tip() == nullptr) {
+        LogPrintf("IsInitialBlockDownload true: chainActive.Tip() == nullptr\n");
         return true;
-    if (chainActive.Tip()->nChainWork < nMinimumChainWork)
+    }
+    if (chainActive.Tip()->nChainWork < nMinimumChainWork) {
+        LogPrintf("IsInitialBlockDownload true: chainActive.Tip()->nChainWork < nMinimumChainWork)\n");
         return true;
-    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))
+    }
+    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge)) {
+        LogPrintf("IsInitialBlockDownload true: chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))\n");
         return true;
+    }
     LogPrintf("Leaving InitialBlockDownload (latching to false)\n");
     latchToFalse.store(true, std::memory_order_relaxed);
     return false;
@@ -2062,11 +2073,13 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     LogPrint(BCLog::BENCH, "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs (%.2fms/blk)]\n", (unsigned)block.vtx.size(), MILLI * (nTime3 - nTime2), MILLI * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : MILLI * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * MICRO, nTimeConnect * MILLI / nBlocksTotal);
 
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
-    if (block.vtx[0]->GetValueOut() > blockReward)
+    if (block.vtx[0]->GetValueOut() > blockReward) {
+        printf("bad-cb-amount error \n");
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
                                block.vtx[0]->GetValueOut(), blockReward),
-                               REJECT_INVALID, "bad-cb-amount");
+                         REJECT_INVALID, "bad-cb-amount");
+    }
 
     if (!control.Wait())
         return state.DoS(100, error("%s: CheckQueue failed", __func__), REJECT_INVALID, "block-validation-failed");
@@ -3181,13 +3194,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
 bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
+    //return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
 }
 
 bool IsNullDummyEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
+    //return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
 }
 
 // Compute at which vout of the block's coinbase transaction the witness
