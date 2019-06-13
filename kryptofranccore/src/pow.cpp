@@ -82,13 +82,13 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
 
     // Check range
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
-        //printf("CheckProofOfWork: not good 1\n");
+        printf("CheckProofOfWork: not good 1\n");
         return false;
     }
 
     // Check proof of work matches claimed amount
     if (UintToArith256(hash) > bnTarget) {
-        //printf("CheckProofOfWork: not good 2\n");
+        printf("CheckProofOfWork: not good UintToArith256(hash) > bnTarget)\n");
         return false;
     }
 
