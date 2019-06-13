@@ -130,6 +130,7 @@ if [ $OS = "osx" ]; then
         cd $COINPATH
         ./autogen.sh
         ./configure --disable-tests --disable-bench
+        make clean
         cd ..
     fi
     cd $COINPATH
@@ -177,12 +178,14 @@ if [ $OS = "unix" ]; then
     if [ $ALL = "yes" ]; then
         cd $COINPATH
         ./autogen.sh
-        ./configure --disable-tests --disable-bench 
+        ./configure --disable-tests --disable-bench
+        make clean
         cd ..
     fi
     cd $COINPATH
 	if [ $DEPLOY = "yes" ]; then
-		make deploy
+                make
+                make install
 	fi
 	if [ $DEPLOY = "no" ]; then
 		make 
@@ -249,7 +252,8 @@ if [ $OS = "win64" ]; then
     	if [ $ALL = "yes" ]; then
         	cd $COINPATH
 		sudo ./autogen.sh
-		sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench  
+		sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench
+                make clean
 		cd ..
 	fi
 
@@ -278,8 +282,11 @@ if [ $OS = "win64" ]; then
 	sudo cp -rf "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
 	sudo cp -rf $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
 	sudo cp -rf $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
-	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe	
-	sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe	
+	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe
+	sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
+    if [ $DEPLOY = "yes" ]; then
+           sudo cp -rf $COINPATH/kryptofranc-0.18.0-win64-setup.exe binaries/win64/kyf-win64-setup.exe
+	fi
 	
 	cd ..
 fi

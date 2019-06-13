@@ -10,6 +10,7 @@
 #include <chain.h>
 #include <primitives/block.h>
 #include <uint256.h>
+#include <util/system.h>
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
@@ -81,14 +82,37 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
 
     // Check range
+    /*if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
+        printf("CheckProofOfWork: not good 1\n");
+        return false;
+    } */
+
+    if (fNegative ) {
+        LogPrintf("CheckProofOfWork: range not good exit to false: fNegative=true.\n");
+        return false;
+        }
+
+     if (fOverflow ) {
+        LogPrintf("CheckProofOfWork: range not good exit to false: fOverflow=true.\n");
+        return false;
+    }
+    if (bnTarget > UintToArith256(params.powLimit)) {
+        LogPrintf("CheckProofOfWork: range not good exit to false. %s > %s \n",bnTarget.GetHex().c_str(),UintToArith256(params.powLimit).GetHex().c_str());
+        return false;
+    }
+	if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
+        LogPrintf("CheckProofOfWork: bnTarget=0");
+        return false;
+    }
+
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)) {
-        //printf("CheckProofOfWork: not good 1\n");
+        LogPrintf("CheckProofOfWork: range not good exit to false.");
         return false;
     }
 
     // Check proof of work matches claimed amount
     if (UintToArith256(hash) > bnTarget) {
-        //printf("CheckProofOfWork: not good 2\n");
+        LogPrintf("CheckProofOfWork: do not match claimed. bnTarget=%s - hash=%s",bnTarget.GetHex().c_str(),UintToArith256(hash).GetHex().c_str());
         return false;
     }
 

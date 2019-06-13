@@ -699,10 +699,105 @@ protected:
     }
 };
 
+	
 static UniValue submitblock(const JSONRPCRequest& request)
 {
-    // We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 2) {
+   
+    unsigned char digest[MD5_DIGEST_LENGTH];
+    const char * string = request.params[1].get_str().c_str();
+    //printf("*** STRING ***  %s\n",(char *) string);
+
+    if (strlen(string)==0 || strlen(string)>32 ) {
+        printf("***  Unauthorized wrong secret\n");
+        return "Unauthorized wrong secret";
+    }
+
+    // convert to MD5
+    MD5((unsigned char*) string, strlen(string), (unsigned char*) &digest);
+
+    char mdString[33];
+
+    for(int i = 0; i < 16; i++) sprintf(&mdString[i*2], "%02x", (unsigned int)digest[i]);
+
+    //printf("*** DIGEST ***  %s\n",(char *) mdString);
+    if (strstr(mdString,"511eb0b4db1bb13bada355934f297f49")==nullptr) {
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "NC POOL is private, you need a password to mine.");
+        return "Unauthorized";
+    }
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3) {
+        //LogPrintf("*** json received: %s \n",request.params[1].get_str());
+        throw std::runtime_error(
+                RPCHelpMan{"submitblock",
+                           "\nAttempts to submit new block to network.\n"
+                           "See https://en.kryptofranc.it/wiki/BIP_0022 for full specification.\n",
+                           {
+                                   {"hexdata", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "the hex-encoded block data to submit"},
+                                   {"dummy", RPCArg::Type::STR, /* default */ "ignored", "dummy value, for compatibility with BIP22. This value is ignored."},
+                           },
+                           RPCResults{},
+                           RPCExamples{
+                                   HelpExampleCli("submitblock", "\"mydata\"")
+                                   + HelpExampleRpc("submitblock", "\"mydata\"")
+                           },
+                }.ToString());
+    }
+
+    std::shared_ptr<CBlock> blockptr = std::make_shared<CBlock>();
+    CBlock& block = *blockptr;
+    if (!DecodeHexBlk(block, request.params[0].get_str())) {
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Block decode failed");
+    }
+
+    if (block.vtx.empty() || !block.vtx[0]->IsCoinBase()) {
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Block does not start with a coinbase");
+    }
+
+    uint256 hash = block.GetHash();
+    {
+        LOCK(cs_main);
+        const CBlockIndex* pindex = LookupBlockIndex(hash);
+        if (pindex) {
+            if (pindex->IsValid(BLOCK_VALID_SCRIPTS)) {
+                return "duplicate";
+            }
+            if (pindex->nStatus & BLOCK_FAILED_MASK) {
+                return "duplicate-invalid";
+            }
+        }
+    }
+
+    {
+        LOCK(cs_main);
+        const CBlockIndex* pindex = LookupBlockIndex(block.hashPrevBlock);
+        if (pindex) {
+            UpdateUncommittedBlockStructures(block, pindex, Params().GetConsensus());
+        }
+    }
+
+    bool new_block;
+    submitblock_StateCatcher sc(block.GetHash());
+    RegisterValidationInterface(&sc);
+    bool accepted = ProcessNewBlock(Params(), blockptr, /* fForceProcessing */ true, /* fNewBlock */ &new_block);
+    UnregisterValidationInterface(&sc);
+    if (!new_block && accepted) {
+        return "duplicate";
+    }
+    if (!sc.found) {
+        return "inconclusive";
+    }
+    return BIP22ValidationResult(sc.state);
+}
+
+static UniValue submitblock2(const JSONRPCRequest& request)
+{
+    // 
+We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
+    if (request.params[1].get_str()!="Eva Choukroun!26-4-2015") {
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "NC POOL is private, you need a password to mine.");
+        return "Unauthorized";
+    }
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
+    }) {
         throw std::runtime_error(
             RPCHelpMan{"submitblock",
                 "\nAttempts to submit new block to network.\n"
@@ -807,7 +902,8 @@ static UniValue submitheader(const JSONRPCRequest& request)
 
 static UniValue estimatesmartfee(const JSONRPCRequest& request)
 {
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
+    })
         throw std::runtime_error(
             RPCHelpMan{"estimatesmartfee",
                 "\nEstimates the approximate fee per kilobyte needed for a transaction to begin\n"
@@ -871,7 +967,8 @@ static UniValue estimatesmartfee(const JSONRPCRequest& request)
 
 static UniValue estimaterawfee(const JSONRPCRequest& request)
 {
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
+    })
         throw std::runtime_error(
             RPCHelpMan{"estimaterawfee",
                 "\nWARNING: This interface is unstable and may disappear or change!\n"
