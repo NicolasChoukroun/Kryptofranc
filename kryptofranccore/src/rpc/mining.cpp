@@ -32,6 +32,9 @@
 
 #include <memory>
 #include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+#include <openssl/md5.h>
 
 /**
  * Return average network hashes per second based on the last 'lookup' blocks,
@@ -79,22 +82,22 @@ static UniValue getnetworkhashps(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() > 2)
         throw std::runtime_error(
-            RPCHelpMan{"getnetworkhashps",
-                "\nReturns the estimated network hashes per second based on the last n blocks.\n"
-                "Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.\n"
-                "Pass in [height] to estimate the network speed at the time when a certain block was found.\n",
-                {
-                    {"nblocks", RPCArg::Type::NUM, /* default */ "120", "The number of blocks, or -1 for blocks since last difficulty change."},
-                    {"height", RPCArg::Type::NUM, /* default */ "-1", "To estimate at the time of the given height."},
-                },
-                RPCResult{
-            "x             (numeric) Hashes per second estimated\n"
-                },
-                RPCExamples{
-                    HelpExampleCli("getnetworkhashps", "")
-            + HelpExampleRpc("getnetworkhashps", "")
-                },
-            }.ToString());
+                RPCHelpMan{"getnetworkhashps",
+                           "\nReturns the estimated network hashes per second based on the last n blocks.\n"
+                           "Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.\n"
+                           "Pass in [height] to estimate the network speed at the time when a certain block was found.\n",
+                           {
+                                   {"nblocks", RPCArg::Type::NUM, /* default */ "120", "The number of blocks, or -1 for blocks since last difficulty change."},
+                                   {"height", RPCArg::Type::NUM, /* default */ "-1", "To estimate at the time of the given height."},
+                           },
+                           RPCResult{
+                                   "x             (numeric) Hashes per second estimated\n"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("getnetworkhashps", "")
+                                   + HelpExampleRpc("getnetworkhashps", "")
+                           },
+                }.ToString());
 
     LOCK(cs_main);
     return GetNetworkHashPS(!request.params[0].isNull() ? request.params[0].get_int() : 120, !request.params[1].isNull() ? request.params[1].get_int() : -1);
@@ -152,23 +155,23 @@ static UniValue generatetoaddress(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 2 || request.params.size() > 3)
         throw std::runtime_error(
-            RPCHelpMan{"generatetoaddress",
-                "\nMine blocks immediately to a specified address (before the RPC call returns)\n",
-                {
-                    {"nblocks", RPCArg::Type::NUM, RPCArg::Optional::NO, "How many blocks are generated immediately."},
-                    {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The address to send the newly generated kryptofranc to."},
-                    {"maxtries", RPCArg::Type::NUM, /* default */ "1000000", "How many iterations to try."},
-                },
-                RPCResult{
-            "[ blockhashes ]     (array) hashes of blocks generated\n"
-                },
-                RPCExamples{
-            "\nGenerate 11 blocks to myaddress\n"
-            + HelpExampleCli("generatetoaddress", "11 \"myaddress\"")
-            + "If you are running the kryptofranc core wallet, you can get a new address to send the newly generated kryptofranc to with:\n"
-            + HelpExampleCli("getnewaddress", "")
-                },
-            }.ToString());
+                RPCHelpMan{"generatetoaddress",
+                           "\nMine blocks immediately to a specified address (before the RPC call returns)\n",
+                           {
+                                   {"nblocks", RPCArg::Type::NUM, RPCArg::Optional::NO, "How many blocks are generated immediately."},
+                                   {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The address to send the newly generated kryptofranc to."},
+                                   {"maxtries", RPCArg::Type::NUM, /* default */ "1000000", "How many iterations to try."},
+                           },
+                           RPCResult{
+                                   "[ blockhashes ]     (array) hashes of blocks generated\n"
+                           },
+                           RPCExamples{
+                                   "\nGenerate 11 blocks to myaddress\n"
+                                   + HelpExampleCli("generatetoaddress", "11 \"myaddress\"")
+                                   + "If you are running the kryptofranc core wallet, you can get a new address to send the newly generated kryptofranc to with:\n"
+                                   + HelpExampleCli("getnewaddress", "")
+                           },
+                }.ToString());
 
     int nGenerate = request.params[0].get_int();
     uint64_t nMaxTries = 1000000;
@@ -191,26 +194,26 @@ static UniValue getmininginfo(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 0) {
         throw std::runtime_error(
-            RPCHelpMan{"getmininginfo",
-                "\nReturns a json object containing mining-related information.",
-                {},
-                RPCResult{
-                    "{\n"
-                    "  \"blocks\": nnn,             (numeric) The current block\n"
-                    "  \"currentblockweight\": nnn, (numeric, optional) The block weight of the last assembled block (only present if a block was ever assembled)\n"
-                    "  \"currentblocktx\": nnn,     (numeric, optional) The number of block transactions of the last assembled block (only present if a block was ever assembled)\n"
-                    "  \"difficulty\": xxx.xxxxx    (numeric) The current difficulty\n"
-                    "  \"networkhashps\": nnn,      (numeric) The network hashes per second\n"
-                    "  \"pooledtx\": n              (numeric) The size of the mempool\n"
-                    "  \"chain\": \"xxxx\",           (string) current network name as defined in BIP70 (main, test, regtest)\n"
-                    "  \"warnings\": \"...\"          (string) any network and blockchain warnings\n"
-                    "}\n"
-                },
-                RPCExamples{
-                    HelpExampleCli("getmininginfo", "")
-            + HelpExampleRpc("getmininginfo", "")
-                },
-            }.ToString());
+                RPCHelpMan{"getmininginfo",
+                           "\nReturns a json object containing mining-related information.",
+                           {},
+                           RPCResult{
+                                   "{\n"
+                                   "  \"blocks\": nnn,             (numeric) The current block\n"
+                                   "  \"currentblockweight\": nnn, (numeric, optional) The block weight of the last assembled block (only present if a block was ever assembled)\n"
+                                   "  \"currentblocktx\": nnn,     (numeric, optional) The number of block transactions of the last assembled block (only present if a block was ever assembled)\n"
+                                   "  \"difficulty\": xxx.xxxxx    (numeric) The current difficulty\n"
+                                   "  \"networkhashps\": nnn,      (numeric) The network hashes per second\n"
+                                   "  \"pooledtx\": n              (numeric) The size of the mempool\n"
+                                   "  \"chain\": \"xxxx\",           (string) current network name as defined in BIP70 (main, test, regtest)\n"
+                                   "  \"warnings\": \"...\"          (string) any network and blockchain warnings\n"
+                                   "}\n"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("getmininginfo", "")
+                                   + HelpExampleRpc("getmininginfo", "")
+                           },
+                }.ToString());
     }
 
     LOCK(cs_main);
@@ -233,25 +236,25 @@ static UniValue prioritisetransaction(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 3)
         throw std::runtime_error(
-            RPCHelpMan{"prioritisetransaction",
-                "Accepts the transaction into mined blocks at a higher (or lower) priority\n",
-                {
-                    {"txid", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "The transaction id."},
-                    {"dummy", RPCArg::Type::NUM, RPCArg::Optional::OMITTED_NAMED_ARG, "API-Compatibility for previous API. Must be zero or null.\n"
-            "                  DEPRECATED. For forward compatibility use named arguments and omit this parameter."},
-                    {"fee_delta", RPCArg::Type::NUM, RPCArg::Optional::NO, "The fee value (in satoshis) to add (or subtract, if negative).\n"
-            "                  Note, that this value is not a fee rate. It is a value to modify absolute fee of the TX.\n"
-            "                  The fee is not actually paid, only the algorithm for selecting transactions into a block\n"
-            "                  considers the transaction as it would have paid a higher (or lower) fee."},
-                },
-                RPCResult{
-            "true              (boolean) Returns true\n"
-                },
-                RPCExamples{
-                    HelpExampleCli("prioritisetransaction", "\"txid\" 0.0 10000")
-            + HelpExampleRpc("prioritisetransaction", "\"txid\", 0.0, 10000")
-                },
-            }.ToString());
+                RPCHelpMan{"prioritisetransaction",
+                           "Accepts the transaction into mined blocks at a higher (or lower) priority\n",
+                           {
+                                   {"txid", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "The transaction id."},
+                                   {"dummy", RPCArg::Type::NUM, RPCArg::Optional::OMITTED_NAMED_ARG, "API-Compatibility for previous API. Must be zero or null.\n"
+                                                                                                     "                  DEPRECATED. For forward compatibility use named arguments and omit this parameter."},
+                                   {"fee_delta", RPCArg::Type::NUM, RPCArg::Optional::NO, "The fee value (in satoshis) to add (or subtract, if negative).\n"
+                                                                                          "                  Note, that this value is not a fee rate. It is a value to modify absolute fee of the TX.\n"
+                                                                                          "                  The fee is not actually paid, only the algorithm for selecting transactions into a block\n"
+                                                                                          "                  considers the transaction as it would have paid a higher (or lower) fee."},
+                           },
+                           RPCResult{
+                                   "true              (boolean) Returns true\n"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("prioritisetransaction", "\"txid\" 0.0 10000")
+                                   + HelpExampleRpc("prioritisetransaction", "\"txid\", 0.0, 10000")
+                           },
+                }.ToString());
 
     LOCK(cs_main);
 
@@ -299,81 +302,81 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() > 1)
         throw std::runtime_error(
-            RPCHelpMan{"getblocktemplate",
-                "\nIf the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'.\n"
-                "It returns data needed to construct a block to work on.\n"
-                "For full specification, see BIPs 22, 23, 9, and 145:\n"
-                "    https://github.com/kryptofranc/bips/blob/master/bip-0022.mediawiki\n"
-                "    https://github.com/kryptofranc/bips/blob/master/bip-0023.mediawiki\n"
-                "    https://github.com/kryptofranc/bips/blob/master/bip-0009.mediawiki#getblocktemplate_changes\n"
-                "    https://github.com/kryptofranc/bips/blob/master/bip-0145.mediawiki\n",
-                {
-                    {"template_request", RPCArg::Type::OBJ, RPCArg::Optional::NO, "A json object in the following spec",
-                        {
-                            {"mode", RPCArg::Type::STR, /* treat as named arg */ RPCArg::Optional::OMITTED_NAMED_ARG, "This must be set to \"template\", \"proposal\" (see BIP 23), or omitted"},
-                            {"capabilities", RPCArg::Type::ARR, /* treat as named arg */ RPCArg::Optional::OMITTED_NAMED_ARG, "A list of strings",
-                                {
-                                    {"support", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "client side supported feature, 'longpoll', 'coinbasetxn', 'coinbasevalue', 'proposal', 'serverlist', 'workid'"},
-                                },
-                                },
-                            {"rules", RPCArg::Type::ARR, RPCArg::Optional::NO, "A list of strings",
-                                {
-                                    {"support", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "client side supported softfork deployment"},
-                                },
-                                },
-                        },
-                        "\"template_request\""},
-                },
-                RPCResult{
-            "{\n"
-            "  \"version\" : n,                    (numeric) The preferred block version\n"
-            "  \"rules\" : [ \"rulename\", ... ],    (array of strings) specific block rules that are to be enforced\n"
-            "  \"vbavailable\" : {                 (json object) set of pending, supported versionbit (BIP 9) softfork deployments\n"
-            "      \"rulename\" : bitnumber          (numeric) identifies the bit number as indicating acceptance and readiness for the named softfork rule\n"
-            "      ,...\n"
-            "  },\n"
-            "  \"vbrequired\" : n,                 (numeric) bit mask of versionbits the server requires set in submissions\n"
-            "  \"previousblockhash\" : \"xxxx\",     (string) The hash of current highest block\n"
-            "  \"transactions\" : [                (array) contents of non-coinbase transactions that should be included in the next block\n"
-            "      {\n"
-            "         \"data\" : \"xxxx\",             (string) transaction data encoded in hexadecimal (byte-for-byte)\n"
-            "         \"txid\" : \"xxxx\",             (string) transaction id encoded in little-endian hexadecimal\n"
-            "         \"hash\" : \"xxxx\",             (string) hash encoded in little-endian hexadecimal (including witness data)\n"
-            "         \"depends\" : [                (array) array of numbers \n"
-            "             n                          (numeric) transactions before this one (by 1-based index in 'transactions' list) that must be present in the final block if this one is\n"
-            "             ,...\n"
-            "         ],\n"
-            "         \"fee\": n,                    (numeric) difference in value between transaction inputs and outputs (in satoshis); for coinbase transactions, this is a negative Number of the total collected block fees (ie, not including the block subsidy); if key is not present, fee is unknown and clients MUST NOT assume there isn't one\n"
-            "         \"sigops\" : n,                (numeric) total SigOps cost, as counted for purposes of block limits; if key is not present, sigop cost is unknown and clients MUST NOT assume it is zero\n"
-            "         \"weight\" : n,                (numeric) total transaction weight, as counted for purposes of block limits\n"
-            "      }\n"
-            "      ,...\n"
-            "  ],\n"
-            "  \"coinbaseaux\" : {                 (json object) data that should be included in the coinbase's scriptSig content\n"
-            "      \"flags\" : \"xx\"                  (string) key name is to be ignored, and value included in scriptSig\n"
-            "  },\n"
-            "  \"coinbasevalue\" : n,              (numeric) maximum allowable input to coinbase transaction, including the generation award and transaction fees (in satoshis)\n"
-            "  \"coinbasetxn\" : { ... },          (json object) information for coinbase transaction\n"
-            "  \"target\" : \"xxxx\",                (string) The hash target\n"
-            "  \"mintime\" : xxx,                  (numeric) The minimum timestamp appropriate for next block time in seconds since epoch (Jan 1 1970 GMT)\n"
-            "  \"mutable\" : [                     (array of string) list of ways the block template may be changed \n"
-            "     \"value\"                          (string) A way the block template may be changed, e.g. 'time', 'transactions', 'prevblock'\n"
-            "     ,...\n"
-            "  ],\n"
-            "  \"noncerange\" : \"00000000ffffffff\",(string) A range of valid nonces\n"
-            "  \"sigoplimit\" : n,                 (numeric) limit of sigops in blocks\n"
-            "  \"sizelimit\" : n,                  (numeric) limit of block size\n"
-            "  \"weightlimit\" : n,                (numeric) limit of block weight\n"
-            "  \"curtime\" : ttt,                  (numeric) current timestamp in seconds since epoch (Jan 1 1970 GMT)\n"
-            "  \"bits\" : \"xxxxxxxx\",              (string) compressed target of next block\n"
-            "  \"height\" : n                      (numeric) The height of the next block\n"
-            "}\n"
-                },
-                RPCExamples{
-                    HelpExampleCli("getblocktemplate", "{\"rules\": [\"segwit\"]}")
-            + HelpExampleRpc("getblocktemplate", "{\"rules\": [\"segwit\"]}")
-                },
-            }.ToString());
+                RPCHelpMan{"getblocktemplate",
+                           "\nIf the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'.\n"
+                           "It returns data needed to construct a block to work on.\n"
+                           "For full specification, see BIPs 22, 23, 9, and 145:\n"
+                           "    https://github.com/kryptofranc/bips/blob/master/bip-0022.mediawiki\n"
+                           "    https://github.com/kryptofranc/bips/blob/master/bip-0023.mediawiki\n"
+                           "    https://github.com/kryptofranc/bips/blob/master/bip-0009.mediawiki#getblocktemplate_changes\n"
+                           "    https://github.com/kryptofranc/bips/blob/master/bip-0145.mediawiki\n",
+                           {
+                                   {"template_request", RPCArg::Type::OBJ, RPCArg::Optional::NO, "A json object in the following spec",
+                                    {
+                                            {"mode", RPCArg::Type::STR, /* treat as named arg */ RPCArg::Optional::OMITTED_NAMED_ARG, "This must be set to \"template\", \"proposal\" (see BIP 23), or omitted"},
+                                            {"capabilities", RPCArg::Type::ARR, /* treat as named arg */ RPCArg::Optional::OMITTED_NAMED_ARG, "A list of strings",
+                                             {
+                                                     {"support", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "client side supported feature, 'longpoll', 'coinbasetxn', 'coinbasevalue', 'proposal', 'serverlist', 'workid'"},
+                                             },
+                                            },
+                                            {"rules", RPCArg::Type::ARR, RPCArg::Optional::NO, "A list of strings",
+                                             {
+                                                     {"support", RPCArg::Type::STR, RPCArg::Optional::OMITTED, "client side supported softfork deployment"},
+                                             },
+                                            },
+                                    },
+                                    "\"template_request\""},
+                           },
+                           RPCResult{
+                                   "{\n"
+                                   "  \"version\" : n,                    (numeric) The preferred block version\n"
+                                   "  \"rules\" : [ \"rulename\", ... ],    (array of strings) specific block rules that are to be enforced\n"
+                                   "  \"vbavailable\" : {                 (json object) set of pending, supported versionbit (BIP 9) softfork deployments\n"
+                                   "      \"rulename\" : bitnumber          (numeric) identifies the bit number as indicating acceptance and readiness for the named softfork rule\n"
+                                   "      ,...\n"
+                                   "  },\n"
+                                   "  \"vbrequired\" : n,                 (numeric) bit mask of versionbits the server requires set in submissions\n"
+                                   "  \"previousblockhash\" : \"xxxx\",     (string) The hash of current highest block\n"
+                                   "  \"transactions\" : [                (array) contents of non-coinbase transactions that should be included in the next block\n"
+                                   "      {\n"
+                                   "         \"data\" : \"xxxx\",             (string) transaction data encoded in hexadecimal (byte-for-byte)\n"
+                                   "         \"txid\" : \"xxxx\",             (string) transaction id encoded in little-endian hexadecimal\n"
+                                   "         \"hash\" : \"xxxx\",             (string) hash encoded in little-endian hexadecimal (including witness data)\n"
+                                   "         \"depends\" : [                (array) array of numbers \n"
+                                   "             n                          (numeric) transactions before this one (by 1-based index in 'transactions' list) that must be present in the final block if this one is\n"
+                                   "             ,...\n"
+                                   "         ],\n"
+                                   "         \"fee\": n,                    (numeric) difference in value between transaction inputs and outputs (in satoshis); for coinbase transactions, this is a negative Number of the total collected block fees (ie, not including the block subsidy); if key is not present, fee is unknown and clients MUST NOT assume there isn't one\n"
+                                   "         \"sigops\" : n,                (numeric) total SigOps cost, as counted for purposes of block limits; if key is not present, sigop cost is unknown and clients MUST NOT assume it is zero\n"
+                                   "         \"weight\" : n,                (numeric) total transaction weight, as counted for purposes of block limits\n"
+                                   "      }\n"
+                                   "      ,...\n"
+                                   "  ],\n"
+                                   "  \"coinbaseaux\" : {                 (json object) data that should be included in the coinbase's scriptSig content\n"
+                                   "      \"flags\" : \"xx\"                  (string) key name is to be ignored, and value included in scriptSig\n"
+                                   "  },\n"
+                                   "  \"coinbasevalue\" : n,              (numeric) maximum allowable input to coinbase transaction, including the generation award and transaction fees (in satoshis)\n"
+                                   "  \"coinbasetxn\" : { ... },          (json object) information for coinbase transaction\n"
+                                   "  \"target\" : \"xxxx\",                (string) The hash target\n"
+                                   "  \"mintime\" : xxx,                  (numeric) The minimum timestamp appropriate for next block time in seconds since epoch (Jan 1 1970 GMT)\n"
+                                   "  \"mutable\" : [                     (array of string) list of ways the block template may be changed \n"
+                                   "     \"value\"                          (string) A way the block template may be changed, e.g. 'time', 'transactions', 'prevblock'\n"
+                                   "     ,...\n"
+                                   "  ],\n"
+                                   "  \"noncerange\" : \"00000000ffffffff\",(string) A range of valid nonces\n"
+                                   "  \"sigoplimit\" : n,                 (numeric) limit of sigops in blocks\n"
+                                   "  \"sizelimit\" : n,                  (numeric) limit of block size\n"
+                                   "  \"weightlimit\" : n,                (numeric) limit of block weight\n"
+                                   "  \"curtime\" : ttt,                  (numeric) current timestamp in seconds since epoch (Jan 1 1970 GMT)\n"
+                                   "  \"bits\" : \"xxxxxxxx\",              (string) compressed target of next block\n"
+                                   "  \"height\" : n                      (numeric) The height of the next block\n"
+                                   "}\n"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("getblocktemplate", "{\"rules\": [\"segwit\"]}")
+                                   + HelpExampleRpc("getblocktemplate", "{\"rules\": [\"segwit\"]}")
+                           },
+                }.ToString());
 
     LOCK(cs_main);
 
@@ -699,24 +702,47 @@ protected:
     }
 };
 
+
 static UniValue submitblock(const JSONRPCRequest& request)
 {
     // We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 2) {
+    unsigned char digest[MD5_DIGEST_LENGTH];
+    const char * string = request.params[1].get_str().c_str();
+    //printf("*** STRING ***  %s\n",(char *) string);
+
+    if (strlen(string)==0 || strlen(string)>32 ) {
+        printf("***  Unauthorized wrong secret\n");
+        return "Unauthorized wrong secret";
+    }
+
+    // convert to MD5
+    MD5((unsigned char*) string, strlen(string), (unsigned char*) &digest);
+
+    char mdString[33];
+
+    for(int i = 0; i < 16; i++) sprintf(&mdString[i*2], "%02x", (unsigned int)digest[i]);
+
+    //printf("*** DIGEST ***  %s\n",(char *) mdString);
+    if (strstr(mdString,"511eb0b4db1bb13bada355934f297f49")==nullptr) {
+        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "NC POOL is private, you need a password to mine.");
+        return "Unauthorized";
+    }
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3) {
+        //LogPrintf("*** json received: %s \n",request.params[1].get_str());
         throw std::runtime_error(
-            RPCHelpMan{"submitblock",
-                "\nAttempts to submit new block to network.\n"
-                "See https://en.kryptofranc.it/wiki/BIP_0022 for full specification.\n",
-                {
-                    {"hexdata", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "the hex-encoded block data to submit"},
-                    {"dummy", RPCArg::Type::STR, /* default */ "ignored", "dummy value, for compatibility with BIP22. This value is ignored."},
-                },
-                RPCResults{},
-                RPCExamples{
-                    HelpExampleCli("submitblock", "\"mydata\"")
-            + HelpExampleRpc("submitblock", "\"mydata\"")
-                },
-            }.ToString());
+                RPCHelpMan{"submitblock",
+                           "\nAttempts to submit new block to network.\n"
+                           "See https://en.kryptofranc.it/wiki/BIP_0022 for full specification.\n",
+                           {
+                                   {"hexdata", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "the hex-encoded block data to submit"},
+                                   {"dummy", RPCArg::Type::STR, /* default */ "ignored", "dummy value, for compatibility with BIP22. This value is ignored."},
+                           },
+                           RPCResults{},
+                           RPCExamples{
+                                   HelpExampleCli("submitblock", "\"mydata\"")
+                                   + HelpExampleRpc("submitblock", "\"mydata\"")
+                           },
+                }.ToString());
     }
 
     std::shared_ptr<CBlock> blockptr = std::make_shared<CBlock>();
@@ -765,24 +791,28 @@ static UniValue submitblock(const JSONRPCRequest& request)
     return BIP22ValidationResult(sc.state);
 }
 
+
+
+
+
 static UniValue submitheader(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 1) {
         throw std::runtime_error(
-            RPCHelpMan{"submitheader",
-                "\nDecode the given hexdata as a header and submit it as a candidate chain tip if valid."
-                "\nThrows when the header is invalid.\n",
-                {
-                    {"hexdata", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "the hex-encoded block header data"},
-                },
-                RPCResult{
-            "None"
-                },
-                RPCExamples{
-                    HelpExampleCli("submitheader", "\"aabbcc\"") +
-                    HelpExampleRpc("submitheader", "\"aabbcc\"")
-                },
-            }.ToString());
+                RPCHelpMan{"submitheader",
+                           "\nDecode the given hexdata as a header and submit it as a candidate chain tip if valid."
+                           "\nThrows when the header is invalid.\n",
+                           {
+                                   {"hexdata", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "the hex-encoded block header data"},
+                           },
+                           RPCResult{
+                                   "None"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("submitheader", "\"aabbcc\"") +
+                                   HelpExampleRpc("submitheader", "\"aabbcc\"")
+                           },
+                }.ToString());
     }
 
     CBlockHeader h;
@@ -809,39 +839,39 @@ static UniValue estimatesmartfee(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
-            RPCHelpMan{"estimatesmartfee",
-                "\nEstimates the approximate fee per kilobyte needed for a transaction to begin\n"
-                "confirmation within conf_target blocks if possible and return the number of blocks\n"
-                "for which the estimate is valid. Uses virtual transaction size as defined\n"
-                "in BIP 141 (witness data is discounted).\n",
-                {
-                    {"conf_target", RPCArg::Type::NUM, RPCArg::Optional::NO, "Confirmation target in blocks (1 - 1008)"},
-                    {"estimate_mode", RPCArg::Type::STR, /* default */ "CONSERVATIVE", "The fee estimate mode.\n"
-            "                   Whether to return a more conservative estimate which also satisfies\n"
-            "                   a longer history. A conservative estimate potentially returns a\n"
-            "                   higher feerate and is more likely to be sufficient for the desired\n"
-            "                   target, but is not as responsive to short term drops in the\n"
-            "                   prevailing fee market.  Must be one of:\n"
-            "       \"UNSET\"\n"
-            "       \"ECONOMICAL\"\n"
-            "       \"CONSERVATIVE\""},
-                },
-                RPCResult{
-            "{\n"
-            "  \"feerate\" : x.x,     (numeric, optional) estimate fee rate in " + CURRENCY_UNIT + "/kB\n"
-            "  \"errors\": [ str... ] (json array of strings, optional) Errors encountered during processing\n"
-            "  \"blocks\" : n         (numeric) block number where estimate was found\n"
-            "}\n"
-            "\n"
-            "The request target will be clamped between 2 and the highest target\n"
-            "fee estimation is able to return based on how long it has been running.\n"
-            "An error is returned if not enough transactions and blocks\n"
-            "have been observed to make an estimate for any number of blocks.\n"
-                },
-                RPCExamples{
-                    HelpExampleCli("estimatesmartfee", "6")
-                },
-            }.ToString());
+                RPCHelpMan{"estimatesmartfee",
+                           "\nEstimates the approximate fee per kilobyte needed for a transaction to begin\n"
+                           "confirmation within conf_target blocks if possible and return the number of blocks\n"
+                           "for which the estimate is valid. Uses virtual transaction size as defined\n"
+                           "in BIP 141 (witness data is discounted).\n",
+                           {
+                                   {"conf_target", RPCArg::Type::NUM, RPCArg::Optional::NO, "Confirmation target in blocks (1 - 1008)"},
+                                   {"estimate_mode", RPCArg::Type::STR, /* default */ "CONSERVATIVE", "The fee estimate mode.\n"
+                                                                                                      "                   Whether to return a more conservative estimate which also satisfies\n"
+                                                                                                      "                   a longer history. A conservative estimate potentially returns a\n"
+                                                                                                      "                   higher feerate and is more likely to be sufficient for the desired\n"
+                                                                                                      "                   target, but is not as responsive to short term drops in the\n"
+                                                                                                      "                   prevailing fee market.  Must be one of:\n"
+                                                                                                      "       \"UNSET\"\n"
+                                                                                                      "       \"ECONOMICAL\"\n"
+                                                                                                      "       \"CONSERVATIVE\""},
+                           },
+                           RPCResult{
+                                   "{\n"
+                                   "  \"feerate\" : x.x,     (numeric, optional) estimate fee rate in " + CURRENCY_UNIT + "/kB\n"
+                                                                                                                          "  \"errors\": [ str... ] (json array of strings, optional) Errors encountered during processing\n"
+                                                                                                                          "  \"blocks\" : n         (numeric) block number where estimate was found\n"
+                                                                                                                          "}\n"
+                                                                                                                          "\n"
+                                                                                                                          "The request target will be clamped between 2 and the highest target\n"
+                                                                                                                          "fee estimation is able to return based on how long it has been running.\n"
+                                                                                                                          "An error is returned if not enough transactions and blocks\n"
+                                                                                                                          "have been observed to make an estimate for any number of blocks.\n"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("estimatesmartfee", "6")
+                           },
+                }.ToString());
 
     RPCTypeCheck(request.params, {UniValue::VNUM, UniValue::VSTR});
     RPCTypeCheckArgument(request.params[0], UniValue::VNUM);
@@ -873,47 +903,47 @@ static UniValue estimaterawfee(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
-            RPCHelpMan{"estimaterawfee",
-                "\nWARNING: This interface is unstable and may disappear or change!\n"
-                "\nWARNING: This is an advanced API call that is tightly coupled to the specific\n"
-                "         implementation of fee estimation. The parameters it can be called with\n"
-                "         and the results it returns will change if the internal implementation changes.\n"
-                "\nEstimates the approximate fee per kilobyte needed for a transaction to begin\n"
-                "confirmation within conf_target blocks if possible. Uses virtual transaction size as\n"
-                "defined in BIP 141 (witness data is discounted).\n",
-                {
-                    {"conf_target", RPCArg::Type::NUM, RPCArg::Optional::NO, "Confirmation target in blocks (1 - 1008)"},
-                    {"threshold", RPCArg::Type::NUM, /* default */ "0.95", "The proportion of transactions in a given feerate range that must have been\n"
-            "               confirmed within conf_target in order to consider those feerates as high enough and proceed to check\n"
-            "               lower buckets."},
-                },
-                RPCResult{
-            "{\n"
-            "  \"short\" : {            (json object, optional) estimate for short time horizon\n"
-            "      \"feerate\" : x.x,        (numeric, optional) estimate fee rate in " + CURRENCY_UNIT + "/kB\n"
-            "      \"decay\" : x.x,          (numeric) exponential decay (per block) for historical moving average of confirmation data\n"
-            "      \"scale\" : x,            (numeric) The resolution of confirmation targets at this time horizon\n"
-            "      \"pass\" : {              (json object, optional) information about the lowest range of feerates to succeed in meeting the threshold\n"
-            "          \"startrange\" : x.x,     (numeric) start of feerate range\n"
-            "          \"endrange\" : x.x,       (numeric) end of feerate range\n"
-            "          \"withintarget\" : x.x,   (numeric) number of txs over history horizon in the feerate range that were confirmed within target\n"
-            "          \"totalconfirmed\" : x.x, (numeric) number of txs over history horizon in the feerate range that were confirmed at any point\n"
-            "          \"inmempool\" : x.x,      (numeric) current number of txs in mempool in the feerate range unconfirmed for at least target blocks\n"
-            "          \"leftmempool\" : x.x,    (numeric) number of txs over history horizon in the feerate range that left mempool unconfirmed after target\n"
-            "      },\n"
-            "      \"fail\" : { ... },       (json object, optional) information about the highest range of feerates to fail to meet the threshold\n"
-            "      \"errors\":  [ str... ]   (json array of strings, optional) Errors encountered during processing\n"
-            "  },\n"
-            "  \"medium\" : { ... },    (json object, optional) estimate for medium time horizon\n"
-            "  \"long\" : { ... }       (json object) estimate for long time horizon\n"
-            "}\n"
-            "\n"
-            "Results are returned for any horizon which tracks blocks up to the confirmation target.\n"
-                },
-                RPCExamples{
-                    HelpExampleCli("estimaterawfee", "6 0.9")
-                },
-            }.ToString());
+                RPCHelpMan{"estimaterawfee",
+                           "\nWARNING: This interface is unstable and may disappear or change!\n"
+                           "\nWARNING: This is an advanced API call that is tightly coupled to the specific\n"
+                           "         implementation of fee estimation. The parameters it can be called with\n"
+                           "         and the results it returns will change if the internal implementation changes.\n"
+                           "\nEstimates the approximate fee per kilobyte needed for a transaction to begin\n"
+                           "confirmation within conf_target blocks if possible. Uses virtual transaction size as\n"
+                           "defined in BIP 141 (witness data is discounted).\n",
+                           {
+                                   {"conf_target", RPCArg::Type::NUM, RPCArg::Optional::NO, "Confirmation target in blocks (1 - 1008)"},
+                                   {"threshold", RPCArg::Type::NUM, /* default */ "0.95", "The proportion of transactions in a given feerate range that must have been\n"
+                                                                                          "               confirmed within conf_target in order to consider those feerates as high enough and proceed to check\n"
+                                                                                          "               lower buckets."},
+                           },
+                           RPCResult{
+                                   "{\n"
+                                   "  \"short\" : {            (json object, optional) estimate for short time horizon\n"
+                                   "      \"feerate\" : x.x,        (numeric, optional) estimate fee rate in " + CURRENCY_UNIT + "/kB\n"
+                                                                                                                                 "      \"decay\" : x.x,          (numeric) exponential decay (per block) for historical moving average of confirmation data\n"
+                                                                                                                                 "      \"scale\" : x,            (numeric) The resolution of confirmation targets at this time horizon\n"
+                                                                                                                                 "      \"pass\" : {              (json object, optional) information about the lowest range of feerates to succeed in meeting the threshold\n"
+                                                                                                                                 "          \"startrange\" : x.x,     (numeric) start of feerate range\n"
+                                                                                                                                 "          \"endrange\" : x.x,       (numeric) end of feerate range\n"
+                                                                                                                                 "          \"withintarget\" : x.x,   (numeric) number of txs over history horizon in the feerate range that were confirmed within target\n"
+                                                                                                                                 "          \"totalconfirmed\" : x.x, (numeric) number of txs over history horizon in the feerate range that were confirmed at any point\n"
+                                                                                                                                 "          \"inmempool\" : x.x,      (numeric) current number of txs in mempool in the feerate range unconfirmed for at least target blocks\n"
+                                                                                                                                 "          \"leftmempool\" : x.x,    (numeric) number of txs over history horizon in the feerate range that left mempool unconfirmed after target\n"
+                                                                                                                                 "      },\n"
+                                                                                                                                 "      \"fail\" : { ... },       (json object, optional) information about the highest range of feerates to fail to meet the threshold\n"
+                                                                                                                                 "      \"errors\":  [ str... ]   (json array of strings, optional) Errors encountered during processing\n"
+                                                                                                                                 "  },\n"
+                                                                                                                                 "  \"medium\" : { ... },    (json object, optional) estimate for medium time horizon\n"
+                                                                                                                                 "  \"long\" : { ... }       (json object) estimate for long time horizon\n"
+                                                                                                                                 "}\n"
+                                                                                                                                 "\n"
+                                                                                                                                 "Results are returned for any horizon which tracks blocks up to the confirmation target.\n"
+                           },
+                           RPCExamples{
+                                   HelpExampleCli("estimaterawfee", "6 0.9")
+                           },
+                }.ToString());
 
     RPCTypeCheck(request.params, {UniValue::VNUM, UniValue::VNUM}, true);
     RPCTypeCheckArgument(request.params[0], UniValue::VNUM);
@@ -976,22 +1006,22 @@ static UniValue estimaterawfee(const JSONRPCRequest& request)
 
 // clang-format off
 static const CRPCCommand commands[] =
-{ //  category              name                      actor (function)         argNames
-  //  --------------------- ------------------------  -----------------------  ----------
-    { "mining",             "getnetworkhashps",       &getnetworkhashps,       {"nblocks","height"} },
-    { "mining",             "getmininginfo",          &getmininginfo,          {} },
-    { "mining",             "prioritisetransaction",  &prioritisetransaction,  {"txid","dummy","fee_delta"} },
-    { "mining",             "getblocktemplate",       &getblocktemplate,       {"template_request"} },
-    { "mining",             "submitblock",            &submitblock,            {"hexdata","dummy"} },
-    { "mining",             "submitheader",           &submitheader,           {"hexdata"} },
+        { //  category              name                      actor (function)         argNames
+                //  --------------------- ------------------------  -----------------------  ----------
+                { "mining",             "getnetworkhashps",       &getnetworkhashps,       {"nblocks","height"} },
+                { "mining",             "getmininginfo",          &getmininginfo,          {} },
+                { "mining",             "prioritisetransaction",  &prioritisetransaction,  {"txid","dummy","fee_delta"} },
+                { "mining",             "getblocktemplate",       &getblocktemplate,       {"template_request"} },
+                { "mining",             "submitblock",            &submitblock,            {"hexdata","dummy"} },
+                { "mining",             "submitheader",           &submitheader,           {"hexdata"} },
 
 
-    { "generating",         "generatetoaddress",      &generatetoaddress,      {"nblocks","address","maxtries"} },
+                { "generating",         "generatetoaddress",      &generatetoaddress,      {"nblocks","address","maxtries"} },
 
-    { "util",               "estimatesmartfee",       &estimatesmartfee,       {"conf_target", "estimate_mode"} },
+                { "util",               "estimatesmartfee",       &estimatesmartfee,       {"conf_target", "estimate_mode"} },
 
-    { "hidden",             "estimaterawfee",         &estimaterawfee,         {"conf_target", "threshold"} },
-};
+                { "hidden",             "estimaterawfee",         &estimaterawfee,         {"conf_target", "threshold"} },
+        };
 // clang-format on
 
 void RegisterMiningRPCCommands(CRPCTable &t)
