@@ -1165,10 +1165,6 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
      nSubsidy >>= halvings; */
     
 
- CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
-{
-
-
     CAmount nSubsidy = 3200; // base
     CAmount nSubsidy1 = 3200; // base
 
@@ -1192,12 +1188,11 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
 
     // hack the mining reward to get a stable reward of about 5177 for the 3 month of self/private mining.
-    printf("GetBlockSubsidy - height=%i  year1=%9.6f  halfing=%9.6f halfing1=%9.6f nSubsidy=%lu nSubsidy1=%lu \n",nHeight,year1,halfing,halfing1,nSubsidy,nSubsidy1);
+    // printf("GetBlockSubsidy - height=%i  year1=%9.6f  halfing=%9.6f halfing1=%9.6f nSubsidy=%lu nSubsidy1=%lu \n",nHeight,year1,halfing,halfing1,nSubsidy,nSubsidy1);
 
     // 3 months of stable rewards... then deflation starts.
     if (nHeight>52000) return nSubsidy1;
     else return nSubsidy;
-
 
 	
 }
