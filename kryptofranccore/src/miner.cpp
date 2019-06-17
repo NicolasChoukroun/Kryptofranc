@@ -193,15 +193,10 @@ void BlockAssembler::onlyUnconfirmed(CTxMemPool::setEntries& testSet)
 bool BlockAssembler::TestPackage(uint64_t packageSize, int64_t packageSigOpsCost) const
 {
     // TODO: switch to weight-based accounting for packages instead of vsize-based accounting.
-    if (nBlockWeight + WITNESS_SCALE_FACTOR * packageSize >= nBlockMaxWeight) {
-        //printf("TestPackage error nBlockWeight + WITNESS_SCALE_FACTOR * packageSize >= nBlockMaxWeight\n");
+    if (nBlockWeight + WITNESS_SCALE_FACTOR * packageSize >= nBlockMaxWeight)
         return false;
-    }
-
-    if (nBlockSigOpsCost + packageSigOpsCost >= MAX_BLOCK_SIGOPS_COST) {
-        //printf("TestPackage error nBlockSigOpsCost + packageSigOpsCost >= MAX_BLOCK_SIGOPS_COST)\n");
+    if (nBlockSigOpsCost + packageSigOpsCost >= MAX_BLOCK_SIGOPS_COST)
         return false;
-    }
     return true;
 }
 
@@ -212,10 +207,8 @@ bool BlockAssembler::TestPackage(uint64_t packageSize, int64_t packageSigOpsCost
 bool BlockAssembler::TestPackageTransactions(const CTxMemPool::setEntries& package)
 {
     for (CTxMemPool::txiter it : package) {
-        if (!IsFinalTx(it->GetTx(), nHeight, nLockTimeCutoff)) {
-            //printf("TestPackageTransaction error n!IsFinalTx(it->GetTx(), nHeight, nLockTimeCutoff)\n");
+        if (!IsFinalTx(it->GetTx(), nHeight, nLockTimeCutoff))
             return false;
-        }
         if (!fIncludeWitness && it->GetTx().HasWitness())
             return false;
     }
@@ -375,7 +368,6 @@ void BlockAssembler::addPackageTxs(int &nPackagesSelected, int &nDescendantsUpda
 
         if (packageFees < blockMinFeeRate.GetFee(packageSize)) {
             // Everything else we might consider has a lower fee rate
-            //printf("AddPackageTxs: Fee too low: packageFees < blockMinFeeRate.GetFee(packageSize))\n");
             return;
         }
 

@@ -11,410 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/INSTALL.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/INSTALL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/Makefile.am" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/Makefile.am" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/configure.ac" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/configure.ac" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/linearize/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/linearize/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/macdeploy/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/qos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/qos/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/contrib/testgen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/contrib/testgen/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/depends/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/depends/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/depends/description.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/depends/description.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/Doxyfile.in" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/Doxyfile.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/README_windows.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/README_windows.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/bips.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/bips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/bitcoin-conf.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/bitcoin-conf.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/build-osx.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/build-osx.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/descriptors.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/descriptors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/developer-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/developer-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/dnsseed-policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/dnsseed-policy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/init.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/init.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/man/Makefile.am" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/man/Makefile.am" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/psbt.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/psbt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.10.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.11.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.12.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.13.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.14.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.15.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.16.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.17.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.17.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.17.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.17.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.12.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.12.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.13.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.13.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.14.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.14.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.15.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.15.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.20.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.20.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.21.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.21.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.22.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.22.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.23.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.23.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.24.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.3.24.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.6.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.4.6.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.5.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.5.5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.6.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.7.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.5.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.6.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.8.6.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.3.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.4.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.5.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-notes/release-notes-0.9.5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/release-process.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/release-process.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/shared-libraries.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/shared-libraries.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/translation_process.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/translation_process.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/translation_strings_policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/translation_strings_policy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/doc/zmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/doc/zmq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin.ico" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin128.png" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin128.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin128.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin128.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin16.png" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin16.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin16.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin256.png" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin256.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin256.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin32.png" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin32.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin32.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin64.png" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin64.xpm" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/bitcoin64.xpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/nsis-header.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/nsis-header.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/nsis-wizard.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/pixmaps/nsis-wizard.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/qt/Info.plist.in" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/qt/Info.plist.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/share/setup.nsi.in" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/share/setup.nsi.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/addrdb.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/addrdb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/addrman.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/addrman.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/addrman.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/addrman.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/amount.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/amount.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/arith_uint256.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/arith_uint256.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/attributes.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/attributes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/base58.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/base58.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chain.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chain.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparams.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparams.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/chainparamsbase.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/chainparamsbase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/checkpoints.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/checkpoints.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/clientversion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/clientversion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/clientversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/clientversion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/coins.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/coins.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/compat.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/compat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/compat/assumptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/compat/assumptions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/compressor.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/compressor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/consensus/consensus.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/consensus/consensus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/consensus/params.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/consensus/params.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/consensus/validation.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/consensus/validation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/core_io.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/core_io.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/dbwrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/dbwrapper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/init.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/init.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/init.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/interfaces/chain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/interfaces/chain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/interfaces/chain.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/interfaces/chain.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/key.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/key.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/key.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/key.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/key_io.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/key_io.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/key_io.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/key_io.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/keystore.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/keystore.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyf-cli-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyf-cli-res.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyf-cli.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyf-cli.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyf-tx-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyf-tx-res.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyf-tx.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyf-tx.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyf-wallet-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyf-wallet-res.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyfd-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyfd-res.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/kyfd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/kyfd.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/logging.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/logging.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/merkleblock.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/merkleblock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/miner.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/miner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/net.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/net.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/net.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/net.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/net_processing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/net_processing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/net_processing.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/net_processing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/netaddress.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/netaddress.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/netaddress.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/netaddress.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/netbase.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/netbase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/netmessagemaker.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/netmessagemaker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/outputtype.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/outputtype.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/policy/feerate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/policy/feerate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/policy/feerate.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/policy/feerate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/policy/fees.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/policy/fees.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/policy/fees.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/policy/fees.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/policy/policy.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/policy/policy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/pow.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/pow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/primitives/block.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/primitives/block.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/primitives/transaction.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/primitives/transaction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/protocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/protocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/psbt.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/psbt.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/pubkey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/pubkey.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/pubkey.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/pubkey.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/addressbookpage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/addressbookpage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/addresstablemodel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/addresstablemodel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/addresstablemodel.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/addresstablemodel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/askpassphrasedialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/askpassphrasedialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinaddressvalidator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinaddressvalidator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinaddressvalidator.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinaddressvalidator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinamountfield.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinamountfield.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinamountfield.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinamountfield.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinstrings.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinstrings.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinunits.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinunits.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinunits.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/bitcoinunits.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/clientmodel.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/clientmodel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/coincontroldialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/coincontroldialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/editaddressdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/editaddressdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/optionsdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/optionsdialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/overviewpage.ui" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/overviewpage.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/receivecoinsdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/receivecoinsdialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/sendcoinsdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/sendcoinsdialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/sendcoinsentry.ui" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/sendcoinsentry.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/signverifymessagedialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/forms/signverifymessagedialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/guiconstants.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/guiconstants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/guiutil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/guiutil.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/guiutil.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/guiutil.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/intro.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/intro.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_af.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_af.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_af_ZA.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_af_ZA.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_am.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_am.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_be_BY.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_be_BY.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_bg.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_bg.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_bg_BG.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_bg_BG.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ca.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ca.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ca@valencia.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ca@valencia.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ca_ES.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ca_ES.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_cs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_cs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_cy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_cy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_da.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_da.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_de.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_de.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_el.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_el.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_el_GR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_el_GR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_en.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_en.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_en_GB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_en_GB.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_eo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_eo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_AR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_AR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_CL.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_CL.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_CO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_CO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_DO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_DO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_ES.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_ES.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_MX.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_MX.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_UY.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_UY.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_VE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_es_VE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_et.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_et.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_et_EE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_et_EE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_eu_ES.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_eu_ES.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fa.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fa.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fa_IR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fa_IR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fr.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fr_CA.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fr_CA.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fr_FR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_fr_FR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_gl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_gl.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_he.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_he.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_hi_IN.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_hi_IN.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_hr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_hr.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_hu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_hu.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_id.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_id.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_id_ID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_id_ID.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_is.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_is.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_it.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_it.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_it_IT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_it_IT.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ja.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ja.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ka.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ka.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_kk_KZ.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_kk_KZ.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ko.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ko.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ko_KR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ko_KR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ku_IQ.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ku_IQ.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ky.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ky.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_la.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_la.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_lt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_lt.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_lv_LV.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_lv_LV.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_mk_MK.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_mk_MK.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ml.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ml.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_mn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_mn.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ms_MY.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ms_MY.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_nb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_nb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ne.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ne.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_nl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_nl.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pam.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pam.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pl.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pt_BR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pt_BR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pt_PT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_pt_PT.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ro.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ro.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ro_RO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ro_RO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ru.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ru_RU.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ru_RU.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sk.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sl_SI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sl_SI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sn.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sq.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sq.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sr.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sr@latin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sr@latin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sv.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_sv.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_szl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_szl.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ta.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_th_TH.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_th_TH.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_tr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_tr.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_tr_TR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_tr_TR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_uk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_uk.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ur_PK.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_ur_PK.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_uz@Cyrl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_uz@Cyrl.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_vi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_vi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_vi_VN.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_vi_VN.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh_CN.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh_CN.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh_HK.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh_HK.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh_TW.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/locale/bitcoin_zh_TW.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/openuridialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/openuridialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsdialog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsmodel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsmodel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsmodel.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/optionsmodel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/overviewpage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/overviewpage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/paymentserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/paymentserver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/receivecoinsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/receivecoinsdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/receiverequestdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/receiverequestdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/recentrequeststablemodel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/recentrequeststablemodel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/bitcoin-qt-res.rc" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/bitcoin-qt-res.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/icons/bitcoin_testnet.ico" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/icons/bitcoin_testnet.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/bitcoin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/bitcoin.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_0.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_0.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/clock_3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/hd_disabled.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/hd_disabled.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/hd_enabled.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/hd_enabled.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/mine.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/mine.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/tx_in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/tx_in.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/tx_inout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/tx_inout.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/verify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/res/src/verify.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/rpcconsole.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/sendcoinsdialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/sendcoinsdialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/sendcoinsentry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/sendcoinsentry.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/apptests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/apptests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/apptests.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/apptests.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/paymentrequestdata.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/paymentrequestdata.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/paymentservertests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/paymentservertests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/paymentservertests.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/paymentservertests.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/test_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/test_main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/uritests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/uritests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/test/wallettests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/test/wallettests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/transactiondesc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/transactiondesc.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/transactionrecord.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/transactionrecord.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/transactiontablemodel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/transactiontablemodel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/transactiontablemodel.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/transactiontablemodel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/transactionview.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/transactionview.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/utilitydialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/utilitydialog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/utilitydialog.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/utilitydialog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletcontroller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletcontroller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletframe.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletframe.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletframe.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletframe.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletmodel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletmodel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletmodel.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletmodel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletview.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletview.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/qt/walletview.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/qt/walletview.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/random.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/random.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/blockchain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/client.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/misc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/misc.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/net.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/net.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/protocol.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/protocol.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/protocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/protocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/rawtransaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/rawtransaction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/register.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/register.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/server.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/server.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/bitcoinconsensus.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/bitcoinconsensus.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/bitcoinconsensus.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/bitcoinconsensus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/descriptor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/descriptor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/interpreter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/interpreter.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/interpreter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/ismine.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/ismine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/script.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/script.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/script_error.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/script_error.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/sigcache.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/sigcache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/sign.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/sign.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/sign.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/sign.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/script/standard.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/script/standard.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/serialize.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/serialize.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/shutdown.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/shutdown.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/streams.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/streams.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/support/allocators/secure.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/support/allocators/secure.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/support/allocators/zeroafterfree.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/support/allocators/zeroafterfree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/support/cleanse.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/support/cleanse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/sync.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/sync.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/threadsafety.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/threadsafety.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/torcontrol.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/torcontrol.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/txdb.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/txdb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/txmempool.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/txmempool.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/uint256.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/uint256.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/undo.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/undo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/memory.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/memory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/moneystr.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/moneystr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/strencodings.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/strencodings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/system.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/system.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/time.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/util/time.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/util/time.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validation.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/validationinterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/validationinterface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/crypter.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/crypter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/db.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/db.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/db.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/db.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/fees.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/fees.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/psbtwallet.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/psbtwallet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcdump.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcdump.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcwallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/rpcwallet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/wallet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/wallet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/wallet.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/wallet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/walletdb.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/walletdb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/wallet/walletutil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/wallet/walletutil.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/warnings.h" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/warnings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/maker.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -497,30 +93,30 @@
     <session id="-1553293090">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ac" value="3" />
           <entry key="am" value="5" />
-          <entry key="cpp" value="38" />
+          <entry key="cpp" value="41" />
           <entry key="h" value="8" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="46" />
+          <entry key="ObjectiveC" value="49" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -532,13 +128,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="am" value="7" />
-          <entry key="cpp" value="292" />
+          <entry key="cpp" value="313" />
           <entry key="h" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="300" />
+          <entry key="ObjectiveC" value="321" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -549,17 +145,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="133" selection-start-line="133" selection-end-line="133" />
+            <state relative-caret-position="3145">
+              <caret line="185" selection-start-line="185" selection-end-line="185" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7616">
-              <caret line="448" selection-start-line="448" selection-end-line="448" />
+            <state relative-caret-position="87">
+              <caret line="794" lean-forward="true" selection-start-line="794" selection-end-line="794" />
             </state>
           </provider>
         </entry>
@@ -567,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19788">
-              <caret line="1164" column="28" selection-end-line="4875" />
+            <state relative-caret-position="19839">
+              <caret line="1167" column="28" selection-end-line="4966" />
             </state>
           </provider>
         </entry>
@@ -582,10 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="16133">
               <caret line="949" column="74" selection-end-line="1454" />
             </state>
           </provider>
@@ -594,8 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chain.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="629">
+              <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -612,8 +208,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net_processing.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16167">
-              <caret line="951" selection-start-line="951" selection-end-line="951" />
+            <state relative-caret-position="13974">
+              <caret line="822" selection-start-line="822" selection-end-line="822" />
             </state>
           </provider>
         </entry>
@@ -630,8 +226,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/pow.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="407">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -668,8 +264,8 @@
       <find>IsInitialBlockDownload</find>
       <find>BLOCK_CHAIN_SIZE</find>
       <find>prune</find>
-      <find>HEAD</find>
       <find>subsid</find>
+      <find>HEAD</find>
     </findStrings>
     <replaceStrings>
       <replace>bitfranc_replace/</replace>
@@ -734,11 +330,12 @@
         <option value="$PROJECT_DIR$/kryptofranccore/src/iminer.cpp" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/chainparams.h" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/init.cpp" />
-        <option value="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/Makefile.am" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/chainparamsseeds.h" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp" />
         <option value="$PROJECT_DIR$/kryptofranccore/src/validation.cpp" />
+        <option value="$PROJECT_DIR$/kryptofranccore/src/pow.cpp" />
+        <option value="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" />
       </list>
     </option>
   </component>
@@ -749,10 +346,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="246" />
-    <option name="y" value="847" />
-    <option name="width" value="2483" />
-    <option name="height" value="1088" />
+    <option name="x" value="245" />
+    <option name="width" value="2485" />
+    <option name="height" value="2168" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -838,16 +434,19 @@
       <workItem from="1552268363154" duration="3092000" />
       <workItem from="1558346674318" duration="1074000" />
       <workItem from="1560019002642" duration="1202000" />
+      <workItem from="1560449050325" duration="17000" />
+      <workItem from="1560449121409" duration="1010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74830000" />
+    <option name="totallyTimeSpent" value="75857000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="197" y="678" width="1986" height="870" extended-state="1" />
+    <frame x="196" y="0" width="1988" height="1734" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2923157" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29927385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -861,7 +460,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.12872629" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.059300873" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.329907" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1009,22 +608,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chainparams.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7616">
-          <caret line="448" selection-start-line="448" selection-end-line="448" />
+        <state relative-caret-position="3145">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/validation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19788">
-          <caret line="1164" column="28" selection-end-line="4875" />
+        <state relative-caret-position="19839">
+          <caret line="1167" column="28" selection-end-line="4966" />
         </state>
       </provider>
     </entry>
@@ -1035,10 +627,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16133">
+          <caret line="949" column="74" selection-end-line="1454" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/chain.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state relative-caret-position="629">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1051,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/net_processing.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16167">
-          <caret line="951" selection-start-line="951" selection-end-line="951" />
+        <state relative-caret-position="13974">
+          <caret line="822" selection-start-line="822" selection-end-line="822" />
         </state>
       </provider>
     </entry>
@@ -1065,15 +664,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/pow.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="407">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/qt/bitcoingui.cpp">
+    <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="949" column="74" selection-end-line="1454" />
+        <state relative-caret-position="87">
+          <caret line="794" lean-forward="true" selection-start-line="794" selection-end-line="794" />
         </state>
       </provider>
     </entry>

@@ -1165,29 +1165,45 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
      nSubsidy >>= halvings; */
     
 
-    CAmount nSubsidy = 3200; // base
+ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
+{
 
+
+    CAmount nSubsidy = 3200; // base
+    CAmount nSubsidy1 = 3200; // base
+
+    // premine
     if (nHeight == 1 || nHeight == 50 ) return 1000000000 * COIN;
     if (nHeight == 100) return 400000000 * COIN * 3;
     if (nHeight < 100) return 1 * COIN;
 
 
     float year = 1.0;
+    float year1 =(float) (nHeight / (float)consensusParams.nSubsidyHalvingInterval) + 1.0;
 
-    year = (nHeight / consensusParams.nSubsidyHalvingInterval) + 1;
     float halfing = year / 1.618033988750;
-    nSubsidy = (nSubsidy / halfing) * COIN;
+    float halfing1 = year1 / 1.618033988750;
 
-	if (nSubsidy<=COIN || nSubsidy>=6000*COIN) nSubsidy=1*COIN;
-	
-    return nSubsidy;
+    nSubsidy = (nSubsidy / halfing) * COIN;
+    nSubsidy1 = (nSubsidy1 / halfing1) * COIN;
+
+    if (nSubsidy<=COIN || nSubsidy>=6000*COIN) nSubsidy=1*COIN;
+    if (nSubsidy1<=COIN || nSubsidy1>=6000*COIN) nSubsidy1=1*COIN;
+
+
+    // hack the mining reward to get a stable reward of about 5177 for the 3 month of self/private mining.
+    printf("GetBlockSubsidy - height=%i  year1=%9.6f  halfing=%9.6f halfing1=%9.6f nSubsidy=%lu nSubsidy1=%lu \n",nHeight,year1,halfing,halfing1,nSubsidy,nSubsidy1);
+
+    // 3 months of stable rewards... then deflation starts.
+    if (nHeight>52000) return nSubsidy1;
+    else return nSubsidy;
+
 
 	
 }
 
 bool IsInitialBlockDownload()
 {
-    true;
     // Once this function has returned false, it must remain false.
     static std::atomic<bool> latchToFalse{false};
     // Optimization: pre-test latch before taking the lock.
@@ -1195,26 +1211,16 @@ bool IsInitialBlockDownload()
         return false;
 
     LOCK(cs_main);
-    if (latchToFalse.load(std::memory_order_relaxed)) {
-        LogPrintf("IsInitialBlockDownload false: latchToFalse.load(std::memory_order_relaxed)\n");
+    if (latchToFalse.load(std::memory_order_relaxed))
         return false;
-    }
-    if (fImporting || fReindex) {
-        LogPrintf("IsInitialBlockDownload true: fImporting || fReindex\n");
+    if (fImporting || fReindex)
         return true;
-    }
-    if (chainActive.Tip() == nullptr) {
-        LogPrintf("IsInitialBlockDownload true: chainActive.Tip() == nullptr\n");
+    if (chainActive.Tip() == nullptr)
         return true;
-    }
-    if (chainActive.Tip()->nChainWork < nMinimumChainWork) {
-        LogPrintf("IsInitialBlockDownload true: chainActive.Tip()->nChainWork < nMinimumChainWork)\n");
+    if (chainActive.Tip()->nChainWork < nMinimumChainWork)
         return true;
-    }
-    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge)) {
-        LogPrintf("IsInitialBlockDownload true: chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))\n");
+    if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))
         return true;
-    }
     LogPrintf("Leaving InitialBlockDownload (latching to false)\n");
     latchToFalse.store(true, std::memory_order_relaxed);
     return false;
@@ -2073,13 +2079,11 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     LogPrint(BCLog::BENCH, "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs (%.2fms/blk)]\n", (unsigned)block.vtx.size(), MILLI * (nTime3 - nTime2), MILLI * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : MILLI * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * MICRO, nTimeConnect * MILLI / nBlocksTotal);
 
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
-    if (block.vtx[0]->GetValueOut() > blockReward) {
-        printf("bad-cb-amount error \n");
+    if (block.vtx[0]->GetValueOut() > blockReward)
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
                                block.vtx[0]->GetValueOut(), blockReward),
-                         REJECT_INVALID, "bad-cb-amount");
-    }
+                               REJECT_INVALID, "bad-cb-amount");
 
     if (!control.Wait())
         return state.DoS(100, error("%s: CheckQueue failed", __func__), REJECT_INVALID, "block-validation-failed");
@@ -3194,15 +3198,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
 bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    return true;
-    //return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
+    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
 }
 
 bool IsNullDummyEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    return true;
-    //return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
+    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == ThresholdState::ACTIVE);
 }
 
 // Compute at which vout of the block's coinbase transaction the witness

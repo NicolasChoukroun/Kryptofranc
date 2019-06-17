@@ -987,7 +987,26 @@ bool AppInitParameterInteraction()
     nMaxConnections = std::min(nFD - MIN_CORE_FILEDESCRIPTORS - MAX_ADDNODE_CONNECTIONS, nMaxConnections);
 
     if (nMaxConnections < nUserMaxConnections)
-        InitWarning(strprintf(_("Reducing -maxconnections from %d to %d, because of system limitations."), nUserMaxConnections, nMaxConnections));
+        InitWarning(strprintf(_("Reducing -maxconnections from %d to %d, because of system limitations."), nUserMaxConnections, nMaxConnections));\n
+// check version
+    try {
+        http::Request request("http://kryptofranc.com/version.txt");
+        http::Response response = request.send("GET");
+        std::string version_string = FormatFullVersion();
+        if (version_string.compare((char *)response.body.data())!=0) {
+            InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion required: %s\n"),  response.body.data()));
+            //exit(false);
+        }
+        std::cout << response.body.data() << std::endl; // print the result
+        std::cout << version_string << std::endl;
+
+    }catch (const std::exception& e)
+    {
+        InitWarning(strprintf(_("Check version: Cannot connect to server , request failed.\nError: %s"), e.what() ));
+        std::cerr << "Request failed, error: " << e.what() << std::endl;
+    }
+
+
 
     // ********************************************************* Step 3: parameter-to-internal-flags
     if (gArgs.IsArgSet("-debug")) {
