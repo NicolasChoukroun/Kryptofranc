@@ -53,6 +53,7 @@
 #include <walletinitinterface.h>
 #include <stdint.h>
 #include <stdio.h>
+#include "httprequest.h"
 
 #ifndef WIN32
 #include <attributes.h>
