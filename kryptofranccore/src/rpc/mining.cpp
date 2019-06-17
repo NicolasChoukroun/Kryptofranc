@@ -794,11 +794,8 @@ static UniValue submitblock(const JSONRPCRequest& request)
 }
 
 static UniValue submitblock2(const JSONRPCRequest& request)
-
 {
-    // We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
-    }) {
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3) {
         throw std::runtime_error(
             RPCHelpMan{"submitblock",
                 "\nAttempts to submit new block to network.\n"
