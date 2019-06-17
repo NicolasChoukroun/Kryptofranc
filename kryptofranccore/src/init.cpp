@@ -73,6 +73,8 @@
 #include <zmq/zmqrpc.h>
 #endif
 
+#include "httprequest.h"
+
 bool fFeeEstimatesInitialized = false;
 static const bool DEFAULT_PROXYRANDOMIZE = true;
 static const bool DEFAULT_REST_ENABLE = false;
@@ -509,6 +511,7 @@ void SetupServerArgs()
     gArgs.AddArg("-shrinkdebugfile", "Shrink debug.log file on client startup (default: 1 when no -debug)", false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-uacomment=<cmt>", "Append comment to the user agent string", false, OptionsCategory::DEBUG_TEST);
 
+
     SetupChainParamsBaseOptions();
 
     gArgs.AddArg("-acceptnonstdtxn", strprintf("Relay and mine \"non-standard\" transactions (%sdefault: %u)", "testnet/regtest only; ", !testnetChainParams->RequireStandard()), true, OptionsCategory::NODE_RELAY);
@@ -866,9 +869,9 @@ void InitLogging()
     // debug.log.
     LogPrintf("\n\n\n\n\n");
 
-    LogInstance().m_print_to_console = gArgs.GetBoolArg("-printtoconsole", !gArgs.GetBoolArg("-daemon", false));
     LogInstance().m_log_timestamps = gArgs.GetBoolArg("-logtimestamps", DEFAULT_LOGTIMESTAMPS);
     LogInstance().m_log_time_micros = gArgs.GetBoolArg("-logtimemicros", DEFAULT_LOGTIMEMICROS);
+    LogInstance().m_print_to_console  = gArgs.GetBoolArg("-printtoconsole", DEFAULT_LOGTIMEMICROS);
 
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
@@ -945,6 +948,8 @@ bool AppInitBasicSetup()
     return true;
 }
 
+
+
 bool AppInitParameterInteraction()
 {
     const CChainParams& chainparams = Params();
@@ -981,7 +986,7 @@ bool AppInitParameterInteraction()
 #else
     int fd_max = FD_SETSIZE;
 #endif
-    nMaxConnections = std::max(std::min<int>(nMaxConnections, fd_max - nBind - MIN_CORE_FILEDESCRIPTORS - MAX_ADDNODE_CONNECTIONS), 0);
+    nMaxConnections = std::max(std::min<int>(nMaxConnections, fd_max - nBind - MIN_CORE_FILEDESCRIPTORS - MAX_ADDNODE_CONNECTIONS), 0)+1;
     if (nFD < MIN_CORE_FILEDESCRIPTORS)
         return InitError(_("Not enough file descriptors available."));
     nMaxConnections = std::min(nFD - MIN_CORE_FILEDESCRIPTORS - MAX_ADDNODE_CONNECTIONS, nMaxConnections);
@@ -1007,6 +1012,25 @@ bool AppInitParameterInteraction()
     }
 
 
+
+    // check version
+
+    try {
+        http::Request request("http://kryptofranc.com/version.txt");
+        http::Response response = request.send("GET");
+        std::string version_string = FormatFullVersion();
+        if (version_string.compare((char *)response.body.data())!=0) {
+            InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion required: %s\n"),  response.body.data()));
+            //exit(false);
+        }
+        std::cout << response.body.data() << std::endl; // print the result
+        std::cout << version_string << std::endl;
+
+    }catch (const std::exception& e)
+    {
+        InitWarning(strprintf(_("Check version: Cannot connect to server , request failed.\nError: %s"), e.what() ));
+        std::cerr << "Request failed, error: " << e.what() << std::endl;
+    }
 
     // ********************************************************* Step 3: parameter-to-internal-flags
     if (gArgs.IsArgSet("-debug")) {

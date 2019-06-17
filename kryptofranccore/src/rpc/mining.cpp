@@ -707,12 +707,7 @@ protected:
 
 static UniValue submitblock(const JSONRPCRequest& request)
 {
-    // 
-We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
-    if (request.params[1].get_str()!="Eva Choukroun!26-4-2015") {
-        throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "NC POOL is private, you need a password to mine.");
-        return "Unauthorized";
-    }
+
     unsigned char digest[MD5_DIGEST_LENGTH];
     const char * string = request.params[1].get_str().c_str();
     //printf("*** STRING ***  %s\n",(char *) string);
@@ -871,6 +866,9 @@ We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
     return BIP22ValidationResult(sc.state);
 }
 
+
+
+
 static UniValue submitheader(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 1) {
@@ -913,8 +911,7 @@ static UniValue submitheader(const JSONRPCRequest& request)
 
 static UniValue estimatesmartfee(const JSONRPCRequest& request)
 {
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
-    })
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
             RPCHelpMan{"estimatesmartfee",
                 "\nEstimates the approximate fee per kilobyte needed for a transaction to begin\n"
@@ -978,8 +975,7 @@ static UniValue estimatesmartfee(const JSONRPCRequest& request)
 
 static UniValue estimaterawfee(const JSONRPCRequest& request)
 {
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
-    })
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 2)
         throw std::runtime_error(
             RPCHelpMan{"estimaterawfee",
                 "\nWARNING: This interface is unstable and may disappear or change!\n"
