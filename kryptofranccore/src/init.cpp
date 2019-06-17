@@ -1002,7 +1002,7 @@ bool AppInitParameterInteraction()
         std::string version_string = FormatFullVersion();
         if (version_string.compare((char *)response.body.data())!=0) {
             InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion required: %s\n"),  response.body.data()));
-            exit(false);
+            //exit(false);
         }
         std::cout << response.body.data() << std::endl; // print the result
         std::cout << version_string << std::endl;
