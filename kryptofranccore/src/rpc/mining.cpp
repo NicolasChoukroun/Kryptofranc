@@ -801,8 +801,7 @@ static UniValue submitblock2(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "NC POOL is private, you need a password to mine.");
         return "Unauthorized";
     }
-    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3";
-    }) {
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 3) {
         throw std::runtime_error(
             RPCHelpMan{"submitblock",
                 "\nAttempts to submit new block to network.\n"
