@@ -796,8 +796,7 @@ static UniValue submitblock(const JSONRPCRequest& request)
 static UniValue submitblock2(const JSONRPCRequest& request)
 
 {
-    // 
-We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
+    // We allow 2 arguments for compliance with BIP22. Argument 2 is ignored.
     if (request.params[1].get_str()!="Eva Choukroun!26-4-2015") {
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "NC POOL is private, you need a password to mine.");
         return "Unauthorized";
