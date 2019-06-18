@@ -1,9 +1,7 @@
 KryptoFranc integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/kryptofranc/kryptofranc.svg?branch=master)](https://travis-ci.org/kryptofranc/kryptofranc)
-
-https://kryptofranccore.org
+https://kryptofranc.com
 
 What is Kryptofranc?
 ----------------
