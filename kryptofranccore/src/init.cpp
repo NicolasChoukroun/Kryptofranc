@@ -992,11 +992,11 @@ bool AppInitParameterInteraction()
 // check version
     try {
 #ifdef WIN32
-        http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_win");
+        http::Request request("http://kryptofranc.com/version_win.txt");
 #elif Q_OS_MAC
-        http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_mac");
+        http::Request request("http://kryptofranc.com/version_mac.txt");
 #else
-        http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_ubuntu");
+        http::Request request("http://kryptofranc.com/version_ubuntu.txt");
 #endif
         http::Response response = request.send("GET");
         std::string version_string = FormatFullVersion();
