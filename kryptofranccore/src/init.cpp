@@ -989,16 +989,14 @@ bool AppInitParameterInteraction()
 
     if (nMaxConnections < nUserMaxConnections)
         InitWarning(strprintf(_("Reducing -maxconnections from %d to %d, because of system limitations."), nUserMaxConnections, nMaxConnections));
-    if (nMaxConnections < nUserMaxConnections)
-        InitWarning(strprintf(_("Reducing -maxconnections from %d to %d, because of system limitations."), nUserMaxConnections, nMaxConnections));
 // check version
     try {
 #ifdef WIN32
         http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_win");
-#elseif Q_OS_MAC
+#elif Q_OS_MAC
         http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_mac");
-#elseif
-        http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_ubuntu);
+#else
+        http::Request request("https://raw.githubusercontent.com/NicolasChoukroun/KryptoFranc/master/version_ubuntu");
 #endif
         http::Response response = request.send("GET");
         std::string version_string = FormatFullVersion();
