@@ -154,7 +154,8 @@ if [ $OS = "osx" ]; then
 	sudo cp -rf $COINPATH/src/$COINNAME-tx binaries/osx/$COINNAME-tx
 	sudo cp -rf $COINPATH/src/$COINNAME-wallet binaries/osx/$COINNAME-wallet
 	sudo cp -rf $COINPATH/src/$COINNAME-cli binaries/osx/$COINNAME-cli
-	#sudo cp -rf "$COINPATH/src/$COINNAME""d" "binaries/osx/$COINNAME""d"	
+	sudo cp -rf $COINPATH/src/qt/bitcoin-qt binaries/osx/$COINNAME-qt
+	sudo cp -rf "$COINPATH/src/$COINNAME""d" "binaries/osx/$COINNAME""d"	
 fi
 
 
