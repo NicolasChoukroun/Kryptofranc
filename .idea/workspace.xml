@@ -154,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="796" column="1" selection-start-line="796" selection-start-column="1" selection-end-line="796" selection-end-column="1" />
+            <state relative-caret-position="443">
+              <caret line="797" column="1" selection-start-line="797" selection-start-column="1" selection-end-line="797" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -345,7 +345,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="245" />
     <option name="width" value="2485" />
     <option name="height" value="2169" />
@@ -436,15 +436,15 @@
       <workItem from="1560019002642" duration="1202000" />
       <workItem from="1560449050325" duration="17000" />
       <workItem from="1560449121409" duration="1010000" />
-      <workItem from="1560773412102" duration="1017000" />
+      <workItem from="1560773412102" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76874000" />
+    <option name="totallyTimeSpent" value="77474000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="0" width="1988" height="1735" extended-state="0" />
+    <frame x="196" y="0" width="1988" height="1735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3023859" />
@@ -672,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="796" column="1" selection-start-line="796" selection-start-column="1" selection-end-line="796" selection-end-column="1" />
+        <state relative-caret-position="443">
+          <caret line="797" column="1" selection-start-line="797" selection-start-column="1" selection-end-line="797" selection-end-column="1" />
         </state>
       </provider>
     </entry>
