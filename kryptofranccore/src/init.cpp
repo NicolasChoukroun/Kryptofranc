@@ -991,11 +991,17 @@ bool AppInitParameterInteraction()
         InitWarning(strprintf(_("Reducing -maxconnections from %d to %d, because of system limitations."), nUserMaxConnections, nMaxConnections));
 // check version
     try {
-        http::Request request("http://kryptofranc.com/version.txt");
+#ifdef WIN32
+        http::Request request("http://kryptofranc.com/version_win.txt");
+#elif Q_OS_MAC
+        http::Request request("http://kryptofranc.com/version_mac.txt");
+#else
+        http::Request request("http://kryptofranc.com/version_ubuntu.txt");
+#endif
         http::Response response = request.send("GET");
         std::string version_string = FormatFullVersion();
         if (version_string.compare((char *)response.body.data())!=0) {
-            InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion required: %s\n"),  response.body.data()));
+            InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion current: %s\nThis Wallet: %s"),  response.body.data(),version_string));
             //exit(false);
         }
         std::cout << response.body.data() << std::endl; // print the result

@@ -1,9 +1,7 @@
 KryptoFranc integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/kryptofranc/kryptofranc.svg?branch=master)](https://travis-ci.org/kryptofranc/kryptofranc)
-
-https://kryptofranccore.org
+https://kryptofranc.com
 
 What is Kryptofranc?
 ----------------
@@ -15,8 +13,8 @@ out collectively by the network. KryptoFranc is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the KryptoFranc software, see https://kryptofranccore.org/en/download/, or read the
-[original whitepaper](https://kryptofranccore.org/kryptofranc.pdf).
+the KryptoFranc software, see https://kryptofranc.com/downloads.php, or read the
+[original whitepaper](https://kryptofranc.com/whitepaper.php).
 
 License
 -------
