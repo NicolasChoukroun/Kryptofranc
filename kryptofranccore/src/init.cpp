@@ -1000,7 +1000,7 @@ bool AppInitParameterInteraction()
 #endif
         http::Response response = request.send("GET");
         std::string version_string = FormatFullVersion();
-        LogPrintf(("Version Checking: size of response: %i | size of version: %i  %s r=%i\n",response.body.size(),sizeof(version_string),(char *)response.body.data(), version_string.compare((char *)response.body.data()));
+        LogPrintf("Version Checking: size of response: %i | size of version: %i  %s r=%i\n",response.body.size(),sizeof(version_string),(char *)response.body.data(), version_string.compare((char *)response.body.data()));
         if (response.body.size()>sizeof(version_string)){
             response.body.data()[sizeof(version_string)+5]=0;
         }
