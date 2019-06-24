@@ -9,9 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kryptofranccore/src/rpc/mining.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="d941244a-0c11-4d41-880f-08d2757da596" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -345,7 +343,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="245" />
     <option name="width" value="2485" />
     <option name="height" value="2169" />
@@ -444,7 +442,7 @@
     <option name="totallyTimeSpent" value="77474000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="0" width="1988" height="1735" extended-state="1" />
+    <frame x="196" y="0" width="1988" height="1735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3023859" />

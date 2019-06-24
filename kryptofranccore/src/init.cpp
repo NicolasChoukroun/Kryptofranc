@@ -990,17 +990,25 @@ bool AppInitParameterInteraction()
     if (nMaxConnections < nUserMaxConnections)
         InitWarning(strprintf(_("Reducing -maxconnections from %d to %d, because of system limitations."), nUserMaxConnections, nMaxConnections));
 // check version
-    try {
+  try {
 #ifdef WIN32
         http::Request request("http://kryptofranc.com/version_win.txt");
-#elif Q_OS_MAC
+#elif __APPLE__
         http::Request request("http://kryptofranc.com/version_mac.txt");
 #else
         http::Request request("http://kryptofranc.com/version_ubuntu.txt");
 #endif
         http::Response response = request.send("GET");
         std::string version_string = FormatFullVersion();
-        if (version_string.compare((char *)response.body.data())!=0) {
+        LogPrintf("Version Checking: size of response: %i | size of version: %i  %s r=%i\n",response.body.size(),sizeof(version_string),(char *)response.body.data(), version_string.compare((char *)response.body.data()));
+        if (response.body.size()>sizeof(version_string)){
+#ifdef __APPLE__
+        response.body.data()[sizeof(version_string)+13]=0;
+#else
+ 	response.body.data()[sizeof(version_string)+5]=0;
+#endif
+        }
+        if (version_string.compare((char *)response.body.data())!= 0) {
             InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion current: %s\nThis Wallet: %s"),  response.body.data(),version_string));
             //exit(false);
         }
@@ -1012,7 +1020,6 @@ bool AppInitParameterInteraction()
         InitWarning(strprintf(_("Check version: Cannot connect to server , request failed.\nError: %s"), e.what() ));
         std::cerr << "Request failed, error: " << e.what() << std::endl;
     }
-
 
 
     // ********************************************************* Step 3: parameter-to-internal-flags
