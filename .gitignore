@@ -10,6 +10,13 @@ src/bitcoin
 src/bitcoind
 src/bitcoin-cli
 src/bitcoin-tx
+src/kyf
+src/kyfd
+src/kyf-cli
+src/kyf-tx
+src/kyf-wallet
+src/qt/bitcoin-qt
+src/qt/kyf-qt
 src/test/test_bitcoin
 src/test/test_bitcoin_fuzzy
 src/qt/test/test_bitcoin-qt
@@ -83,7 +90,6 @@ src/qt/bitcoin-qt.includes
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
 bitcoin-qt
 Bitcoin-Qt.app
 background.tiff*
@@ -122,20 +128,7 @@ libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh
 .idea/workspace.xml
 cmake-build-debug/CMakeFiles/clion-log.txt
-.idea/workspace.xml
-.idea/workspace.xml
-cmake-build-debug/CMakeFiles/clion-log.txt
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
 *.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
 kryptofranccore/.github/ISSUE_TEMPLATE.md
 kryptofranccore/.github/PULL_REQUEST_TEMPLATE.md
 kryptofranccore/.travis/lint_04_install.sh
@@ -148,4 +141,3 @@ kryptofranccore/.travis/test_05_before_script.sh
 kryptofranccore/.travis/test_06_script_a.sh
 kryptofranccore/.travis/test_06_script_b.sh
 kryptofranccore/.tx/config
-.idea/workspace.xml
