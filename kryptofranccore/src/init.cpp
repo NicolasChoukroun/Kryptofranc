@@ -1002,13 +1002,11 @@ bool AppInitParameterInteraction()
         std::string version_string = FormatFullVersion();
         LogPrintf("Version Checking: size of response: %i | size of version: %i  %s r=%i\n",response.body.size(),sizeof(version_string),(char *)response.body.data(), version_string.compare((char *)response.body.data()));
         if (response.body.size()>sizeof(version_string)){
-
 #ifdef __APPLE__
         response.body.data()[sizeof(version_string)+13]=0;
 #else
  	response.body.data()[sizeof(version_string)+5]=0;
 #endif
-
         }
         if (version_string.compare((char *)response.body.data())!= 0) {
             InitWarning(strprintf(_("Incorrect version number, please update your wallet to the latest version.\nVersion current: %s\nThis Wallet: %s"),  response.body.data(),version_string));
