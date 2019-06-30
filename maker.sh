@@ -178,9 +178,10 @@ if [ $OS = "unix" ]; then
     fi
     if [ $ALL = "yes" ]; then
         cd $COINPATH
+        make clean
         ./autogen.sh
         ./configure --disable-tests --disable-bench
-        make clean
+
         cd ..
     fi
     cd $COINPATH
@@ -217,6 +218,13 @@ if [ $OS = "unix" ]; then
 	sudo cp -rf $COINPATH/src/$COINNAME-wallet binaries/unix/$COINNAME-wallet
 	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt binaries/unix/$COINNAME-qt
 	sudo cp -rf $COINPATH/src/$COINNAME-qt /usr/bin/$COINNAME-qt
+
+        sudo strip "binaries/unix/$COINNAME""d"
+	sudo strip binaries/unix/$COINNAME-tx
+	sudo strip binaries/unix/$COINNAME-cli
+	sudo strip binaries/unix/$COINNAME-qt
+	sudo strip binaries/unix/$COINNAME-wallet
+
 fi
  
 if [ $OS = "win64" ]; then
@@ -254,7 +262,7 @@ if [ $OS = "win64" ]; then
         	cd $COINPATH
 		sudo ./autogen.sh
 		sudo CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-tests --disable-bench
-                make clean
+                # make clean
 		cd ..
 	fi
 
@@ -277,16 +285,24 @@ if [ $OS = "win64" ]; then
 	sudo mkdir -p binaries
 	sudo mkdir -p binaries/win64
 
-	#sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe $COINPATH/src/$COINNAME-wallet.exe
 	sudo cp -rf $COINPATH/src/qt/bitcoin-qt.exe $COINPATH/src/qt/$COINNAME-qt.exe
-
 	sudo cp -rf "$COINPATH/src/$COINNAME""d".exe "binaries/win64/$COINNAME""d".exe
 	sudo cp -rf $COINPATH/src/$COINNAME-tx.exe binaries/win64/$COINNAME-tx.exe
 	sudo cp -rf $COINPATH/src/$COINNAME-cli.exe binaries/win64/$COINNAME-cli.exe
 	sudo cp -rf $COINPATH/src/qt/$COINNAME-qt.exe binaries/win64/$COINNAME-qt.exe
 	sudo cp -rf $COINPATH/src/$COINNAME-wallet.exe binaries/win64/$COINNAME-wallet.exe
-    if [ $DEPLOY = "yes" ]; then
-           sudo cp -rf $COINPATH/kryptofranc-0.18.0-win64-setup.exe binaries/win64/kyf-win64-setup.exe
+
+        sudo strip "binaries/win64/$COINNAME""d".exe
+	sudo strip binaries/win64/$COINNAME-tx.exe
+	sudo strip binaries/win64/$COINNAME-cli.exe
+	sudo strip binaries/win64/$COINNAME-qt.exe
+	sudo strip binaries/win64/$COINNAME-wallet.exe
+
+
+        sudo cp -r /home/nikko/Kryptofranc/binaries/win64/ /home/nikko/Kryptofranc/kryptofranccore/release
+
+        if [ $DEPLOY = "yes" ]; then
+           sudo cp -rf $COINPATH/kryptofranc-0.18.0-win64-setup.exe /home/binaries/win64/kyf-win64-setup.exe
 	fi
 	
 	cd ..

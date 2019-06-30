@@ -1,5 +1,5 @@
 .idea/
-/build_msvc/
+build_msvc/
 *.bin
 *.obj
 *.pdf
@@ -17,8 +17,8 @@ src/kyf-tx
 src/kyf-wallet
 src/qt/bitcoin-qt
 src/qt/kyf-qt
-src/test/test_bitcoin
-src/test/test_bitcoin_fuzzy
+src/test/
+test/
 src/qt/test/test_bitcoin-qt
 
 # autoreconf
