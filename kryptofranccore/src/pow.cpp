@@ -69,7 +69,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 
     if (bnNew > bnPowLimit)
         bnNew = bnPowLimit;
-    if (bnNew<0.0) bnNew=1.0;
+    if (bnNew<1.0) bnNew=1.0;
     return bnNew.GetCompact();
 }
 
