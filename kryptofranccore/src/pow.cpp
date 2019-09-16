@@ -7,6 +7,7 @@
 #include <pow.h>
 
 #include <arith_uint256.h>
+
 #include <chain.h>
 #include <primitives/block.h>
 #include <uint256.h>
@@ -67,9 +68,11 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     bnNew *= nActualTimespan;
     bnNew /= params.nPowTargetTimespan;
 
-    if (bnNew > bnPowLimit)
-        bnNew = bnPowLimit;
+    if (bnNew > bnPowLimit)  bnNew = bnPowLimit;
+    //if (bnNew.GetCompact()<0x1d00ffff) bnNew=0x1d00ffff;
     if (bnNew<1.0) bnNew=1.0;
+
+    printf("%s  %i\n", bnNew.ToString().c_str(), bnNew.GetCompact());
     return bnNew.GetCompact();
 }
 
