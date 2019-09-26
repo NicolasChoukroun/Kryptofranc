@@ -119,7 +119,7 @@ public:
         consensus.BIP65Height = 1; // optimization starting from 1; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP65Height = 1; // optimization starting from 1; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         //consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.powLimit=uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimit=uint256S("07ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 
         consensus.nPowTargetTimespan =   2.5 * 60 * 10;
         consensus.nPowTargetSpacing = 2.5 * 60 ;
@@ -147,7 +147,7 @@ public:
 
         // The best chain should have at least this much work.
         //consensus.nMinimumChainWork = uint256S("0x1d00fff0");
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000003b07dc2d5f91");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000001e02c039ed25e");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00"); //563378
@@ -240,10 +240,14 @@ public:
 						{ 38000, uint256S("000000000eab6ba4eed30e849e9b347b3351a25f9cd44dbd134f45e181f38d09")},	
 						{ 40000, uint256S("00000000637bcce1c8b96afea8e7a243e3799f625920856998d364224a3165c5")},	
 						{ 42000, uint256S("00000000029c74d9cae8073ccf287ee003eef1f96f97a86e0e0a47af0bb7897e")},							
-						{ 44000, uint256S("000000002b99d84c1b3a51d9b9bfe330ab68b4cb61f6168fa0e0b5511296d8b4")},	
+						{ 44000, uint256S("000000002b99d84c1b3a51d9b9bfe330ab68b4cb61f6168fa0e0b5511296d8b4")},
 						{ 46000, uint256S("000000003849df4e3d69d3a50306a9c1ea4dcb7bb98976911402b8fab1d7aaf4")},	
-						{ 48000, uint256S("000000005ac12c74e8936d15a883a6a9b69b578cf0a2a0ff8c556b2b8ddb63f5")},	
-											
+						{ 48000, uint256S("000000005ac12c74e8936d15a883a6a9b69b578cf0a2a0ff8c556b2b8ddb63f5")},
+                        { 49000, uint256S("000000005ba0d22cd53f8704937b0f0e7ae3a969e97a6eebf2840ec3822cafac")},
+                        { 50000, uint256S("00000000017119bf2dfb771357dbbfb67c9fe51a070547dc42dcf3fd76dc2dbe")},
+                        { 52000, uint256S("000000000eef49240b4ddedf30c24ac5bf83cbca8423d217148a60077aada3cc")},
+
+
                 }
         };
 

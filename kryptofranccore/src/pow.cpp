@@ -69,10 +69,12 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     bnNew /= params.nPowTargetTimespan;
 
     if (bnNew > bnPowLimit)  bnNew = bnPowLimit;
-    //if (bnNew.GetCompact()<0x1d00ffff) bnNew=0x1d00ffff;
-    if (bnNew<1.0) bnNew=1.0;
+    //if (bnNew.GetCompact()<0x1d00ffff && pindexLast->nHeight>52000) bnNew=0x1d00ffff;
+    //if (bnNew<=1.0 && pindexLast->nHeight>50364) bnNew=1.0;
+    //if (bnNew<=0.0 && pindexLast->nHeight<=50364) bnNew=1.0;
+    if (bnNew<=1.0) bnNew=1.0;
 
-    printf("%s  %i\n", bnNew.ToString().c_str(), bnNew.GetCompact());
+    LogPrintf("CalculateNextWorkRequired %s %i \n", bnNew.ToString().c_str(), bnNew.GetCompact());
     return bnNew.GetCompact();
 }
 
