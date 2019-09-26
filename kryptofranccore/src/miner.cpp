@@ -168,7 +168,6 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
 
     CValidationState state;
     if (!TestBlockValidity(state, chainparams, *pblock, pindexPrev, false, false)) {
-        LogPrintf("%s: TestBlockValidity failed: %s", __func__, FormatStateMessage(state));
         throw std::runtime_error(strprintf("%s: TestBlockValidity failed: %s", __func__, FormatStateMessage(state)));
     }
     int64_t nTime2 = GetTimeMicros();
@@ -208,14 +207,10 @@ bool BlockAssembler::TestPackage(uint64_t packageSize, int64_t packageSigOpsCost
 bool BlockAssembler::TestPackageTransactions(const CTxMemPool::setEntries& package)
 {
     for (CTxMemPool::txiter it : package) {
-        if (!IsFinalTx(it->GetTx(), nHeight, nLockTimeCutoff)) {
-            //LogPrintf("TestPackageTransactions !IsFinalTx %i\n",nHeight);
+        if (!IsFinalTx(it->GetTx(), nHeight, nLockTimeCutoff))
             return false;
-        }
-        if (!fIncludeWitness && it->GetTx().HasWitness()) {
-            //LogPrintf("TestPackageTransactions !fIncludeWitness %i\n",nHeight);
+        if (!fIncludeWitness && it->GetTx().HasWitness())
             return false;
-        }
     }
     return true;
 }
@@ -233,7 +228,7 @@ void BlockAssembler::AddToBlock(CTxMemPool::txiter iter)
 
     bool fPrintPriority = gArgs.GetBoolArg("-printpriority", DEFAULT_PRINTPRIORITY);
     if (fPrintPriority) {
-        LogPrintf("AddToBlock fee %s txid %s\n",
+        LogPrintf("fee %s txid %s\n",
                   CFeeRate(iter->GetModifiedFee(), iter->GetTxSize()).ToString(),
                   iter->GetTx().GetHash().ToString());
     }
@@ -310,8 +305,6 @@ void BlockAssembler::addPackageTxs(int &nPackagesSelected, int &nDescendantsUpda
     // Keep track of entries that failed inclusion, to avoid duplicate work
     CTxMemPool::setEntries failedTx;
 
-    LogPrintf("AddPackageTxs: fentering ...\n");
-
     // Start by adding all descendants of previously added txs to mapModifiedTx
     // and modifying them for their already included ancestors
     UpdatePackagesForAdded(inBlock, mapModifiedTx);
@@ -375,7 +368,6 @@ void BlockAssembler::addPackageTxs(int &nPackagesSelected, int &nDescendantsUpda
 
         if (packageFees < blockMinFeeRate.GetFee(packageSize)) {
             // Everything else we might consider has a lower fee rate
-            LogPrintf("AddPackageTxs: packageFees < blockMinFeeRate.GetFee(packageSize)\n");
             return;
         }
 
@@ -386,16 +378,13 @@ void BlockAssembler::addPackageTxs(int &nPackagesSelected, int &nDescendantsUpda
                 // next best entry on the next loop iteration
                 mapModifiedTx.get<ancestor_score>().erase(modit);
                 failedTx.insert(iter);
-                LogPrintf("AddPackageTxs: fUsingModified failed to insert\n");
             }
 
             ++nConsecutiveFailed;
-            LogPrintf("AddPackageTxs:nConsecutiveFailed : %i\n",nConsecutiveFailed);
 
             if (nConsecutiveFailed > MAX_CONSECUTIVE_FAILURES && nBlockWeight >
                     nBlockMaxWeight - 4000) {
                 // Give up if we're close to full and haven't succeeded in a while
-                LogPrintf("AddPackageTxs: nConsecutiveFailed > MAX_CONSECUTIVE_FAILURES\n");
                 break;
             }
             continue;
@@ -414,9 +403,7 @@ void BlockAssembler::addPackageTxs(int &nPackagesSelected, int &nDescendantsUpda
             if (fUsingModified) {
                 mapModifiedTx.get<ancestor_score>().erase(modit);
                 failedTx.insert(iter);
-                LogPrintf("AddPackageTxs: TestPackageTransactions failed to insert\n");
             }
-            LogPrintf("AddPackageTxs: TestPackageTransactions failed to insert-> continue\n");
             continue;
         }
 
