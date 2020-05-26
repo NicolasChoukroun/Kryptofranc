@@ -141,3 +141,7 @@ kryptofranccore/.travis/test_05_before_script.sh
 kryptofranccore/.travis/test_06_script_a.sh
 kryptofranccore/.travis/test_06_script_b.sh
 kryptofranccore/.tx/config
+cmake-build-debug/CMakeFiles/clion-log.txt
+assets/coingekko-200x200-trans.png
+assets/coingekko-200x200.jpg
+.idea/workspace.xml

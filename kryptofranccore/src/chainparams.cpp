@@ -246,7 +246,18 @@ public:
 						{ 48000, uint256S("000000005ac12c74e8936d15a883a6a9b69b578cf0a2a0ff8c556b2b8ddb63f5")},
                         { 49000, uint256S("000000005ba0d22cd53f8704937b0f0e7ae3a969e97a6eebf2840ec3822cafac")},
                         { 50000, uint256S("00000000017119bf2dfb771357dbbfb67c9fe51a070547dc42dcf3fd76dc2dbe")},
-                        { 52000, uint256S("000000000eef49240b4ddedf30c24ac5bf83cbca8423d217148a60077aada3cc")},
+                        { 60000, uint256S("0000000067b15a764ef6a814c57e3fad14b03dd6a815122de44a2d4c36e5737a")},
+                        { 70000, uint256S("000000002eb816140fefaef01d90fe8ad1133262db4317c92257db7cb6a30783")},
+                        { 80000, uint256S("000000001d0d683b67b270b79382506fb5088f0fb52cee9d9b749e6097cf823c")},
+                        { 90000, uint256S("000000000322e68d565dbd074e9c52f28d37abd355aa6bea8991cb454eb1ed25")},
+                        { 100000, uint256S("0000000003424d6e7dcae5a6dd15b53ef653fee3d8d6add66431c5a97820024c")},
+                        { 110000, uint256S("0000000001d13bc3d4553fc374b7552806cb65355c3b8c5bb6e88d22d4333303")},
+                        { 120000, uint256S("000000000cbaf9025f63b3e2a20fa687cac2a052e0b7994682d984f59c58733d")},
+                        { 130000, uint256S("000000000a7fd6ff0beb353387f0c6c155672f71b83845e0d5039371436692e0")},
+                        { 140000, uint256S("000000000bff9a801e5f212d6dacdea9e374429f09fcc99f841693b34bb6051b")},
+                        { 150000, uint256S("00000000204bd021be5b26357b074e7fb592120f4ab9f65337a4a211143faa7b")},
+                        { 160000, uint256S("00000000026039bb94933f2e721afc10eff5e0845a4ad00b1e7028d6b03861e6")},
+
 
 
                 }
